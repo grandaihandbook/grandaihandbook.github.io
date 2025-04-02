@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{
+      site.title }}{% endif %}
+    </title>
+    <meta
+      name="description"
+      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+    />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta
+      property="og:title"
+      content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+    />
+    <meta
+      property="og:description"
+      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+    />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:type" content="website" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
+
+    <!-- Include SEO tag plugin -->
+    {% seo title=false %}
+  </head>
+  <body class="min-h-screen flex flex-col">
+    {% include header.html %}
+
+    <main class="flex-grow container mx-auto px-4 py-6 md:py-12">
+      {% if page.title %}
+      <h1 class="text-3xl md:text-4xl font-bold mb-8">{{ page.title }}</h1>
+      {% endif %} {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- JavaScript -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

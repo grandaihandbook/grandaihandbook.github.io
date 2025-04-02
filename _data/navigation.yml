@@ -1,0 +1,47 @@
+# Main navigation menu
+main:
+  - title: "Handbooks"
+    url: /handbooks/
+  - title: "Research"
+    url: /research/
+  - title: "Ecosystem"
+    url: /ecosystem/
+  - title: "Roadmaps"
+    url: /roadmaps/
+  - title: "Projects"
+    url: /projects/
+  - title: "Resources"
+    url: /resources/
+  - title: "Opportunities"
+    url: /opportunities/
+
+# Handbook navigation
+handbooks:
+  - title: "Generative AI"
+    url: /handbooks/generative-ai/
+  - title: "NLP"
+    url: /handbooks/nlp/
+  - title: "Computer Vision"
+    url: /handbooks/computer-vision/
+  - title: "Reinforcement Learning"
+    url: /handbooks/reinforcement-learning/
+
+# Roadmap navigation
+roadmaps:
+  - title: "AI Engineer"
+    url: /roadmaps/ai-engineer/
+  - title: "ML Researcher"
+    url: /roadmaps/ml-researcher/
+  - title: "Data Scientist"
+    url: /roadmaps/data-scientist/
+
+# Footer navigation
+footer:
+  - title: "About"
+    url: /about/
+  - title: "Contributing"
+    url: /contributing/
+  - title: "Code of Conduct"
+    url: /code-of-conduct/
+  - title: "License"
+    url: /license/
