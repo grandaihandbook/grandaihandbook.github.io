@@ -300,39 +300,296 @@ Our news section helps you navigate the rapidly evolving AI landscape:
 ```
 📂 grandaihandbook.github.io/
 │
-├── 📂 _data/                  # Site configuration and data files
-│   ├── navigation.yml         # Navigation structure
-│   ├── contributors.yml       # Contributor information
-│   └── resources.yml          # External resource links
+├── # 🔧 Site Configuration
+│   ├── 📜 _config.yml               # Jekyll configuration
+│   ├── 📜 Gemfile                   # Ruby dependencies
+│   ├── 📜 .gitignore                # Git ignore rules
+│   ├── 📜 CNAME                     # Custom domain config
+│   ├── 📜 robots.txt                # Search engine instructions
+│   ├── 📜 sitemap.xml               # Site structure for search engines
 │
-├── 📂 _includes/              # Reusable components
-│   ├── header.html            # Site header with navigation
-│   ├── footer.html            # Site footer with links
-│   └── resources-list.html    # Resource listing component
+├── # 🧩 Site Architecture
+│   ├── 📂 _data/                    # Data files for Jekyll
+│   │    ├── 📜 navigation.yml       # Site navigation structure
+│   │    ├── 📜 contributors.yml     # Contributor information
+│   │    ├── 📜 resources.yml        # External resources by category
+│   │    ├── 📜 glossary.yml         # AI terminology definitions
+│   │    └── 📜 metadata.yml         # SEO and social sharing data
+│   │
+│   ├── 📂 _includes/                # Reusable components
+│   │    ├── 📜 header.html          # Site header with navigation
+│   │    ├── 📜 footer.html          # Site footer with links
+│   │    ├── 📜 newsletter-signup.html  # Email subscription form
+│   │    ├── 📜 resource-card.html   # Display card for resources
+│   │    ├── 📜 toc.html             # Table of contents generator
+│   │    ├── 📜 related-content.html # Related content suggestions
+│   │    └── 📜 author-bio.html      # Author information display
+│   │
+│   ├── 📂 _layouts/                 # Page templates
+│   │    ├── 📜 default.html         # Base template
+│   │    ├── 📜 handbook.html        # Handbook page template
+│   │    ├── 📜 roadmap.html         # Roadmap page template
+│   │    ├── 📜 project.html         # Project page template
+│   │    ├── 📜 research.html        # Research paper template
+│   │    └── 📜 resource.html        # Resource page template
+│   │
+│   ├── 📂 _plugins/                 # Custom Jekyll plugins
+│   │    ├── 📜 reading-time.rb      # Calculate reading time
+│   │    └── 📜 related-content.rb   # Find related content
+│   │
+│   ├── 📂 assets/                   # Static assets
+│   │    ├── 📂 css/                 # Stylesheets
+│   │    │    ├── 📜 main.scss       # Main stylesheet
+│   │    │    └── 📜 syntax.css      # Code highlighting
+│   │    ├── 📂 js/                  # JavaScript files
+│   │    │    ├── 📜 search.js       # Site search functionality
+│   │    │    └── 📜 interactive.js  # Interactive elements
+│   │    ├── 📂 images/              # Images and icons
+│   │    │    ├── 📂 logos/          # Site and partner logos
+│   │    │    ├── 📂 icons/          # UI icons
+│   │    │    └── 📂 diagrams/       # Educational diagrams
+│   │    └── 📂 fonts/               # Custom web fonts
 │
-├── 📂 _layouts/               # Page templates
-│   ├── default.html           # Base template
-│   ├── handbook.html          # Handbook page template
-│   └── roadmap.html           # Roadmap page template
+├── # 📚 AI Handbooks (Deep dives into AI topics)
+│   ├── 📂 handbooks/
+│   │    ├── 📜 index.md             # Handbooks overview
+│   │    │
+│   │    ├── 📂 generative-ai/       # Generative AI handbook
+│   │    │    ├── 📜 index.md        # Section overview
+│   │    │    ├── 📜 introduction.md # Intro to generative AI
+│   │    │    ├── 📜 transformers.md # Transformer architecture
+│   │    │    ├── 📜 diffusion.md    # Diffusion models
+│   │    │    └── 📜 applications.md # Real-world applications
+│   │    │
+│   │    ├── 📂 nlp/                 # NLP handbook
+│   │    │    ├── 📜 index.md        # Section overview
+│   │    │    ├── 📜 introduction.md # Intro to NLP
+│   │    │    ├── 📜 word-embeddings.md  # Word embeddings
+│   │    │    ├── 📜 transformers.md # Transformers for NLP
+│   │    │    └── 📜 applications.md # NLP applications
+│   │    │
+│   │    ├── 📂 computer-vision/     # Computer Vision handbook
+│   │    │    ├── 📜 index.md        # Section overview
+│   │    │    ├── 📜 introduction.md # Intro to computer vision
+│   │    │    ├── 📜 cnn.md          # Convolutional neural networks
+│   │    │    ├── 📜 vision-transformers.md  # Vision transformers
+│   │    │    └── 📜 applications.md # CV applications
+│   │    │
+│   │    └── 📂 reinforcement-learning/  # RL handbook
+│   │         ├── 📜 index.md        # Section overview
+│   │         ├── 📜 introduction.md # Intro to RL
+│   │         ├── 📜 dqn.md          # Deep Q-Networks
+│   │         ├── 📜 ppo.md          # Proximal Policy Optimization
+│   │         └── 📜 applications.md # RL applications
 │
-├── 📂 assets/                 # Static assets
-│   ├── 📂 css/                # Stylesheets
-│   ├── 📂 js/                 # JavaScript files
-│   └── 📂 images/             # Images and icons
+├── # 📰 AI Research & News (Stay updated with AI advancements)
+│   ├── 📂 research/
+│   │    ├── 📜 index.md             # Research overview
+│   │    │
+│   │    ├── 📂 papers-of-the-week/  # Weekly paper highlights
+│   │    │    ├── 📜 index.md        # Section overview
+│   │    │    ├── 📜 2024-week-01.md # Week 1 papers
+│   │    │    └── 📜 2024-week-02.md # Week 2 papers
+│   │    │
+│   │    └── 📂 trending-papers/     # Trending research
+│   │         ├── 📜 index.md        # Section overview
+│   │         ├── 📜 2024-q1.md      # Q1 2024 trends
+│   │         └── 📜 2024-q2.md      # Q2 2024 trends
+│   │
+│   ├── 📂 news/
+│   │    ├── 📜 index.md             # News overview
+│   │    │
+│   │    └── 📂 ai-news/             # Weekly news digest
+│   │         ├── 📜 index.md        # Section overview
+│   │         ├── 📜 2024-week-01.md # Week 1 news
+│   │         └── 📜 2024-week-02.md # Week 2 news
 │
-├── 📂 handbooks/              # AI handbook content
-├── 📂 research/               # Research paper summaries
-├── 📂 news/                   # AI news and updates
-├── 📂 roadmaps/               # Career roadmaps
-├── 📂 projects/               # Project tutorials
-├── 📂 resources/              # Learning resources
+├── # 🛠️ AI Ecosystem (Models, Libraries, Benchmarks, Competitions)
+│   ├── 📂 ecosystem/
+│   │    ├── 📜 index.md             # Ecosystem overview
+│   │    │
+│   │    ├── 📂 models/              # AI model directory
+│   │    │    ├── 📜 index.md        # Models overview
+│   │    │    ├── 📜 gpt-4.md        # GPT-4 details
+│   │    │    └── 📜 llama-3.md      # Llama 3 details
+│   │    │
+│   │    ├── 📂 libraries/           # ML libraries
+│   │    │    ├── 📜 index.md        # Libraries overview
+│   │    │    ├── 📜 transformers.md # HuggingFace Transformers
+│   │    │    └── 📜 diffusers.md    # HuggingFace Diffusers
+│   │    │
+│   │    ├── 📂 benchmarks/          # Performance benchmarks
+│   │    │    ├── 📜 index.md        # Benchmarks overview
+│   │    │    ├── 📜 lm-benchmarks.md  # Language model benchmarks
+│   │    │    └── 📜 cv-benchmarks.md  # Computer vision benchmarks
+│   │    │
+│   │    └── 📂 competitions/        # AI competitions
+│   │         ├── 📜 index.md        # Competitions overview
+│   │         ├── 📜 kaggle.md       # Kaggle competitions
+│   │         └── 📜 huggingface.md  # HuggingFace competitions
 │
-├── 404.html                   # Custom 404 page
-├── CONTRIBUTING.md            # Contribution guidelines
-├── README.md                  # Project overview (this file)
-├── _config.yml                # Jekyll configuration
-├── Gemfile                    # Ruby dependencies
-└── LICENSE                    # MIT License
+├── # 🏆 AI Learning Roadmaps (Step-by-step career guides)
+│   ├── 📂 roadmaps/
+│   │    ├── 📜 index.md             # Roadmaps overview
+│   │    │
+│   │    ├── 📂 ai-engineer/         # AI Engineer path
+│   │    │    ├── 📜 index.md        # Path overview
+│   │    │    ├── 📜 beginner.md     # Beginning steps
+│   │    │    ├── 📜 intermediate.md # Intermediate skills
+│   │    │    └── 📜 advanced.md     # Advanced topics
+│   │    │
+│   │    ├── 📂 ml-researcher/       # ML Researcher path
+│   │    │    ├── 📜 index.md        # Path overview
+│   │    │    ├── 📜 beginner.md     # Beginning steps
+│   │    │    ├── 📜 intermediate.md # Intermediate skills
+│   │    │    └── 📜 advanced.md     # Advanced topics
+│   │    │
+│   │    └── 📂 data-scientist/      # Data Scientist path
+│   │         ├── 📜 index.md        # Path overview
+│   │         ├── 📜 beginner.md     # Beginning steps
+│   │         ├── 📜 intermediate.md # Intermediate skills
+│   │         └── 📜 advanced.md     # Advanced topics
+│
+├── # 🔥 AI Projects (Hands-on AI projects for all levels)
+│   ├── 📂 projects/
+│   │    ├── 📜 index.md             # Projects overview
+│   │    │
+│   │    ├── 📂 beginner/            # Beginner projects
+│   │    │    ├── 📜 index.md        # Beginner projects overview
+│   │    │    ├── 📜 project-1.md    # Project description & code
+│   │    │    └── 📜 project-2.md    # Project description & code
+│   │    │
+│   │    ├── 📂 intermediate/        # Intermediate projects
+│   │    │    ├── 📜 index.md        # Intermediate projects overview
+│   │    │    ├── 📜 project-1.md    # Project description & code
+│   │    │    └── 📜 project-2.md    # Project description & code
+│   │    │
+│   │    └── 📂 advanced/            # Advanced projects
+│   │         ├── 📜 index.md        # Advanced projects overview
+│   │         ├── 📜 project-1.md    # Project description & code
+│   │         └── 📜 project-2.md    # Project description & code
+│
+├── # 📖 AI Resources (Books, datasets, tools)
+│   ├── 📂 resources/
+│   │    ├── 📜 index.md             # Resources overview
+│   │    │
+│   │    ├── 📂 books/               # Book recommendations
+│   │    │    ├── 📜 index.md        # Books overview
+│   │    │    ├── 📜 deep-learning.md  # Deep learning books
+│   │    │    └── 📜 nlp.md          # NLP books
+│   │    │
+│   │    ├── 📂 datasets/            # Dataset directory
+│   │    │    ├── 📜 index.md        # Datasets overview
+│   │    │    ├── 📜 vision.md       # Vision datasets
+│   │    │    └── 📜 nlp.md          # NLP datasets
+│   │    │
+│   │    ├── 📂 tools/               # AI tools & software
+│   │    │    ├── 📜 index.md        # Tools overview
+│   │    │    ├── 📜 development.md  # Development tools
+│   │    │    └── 📜 deployment.md   # Deployment tools
+│   │    │
+│   │    └── 📂 cheatsheets/         # Quick reference guides
+│   │         ├── 📜 index.md        # Cheatsheets overview
+│   │         ├── 📜 python.md       # Python cheatsheet
+│   │         └── 📜 pytorch.md      # PyTorch cheatsheet
+│
+├── # 🚀 AI Career & Opportunities
+│   ├── 📂 opportunities/
+│   │    ├── 📜 index.md             # Opportunities overview
+│   │    │
+│   │    ├── 📂 conferences/         # AI conferences
+│   │    │    ├── 📜 index.md        # Conferences overview
+│   │    │    ├── 📜 neurips.md      # NeurIPS information
+│   │    │    ├── 📜 iclr.md         # ICLR information
+│   │    │    └── 📜 cvpr.md         # CVPR information
+│   │    │
+│   │    ├── 📂 scholarships/        # Educational funding
+│   │    │    ├── 📜 index.md        # Scholarships overview
+│   │    │    ├── 📜 openai.md       # OpenAI scholarships
+│   │    │    └── 📜 google.md       # Google scholarships
+│   │    │
+│   │    ├── 📂 fellowships/         # Research fellowships
+│   │    │    ├── 📜 index.md        # Fellowships overview
+│   │    │    ├── 📜 openai.md       # OpenAI fellowships
+│   │    │    └── 📜 google-brain.md # Google Brain fellowships
+│   │    │
+│   │    └── 📂 grants/              # Research grants
+│   │         ├── 📜 index.md        # Grants overview
+│   │         ├── 📜 ai-research-grants.md  # Private grants
+│   │         └── 📜 government-funding.md  # Government funding
+│
+├── # 📊 Case Studies & Applications
+│   ├── 📂 case-studies/
+│   │    ├── 📜 index.md             # Case studies overview
+│   │    │
+│   │    ├── 📂 industry/            # Industry applications
+│   │    │    ├── 📜 index.md        # Industry overview
+│   │    │    ├── 📜 healthcare.md   # Healthcare AI
+│   │    │    ├── 📜 finance.md      # Financial AI
+│   │    │    └── 📜 retail.md       # Retail AI
+│   │    │
+│   │    └── 📂 research/            # Research breakthroughs
+│   │         ├── 📜 index.md        # Research overview
+│   │         ├── 📜 breakthrough-1.md  # Major breakthrough case
+│   │         └── 📜 breakthrough-2.md  # Major breakthrough case
+│
+├── # 🤔 AI Ethics & Responsibility
+│   ├── 📂 ethics/
+│   │    ├── 📜 index.md             # Ethics overview
+│   │    ├── 📜 responsible-ai.md    # Responsible AI principles
+│   │    ├── 📜 bias-mitigation.md   # Addressing AI bias
+│   │    ├── 📜 governance.md        # AI governance
+│   │    └── 📜 privacy.md           # Privacy considerations
+│
+├── # 🧑‍🤝‍🧑 Community
+│   ├── 📂 community/
+│   │    ├── 📜 index.md             # Community hub
+│   │    ├── 📜 code-of-conduct.md   # Community guidelines
+│   │    ├── 📜 discussions.md       # Link to GitHub discussions
+│   │    └── 📜 events.md            # Community events calendar
+│
+├── # 📝 Interactive Learning
+│   ├── 📂 interactive/
+│   │    ├── 📜 index.md             # Interactive learning overview
+│   │    │
+│   │    ├── 📂 tutorials/           # Interactive tutorials
+│   │    │    ├── 📜 index.md        # Tutorials overview
+│   │    │    ├── 📜 tutorial-1.md   # Step-by-step tutorial
+│   │    │    └── 📜 tutorial-2.md   # Step-by-step tutorial
+│   │    │
+│   │    ├── 📂 quizzes/             # Knowledge quizzes
+│   │    │    ├── 📜 index.md        # Quizzes overview
+│   │    │    ├── 📜 quiz-1.md       # Topic quiz
+│   │    │    └── 📜 quiz-2.md       # Topic quiz
+│   │    │
+│   │    └── 📂 challenges/          # Coding challenges
+│   │         ├── 📜 index.md        # Challenges overview
+│   │         ├── 📜 challenge-1.md  # Coding challenge
+│   │         └── 📜 challenge-2.md  # Coding challenge
+│
+├── # 🔍 Search & Navigation
+│   ├── 📜 search.md                 # Search functionality
+│   ├── 📜 glossary.md               # AI terminology glossary
+│   ├── 📜 sitemap.md                # Human-readable sitemap
+│   └── 📜 404.md                    # Custom 404 page
+│
+├── # ✅ GitHub & Contribution
+│   ├── 📂 .github/                  # GitHub specific files
+│   │    ├── 📂 ISSUE_TEMPLATE/      # Issue templates
+│   │    │    ├── 📜 bug_report.md   # Bug report template
+│   │    │    ├── 📜 feature_request.md  # Feature request template
+│   │    │    └── 📜 content_suggestion.md  # Content suggestion template
+│   │    │
+│   │    ├── 📂 workflows/           # GitHub Actions
+│   │    │    ├── 📜 build-and-deploy.yml  # Jekyll build workflow
+│   │    │    └── 📜 link-checker.yml  # Automated link checking
+│   │    │
+│   │    └── 📜 PULL_REQUEST_TEMPLATE.md  # PR template
+│   │
+│   ├── 📜 README.md                 # Project overview
+│   ├── 📜 CONTRIBUTING.md           # Contribution guidelines
+│   ├── 📜 CODE_OF_CONDUCT.md        # Contributor code of conduct
+│   └── 📜 LICENSE                   # MIT License
 ```
 
 **Built with:**
