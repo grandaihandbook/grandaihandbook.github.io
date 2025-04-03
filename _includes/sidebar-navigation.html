@@ -1,0 +1,145 @@
+<!-- Premium Sidebar Navigation -->
+<nav id="sidebar" role="navigation" aria-label="Main navigation">
+    <div class="sidebar-search">
+        <input type="text" id="sidebarSearch" placeholder="Search navigation..." aria-label="Search sidebar">
+    </div>
+
+    <ul class="components">
+        <li class="home-item {% if page.url == '/' %}active{% endif %}">
+            <a href="{{ '/' | relative_url }}" class="home-link">
+                <span class="nav-icon">⌂</span>Home
+            </a>
+        </li>
+
+        <!-- Handbooks Section -->
+        <li class="section-item has-submenu" id="handbooks-section" aria-expanded="false">
+            <a href="{{ '/handbooks/' | relative_url }}" class="section-header">
+                AI Handbooks
+            </a>
+            <ul>
+                {% for handbook in site.data.navigation.handbooks %}
+                <li {% if page.url contains handbook.url %}class="active"{% endif %}>
+                    <a href="{{ handbook.url | relative_url }}">
+                        <span class="nav-icon">📚</span>{{ handbook.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+
+        <!-- Roadmaps Section -->
+        <li class="section-item has-submenu" id="roadmaps-section" aria-expanded="false">
+            <a href="{{ '/roadmaps/' | relative_url }}" class="section-header">
+                Career Paths
+            </a>
+            <ul>
+                {% for roadmap in site.data.navigation.roadmaps %}
+                <li {% if page.url contains roadmap.url %}class="active"{% endif %}>
+                    <a href="{{ roadmap.url | relative_url }}">
+                        <span class="nav-icon">🗺️</span>{{ roadmap.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+
+        <!-- Research Section -->
+        <li class="section-item has-submenu" id="research-section" aria-expanded="false">
+            <a href="{{ '/research/' | relative_url }}" class="section-header">
+                Research & Insights
+            </a>
+            <ul>
+                <li {% if page.url contains '/research/papers' %}class="active"{% endif %}>
+                    <a href="{{ '/research/papers' | relative_url }}">
+                        <span class="nav-icon">📝</span>Latest Papers
+                    </a>
+                </li>
+                <li {% if page.url contains '/trends/' %}class="active"{% endif %}>
+                    <a href="{{ '/trends/' | relative_url }}">
+                        <span class="nav-icon">📈</span>Emerging Trends
+                    </a>
+                </li>
+                <li {% if page.url contains '/breakthroughs/' %}class="active"{% endif %}>
+                    <a href="{{ '/breakthroughs/' | relative_url }}">
+                        <span class="nav-icon">💡</span>Breakthroughs
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Resources Section -->
+        <li class="section-item has-submenu" id="resources-section" aria-expanded="false">
+            <a href="{{ '/resources/' | relative_url }}" class="section-header">
+                Resources
+            </a>
+            <ul>
+                <li {% if page.url contains '/tools/' %}class="active"{% endif %}>
+                    <a href="{{ '/tools/' | relative_url }}">
+                        <span class="nav-icon">🔧</span>AI Tools & Libraries
+                    </a>
+                </li>
+                <li {% if page.url contains '/datasets/' %}class="active"{% endif %}>
+                    <a href="{{ '/datasets/' | relative_url }}">
+                        <span class="nav-icon">📊</span>Datasets
+                    </a>
+                </li>
+                <li {% if page.url contains '/books/' %}class="active"{% endif %}>
+                    <a href="{{ '/books/' | relative_url }}">
+                        <span class="nav-icon">📖</span>Books & Papers
+                    </a>
+                </li>
+                <li {% if page.url contains '/tutorials/' %}class="active"{% endif %}>
+                    <a href="{{ '/tutorials/' | relative_url }}">
+                        <span class="nav-icon">🧩</span>Tutorials
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Community Section -->
+        <li class="section-item has-submenu" id="community-section" aria-expanded="false">
+            <a href="{{ '/community/' | relative_url }}" class="section-header">
+                Community
+            </a>
+            <ul>
+                <li {% if page.url contains '/events/' %}class="active"{% endif %}>
+                    <a href="{{ '/events/' | relative_url }}">
+                        <span class="nav-icon">🗓️</span>Events & Conferences
+                    </a>
+                </li>
+                <li {% if page.url contains '/contribute/' %}class="active"{% endif %}>
+                    <a href="{{ '/contribute/' | relative_url }}">
+                        <span class="nav-icon">🤝</span>Contribute
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- About Section -->
+        <li class="section-item has-submenu" id="about-section" aria-expanded="false">
+            <a href="{{ '/about/' | relative_url }}" class="section-header">
+                About
+            </a>
+            <ul>
+                <li {% if page.url contains '/about/project' %}class="active"{% endif %}>
+                    <a href="{{ '/about/project' | relative_url }}">
+                        <span class="nav-icon">ℹ️</span>About Project
+                    </a>
+                </li>
+                <li {% if page.url contains '/team/' %}class="active"{% endif %}>
+                    <a href="{{ '/team/' | relative_url }}">
+                        <span class="nav-icon">👥</span>Team
+                    </a>
+                </li>
+                <li {% if page.url contains '/contact/' %}class="active"{% endif %}>
+                    <a href="{{ '/contact/' | relative_url }}">
+                        <span class="nav-icon">✉️</span>Contact
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!-- Sidebar Overlay (for mobile) -->
+<div id="sidebar-overlay"></div>

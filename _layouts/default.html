@@ -4,47 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      {% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{
-      site.title }}{% endif %}
+      {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
     </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/sidebar.css' | relative_url }}"
+    />
+
+    {% if jekyll.environment == "production" %}
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/syntax.css' | relative_url }}"
+    />
+    {% endif %}
+
+    <!-- Meta tags -->
     <meta
       name="description"
-      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+      content="{{ page.description | default: site.description }}"
     />
+    <meta name="theme-color" content="#4f46e5" />
 
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta
-      property="og:title"
-      content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
-    />
-    <meta
-      property="og:description"
-      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
-    />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    <meta property="og:type" content="website" />
+    <style>
+      /* Background and Text */
+      body {
+        background: #ffffff;
+        color: #333;
+      }
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+      /* Title Bar */
+      #title-bar {
+        background: #ffffff;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      }
 
-    <!-- Favicon -->
-    <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
+      .site-title {
+        font-size: 22px;
+        font-weight: 600;
+        color: #4f46e5;
+        text-decoration: none;
+      }
 
-    <!-- Include SEO tag plugin -->
-    {% seo title=false %}
+      .nav-link {
+        color: #444;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .nav-link:hover {
+        color: #4f46e5;
+      }
+
+      /* Keep Page Layout as Before */
+      #content {
+        padding: 40px;
+        max-width: 100%;
+      }
+    </style>
   </head>
-  <body class="min-h-screen flex flex-col">
-    {% include header.html %}
+  <body>
+    <div class="wrapper">
+      <!-- Title Bar -->
+      <div id="title-bar">
+        <div class="container">
+          <div class="title-bar-content">
+            <button
+              id="sidebarCollapse"
+              class="sidebar-toggle"
+              aria-label="Toggle Sidebar"
+            >
+              &#9776;
+            </button>
+            <div class="logo">
+              <a href="{{ '/' | relative_url }}" class="site-title"
+                >The Grand AI Handbook</a
+              >
+            </div>
+            <div class="nav-links">
+              <a
+                href="https://github.com/{{ site.github_username }}/{{ site.repository }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <main class="flex-grow container mx-auto px-4 py-6 md:py-12">
-      {% if page.title %}
-      <h1 class="text-3xl md:text-4xl font-bold mb-8">{{ page.title }}</h1>
-      {% endif %} {{ content }}
-    </main>
+      <!-- Include sidebar -->
+      {% include sidebar-navigation.html %}
 
-    {% include footer.html %}
+      <!-- Main content -->
+      <div id="content">
+        {% if page.title and page.hide_title != true %}
+        <div class="content-header">
+          <h1>{{ page.title }}</h1>
+          {% if page.description %}
+          <p class="description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- Main content -->
+        <div class="content-body">{{ content }}</div>
+      </div>
+    </div>
 
     <!-- JavaScript -->
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
+
+    {% if jekyll.environment == "production" %}
+    <script src="{{ '/assets/js/interactive.js' | relative_url }}"></script>
+    {% endif %} {% if page.show_toc %}
+    <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
+    {% endif %}
   </body>
 </html>
