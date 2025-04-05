@@ -1,4 +1,4 @@
-<!-- Premium Sidebar Navigation without Main Home Button -->
+<!-- Premium Sidebar Navigation with Updated Content Paths -->
 <nav id="sidebar" role="navigation" aria-label="Main navigation">
     <div class="sidebar-search">
         <input type="text" id="sidebarSearch" placeholder="Search navigation..." aria-label="Search sidebar">
@@ -13,14 +13,14 @@
                 </div>
             </a>
             <ul style="max-height: 0;">
-                <li {% if page.url contains '/handbooks/' and page.url == '/handbooks/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
-                    <a href="{{ '/handbooks/' | relative_url }}">
+                <li {% if page.url contains '/content/handbooks/' and page.url == '/content/handbooks/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/content/handbooks/' | relative_url }}">
                         <span class="nav-icon">🏠</span>Handbooks Home
                     </a>
                 </li>
                 {% for handbook in site.data.navigation.handbooks %}
                 <li {% if page.url contains handbook.url %}class="active"{% endif %}>
-                    <a href="{{ handbook.url | relative_url }}">
+                    <a href="{{ '/content' | append: handbook.url | relative_url }}">
                         <span class="nav-icon">📖</span>{{ handbook.title }}
                     </a>
                 </li>
@@ -36,14 +36,14 @@
                 </div>
             </a>
             <ul style="max-height: 0;">
-                <li {% if page.url contains '/career-paths/' and page.url == '/career-paths/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
-                    <a href="{{ '/career-paths/' | relative_url }}">
+                <li {% if page.url contains '/content/career-paths/' and page.url == '/content/career-paths/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/content/career-paths/' | relative_url }}">
                         <span class="nav-icon">🏠</span>Career Paths Home
                     </a>
                 </li>
                 {% for roadmap in site.data.navigation.roadmaps %}
                 <li {% if page.url contains roadmap.url %}class="active"{% endif %}>
-                    <a href="{{ roadmap.url | relative_url }}">
+                    <a href="{{ '/content' | append: roadmap.url | relative_url }}">
                         <span class="nav-icon">🧭</span>{{ roadmap.title }}
                     </a>
                 </li>
@@ -59,23 +59,23 @@
                 </div>
             </a>
             <ul style="max-height: 0;">
-                <li {% if page.url contains '/research/' and page.url == '/research/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
-                    <a href="{{ '/research/' | relative_url }}">
+                <li {% if page.url contains '/content/research/' and page.url == '/content/research/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/content/research/' | relative_url }}">
                         <span class="nav-icon">🏠</span>Research Home
                     </a>
                 </li>
-                <li {% if page.url contains '/research/papers' %}class="active"{% endif %}>
-                    <a href="{{ '/research/papers' | relative_url }}">
+                <li {% if page.url contains '/content/research/papers' %}class="active"{% endif %}>
+                    <a href="{{ '/content/research/papers' | relative_url }}">
                         <span class="nav-icon">📝</span>Latest Papers
                     </a>
                 </li>
-                <li {% if page.url contains '/trends/' %}class="active"{% endif %}>
-                    <a href="{{ '/trends/' | relative_url }}">
+                <li {% if page.url contains '/content/trends/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/trends/' | relative_url }}">
                         <span class="nav-icon">📈</span>Emerging Trends
                     </a>
                 </li>
-                <li {% if page.url contains '/breakthroughs/' %}class="active"{% endif %}>
-                    <a href="{{ '/breakthroughs/' | relative_url }}">
+                <li {% if page.url contains '/content/breakthroughs/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/breakthroughs/' | relative_url }}">
                         <span class="nav-icon">💡</span>Breakthroughs
                     </a>
                 </li>
@@ -90,28 +90,28 @@
                 </div>
             </a>
             <ul style="max-height: 0;">
-                <li {% if page.url contains '/resources/' and page.url == '/resources/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
-                    <a href="{{ '/resources/' | relative_url }}">
+                <li {% if page.url contains '/content/resources/' and page.url == '/content/resources/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/content/resources/' | relative_url }}">
                         <span class="nav-icon">🏠</span>Resources Home
                     </a>
                 </li>
-                <li {% if page.url contains '/tools/' %}class="active"{% endif %}>
-                    <a href="{{ '/tools/' | relative_url }}">
+                <li {% if page.url contains '/content/tools/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/tools/' | relative_url }}">
                         <span class="nav-icon">🔧</span>AI Tools & Libraries
                     </a>
                 </li>
-                <li {% if page.url contains '/datasets/' %}class="active"{% endif %}>
-                    <a href="{{ '/datasets/' | relative_url }}">
+                <li {% if page.url contains '/content/datasets/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/datasets/' | relative_url }}">
                         <span class="nav-icon">📊</span>Datasets
                     </a>
                 </li>
-                <li {% if page.url contains '/books/' %}class="active"{% endif %}>
-                    <a href="{{ '/books/' | relative_url }}">
+                <li {% if page.url contains '/content/books/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/books/' | relative_url }}">
                         <span class="nav-icon">📖</span>Books & Papers
                     </a>
                 </li>
-                <li {% if page.url contains '/tutorials/' %}class="active"{% endif %}>
-                    <a href="{{ '/tutorials/' | relative_url }}">
+                <li {% if page.url contains '/content/tutorials/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/tutorials/' | relative_url }}">
                         <span class="nav-icon">🧩</span>Tutorials
                     </a>
                 </li>
@@ -126,18 +126,13 @@
                 </div>
             </a>
             <ul style="max-height: 0;">
-                <li {% if page.url contains '/community/' and page.url == '/community/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
-                    <a href="{{ '/community/' | relative_url }}">
-                        <span class="nav-icon">🏠</span>Community Home
-                    </a>
-                </li>
-                <li {% if page.url contains '/events/' %}class="active"{% endif %}>
-                    <a href="{{ '/events/' | relative_url }}">
+                <li {% if page.url contains '/content/events/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/events/' | relative_url }}">
                         <span class="nav-icon">🗓️</span>Events & Conferences
                     </a>
                 </li>
-                <li {% if page.url contains '/contribute/' %}class="active"{% endif %}>
-                    <a href="{{ '/contribute/' | relative_url }}">
+                <li {% if page.url contains '/content/contribute/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/contribute/' | relative_url }}">
                         <span class="nav-icon">🤝</span>Contribute
                     </a>
                 </li>
@@ -152,26 +147,31 @@
                 </div>
             </a>
             <ul style="max-height: 0;">
-                <li {% if page.url contains '/about/' and page.url == '/about/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
-                    <a href="{{ '/about/' | relative_url }}">
-                        <span class="nav-icon">🏠</span>About Home
-                    </a>
-                </li>
-                <li {% if page.url contains '/about/project' %}class="active"{% endif %}>
-                    <a href="{{ '/about/project' | relative_url }}">
+                <li {% if page.url contains '/content/about/project' %}class="active"{% endif %}>
+                    <a href="{{ '/content/about/project' | relative_url }}">
                         <span class="nav-icon">📋</span>About Project
                     </a>
                 </li>
-                <li {% if page.url contains '/team/' %}class="active"{% endif %}>
-                    <a href="{{ '/team/' | relative_url }}">
+                <li {% if page.url contains '/content/team/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/team/' | relative_url }}">
                         <span class="nav-icon">👥</span>Team
                     </a>
                 </li>
-                <li {% if page.url contains '/contact/' %}class="active"{% endif %}>
-                    <a href="{{ '/contact/' | relative_url }}">
+                <li {% if page.url contains '/content/contact/' %}class="active"{% endif %}>
+                    <a href="{{ '/content/contact/' | relative_url }}">
                         <span class="nav-icon">✉️</span>Contact
                     </a>
                 </li>
+                <li {% if page.url contains '/content/about/contributing' and page.url == '/content/about/contributing' %}class="active"{% endif %}>
+    <a href="{{ '/content/about/contributing' | relative_url }}">
+        <span class="nav-icon">🚀</span>How to Contribute
+    </a>
+</li>
+                <li {% if page.url contains '/content/about/code-of-conduct' and page.url == '/content/about/code-of-conduct' %}class="active"{% endif %}>
+    <a href="{{ '/content/about/code-of-conduct' | relative_url }}">
+        <span class="nav-icon">🌟</span>Code of Conduct
+    </a>
+</li>
             </ul>
         </li>
     </ul>

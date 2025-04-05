@@ -41,6 +41,12 @@ collections:
   opportunities:
     output: true
     permalink: /opportunities/:path/
+  content:
+    output: true
+    permalink: /content/:path/
+  about:
+    output: true
+    permalink: /content/about/:path/
 
 # Defaults
 defaults:
@@ -63,6 +69,15 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  - scope:
+      path: "content"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "about"
+    values:
+      layout: "page"
 
 # Exclude from processing
 exclude:
@@ -70,7 +85,6 @@ exclude:
   - Gemfile.lock
   - vendor
   - .gitignore
-  - CONTRIBUTING.md
   - LICENSE
   - README.md
   - CNAME
