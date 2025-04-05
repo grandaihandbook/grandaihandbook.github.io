@@ -17,14 +17,59 @@ main:
 
 # Handbook navigation
 handbooks:
+  # Core AI Fields
+  - title: "Machine Learning"
+    url: /handbooks/machine-learning/
+  - title: "Deep Learning"
+    url: /handbooks/deep-learning/
   - title: "Generative AI"
     url: /handbooks/generative-ai/
-  - title: "NLP"
+  - title: "Foundation Models"
+    url: /handbooks/foundation-models/
+  - title: "Large Language Models"
+    url: /handbooks/large-language-models/
+  - title: "Reinforcement Learning"
+    url: /handbooks/reinforcement-learning/
+  - title: "MLOps"
+    url: /handbooks/mlops/
+
+  # AI Domains
+  - title: "Natural Language Processing"
     url: /handbooks/nlp/
   - title: "Computer Vision"
     url: /handbooks/computer-vision/
-  - title: "Reinforcement Learning"
-    url: /handbooks/reinforcement-learning/
+  - title: "Speech Processing"
+    url: /handbooks/speech-processing/
+  - title: "Multimodal AI"
+    url: /handbooks/multimodal-ai/
+  - title: "Self-Driving Cars"
+    url: /handbooks/self-driving-cars/
+
+  # Specialized AI Techniques
+  - title: "Graph Neural Networks"
+    url: /handbooks/graph-neural-networks/
+  - title: "Time Series Forecasting"
+    url: /handbooks/time-series/
+  - title: "Self-Supervised Learning"
+    url: /handbooks/self-supervised-learning/
+  - title: "Representation Learning"
+    url: /handbooks/representation-learning/
+  - title: "Bayesian Machine Learning"
+    url: /handbooks/bayesian-ml/
+  - title: "Efficient AI & Optimization"
+    url: /handbooks/efficient-ai/
+
+  # Applied AI & Ethics
+  - title: "AI for Edge & IoT"
+    url: /handbooks/edge-ai/
+  - title: "AI for Art & Aesthetics"
+    url: /handbooks/ai-art/
+  - title: "AI in Healthcare"
+    url: /handbooks/ai-healthcare/
+  - title: "AI in Finance"
+    url: /handbooks/ai-finance/
+  - title: "AI Ethics & Fairness"
+    url: /handbooks/ai-ethics/
 
 # Roadmap navigation
 roadmaps:

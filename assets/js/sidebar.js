@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.getElementById('sidebar');
-    const sidebarCollapse = document.getElementById('sidebarCollapse'); // Assumes you have this button
-    const content = document.getElementById('content'); // Assumes you have this element
+    const sidebarCollapse = document.getElementById('sidebarCollapse');
+    const content = document.getElementById('content');
     const overlay = document.getElementById('sidebar-overlay');
 
     // Toggle Sidebar
     function toggleSidebar() {
         sidebar.classList.toggle('active');
-        content?.classList.toggle('active');
+        if (content) content.classList.toggle('active');
         if (window.innerWidth <= 768) {
             overlay.classList.toggle('active');
         } else {
@@ -21,118 +21,165 @@ document.addEventListener('DOMContentLoaded', function() {
     if (sidebarCollapse) {
         sidebarCollapse.addEventListener('click', toggleSidebar);
     }
-    overlay.addEventListener('click', toggleSidebar);
+    if (overlay) {
+        overlay.addEventListener('click', toggleSidebar);
+    }
 
-    // Swipe to Close (Mobile)
-    let touchStartX = 0;
-    sidebar.addEventListener('touchstart', (e) => {
-        touchStartX = e.touches[0].clientX;
-    });
-    sidebar.addEventListener('touchmove', (e) => {
-        const touchX = e.touches[0].clientX;
-        if (touchStartX - touchX > 50 && sidebar.classList.contains('active')) {
-            toggleSidebar();
-        }
-    });
-
-    // Accordion Navigation (Collapsed by Default)
-    const hasSubmenu = document.querySelectorAll('.has-submenu');
-    hasSubmenu.forEach((element) => {
-        const submenu = element.querySelector('ul');
-        const sectionHeader = element.querySelector('.section-header');
+    // IMPORTANT: Remove all previous event handlers by cloning and replacing section headers
+    const sectionHeaders = document.querySelectorAll('.section-header');
+    sectionHeaders.forEach(header => {
+        const newHeader = header.cloneNode(true);
+        header.parentNode.replaceChild(newHeader, header);
         
-        // Check localStorage or leave collapsed by default
-        const isOpen = localStorage.getItem(`submenu-${element.id}`) === 'true';
-        if (isOpen) {
-            element.classList.add('open');
-            element.setAttribute('aria-expanded', 'true');
-            submenu.style.maxHeight = submenu.scrollHeight + 'px';
-        } else {
-            element.classList.remove('open');
-            element.setAttribute('aria-expanded', 'false');
-            submenu.style.maxHeight = '0';
-        }
+        // Add our new click handler with proper prevention
+        newHeader.addEventListener('click', function(e) {
+            // Prevent default navigation - section headers should only expand/collapse
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const parentSection = this.closest('.section-item');
+            if (!parentSection) return;
 
-        sectionHeader.addEventListener('click', function(e) {
-            // Toggle only if clicking near the arrow
-            if (e.offsetX > this.offsetWidth - 30) {
-                e.preventDefault();
-                element.classList.toggle('open');
-                element.setAttribute('aria-expanded', element.classList.contains('open'));
-
-                if (element.classList.contains('open')) {
+            // Simple toggle for dropdown behavior
+            const isOpen = parentSection.classList.contains('open');
+            
+            if (!isOpen) {
+                // Opening the section
+                parentSection.classList.add('open');
+                parentSection.setAttribute('aria-expanded', 'true');
+                
+                const submenu = parentSection.querySelector('ul');
+                if (submenu) {
+                    // Make visible before animation
+                    submenu.style.visibility = 'visible';
                     submenu.style.maxHeight = submenu.scrollHeight + 'px';
-                } else {
-                    submenu.style.maxHeight = '0';
+                    submenu.style.opacity = '1';
                 }
-
-                localStorage.setItem(`submenu-${element.id}`, element.classList.contains('open'));
+            } else {
+                // Closing the section
+                parentSection.classList.remove('open');
+                parentSection.setAttribute('aria-expanded', 'false');
+                
+                const submenu = parentSection.querySelector('ul');
+                if (submenu) {
+                    submenu.style.maxHeight = '0';
+                    submenu.style.opacity = '0';
+                    
+                    // Wait for transition before hiding completely
+                    setTimeout(function() {
+                        if (!parentSection.classList.contains('open')) {
+                            submenu.style.visibility = 'hidden';
+                        }
+                    }, 300); // Match transition time
+                }
             }
-            // Otherwise, navigate to the section link
+            
+            // Save state to localStorage
+            localStorage.setItem(`submenu-${parentSection.id}`, !isOpen);
         });
     });
 
-    // Active Item Highlighting (Expand Parent Section if Active)
-    const currentPath = window.location.pathname;
-    const menuLinks = document.querySelectorAll('.components a');
-    let bestMatch = { element: null, matchLength: 0 };
-
-    menuLinks.forEach((link) => {
-        const linkPath = link.getAttribute('href');
-        if (linkPath) {
-            if (currentPath === '/' && linkPath === '/') {
-                link.parentElement.classList.add('active');
-            } else if (currentPath.includes(linkPath) && linkPath !== '/') {
-                const matchLength = linkPath.length;
-                if (matchLength > bestMatch.matchLength) {
-                    bestMatch = { element: link, matchLength };
+    // Initialize sections based on localStorage after a slight delay
+    setTimeout(() => {
+        document.querySelectorAll('.section-item.has-submenu').forEach(section => {
+            const isOpen = localStorage.getItem(`submenu-${section.id}`) === 'true';
+            if (isOpen) {
+                section.classList.add('open');
+                section.setAttribute('aria-expanded', 'true');
+                const submenu = section.querySelector('ul');
+                if (submenu) {
+                    submenu.style.visibility = 'visible';
+                    submenu.style.opacity = '1';
+                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
                 }
             }
+        });
+        
+        // If we have an active item, expand its parent section
+        const activeItem = document.querySelector('.components li.active');
+        if (activeItem) {
+            const parentSection = activeItem.closest('.section-item.has-submenu');
+            if (parentSection && !parentSection.classList.contains('open')) {
+                parentSection.classList.add('open');
+                parentSection.setAttribute('aria-expanded', 'true');
+                const submenu = parentSection.querySelector('ul');
+                if (submenu) {
+                    submenu.style.visibility = 'visible';
+                    submenu.style.opacity = '1';
+                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
+                }
+                localStorage.setItem(`submenu-${parentSection.id}`, 'true');
+            }
         }
-    });
-
-    if (bestMatch.element) {
-        bestMatch.element.parentElement.classList.add('active');
-        const parentMenu = bestMatch.element.closest('.has-submenu');
-        if (parentMenu) {
-            parentMenu.classList.add('open');
-            parentMenu.setAttribute('aria-expanded', 'true');
-            const submenu = parentMenu.querySelector('ul');
-            submenu.style.maxHeight = submenu.scrollHeight + 'px';
-            localStorage.setItem(`submenu-${parentMenu.id}`, 'true');
-        }
-        setTimeout(() => {
-            bestMatch.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 500);
-    }
+    }, 100);
 
     // Search Functionality
-    document.getElementById('sidebarSearch').addEventListener('input', function(e) {
-        const query = e.target.value.toLowerCase();
-        document.querySelectorAll('.components li').forEach((item) => {
-            const text = item.textContent.toLowerCase();
-            item.style.display = text.includes(query) ? 'block' : 'none';
+    const sidebarSearch = document.getElementById('sidebarSearch');
+    if (sidebarSearch) {
+        sidebarSearch.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            
+            // For each section
+            document.querySelectorAll('.section-item').forEach((section) => {
+                let sectionHasMatch = false;
+                const sectionItems = section.querySelectorAll('li');
+                
+                // Check items in this section
+                sectionItems.forEach((item) => {
+                    const text = item.textContent.toLowerCase();
+                    const matches = text.includes(query);
+                    item.style.display = matches ? 'block' : 'none';
+                    if (matches) sectionHasMatch = true;
+                });
+                
+                // Show/hide section based on matches
+                section.style.display = sectionHasMatch || query === '' ? 'block' : 'none';
+                
+                // If there's a match and section has submenu, expand it
+                if (sectionHasMatch && query !== '' && section.classList.contains('has-submenu')) {
+                    section.classList.add('open');
+                    section.setAttribute('aria-expanded', 'true');
+                    const submenu = section.querySelector('ul');
+                    if (submenu) {
+                        submenu.style.visibility = 'visible';
+                        submenu.style.opacity = '1';
+                        submenu.style.maxHeight = submenu.scrollHeight + 'px';
+                    }
+                }
+            });
         });
-    });
-
-    // Debounced Resize Handler
-    function debounce(func, wait) {
-        let timeout;
-        return function(...args) {
-            clearTimeout(timeout);
-            timeout = setTimeout(() => func.apply(this, args), wait);
-        };
     }
 
-    window.addEventListener('resize', debounce(() => {
+    // Handle section height recalculation to avoid text overlap
+    function updateSubmenuHeights() {
+        document.querySelectorAll('.section-item.has-submenu.open').forEach((item) => {
+            const submenu = item.querySelector('ul');
+            if (submenu) {
+                // Reset height before calculating to get accurate scrollHeight
+                const originalMaxHeight = submenu.style.maxHeight;
+                submenu.style.maxHeight = 'none';
+                // Add a small padding to ensure no overlap
+                submenu.style.maxHeight = (submenu.scrollHeight + 10) + 'px';
+            }
+        });
+    }
+
+    // Update submenu heights on window resize
+    window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
             overlay.classList.remove('active');
             if (sidebar.classList.contains('active')) {
                 sidebar.classList.remove('active');
-                content?.classList.remove('active');
+                if (content) content.classList.remove('active');
             }
         }
-    }, 250));
+        
+        // Recalculate all open submenu heights to prevent overlapping
+        updateSubmenuHeights();
+    });
+
+    // Initial height calculation
+    updateSubmenuHeights();
 
     // Keyboard Navigation
     document.addEventListener('keydown', (e) => {

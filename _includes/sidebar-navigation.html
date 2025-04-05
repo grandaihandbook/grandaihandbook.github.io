@@ -1,26 +1,27 @@
-<!-- Premium Sidebar Navigation -->
+<!-- Premium Sidebar Navigation without Main Home Button -->
 <nav id="sidebar" role="navigation" aria-label="Main navigation">
     <div class="sidebar-search">
         <input type="text" id="sidebarSearch" placeholder="Search navigation..." aria-label="Search sidebar">
     </div>
 
     <ul class="components">
-        <li class="home-item {% if page.url == '/' %}active{% endif %}">
-            <a href="{{ '/' | relative_url }}" class="home-link">
-                <span class="nav-icon">⌂</span>Home
-            </a>
-        </li>
-
         <!-- Handbooks Section -->
         <li class="section-item has-submenu" id="handbooks-section" aria-expanded="false">
-            <a href="{{ '/handbooks/' | relative_url }}" class="section-header">
-                AI Handbooks
+            <a href="javascript:void(0);" class="section-header">
+                <div class="section-title-wrapper">
+                    <span class="section-indicator">📚</span>AI Handbooks
+                </div>
             </a>
-            <ul>
+            <ul style="max-height: 0;">
+                <li {% if page.url contains '/handbooks/' and page.url == '/handbooks/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/handbooks/' | relative_url }}">
+                        <span class="nav-icon">🏠</span>Handbooks Home
+                    </a>
+                </li>
                 {% for handbook in site.data.navigation.handbooks %}
                 <li {% if page.url contains handbook.url %}class="active"{% endif %}>
                     <a href="{{ handbook.url | relative_url }}">
-                        <span class="nav-icon">📚</span>{{ handbook.title }}
+                        <span class="nav-icon">📖</span>{{ handbook.title }}
                     </a>
                 </li>
                 {% endfor %}
@@ -29,14 +30,21 @@
 
         <!-- Roadmaps Section -->
         <li class="section-item has-submenu" id="roadmaps-section" aria-expanded="false">
-            <a href="{{ '/roadmaps/' | relative_url }}" class="section-header">
-                Career Paths
+            <a href="javascript:void(0);" class="section-header">
+                <div class="section-title-wrapper">
+                    <span class="section-indicator">🗺️</span>Career Paths
+                </div>
             </a>
-            <ul>
+            <ul style="max-height: 0;">
+                <li {% if page.url contains '/career-paths/' and page.url == '/career-paths/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/career-paths/' | relative_url }}">
+                        <span class="nav-icon">🏠</span>Career Paths Home
+                    </a>
+                </li>
                 {% for roadmap in site.data.navigation.roadmaps %}
                 <li {% if page.url contains roadmap.url %}class="active"{% endif %}>
                     <a href="{{ roadmap.url | relative_url }}">
-                        <span class="nav-icon">🗺️</span>{{ roadmap.title }}
+                        <span class="nav-icon">🧭</span>{{ roadmap.title }}
                     </a>
                 </li>
                 {% endfor %}
@@ -45,10 +53,17 @@
 
         <!-- Research Section -->
         <li class="section-item has-submenu" id="research-section" aria-expanded="false">
-            <a href="{{ '/research/' | relative_url }}" class="section-header">
-                Research & Insights
+            <a href="javascript:void(0);" class="section-header">
+                <div class="section-title-wrapper">
+                    <span class="section-indicator">🔍</span>Research & Insights
+                </div>
             </a>
-            <ul>
+            <ul style="max-height: 0;">
+                <li {% if page.url contains '/research/' and page.url == '/research/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/research/' | relative_url }}">
+                        <span class="nav-icon">🏠</span>Research Home
+                    </a>
+                </li>
                 <li {% if page.url contains '/research/papers' %}class="active"{% endif %}>
                     <a href="{{ '/research/papers' | relative_url }}">
                         <span class="nav-icon">📝</span>Latest Papers
@@ -69,10 +84,17 @@
 
         <!-- Resources Section -->
         <li class="section-item has-submenu" id="resources-section" aria-expanded="false">
-            <a href="{{ '/resources/' | relative_url }}" class="section-header">
-                Resources
+            <a href="javascript:void(0);" class="section-header">
+                <div class="section-title-wrapper">
+                    <span class="section-indicator">🧰</span>Resources
+                </div>
             </a>
-            <ul>
+            <ul style="max-height: 0;">
+                <li {% if page.url contains '/resources/' and page.url == '/resources/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/resources/' | relative_url }}">
+                        <span class="nav-icon">🏠</span>Resources Home
+                    </a>
+                </li>
                 <li {% if page.url contains '/tools/' %}class="active"{% endif %}>
                     <a href="{{ '/tools/' | relative_url }}">
                         <span class="nav-icon">🔧</span>AI Tools & Libraries
@@ -98,10 +120,17 @@
 
         <!-- Community Section -->
         <li class="section-item has-submenu" id="community-section" aria-expanded="false">
-            <a href="{{ '/community/' | relative_url }}" class="section-header">
-                Community
+            <a href="javascript:void(0);" class="section-header">
+                <div class="section-title-wrapper">
+                    <span class="section-indicator">👥</span>Community
+                </div>
             </a>
-            <ul>
+            <ul style="max-height: 0;">
+                <li {% if page.url contains '/community/' and page.url == '/community/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/community/' | relative_url }}">
+                        <span class="nav-icon">🏠</span>Community Home
+                    </a>
+                </li>
                 <li {% if page.url contains '/events/' %}class="active"{% endif %}>
                     <a href="{{ '/events/' | relative_url }}">
                         <span class="nav-icon">🗓️</span>Events & Conferences
@@ -117,13 +146,20 @@
 
         <!-- About Section -->
         <li class="section-item has-submenu" id="about-section" aria-expanded="false">
-            <a href="{{ '/about/' | relative_url }}" class="section-header">
-                About
+            <a href="javascript:void(0);" class="section-header">
+                <div class="section-title-wrapper">
+                    <span class="section-indicator">ℹ️</span>About
+                </div>
             </a>
-            <ul>
+            <ul style="max-height: 0;">
+                <li {% if page.url contains '/about/' and page.url == '/about/' %}class="active home-subsection"{% else %}class="home-subsection"{% endif %}>
+                    <a href="{{ '/about/' | relative_url }}">
+                        <span class="nav-icon">🏠</span>About Home
+                    </a>
+                </li>
                 <li {% if page.url contains '/about/project' %}class="active"{% endif %}>
                     <a href="{{ '/about/project' | relative_url }}">
-                        <span class="nav-icon">ℹ️</span>About Project
+                        <span class="nav-icon">📋</span>About Project
                     </a>
                 </li>
                 <li {% if page.url contains '/team/' %}class="active"{% endif %}>
