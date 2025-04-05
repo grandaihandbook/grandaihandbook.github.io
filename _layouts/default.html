@@ -7,15 +7,15 @@
       {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
     </title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Updated to include Poppins and Fira Code -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Custom CSS -->
+    <!-- CSS files - order matters here -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     <link
       rel="stylesheet"
@@ -35,47 +35,6 @@
       content="{{ page.description | default: site.description }}"
     />
     <meta name="theme-color" content="#4f46e5" />
-
-    <style>
-      /* Background and Text */
-      body {
-        background: #ffffff;
-        color: #333;
-      }
-
-      /* Title Bar */
-      #title-bar {
-        background: #ffffff;
-        padding: 16px 24px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-      }
-
-      .site-title {
-        font-size: 22px;
-        font-weight: 600;
-        color: #4f46e5;
-        text-decoration: none;
-      }
-
-      .nav-link {
-        color: #444;
-        font-weight: 500;
-        transition: color 0.2s ease;
-      }
-
-      .nav-link:hover {
-        color: #4f46e5;
-      }
-
-      /* Keep Page Layout as Before */
-      #content {
-        padding: 40px;
-        max-width: 100%;
-      }
-    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -108,7 +67,7 @@
         </div>
       </div>
 
-      <!-- Include sidebar -->
+      <!-- Include sidebar - keep your existing include -->
       {% include sidebar-navigation.html %}
 
       <!-- Main content -->
@@ -122,12 +81,12 @@
         </div>
         {% endif %}
 
-        <!-- Main content -->
-        <div class="content-body">{{ content }}</div>
+        <!-- Main content with markdown-content class for styling -->
+        <div class="content-body markdown-content">{{ content }}</div>
       </div>
     </div>
 
-    <!-- JavaScript -->
+    <!-- JavaScript - Keep your existing scripts -->
     <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
 
     {% if jekyll.environment == "production" %}

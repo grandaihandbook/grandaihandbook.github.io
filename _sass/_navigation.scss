@@ -1,0 +1,60 @@
+/* Navigation styling */
+
+.site-short-title {
+  display: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 1.75rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-gradient);
+    border-radius: 2px;
+    transition: width var(--transition-normal);
+  }
+
+  &:hover {
+    color: var(--primary);
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--surface-dark);
+  border-radius: 0.5rem;
+  transition: all var(--transition-fast);
+
+  &:hover {
+    background-color: var(--primary-light);
+    color: white;
+  }
+}
