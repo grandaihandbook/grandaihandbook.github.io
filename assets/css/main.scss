@@ -1,17 +1,62 @@
 ---
 ---
+/* =============================================================================
+   Grand AI Handbook - Main Stylesheet
+   This file imports all modular components of the site's CSS architecture
+============================================================================= */
 
+/* Core configuration
+   These files establish design foundations and must be imported first
+============================================================================= */
+
+/* Design tokens and variables that ensure consistency across the site */
 @import "variables";
+
+/* Browser normalization and CSS reset */
 @import "reset";
+
+/* Text styling, fonts, headings, paragraphs, and other typographic elements */
 @import "typography";
+
+/* Helper classes for layout, spacing, and common design patterns */
 @import "utilities";
+
+/* Layout components 
+   These files define the structural elements of the site
+============================================================================= */
+
+/* Page structure, grid systems, containers, and global layout patterns */
 @import "layout";
+
+/* Navigation bar, site title, and top-level navigation elements */
 @import "header";
+
+/* Main content area styling and structure */
 @import "content";
+
+/* Media queries and device-specific adjustments */
 @import "responsive";
+
+/* UI Components
+   These files define reusable interface elements
+============================================================================= */
+
+/* All button styles and button variations */
 @import "buttons";
+
+/* Card components for featuring content, handbooks, roadmaps, etc. */
 @import "cards";
+
+/* Hero sections, banners, and featured section styling */
 @import "hero";
+
+/* Styling for Markdown-generated content and documentation */
 @import "markdown";
+
+/* Input elements, controls, and form layouts */
 @import "forms";
+
+/* Transitions, hover effects, and motion design */
 @import "animations";
+
+/* Note: sidebar.css is maintained as a separate file to prevent conflicts */
