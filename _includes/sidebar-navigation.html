@@ -87,7 +87,7 @@
 
       /* Section headers */
       .section {
-        margin-top: 0;
+        margin-top: 8px;
         border-bottom: 1px solid var(--border-color);
       }
 
@@ -96,13 +96,13 @@
         align-items: center;
         justify-content: space-between;
         padding: 12px 16px;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 600;
         color: var(--text-color);
         text-transform: uppercase;
         letter-spacing: 0.05em;
         cursor: pointer;
-        transition: all var(--transition-speed);
+        transition: color var(--transition-speed);
         background-color: transparent;
       }
 
@@ -114,33 +114,34 @@
       /* Chevron indicator */
       .chevron {
         font-size: 12px;
-        transition: transform var(--transition-speed);
+        transition: transform 0.3s ease;
       }
 
       .chevron.expanded {
-        transform: rotate(90deg);
+        transform: rotate(0deg);
       }
 
       /* Section content */
       .section-content {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
+        transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
       }
 
       .section-content.expanded {
         max-height: 2000px;
+        transition: max-height 0.5s cubic-bezier(0.5, 0, 1, 0);
       }
 
       /* Navigation links */
       .nav-link {
         display: block;
-        padding: 10px 16px 10px 16px;
+        padding: 8px 16px 8px 24px;
         color: var(--text-color);
         text-decoration: none;
         font-size: 14px;
         transition: all var(--transition-speed);
-        border-left: 3px solid transparent;
+        border-left: 2px solid transparent;
       }
 
       .nav-link:hover {
@@ -182,7 +183,7 @@
         transition: opacity var(--transition-speed);
       }
 
-      /* // Mobile toggle button */
+      /* Mobile toggle button */
       .mobile-toggle {
         display: none;
         position: fixed;
@@ -237,7 +238,6 @@
 
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
-      >
       <!-- Search bar -->
       <div class="sidebar-search">
         <input
@@ -254,9 +254,9 @@
         <div class="section">
           <div class="section-header" onclick="toggleSection('getstarted')">
             <span>Get Started</span>
-            <span class="chevron expanded" id="getstarted-chevron">▼</span>
+            <span class="chevron" id="getstarted-chevron">▶</span>
           </div>
-          <div class="section-content expanded" id="getstarted-content">
+          <div class="section-content" id="getstarted-content">
             <a href="/docs/introduction" class="nav-link active"
               >Introduction</a
             >
@@ -378,6 +378,23 @@
           <div class="section-content" id="api-content">
             <a href="/api/overview" class="nav-link">API Overview</a>
             <a href="/api/authentication" class="nav-link">Authentication</a>
+
+            <div class="subsection">
+              <div class="section-header" onclick="toggleSection('models')">
+                <span>Models</span>
+                <span class="chevron" id="models-chevron">▶</span>
+              </div>
+              <div class="section-content" id="models-content">
+                <a href="/api/models/text" class="nav-link">Text Models</a>
+                <a href="/api/models/vision" class="nav-link">Vision Models</a>
+                <a href="/api/models/audio" class="nav-link">Audio Models</a>
+                <a href="/api/models/video" class="nav-link">Video Models</a>
+                <a href="/api/models/multimodal" class="nav-link"
+                  >Multimodal Models</a
+                >
+              </div>
+            </div>
+
             <a href="/api/endpoints" class="nav-link">Endpoints</a>
             <a href="/api/rate-limits" class="nav-link">Rate Limits</a>
             <a href="/api/errors" class="nav-link">Error Handling</a>
@@ -388,9 +405,6 @@
 
     <!-- Overlay for mobile -->
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-    <!-- Page content placeholder -->
-    <main class="content"></main>
 
     <script>
       /**
@@ -413,13 +427,9 @@
 
       // Initialize mobile menu toggle
       document.addEventListener("DOMContentLoaded", function () {
-        // Expand the "Get Started" section by default (already expanded in HTML)
-
-        // Initialize mobile menu toggle
         var mobileToggle = document.getElementById("mobile-toggle");
         var sidebar = document.getElementById("sidebar");
         var overlay = document.getElementById("sidebar-overlay");
-        var sidebarCollapse = document.getElementById("sidebarCollapse");
 
         // Toggle sidebar on mobile menu button click
         if (mobileToggle && sidebar && overlay) {
@@ -437,6 +447,22 @@
           });
         }
 
+        // Expand active section by default
+        var activeLink = document.querySelector(".nav-link.active");
+        if (activeLink) {
+          var section = activeLink.closest(".section-content");
+          if (section) {
+            section.classList.add("expanded");
+
+            // Find and rotate the corresponding chevron
+            var sectionId = section.id.replace("-content", "");
+            var chevron = document.getElementById(sectionId + "-chevron");
+            if (chevron) {
+              chevron.classList.add("expanded");
+            }
+          }
+        }
+
         // Initialize search functionality
         var searchInput = document.querySelector(".search-input");
         if (searchInput) {
@@ -451,6 +477,9 @@
             }
           });
         }
+
+        // Expand the "Get Started" section by default
+        toggleSection("getstarted");
       });
 
       // Function to perform search
@@ -519,23 +548,6 @@
           }
         });
       }
-
-      // Expand the "AI Handbooks" section by default
-      document.addEventListener("DOMContentLoaded", function () {
-        // Check for collapsed sections saved in localStorage
-        var sections = document.querySelectorAll(".section-content");
-        sections.forEach(function (section) {
-          var sectionId = section.id.replace("-content", "");
-          var chevron = document.getElementById(sectionId + "-chevron");
-
-          // Set the appropriate initial chevron direction
-          if (section.classList.contains("expanded")) {
-            if (chevron) chevron.textContent = "▼";
-          } else {
-            if (chevron) chevron.textContent = "▶";
-          }
-        });
-      });
     </script>
   </body>
 </html>
