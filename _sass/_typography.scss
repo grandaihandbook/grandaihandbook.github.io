@@ -86,3 +86,141 @@ blockquote::before {
   color: rgba(79, 70, 229, 0.1);
   line-height: 1;
 }
+
+/* Enhanced Section Titles */
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+/* Gradient word styling for section titles */
+.section-title h2 .gradient-word {
+  background: linear-gradient(90deg, #7c3aed, #8b5cf6, #4f46e5, #06b6d4, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Underline accent for section titles */
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #7c3aed, #8b5cf6, #4f46e5);
+  border-radius: 2px;
+}
+
+/* Section title description */
+.section-title p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 1rem auto 0;
+  line-height: 1.6;
+}
+
+/* Specific styling for featured section headers like in Image 2 */
+.featured-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.featured-header h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.featured-header h2 span {
+  color: #8b5cf6;
+}
+
+/* Gradient accent line */
+.accent-line {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #7c3aed, #8b5cf6, #4f46e5);
+  border-radius: 2px;
+  margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .featured-header h2 {
+    font-size: 1.875rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+}
+
+/* Enhanced blockquote styling with center alignment */
+.blockquote-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 3.5rem 0;
+}
+
+blockquote.centered {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 48rem;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1.6;
+}
+
+blockquote.centered::before,
+blockquote.centered::after {
+  content: '"';
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  color: rgba(79, 70, 229, 0.2);
+  position: absolute;
+  line-height: 1;
+}
+
+blockquote.centered::before {
+  top: -1rem;
+  left: 0;
+}
+
+blockquote.centered::after {
+  content: '"';
+  bottom: -2rem;
+  right: 0;
+}
+
+/* Ensure responsive centering */
+@media (max-width: 768px) {
+  blockquote.centered {
+    font-size: 1.125rem;
+  }
+}

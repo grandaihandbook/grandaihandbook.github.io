@@ -9,6 +9,9 @@
    These files establish design foundations and must be imported first
 ============================================================================= */
 
+/* Hero sections, banners, and featured section styling */
+@import "hero";
+
 /* Design tokens and variables that ensure consistency across the site */
 @import "variables";
 
@@ -47,8 +50,7 @@
 /* Card components for featuring content, handbooks, roadmaps, etc. */
 @import "cards";
 
-/* Hero sections, banners, and featured section styling */
-@import "hero";
+
 
 /* Styling for Markdown-generated content and documentation */
 @import "markdown";

@@ -1,230 +1,210 @@
-/* Card components */
+/* Modern Grid Layout for Feature Cards */
+.features-container {
+  width: 100%;
+  padding: 2rem 0;
+}
 
-/* Premium Feature Cards */
+/* Grid layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  /* Responsive grid - 2 columns on medium screens */
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Responsive grid - 2 columns with more space on larger screens */
+  @media (min-width: 1024px) {
+    gap: 2.5rem;
+  }
+}
+
+/* Enhanced Feature Card */
 .feature-card {
-  background-color: var(--surface-light);
-  border-radius: 0.75rem;
-  box-shadow: var(--shadow-md);
-  padding: 2rem;
-  transition: all var(--transition-normal);
-  height: 100%;
-  position: relative;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.08), 0 8px 10px -6px rgba(79, 70, 229, 0.06);
   overflow: hidden;
-  border: 1px solid var(--border-light);
-  z-index: 1;
+  transition: all 0.4s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #f1f5f9;
 
+  /* Hover effects */
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.1), 0 10px 10px -5px rgba(79, 70, 229, 0.08);
+    border-color: rgba(79, 70, 229, 0.1);
+  }
+
+  /* Top accent bar that animates on hover */
   &::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5px;
-    background: var(--primary-gradient);
+    height: 4px;
+    background: linear-gradient(90deg, #4f46e5, #8b5cf6, #ec4899);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform var(--transition-normal);
+    transition: transform 0.4s ease;
   }
 
-  /* Enhanced card design with subtle pattern overlay */
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234f46e5' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M0 0h20L0 20z'/%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0;
-    transition: opacity var(--transition-normal);
-    z-index: -1;
-    pointer-events: none;
-  }
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-
-    &::after {
-      opacity: 1;
-    }
-
-    &::before {
-      transform: scaleX(1);
-    }
-  }
-
-  h3 {
-    margin-bottom: 1.25rem;
-    font-size: 1.5rem;
-    color: var(--text-primary);
-    position: relative;
-    padding-bottom: 0.75rem;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 3rem;
-      height: 3px;
-      background: var(--primary-gradient);
-      border-radius: 3px;
-    }
+  &:hover::before {
+    transform: scaleX(1);
   }
 }
 
-/* Handbook & Roadmap cards */
-.handbook-card,
-.roadmap-card {
-  display: block;
-  background-color: var(--surface-light);
-  border-radius: 0.75rem;
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition-normal);
-  height: 100%;
-  border: 1px solid var(--border-light);
-  text-decoration: none;
-  overflow: hidden;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--primary-gradient);
-    opacity: 0;
-    transition: opacity var(--transition-normal);
-    z-index: 0;
-  }
-
-  &:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 30px -10px rgba(79, 70, 229, 0.3), var(--shadow-lg);
-
-    &::before {
-      opacity: 0.08;
-    }
-
-    h3 {
-      color: var(--primary);
-    }
-  }
-}
-
-.card-content {
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-}
-
-.card-icon {
-  width: 56px;
-  height: 56px;
+/* Card header with icon and title */
+.feature-header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  background: rgba(79, 70, 229, 0.1);
-  border-radius: 12px;
-  transition: all var(--transition-normal);
-  position: relative;
-  overflow: hidden;
+  padding: 1.75rem 1.75rem 1rem 1.75rem;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--primary-gradient);
-    opacity: 0;
-    transition: opacity var(--transition-normal);
-  }
-
-  .handbook-card:hover &::before,
-  .roadmap-card:hover &::before {
-    opacity: 0.2;
-  }
-
-  .handbook-card:hover &,
-  .roadmap-card:hover & {
-    transform: scale(1.1);
-    background: rgba(79, 70, 229, 0.2);
-  }
-}
-
-/* Card icon emoji styling */
-.card-emoji {
-  font-size: 26px;
-  z-index: 1;
-  transition: all var(--transition-normal);
-
-  .handbook-card:hover &,
-  .roadmap-card:hover & {
-    transform: scale(1.15) rotate(5deg);
-  }
-}
-
-.handbook-card h3,
-.roadmap-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  transition: color var(--transition-normal);
-}
-
-.handbook-card p,
-.roadmap-card p {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* Resource card */
-.resource-card {
-  display: flex;
-  background-color: var(--surface-light);
-  border-radius: 0.75rem;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-light);
-  transition: all var(--transition-fast);
-  overflow: hidden;
-  text-decoration: none;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-    border-color: rgba(79, 70, 229, 0.2);
-  }
-
-  .resource-image {
-    width: 80px;
-    min-width: 80px;
-    height: 80px;
-    background-color: rgba(79, 70, 229, 0.1);
+  /* Icon container */
+  .feature-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(79, 70, 229, 0.1);
+    border-radius: 12px;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+
+    img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+    }
   }
 
-  .resource-content {
-    padding: 1rem;
+  /* Title styling */
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
 
-    h4 {
-      font-size: 1.1rem;
-      margin-bottom: 0.25rem;
-      color: var(--text-primary);
+  /* Hover effects for icon and title */
+  .feature-card:hover & {
+    .feature-icon {
+      background-color: rgba(79, 70, 229, 0.15);
+
+      img {
+        transform: scale(1.1);
+      }
     }
 
-    p {
-      font-size: 0.875rem;
-      color: var(--text-tertiary);
-      margin-bottom: 0;
+    h3 {
+      color: #4f46e5;
     }
+  }
+}
+
+/* Divider line */
+.feature-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(226, 232, 240, 0.7), transparent);
+  margin: 0.5rem 1.75rem;
+  opacity: 0.6;
+}
+
+/* Feature content area */
+.feature-content {
+  padding: 1rem 1.75rem 1.75rem 1.75rem;
+  flex: 1;
+}
+
+/* Feature list styling */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #64748b;
+  transition: all 0.2s ease;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Custom bullet point */
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #4f46e5;
+    transition: all 0.3s ease;
+  }
+
+  /* Hover effect */
+  &:hover {
+    color: #1e293b;
+    transform: translateX(3px);
+
+    &:before {
+      background: #8b5cf6;
+      transform: scale(1.2);
+    }
+  }
+}
+
+/* Section title styling */
+.features-title {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+
+    /* Underline accent */
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+      border-radius: 3px;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
   }
 }
