@@ -38,8 +38,34 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- Include header from _includes folder -->
-      {% include header.html %}
+      <!-- Title Bar -->
+      <div id="title-bar">
+        <div class="container">
+          <div class="title-bar-content">
+            <button
+              id="sidebarCollapse"
+              class="sidebar-toggle"
+              aria-label="Toggle Sidebar"
+            >
+              &#9776;
+            </button>
+            <div class="logo">
+              <a href="{{ '/' | relative_url }}" class="site-title"
+                >The Grand AI Handbook</a
+              >
+            </div>
+            <div class="nav-links">
+              <a
+                href="https://github.com/{{ site.github_username }}/{{ site.repository }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Include sidebar - keep your existing include -->
       {% include sidebar-navigation.html %}
