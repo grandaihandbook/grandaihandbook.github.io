@@ -150,21 +150,20 @@
   }
 }
 
-.hero h1 {
+.hero .hero-title {
   font-size: clamp(2.75rem, 6vw, 4.5rem);
   font-weight: 800;
   margin-bottom: 1.5rem;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-  /* Gemini/Llama inspired gradient text effect */
-  background: linear-gradient(90deg, #7c3aed, #8b5cf6, #4f46e5, #06b6d4, #10b981);
+  /* Remove text-shadow */
+  /* text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  // background: linear-gradient(90deg, #7c3aed, #8b5cf6, #4f46e5, #06b6d4, #10b981);
+  background: linear-gradient(90deg, #f3e8ff, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 
-  /* Animation for the title */
   span {
     display: inline-block;
     opacity: 0;
@@ -186,14 +185,14 @@
   }
 }
 
-.hero p {
+.hero .hero-text {
   font-size: clamp(1.25rem, 2.5vw, 1.625rem);
   max-width: 700px;
   margin: 0 auto 2.5rem auto;
   font-weight: 400;
   color: #E2F0FF;
   line-height: 1.6;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 // Button Group styles

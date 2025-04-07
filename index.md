@@ -15,10 +15,10 @@ hide_title: true
   <div class="geometric-shape circle"></div>
   
   <div class="hero-content text-center">
-    <h1>
-      <span>The</span> <span>Grand</span> <span>AI</span> <span>Handbook</span>
+    <h1 class="hero-title">
+      The Grand AI Handbook
     </h1>
-    <p>Your definitive guide to artificial intelligence — From foundational concepts to cutting-edge innovations</p>
+    <p class="hero-text">Your definitive guide to artificial intelligence — From foundational concepts to cutting-edge innovations</p>
     
     <div class="hero-buttons">
       <a href="{{ '/handbooks/' | relative_url }}" class="button-primary">Explore Handbooks</a>
