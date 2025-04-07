@@ -1,190 +1,233 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const sidebar = document.getElementById('sidebar');
-    const sidebarCollapse = document.getElementById('sidebarCollapse');
-    const content = document.getElementById('content');
-    const overlay = document.getElementById('sidebar-overlay');
+// assets/js/sidebar.js
 
-    // Toggle Sidebar
-    function toggleSidebar() {
-        sidebar.classList.toggle('active');
-        if (content) content.classList.toggle('active');
-        if (window.innerWidth <= 768) {
-            overlay.classList.toggle('active');
-        } else {
-            overlay.classList.remove('active');
-        }
-        if (sidebarCollapse) {
-            sidebarCollapse.style.transform = sidebar.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
-        }
-    }
+/**
+ * Sidebar Navigation Functionality
+ */
 
-    if (sidebarCollapse) {
-        sidebarCollapse.addEventListener('click', toggleSidebar);
-    }
-    if (overlay) {
-        overlay.addEventListener('click', toggleSidebar);
-    }
+// Function to toggle section expansion
+function toggleSection(sectionId) {
+  var content = document.getElementById(sectionId + "-content");
+  var chevron = document.getElementById(sectionId + "-chevron");
 
-    // IMPORTANT: Remove all previous event handlers by cloning and replacing section headers
-    const sectionHeaders = document.querySelectorAll('.section-header');
-    sectionHeaders.forEach(header => {
-        const newHeader = header.cloneNode(true);
-        header.parentNode.replaceChild(newHeader, header);
-        
-        // Add our new click handler with proper prevention
-        newHeader.addEventListener('click', function(e) {
-            // Prevent default navigation - section headers should only expand/collapse
-            e.preventDefault();
-            e.stopPropagation();
-            
-            const parentSection = this.closest('.section-item');
-            if (!parentSection) return;
+  if (content) {
+    content.classList.toggle("expanded");
+  }
 
-            // Simple toggle for dropdown behavior
-            const isOpen = parentSection.classList.contains('open');
-            
-            if (!isOpen) {
-                // Opening the section
-                parentSection.classList.add('open');
-                parentSection.setAttribute('aria-expanded', 'true');
-                
-                const submenu = parentSection.querySelector('ul');
-                if (submenu) {
-                    // Make visible before animation
-                    submenu.style.visibility = 'visible';
-                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
-                    submenu.style.opacity = '1';
-                }
-            } else {
-                // Closing the section
-                parentSection.classList.remove('open');
-                parentSection.setAttribute('aria-expanded', 'false');
-                
-                const submenu = parentSection.querySelector('ul');
-                if (submenu) {
-                    submenu.style.maxHeight = '0';
-                    submenu.style.opacity = '0';
-                    
-                    // Wait for transition before hiding completely
-                    setTimeout(function() {
-                        if (!parentSection.classList.contains('open')) {
-                            submenu.style.visibility = 'hidden';
-                        }
-                    }, 300); // Match transition time
-                }
-            }
-            
-            // Save state to localStorage
-            localStorage.setItem(`submenu-${parentSection.id}`, !isOpen);
-        });
+  if (chevron) {
+    chevron.classList.toggle("expanded");
+    // Update chevron text based on expanded state
+    chevron.textContent = content.classList.contains("expanded") ? "▼" : "▶";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize sidebar toggle for desktop
+  var sidebarToggle = document.getElementById("sidebar-toggle");
+  var sidebar = document.getElementById("sidebar");
+  var toggleIcon = document.getElementById("toggle-icon");
+
+  if (sidebarToggle && sidebar && toggleIcon) {
+    sidebarToggle.addEventListener("click", function() {
+      sidebar.classList.toggle("collapsed");
+      toggleIcon.textContent = sidebar.classList.contains("collapsed") ? "▶" : "◀";
+      
+      // Save sidebar state to localStorage
+      localStorage.setItem("sidebarCollapsed", sidebar.classList.contains("collapsed"));
     });
-
-    // Initialize sections based on localStorage after a slight delay
-    setTimeout(() => {
-        document.querySelectorAll('.section-item.has-submenu').forEach(section => {
-            const isOpen = localStorage.getItem(`submenu-${section.id}`) === 'true';
-            if (isOpen) {
-                section.classList.add('open');
-                section.setAttribute('aria-expanded', 'true');
-                const submenu = section.querySelector('ul');
-                if (submenu) {
-                    submenu.style.visibility = 'visible';
-                    submenu.style.opacity = '1';
-                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
-                }
-            }
-        });
-        
-        // If we have an active item, expand its parent section
-        const activeItem = document.querySelector('.components li.active');
-        if (activeItem) {
-            const parentSection = activeItem.closest('.section-item.has-submenu');
-            if (parentSection && !parentSection.classList.contains('open')) {
-                parentSection.classList.add('open');
-                parentSection.setAttribute('aria-expanded', 'true');
-                const submenu = parentSection.querySelector('ul');
-                if (submenu) {
-                    submenu.style.visibility = 'visible';
-                    submenu.style.opacity = '1';
-                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
-                }
-                localStorage.setItem(`submenu-${parentSection.id}`, 'true');
-            }
-        }
-    }, 100);
-
-    // Search Functionality
-    const sidebarSearch = document.getElementById('sidebarSearch');
-    if (sidebarSearch) {
-        sidebarSearch.addEventListener('input', function(e) {
-            const query = e.target.value.toLowerCase();
-            
-            // For each section
-            document.querySelectorAll('.section-item').forEach((section) => {
-                let sectionHasMatch = false;
-                const sectionItems = section.querySelectorAll('li');
-                
-                // Check items in this section
-                sectionItems.forEach((item) => {
-                    const text = item.textContent.toLowerCase();
-                    const matches = text.includes(query);
-                    item.style.display = matches ? 'block' : 'none';
-                    if (matches) sectionHasMatch = true;
-                });
-                
-                // Show/hide section based on matches
-                section.style.display = sectionHasMatch || query === '' ? 'block' : 'none';
-                
-                // If there's a match and section has submenu, expand it
-                if (sectionHasMatch && query !== '' && section.classList.contains('has-submenu')) {
-                    section.classList.add('open');
-                    section.setAttribute('aria-expanded', 'true');
-                    const submenu = section.querySelector('ul');
-                    if (submenu) {
-                        submenu.style.visibility = 'visible';
-                        submenu.style.opacity = '1';
-                        submenu.style.maxHeight = submenu.scrollHeight + 'px';
-                    }
-                }
-            });
-        });
+    
+    // Check for saved sidebar state
+    const savedSidebarState = localStorage.getItem("sidebarCollapsed");
+    if (savedSidebarState === "true") {
+      sidebar.classList.add("collapsed");
+      toggleIcon.textContent = "▶";
     }
+  }
 
-    // Handle section height recalculation to avoid text overlap
-    function updateSubmenuHeights() {
-        document.querySelectorAll('.section-item.has-submenu.open').forEach((item) => {
-            const submenu = item.querySelector('ul');
-            if (submenu) {
-                // Reset height before calculating to get accurate scrollHeight
-                const originalMaxHeight = submenu.style.maxHeight;
-                submenu.style.maxHeight = 'none';
-                // Add a small padding to ensure no overlap
-                submenu.style.maxHeight = (submenu.scrollHeight + 10) + 'px';
-            }
-        });
-    }
+  // Initialize mobile menu toggle
+  var mobileToggle = document.getElementById("mobile-toggle");
+  var overlay = document.getElementById("sidebar-overlay");
 
-    // Update submenu heights on window resize
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) {
-            overlay.classList.remove('active');
-            if (sidebar.classList.contains('active')) {
-                sidebar.classList.remove('active');
-                if (content) content.classList.remove('active');
-            }
-        }
-        
-        // Recalculate all open submenu heights to prevent overlapping
-        updateSubmenuHeights();
+  // Toggle sidebar on mobile menu button click
+  if (mobileToggle && sidebar && overlay) {
+    mobileToggle.addEventListener("click", function () {
+      sidebar.classList.toggle("open");
+      overlay.classList.toggle("visible");
     });
+  }
 
-    // Initial height calculation
-    updateSubmenuHeights();
-
-    // Keyboard Navigation
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && sidebar.classList.contains('active') && window.innerWidth <= 768) {
-            toggleSidebar();
-        }
+  // Close sidebar when clicking overlay
+  if (overlay && sidebar) {
+    overlay.addEventListener("click", function () {
+      sidebar.classList.remove("open");
+      overlay.classList.remove("visible");
     });
+  }
+
+  // Initialize search functionality
+  var searchInput = document.querySelector(".search-input");
+  if (searchInput) {
+    searchInput.addEventListener("input", function (e) {
+      var searchTerm = e.target.value.toLowerCase();
+
+      if (searchTerm.length > 1) {
+        performSearch(searchTerm);
+      } else {
+        // Reset search results
+        resetSearch();
+      }
+    });
+  }
+  
+  // Load saved section states
+  loadSectionStates();
 });
+
+// Function to perform search
+function performSearch(searchTerm) {
+  var navLinks = document.querySelectorAll(".nav-link");
+  var hasResults = false;
+
+  // Loop through all nav links
+  navLinks.forEach(function (link) {
+    var linkText = link.textContent.toLowerCase();
+    var sectionContent = link.closest(".section-content");
+
+    if (linkText.includes(searchTerm)) {
+      // Show matching links
+      link.style.display = "block";
+      link.classList.add("search-result");
+      hasResults = true;
+
+      // Expand parent sections
+      if (sectionContent) {
+        sectionContent.classList.add("expanded");
+
+        // Rotate chevron
+        var sectionId = sectionContent.id.replace("-content", "");
+        var chevron = document.getElementById(sectionId + "-chevron");
+        if (chevron) {
+          chevron.classList.add("expanded");
+          chevron.textContent = "▼";
+        }
+      }
+    } else {
+      // Hide non-matching links
+      link.style.display = "none";
+      link.classList.remove("search-result");
+    }
+  });
+
+  // Handle no results
+  if (!hasResults) {
+    // Optional: Show a no results message
+    console.log("No results found for: " + searchTerm);
+  }
+}
+
+// Function to reset search
+function resetSearch() {
+  var navLinks = document.querySelectorAll(".nav-link");
+
+  // Show all links
+  navLinks.forEach(function (link) {
+    link.style.display = "block";
+    link.classList.remove("search-result");
+  });
+
+  // Return sections to their default state
+  loadSectionStates();
+}
+
+// Save section states to localStorage
+function saveSectionStates() {
+  const sections = document.querySelectorAll('.section-content');
+  const states = {};
+  
+  sections.forEach(section => {
+    const id = section.id.replace('-content', '');
+    states[id] = section.classList.contains('expanded');
+  });
+  
+  localStorage.setItem('sectionStates', JSON.stringify(states));
+}
+
+// Load section states from localStorage
+function loadSectionStates() {
+  try {
+    const savedStates = JSON.parse(localStorage.getItem('sectionStates')) || {};
+    
+    // Apply saved states
+    Object.keys(savedStates).forEach(id => {
+      const content = document.getElementById(id + '-content');
+      const chevron = document.getElementById(id + '-chevron');
+      
+      if (content) {
+        if (savedStates[id]) {
+          content.classList.add('expanded');
+        } else {
+          content.classList.remove('expanded');
+        }
+      }
+      
+      if (chevron) {
+        if (savedStates[id]) {
+          chevron.classList.add('expanded');
+          chevron.textContent = '▼';
+        } else {
+          chevron.classList.remove('expanded');
+          chevron.textContent = '▶';
+        }
+      }
+    });
+    
+    // Always ensure the active section is expanded
+    const activeLink = document.querySelector('.nav-link.active');
+    if (activeLink) {
+      const sectionContent = activeLink.closest('.section-content');
+      if (sectionContent) {
+        sectionContent.classList.add('expanded');
+        
+        const sectionId = sectionContent.id.replace('-content', '');
+        const chevron = document.getElementById(sectionId + '-chevron');
+        if (chevron) {
+          chevron.classList.add('expanded');
+          chevron.textContent = '▼';
+        }
+      }
+    }
+    
+  } catch (error) {
+    console.error('Error loading saved section states:', error);
+    
+    // Default: only expand the section with active link
+    var sections = document.querySelectorAll('.section-content');
+    sections.forEach(function (section) {
+      if (section.querySelector('.nav-link.active')) {
+        section.classList.add('expanded');
+        
+        var sectionId = section.id.replace('-content', '');
+        var chevron = document.getElementById(sectionId + '-chevron');
+        if (chevron) {
+          chevron.classList.add('expanded');
+          chevron.textContent = '▼';
+        }
+      } else {
+        section.classList.remove('expanded');
+        
+        var sectionId = section.id.replace('-content', '');
+        var chevron = document.getElementById(sectionId + '-chevron');
+        if (chevron) {
+          chevron.classList.remove('expanded');
+          chevron.textContent = '▶';
+        }
+      }
+    });
+  }
+}
+
+// Update section states when toggled
+const originalToggleSection = toggleSection;
+toggleSection = function(sectionId) {
+  originalToggleSection(sectionId);
+  saveSectionStates();
+};
