@@ -1,7 +1,7 @@
 /* Modern Grid Layout for Feature Cards */
 .features-container {
   width: 100%;
-  padding: 2rem 0;
+  // padding: 1rem 0;
 }
 
 /* Grid layout */
@@ -206,5 +206,291 @@
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
+  }
+}
+
+/* Handbook Cards with Image + Text Layout - Enhanced Version */
+.handbook-card {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.4s ease;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 20px 30px -10px rgba(79, 70, 229, 0.25);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  &:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.1), 0 8px 10px -6px rgba(79, 70, 229, 0.08);
+
+    &::after {
+      opacity: 1;
+    }
+
+    .card-image {
+      transform: scale(1.05);
+
+      &::before {
+        opacity: 0.75;
+      }
+
+      .card-image-icon {
+        transform: translateY(0) scale(1.1);
+        opacity: 1;
+      }
+    }
+
+    .card-content {
+      h3 {
+        color: #4f46e5;
+      }
+
+      .card-icon {
+        background-color: rgba(79, 70, 229, 0.15);
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  /* Image container with enhanced visual effects */
+  .card-image {
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+
+    /* Gradient overlay */
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+          rgba(30, 41, 59, 0.2),
+          rgba(30, 41, 59, 0.6));
+      opacity: 0.6;
+      transition: opacity 0.4s ease;
+      z-index: 1;
+    }
+
+    /* Floating icon on image hover */
+    .card-image-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%) scale(0.9);
+      width: 60px;
+      height: 60px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0.5s ease;
+      z-index: 2;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+      span {
+        font-size: 2rem;
+      }
+    }
+
+    /* For specific handbook types, use different background images */
+    &.generative-ai {
+      background-image: url('/assets/images/gbg.jpg');
+    }
+
+    &.nlp {
+      background-image: url('/assets/images/nbg.jpg');
+    }
+
+    &.computer-vision {
+      background-image: url('/assets/images/cbg.jpg');
+    }
+
+    &.reinforcement-learning {
+      background-image: url('/assets/images/rbg.jpg');
+    }
+
+    /* Default gradient background if no image is available */
+    &.default {
+      background-image: linear-gradient(135deg, #6366f1, #8b5cf6);
+    }
+  }
+
+  /* Content container with enhanced typography */
+  .card-content {
+    padding: 1.75rem;
+    position: relative;
+
+    /* Subtle card top border */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 1.75rem;
+      right: 1.75rem;
+      height: 1px;
+      background: linear-gradient(to right,
+          transparent,
+          rgba(226, 232, 240, 0.7),
+          transparent);
+    }
+
+    /* Icon styling */
+    .card-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background-color: rgba(79, 70, 229, 0.1);
+      border-radius: 1rem;
+      margin-bottom: 1.25rem;
+      transition: all 0.3s ease;
+
+      .card-emoji {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #1e293b;
+      transition: color 0.3s ease;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+
+    p {
+      color: #64748b;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Optional reading more indicator */
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      color: #4f46e5;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-top: 0.75rem;
+      transition: transform 0.3s ease;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-left: 0.25rem;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        svg {
+          transform: translateX(3px);
+        }
+      }
+    }
+  }
+
+  /* Category label badge */
+  .category-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #1e293b;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    z-index: 3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+  }
+}
+
+/* Media queries for responsive adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .handbook-card {
+    .card-image {
+      height: 160px;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+
+      h3 {
+        font-size: 1.125rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+/* For dark mode support */
+@media (prefers-color-scheme: dark) {
+  .handbook-card {
+    background-color: #1e293b;
+
+    .card-content {
+      &::before {
+        background: linear-gradient(to right,
+            transparent,
+            rgba(51, 65, 85, 0.7),
+            transparent);
+      }
+
+      h3 {
+        color: #f1f5f9;
+      }
+
+      p {
+        color: #cbd5e1;
+      }
+
+      .read-more {
+        color: #a5b4fc;
+      }
+    }
+
+    .category-badge {
+      background-color: rgba(30, 41, 59, 0.85);
+      color: #f1f5f9;
+    }
+
+    .card-image-icon {
+      background-color: rgba(30, 41, 59, 0.9);
+      color: #f1f5f9;
+    }
   }
 }

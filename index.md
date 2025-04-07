@@ -122,50 +122,53 @@ hide_title: true
   
   <!-- HANDBOOKS SECTION -->
   <section class="mb-20">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold">Featured <span class="gradient-word">Handbooks</span></h2>
-    </div>
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {% for handbook in site.data.navigation.handbooks limit:4 %}
-        <a href="{{ handbook.url | relative_url }}" class="handbook-card">
-          <div class="card-content">
-            <div class="card-icon">
-              {% case handbook.title %}
-                {% when "Generative AI" %}
-                  <span class="card-emoji">🤖</span>
-                {% when "NLP" %}
-                  <span class="card-emoji">📝</span>
-                {% when "Computer Vision" %}
-                  <span class="card-emoji">👁️</span>
-                {% when "Reinforcement Learning" %}
-                  <span class="card-emoji">🎮</span>
-                {% else %}
-                  <span class="card-emoji">📚</span>
-              {% endcase %}
-            </div>
-            <h3 class="text-xl font-semibold mb-2 text-gray-900">{{ handbook.title }}</h3>
-            <p class="text-gray-600">
-              {% case handbook.title %}
-                {% when "Generative AI" %}
-                  Master transformer architectures, diffusion models, and optimization techniques for creative AI systems.
-                {% when "NLP" %}
-                  Explore advanced language understanding, generation, and multimodal integration strategies.
-                {% when "Computer Vision" %}
-                  Delve into neural architectures, object detection, segmentation, and visual reasoning systems.
-                {% when "Reinforcement Learning" %}
-                  Understand policy optimization, multi-agent systems, and decision-making under uncertainty.
-              {% endcase %}
-            </p>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold">Featured <span class="gradient-word">Handbooks</span></h2>
+  </div>
+  
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {% for handbook in site.data.navigation.handbooks limit:4 %}
+      <a href="{{ handbook.url | relative_url }}" class="handbook-card">
+        <!-- Optional category badge -->
+        <div class="category-badge">{{ handbook.category | default: "Handbook" }}</div>
+        
+        <!-- Image container with floating icon on hover -->
+        <div class="card-image {% if handbook.title == 'Generative AI' %}generative-ai{% elsif handbook.title == 'NLP' %}nlp{% elsif handbook.title == 'Computer Vision' %}computer-vision{% elsif handbook.title == 'Reinforcement Learning' %}reinforcement-learning{% else %}default{% endif %}">
+          
+        </div>
+        
+        <div class="card-content">
+          
+          <h3 class="text-xl font-semibold mb-2">{{ handbook.title }}</h3>
+          <p>
+            {% case handbook.title %}
+              {% when "Generative AI" %}
+                Master transformer architectures, diffusion models, and optimization techniques for creative AI systems.
+              {% when "NLP" %}
+                Explore advanced language understanding, generation, and multimodal integration strategies.
+              {% when "Computer Vision" %}
+                Delve into neural architectures, object detection, segmentation, and visual reasoning systems.
+              {% when "Reinforcement Learning" %}
+                Understand policy optimization, multi-agent systems, and decision-making under uncertainty.
+            {% endcase %}
+          </p>
+          
+          <!-- Optional read more indicator -->
+          <div class="read-more">
+            Explore handbook
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
           </div>
-        </a>
-      {% endfor %}
-    </div>
-    
-    <div class="text-center mt-10">
-      <a href="{{ '/handbooks/' | relative_url }}" class="btn btn-primary">View All Handbooks</a>
-    </div>
-  </section>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+  
+  <div class="text-center mt-10">
+    <a href="{{ '/handbooks/' | relative_url }}" class="btn btn-primary">View All Handbooks</a>
+  </div>
+</section>
   
   <!-- ROADMAPS SECTION -->
   <section class="mb-20">

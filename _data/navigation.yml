@@ -17,27 +17,32 @@ main:
 
 # Handbook navigation
 handbooks:
+  # Top 4
+  - title: "Generative AI"
+    url: /handbooks/generative-ai/
+  - title: "Reinforcement Learning"
+    url: /handbooks/reinforcement-learning/
+  - title: "NLP"
+    url: /handbooks/nlp/
+  - title: "Computer Vision"
+    url: /handbooks/computer-vision/
+
   # Core AI Fields
   - title: "Machine Learning"
     url: /handbooks/machine-learning/
   - title: "Deep Learning"
     url: /handbooks/deep-learning/
-  - title: "Generative AI"
-    url: /handbooks/generative-ai/
+
   - title: "Foundation Models"
     url: /handbooks/foundation-models/
   - title: "Large Language Models"
     url: /handbooks/large-language-models/
-  - title: "Reinforcement Learning"
-    url: /handbooks/reinforcement-learning/
+
   - title: "MLOps"
     url: /handbooks/mlops/
 
   # AI Domains
-  - title: "Natural Language Processing"
-    url: /handbooks/nlp/
-  - title: "Computer Vision"
-    url: /handbooks/computer-vision/
+
   - title: "Speech Processing"
     url: /handbooks/speech-processing/
   - title: "Multimodal AI"
