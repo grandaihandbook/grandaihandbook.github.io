@@ -136,3 +136,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+function toggleSection(sectionId) {
+    const content = document.getElementById(sectionId + '-content');
+    const chevron = document.getElementById(sectionId + '-chevron');
+    
+    if (content) {
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        if (chevron) chevron.innerHTML = '▼';
+      } else {
+        content.style.display = 'none';
+        if (chevron) chevron.innerHTML = '▶';
+      }
+    }
+    
+    // Prevent event bubbling
+    event.stopPropagation();
+  }
+  
+  // Initialize all sections as collapsed on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.section-content');
+    const subsections = document.querySelectorAll('.subsection-content');
+    
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
+    
+    subsections.forEach(subsection => {
+      subsection.style.display = 'none';
+    });
+    
+    // Add click event listeners to all section headers
+    const sectionHeaders = document.querySelectorAll('.section-header');
+    sectionHeaders.forEach(header => {
+      header.addEventListener('click', function() {
+        // Extract section ID from header ID (remove '-header' suffix)
+        const headerId = this.id;
+        const sectionId = headerId.replace('-header', '');
+        toggleSection(sectionId);
+      });
+    });
+  });
