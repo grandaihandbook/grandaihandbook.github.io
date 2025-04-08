@@ -51,6 +51,9 @@ collections:
   about:
     output: true
     permalink: /content/about/:path/
+  generative-ai:
+    output: true
+    permalink: /content/handbooks/generative-ai/:path/ # Changed from /content/handbooks/:path/
 
 # Defaults
 defaults:
