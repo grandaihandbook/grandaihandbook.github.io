@@ -20,61 +20,66 @@ handbooks:
   # Top 4
   - title: "Generative AI"
     url: /handbooks/generative-ai/
-  - title: "Reinforcement Learning"
-    url: /handbooks/reinforcement-learning/
   - title: "NLP"
     url: /handbooks/nlp/
   - title: "Computer Vision"
     url: /handbooks/computer-vision/
+  - title: "Reinforcement Learning"
+    url: /handbooks/reinforcement-learning/
 
   # Core AI Fields
   - title: "Machine Learning"
     url: /handbooks/machine-learning/
   - title: "Deep Learning"
     url: /handbooks/deep-learning/
-
   - title: "Foundation Models"
     url: /handbooks/foundation-models/
   - title: "Large Language Models"
     url: /handbooks/large-language-models/
-
   - title: "MLOps"
     url: /handbooks/mlops/
 
   # AI Domains
-
-  - title: "Speech Processing"
-    url: /handbooks/speech-processing/
+  - title: "Explainable AI (XAI)"
+    url: /handbooks/explainable-ai/
+  - title: "Federated Learning"
+    url: /handbooks/federated-learning/
   - title: "Multimodal AI"
     url: /handbooks/multimodal-ai/
+  - title: "Recommender Systems"
+    url: /handbooks/recommender-systems/
+  - title: "Robotics & AI"
+    url: /handbooks/robotics-ai/
   - title: "Self-Driving Cars"
     url: /handbooks/self-driving-cars/
+  - title: "Speech Processing"
+    url: /handbooks/speech-processing/
 
   # Specialized AI Techniques
-  - title: "Graph Neural Networks"
-    url: /handbooks/graph-neural-networks/
-  - title: "Time Series Forecasting"
-    url: /handbooks/time-series/
-  - title: "Self-Supervised Learning"
-    url: /handbooks/self-supervised-learning/
-  - title: "Representation Learning"
-    url: /handbooks/representation-learning/
   - title: "Bayesian Machine Learning"
     url: /handbooks/bayesian-ml/
   - title: "Efficient AI & Optimization"
     url: /handbooks/efficient-ai/
+  - title: "Graph Neural Networks"
+    url: /handbooks/graph-neural-networks/
+  - title: "Representation Learning"
+    url: /handbooks/representation-learning/
+  - title: "Self-Supervised Learning"
+    url: /handbooks/self-supervised-learning/
+  - title: "Time Series Forecasting"
+    url: /handbooks/time-series/
 
   # Applied AI & Ethics
-  - title: "AI for Edge & IoT"
-    url: /handbooks/edge-ai/
-  - title: "AI for Art & Aesthetics"
-    url: /handbooks/ai-art/
-  - title: "AI in Healthcare"
-    url: /handbooks/ai-healthcare/
-  - title: "AI in Finance"
-    url: /handbooks/ai-finance/
   - title: "AI Ethics & Fairness"
     url: /handbooks/ai-ethics/
+  - title: "AI for Art & Aesthetics"
+    url: /handbooks/ai-art/
+  - title: "AI for Edge & IoT"
+    url: /handbooks/edge-ai/
+  - title: "AI in Finance"
+    url: /handbooks/ai-finance/
+  - title: "AI in Healthcare"
+    url: /handbooks/ai-healthcare/
 
 # Roadmap navigation
 roadmaps:
