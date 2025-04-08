@@ -26,7 +26,7 @@
         --active-link: #3b82f6; /* Blue for active links */
         --transition-speed: 0.2s;
         --sidebar-width: 280px;
-        --sidebar-collapsed-width: 60px; /* Added missing variable */
+        --sidebar-collapsed-width: 60px;
         --sidebar-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
           0 2px 4px -1px rgba(0, 0, 0, 0.06);
       }
@@ -175,9 +175,7 @@
       }
 
       .chevron.expanded {
-        transform: rotate(
-          0deg
-        ); /* Changed to rotate 90deg for proper arrow rotation */
+        transform: rotate(0deg); /* Reset to 0 degrees when expanded */
       }
 
       /* Section content */
@@ -302,6 +300,14 @@
         display: flex;
         align-items: center;
         margin-left: 40px; /* Space for the toggle button */
+      }
+
+      /* Added for better appearance */
+      .site-title {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
       }
     </style>
   </head>
@@ -500,8 +506,6 @@
             <a href="/api/errors" class="nav-link">Error Handling</a>
           </div>
         </div>
-        <!-- Other sections remain the same -->
-        <!-- ... -->
       </div>
     </aside>
 
@@ -514,6 +518,7 @@
        */
 
       // Function to toggle section expansion
+      // Function to toggle section expansion
       function toggleSection(sectionId) {
         var content = document.getElementById(sectionId + "-content");
         var chevron = document.getElementById(sectionId + "-chevron");
@@ -523,7 +528,53 @@
         }
 
         if (chevron) {
+          chevron.textContent = content.classList.contains("expanded")
+            ? "▼"
+            : "▶";
           chevron.classList.toggle("expanded");
+        }
+      }
+
+      // Set active link based on current URL
+      function setActiveLinkByURL() {
+        // Get current path
+        var currentPath = window.location.pathname;
+
+        // Find all navigation links
+        var navLinks = document.querySelectorAll(".nav-link");
+
+        // Variable to track if we found an exact match
+        var exactMatchFound = false;
+
+        // First pass: look for exact matches
+        navLinks.forEach(function (link) {
+          var linkPath = link.getAttribute("href");
+
+          // If href matches current path exactly, add active class
+          if (linkPath === currentPath) {
+            link.classList.add("active");
+            exactMatchFound = true;
+
+            // Expand the parent section
+            expandParentSection(link);
+          }
+        });
+
+        // Second pass: if no exact match was found, look for partial matches
+        // This handles cases like being on a sub-page
+        if (!exactMatchFound) {
+          navLinks.forEach(function (link) {
+            var linkPath = link.getAttribute("href");
+
+            // Check if the current URL starts with the link path and the link path is not just "/"
+            // This ensures we don't match the home page for every URL
+            if (linkPath !== "/" && currentPath.startsWith(linkPath)) {
+              link.classList.add("active");
+
+              // Expand the parent section
+              expandParentSection(link);
+            }
+          });
         }
       }
 
@@ -534,6 +585,32 @@
         var sidebar = document.getElementById("sidebar");
         var overlay = document.getElementById("sidebar-overlay");
 
+        // Add click event to all nav links to set active state
+        var navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            // Remove active class from all links
+            navLinks.forEach(function (innerLink) {
+              innerLink.classList.remove("active");
+            });
+
+            // Add active class to clicked link
+            this.classList.add("active");
+
+            // Make sure parent section is expanded
+            var sectionContent = this.closest(".section-content");
+            if (sectionContent) {
+              sectionContent.classList.add("expanded");
+              var sectionId = sectionContent.id.replace("-content", "");
+              var chevron = document.getElementById(sectionId + "-chevron");
+              if (chevron) {
+                chevron.classList.add("expanded");
+                chevron.textContent = "▼";
+              }
+            }
+          });
+        });
+
         // Toggle sidebar on sidebar toggle button click
         if (sidebarToggle && sidebar) {
           sidebarToggle.addEventListener("click", function () {
@@ -542,29 +619,26 @@
             // Change the toggle button icon based on sidebar state
             if (sidebar.classList.contains("collapsed")) {
               sidebarToggle.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="12" y1="5" x2="12" y2="19"></line>
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                </svg>
-              `;
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        `;
             } else {
               sidebarToggle.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="3" y1="12" x2="21" y2="12"></line>
-                  <line x1="3" y1="6" x2="21" y2="6"></line>
-                  <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-              `;
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        `;
             }
 
             // Adjust content margin when sidebar is collapsed
-            var content = document.querySelector(".content");
-            if (content) {
-              if (sidebar.classList.contains("collapsed")) {
-                content.style.marginLeft = "0";
-              } else {
-                content.style.marginLeft = "var(--sidebar-width)";
-              }
+            if (sidebar.classList.contains("collapsed")) {
+              document.body.style.marginLeft = "0";
+            } else {
+              document.body.style.marginLeft = "var(--sidebar-width)";
             }
           });
         }
@@ -585,21 +659,8 @@
           });
         }
 
-        // Expand active section by default
-        var activeLink = document.querySelector(".nav-link.active");
-        if (activeLink) {
-          var section = activeLink.closest(".section-content");
-          if (section) {
-            section.classList.add("expanded");
-
-            // Find and rotate the corresponding chevron
-            var sectionId = section.id.replace("-content", "");
-            var chevron = document.getElementById(sectionId + "-chevron");
-            if (chevron) {
-              chevron.classList.add("expanded");
-            }
-          }
-        }
+        // Call the function to set active link based on URL
+        setActiveLinkByURL();
 
         // Initialize search functionality
         var searchInput = document.querySelector(".search-input");
@@ -615,9 +676,6 @@
             }
           });
         }
-
-        // Expand the "Get Started" section by default
-        // toggleSection("getstarted");
       });
 
       // Function to perform search
@@ -644,6 +702,7 @@
               var sectionId = sectionContent.id.replace("-content", "");
               var chevron = document.getElementById(sectionId + "-chevron");
               if (chevron) {
+                chevron.textContent = "▼";
                 chevron.classList.add("expanded");
               }
             }
@@ -672,15 +731,19 @@
         });
 
         // Return sections to their default state
-        // This assumes we want to collapse all sections except the active one
+        // This maintains expanded state for sections with active links
         var sections = document.querySelectorAll(".section-content");
         sections.forEach(function (section) {
-          if (!section.querySelector(".nav-link.active")) {
+          if (
+            !section.querySelector(".nav-link.active") &&
+            !section.classList.contains("permanently-expanded")
+          ) {
             section.classList.remove("expanded");
 
             var sectionId = section.id.replace("-content", "");
             var chevron = document.getElementById(sectionId + "-chevron");
             if (chevron) {
+              chevron.textContent = "▶";
               chevron.classList.remove("expanded");
             }
           }
