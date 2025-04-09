@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section X: Multimodal and Dynamic Vision
 ---
 
-Section X: Multimodal and Dynamic Vision
 Chapter 54: Multimodal Learning: Vision and Language
 (CLIP, ViLBERT, BLIP, image captioning, VQA)
 Chapter 55: Multimodal Learning: Vision and Beyond

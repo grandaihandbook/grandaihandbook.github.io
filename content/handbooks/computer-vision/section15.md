@@ -1,5 +1,4 @@
 ---
 layout: default
+title: Resources for Further Learning
 ---
-
-Resources for Further Learning

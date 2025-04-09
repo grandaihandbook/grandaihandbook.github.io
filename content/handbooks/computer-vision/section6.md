@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section VI: Advanced Learning Paradigms
 ---
 
-Section VI: Advanced Learning Paradigms
 Chapter 30: Self-Supervised Learning
 (SimCLR, MoCo, BYOL, DINO, MAE, SimSiam)
 Chapter 31: Semi-Supervised Learning

@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section IX: Generative Vision Models
 ---
 
-Section IX: Generative Vision Models
 Chapter 49: Variational Autoencoders (VAEs)
 (Image generation, latent space interpolation)
 Chapter 50: Generative Adversarial Networks (GANs)

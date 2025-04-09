@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section VII: Vision Transformers and Large-Scale Models
 ---
 
-Section VII: Vision Transformers and Large-Scale Models
 Chapter 35: Foundations of Vision Transformers
 (ViT, DeiT, patch embeddings, self-attention for images, training challenges)
 Chapter 36: Hierarchical Vision Transformers

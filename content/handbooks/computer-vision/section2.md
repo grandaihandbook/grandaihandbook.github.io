@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section II: Core Concepts and Traditional Methods
 ---
 
-Section II: Core Concepts and Traditional Methods
 Chapter 4: Image Formation and Optics
 (Pinhole cameras, lens models, radiometry, projective geometry)
 Chapter 5: Feature Extraction and Matching

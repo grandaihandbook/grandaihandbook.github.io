@@ -1,5 +1,4 @@
 ---
 layout: default
+title: Summary of Key Concepts
 ---
-
-Summary of Key Concepts

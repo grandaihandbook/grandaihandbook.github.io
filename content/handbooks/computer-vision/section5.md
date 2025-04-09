@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section V: Core and Extended Vision Tasks
 ---
 
-Section V: Core and Extended Vision Tasks
 Chapter 20: Image Classification
 (Benchmarks: ImageNet, CIFAR; multi-label classification)
 Chapter 21: Object Detection

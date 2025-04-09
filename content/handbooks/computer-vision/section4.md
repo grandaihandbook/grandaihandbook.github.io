@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section IV: CNN Architectures and Enhancements
 ---
 
-Section IV: CNN Architectures and Enhancements
 Chapter 15: Classic CNN Architectures
 (LeNet, AlexNet, VGG, GoogLeNet/Inception)
 Chapter 16: Residual and Dense Networks

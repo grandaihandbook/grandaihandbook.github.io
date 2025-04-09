@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section XIII: Deployment, Ethics, and Future Directions
 ---
 
-Section XIII: Deployment, Ethics, and Future Directions
 Chapter 71: Deployment Pipelines for Vision
 (ONNX, TensorRT, model serving, MLOps)
 Chapter 72: Ethical Considerations in Vision

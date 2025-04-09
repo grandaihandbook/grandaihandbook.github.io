@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section XI: Efficiency and Optimization
 ---
 
-Section XI: Efficiency and Optimization
 Chapter 59: Model Compression Techniques
 (Pruning, quantization: INT8/4-bit, weight sharing)
 Chapter 60: Efficient Inference Architectures

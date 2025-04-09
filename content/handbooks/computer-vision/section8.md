@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section VIII: 3D and Geometric Vision
 ---
 
-Section VIII: 3D and Geometric Vision
 Chapter 44: Depth Estimation
 (Monocular depth, stereo matching, depth from motion, MVS)
 Chapter 45: 3D Point Cloud Processing

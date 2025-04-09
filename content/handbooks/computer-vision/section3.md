@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section III: Deep Learning Foundations for Vision
 ---
 
-Section III: Deep Learning Foundations for Vision
 Chapter 10: Convolutional Neural Networks (CNNs): Fundamentals
 (Convolution, pooling, activation functions, backpropagation)
 Chapter 11: Types of Convolutions

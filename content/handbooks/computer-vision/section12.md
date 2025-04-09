@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Section XII: Evaluation and Applications
 ---
 
-Section XII: Evaluation and Applications
 Chapter 63: Benchmarking and Metrics
 (ImageNet, COCO, KITTI, ADE20K, mAP, IoU, FID)
 Chapter 64: Autonomous Systems
