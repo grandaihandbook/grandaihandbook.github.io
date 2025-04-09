@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section VIII: 3D and Geometric Vision
+title: 3D and Geometric Vision
 ---
 
 Chapter 44: Depth Estimation

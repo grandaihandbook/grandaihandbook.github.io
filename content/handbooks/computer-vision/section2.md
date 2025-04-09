@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section II: Core Concepts and Traditional Methods
+title: Core Concepts and Traditional Methods
 ---
 
 Chapter 4: Image Formation and Optics

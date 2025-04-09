@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section XIII: Deployment, Ethics, and Future Directions
+title: Deployment, Ethics, and Future Directions
 ---
 
 Chapter 71: Deployment Pipelines for Vision

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section I: Mathematical and Statistical Foundations
+title: Mathematical and Statistical Foundations
 ---
 
 Chapter 1: Mathematical Preliminaries

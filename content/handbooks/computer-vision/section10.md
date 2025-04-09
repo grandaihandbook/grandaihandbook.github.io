@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section X: Multimodal and Dynamic Vision
+title: Multimodal and Dynamic Vision
 ---
 
 Chapter 54: Multimodal Learning: Vision and Language

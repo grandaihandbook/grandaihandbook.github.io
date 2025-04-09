@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section V: Core and Extended Vision Tasks
+title: Core and Extended Vision Tasks
 ---
 
 Chapter 20: Image Classification

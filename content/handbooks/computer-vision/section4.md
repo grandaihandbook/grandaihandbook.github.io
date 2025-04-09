@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section IV: CNN Architectures and Enhancements
+title: CNN Architectures and Enhancements
 ---
 
 Chapter 15: Classic CNN Architectures

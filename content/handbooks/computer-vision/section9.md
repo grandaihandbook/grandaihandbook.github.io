@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section IX: Generative Vision Models
+title: Generative Vision Models
 ---
 
 Chapter 49: Variational Autoencoders (VAEs)

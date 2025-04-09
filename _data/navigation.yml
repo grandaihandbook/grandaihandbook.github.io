@@ -19,11 +19,11 @@ main:
 handbooks:
   # Top 4
   - title: "Generative AI"
-    url: /handbooks/generative-ai/
+    url: /content/handbooks/generative-ai/
   - title: "NLP"
     url: /handbooks/nlp/
   - title: "Computer Vision"
-    url: /handbooks/computer-vision/
+    url: /content/handbooks/computer-vision/
   - title: "Reinforcement Learning"
     url: /handbooks/reinforcement-learning/
 

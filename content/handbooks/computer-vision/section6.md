@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section VI: Advanced Learning Paradigms
+title: Advanced Learning Paradigms
 ---
 
 Chapter 30: Self-Supervised Learning

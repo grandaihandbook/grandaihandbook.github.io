@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section XII: Evaluation and Applications
+title: Evaluation and Applications
 ---
 
 Chapter 63: Benchmarking and Metrics

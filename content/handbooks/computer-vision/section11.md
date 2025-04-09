@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section XI: Efficiency and Optimization
+title: Efficiency and Optimization
 ---
 
 Chapter 59: Model Compression Techniques

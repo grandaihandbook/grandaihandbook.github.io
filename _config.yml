@@ -54,6 +54,9 @@ collections:
   generative-ai:
     output: true
     permalink: /content/handbooks/generative-ai/:path/ # Changed from /content/handbooks/:path/
+  computer-vision:
+    output: true
+    permalink: /content/handbooks/computer-vision/:path/
 
 # Defaults
 defaults:

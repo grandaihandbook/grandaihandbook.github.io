@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section VII: Vision Transformers and Large-Scale Models
+title: Vision Transformers and Large-Scale Models
 ---
 
 Chapter 35: Foundations of Vision Transformers

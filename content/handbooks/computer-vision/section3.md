@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Section III: Deep Learning Foundations for Vision
+title: Deep Learning Foundations for Vision
 ---
 
 Chapter 10: Convolutional Neural Networks (CNNs): Fundamentals
