@@ -172,46 +172,98 @@ hide_title: true
   
   <!-- ROADMAPS SECTION -->
   <section class="mb-20">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold">AI Career <span class="gradient-word">Roadmaps</span></h2>
-    </div>
-    
-    <div class="grid md:grid-cols-3 gap-6">
-      {% for roadmap in site.data.navigation.roadmaps %}
-        <a href="{{ roadmap.url | relative_url }}" class="roadmap-card">
-          <div class="card-content">
-            <div class="card-icon">
-              {% case roadmap.title %}
-                {% when "AI Engineer" %}
-                  <span class="card-emoji">⚙️</span>
-                {% when "ML Researcher" %}
-                  <span class="card-emoji">🔬</span>
-                {% when "Data Scientist" %}
-                  <span class="card-emoji">📊</span>
-                {% else %}
-                  <span class="card-emoji">🗺️</span>
-              {% endcase %}
-            </div>
-            <h3 class="text-xl font-semibold mb-2 text-gray-900">{{ roadmap.title }}</h3>
-            <p class="text-gray-600">
-              {% case roadmap.title %}
-                {% when "AI Engineer" %}
-                  Strategic progression from fundamentals to building and deploying robust AI systems at scale.
-                {% when "ML Researcher" %}
-                  Structured path to mastering theoretical foundations and contributing novel advancements to the field.
-                {% when "Data Scientist" %}
-                  Comprehensive journey from data analysis to developing sophisticated AI-driven business solutions.
-              {% endcase %}
-            </p>
-          </div>
-        </a>
-      {% endfor %}
-    </div>
-    
-    <div class="text-center mt-10">
-      <a href="{{ '/roadmaps/' | relative_url }}" class="btn btn-primary">Explore All Roadmaps</a>
-    </div>
-  </section>
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold">AI Career <span class="gradient-word">Roadmaps</span></h2>
+  </div>
+  
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Machine Learning Engineer Card -->
+    <a href="{{ '/roadmaps/machine-learning-engineer' | relative_url }}" class="career-card">
+      <!-- Roadmap badge -->
+      <div class="roadmap-badge">Roadmap</div>
+      
+      <!-- Image container -->
+      <div class="card-image ml-engineer"></div>
+      
+      <div class="card-content">
+        <h3>Machine Learning Engineer</h3>
+        <p>Strategic progression from fundamental programming skills to advanced MLOps and system deployment.</p>
+        
+        <div class="specialty-tags">
+          <span class="specialty-tag">Deep Learning</span>
+          <span class="specialty-tag">MLOps</span>
+          <span class="specialty-tag">Deployment</span>
+        </div>
+        
+        <div class="explore-link">
+          View roadmap
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- Data Scientist Card -->
+    <a href="{{ '/roadmaps/data-scientist' | relative_url }}" class="career-card">
+      <!-- Roadmap badge -->
+      <div class="roadmap-badge">Roadmap</div>
+
+      <!-- Image container -->
+      <div class="card-image data-scientist"></div>
+
+      <div class="card-content">
+        <h3>Data Scientist</h3>
+        <p>Comprehensive journey from statistics and SQL to advanced machine learning and causal inference.</p>
+
+        <div class="specialty-tags">
+          <span class="specialty-tag">Statistics</span>
+          <span class="specialty-tag">ML</span>
+          <span class="specialty-tag">Big Data</span>
+        </div>
+
+        <div class="explore-link">
+          View roadmap
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- AI Researcher Card -->
+    <a href="{{ '/roadmaps/ai-researcher' | relative_url }}" class="career-card">
+      <!-- Roadmap badge -->
+      <div class="roadmap-badge">Roadmap</div>
+
+      <!-- Image container -->
+      <div class="card-image ai-researcher"></div>
+
+      <div class="card-content">
+        <h3>AI Researcher</h3>
+        <p>Structured path from mathematical foundations to publishing novel research and architecture design.</p>
+
+        <div class="specialty-tags">
+          <span class="specialty-tag">Math</span>
+          <span class="specialty-tag">Advanced ML</span>
+          <span class="specialty-tag">Research</span>
+        </div>
+
+        <div class="explore-link">
+          View roadmap
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+  </div>
+  
+  <div class="text-center mt-10">
+    <a href="{{ '/roadmaps/' | relative_url }}" class="btn btn-primary">Explore All Roadmaps</a>
+  </div>
+</section>
   
   <!-- RESEARCH SECTION -->
   <section class="mb-20">

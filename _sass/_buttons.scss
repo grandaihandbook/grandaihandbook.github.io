@@ -36,12 +36,12 @@
 
 .btn-primary {
   background: var(--primary-gradient);
-  color: white;
+  color: white !important;
+  /* Adding !important to override any other styles */
   box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
 
   &:hover {
     box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
-    color: white;
     transform: translateY(-2px);
   }
 
