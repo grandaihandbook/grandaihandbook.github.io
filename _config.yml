@@ -4,7 +4,7 @@ description: Your Ultimate AI Knowledge Hub – Handbooks, Research, Roadmaps, a
 baseurl: ""
 url: "https://grandaihandbook.github.io"
 github_username: grandaihandbook
-repository: grandaihandbook/grandaihandbook.github.io
+repository: grandaihandbook.github.io
 
 # Build settings
 markdown: kramdown
