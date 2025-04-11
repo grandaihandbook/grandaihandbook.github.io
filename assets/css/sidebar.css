@@ -265,7 +265,7 @@ body.sidebar-collapsed {
 /* Content area adjustment */
 #content {
   margin-left: var(--sidebar-width);
-  padding: 0 20px;
+  padding: 0 100px;
   padding-top: 0px;
   transition: margin-left var(--transition-speed) ease;
   min-height: 100vh;
