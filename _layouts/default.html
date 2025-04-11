@@ -16,18 +16,18 @@
     />
 
     <!-- CSS files - order matters here -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     <link
       rel="stylesheet"
       href="{{ '/assets/css/sidebar.css' | relative_url }}"
     />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
-    {% if jekyll.environment == "production" %}
+    <!-- {% if jekyll.environment == "production" %}
     <link
       rel="stylesheet"
       href="{{ '/assets/css/syntax.css' | relative_url }}"
     />
-    {% endif %}
+    {% endif %} -->
 
     <!-- Meta tags -->
     <meta
@@ -90,7 +90,7 @@
     <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
 
     {% if jekyll.environment == "production" %}
-    <script src="{{ '/assets/js/interactive.js' | relative_url }}"></script>
+    <!-- <script src="{{ '/assets/js/interactive.js' | relative_url }}"></script> -->
     {% endif %} {% if page.show_toc %}
     <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
     {% endif %}

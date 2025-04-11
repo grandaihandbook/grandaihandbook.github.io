@@ -3,331 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Navigation Bar</title>
-    <style>
-      /* Reset and base styles */
-      *,
-      *::before,
-      *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      :root {
-        --primary-color: #4f46e5; /* More vibrant indigo */
-        --primary-dark: #4338ca;
-        --text-color: #1e293b;
-        --text-light: #64748b;
-        --bg-color: #ffffff;
-        --bg-hover: #f8fafc;
-        --border-color: #e2e8f0;
-        --active-bg: #eff6ff; /* Light blue background */
-        --active-link: #3b82f6; /* Blue for active links */
-        --transition-speed: 0.2s;
-        --sidebar-width: 280px;
-        --sidebar-collapsed-width: 60px;
-        --sidebar-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-          0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      }
-
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        color: var(--text-color);
-        line-height: 1.5;
-        background-color: #f8fafc;
-      }
-
-      /* Main sidebar container */
-      .sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: var(--sidebar-width);
-        height: 100vh;
-        background-color: var(--bg-color);
-        border-right: 1px solid var(--border-color);
-        box-shadow: var(--sidebar-shadow);
-        overflow-y: auto;
-        overscroll-behavior: contain;
-        z-index: 40;
-        transition: transform var(--transition-speed) ease,
-          width var(--transition-speed) ease;
-      }
-
-      /* Adjust for header if present */
-      .sidebar {
-        top: 60px;
-        /* Adjust based on your header height */
-        height: calc(100vh - 60px);
-      }
-
-      /* Collapsed sidebar state */
-      .sidebar.collapsed {
-        width: 0;
-        overflow: hidden;
-        border-right: none;
-        box-shadow: none;
-      }
-
-      .sidebar.collapsed .nav-content,
-      .sidebar.collapsed .sidebar-search {
-        opacity: 0;
-        visibility: hidden;
-      }
-
-      /* Search bar */
-      .sidebar-search {
-        padding: 24px 16px 16px 16px; /* Increased top padding */
-        position: sticky;
-        top: 0;
-        background-color: var(--bg-color);
-        border-bottom: 1px solid var(--border-color);
-        z-index: 10;
-        transition: opacity var(--transition-speed) ease;
-      }
-
-      .search-input {
-        width: 100%;
-        padding: 10px 12px;
-        border: 1px solid var(--border-color);
-        border-radius: 6px;
-        font-size: 14px;
-        background-color: var(--bg-hover);
-        transition: all var(--transition-speed);
-      }
-
-      .search-input:focus {
-        outline: none;
-        border-color: var(--primary-color);
-        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
-      }
-
-      /* Navigation content */
-      .nav-content {
-        padding: 0 0 32px 0;
-        transition: opacity var(--transition-speed) ease;
-      }
-
-      /* Sidebar toggle button - FIXED POSITION */
-      .sidebar-toggle {
-        position: absolute; /* Changed from fixed to absolute */
-        top: 18px; /* Adjusted for better positioning */
-        left: 16px; /* Position it at the left side */
-        z-index: 50;
-        width: 36px;
-        height: 36px;
-        background-color: var(--bg-color);
-        color: var(--primary-color);
-        border: 2px solid var(--primary-color);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: all var(--transition-speed) ease;
-        box-shadow: 0 2px 8px rgba(79, 70, 229, 0.2);
-        font-size: 18px;
-      }
-
-      .sidebar-toggle:hover {
-        background-color: var(--primary-color);
-        color: white;
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
-      }
-
-      .sidebar-toggle:active {
-        transform: translateY(1px);
-      }
-
-      /* Section headers */
-      .section {
-        margin-top: 8px;
-        border-bottom: 1px solid var(--border-color);
-      }
-
-      .section-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 16px;
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--text-color);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        cursor: pointer;
-        transition: color var(--transition-speed);
-        background-color: transparent;
-      }
-
-      .section-header:hover {
-        color: var(--primary-color);
-        background-color: var(--bg-hover);
-      }
-
-      /* Chevron indicator */
-      .chevron {
-        font-size: 12px;
-        transition: transform 0.3s ease;
-      }
-
-      .chevron.expanded {
-        transform: rotate(0deg); /* Reset to 0 degrees when expanded */
-      }
-
-      /* Section content */
-      .section-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
-      }
-
-      .section-content.expanded {
-        max-height: 2000px;
-        transition: max-height 0.5s cubic-bezier(0.5, 0, 1, 0);
-      }
-
-      /* Navigation links */
-      .nav-link {
-        display: block;
-        padding: 8px 16px 8px 24px;
-        color: var(--text-color);
-        text-decoration: none;
-        font-size: 14px;
-        transition: all var(--transition-speed);
-        border-left: 2px solid transparent;
-      }
-
-      .nav-link:hover {
-        color: var(--active-link);
-        background-color: var(--active-bg);
-      }
-
-      .nav-link.active {
-        color: var(--active-link);
-        background-color: var(--active-bg);
-        font-weight: 500;
-        border-left-color: var(--active-link);
-      }
-
-      /* Subsection links */
-      .subsection {
-        margin-left: 12px;
-      }
-
-      .subsection .nav-link {
-        padding-left: 36px;
-      }
-
-      .subsection .subsection .nav-link {
-        padding-left: 48px;
-      }
-
-      /* Overlay for mobile */
-      .sidebar-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 30;
-        opacity: 0;
-        transition: opacity var(--transition-speed);
-      }
-
-      /* Mobile toggle button */
-      .mobile-toggle {
-        display: none;
-        position: fixed;
-        top: 16px;
-        left: 16px;
-        z-index: 60;
-        background-color: var(--primary-color);
-        color: white;
-        border: none;
-        border-radius: 4px;
-        padding: 8px 12px;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        .sidebar {
-          transform: translateX(-100%);
-        }
-
-        .sidebar.open {
-          transform: translateX(0);
-        }
-
-        .sidebar-overlay.visible {
-          display: block;
-          opacity: 1;
-        }
-
-        .mobile-toggle {
-          display: block;
-        }
-
-        .content {
-          margin-left: 0;
-          padding-top: 64px;
-        }
-      }
-
-      /* Main content area */
-      .content {
-        margin-left: var(--sidebar-width);
-        padding: 20px;
-        transition: margin-left var(--transition-speed);
-      }
-
-      /* Add title bar styles for the toggle placement */
-      .title-bar-content {
-        display: flex;
-        align-items: center;
-        padding: 0 16px;
-        height: 60px;
-      }
-
-      .logo {
-        display: flex;
-        align-items: center;
-        margin-left: 40px; /* Space for the toggle button */
-      }
-
-      /* Added for better appearance */
-      .site-title {
-        color: var(--primary-color);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 18px;
-      }
-
-      /* Additional styles for nested items */
-      .nested-item {
-        margin-bottom: 5px;
-      }
-
-      .nested-subsection {
-        margin-left: 15px;
-      }
-
-      /* Style to visually distinguish the nested section headers */
-      .nested-subsection .section-header {
-        background-color: #f8f8f8;
-        font-size: 0.9em;
-      }
-    </style>
+    <link rel="stylesheet" href="../assets/css/sidebar.css" />
+    <title>The Grand AI Handbook</title>
   </head>
   <body>
-    <!-- Title bar with properly positioned toggle -->
     <div id="title-bar">
       <div class="title-bar-content">
         <button
@@ -366,12 +45,9 @@
       </div>
     </div>
 
-    <!-- Mobile menu toggle button -->
     <button class="mobile-toggle" id="mobile-toggle">Menu</button>
 
-    <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
-      <!-- Search bar -->
       <div class="sidebar-search">
         <input
           type="text"
@@ -381,9 +57,7 @@
         />
       </div>
 
-      <!-- Navigation content -->
       <div class="nav-content">
-        <!-- Get Started Section -->
         <div class="section">
           <div class="section-header" onclick="toggleSection('getstarted')">
             <span>Get Started</span>
@@ -396,7 +70,6 @@
           </div>
         </div>
 
-        <!-- AI Handbooks Section -->
         <div class="section">
           <div class="section-header" onclick="toggleSection('handbooks')">
             <span>AI Handbooks</span>
@@ -411,7 +84,6 @@
                 <span class="chevron" id="top-ai-chevron">▶</span>
               </div>
               <div class="section-content" id="top-ai-content">
-                <!-- Genai with direct subsections -->
                 <div class="subsection">
                   <div class="section-header" onclick="toggleSection('genai')">
                     <span>Generative AI</span>
@@ -574,64 +246,6 @@
             </div>
 
             <div class="subsection">
-              <div class="section-header" onclick="toggleSection('core-ai')">
-                <span>Core AI Fields</span>
-                <span class="chevron" id="core-ai-chevron">▶</span>
-              </div>
-              <div class="section-content" id="core-ai-content">
-                <a href="/content/handbooks/machine-learning/" class="nav-link"
-                  >Machine Learning</a
-                >
-                <a href="/content/handbooks/deep-learning/" class="nav-link"
-                  >Deep Learning</a
-                >
-                <a href="/content/handbooks/foundation-models/" class="nav-link"
-                  >Foundation Models</a
-                >
-                <a
-                  href="/content/handbooks/large-language-models/"
-                  class="nav-link"
-                  >Large Language Models</a
-                >
-                <a href="/content/handbooks/mlops/" class="nav-link">MLOps</a>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <div class="section-header" onclick="toggleSection('ai-domains')">
-                <span>AI Domains</span>
-                <span class="chevron" id="ai-domains-chevron">▶</span>
-              </div>
-              <div class="section-content" id="ai-domains-content">
-                <a href="/content/handbooks/explainable-ai/" class="nav-link"
-                  >Explainable AI (XAI)</a
-                >
-                <a
-                  href="/content/handbooks/federated-learning/"
-                  class="nav-link"
-                  >Federated Learning</a
-                >
-                <a href="/content/handbooks/multimodal-ai/" class="nav-link"
-                  >Multimodal AI</a
-                >
-                <a
-                  href="/content/handbooks/recommender-systems/"
-                  class="nav-link"
-                  >Recommender Systems</a
-                >
-                <a href="/content/handbooks/robotics-ai/" class="nav-link"
-                  >Robotics & AI</a
-                >
-                <a href="/content/handbooks/self-driving-cars/" class="nav-link"
-                  >Self-Driving Cars</a
-                >
-                <a href="/content/handbooks/speech-processing/" class="nav-link"
-                  >Speech Processing</a
-                >
-              </div>
-            </div>
-
-            <div class="subsection">
               <div
                 class="section-header"
                 onclick="toggleSection('specialized-ai')"
@@ -666,7 +280,6 @@
                 >
               </div>
             </div>
-
             <div class="subsection">
               <div class="section-header" onclick="toggleSection('applied-ai')">
                 <span>Applied AI & Ethics</span>
@@ -690,10 +303,28 @@
                 >
               </div>
             </div>
+            <div class="subsection">
+              <div class="section-header" onclick="toggleSection('ai-domains')">
+                <span>AI Domains</span>
+                <span class="chevron" id="ai-domains-chevron">▶</span>
+              </div>
+              <div class="section-content" id="ai-domains-content">
+                <a href="/content/handbooks/explainable-ai/" class="nav-link"
+                  >Explainable AI (XAI)</a
+                >
+                <a
+                  href="/content/handbooks/federated-learning/"
+                  class="nav-link"
+                  >Federated Learning</a
+                >
+                <a href="/content/handbooks/multimodal-ai/" class="nav-link"
+                  >Multimodal AI</a
+                >
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Career Paths Section -->
         <div class="section">
           <div class="section-header" onclick="toggleSection('career')">
             <span>Career Paths</span>
@@ -715,7 +346,6 @@
           </div>
         </div>
 
-        <!-- Research Section -->
         <div class="section">
           <div class="section-header" onclick="toggleSection('research')">
             <span>Research & Insights</span>
@@ -731,7 +361,6 @@
           </div>
         </div>
 
-        <!-- Resources Section -->
         <div class="section">
           <div class="section-header" onclick="toggleSection('resources')">
             <span>Resources</span>
@@ -746,19 +375,6 @@
           </div>
         </div>
 
-        <!-- Community Section -->
-        <div class="section">
-          <div class="section-header" onclick="toggleSection('community')">
-            <span>Community</span>
-            <span class="chevron" id="community-chevron">▶</span>
-          </div>
-          <div class="section-content" id="community-content">
-            <a href="/content/events/" class="nav-link">Events & Conferences</a>
-            <a href="/content/contribute/" class="nav-link">Contribute</a>
-          </div>
-        </div>
-
-        <!-- About Section -->
         <div class="section">
           <div class="section-header" onclick="toggleSection('about')">
             <span>About</span>
@@ -776,280 +392,11 @@
             >
           </div>
         </div>
-
-        <div class="section">
-          <div class="section-header" onclick="toggleSection('api')">
-            <span>API</span>
-            <span class="chevron" id="api-chevron">▶</span>
-          </div>
-          <div class="section-content" id="api-content">
-            <a href="/api/overview" class="nav-link">API Overview</a>
-            <a href="/api/authentication" class="nav-link">Authentication</a>
-
-            <div class="subsection">
-              <div class="section-header" onclick="toggleSection('models')">
-                <span>Models</span>
-                <span class="chevron" id="models-chevron">▶</span>
-              </div>
-              <div class="section-content" id="models-content">
-                <a href="/api/models/text" class="nav-link">Text Models</a>
-                <a href="/api/models/vision" class="nav-link">Vision Models</a>
-                <a href="/api/models/audio" class="nav-link">Audio Models</a>
-                <a href="/api/models/video" class="nav-link">Video Models</a>
-                <a href="/api/models/multimodal" class="nav-link"
-                  >Multimodal Models</a
-                >
-              </div>
-            </div>
-
-            <a href="/api/endpoints" class="nav-link">Endpoints</a>
-            <a href="/api/rate-limits" class="nav-link">Rate Limits</a>
-            <a href="/api/errors" class="nav-link">Error Handling</a>
-          </div>
-        </div>
       </div>
     </aside>
 
-    <!-- Overlay for mobile -->
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-    <script>
-      /**
-       * Sidebar Navigation Functionality
-       */
-
-      // Function to toggle section expansion
-      // Function to toggle section expansion
-      function toggleSection(sectionId) {
-        var content = document.getElementById(sectionId + "-content");
-        var chevron = document.getElementById(sectionId + "-chevron");
-
-        if (content) {
-          content.classList.toggle("expanded");
-        }
-
-        if (chevron) {
-          chevron.textContent = content.classList.contains("expanded")
-            ? "▼"
-            : "▶";
-          chevron.classList.toggle("expanded");
-        }
-      }
-
-      // Set active link based on current URL
-      function setActiveLinkByURL() {
-        // Get current path
-        var currentPath = window.location.pathname;
-
-        // Find all navigation links
-        var navLinks = document.querySelectorAll(".nav-link");
-
-        // Variable to track if we found an exact match
-        var exactMatchFound = false;
-
-        // First pass: look for exact matches
-        navLinks.forEach(function (link) {
-          var linkPath = link.getAttribute("href");
-
-          // If href matches current path exactly, add active class
-          if (linkPath === currentPath) {
-            link.classList.add("active");
-            exactMatchFound = true;
-
-            // Expand the parent section
-            expandParentSection(link);
-          }
-        });
-
-        // Second pass: if no exact match was found, look for partial matches
-        // This handles cases like being on a sub-page
-        if (!exactMatchFound) {
-          navLinks.forEach(function (link) {
-            var linkPath = link.getAttribute("href");
-
-            // Check if the current URL starts with the link path and the link path is not just "/"
-            // This ensures we don't match the home page for every URL
-            if (linkPath !== "/" && currentPath.startsWith(linkPath)) {
-              link.classList.add("active");
-
-              // Expand the parent section
-              expandParentSection(link);
-            }
-          });
-        }
-      }
-
-      // Initialize sidebar toggle and mobile menu
-      document.addEventListener("DOMContentLoaded", function () {
-        var sidebarToggle = document.getElementById("sidebar-toggle");
-        var mobileToggle = document.getElementById("mobile-toggle");
-        var sidebar = document.getElementById("sidebar");
-        var overlay = document.getElementById("sidebar-overlay");
-
-        // Add click event to all nav links to set active state
-        var navLinks = document.querySelectorAll(".nav-link");
-        navLinks.forEach(function (link) {
-          link.addEventListener("click", function (e) {
-            // Remove active class from all links
-            navLinks.forEach(function (innerLink) {
-              innerLink.classList.remove("active");
-            });
-
-            // Add active class to clicked link
-            this.classList.add("active");
-
-            // Make sure parent section is expanded
-            var sectionContent = this.closest(".section-content");
-            if (sectionContent) {
-              sectionContent.classList.add("expanded");
-              var sectionId = sectionContent.id.replace("-content", "");
-              var chevron = document.getElementById(sectionId + "-chevron");
-              if (chevron) {
-                chevron.classList.add("expanded");
-                chevron.textContent = "▼";
-              }
-            }
-          });
-        });
-
-        // Toggle sidebar on sidebar toggle button click
-        if (sidebarToggle && sidebar) {
-          sidebarToggle.addEventListener("click", function () {
-            sidebar.classList.toggle("collapsed");
-
-            // Change the toggle button icon based on sidebar state
-            if (sidebar.classList.contains("collapsed")) {
-              sidebarToggle.innerHTML = `
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-        `;
-            } else {
-              sidebarToggle.innerHTML = `
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        `;
-            }
-
-            // Adjust content margin when sidebar is collapsed
-            if (sidebar.classList.contains("collapsed")) {
-              document.body.style.marginLeft = "0";
-            } else {
-              document.body.style.marginLeft = "var(--sidebar-width)";
-            }
-          });
-        }
-
-        // Toggle sidebar on mobile menu button click
-        if (mobileToggle && sidebar && overlay) {
-          mobileToggle.addEventListener("click", function () {
-            sidebar.classList.toggle("open");
-            overlay.classList.toggle("visible");
-          });
-        }
-
-        // Close sidebar when clicking overlay
-        if (overlay && sidebar) {
-          overlay.addEventListener("click", function () {
-            sidebar.classList.remove("open");
-            overlay.classList.remove("visible");
-          });
-        }
-
-        // Call the function to set active link based on URL
-        setActiveLinkByURL();
-
-        // Initialize search functionality
-        var searchInput = document.querySelector(".search-input");
-        if (searchInput) {
-          searchInput.addEventListener("input", function (e) {
-            var searchTerm = e.target.value.toLowerCase();
-
-            if (searchTerm.length > 1) {
-              performSearch(searchTerm);
-            } else {
-              // Reset search results
-              resetSearch();
-            }
-          });
-        }
-      });
-
-      // Function to perform search
-      function performSearch(searchTerm) {
-        var navLinks = document.querySelectorAll(".nav-link");
-        var hasResults = false;
-
-        // Loop through all nav links
-        navLinks.forEach(function (link) {
-          var linkText = link.textContent.toLowerCase();
-          var sectionContent = link.closest(".section-content");
-
-          if (linkText.includes(searchTerm)) {
-            // Show matching links
-            link.style.display = "block";
-            link.classList.add("search-result");
-            hasResults = true;
-
-            // Expand parent sections
-            if (sectionContent) {
-              sectionContent.classList.add("expanded");
-
-              // Rotate chevron
-              var sectionId = sectionContent.id.replace("-content", "");
-              var chevron = document.getElementById(sectionId + "-chevron");
-              if (chevron) {
-                chevron.textContent = "▼";
-                chevron.classList.add("expanded");
-              }
-            }
-          } else {
-            // Hide non-matching links
-            link.style.display = "none";
-            link.classList.remove("search-result");
-          }
-        });
-
-        // Handle no results
-        if (!hasResults) {
-          // Optional: Show a no results message
-          console.log("No results found for: " + searchTerm);
-        }
-      }
-
-      // Function to reset search
-      function resetSearch() {
-        var navLinks = document.querySelectorAll(".nav-link");
-
-        // Show all links
-        navLinks.forEach(function (link) {
-          link.style.display = "block";
-          link.classList.remove("search-result");
-        });
-
-        // Return sections to their default state
-        // This maintains expanded state for sections with active links
-        var sections = document.querySelectorAll(".section-content");
-        sections.forEach(function (section) {
-          if (
-            !section.querySelector(".nav-link.active") &&
-            !section.classList.contains("permanently-expanded")
-          ) {
-            section.classList.remove("expanded");
-
-            var sectionId = section.id.replace("-content", "");
-            var chevron = document.getElementById(sectionId + "-chevron");
-            if (chevron) {
-              chevron.textContent = "▶";
-              chevron.classList.remove("expanded");
-            }
-          }
-        });
-      }
-    </script>
+    <script src="../assets/js/sidebar.js"></script>
   </body>
 </html>
