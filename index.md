@@ -21,8 +21,8 @@ hide_title: true
     <p class="hero-text">Your definitive guide to artificial intelligence — From foundational concepts to cutting-edge innovations</p>
     
     <div class="hero-buttons">
-      <a href="{{ '/handbooks/' | relative_url }}" class="button-primary">Explore Handbooks</a>
-      <a href="{{ '/roadmaps/' | relative_url }}" class="button-secondary">View Career Paths</a>
+      <a href="{{ '/content/handbooks/' | relative_url }}" class="button-primary">Explore Handbooks</a>
+      <a href="{{ '/content/roadmaps/' | relative_url }}" class="button-secondary">View Career Paths</a>
     </div>
   </div>
 </section>
@@ -166,7 +166,7 @@ hide_title: true
   </div>
   
   <div class="text-center mt-10">
-    <a href="{{ '/handbooks/' | relative_url }}" class="btn btn-primary">View All Handbooks</a>
+    <a href="{{ '/content/handbooks/' | relative_url }}" class="btn btn-primary">View All Handbooks</a>
   </div>
 </section>
   
