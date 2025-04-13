@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "Evaluation and Benchmarking"
 description: "A breakdown of Atari, MuJoCo, and sim-to-real tests to measure RL performance."
 ---
 

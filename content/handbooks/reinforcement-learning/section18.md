@@ -1,7 +1,7 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
-description: "An exploration of MDPs, dynamic programming, and Q-learning, igniting the spark for agents that learn by interacting with their world."
+title: "Glossary"
+# description: "An exploration of MDPs, dynamic programming, and Q-learning, igniting the spark for agents that learn by interacting with their world."
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">

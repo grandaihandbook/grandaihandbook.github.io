@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "RL with Human Interaction"
 description: "An outline of RLHF and safe RL methods to create agents that align with human needs."
 ---
 

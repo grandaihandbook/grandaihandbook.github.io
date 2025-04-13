@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "RL for Sequential and Structured Tasks"
 description: "A connection of RL to NLP, vision, and graphs for tackling structured decision-making."
 ---
 

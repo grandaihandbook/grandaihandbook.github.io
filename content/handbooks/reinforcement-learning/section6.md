@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "Multi-Agent and Game-Theoretic RL"
 description: "A study of QMIX and zero-sum games, where multiple agents interact in cooperative or competitive settings."
 ---
 

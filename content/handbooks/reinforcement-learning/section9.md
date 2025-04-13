@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "Transformers in RL"
 description: "An introduction to Decision Transformer, Gato, and RT-1, using sequence modeling for RL tasks."
 ---
 

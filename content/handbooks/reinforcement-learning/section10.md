@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "Alignment and Reasoning with Transformers"
 description: "A review of DPO, PPO, and GRPO for aligning transformers to reason and act responsibly."
 ---
 

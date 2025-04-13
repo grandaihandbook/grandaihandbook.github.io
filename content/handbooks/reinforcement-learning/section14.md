@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "Applications of RL"
 description: "A summary of RL’s impact in robotics, games, finance, and healthcare solutions."
 ---
 

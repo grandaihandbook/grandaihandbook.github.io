@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "Deployment, Ethics, and Future Directions"
 description: "A discussion of RL deployment, ethical concerns like reward hacking, and next steps like neurosymbolic RL."
 ---
 

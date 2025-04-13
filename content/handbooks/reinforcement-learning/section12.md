@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "Scalability and Efficiency in RL"
 description: "An analysis of IMPALA and HER to make RL faster and more efficient at scale.."
 ---
 

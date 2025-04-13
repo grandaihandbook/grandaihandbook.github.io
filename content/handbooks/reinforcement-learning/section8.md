@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " Core Concepts of Reinforcement Learning"
+title: "Exploration and Representation Learning in RL"
 description: "A focus on RND and ICM to drive exploration and improve how agents understand environments."
 ---
 
