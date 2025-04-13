@@ -25,7 +25,7 @@ handbooks:
   - title: "Computer Vision"
     url: /content/handbooks/computer-vision/
   - title: "Reinforcement Learning"
-    url: /handbooks/reinforcement-learning/
+    url: /content//handbooks/reinforcement-learning/
 
   # Core AI Fields
   - title: "Machine Learning"

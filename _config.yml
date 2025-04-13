@@ -27,6 +27,15 @@ collections:
   handbooks:
     output: true
     permalink: /content/handbooks/:path/
+  generative-ai:
+    output: true
+    permalink: /content/handbooks/generative-ai/:path/
+  computer-vision:
+    output: true
+    permalink: /content/handbooks/computer-vision/:path/
+  reinforcement-learning:
+    output: true
+    permalink: /content/handbooks/reinforcement-learning/:path/
   research:
     output: true
     permalink: /research/:path/
@@ -51,12 +60,6 @@ collections:
   about:
     output: true
     permalink: /content/about/:path/
-  generative-ai:
-    output: true
-    permalink: /content/handbooks/generative-ai/:path/ # Changed from /content/handbooks/:path/
-  computer-vision:
-    output: true
-    permalink: /content/handbooks/computer-vision/:path/
 
 # Defaults
 defaults:

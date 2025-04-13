@@ -225,7 +225,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
           <span class="badge badge-red">PPO</span>
           <span class="badge badge-red">SAC</span>
         </div>
-        <a href="/handbooks/reinforcement-learning/" class="btn btn-primary text-left">Explore Handbook</a>
+        <a href="/content/handbooks/reinforcement-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
     
