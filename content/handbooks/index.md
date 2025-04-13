@@ -34,6 +34,16 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
     background-color: #ffe6e6;
     color: #cf0000;
   }
+
+  .badge-purple {
+    background-color: #ffe6e6;
+    color: #7E3FF2;
+  }
+
+  .badge-orange {
+    background-color: #ffe6e6;
+    color: #FF7A00;
+  }
   
   /* Reduce card size */
   .handbook-card {
@@ -150,6 +160,8 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
 <div class="container mx-auto px-4" style="max-width: 1300px;">
   <div class="grid md:grid-cols-3 gap-3">
     <!-- Card 1: Generative AI -->
+    <!-- <div class="handbook-container"> -->
+    <!-- Already existing cards -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image generative-ai" style="height: 160px;">
         <div class="category-badge">Generative AI</div>
@@ -160,6 +172,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-blue">Transformers</span>
           <span class="badge badge-blue">Diffusion</span>
+          <span class="badge badge-blue">GANs</span>
         </div>
         <a href="/content/handbooks/generative-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -176,6 +189,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-green">BERT</span>
           <span class="badge badge-green">GPT</span>
+          <span class="badge badge-green">T5</span>
         </div>
         <a href="/handbooks/nlp/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -192,6 +206,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-yellow">CNNs</span>
           <span class="badge badge-yellow">ViT</span>
+          <span class="badge badge-yellow">YOLO</span>
         </div>
         <a href="/content/handbooks/computer-vision/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -208,6 +223,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-red">DQN</span>
           <span class="badge badge-red">PPO</span>
+          <span class="badge badge-red">SAC</span>
         </div>
         <a href="/handbooks/reinforcement-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -224,6 +240,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-blue">Supervised</span>
           <span class="badge badge-blue">Unsupervised</span>
+          <span class="badge badge-blue">Semi-supervised</span>
         </div>
         <a href="/handbooks/machine-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -240,6 +257,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-blue">Neural Networks</span>
           <span class="badge badge-blue">Backprop</span>
+          <span class="badge badge-blue">Activation Functions</span>
         </div>
         <a href="/handbooks/deep-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -256,6 +274,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-blue">Transfer Learning</span>
           <span class="badge badge-blue">Fine-tuning</span>
+          <span class="badge badge-blue">Scaling Laws</span>
         </div>
         <a href="/handbooks/foundation-models/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -272,6 +291,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-blue">Transformers</span>
           <span class="badge badge-blue">Attention</span>
+          <span class="badge badge-blue">RLHF</span>
         </div>
         <a href="/handbooks/large-language-models/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -288,6 +308,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-blue">Deployment</span>
           <span class="badge badge-blue">Monitoring</span>
+          <span class="badge badge-blue">Versioning</span>
         </div>
         <a href="/handbooks/mlops/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
@@ -304,12 +325,307 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <div class="mb-2">
           <span class="badge badge-green">LIME</span>
           <span class="badge badge-green">SHAP</span>
+          <span class="badge badge-green">Feature Importance</span>
         </div>
         <a href="/handbooks/explainable-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
+    
+    <!-- New cards - AI Domains Section -->
+    
+    <!-- Card 11: Federated Learning -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image federated-learning" style="height: 160px;">
+        <div class="category-badge">AI Domains</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Federated Learning</h3>
+        <p class="mb-2 text-sm">Training models across decentralized devices while preserving privacy.</p>
+        <div class="mb-2">
+          <span class="badge badge-green">Privacy</span>
+          <span class="badge badge-green">Distributed</span>
+          <span class="badge badge-green">Encryption</span>
+        </div>
+        <a href="/handbooks/federated-learning/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 12: Multimodal AI -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image multimodal-ai" style="height: 160px;">
+        <div class="category-badge">AI Domains</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Multimodal AI</h3>
+        <p class="mb-2 text-sm">Systems that process and connect multiple types of data inputs.</p>
+        <div class="mb-2">
+          <span class="badge badge-green">Vision-Language</span>
+          <span class="badge badge-green">CLIP</span>
+          <span class="badge badge-green">Multimodal Fusion</span>
+        </div>
+        <a href="/handbooks/multimodal-ai/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 13: Recommender Systems -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image recommender-systems" style="height: 160px;">
+        <div class="category-badge">AI Domains</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Recommender Systems</h3>
+        <p class="mb-2 text-sm">AI systems that suggest relevant items to users.</p>
+        <div class="mb-2">
+          <span class="badge badge-green">Collaborative Filtering</span>
+          <span class="badge badge-green">Content-Based</span>
+          <span class="badge badge-green">Matrix Factorization</span>
+        </div>
+        <a href="/handbooks/recommender-systems/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 14: Robotics & AI -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image robotics-ai" style="height: 160px;">
+        <div class="category-badge">AI Domains</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Robotics & AI</h3>
+        <p class="mb-2 text-sm">How AI systems power and control physical robots.</p>
+        <div class="mb-2">
+          <span class="badge badge-green">Control</span>
+          <span class="badge badge-green">Perception</span>
+          <span class="badge badge-green">Manipulation</span>
+        </div>
+        <a href="/handbooks/robotics-ai/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 15: Self-Driving Cars -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image self-driving-cars" style="height: 160px;">
+        <div class="category-badge">AI Domains</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Self-Driving Cars</h3>
+        <p class="mb-2 text-sm">AI technologies enabling autonomous vehicle navigation.</p>
+        <div class="mb-2">
+          <span class="badge badge-green">Computer Vision</span>
+          <span class="badge badge-green">Decision Making</span>
+          <span class="badge badge-green">Path Planning</span>
+        </div>
+        <a href="/handbooks/self-driving-cars/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 16: Audio AI -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image audio-ai" style="height: 160px;">
+        <div class="category-badge">AI Domains</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Audio AI</h3>
+        <p class="mb-2 text-sm">AI systems for speech recognition, audio generation and processing.</p>
+        <div class="mb-2">
+          <span class="badge badge-green">Speech Recognition</span>
+          <span class="badge badge-green">Audio Synthesis</span>
+          <span class="badge badge-green">Acoustic Models</span>
+        </div>
+        <a href="/handbooks/audio-ai/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Specialized AI Techniques Section -->
+    
+    <!-- Card 17: Bayesian Machine Learning -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image bayesian-ml" style="height: 160px;">
+        <div class="category-badge">Specialized AI Techniques</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Bayesian Machine Learning</h3>
+        <p class="mb-2 text-sm">Probabilistic approaches to ML using Bayesian inference.</p>
+        <div class="mb-2">
+          <span class="badge badge-purple">Probability</span>
+          <span class="badge badge-purple">Uncertainty</span>
+          <span class="badge badge-purple">MCMC</span>
+        </div>
+        <a href="/handbooks/bayesian-ml/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 18: Efficient AI & Optimization -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image efficient-ai" style="height: 160px;">
+        <div class="category-badge">Specialized AI Techniques</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Efficient AI & Optimization</h3>
+        <p class="mb-2 text-sm">Techniques to make AI systems faster and more resource-efficient.</p>
+        <div class="mb-2">
+          <span class="badge badge-purple">Quantization</span>
+          <span class="badge badge-purple">Pruning</span>
+          <span class="badge badge-purple">Knowledge Distillation</span>
+        </div>
+        <a href="/handbooks/efficient-ai/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 19: Graph Neural Networks -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image graph-neural-networks" style="height: 160px;">
+        <div class="category-badge">Specialized AI Techniques</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Graph Neural Networks</h3>
+        <p class="mb-2 text-sm">Neural networks designed to work with graph-structured data.</p>
+        <div class="mb-2">
+          <span class="badge badge-purple">GCN</span>
+          <span class="badge badge-purple">Graph Embeddings</span>
+          <span class="badge badge-purple">Message Passing</span>
+        </div>
+        <a href="/handbooks/graph-neural-networks/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 20: Representation Learning -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image representation-learning" style="height: 160px;">
+        <div class="category-badge">Specialized AI Techniques</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Representation Learning</h3>
+        <p class="mb-2 text-sm">Methods for learning useful data representations without supervision.</p>
+        <div class="mb-2">
+          <span class="badge badge-purple">Embeddings</span>
+          <span class="badge badge-purple">Feature Learning</span>
+          <span class="badge badge-purple">Latent Space</span>
+        </div>
+        <a href="/handbooks/representation-learning/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 21: Self-Supervised Learning -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image self-supervised-learning" style="height: 160px;">
+        <div class="category-badge">Specialized AI Techniques</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Self-Supervised Learning</h3>
+        <p class="mb-2 text-sm">Learning from unlabeled data using automatically generated supervision.</p>
+        <div class="mb-2">
+          <span class="badge badge-purple">Contrastive Learning</span>
+          <span class="badge badge-purple">Masking</span>
+          <span class="badge badge-purple">SimCLR</span>
+        </div>
+        <a href="/handbooks/self-supervised-learning/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 22: Time Series Forecasting -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image time-series" style="height: 160px;">
+        <div class="category-badge">Specialized AI Techniques</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Time Series Forecasting</h3>
+        <p class="mb-2 text-sm">AI methods for predicting future values based on past observations.</p>
+        <div class="mb-2">
+          <span class="badge badge-purple">ARIMA</span>
+          <span class="badge badge-purple">Prophet</span>
+          <span class="badge badge-purple">LSTM</span>
+        </div>
+        <a href="/handbooks/time-series/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Applied AI & Ethics Section -->
+    
+    <!-- Card 23: AI Ethics & Fairness -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image ai-ethics" style="height: 160px;">
+        <div class="category-badge">Applied AI & Ethics</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">AI Ethics & Fairness</h3>
+        <p class="mb-2 text-sm">Ensuring AI systems are fair, accountable, and transparent.</p>
+        <div class="mb-2">
+          <span class="badge badge-orange">Bias</span>
+          <span class="badge badge-orange">Governance</span>
+          <span class="badge badge-orange">Transparency</span>
+        </div>
+        <a href="/handbooks/ai-ethics/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 24: AI for Art & Aesthetics -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image ai-art" style="height: 160px;">
+        <div class="category-badge">Applied AI & Ethics</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">AI for Art & Aesthetics</h3>
+        <p class="mb-2 text-sm">How AI systems create and evaluate visual art and design.</p>
+        <div class="mb-2">
+          <span class="badge badge-orange">Creativity</span>
+          <span class="badge badge-orange">Style Transfer</span>
+          <span class="badge badge-orange">Stable Diffusion</span>
+        </div>
+        <a href="/handbooks/ai-art/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 25: AI for Edge & IoT -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image edge-ai" style="height: 160px;">
+        <div class="category-badge">Applied AI & Ethics</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">AI for Edge & IoT</h3>
+        <p class="mb-2 text-sm">Deploying AI on resource-constrained devices and IoT networks.</p>
+        <div class="mb-2">
+          <span class="badge badge-orange">TinyML</span>
+          <span class="badge badge-orange">Embedded</span>
+          <span class="badge badge-orange">Energy Efficiency</span>
+        </div>
+        <a href="/handbooks/edge-ai/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 26: AI in Finance -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image ai-finance" style="height: 160px;">
+        <div class="category-badge">Applied AI & Ethics</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">AI in Finance</h3>
+        <p class="mb-2 text-sm">Applications of AI in financial markets and institutions.</p>
+        <div class="mb-2">
+          <span class="badge badge-orange">Trading</span>
+          <span class="badge badge-orange">Risk</span>
+          <span class="badge badge-orange">Fraud Detection</span>
+        </div>
+        <a href="/handbooks/ai-finance/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+    
+    <!-- Card 27: AI in Healthcare -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image ai-healthcare" style="height: 160px;">
+        <div class="category-badge">Applied AI & Ethics</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">AI in Healthcare</h3>
+        <p class="mb-2 text-sm">How AI is transforming medical diagnosis, treatment, and research.</p>
+        <div class="mb-2">
+          <span class="badge badge-orange">Medical Imaging</span>
+          <span class="badge badge-orange">Diagnostics</span>
+          <span class="badge badge-orange">Genomics</span>
+        </div>
+        <a href="/handbooks/ai-healthcare/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
   </div>
-</div>
 
 <div class="max-w-4xl mx-auto">
     <h2 class="text-2xl font-bold mb-6">How to Use These Handbooks</h2>
