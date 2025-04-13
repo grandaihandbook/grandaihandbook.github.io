@@ -627,44 +627,59 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
     </div>
   </div>
 
-<div class="max-w-4xl mx-auto">
-    <h2 class="text-2xl font-bold mb-6">How to Use These Handbooks</h2>
-    
-    <div class="mb-8">
-      <div class="grid md:grid-cols-3 gap-6 text-center">
-        <div class="p-4 bg-gray-50 rounded-lg">
-          <div class="text-3xl mb-4">1️⃣</div>
-          <h3 class="font-semibold mb-2">Start with Fundamentals</h3>
-          <p>Begin with the introductory sections to build a solid foundation</p>
-        </div>
-        
-        <div class="p-4 bg-gray-50 rounded-lg">
-          <div class="text-3xl mb-4">2️⃣</div>
-          <h3 class="font-semibold mb-2">Explore Techniques</h3>
-          <p>Dive into specific techniques and architectures that interest you</p>
-        </div>
-        
-        <div class="p-4 bg-gray-50 rounded-lg">
-          <div class="text-3xl mb-4">3️⃣</div>
-          <h3 class="font-semibold mb-2">Try Applications</h3>
-          <p>Apply your knowledge to practical use cases and projects</p>
-        </div>
+<div class="container max-w-full mx-auto py-12" style="max-width: 1300px;">
+  <h2 class="features-title mb-8">How to Use These Handbooks</h2>
+  
+  <div class="md:grid-cols-3 grid mb-8">
+    <div class="feature-card">
+      <div class="feature-header">
+        <div class="feature-icon">1️⃣</div>
+        <h3>Start with Fundamentals</h3>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-content">
+        <p>Begin with the introductory sections to build a solid foundation.</p>
       </div>
     </div>
     
-    <div class="banner mb-8">
-      <h3 class="font-semibold mb-2">Coming Soon:</h3>
-      <ul class="list-disc pl-6">
-        <li>Deep Learning Fundamentals Handbook</li>
-        <li>MLOps Handbook</li>
-        <li>AI Ethics and Responsible AI Handbook</li>
-      </ul>
+    <div class="feature-card">
+      <div class="feature-header">
+        <div class="feature-icon">2️⃣</div>
+        <h3>Explore Techniques</h3>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-content">
+        <p>Dive into specific techniques and architectures that interest you.</p>
+      </div>
     </div>
     
-    <div class="text-center">
-      <p class="mb-6">Can't find the handbook you're looking for? Want to contribute to existing ones?</p>
-      <a href="https://github.com/{{ site.github_username }}/{{ site.repository }}/issues/new?assignees=&labels=content+request&template=content_suggestion.md&title=New+Handbook+Suggestion" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        Suggest a New Handbook
-      </a>
+    <div class="feature-card">
+      <div class="feature-header">
+        <div class="feature-icon">3️⃣</div>
+        <h3>Try Applications</h3>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-content">
+        <p>Apply your knowledge to practical use cases and projects.</p>
+      </div>
     </div>
   </div>
+  
+  <div class="handbook-card mb-8">
+    <div class="card-content">
+      <h3>Coming Soon:</h3>
+      <ul class="feature-list">
+        <li class="feature-item"><strong>AI Agents Handbook</strong> - Building autonomous systems for complex tasks</li>
+        <li class="feature-item"><strong>Prompt Engineering Handbook</strong> - Master the art of effective AI communication</li>
+        <li class="feature-item"><strong>Quantum ML Handbook</strong> - Exploring computational advantages of quantum systems</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="text-center">
+    <p class="mb-6">Can't find the handbook you're looking for? Want to contribute to existing ones?</p>
+    <a href="https://github.com/{{ site.github_username }}/{{ site.repository }}/issues/new?assignees=&labels=content+request&template=content_suggestion.md&title=New+Handbook+Suggestion" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      Suggest a New Handbook
+    </a>
+  </div>
+</div>
