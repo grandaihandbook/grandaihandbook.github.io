@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<!-- Add section navigation -->
+<div class="section-navigation">
+  {% if page.previous_section %}
+  <a href="{{ page.previous_section }}" class="prev-section">
+    <span class="nav-arrow">←</span>
+    <span class="nav-text">Previous Section</span>
+  </a>
+  {% else %}
+  <div></div>
+  {% endif %} {% if page.next_section %}
+  <a href="{{ page.next_section }}" class="next-section">
+    <span class="nav-text">Next Section</span>
+    <span class="nav-arrow">→</span>
+  </a>
+  {% endif %}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Add academic-content class to content-body
+    const contentBody = document.querySelector(".content-body");
+    if (contentBody) {
+      contentBody.classList.add("academic-content");
+    }
+  });
+</script>
