@@ -58,7 +58,7 @@
       </div>
 
       <div class="nav-content">
-        <div class="section">
+        <!-- <div class="section">
           <div class="section-header" onclick="toggleSection('getstarted')">
             <span>Get Started</span>
             <span class="chevron" id="getstarted-chevron">▶</span>
@@ -68,7 +68,7 @@
             <a href="/docs/installation" class="nav-link">Installation</a>
             <a href="/docs/quickstart" class="nav-link">Quick Start</a>
           </div>
-        </div>
+        </div> -->
 
         <div class="section">
           <div class="section-header" onclick="toggleSection('handbooks')">
@@ -244,7 +244,62 @@
                 >
               </div>
             </div>
-
+            <div class="subsection">
+              <div class="section-header" onclick="toggleSection('core-ai')">
+                <span>Core AI Fields</span>
+                <span class="chevron" id="core-ai-chevron">▶</span>
+              </div>
+              <div class="section-content" id="core-ai-content">
+                <a href="/content/handbooks/machine-learning/" class="nav-link"
+                  >Machine Learning</a
+                >
+                <a href="/content/handbooks/deep-learning/" class="nav-link"
+                  >Deep Learning</a
+                >
+                <a href="/content/handbooks/foundation-models/" class="nav-link"
+                  >Foundation Models</a
+                >
+                <a
+                  href="/content/handbooks/large-language-models/"
+                  class="nav-link"
+                  >Large Language Models</a
+                >
+                <a href="/content/handbooks/mlops/" class="nav-link">MLOps</a>
+              </div>
+            </div>
+            <div class="subsection">
+              <div class="section-header" onclick="toggleSection('ai-domains')">
+                <span>AI Domains</span>
+                <span class="chevron" id="ai-domains-chevron">▶</span>
+              </div>
+              <div class="section-content" id="ai-domains-content">
+                <a href="/content/handbooks/explainable-ai/" class="nav-link"
+                  >Explainable AI (XAI)</a
+                >
+                <a
+                  href="/content/handbooks/federated-learning/"
+                  class="nav-link"
+                  >Federated Learning</a
+                >
+                <a href="/content/handbooks/multimodal-ai/" class="nav-link"
+                  >Multimodal AI</a
+                >
+                <a
+                  href="/content/handbooks/recommender-systems/"
+                  class="nav-link"
+                  >Recommender Systems</a
+                >
+                <a href="/content/handbooks/robotics-ai/" class="nav-link"
+                  >Robotics & AI</a
+                >
+                <a href="/content/handbooks/self-driving-cars/" class="nav-link"
+                  >Self-Driving Cars</a
+                >
+                <a href="/content/handbooks/audio-ai/" class="nav-link"
+                  >Audio AI</a
+                >
+              </div>
+            </div>
             <div class="subsection">
               <div
                 class="section-header"
@@ -303,25 +358,6 @@
                 >
               </div>
             </div>
-            <div class="subsection">
-              <div class="section-header" onclick="toggleSection('ai-domains')">
-                <span>AI Domains</span>
-                <span class="chevron" id="ai-domains-chevron">▶</span>
-              </div>
-              <div class="section-content" id="ai-domains-content">
-                <a href="/content/handbooks/explainable-ai/" class="nav-link"
-                  >Explainable AI (XAI)</a
-                >
-                <a
-                  href="/content/handbooks/federated-learning/"
-                  class="nav-link"
-                  >Federated Learning</a
-                >
-                <a href="/content/handbooks/multimodal-ai/" class="nav-link"
-                  >Multimodal AI</a
-                >
-              </div>
-            </div>
           </div>
         </div>
 
@@ -341,13 +377,10 @@
                 <span class="chevron" id="ai-spotlight-chevron">▶</span>
               </div>
               <div class="section-content" id="ai-spotlight-content">
-                <a href="/content/handbooks/generative-ai/" class="nav-link"
+                <a href="/content/research/ai-news/" class="nav-link"
                   >AI News</a
                 >
-                <a
-                  href="/content/handbooks/generative-ai/section1/"
-                  class="nav-link"
-                >
+                <a href="/content/research/ai-trends" class="nav-link">
                   AI Trends
                 </a>
               </div>
@@ -359,16 +392,13 @@
                 <span class="chevron" id="research-highlights-chevron">▶</span>
               </div>
               <div class="section-content" id="research-highlights-content">
-                <a href="/content/handbooks/generative-ai/" class="nav-link"
+                <a href="/content/research/breakthroughs/" class="nav-link"
                   >Breakthroughs</a
                 >
-                <a
-                  href="/content/handbooks/generative-ai/section1/"
-                  class="nav-link"
-                >
+                <a href="/content/research/weekly-papers/" class="nav-link">
                   Weekly Papers
                 </a>
-                <a href="/content/handbooks/generative-ai/" class="nav-link"
+                <a href="/content/research/landmark-papers/" class="nav-link"
                   >Landmark Papers</a
                 >
               </div>
@@ -377,16 +407,13 @@
                 <span class="chevron" id="deep-dive-chevron">▶</span>
               </div>
               <div class="section-content" id="deep-dive-content">
-                <a href="/content/handbooks/generative-ai/" class="nav-link"
+                <a href="/content/research/reviews/" class="nav-link"
                   >Reviews and Surveys</a
                 >
-                <a
-                  href="/content/handbooks/generative-ai/section1/"
-                  class="nav-link"
-                >
+                <a href="/content/research/challenges/" class="nav-link">
                   Open Challenges
                 </a>
-                <a href="/content/handbooks/generative-ai/" class="nav-link"
+                <a href="/content/research/reproducibility/" class="nav-link"
                   >Reproducibility
                 </a>
               </div>
