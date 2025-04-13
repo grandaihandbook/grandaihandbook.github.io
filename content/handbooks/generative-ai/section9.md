@@ -64,5 +64,4 @@ Vision Transformers extend the Transformer architecture to domains like image an
   // Navigation variables
   var prevSection = "/content/handbooks/generative-ai/section8.md";
 </script>
-
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
