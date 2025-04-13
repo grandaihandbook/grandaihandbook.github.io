@@ -44,22 +44,9 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
     height: 140px !important;
   }
   
-  /* Reduce space between title and image */
-  .card-content {
-    padding-top: 0.5rem !important;
-  }
-  
-  /* Applied styles from the CSS document */
-  .content-header {
-    text-align: left;
-    max-width: 1000px;
-    margin: 0 auto 0.5rem;
-    padding: 0 2rem;
-    display: block !important;
-  }
-  
+  /* Full-width header styling */
   .content-header h1 {
-    font-size: 2.5rem;
+      font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #1e293b;
     font-family: "Poppins", sans-serif;
@@ -67,34 +54,53 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
     line-height: 1.2;
     letter-spacing: -0.03em;
     text-align: left;
-  }
-  
-  .content-header .description {
-    font-size: 1.25rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    text-align: left;
-  }
-  
-  .header-accent {
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, #4f46e5, #8b5cf6);
-    border-radius: 2px;
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
-    margin-left: 0;
-    margin-right: auto;
-  }
-  
-  /* Banner styling based on the CSS */
+}
+
+.content-header .description {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Add the purple accent line under the title */
+.header-accent {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Make sure we only show one title */
+.content-header:first-of-type {
+  display: block;
+}
+
+.content-header:not(:first-of-type) {
+  display: none;
+}
+
+/* Position the title correctly */
+.content-header {
+  text-align: left;
+    max-width: 1300px;
+    margin: 0 auto 0.5rem;
+    padding: 0 2rem;
+    display: block !important;
+    column-count: 1 !important;
+    column-gap: 0 !important;
+    float: none !important;
+}
+  /* Banner styling - full width */
   .banner {
-    /* background-color: rgba(240, 249, 255, 0.7); */
-    border: 1px solid rgba(12, 74, 110, 0.1);
+    background-color: rgba(79, 70, 229, 0.04);
+    border: 1px solid rgba(79, 70, 229, 0.15);
     border-radius: 0.75rem;
-    padding: 1.25rem 1.25rem;
-    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    margin: 0.5rem 0 2.5rem 0;
     position: relative;
     text-align: left;
   }
@@ -107,24 +113,39 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
   }
   
   .banner strong {
-    /* color: #0284c7; */
     font-weight: 600;
+  }
+  
+  /* Container styling to ensure full width */
+  .container.full-width {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .inner-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .mb-2 {
+    margin-bottom: 1rem;
   }
 </style>
 
-<!-- New content for top of page with updated styling -->
-<div class="container mx-auto px-4">
-  <div class="max-w-4xl mx-auto mb-12">
-    <p class="text-lg mb-6">
-      
-    </p>
-    
+<!-- Full-width content header -->
+<div class="container full-width">
+
+  <!-- Full-width banner -->
+  <div class="inner-container">
     <div class="banner">
       <p>
         <strong>Note:</strong> Our handbooks provide comprehensive, structured knowledge about various domains of artificial intelligence. Each handbook is designed to take you from the fundamentals to advanced concepts with clear explanations, examples, and practical applications.
       </p>
     </div>
   </div>
+</div>
 
 <div class="container mx-auto px-4" style="max-width: 1300px;">
   <div class="grid md:grid-cols-3 gap-3">
@@ -274,7 +295,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
     
     <!-- Card 10: Explainable AI -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
-      <div class="card-image xai" style="height: 160px;">
+      <div class="card-image explainable-ai" style="height: 160px;">
         <div class="category-badge">AI Domains</div>
       </div>
       <div class="card-content p-3 pt-2">
@@ -290,7 +311,6 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
   </div>
 </div>
 
-<!-- New content for bottom of page -->
 <div class="max-w-4xl mx-auto">
     <h2 class="text-2xl font-bold mb-6">How to Use These Handbooks</h2>
     

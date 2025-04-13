@@ -52,8 +52,8 @@ handbooks:
     url: /handbooks/robotics-ai/
   - title: "Self-Driving Cars"
     url: /handbooks/self-driving-cars/
-  - title: "Speech Processing"
-    url: /handbooks/speech-processing/
+  - title: "Audio AI"
+    url: /handbooks/audio-ai/
 
   # Specialized AI Techniques
   - title: "Bayesian Machine Learning"
