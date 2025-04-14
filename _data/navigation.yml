@@ -41,7 +41,7 @@ handbooks:
 
   # AI Domains
   - title: "Explainable AI (XAI)"
-    url: /handbooks/explainable-ai/
+    url: /content/handbooks/explainable-ai/
   - title: "Federated Learning"
     url: /handbooks/federated-learning/
   - title: "Multimodal AI"
