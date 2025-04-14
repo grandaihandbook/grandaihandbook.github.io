@@ -332,7 +332,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
           <span class="badge badge-green">SHAP</span>
           <span class="badge badge-green">Feature Importance</span>
         </div>
-        <a href="/handbooks/explainable-ai/" class="btn btn-primary text-left">Explore Handbook</a>
+        <a href="/content/handbooks/explainable-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
     
