@@ -39,6 +39,9 @@ collections:
   nlp:
     output: true
     permalink: /content/handbooks/nlp/:path/
+  explainable-ai:
+    output: true
+    permalink: /content/handbooks/explainable-ai/:path/
   research:
     output: true
     permalink: /research/:path/
