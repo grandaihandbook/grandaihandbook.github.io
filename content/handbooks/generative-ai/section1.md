@@ -125,4 +125,9 @@ Markov models are also at the heart of many Bayesian methods. See this [tutorial
   var nextSection = "/content/handbooks/generative-ai/section2.md";
 </script>
 
+<script>
+    var prevSection = "/content/handbooks/generative-ai/";
+    window.nextSection = "/content/handbooks/generative-ai/section2/";
+</script>
+
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>

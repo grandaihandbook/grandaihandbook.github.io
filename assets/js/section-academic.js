@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
     sectionNav.classList.add("section-navigation");
 
     // Check if previous/next section variables exist
-    if (typeof prevSection !== "undefined") {
+    if (typeof window.prevSection !== "undefined") {
       const prevLink = document.createElement("a");
-      prevLink.href = prevSection;
+      prevLink.href = window.prevSection;
       prevLink.classList.add("prev-section");
       prevLink.innerHTML =
         '<span class="nav-arrow">←</span><span class="nav-text">Previous Section</span>';
@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
       sectionNav.appendChild(document.createElement("div"));
     }
 
-    if (typeof nextSection !== "undefined") {
+    if (typeof window.nextSection !== "undefined") {
       const nextLink = document.createElement("a");
-      nextLink.href = nextSection;
+      nextLink.href = window.nextSection;
       nextLink.classList.add("next-section");
       nextLink.innerHTML =
         '<span class="nav-text">Next Section</span><span class="nav-arrow">→</span>';

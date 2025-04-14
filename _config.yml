@@ -36,6 +36,9 @@ collections:
   reinforcement-learning:
     output: true
     permalink: /content/handbooks/reinforcement-learning/:path/
+  nlp:
+    output: true
+    permalink: /content/handbooks/nlp/:path/
   research:
     output: true
     permalink: /research/:path/

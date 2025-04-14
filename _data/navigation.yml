@@ -21,7 +21,7 @@ handbooks:
   - title: "Generative AI"
     url: /content/handbooks/generative-ai/
   - title: "NLP"
-    url: /handbooks/nlp/
+    url: /content/handbooks/nlp/
   - title: "Computer Vision"
     url: /content/handbooks/computer-vision/
   - title: "Reinforcement Learning"

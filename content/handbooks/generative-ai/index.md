@@ -117,7 +117,7 @@ description: "A comprehensive exploration of generative AI, from foundational co
 
 <script>
   // Navigation variables - no previous for index
-  var nextSection = "/content/handbooks/generative-ai/section1.md";
+    window.nextSection = "/content/handbooks/generative-ai/section1/";
 </script>
 
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
