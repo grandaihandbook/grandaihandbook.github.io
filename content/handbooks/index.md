@@ -44,6 +44,11 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
     background-color: #ffe6e6;
     color: #FF7A00;
   }
+
+  .badge-magenta {
+    background-color: #ffe6e6;
+    color: #FF00FF
+  }
   
   /* Reduce card size */
   .handbook-card {
@@ -191,7 +196,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
           <span class="badge badge-green">GPT</span>
           <span class="badge badge-green">T5</span>
         </div>
-        <a href="/handbooks/nlp/" class="btn btn-primary text-left">Explore Handbook</a>
+        <a href="/content/handbooks/nlp/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
     
@@ -625,6 +630,58 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/ai-healthcare/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
+
+    <!-- Card: AI Agents -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image ai-agents" style="height: 160px;">
+        <div class="category-badge">Uncategorized</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">AI Agents</h3>
+        <p class="mb-2 text-sm">Exploring autonomous AI systems that can perceive, decide, and act independently.</p>
+        <div class="mb-2">
+          <span class="badge badge-magenta">Reinforcement Learning</span>
+          <span class="badge badge-magenta">Multi-agent Systems</span>
+          <span class="badge badge-magenta">Robotics</span>
+        </div>
+        <a href="/handbooks/ai-agents/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+
+    <!-- Card: Prompt Engineering -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image prompt-engineering" style="height: 160px;">
+        <div class="category-badge">Uncategorized</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Prompt Engineering</h3>
+        <p class="mb-2 text-sm">Mastering the art and science of crafting effective prompts for language models.</p>
+        <div class="mb-2">
+          <span class="badge badge-magenta">Chain-of-Thought</span>
+          <span class="badge badge-magenta">ReAct</span>
+          <span class="badge badge-magenta">LLM Judge</span>
+        </div>
+        <a href="/handbooks/prompt-engineering/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+
+    <!-- Card: Quantum ML -->
+    <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
+      <div class="card-image quantum-ml" style="height: 160px;">
+        <div class="category-badge">Uncategorized</div>
+      </div>
+      <div class="card-content p-3 pt-2">
+        <h3 class="text-lg font-semibold mb-1">Quantum ML</h3>
+        <p class="mb-2 text-sm">The intersection of quantum computing and machine learning algorithms.</p>
+        <div class="mb-2">
+          <span class="badge badge-magenta">Quantum Circuits</span>
+          <span class="badge badge-magenta">Hybrid Algorithms</span>
+          <span class="badge badge-magenta">Quantum Advantage</span>
+        </div>
+        <a href="/handbooks/quantum-ml/" class="btn btn-primary text-left">Explore Handbook</a>
+      </div>
+    </div>
+
   </div>
 
 <div class="container max-w-full mx-auto py-12" style="max-width: 1300px;">
