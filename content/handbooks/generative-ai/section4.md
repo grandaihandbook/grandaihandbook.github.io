@@ -109,9 +109,8 @@ The idea behind model merging is basically to take two different finetunes of th
 </div>
 
 <script>
-  // Navigation variables
-  var prevSection = "/content/handbooks/generative-ai/section3.md";
-  var nextSection = "/content/handbooks/generative-ai/section5.md";
+    window.prevSection = "/content/handbooks/generative-ai/section3/";
+    window.nextSection = "/content/handbooks/generative-ai/section5/";
 </script>
 
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>

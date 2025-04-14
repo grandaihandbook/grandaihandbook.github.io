@@ -110,9 +110,8 @@ Somewhat similar to RWKV and SSMs, HyperAttention is another proposal for achiev
 </div>
 
 <script>
-  // Navigation variables
-  var prevSection = "/content/handbooks/generative-ai/section6.md";
-  var nextSection = "/content/handbooks/generative-ai/section8.md";
+    window.prevSection = "/content/handbooks/generative-ai/section6/";
+    window.nextSection = "/content/handbooks/generative-ai/section8/";
 </script>
 
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>

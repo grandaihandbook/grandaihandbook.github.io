@@ -118,9 +118,8 @@ One of the central ideas behind diffusion models (like StableDiffusion) is itera
 </div>
 
 <script>
-  // Navigation variables
-  var prevSection = "/content/handbooks/generative-ai/section7.md";
-  var nextSection = "/content/handbooks/generative-ai/section9.md";
+    window.prevSection = "/content/handbooks/generative-ai/section7/";
+    window.nextSection = "/content/handbooks/generative-ai/section9/";
 </script>
 
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>

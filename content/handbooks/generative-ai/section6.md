@@ -104,9 +104,8 @@ The primary method used for running LLMs either partially or entirely on CPU (vs
 </div>
 
 <script>
-  // Navigation variables
-  var prevSection = "/content/handbooks/generative-ai/section5.md";
-  var nextSection = "/content/handbooks/generative-ai/section7.md";
+    window.prevSection = "/content/handbooks/generative-ai/section5/";
+    window.nextSection = "/content/handbooks/generative-ai/section7/";
 </script>
 
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>

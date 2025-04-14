@@ -120,13 +120,7 @@ Markov models are also at the heart of many Bayesian methods. See this [tutorial
 </div>
 
 <script>
-  // Navigation variables
-  var prevSection = "/content/handbooks/generative-ai/index.md";
-  var nextSection = "/content/handbooks/generative-ai/section2.md";
-</script>
-
-<script>
-    var prevSection = "/content/handbooks/generative-ai/";
+    window.prevSection = "/content/handbooks/generative-ai/";
     window.nextSection = "/content/handbooks/generative-ai/section2/";
 </script>
 

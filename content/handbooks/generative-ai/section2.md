@@ -99,9 +99,7 @@ Here's a [blog post](https://cameronrwolfe.substack.com/p/decoder-only-transform
 </div>
 
 <script>
-  // Navigation variables
-  var prevSection = "/content/handbooks/generative-ai/section1.md";
-  var nextSection = "/content/handbooks/generative-ai/section3.md";
+    window.prevSection = "/content/handbooks/generative-ai/section1/";
+    window.nextSection = "/content/handbooks/generative-ai/section3/";
 </script>
-
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
