@@ -42,6 +42,9 @@ collections:
   explainable-ai:
     output: true
     permalink: /content/handbooks/explainable-ai/:path/
+  foundation-models:
+    output: true
+    permalink: /content/handbooks/foundation-models/:path/
   research:
     output: true
     permalink: /research/:path/
