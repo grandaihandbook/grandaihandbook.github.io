@@ -6,6 +6,12 @@ description: "A comprehensive exploration of generative AI, from foundational co
 
 <link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
 
+<div class="attribution-notice">
+  <div class="attribution-content">
+    <p>This handbook is inspired by <a href="https://genai-handbook.github.io/">Generative AI Handbook: A Roadmap for Learning Resources</a>. All credit for the original content goes to the <a href="https://github.com/willccbb">William Brown</a>. I've updated certain sections, added additional resources, and restructured some content to enhance the learning experience while preserving the core educational value of the original work.</p>
+  </div>
+</div>
+
 <div class="key-concept">
   <strong>Note:</strong> This handbook is regularly updated to reflect the rapid developments in generative AI. Each section builds upon previous concepts, creating a cohesive learning path from basic principles to advanced applications.
 </div>
