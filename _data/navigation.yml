@@ -20,8 +20,8 @@ handbooks:
   # Top 4
   - title: "Generative AI"
     url: /content/handbooks/generative-ai/
-  - title: "NLP"
-    url: /content/handbooks/nlp/
+  - title: "Foundation Models"
+    url: /content/handbooks/foundation-models/
   - title: "Computer Vision"
     url: /content/handbooks/computer-vision/
   - title: "Reinforcement Learning"
@@ -32,8 +32,8 @@ handbooks:
     url: /handbooks/machine-learning/
   - title: "Deep Learning"
     url: /handbooks/deep-learning/
-  - title: "Foundation Models"
-    url: /handbooks/foundation-models/
+  - title: "NLP"
+    url: /content/handbooks/nlp/
   - title: "Large Language Models"
     url: /handbooks/large-language-models/
   - title: "MLOps"
