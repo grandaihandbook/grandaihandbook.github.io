@@ -133,7 +133,7 @@ hide_title: true
         <div class="category-badge">{{ handbook.category | default: "Handbook" }}</div>
         
         <!-- Image container with floating icon on hover -->
-        <div class="card-image {% if handbook.title == 'Generative AI' %}generative-ai{% elsif handbook.title == 'NLP' %}nlp{% elsif handbook.title == 'Computer Vision' %}computer-vision{% elsif handbook.title == 'Reinforcement Learning' %}reinforcement-learning{% else %}default{% endif %}">
+        <div class="card-image {% if handbook.title == 'Generative AI' %}generative-ai{% elsif handbook.title == 'Foundation Models' %}foundation-models{% elsif handbook.title == 'Computer Vision' %}computer-vision{% elsif handbook.title == 'Reinforcement Learning' %}reinforcement-learning{% else %}default{% endif %}">
           
         </div>
         
@@ -143,8 +143,8 @@ hide_title: true
           <p>
             {% case handbook.title %}
               {% when "Generative AI" %}
-                Master transformer architectures, diffusion models, and optimization techniques for creative AI systems.
-              {% when "NLP" %}
+                Master transformer-based language and vision models, multimodal systems, and advanced optimization for next-generation AI.
+              {% when "Foundation Models" %}
                 Explore advanced language understanding, generation, and multimodal integration strategies.
               {% when "Computer Vision" %}
                 Delve into neural architectures, object detection, segmentation, and visual reasoning systems.
