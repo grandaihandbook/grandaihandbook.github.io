@@ -315,7 +315,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
           <span class="badge badge-blue">Monitoring</span>
           <span class="badge badge-blue">Versioning</span>
         </div>
-        <a href="/handbooks/mlops/" class="btn btn-primary text-left">Explore Handbook</a>
+        <a href="/content/handbooks/mlops/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
 
