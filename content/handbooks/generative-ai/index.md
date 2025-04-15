@@ -16,7 +16,7 @@ description: "A comprehensive exploration of generative AI, from foundational co
   <!-- Section I -->
   <div class="section-card">
     <h3 id="s1">
-      <a href="{{ '/content/handbooks/generative-ai/section1/' | relative_url }}">Section I: Foundations of Sequential Prediction</a>
+      <a href="{{ '/content/handbooks/generative-ai/section1/' | relative_url }}">Section I: Foundation: Statistical Prediction and ML</a>
     </h3>
     <p><strong>Goal:</strong> Recap machine learning basics + survey (non-DL) methods for tasks under the umbrella of "sequential prediction".</p>
     <a href="{{ '/content/handbooks/generative-ai/section1/' | relative_url }}" class="section-link">Read section →</a>
@@ -25,7 +25,7 @@ description: "A comprehensive exploration of generative AI, from foundational co
   <!-- Section II -->
   <div class="section-card">
     <h3 id="s2">
-      <a href="{{ '/content/handbooks/generative-ai/section2/' | relative_url }}">Section II: Neural Sequential Prediction</a>
+      <a href="{{ '/content/handbooks/generative-ai/section2/' | relative_url }}">Section II: Neural Networks and Deep Learning</a>
     </h3>
     <p><strong>Goal:</strong> Survey deep learning methods + applications to sequential and language modeling, up to basic Transformers.</p>
     <a href="{{ '/content/handbooks/generative-ai/section2/' | relative_url }}" class="section-link">Read section →</a>
@@ -34,7 +34,7 @@ description: "A comprehensive exploration of generative AI, from foundational co
   <!-- Section III -->
   <div class="section-card">
     <h3 id="s3">
-      <a href="{{ '/content/handbooks/generative-ai/section3/' | relative_url }}">Section III: Foundations for Modern Language Modeling</a>
+      <a href="{{ '/content/handbooks/generative-ai/section3/' | relative_url }}">Section III: LLM Architecture and Training</a>
     </h3>
     <p><strong>Goal:</strong> Survey central topics related to training LLMs, with an emphasis on conceptual primitives.</p>
     <a href="{{ '/content/handbooks/generative-ai/section3/' | relative_url }}" class="section-link">Read section →</a>
@@ -43,7 +43,7 @@ description: "A comprehensive exploration of generative AI, from foundational co
   <!-- Section IV -->
   <div class="section-card">
     <h3 id="s4">
-      <a href="{{ '/content/handbooks/generative-ai/section4/' | relative_url }}">Section IV: Finetuning Methods for LLMs</a>
+      <a href="{{ '/content/handbooks/generative-ai/section4/' | relative_url }}">Section IV: Finetuning and Alignment</a>
     </h3>
     <p><strong>Goal:</strong> Survey techniques used for improving and "aligning" the quality of LLM outputs after pretraining.</p>
     <a href="{{ '/content/handbooks/generative-ai/section4/' | relative_url }}" class="section-link">Read section →</a>
@@ -52,7 +52,7 @@ description: "A comprehensive exploration of generative AI, from foundational co
   <!-- Section V -->
   <div class="section-card">
     <h3 id="s5">
-      <a href="{{ '/content/handbooks/generative-ai/section5/' | relative_url }}">Section V: LLM Evaluations and Applications</a>
+      <a href="{{ '/content/handbooks/generative-ai/section5/' | relative_url }}">Section V: Applications and Interpretability</a>
     </h3>
     <p><strong>Goal:</strong> Survey how LLMs are used and evaluated in practice, beyond just "chatbots".</p>
     <a href="{{ '/content/handbooks/generative-ai/section5/' | relative_url }}" class="section-link">Read section →</a>
@@ -61,7 +61,8 @@ description: "A comprehensive exploration of generative AI, from foundational co
   <!-- Section VI -->
   <div class="section-card">
     <h3 id="s6">
-      <a href="{{ '/content/handbooks/generative-ai/section6/' | relative_url }}">Section VI: Performance Optimizations for Efficient Inference</a>
+      <a href="{{ '/content/handbooks/generative-ai/section6/' | relative_url }}">Section VI: Inference Optimization
+</a>
     </h3>
     <p><strong>Goal:</strong> Survey architecture choices and lower-level techniques for improving resource utilization (time, compute, memory).</p>
     <a href="{{ '/content/handbooks/generative-ai/section6/' | relative_url }}" class="section-link">Read section →</a>
@@ -70,7 +71,7 @@ description: "A comprehensive exploration of generative AI, from foundational co
   <!-- Section VII -->
   <div class="section-card">
     <h3 id="s7">
-      <a href="{{ '/content/handbooks/generative-ai/section7/' | relative_url }}">Section VII: Sub-Quadratic Context Scaling</a>
+      <a href="{{ '/content/handbooks/generative-ai/section7/' | relative_url }}">Section VII: Addressing the Quadratic Scaling Problem</a>
     </h3>
     <p><strong>Goal:</strong> Survey approaches for avoiding the "quadratic scaling problem" faced by self-attention in Transformers.</p>
     <a href="{{ '/content/handbooks/generative-ai/section7/' | relative_url }}" class="section-link">Read section →</a>
@@ -79,7 +80,7 @@ description: "A comprehensive exploration of generative AI, from foundational co
   <!-- Section VIII -->
   <div class="section-card">
     <h3 id="s8">
-      <a href="{{ '/content/handbooks/generative-ai/section8/' | relative_url }}">Section VIII: Generative Modeling Beyond Sequences</a>
+      <a href="{{ '/content/handbooks/generative-ai/section8/' | relative_url }}">Section VIII: Beyond Transformers: Other Generative Models</a>
     </h3>
     <p><strong>Goal:</strong> Survey topics building towards generation of non-sequential content like images, from GANs to diffusion models.</p>
     <a href="{{ '/content/handbooks/generative-ai/section8/' | relative_url }}" class="section-link">Read section →</a>
@@ -98,9 +99,9 @@ description: "A comprehensive exploration of generative AI, from foundational co
 <div class="resource-links">
   <h3>Related Handbooks</h3>
   <ul>
-    <li><a href="{{ '/handbooks/nlp/' | relative_url }}">NLP Handbook</a> - Explore natural language processing techniques</li>
-    <li><a href="{{ '/handbooks/deep-learning/' | relative_url }}">Deep Learning Handbook</a> - Master neural network architectures and training</li>
-    <li><a href="{{ '/handbooks/foundation-models/' | relative_url }}">Foundation Models Handbook</a> - Understand large-scale pre-trained models</li>
+    <li><a href="{{ '/content/handbooks/nlp/' | relative_url }}">NLP Handbook</a> - Explore natural language processing techniques</li>
+    <li><a href="{{ '/content/handbooks/deep-learning/' | relative_url }}">Deep Learning Handbook</a> - Master neural network architectures and training</li>
+    <li><a href="{{ '/content/handbooks/foundation-models/' | relative_url }}">Foundation Models Handbook</a> - Understand large-scale pre-trained models</li>
   </ul>
 </div>
 
