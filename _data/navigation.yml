@@ -37,7 +37,7 @@ handbooks:
   - title: "Large Language Models"
     url: /handbooks/large-language-models/
   - title: "MLOps"
-    url: /handbooks/mlops/
+    url: /content/handbooks/mlops/
 
   # AI Domains
   - title: "Explainable AI (XAI)"

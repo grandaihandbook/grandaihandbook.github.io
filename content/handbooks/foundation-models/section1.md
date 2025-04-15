@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Foundation Models and Their Applications"
-description: "Introduce the concept of foundation models and their transformative impact across AI applications."
+title: "Foundations of MLOps"
+description: "Core principles combining machine learning, software engineering, and DevOps."
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">

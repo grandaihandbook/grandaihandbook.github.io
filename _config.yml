@@ -45,6 +45,9 @@ collections:
   foundation-models:
     output: true
     permalink: /content/handbooks/foundation-models/:path/
+  mlops:
+    output: true
+    permalink: /content/handbooks/mlops/:path/
   research:
     output: true
     permalink: /research/:path/
