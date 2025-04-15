@@ -182,24 +182,24 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/content/handbooks/generative-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
-    <!-- Card 2: NLP -->
+
+    <!-- Card 2: Foundation Models -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
-      <div class="card-image nlp" style="height: 160px;">
-        <div class="category-badge">NLP</div>
+      <div class="card-image foundation-models" style="height: 160px;">
+        <div class="category-badge">Core AI Fields</div>
       </div>
       <div class="card-content p-3 pt-2">
-        <h3 class="text-lg font-semibold mb-1">NLP</h3>
-        <p class="mb-2 text-sm">How AI systems understand and generate human language.</p>
+        <h3 class="text-lg font-semibold mb-1">Foundation Models</h3>
+        <p class="mb-2 text-sm">Large-scale AI models trained on diverse data for many tasks.</p>
         <div class="mb-2">
-          <span class="badge badge-green">BERT</span>
-          <span class="badge badge-green">GPT</span>
-          <span class="badge badge-green">T5</span>
+          <span class="badge badge-blue">Transfer Learning</span>
+          <span class="badge badge-blue">Fine-tuning</span>
+          <span class="badge badge-blue">Scaling Laws</span>
         </div>
-        <a href="/content/handbooks/nlp/" class="btn btn-primary text-left">Explore Handbook</a>
+        <a href="/content/handbooks/foundation-models/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 3: Computer Vision -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image computer-vision" style="height: 160px;">
@@ -216,7 +216,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/content/handbooks/computer-vision/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 4: Reinforcement Learning -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image reinforcement-learning" style="height: 160px;">
@@ -233,7 +233,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/content/handbooks/reinforcement-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 5: Machine Learning -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image machine-learning" style="height: 160px;">
@@ -250,7 +250,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/machine-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 6: Deep Learning -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image deep-learning" style="height: 160px;">
@@ -267,24 +267,24 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/deep-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
-    <!-- Card 7: Foundation Models -->
+
+    <!-- Card 7: NLP -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
-      <div class="card-image foundation-models" style="height: 160px;">
-        <div class="category-badge">Core AI Fields</div>
+      <div class="card-image nlp" style="height: 160px;">
+        <div class="category-badge">NLP</div>
       </div>
       <div class="card-content p-3 pt-2">
-        <h3 class="text-lg font-semibold mb-1">Foundation Models</h3>
-        <p class="mb-2 text-sm">Large-scale AI models trained on diverse data for many tasks.</p>
+        <h3 class="text-lg font-semibold mb-1">NLP</h3>
+        <p class="mb-2 text-sm">How AI systems understand and generate human language.</p>
         <div class="mb-2">
-          <span class="badge badge-blue">Transfer Learning</span>
-          <span class="badge badge-blue">Fine-tuning</span>
-          <span class="badge badge-blue">Scaling Laws</span>
+          <span class="badge badge-green">BERT</span>
+          <span class="badge badge-green">GPT</span>
+          <span class="badge badge-green">T5</span>
         </div>
-        <a href="/handbooks/foundation-models/" class="btn btn-primary text-left">Explore Handbook</a>
+        <a href="/content/handbooks/nlp/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 8: Large Language Models -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image llm" style="height: 160px;">
@@ -301,7 +301,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/large-language-models/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 9: MLOps -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image mlops" style="height: 160px;">
@@ -318,7 +318,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/mlops/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 10: Explainable AI -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image explainable-ai" style="height: 160px;">
@@ -335,9 +335,9 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/content/handbooks/explainable-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- New cards - AI Domains Section -->
-    
+
     <!-- Card 11: Federated Learning -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image federated-learning" style="height: 160px;">
@@ -354,7 +354,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/federated-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 12: Multimodal AI -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image multimodal-ai" style="height: 160px;">
@@ -371,7 +371,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/multimodal-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 13: Recommender Systems -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image recommender-systems" style="height: 160px;">
@@ -388,7 +388,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/recommender-systems/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 14: Robotics & AI -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image robotics-ai" style="height: 160px;">
@@ -405,7 +405,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/robotics-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 15: Self-Driving Cars -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image self-driving-cars" style="height: 160px;">
@@ -422,7 +422,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/self-driving-cars/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 16: Audio AI -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image audio-ai" style="height: 160px;">
@@ -439,9 +439,9 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/audio-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Specialized AI Techniques Section -->
-    
+
     <!-- Card 17: Bayesian Machine Learning -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image bayesian-ml" style="height: 160px;">
@@ -458,7 +458,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/bayesian-ml/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 18: Efficient AI & Optimization -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image efficient-ai" style="height: 160px;">
@@ -475,7 +475,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/efficient-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 19: Graph Neural Networks -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image graph-neural-networks" style="height: 160px;">
@@ -492,7 +492,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/graph-neural-networks/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 20: Representation Learning -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image representation-learning" style="height: 160px;">
@@ -509,7 +509,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/representation-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 21: Self-Supervised Learning -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image self-supervised-learning" style="height: 160px;">
@@ -526,7 +526,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/self-supervised-learning/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 22: Time Series Forecasting -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image time-series" style="height: 160px;">
@@ -543,9 +543,9 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/time-series/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Applied AI & Ethics Section -->
-    
+
     <!-- Card 23: AI Ethics & Fairness -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image ai-ethics" style="height: 160px;">
@@ -562,7 +562,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/ai-ethics/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 24: AI for Art & Aesthetics -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image ai-art" style="height: 160px;">
@@ -579,7 +579,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/ai-art/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 25: AI for Edge & IoT -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image edge-ai" style="height: 160px;">
@@ -596,7 +596,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/edge-ai/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 26: AI in Finance -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image ai-finance" style="height: 160px;">
@@ -613,7 +613,7 @@ description: "Browse our collection of comprehensive AI handbooks covering vario
         <a href="/handbooks/ai-finance/" class="btn btn-primary text-left">Explore Handbook</a>
       </div>
     </div>
-    
+
     <!-- Card 27: AI in Healthcare -->
     <div class="handbook-card shadow rounded overflow-hidden" style="font-size: 0.9rem;">
       <div class="card-image ai-healthcare" style="height: 160px;">
