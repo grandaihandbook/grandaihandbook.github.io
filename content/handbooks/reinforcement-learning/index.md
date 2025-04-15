@@ -6,6 +6,12 @@ description: "A comprehensive guide to reinforcement learning, from foundational
 
 <link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
 
+<div class="attribution-notice">
+  <div class="attribution-content">
+    <p>This handbook is inspired by the need for a unified resource on Reinforcement Learning, grounded in theoretical foundations and practical implementations. All credit for the conceptual framework goes to the reinforcement learning community, including influential tools like Gymnasium, Stable-Baselines3, and Ray RLlib. I’ve curated and structured the content to deliver a cohesive learning path, incorporating practical examples and hands-on guidance to elevate the educational experience.</p>
+  </div>
+</div>
+
 <div class="key-concept">
   <strong>Note:</strong> This handbook is regularly updated to reflect the latest advancements in reinforcement learning. Each section builds upon previous concepts, creating a cohesive learning path from basic principles to cutting-edge techniques and applications.
 </div>

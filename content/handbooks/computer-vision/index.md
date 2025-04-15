@@ -4,6 +4,12 @@ title: "Computer Vision Handbook"
 description: "A comprehensive guide to computer vision, spanning foundational theories to modern deep learning methods and applications."
 ---
 
+<div class="attribution-notice">
+  <div class="attribution-content">
+    <p>This handbook is inspired by the demand for a structured guide to Computer Vision, building on decades of research and practical applications. All credit for the conceptual framework goes to the computer vision community, including pioneering tools like OpenCV, TensorFlow, and PyTorch. I’ve curated and organized the content to provide a cohesive learning path, adding practical examples and hands-on guidance to enhance the educational experience.</p>
+  </div>
+</div>
+
 <link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
 <div class="key-concept">
   <strong>Note:</strong> This handbook is regularly updated to reflect the latest advancements in computer vision research and practice. Each section builds on previous concepts, creating a coherent learning journey from mathematical foundations to cutting-edge applications.

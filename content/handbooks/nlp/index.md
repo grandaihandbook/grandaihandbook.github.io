@@ -6,6 +6,12 @@ description: "A comprehensive guide to natural language processing, from linguis
 
 <link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
 
+<div class="attribution-notice">
+  <div class="attribution-content">
+    <p>This handbook is inspired by the need for a comprehensive resource on Natural Language Processing, drawing on linguistic theories and computational advancements. All credit for the conceptual framework goes to the NLP community, including foundational tools like NLTK, spaCy, and Hugging Face Transformers. I’ve curated and structured the content to offer a cohesive learning path, incorporating practical examples and hands-on guidance to enrich the educational experience.</p>
+  </div>
+</div>
+
 <div class="key-concept">
   <strong>Note:</strong> This handbook is regularly updated to reflect the latest advancements in natural language processing. Each section builds upon previous concepts, creating a cohesive learning path from linguistic and computational basics to cutting-edge techniques and applications.
 </div>

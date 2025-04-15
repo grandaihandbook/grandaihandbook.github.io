@@ -6,6 +6,12 @@ description: "A comprehensive guide to interpretable AI, from foundational conce
 
 <link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
 
+<div class="attribution-notice">
+  <div class="attribution-content">
+    <p>This handbook is inspired by the need for a comprehensive resource on Explainable AI, building on research and practical methods for interpretable machine learning. All credit for the conceptual framework goes to the Explainable AI community, including foundational contributions from <a href="https://christophm.github.io/interpretable-ml-book/">Christoph Molnar’s <i>Interpretable Machine Learning</i></a> and tools like SHAP, LIME, and Captum. I’ve curated and structured the content to provide a cohesive learning path, adding practical examples and hands-on guidance to enhance the educational experience.</p>
+  </div>
+</div>
+
 <div class="key-concept">
   <strong>Note:</strong> This handbook is regularly updated to reflect the latest advancements in interpretable AI. Each section builds upon previous concepts, creating a cohesive learning path from basic principles to cutting-edge techniques and applications.
 </div>

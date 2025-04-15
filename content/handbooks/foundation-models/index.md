@@ -6,6 +6,11 @@ description: "A comprehensive guide to foundation models, covering neural archit
 
 <link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
 
+<div class="attribution-notice">
+  <div class="attribution-content">
+    <p>This handbook is inspired by the need for a comprehensive resource on Foundation Models, building on advancements in large-scale pre-training and cross-domain applications. All credit for the conceptual framework goes to the foundation models community, including pivotal tools like Hugging Face Transformers, DeepSpeed, and FairScale. I’ve curated and structured the content to provide a cohesive learning path, adding practical examples and hands-on guidance to enhance the educational experience.</p>
+  </div>
+</div>
 <div class="key-concept">
   <strong>Note:</strong> This handbook is regularly updated to reflect the latest advancements in foundation models. Each section focuses on a key topic, creating a cohesive learning path from foundational architectures to cutting-edge applications.
 </div>
