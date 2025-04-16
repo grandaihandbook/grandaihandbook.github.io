@@ -118,7 +118,7 @@ RNNs and CNNs were critical precursors to foundation models. RNNs, with attentio
 </div>
 
 <script>
-  window.prevSection = "/content/handbooks/foundation-models/section1/";
-  window.nextSection = "/content/handbooks/foundation-models/section3/";
+  window.prevSection = "/content/handbooks/foundation-models/section2/";
+  window.nextSection = "/content/handbooks/foundation-models/section4/";
 </script>
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>

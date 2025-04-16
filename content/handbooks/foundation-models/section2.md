@@ -371,8 +371,8 @@ Key trends in the development of foundation models:
 
 <script>
   // Navigation variables
-  window.prevSection = "/content/handbooks/foundation-models/";
-  window.nextSection = "/content/handbooks/foundation-models/section2/";
+  window.prevSection = "/content/handbooks/foundation-models/section1";
+  window.nextSection = "/content/handbooks/foundation-models/section3/";
 </script>
 
 <script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
