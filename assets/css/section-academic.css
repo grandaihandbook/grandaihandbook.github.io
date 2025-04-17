@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 /* Directly target the gap between header and key-concept */
 .content-header + .academic-content .key-concept {
   margin-top: 0 !important;
@@ -688,4 +690,138 @@
 .attribution-notice a:hover::after {
   opacity: 1;
   right: -1em;
+}
+/* Enhanced heading icon styling for that 10/10 look */
+/* Make h2 a container with proper positioning */
+.academic-content h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-right: 0;
+}
+
+/* Heading icons styling */
+.heading-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 1.5rem;
+  height: 100%;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 0.75rem;
+  transition: all 0.25s ease;
+  border: none !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+/* Remove external link arrow */
+.icon-link::after,
+.academic-content a[href^="http"]::after {
+  display: none !important;
+}
+
+/* YouTube specific styling - more vibrant */
+.youtube-icon {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 0.08) 0%,
+    rgba(229, 45, 39, 0.12) 100%
+  );
+  color: #ff0000 !important;
+}
+
+.youtube-icon:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 0.15) 0%,
+    rgba(229, 45, 39, 0.25) 100%
+  );
+  color: #ff0000 !important;
+  box-shadow: 0 5px 12px rgba(229, 45, 39, 0.2);
+  transform: translateY(-3px);
+}
+
+.youtube-icon i {
+  font-size: 1.4rem;
+}
+
+/* GitHub specific styling - more premium */
+.github-icon {
+  background: linear-gradient(
+    135deg,
+    rgba(36, 41, 46, 0.08) 0%,
+    rgba(36, 41, 46, 0.12) 100%
+  );
+  color: #24292e !important;
+}
+
+.github-icon:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(36, 41, 46, 0.15) 0%,
+    rgba(36, 41, 46, 0.25) 100%
+  );
+  color: #1b1f23 !important;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.github-icon i {
+  font-size: 1.4rem;
+}
+
+/* Fix for the h2::after effect positioning */
+.academic-content h2::after {
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Improve hover experience */
+.icon-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.icon-link:hover::before {
+  opacity: 0.08;
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .academic-content h2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heading-icons {
+    margin-left: 0;
+    margin-top: 0.75rem;
+    padding-left: 0;
+    padding-bottom: 0.75rem;
+  }
+
+  .icon-link:first-child {
+    margin-left: 0;
+  }
 }
