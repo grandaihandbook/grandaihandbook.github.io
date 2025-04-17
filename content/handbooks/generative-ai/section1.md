@@ -10,7 +10,17 @@ description: "An overview of classical topics in statistical prediction and rein
   Our focus in this section will be on quickly overviewing classical topics in statistical prediction and reinforcement learning, which we'll make direct reference to in later sections, as well as highlighting some topics that I think are very useful as conceptual models for understanding LLMs, yet which are often omitted from deep learning crash courses -- notably time-series analysis, regret minimization, and Markov models.
 </div>
 
-<h2 id="statistical-prediction">Statistical Prediction and Supervised Learning</h2>
+<h2 id="statistical-prediction">
+  <span class="heading-text">Statistical Prediction and Supervised Learning</span>
+  <span class="heading-icons">
+    <a href="https://youtube.com/yourchannellink" class="icon-link youtube-icon" target="_blank" title="Watch on YouTube">
+      <i class="fa fa-youtube-play"></i>
+    </a>
+    <a href="https://github.com/yourusername/repo" class="icon-link github-icon" target="_blank" title="View on GitHub">
+      <i class="fa fa-github"></i>
+    </a>
+  </span>
+</h2>
 
 Before getting to deep learning and large language models, it'll be useful to have a solid grasp on some foundational concepts in probability theory and machine learning. In particular, it helps to understand:
 
