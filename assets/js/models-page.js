@@ -29,10 +29,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const licenseTypeSelect = document.getElementById("license-type");
 
   // INITIAL SETUP - Set up pagination
-  let currentPage = 1;
-  let itemsPerPage = parseInt(perPageSelect.value) || 5;
+  // Added: Store filtered cards globally
+  let filteredCards = Array.from(allModelCards);
+
+  // Load saved state or use defaults
+  let currentPage = loadFromLocalStorage("currentPage") || 1;
+  let itemsPerPage = loadFromLocalStorage("itemsPerPage") || 5;
+  if (perPageSelect) perPageSelect.value = itemsPerPage;
+
   let totalItems = allModelCards.length;
   let totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  // Load saved filters and apply them
+  loadSavedFilters();
 
   // Initially hide all cards except the first page
   updateDisplayedCards();
@@ -158,6 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Reset to page 1
       currentPage = 1;
+      saveToLocalStorage("currentPage", currentPage);
       updatePaginationButtons();
 
       // Apply the reset filters
@@ -188,6 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
   pageButtons.forEach((button) => {
     button.addEventListener("click", () => {
       currentPage = parseInt(button.textContent);
+      saveToLocalStorage("currentPage", currentPage);
       updatePaginationButtons();
       updateDisplayedCards();
       scrollToTop();
@@ -199,6 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
     prevButton.addEventListener("click", () => {
       if (currentPage > 1) {
         currentPage--;
+        saveToLocalStorage("currentPage", currentPage);
         updatePaginationButtons();
         updateDisplayedCards();
         scrollToTop();
@@ -210,6 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
     nextButton.addEventListener("click", () => {
       if (currentPage < totalPages) {
         currentPage++;
+        saveToLocalStorage("currentPage", currentPage);
         updatePaginationButtons();
         updateDisplayedCards();
         scrollToTop();
@@ -221,8 +234,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (perPageSelect) {
     perPageSelect.addEventListener("change", () => {
       itemsPerPage = parseInt(perPageSelect.value);
+      saveToLocalStorage("itemsPerPage", itemsPerPage);
       totalPages = Math.ceil(totalItems / itemsPerPage);
       currentPage = 1; // Reset to first page when changing items per page
+      saveToLocalStorage("currentPage", currentPage);
 
       updatePaginationButtons();
       updateDisplayedCards();
@@ -297,8 +312,19 @@ document.addEventListener("DOMContentLoaded", () => {
         selectedFeatures.push(checkbox.value.toLowerCase());
       });
 
+    // Save filter settings
+    saveFilters(
+      searchTerm,
+      category,
+      provider,
+      releaseYear,
+      licenseType,
+      quickFilterValue,
+      selectedFeatures
+    );
+
     // Filter the model cards
-    let filteredCards = Array.from(allModelCards);
+    filteredCards = Array.from(allModelCards);
 
     // Apply search filter
     if (searchTerm) {
@@ -396,7 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Apply release year filter - CORRECTED VERSION
+    // Apply release year filter
     if (releaseYear) {
       filteredCards = filteredCards.filter((card) => {
         // First, try to find the release date in the expected format
@@ -421,18 +447,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Extract year with regex to be more robust
         const yearMatch = releaseDate.match(/\b(20\d{2})\b/);
         const year = yearMatch ? yearMatch[1] : "";
-
-        // For debugging
-        console.log(
-          "Model:",
-          card.querySelector(".model-name").textContent,
-          "Date:",
-          releaseDate,
-          "Year:",
-          year,
-          "Filter:",
-          releaseYear
-        );
 
         if (releaseYear === "2020") {
           // Special case for "2020 & Earlier"
@@ -492,23 +506,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Reset to page 1 if current page is now out of bounds
     if (currentPage > totalPages) {
       currentPage = Math.max(1, totalPages);
+      saveToLocalStorage("currentPage", currentPage);
     }
 
     // Update pagination
     updatePaginationButtons();
 
-    // Show the filtered cards for the current page
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = Math.min(startIndex + itemsPerPage, filteredCards.length);
-
-    for (let i = startIndex; i < endIndex; i++) {
-      if (filteredCards[i]) {
-        filteredCards[i].style.display = "flex";
-      }
-    }
-
-    // Update page info
-    updatePageInfo(startIndex, endIndex, totalItems);
+    // Display filtered cards on the current page
+    updateDisplayedCards();
 
     // Remove loading state after a short delay
     setTimeout(() => {
@@ -531,17 +536,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 400);
   }
 
-  // Update displayed cards based on pagination
+  // Update displayed cards based on current filteredCards and pagination
   function updateDisplayedCards() {
     // Hide all cards initially
     allModelCards.forEach((card) => {
       card.style.display = "none";
     });
 
-    // Get filtered cards
-    let filteredCards = Array.from(allModelCards);
-
-    // Show cards for the current page
+    // Show cards for the current page using the filteredCards array
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = Math.min(startIndex + itemsPerPage, filteredCards.length);
 
@@ -559,7 +561,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updatePageInfo(
     startIndex = 0,
     endIndex = itemsPerPage,
-    total = allModelCards.length
+    total = filteredCards.length
   ) {
     if (pageInfo) {
       const start = Math.min(startIndex + 1, total);
@@ -610,6 +612,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add event listener
       pageBtn.addEventListener("click", () => {
         currentPage = i;
+        saveToLocalStorage("currentPage", currentPage);
         updatePaginationButtons();
         updateDisplayedCards();
         scrollToTop();
@@ -633,6 +636,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       lastPageBtn.addEventListener("click", () => {
         currentPage = totalPages;
+        saveToLocalStorage("currentPage", currentPage);
         updatePaginationButtons();
         updateDisplayedCards();
         scrollToTop();
@@ -708,10 +712,117 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   }
 
-  // Initialize everything
-  updatePageInfo();
-  updatePaginationButtons();
-  updateDisplayedCards();
+  // LOCAL STORAGE FUNCTIONS
 
+  // Save filter settings to local storage
+  function saveFilters(
+    searchTerm,
+    category,
+    provider,
+    releaseYear,
+    licenseType,
+    quickFilterValue,
+    selectedFeatures
+  ) {
+    const filterState = {
+      searchTerm,
+      category,
+      provider,
+      releaseYear,
+      licenseType,
+      quickFilterValue,
+      selectedFeatures,
+    };
+
+    saveToLocalStorage("filterState", filterState);
+  }
+
+  // Load saved filters and apply them
+  function loadSavedFilters() {
+    const filterState = loadFromLocalStorage("filterState");
+    if (!filterState) return;
+
+    // Restore search input
+    if (searchInput && filterState.searchTerm) {
+      searchInput.value = filterState.searchTerm;
+      if (searchClearBtn) searchClearBtn.style.display = "flex";
+    }
+
+    // Restore category
+    if (categorySelect && filterState.category) {
+      categorySelect.value = filterState.category;
+    }
+
+    // Restore provider
+    if (providerSelect && filterState.provider) {
+      providerSelect.value = filterState.provider;
+    }
+
+    // Restore release year
+    if (releaseYearSelect && filterState.releaseYear) {
+      releaseYearSelect.value = filterState.releaseYear;
+    }
+
+    // Restore license type
+    if (licenseTypeSelect && filterState.licenseType) {
+      licenseTypeSelect.value = filterState.licenseType;
+    }
+
+    // Restore quick filter buttons
+    if (
+      filterState.quickFilterValue &&
+      filterState.quickFilterValue !== "all"
+    ) {
+      quickFilterButtons.forEach((button) => {
+        if (
+          button.textContent.trim().toLowerCase() ===
+          filterState.quickFilterValue
+        ) {
+          button.classList.add("active");
+        } else {
+          button.classList.remove("active");
+        }
+      });
+    }
+
+    // Restore selected features
+    if (
+      filterState.selectedFeatures &&
+      filterState.selectedFeatures.length > 0
+    ) {
+      document
+        .querySelectorAll('input[name="features"]')
+        .forEach((checkbox) => {
+          checkbox.checked = filterState.selectedFeatures.includes(
+            checkbox.value.toLowerCase()
+          );
+        });
+    }
+
+    // Apply the loaded filters
+    applyFilters();
+  }
+
+  // Generic localStorage save function with error handling
+  function saveToLocalStorage(key, value) {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch (error) {
+      console.error("Error saving to localStorage:", error);
+    }
+  }
+
+  // Generic localStorage load function with error handling
+  function loadFromLocalStorage(key) {
+    try {
+      const value = localStorage.getItem(key);
+      return value ? JSON.parse(value) : null;
+    } catch (error) {
+      console.error("Error loading from localStorage:", error);
+      return null;
+    }
+  }
+
+  // Initialize everything
   console.log("Script initialization completed");
 });
