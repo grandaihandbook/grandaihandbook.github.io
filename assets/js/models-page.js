@@ -312,11 +312,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const description = card
           .querySelector(".model-description")
           .textContent.toLowerCase();
+        const features = Array.from(card.querySelectorAll(".feature-tag"))
+          .map((tag) => tag.textContent.toLowerCase())
+          .join(" ");
 
         return (
           modelName.includes(searchTerm) ||
           providerName.includes(searchTerm) ||
-          description.includes(searchTerm)
+          description.includes(searchTerm) ||
+          features.includes(searchTerm)
         );
       });
     }
@@ -324,14 +328,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // Apply quick filter
     if (quickFilterValue !== "all") {
       filteredCards = filteredCards.filter((card) => {
-        const aiType = card
-          .querySelector(".model-badge.ai-type")
-          .textContent.toLowerCase();
+        // Get all badges
+        const badges = Array.from(card.querySelectorAll(".model-badge")).map(
+          (badge) => badge.textContent.toLowerCase()
+        );
+
         // Handle special case for "Computer Vision" and other multi-word categories
         if (quickFilterValue === "computer vision") {
-          return aiType.includes("vision") || aiType.includes("image");
+          return badges.some(
+            (badge) =>
+              badge.includes("vision") ||
+              badge.includes("image") ||
+              badge.includes("cv")
+          );
         }
-        return aiType.includes(quickFilterValue);
+
+        // Check for the filter in any badge
+        return badges.some((badge) => badge.includes(quickFilterValue));
       });
     }
 
@@ -341,9 +354,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const features = Array.from(card.querySelectorAll(".feature-tag")).map(
           (tag) => tag.textContent.toLowerCase()
         );
-        const aiType = card
-          .querySelector(".model-badge.ai-type")
-          .textContent.toLowerCase();
+        const badges = Array.from(card.querySelectorAll(".model-badge")).map(
+          (badge) => badge.textContent.toLowerCase()
+        );
 
         // Map category values to what might appear in features or AI type
         const categoryMap = {
@@ -359,7 +372,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return relevantTerms.some(
           (term) =>
             features.some((feature) => feature.includes(term)) ||
-            aiType.includes(term)
+            badges.some((badge) => badge.includes(term))
         );
       });
     }
@@ -370,22 +383,60 @@ document.addEventListener("DOMContentLoaded", () => {
         const providerName = card
           .querySelector(".model-provider")
           .textContent.toLowerCase();
+
+        // Special cases for providers
+        if (
+          provider === "google" &&
+          (providerName.includes("google") || providerName.includes("deepmind"))
+        ) {
+          return true;
+        }
+
         return providerName.includes(provider);
       });
     }
 
-    // Apply release year filter
+    // Apply release year filter - CORRECTED VERSION
     if (releaseYear) {
       filteredCards = filteredCards.filter((card) => {
-        const releaseDate = card.querySelector(
-          ".metadata-item:first-child span"
-        ).textContent;
-        // Extract the year from "Released: March 2023"
-        const year = releaseDate.split(" ").pop();
+        // First, try to find the release date in the expected format
+        const metadataItems = card.querySelectorAll(".metadata-item");
+        let releaseDate = "";
+
+        // Look for the metadata item with calendar icon (release date)
+        for (const item of metadataItems) {
+          if (item.querySelector("i.fas.fa-calendar-alt")) {
+            releaseDate = item.querySelector("span").textContent;
+            break;
+          }
+        }
+
+        // If we couldn't find it that way, try the first metadata item
+        if (!releaseDate && metadataItems.length > 0) {
+          releaseDate = metadataItems[0].querySelector("span").textContent;
+        }
+
+        if (!releaseDate) return false;
+
+        // Extract year with regex to be more robust
+        const yearMatch = releaseDate.match(/\b(20\d{2})\b/);
+        const year = yearMatch ? yearMatch[1] : "";
+
+        // For debugging
+        console.log(
+          "Model:",
+          card.querySelector(".model-name").textContent,
+          "Date:",
+          releaseDate,
+          "Year:",
+          year,
+          "Filter:",
+          releaseYear
+        );
 
         if (releaseYear === "2020") {
           // Special case for "2020 & Earlier"
-          return parseInt(year) <= 2020;
+          return year && parseInt(year) <= 2020;
         }
         return year === releaseYear;
       });
@@ -521,6 +572,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updatePaginationButtons() {
     // Get the parent container
     const paginationContainer = document.querySelector(".pagination");
+    if (!paginationContainer) return;
 
     // Remove all existing number buttons
     const existingButtons = paginationContainer.querySelectorAll(
@@ -547,6 +599,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = paginationContainer.querySelector(
       '.page-button[title="Next page"]'
     );
+    if (!nextBtn) return;
 
     // Add page buttons
     for (let i = startPage; i <= endPage; i++) {

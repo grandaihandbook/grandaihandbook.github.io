@@ -642,6 +642,39 @@ body {
 .card-image.stability {
   background-image: url("/assets/images/models/StabilityAI.jpg");
 }
+
+.card-image.microsoft {
+  background-image: url("/assets/images/models/Microsoft.jpg");
+}
+
+.card-image.apple {
+  background-image: url("/assets/images/models/Apple.png");
+}
+
+.card-image.deepseek {
+  background-image: url("/assets/images/models/Deepseek.png");
+}
+
+.card-image.alibaba {
+  background-image: url("/assets/images/models/Qwen.png");
+}
+
+.card-image.xai {
+  background-image: url("/assets/images/models/XAI.png");
+}
+
+.card-image.cohere {
+  background-image: url("/assets/images/models/StabilityAI.jpg");
+}
+
+.card-image.nvidia {
+  background-image: url("/assets/images/models/Nvidia.png");
+}
+
+.card-image.mistralai {
+  background-image: url("/assets/images/models/StabilityAI.jpg");
+}
+
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
