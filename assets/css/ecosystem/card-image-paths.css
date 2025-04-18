@@ -49,3 +49,7 @@
 .card-image.mistralai {
   background-image: url("/assets/images/models/StabilityAI.jpg");
 }
+
+.card-image.sunoai {
+  background-image: url("/assets/images/models/Suno.png");
+}
