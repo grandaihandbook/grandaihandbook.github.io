@@ -1,0 +1,127 @@
+.filter-section {
+  background-color: white;
+  padding: 1.75rem 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  margin-bottom: 2.5rem;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.filter-section:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.filter-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+}
+
+.filter-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.filter-header h3 {
+  font-size: 1.4rem;
+  color: #1e293b;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+  position: relative;
+}
+
+.quick-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.quick-filter-badge {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.95rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-filter-badge:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.quick-filter-badge.active {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 8px rgba(79, 70, 229, 0.25);
+}
+
+.quick-filter-badge:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+.quick-filter-badge.active {
+  animation: pulse 2s infinite;
+}
+
+.quick-filter-badge.active {
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-filter-badge.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  animation: shine 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(79, 70, 229, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  20%,
+  100% {
+    transform: translateX(100%);
+  }
+}
