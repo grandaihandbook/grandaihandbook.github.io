@@ -88,7 +88,7 @@ layout: default
             <option value="reka">Reka AI</option>
             <option value="rhymes">Rhymes AI</option>
             <option value="runway">Runway</option>
-            <option value="stabilityai">Stability AI</option>
+            <option value="stability">Stability AI</option>
             <option value="sunoai">Suno AI</option>
             <option value="tii">TII</option>
             <option value="udio">Udio</option>

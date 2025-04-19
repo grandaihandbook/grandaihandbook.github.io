@@ -19,7 +19,7 @@
   },
   {
     "name": "Stable Virtual Camera",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "A research-preview multi-view diffusion model launched in March 2025, transforming 2D images into immersive 3D videos with realistic depth and perspective. It eliminates the need for complex reconstruction, making it ideal for virtual reality and cinematic applications.",
     "badges": ["3D", "Video", "Research"],
@@ -237,7 +237,7 @@
   },
   {
     "name": "Stable Point Aware 3D (SPAR3D)",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "A cutting-edge 3D generation model introduced in January 2025, enabling real-time editing and complete structure generation from a single image in under a second. It supports rapid prototyping for gaming, architecture, and entertainment with high precision and efficiency.",
     "badges": ["3D", "Real-time"],
@@ -713,7 +713,7 @@
   },
   {
     "name": "DeepSeek V3",
-    "provider": "deepseek",
+    "provider": "Deepseek",
     "providerClass": "deepseek",
     "description": "An open-weight language model for advanced NLP tasks, offering high performance and flexibility.",
     "badges": ["Language Model", "Open Weights", "Performance"],
@@ -865,7 +865,7 @@
   },
   {
     "name": "DeepSeek-R1-Lite-Preview",
-    "provider": "deepseek",
+    "provider": "Deepseek",
     "providerClass": "deepseek",
     "description": "A preview of a lightweight AI model for reasoning and task assistance, accessible via API.",
     "badges": ["Reasoning", "API Only", "Preview"],
@@ -902,7 +902,7 @@
   {
     "name": "Suno v4",
     "provider": "Suno AI",
-    "providerClass": "suno",
+    "providerClass": "sunoai",
     "description": "An upgraded music creation model generating high-quality audio tracks, accessible via API for creative projects.",
     "badges": ["Music Generation", "API Only", "Creative"],
     "metadata": {
@@ -937,7 +937,7 @@
   },
   {
     "name": "Pixtral Large",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "An open-weight multimodal model for advanced text and image processing, optimized for research and development.",
     "badges": ["Multimodal", "Open Weights", "Research"],
@@ -959,7 +959,7 @@
   },
   {
     "name": "Mistral Large 2411",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "An upgraded open-weight language model for advanced NLP tasks, offering high performance and flexibility.",
     "badges": ["Language Model", "Open Weights", "Performance"],
@@ -1083,7 +1083,7 @@
   },
   {
     "name": "Flux 1.1 Pro",
-    "provider": "blackforest",
+    "provider": "Black Forest Labs",
     "providerClass": "blackforest",
     "description": "An upgraded image generation model for professional-grade visuals, accessible via API.",
     "badges": ["Image Generation", "API Only", "Creative"],
@@ -1185,7 +1185,7 @@
   },
   {
     "name": "Aria",
-    "provider": "rhymes",
+    "provider": "Rhymes",
     "providerClass": "rhymes",
     "description": "An open-weight conversational AI model optimized for task assistance and creative interactions.",
     "badges": ["Conversational", "Open Weights", "Creative"],
@@ -1221,7 +1221,7 @@
   },
   {
     "name": "Ministral",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "A lightweight language model for efficient NLP tasks, accessible via API for developers.",
     "badges": ["Language Model", "API Only", "Efficiency"],
@@ -1239,7 +1239,7 @@
   },
   {
     "name": "Janus",
-    "provider": "deepseek",
+    "provider": "Deepseek",
     "providerClass": "deepseek",
     "description": "An open-weight multimodal model for text and image processing, optimized for research and development.",
     "badges": ["Multimodal", "Open Weights", "Research"],
@@ -1261,7 +1261,7 @@
   },
   {
     "name": "Fluid",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "An AI model for advanced reasoning and problem-solving, accessible via API for research applications.",
     "badges": ["Reasoning", "API Only", "Research"],
@@ -1283,7 +1283,7 @@
   },
   {
     "name": "Stable Diffusion 3.5",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "An upgraded open-weight model for text-to-image generation, offering improved quality and flexibility.",
     "badges": ["Image Generation", "Open Weights", "Creative"],
@@ -1411,7 +1411,7 @@
   },
   {
     "name": "Pixtral12B",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "An open-weight multimodal model for text and image processing, optimized for research and development.",
     "badges": ["Multimodal", "Open Weights", "Research"],
@@ -1528,7 +1528,7 @@
   {
     "name": "Yi Coder",
     "provider": "01 AI",
-    "providerClass": "01ai",
+    "providerClass": "zerooneai",
     "description": "An open-weight model for code generation, optimized for programming tasks and developer workflows.",
     "badges": ["Code Generation", "Open Weights", "Developer"],
     "metadata": {
@@ -1643,7 +1643,7 @@
   },
   {
     "name": "Mistral Small",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "A lightweight language model for efficient NLP tasks, accessible via API for developers.",
     "badges": ["Language Model", "API Only", "Efficiency"],
@@ -1763,7 +1763,7 @@
   },
   {
     "name": "Hermes 3",
-    "provider": "nous",
+    "provider": "Nous",
     "providerClass": "nous",
     "description": "An open-weight language model for research and advanced NLP tasks, offering high performance and flexibility.",
     "badges": ["Language Model", "Open Weights", "Research"],
@@ -1945,7 +1945,7 @@
   },
   {
     "name": "Codestral Mamba",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "An open-weight model for code generation, leveraging state-space architecture for efficient programming tasks.",
     "badges": ["Code Generation", "Open Weights", "Efficiency"],
@@ -1963,7 +1963,7 @@
   },
   {
     "name": "AlphaProof & AlphaGeometry 2",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Specialized AI models for mathematical reasoning and geometry problem-solving, accessible via API.",
     "badges": ["Math", "API Only", "Reasoning"],
@@ -2025,7 +2025,7 @@
   },
   {
     "name": "Mistral Large 2",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "A high-performance language model for advanced NLP tasks, accessible via API for developers.",
     "badges": ["Language Model", "API Only", "Performance"],
@@ -2083,7 +2083,7 @@
   },
   {
     "name": "Stable Diffusion 3 (Medium)",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "A medium-sized version of Stable Diffusion 3, offering open weights for text-to-image generation with balanced performance.",
     "badges": ["Image Generation", "Open Weights", "Creative"],
@@ -2123,7 +2123,7 @@
   },
   {
     "name": "DeepSeekCoderV2",
-    "provider": "deepseek",
+    "provider": "Deepseek",
     "providerClass": "deepseek",
     "description": "An open-weight model for advanced code generation, optimized for programming tasks and developer workflows.",
     "badges": ["Code Generation", "Open Weights", "Developer"],
@@ -2142,7 +2142,7 @@
   {
     "name": "Gen3 Alpha",
     "provider": "Runway",
-    "providerClass": "run stalkerway",
+    "providerClass": "runway",
     "description": "A video generation model for creating high-quality videos from text prompts, accessible via API for creative applications.",
     "badges": ["Video Generation", "API Only", "Creative"],
     "metadata": {
@@ -2163,7 +2163,7 @@
   },
   {
     "name": "Yi 1.5",
-    "provider": "zerooneai",
+    "provider": "01 AI",
     "providerClass": "zerooneai",
     "description": "An open-weight language model optimized for research and NLP tasks, offering high performance and flexibility.",
     "badges": ["Language Model", "Open Weights", "Research"],
@@ -2323,7 +2323,7 @@
   },
   {
     "name": "Mistral-7B-Instruct-v0.3",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "An open-weight language model optimized for instruction-following tasks, offering high efficiency and performance.",
     "badges": ["Language Model", "Open Weights", "Instruction"],
@@ -2367,7 +2367,7 @@
   },
   {
     "name": "Suno v3.5",
-    "provider": "sunoai",
+    "provider": "Suno AI",
     "providerClass": "sunoai",
     "description": "An upgraded music creation model generating high-quality audio tracks, accessible via API for creative projects.",
     "badges": ["Music Generation", "API Only", "Creative"],
@@ -2385,7 +2385,7 @@
   },
   {
     "name": "Codestral",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "An open-weight model for code generation, optimized for programming tasks and developer workflows.",
     "badges": ["Code Generation", "Open Weights", "Developer"],
@@ -2421,7 +2421,7 @@
   },
   {
     "name": "Stable Audio 2.0",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "An open-weight model for generating high-fidelity audio, suitable for music and sound design applications.",
     "badges": ["Audio Generation", "Open Weights", "Creative"],
@@ -2457,7 +2457,7 @@
   },
   {
     "name": "Mixtral 8x22B",
-    "provider": "mistral",
+    "provider": "Mistral",
     "providerClass": "mistral",
     "description": "A high-performance language model with open weights, optimized for efficiency and scalability in NLP tasks.",
     "badges": ["Language Model", "Open Weights", "Efficiency"],
@@ -2533,7 +2533,7 @@
   },
   {
     "name": "Reka AI Models",
-    "provider": "reka",
+    "provider": "Reka",
     "providerClass": "reka",
     "description": "Multimodal language models designed for advanced text and image processing, accessible via API.",
     "badges": ["Multimodal", "API Only", "Language"],
@@ -2610,7 +2610,7 @@
   {
     "name": "Suno v3",
     "provider": "Suno AI",
-    "providerClass": "suno",
+    "providerClass": "sunoai",
     "description": "A music creation model generating high-quality audio tracks from prompts, accessible via API for creative applications.",
     "badges": ["Music Generation", "API Only", "Creative"],
     "metadata": {
@@ -2627,7 +2627,7 @@
   },
   {
     "name": "Stable Diffusion 3",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "A text-to-image model with enhanced capabilities for generating high-quality, detailed images from textual prompts, suitable for creative and professional applications.",
     "badges": ["Image Generation", "Open Weights", "Creative"],
@@ -2733,7 +2733,7 @@
   },
   {
     "name": "Gemini Ultra",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Google's largest multimodal model for text, vision, and reasoning tasks. It excels in complex problem-solving across diverse data types like code, images, and text.",
     "badges": ["LLM", "Multimodal"],
@@ -2756,7 +2756,7 @@
   },
   {
     "name": "Gemini Pro",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Mid-tier multimodal Gemini model for text, vision, and reasoning. It offers a balance of performance and efficiency for various tasks.",
     "badges": ["LLM", "Multimodal"],
@@ -2774,7 +2774,7 @@
   },
   {
     "name": "Gemini Nano",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Lightweight Gemini model optimized for on-device tasks. It supports text and vision processing with low resource requirements.",
     "badges": ["LLM", "On-device"],
@@ -2851,7 +2851,7 @@
   },
   {
     "name": "Tram",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Model for structured data processing and analysis. It excels in tasks involving tabular data and complex data structures.",
     "badges": ["LLM", "Structured Data"],
@@ -2956,7 +2956,7 @@
   },
   {
     "name": "Med-PaLM 2",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Advanced medical-domain model for clinical tasks and question answering. It improves on MedPaLM with enhanced accuracy for healthcare applications.",
     "badges": ["LLM", "Medical"],
@@ -3048,7 +3048,7 @@
   },
   {
     "name": "Stable Diffusion XL (SDXL)",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "A powerful evolution of Stable Diffusion, SDXL delivers superior image quality and prompt adherence at higher resolutions, ideal for professional use cases. It incorporates advanced training methods and supports diverse styles like 3D, photography, and painting, with optimized performance on consumer hardware.",
     "badges": ["LLM", "Image Generation", "Open Source"],
@@ -3094,7 +3094,7 @@
   },
   {
     "name": "Flamingo-C",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Compact version of Flamingo for multimodal vision-language tasks. It maintains strong performance with reduced resource requirements.",
     "badges": ["LLM", "Multimodal"],
@@ -3163,7 +3163,7 @@
   },
   {
     "name": "Stable LM",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "An open-source language model suite launched in April 2023, with 3B to 7B parameter models designed for efficient text and code generation on personal devices. Trained on a massive dataset three times larger than The Pile, it offers high performance for conversational and coding tasks.",
     "badges": ["LLM", "Language", "Open Source"],
@@ -3250,7 +3250,7 @@
   },
   {
     "name": "Dramatron",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Model for scriptwriting and creative writing assistance. It generates coherent narratives and dialogue for storytelling applications.",
     "badges": ["LLM", "Creative"],
@@ -3291,7 +3291,7 @@
   },
   {
     "name": "Stable Diffusion 2.0",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "An enhanced version of Stable Diffusion, introducing inpainting, outpainting, and depth-guided image generation for improved creative control. It maintains high-quality outputs while addressing ethical concerns through filtered training data and permissive licensing for diverse applications.",
     "badges": ["LLM", "Image Generation", "Open Source"],
@@ -3337,7 +3337,7 @@
   },
   {
     "name": "Sparrow",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Dialogue model with a focus on safety and ethical responses. It aims to reduce harmful outputs while maintaining conversational quality.",
     "badges": ["LLM", "Conversational"],
@@ -3373,7 +3373,7 @@
   },
   {
     "name": "SayCan",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Language-guided robotic control model for task execution. It combines language understanding with physical actions for robotic applications.",
     "badges": ["LLM", "Robotics"],
@@ -3391,7 +3391,7 @@
   },
   {
     "name": "Stable Diffusion",
-    "provider": "stabilityai",
+    "provider": "Stability AI",
     "providerClass": "stability",
     "description": "A pioneering open-source text-to-image model that generates high-quality, photorealistic images from textual prompts, leveraging latent diffusion techniques. Widely adopted for its flexibility and ability to run on consumer hardware, it supports creative applications in art, design, and media production.",
     "badges": ["LLM", "Image Generation", "Open Source"],
@@ -3460,7 +3460,7 @@
   },
   {
     "name": "Gato",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Generalist agent for text, vision, and robotics tasks. It performs well across diverse domains, from language to physical control.",
     "badges": ["LLM", "Generalist"],
@@ -3524,7 +3524,7 @@
   },
   {
     "name": "Flamingo",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Multimodal vision-language model for tasks like image captioning. It combines visual and textual understanding for versatile applications.",
     "badges": ["LLM", "Multimodal"],
@@ -3588,7 +3588,7 @@
   },
   {
     "name": "Chinchilla",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "70B-parameter compute-optimal model for efficient performance. It outperforms larger models in NLP tasks with less computational cost.",
     "badges": ["LLM", "Efficient"],
@@ -3606,7 +3606,7 @@
   },
   {
     "name": "Ithaca",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Model for historical text restoration, specializing in ancient Greek texts. It reconstructs missing text with high contextual accuracy.",
     "badges": ["LLM", "Specialized"],
@@ -3629,7 +3629,7 @@
   },
   {
     "name": "CodeGen",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Code-generation model complementing AlphaCode for programming tasks. It generates high-quality code for various languages and applications.",
     "badges": ["LLM", "Code"],
@@ -3647,7 +3647,7 @@
   },
   {
     "name": "AlphaCode",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Model for competitive programming and code generation. It solves complex algorithmic problems with high accuracy and efficiency.",
     "badges": ["LLM", "Code"],
@@ -3693,7 +3693,7 @@
   },
   {
     "name": "RETRO",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "Retrieval-augmented Transformer for enhanced language modeling. It uses external memory to improve performance on knowledge-intensive tasks.",
     "badges": ["LLM", "Retrieval-augmented"],
@@ -3917,7 +3917,7 @@
   },
   {
     "name": "Gopher",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "280B-parameter model focused on reasoning and language tasks. It competes with large-scale models in NLP benchmarks and research applications.",
     "badges": ["LLM", "Large-scale"],
@@ -3976,7 +3976,7 @@
   },
   {
     "name": "Perceiver",
-    "provider": "google",
+    "provider": "Google",
     "providerClass": "google",
     "description": "General-purpose architecture for text and multimodal tasks. It uses cross-attention to handle diverse data types efficiently.",
     "badges": ["LLM", "Multimodal"],
