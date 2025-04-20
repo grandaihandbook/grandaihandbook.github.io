@@ -175,7 +175,7 @@
   },
   {
     "name": "Llama 4 Scout",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "Llama 4 Scout is a multimodal, open-weight AI model with a Mixture of Experts (MoE) architecture, designed for advanced long-context reasoning, multi-document summarization, and visual understanding. It supports an industry-leading context window of 10 million tokens and fits on a single NVIDIA H100 GPU.",
     "badges": ["LLM", "Multimodal", "Open-Weight"],
@@ -200,7 +200,7 @@
   },
   {
     "name": "Llama 4 Maverick",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "Llama 4 Maverick is a multimodal, open-weight AI model with a Mixture of Experts (MoE) architecture, optimized for high-quality general assistant and chat use cases. It excels in multilingual image and text understanding, offering high performance at a lower cost compared to Llama 3.3 70B.",
     "badges": ["LLM", "Multimodal", "Open-Weight"],
@@ -225,7 +225,7 @@
   },
   {
     "name": "Llama 4 Behemoth",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "Llama 4 Behemoth is Meta AI's most powerful multimodal, open-weight AI model, featuring a Mixture of Experts (MoE) architecture with 288 billion active parameters. Designed as a teacher model for distilling knowledge to smaller Llama 4 models, it excels in STEM benchmarks and advanced reasoning tasks. It is still in training and not yet publicly available.",
     "badges": ["LLM", "Multimodal", "Open-Weight"],
@@ -2022,7 +2022,7 @@
   {
     "name": "Yi Coder",
     "provider": "01 AI",
-    "providerClass": "zerooneai",
+    "providerClass": "01 AI",
     "description": "An open-weight model for code generation, optimized for programming tasks and developer workflows.",
     "badges": ["Code Generation", "Open Weights", "Developer"],
     "metadata": {
@@ -2658,7 +2658,7 @@
   {
     "name": "Yi 1.5",
     "provider": "01 AI",
-    "providerClass": "zerooneai",
+    "providerClass": "01 AI",
     "description": "An open-weight language model optimized for research and NLP tasks, offering high performance and flexibility.",
     "badges": ["Language Model", "Open Weights", "Research"],
     "metadata": {
@@ -3473,7 +3473,7 @@
   },
   {
     "name": "Code Llama",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "A specialized LLaMA variant for code generation and programming tasks. It supports multiple programming languages and excels in generating accurate, context-aware code.",
     "badges": ["LLM", "Code"],
@@ -3519,7 +3519,7 @@
   },
   {
     "name": "LLaMA 2",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "An improved version of LLaMA, offering enhanced performance and safety for research applications. It supports a wide range of NLP tasks with better generalization and efficiency.",
     "badges": ["LLM", "Research"],
@@ -3721,7 +3721,7 @@
   },
   {
     "name": "LLaMA",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "A family of language models designed for research purposes, known for efficiency in natural language tasks. LLaMA models excel in text generation and understanding with optimized architectures.",
     "badges": ["LLM", "Research"],
@@ -3972,7 +3972,7 @@
   },
   {
     "name": "OPT",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "Open Pre-trained Transformer models for research, offering efficient large-scale language modeling. It provides performance comparable to GPT-3 with open access for academic use.",
     "badges": ["LLM", "Open Source"],
@@ -5033,7 +5033,7 @@
   },
   {
     "name": "XLM-R",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "Cross-lingual Language Model-RoBERTa for multilingual NLP tasks. It supports 100 languages, enabling robust performance in translation and text classification across languages.",
     "badges": ["LLM", "Multilingual"],
@@ -5097,7 +5097,7 @@
   },
   {
     "name": "BART",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "Bidirectional and Auto-Regressive Transformer for text generation and comprehension. It excels in tasks like summarization and translation with a denoising pre-training objective.",
     "badges": ["LLM", "Open Source"],
@@ -5166,7 +5166,7 @@
   },
   {
     "name": "RoBERTa",
-    "provider": "Meta AI",
+    "provider": "Meta",
     "providerClass": "meta",
     "description": "Robustly optimized BERT approach for enhanced NLP performance. It improves on BERT with dynamic masking and larger pre-training data for tasks like text classification.",
     "badges": ["LLM", "Open Source"],
