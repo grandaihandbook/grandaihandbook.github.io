@@ -1738,5 +1738,556 @@
     "website_url": "https://pytorch.org/audio",
     "docs_url": "https://pytorch.org/audio/stable/index.html",
     "logo_url": "https://pytorch.org/assets/images/pytorch-logo.png"
+  },
+  {
+    "name": "Stanza",
+    "provider": "Stanford NLP Group",
+    "providerClass": "stanford-logo",
+    "description": "Stanza is Stanford NLP Group's official Python library for advanced NLP with support for 60+ languages. It provides neural network models for various NLP tasks including tokenization, part-of-speech tagging, lemmatization, dependency parsing, and named entity recognition with state-of-the-art accuracy and efficiency.",
+    "badges": ["Library", "Open Source", "NLP"],
+    "metadata": {
+      "released": "April 2020",
+      "version": "1.5.1",
+      "stars": "6.9k",
+      "forks": "878",
+      "language": "Python"
+    },
+    "features": [
+      "Multi-lingual support for 60+ languages",
+      "Full neural NLP pipeline",
+      "State-of-the-art model performance",
+      "Integration with CoNLL data formats"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/stanfordnlp/stanza",
+    "website_url": "https://stanfordnlp.github.io/stanza/",
+    "docs_url": "https://stanfordnlp.github.io/stanza/",
+    "logo_url": "https://nlp.stanford.edu/images/logos/stanford-nlp-logo.png"
+  },
+  {
+    "name": "NLP-Cube",
+    "provider": "Adobe Research",
+    "providerClass": "adobe-logo",
+    "description": "NLP-Cube is a natural language processing framework that provides end-to-end processing pipelines for multiple languages. It offers state-of-the-art neural network models for sentence splitting, tokenization, POS tagging, lemmatization, and dependency parsing with a unified API across all supported languages.",
+    "badges": ["Framework", "Open Source", "NLP"],
+    "metadata": {
+      "released": "July 2018",
+      "version": "3.0",
+      "stars": "374",
+      "forks": "57",
+      "language": "Python"
+    },
+    "features": [
+      "Neural end-to-end NLP pipeline",
+      "Multi-task learning architecture",
+      "Language-agnostic design",
+      "Docker deployment support"
+    ],
+    "stats": {
+      "popularity": "★★☆☆☆",
+      "activity": "★★☆☆☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/adobe/NLP-Cube",
+    "website_url": "https://github.com/adobe/NLP-Cube",
+    "docs_url": "https://github.com/adobe/NLP-Cube/wiki",
+    "logo_url": "https://raw.githubusercontent.com/adobe/NLP-Cube/master/docs/nlpcube-logo.png"
+  },
+  {
+    "name": "OpenNMT",
+    "provider": "OpenNMT",
+    "providerClass": "opennmt-logo",
+    "description": "OpenNMT is an open-source ecosystem for neural machine translation and neural sequence learning. It provides industrial-strength, production-ready implementations of neural machine translation architectures, supporting both research experimentation and large-scale production deployment with optimized performance.",
+    "badges": ["Framework", "Open Source", "NLP"],
+    "metadata": {
+      "released": "December 2016",
+      "version": "3.3.1",
+      "stars": "6.5k",
+      "forks": "2.2k",
+      "language": "Python, Lua"
+    },
+    "features": [
+      "Multiple neural machine translation architectures",
+      "Production-ready deployment tools",
+      "Support for multi-modal translation",
+      "Extensive customization options"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/OpenNMT/OpenNMT-py",
+    "website_url": "https://opennmt.net",
+    "docs_url": "https://opennmt.net/docs/",
+    "logo_url": "https://opennmt.net/img/logo.png"
+  },
+  {
+    "name": "Colossal-AI",
+    "provider": "HPC-AI Tech",
+    "providerClass": "colossalai-logo",
+    "description": "Colossal-AI is a unified deep learning system for large-scale parallel training. It provides easy-to-use APIs for distributed training of large models, offering various parallelism strategies including data, tensor, pipeline, and sequence parallelism, making large model training accessible to all.",
+    "badges": ["Framework", "Open Source", "Distributed Computing"],
+    "metadata": {
+      "released": "October 2021",
+      "version": "0.3.4",
+      "stars": "37k",
+      "forks": "4.2k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "Multiple parallelism strategies",
+      "Heterogeneous memory management",
+      "Automatic parallelization",
+      "Zero overhead integration"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/hpcaitech/ColossalAI",
+    "website_url": "https://colossalai.org",
+    "docs_url": "https://colossalai.org/docs/",
+    "logo_url": "https://raw.githubusercontent.com/hpcaitech/public_assets/main/colossalai/img/Colossal-AI_logo.png"
+  },
+  {
+    "name": "PyTorch Lightning",
+    "provider": "Lightning AI",
+    "providerClass": "lightning-logo",
+    "description": "PyTorch Lightning is the deep learning framework for professional AI researchers and machine learning engineers who need maximal flexibility without sacrificing performance at scale. It organizes PyTorch code to remove boilerplate while adding essential features for production deployment and scaling.",
+    "badges": ["Framework", "Open Source", "Deep Learning"],
+    "metadata": {
+      "released": "March 2019",
+      "version": "2.1.0",
+      "stars": "26.5k",
+      "forks": "3.2k",
+      "language": "Python"
+    },
+    "features": [
+      "Hardware agnostic training",
+      "Distributed training orchestration",
+      "Built-in debugging and profiling",
+      "Easy production deployment"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/Lightning-AI/lightning",
+    "website_url": "https://lightning.ai",
+    "docs_url": "https://lightning.ai/docs/pytorch/stable/",
+    "logo_url": "https://raw.githubusercontent.com/Lightning-AI/lightning/master/docs/source/_static/images/logo.png"
+  },
+  {
+    "name": "Composer",
+    "provider": "MosaicML",
+    "providerClass": "mosaicml-logo",
+    "description": "Composer is a PyTorch library for efficient neural network training through algorithmic improvements. It provides a set of optimizations that can be composed to accelerate model training by up to 7x while improving model quality, featuring drop-in replacements for standard training procedures.",
+    "badges": ["Library", "Open Source", "Training Optimization"],
+    "metadata": {
+      "released": "March 2022",
+      "version": "0.16.4",
+      "stars": "4.8k",
+      "forks": "392",
+      "language": "Python"
+    },
+    "features": [
+      "Algorithmic training optimizations",
+      "Model-agnostic speedup methods",
+      "Integration with popular frameworks",
+      "Memory and compute efficiency"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/mosaicml/composer",
+    "website_url": "https://docs.mosaicml.com/projects/composer/",
+    "docs_url": "https://docs.mosaicml.com/projects/composer/en/stable/",
+    "logo_url": "https://docs.mosaicml.com/en/latest/_static/mosaicml-logo.png"
+  },
+  {
+    "name": "Accelerate",
+    "provider": "Hugging Face",
+    "providerClass": "huggingface-logo",
+    "description": "Accelerate is a library that enables the same PyTorch code to be run across any distributed configuration by adding just four lines of code. It provides simple APIs to make PyTorch training scripts runnable on any distributed setup, supporting multiple GPUs, TPUs, and DeepSpeed integration.",
+    "badges": ["Library", "Open Source", "Distributed Computing"],
+    "metadata": {
+      "released": "January 2021",
+      "version": "0.24.1",
+      "stars": "6.5k",
+      "forks": "751",
+      "language": "Python"
+    },
+    "features": [
+      "Distributed training with minimal code changes",
+      "Automatic mixed precision support",
+      "Device placement management",
+      "Integration with HF Trainer"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/huggingface/accelerate",
+    "website_url": "https://huggingface.co/docs/accelerate",
+    "docs_url": "https://huggingface.co/docs/accelerate/index",
+    "logo_url": "https://huggingface.co/front/assets/huggingface_logo.svg"
+  },
+  {
+    "name": "Alpa",
+    "provider": "Alpa",
+    "providerClass": "alpa-logo",
+    "description": "Alpa is a system for training and serving large-scale neural networks. It automates parallelization of large tensor computations and generates execution plans that unify data, operator, and pipeline parallelism, enabling training of models with hundreds of billions of parameters on distributed clusters.",
+    "badges": ["Framework", "Open Source", "Distributed Computing"],
+    "metadata": {
+      "released": "April 2022",
+      "version": "0.2.3",
+      "stars": "3k",
+      "forks": "337",
+      "language": "Python, C++"
+    },
+    "features": [
+      "Automatic parallelization of large models",
+      "Inter-operator parallelism",
+      "Memory optimization techniques",
+      "JAX ecosystem integration"
+    ],
+    "stats": {
+      "popularity": "★★★☆☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/alpa-projects/alpa",
+    "website_url": "https://alpa.ai",
+    "docs_url": "https://alpa.ai/tutorials/getting_started.html",
+    "logo_url": "https://alpa.ai/_static/alpa-logo.png"
+  },
+  {
+    "name": "PEFT",
+    "provider": "Hugging Face",
+    "providerClass": "huggingface-logo",
+    "description": "PEFT (Parameter-Efficient Fine-Tuning) is a library for efficiently adapting pre-trained language models to various downstream applications without fine-tuning all the model's parameters. It implements state-of-the-art methods like LoRA, Prefix Tuning, and P-Tuning to achieve competitive performance with minimal compute requirements.",
+    "badges": ["Library", "Open Source", "Fine-tuning"],
+    "metadata": {
+      "released": "February 2023",
+      "version": "0.6.2",
+      "stars": "13.5k",
+      "forks": "1.2k",
+      "language": "Python"
+    },
+    "features": [
+      "Multiple parameter-efficient methods",
+      "Integration with transformers library",
+      "Memory-efficient fine-tuning",
+      "Support for various model architectures"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/huggingface/peft",
+    "website_url": "https://huggingface.co/docs/peft",
+    "docs_url": "https://huggingface.co/docs/peft/index",
+    "logo_url": "https://huggingface.co/front/assets/huggingface_logo.svg"
+  },
+  {
+    "name": "QLoRA",
+    "provider": "Artidoro Pagnoni",
+    "providerClass": "qlora-logo",
+    "description": "QLoRA is an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. It uses 4-bit quantization and Low Rank Adapters to achieve unprecedented memory efficiency in LLM finetuning.",
+    "badges": ["Method", "Open Source", "Fine-tuning"],
+    "metadata": {
+      "released": "May 2023",
+      "version": "1.0.0",
+      "stars": "9.2k",
+      "forks": "1.1k",
+      "language": "Python"
+    },
+    "features": [
+      "4-bit quantization for LLM finetuning",
+      "Memory-efficient adapter training",
+      "Maintains 16-bit task performance",
+      "Single GPU finetuning capability"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/artidoro/qlora",
+    "website_url": "https://arxiv.org/abs/2305.14314",
+    "docs_url": "https://github.com/artidoro/qlora#readme",
+    "logo_url": "https://raw.githubusercontent.com/artidoro/qlora/main/assets/qlora.png"
+  },
+  {
+    "name": "Transformers Agents",
+    "provider": "Hugging Face",
+    "providerClass": "huggingface-logo",
+    "description": "Transformers Agents is a natural language API built on top of transformers that provides an agent interface to use tools, search the web, and leverage language models for complex tasks. It enables natural language programming by converting user instructions into executable code using LLMs.",
+    "badges": ["Library", "Open Source", "LLM"],
+    "metadata": {
+      "released": "May 2023",
+      "version": "4.35.0",
+      "stars": "115k",
+      "forks": "23k",
+      "language": "Python"
+    },
+    "features": [
+      "Natural language API for coding",
+      "Tool use and web search capabilities",
+      "Integration with transformers models",
+      "Multi-modal agent support"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/huggingface/transformers",
+    "website_url": "https://huggingface.co/docs/transformers/transformers_agents",
+    "docs_url": "https://huggingface.co/docs/transformers/transformers_agents",
+    "logo_url": "https://huggingface.co/front/assets/huggingface_logo.svg"
+  },
+  {
+    "name": "PromptTools",
+    "provider": "Hegel AI",
+    "providerClass": "prompttools-logo",
+    "description": "PromptTools provides a set of open-source, self-hostable tools for experimenting with, testing, and evaluating LLMs, vector databases, and prompts. It enables systematic prompt engineering through experimentation frameworks, evaluation metrics, and visualization tools for optimizing LLM applications.",
+    "badges": ["Tool", "Open Source", "Prompt Engineering"],
+    "metadata": {
+      "released": "June 2023",
+      "version": "0.0.41",
+      "stars": "2.4k",
+      "forks": "202",
+      "language": "Python"
+    },
+    "features": [
+      "Prompt testing and experimentation",
+      "Multiple LLM provider support",
+      "Evaluation framework for prompts",
+      "Visualization and comparison tools"
+    ],
+    "stats": {
+      "popularity": "★★★☆☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/hegelai/prompttools",
+    "website_url": "https://prompttools.readthedocs.io",
+    "docs_url": "https://prompttools.readthedocs.io/en/latest/",
+    "logo_url": "https://raw.githubusercontent.com/hegelai/prompttools/main/docs/source/_static/logo.png"
+  },
+  {
+    "name": "Unsloth",
+    "provider": "Unsloth AI",
+    "providerClass": "unsloth-logo",
+    "description": "Unsloth is a lightweight library for efficient finetuning of LLMs that requires 70% less memory and runs 2.2x faster while maintaining accuracy. It implements custom CUDA kernels and memory optimizations specifically designed for LLM finetuning, making large model training more accessible on consumer hardware.",
+    "badges": ["Library", "Open Source", "Fine-tuning"],
+    "metadata": {
+      "released": "October 2023",
+      "version": "2023.11",
+      "stars": "7.2k",
+      "forks": "442",
+      "language": "Python, CUDA"
+    },
+    "features": [
+      "70% less memory usage for finetuning",
+      "2.2x faster training speed",
+      "Custom CUDA kernel optimizations",
+      "Compatible with popular LLM architectures"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/unslothai/unsloth",
+    "website_url": "https://unsloth.ai",
+    "docs_url": "https://github.com/unslothai/unsloth#documentation",
+    "logo_url": "https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth_logo.png"
+  },
+  {
+    "name": "LlamaIndex",
+    "provider": "LlamaIndex",
+    "providerClass": "llamaindex-logo",
+    "description": "LlamaIndex is a data framework for LLM applications to ingest, structure, and access private or domain-specific data. It provides tools for building production RAG systems, including document processing, embedding management, vector stores integration, and advanced query capabilities for contextual LLM applications.",
+    "badges": ["Framework", "Open Source", "RAG"],
+    "metadata": {
+      "released": "November 2022",
+      "version": "0.9.15",
+      "stars": "30k",
+      "forks": "3.9k",
+      "language": "Python"
+    },
+    "features": [
+      "Document ingestion and indexing",
+      "Advanced retrieval strategies",
+      "Multiple vector store integrations",
+      "Query engines and chat interfaces"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/run-llama/llama_index",
+    "website_url": "https://www.llamaindex.ai",
+    "docs_url": "https://docs.llamaindex.ai/en/stable/",
+    "logo_url": "https://raw.githubusercontent.com/run-llama/llama_index/main/docs/docs/assets/LlamaIndex.png"
+  },
+  {
+    "name": "CrewAI",
+    "provider": "CrewAI",
+    "providerClass": "crewai-logo",
+    "description": "CrewAI is a framework for orchestrating role-playing autonomous AI agents. It enables the creation of AI teams that work together to accomplish complex tasks, providing a structured approach to multi-agent collaboration with specialized roles, goals, and tools for each agent in the crew.",
+    "badges": ["Framework", "Open Source", "Multi-Agent"],
+    "metadata": {
+      "released": "December 2023",
+      "version": "0.1.35",
+      "stars": "12k",
+      "forks": "1.5k",
+      "language": "Python"
+    },
+    "features": [
+      "Role-based agent framework",
+      "Multi-agent task orchestration",
+      "Built-in tools and memory systems",
+      "Integration with various LLM providers"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/joaomdmoura/crewAI",
+    "website_url": "https://www.crewai.io",
+    "docs_url": "https://docs.crewai.com",
+    "logo_url": "https://raw.githubusercontent.com/joaomdmoura/crewAI/main/docs/crewai_logo.png"
+  },
+  {
+    "name": "Triton Inference Server",
+    "provider": "NVIDIA",
+    "providerClass": "nvidia-logo",
+    "description": "Triton Inference Server delivers fast and scalable AI inferencing for any framework on GPU and CPU. It supports concurrent model execution, dynamic batching, and model ensembles, providing a standardized inference platform that maximizes throughput and hardware utilization in production environments.",
+    "badges": ["Server", "Open Source", "Inference"],
+    "metadata": {
+      "released": "October 2018",
+      "version": "2.39.0",
+      "stars": "7.4k",
+      "forks": "1.6k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Multi-framework model serving",
+      "Dynamic batching for high throughput",
+      "Model ensembles and pipelines",
+      "GPU and CPU optimization"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "BSD-3-Clause"
+    },
+    "repo_url": "https://github.com/triton-inference-server/server",
+    "website_url": "https://developer.nvidia.com/nvidia-triton-inference-server",
+    "docs_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/",
+    "logo_url": "https://developer.nvidia.com/sites/default/files/akamai/Triton-Inference-Server.png"
+  },
+  {
+    "name": "vLLM",
+    "provider": "vLLM Team",
+    "providerClass": "vllm-logo",
+    "description": "vLLM is a high-throughput and memory-efficient inference and serving engine for LLMs. It achieves 24x higher throughput than HuggingFace Transformers by using PagedAttention, continuous batching, and optimized CUDA kernels, making it ideal for production deployment of large language models.",
+    "badges": ["Engine", "Open Source", "Inference"],
+    "metadata": {
+      "released": "June 2023",
+      "version": "0.2.4",
+      "stars": "17k",
+      "forks": "2.2k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "PagedAttention for efficient memory use",
+      "Continuous batching for high throughput",
+      "Integration with popular LLM architectures",
+      "OpenAI-compatible API server"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/vllm-project/vllm",
+    "website_url": "https://vllm.ai",
+    "docs_url": "https://vllm.readthedocs.io",
+    "logo_url": "https://raw.githubusercontent.com/vllm-project/vllm/main/docs/source/assets/logos/vllm-logo-text-light.png"
+  },
+  {
+    "name": "ONNX Runtime",
+    "provider": "Microsoft",
+    "providerClass": "microsoft-logo",
+    "description": "ONNX Runtime is a cross-platform inference and training accelerator compatible with deep learning frameworks, including PyTorch and TensorFlow/Keras. It optimizes and accelerates machine learning inferencing and training, providing consistent performance improvements across different hardware platforms.",
+    "badges": ["Runtime", "Open Source", "Inference"],
+    "metadata": {
+      "released": "December 2018",
+      "version": "1.16.1",
+      "stars": "12.5k",
+      "forks": "2.6k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Cross-platform inference optimization",
+      "Hardware acceleration support",
+      "Multiple framework compatibility",
+      "Production-grade performance"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/microsoft/onnxruntime",
+    "website_url": "https://onnxruntime.ai",
+    "docs_url": "https://onnxruntime.ai/docs/",
+    "logo_url": "https://onnxruntime.ai/images/ONNX-Runtime-logo.png"
+  },
+  {
+    "name": "Comet ML",
+    "provider": "Comet",
+    "providerClass": "comet-logo",
+    "description": "Comet ML is a machine learning platform that helps track, compare, explain, and optimize experiments and models. It provides experiment tracking, model production monitoring, and a model registry, enabling teams to build better models faster through comprehensive visualization and collaboration tools.",
+    "badges": ["Platform", "Commercial", "MLOps"],
+    "metadata": {
+      "released": "August 2017",
+      "version": "3.35.3",
+      "stars": "145",
+      "forks": "23",
+      "language": "Python"
+    },
+    "features": [
+      "Automatic experiment tracking",
+      "Model performance visualization",
+      "Hyperparameter optimization",
+      "Team collaboration features"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Commercial"
+    },
+    "repo_url": "https://github.com/comet-ml/comet-examples",
+    "website_url": "https://www.comet.com",
+    "docs_url": "https://www.comet.com/docs/",
+    "logo_url": "https://www.comet.com/images/logo/comet-logo.svg"
   }
 ]
