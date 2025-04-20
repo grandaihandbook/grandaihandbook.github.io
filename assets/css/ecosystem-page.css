@@ -1,0 +1,15 @@
+@import "./ecosystem/base-styles.css";
+@import "./ecosystem/card-image-paths.css";
+@import "./ecosystem/feature-badges-styles.css";
+@import "./ecosystem/filter-section-styles.css";
+@import "./ecosystem/header-styles.css";
+@import "./ecosystem/ecosystem-actions-styles.css"; /* Tool-specific version */
+@import "./ecosystem/ecosystem-card-styles.css"; /* Tool-specific version */
+@import "./ecosystem/ecosystem-content-styles.css"; /* Tool-specific version */
+@import "./ecosystem/ecosystem-features-styles.css"; /* Tool-specific version */
+@import "./ecosystem/ecosystem-stats-styles.css"; /* Tool-specific version */
+@import "./ecosystem/pagination-styles.css";
+@import "./ecosystem/responsive-styles.css";
+@import "./ecosystem/scroll-top-and-card-overides.css";
+@import "./ecosystem/search-filter-styles.css";
+@import "./ecosystem/github-stats-styles.css"; /* New file for GitHub stats */
