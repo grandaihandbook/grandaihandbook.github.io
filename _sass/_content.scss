@@ -36,7 +36,7 @@
 
 /* Section styling */
 section {
-  margin-bottom: var(--space-20);
+  margin-bottom: var(--space-8);
 
   h2 {
     font-size: 2.25rem;
@@ -46,7 +46,7 @@ section {
     padding-bottom: 0.75rem;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -61,7 +61,11 @@ section {
 
 /* Banner with premium styling */
 .banner {
-  background: linear-gradient(to right, rgba(79, 70, 229, 0.05), rgba(139, 92, 246, 0.05));
+  background: linear-gradient(
+    to right,
+    rgba(79, 70, 229, 0.05),
+    rgba(139, 92, 246, 0.05)
+  );
   border: 1px solid rgba(79, 70, 229, 0.1);
   border-radius: 0.75rem;
   padding: 2.5rem;
@@ -70,7 +74,7 @@ section {
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -99,7 +103,7 @@ section {
   color: var(--text-secondary);
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0.6rem;

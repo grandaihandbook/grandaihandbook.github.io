@@ -1,7 +1,14 @@
 /* Typography styles */
 
 .gradient-word {
-  background-image: linear-gradient(90deg, #7c3aed, #8b5cf6, #4f46e5, #06b6d4, #10b981);
+  background-image: linear-gradient(
+    90deg,
+    #7c3aed,
+    #8b5cf6,
+    #4f46e5,
+    #06b6d4,
+    #10b981
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10,7 +17,14 @@
 }
 
 .gradient-title {
-  background-image: linear-gradient(90deg, #7c3aed, #8b5cf6, #4f46e5, #06b6d4, #10b981);
+  background-image: linear-gradient(
+    90deg,
+    #7c3aed,
+    #8b5cf6,
+    #4f46e5,
+    #06b6d4,
+    #10b981
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -101,7 +115,7 @@ blockquote::before {
   top: -1.25rem;
   left: 0;
   font-size: 6rem;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: rgba(79, 70, 229, 0.1);
   line-height: 1;
 }
@@ -125,7 +139,14 @@ blockquote::before {
 
 /* Gradient word styling for section titles */
 .section-title h2 .gradient-word {
-  background: linear-gradient(90deg, #7c3aed, #8b5cf6, #4f46e5, #06b6d4, #10b981);
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #8b5cf6,
+    #4f46e5,
+    #06b6d4,
+    #10b981
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -134,7 +155,7 @@ blockquote::before {
 
 /* Underline accent for section titles */
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -0.5rem;
   left: 50%;
@@ -202,7 +223,7 @@ blockquote::before {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 3.5rem 0;
+  margin: 1.5rem 0;
 }
 
 blockquote.centered {
@@ -220,7 +241,7 @@ blockquote.centered::before,
 blockquote.centered::after {
   content: '"';
   font-size: 3rem;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: rgba(79, 70, 229, 0.2);
   position: absolute;
   line-height: 1;

@@ -436,6 +436,22 @@
       background-image: url("/assets/images/handbooks/30.jpg");
     }
 
+    &.models {
+      background-image: url("/assets/images/ecosystem/models.jpg");
+    }
+
+    &.tools {
+      background-image: url("/assets/images/ecosystem/tools.jpg");
+    }
+
+    &.benchmarks {
+      background-image: url("/assets/images/ecosystem/benchmarks.jpg");
+    }
+
+    &.competitions {
+      background-image: url("/assets/images/ecosystem/competitions.jpg");
+    }
+
     /* Default gradient background if no image is available */
     &.default {
       background-image: linear-gradient(135deg, #6366f1, #8b5cf6);

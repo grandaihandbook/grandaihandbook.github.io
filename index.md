@@ -35,9 +35,10 @@ hide_title: true
       <p class="max-w-3xl mx-auto mt-4">A meticulously curated resource designed to illuminate the complex world of artificial intelligence through structured learning paths, expert insights, and practical applications.</p>
     </div>
     
-    <div class="features-grid">
+    <!-- Forced horizontal layout with equal heights -->
+    <div class="flex overflow-x-auto pb-6" style="min-width: 100%; scrollbar-width: none;">
       <!-- Feature Card 1 -->
-      <div class="feature-card">
+      <div class="feature-card flex-shrink-0 flex flex-col" style="width: 24%; margin-right: 1.33%; height: 400px;">
         <div class="feature-header">
           <div class="feature-icon">
             <span role="img" aria-label="Brain" style="font-size: 24px;">🧠</span>
@@ -45,7 +46,7 @@ hide_title: true
           <h3>Mastering AI Fundamentals</h3>
         </div>
         <div class="feature-divider"></div>
-        <div class="feature-content">
+        <div class="feature-content flex-grow">
           <ul class="feature-list">
             <li class="feature-item">Domain-specific handbooks with progressive learning paths</li>
             <li class="feature-item">Intuitive explanations of complex algorithms</li>
@@ -56,7 +57,7 @@ hide_title: true
       </div>
       
       <!-- Feature Card 2 -->
-      <div class="feature-card">
+      <div class="feature-card flex-shrink-0 flex flex-col" style="width: 24%; margin-right: 1.33%; height: 400px;">
         <div class="feature-header">
           <div class="feature-icon">
             <span role="img" aria-label="Microscope" style="font-size: 24px;">🔬</span>
@@ -64,7 +65,7 @@ hide_title: true
           <h3>Research & Innovation</h3>
         </div>
         <div class="feature-divider"></div>
-        <div class="feature-content">
+        <div class="feature-content flex-grow">
           <ul class="feature-list">
             <li class="feature-item">Expert analyses of breakthrough research papers</li>
             <li class="feature-item">Technical concepts translated into accessible insights</li>
@@ -75,7 +76,7 @@ hide_title: true
       </div>
       
       <!-- Feature Card 3 -->
-      <div class="feature-card">
+      <div class="feature-card flex-shrink-0 flex flex-col" style="width: 24%; margin-right: 1.33%; height: 400px;">
         <div class="feature-header">
           <div class="feature-icon">
             <span role="img" aria-label="Rocket" style="font-size: 24px;">🚀</span>
@@ -83,7 +84,7 @@ hide_title: true
           <h3>Career Development</h3>
         </div>
         <div class="feature-divider"></div>
-        <div class="feature-content">
+        <div class="feature-content flex-grow">
           <ul class="feature-list">
             <li class="feature-item">Comprehensive roadmaps for AI specializations</li>
             <li class="feature-item">Strategic skill acquisition frameworks</li>
@@ -94,7 +95,7 @@ hide_title: true
       </div>
       
       <!-- Feature Card 4 -->
-      <div class="feature-card">
+      <div class="feature-card flex-shrink-0 flex flex-col" style="width: 24%; height: 400px;">
         <div class="feature-header">
           <div class="feature-icon">
             <span role="img" aria-label="Gear" style="font-size: 24px;">⚙️</span>
@@ -102,7 +103,7 @@ hide_title: true
           <h3>Practical Resources</h3>
         </div>
         <div class="feature-divider"></div>
-        <div class="feature-content">
+        <div class="feature-content flex-grow">
           <ul class="feature-list">
             <li class="feature-item">Advanced tutorials for all experience levels</li>
             <li class="feature-item">Critical evaluations of AI tools and frameworks</li>
@@ -119,6 +120,7 @@ hide_title: true
   </blockquote>
 </div>
   </section>
+</div>
   
   <!-- HANDBOOKS SECTION -->
   <section class="mb-20">
@@ -169,7 +171,119 @@ hide_title: true
     <a href="{{ '/content/handbooks/' | relative_url }}" class="btn btn-primary">View All Handbooks</a>
   </div>
 </section>
+  <!-- ECOSYSTEM SECTION -->
+<section class="mb-20">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold">AI <span class="gradient-word">Ecosystem</span></h2>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <a href="{{ '/ecosystem/models/' | relative_url }}" class="handbook-card">
+      <!-- Optional category badge -->
+      <div class="category-badge">Ecosystem</div>
+  <!-- Image container with floating icon on hover -->
+  <div class="card-image models">
+    
+  </div>
   
+  <div class="card-content">
+    
+    <h3 class="text-xl font-semibold mb-2">Models</h3>
+    <p>
+      Comprehensive directory of state-of-the-art AI models across domains, with performance benchmarks and implementation guides.
+    </p>
+    
+    <!-- Optional read more indicator -->
+    <div class="read-more">
+      Explore models
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+</a>
+
+<a href="{{ '/ecosystem/tools/' | relative_url }}" class="handbook-card">
+  <!-- Optional category badge -->
+  <div class="category-badge">Ecosystem</div>
+  
+  <!-- Image container with floating icon on hover -->
+  <div class="card-image tools">
+    
+  </div>
+  
+  <div class="card-content">
+    
+    <h3 class="text-xl font-semibold mb-2">Tools</h3>
+    <p>
+      Curated collection of essential AI software, frameworks, and development environments with practical implementation guidance.
+    </p>
+    
+    <!-- Optional read more indicator -->
+    <div class="read-more">
+      Explore tools
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+</a>
+
+<a href="{{ '/ecosystem/benchmarks/' | relative_url }}" class="handbook-card">
+  <!-- Optional category badge -->
+  <div class="category-badge">Ecosystem</div>
+  
+  <!-- Image container with floating icon on hover -->
+  <div class="card-image benchmarks">
+    
+  </div>
+  
+  <div class="card-content">
+    
+    <h3 class="text-xl font-semibold mb-2">Benchmarks</h3>
+    <p>
+      In-depth analysis of standardized performance metrics and evaluation frameworks for comparing AI system capabilities.
+    </p>
+    
+    <!-- Optional read more indicator -->
+    <div class="read-more">
+      Explore benchmarks
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+</a>
+
+<a href="{{ '/ecosystem/competitions/' | relative_url }}" class="handbook-card">
+  <!-- Optional category badge -->
+  <div class="category-badge">Ecosystem</div>
+  
+  <!-- Image container with floating icon on hover -->
+  <div class="card-image competitions">
+    
+  </div>
+  
+  <div class="card-content">
+    
+    <h3 class="text-xl font-semibold mb-2">Competitions</h3>
+    <p>
+      Guide to major AI challenges, contests, and collaborative opportunities for developing and testing cutting-edge solutions.
+    </p>
+    
+    <!-- Optional read more indicator -->
+    <div class="read-more">
+      Explore competitions
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+</a>
+  </div>
+  <div class="text-center mt-10">
+    <a href="{{ '/ecosystem/' | relative_url }}" class="btn btn-primary">Explore Full Ecosystem</a>
+  </div>
+</section>
   <!-- ROADMAPS SECTION -->
   <section class="mb-20">
   <div class="text-center mb-12">
