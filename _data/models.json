@@ -1,5 +1,499 @@
 [
   {
+    "name": "Gemma 3 QAT",
+    "provider": "Google",
+    "providerClass": "google",
+    "description": "Gemma 3 QAT models are quantization-aware trained versions of Gemma 3, enabling state-of-the-art AI performance on consumer-grade GPUs by reducing memory requirements without compromising quality.",
+    "badges": ["LLM", "Quantized", "Open"],
+    "metadata": {
+      "released": "April 18, 2025",
+      "version": "3.0 QAT",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Quantization-Aware Training",
+      "Reduced Memory Footprint",
+      "High Performance on Consumer GPUs",
+      "Maintained Model Quality",
+      "Optimized for BF16 Precision"
+    ],
+    "stats": {
+      "performance": "8.8/10",
+      "accuracy": "9.0/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Claude 3.7 Sonnet",
+    "provider": "Anthropic",
+    "providerClass": "anthropic",
+    "description": "Claude 3.7 Sonnet is Anthropic’s most advanced hybrid reasoning model, capable of delivering both rapid responses and extended, step-by-step reasoning. It excels in real-world coding, planning, and instruction-following tasks, offering fine-grained control over reasoning depth and output length.",
+    "badges": ["LLM", "Hybrid Reasoning", "Proprietary"],
+    "metadata": {
+      "released": "February 24, 2025",
+      "version": "3.7",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Hybrid Reasoning (Quick vs. Extended Thinking)",
+      "Extended Thinking Mode (Up to 128K Tokens)",
+      "Agentic Coding via Claude Code",
+      "State-of-the-Art on SWE-bench and TAU-bench",
+      "Multimodal Capabilities",
+      "Available via API, Amazon Bedrock, and Google Vertex AI"
+    ],
+    "stats": {
+      "performance": "9.5/10",
+      "accuracy": "9.7/10",
+      "license": "Proprietary"
+    }
+  },
+  {
+    "name": "Gemini 2.5 Pro",
+    "provider": "Google DeepMind",
+    "providerClass": "google",
+    "description": "Gemini 2.5 Pro is Google DeepMind’s most advanced multimodal AI model with built-in thinking capabilities, excelling in complex reasoning, coding, and math/science tasks. It leads benchmarks like GPQA, AIME 2025, and SWE-Bench Verified, offering state-of-the-art performance for developers and enterprises.",
+    "badges": ["LLM", "Multimodal", "Thinking"],
+    "metadata": {
+      "released": "March 2025",
+      "version": "2.5",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Native Multimodal Support (Text, Images, Code)",
+      "1M Token Context Window",
+      "Dynamic Thinking for Enhanced Reasoning",
+      "High Performance in Math and Science Benchmarks",
+      "Advanced Coding (Web Apps, Agentic Applications)",
+      "Available via Google AI Studio and Vertex AI"
+    ],
+    "stats": {
+      "performance": "9.3/10",
+      "accuracy": "9.4/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Gemini 2.5 Flash",
+    "provider": "Google DeepMind",
+    "providerClass": "google",
+    "description": "Gemini 2.5 Flash is a highly efficient multimodal AI model with hybrid reasoning, designed for developers needing fast responses for high-volume tasks. It offers controllable thinking, strong performance in coding and reasoning, and a cost-effective solution for applications like chatbots and data extraction.",
+    "badges": ["LLM", "Multimodal", "Thinking"],
+    "metadata": {
+      "released": "April 2025",
+      "version": "2.5",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Native Multimodal Support (Text, Images, Code)",
+      "1M Token Context Window",
+      "Controllable Dynamic Thinking (On/Off)",
+      "Optimized for High-Volume Tasks (Chat Apps, Data Extraction)",
+      "High-Speed Inference with Low Latency",
+      "Available via Google AI Studio and Vertex AI"
+    ],
+    "stats": {
+      "performance": "9.0/10",
+      "accuracy": "9.1/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Gemini 2.5 Pro",
+    "provider": "Google DeepMind",
+    "providerClass": "google",
+    "description": "Gemini 2.5 Pro is Google DeepMind’s most advanced multimodal AI model with built-in thinking capabilities, excelling in complex reasoning, coding, and math/science tasks. It leads benchmarks like GPQA, AIME 2025, and SWE-Bench Verified, offering state-of-the-art performance for developers and enterprises.",
+    "badges": ["LLM", "Multimodal", "Thinking"],
+    "metadata": {
+      "released": "March 2025",
+      "version": "2.5",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Native Multimodal Support (Text, Images, Code)",
+      "1M Token Context Window",
+      "Dynamic Thinking for Enhanced Reasoning",
+      "High Performance in Math and Science Benchmarks",
+      "Advanced Coding (Web Apps, Agentic Applications)",
+      "Available via Google AI Studio and Vertex AI"
+    ],
+    "stats": {
+      "performance": "9.3/10",
+      "accuracy": "9.4/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Gemini 2.5 Flash",
+    "provider": "Google DeepMind",
+    "providerClass": "google",
+    "description": "Gemini 2.5 Flash is a highly efficient multimodal AI model with hybrid reasoning, designed for developers needing fast responses for high-volume tasks. It offers controllable thinking, strong performance in coding and reasoning, and a cost-effective solution for applications like chatbots and data extraction.",
+    "badges": ["LLM", "Multimodal", "Thinking"],
+    "metadata": {
+      "released": "April 2025",
+      "version": "2.5",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Native Multimodal Support (Text, Images, Code)",
+      "1M Token Context Window",
+      "Controllable Dynamic Thinking (On/Off)",
+      "Optimized for High-Volume Tasks (Chat Apps, Data Extraction)",
+      "High-Speed Inference with Low Latency",
+      "Available via Google AI Studio and Vertex AI"
+    ],
+    "stats": {
+      "performance": "9.0/10",
+      "accuracy": "9.1/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Mistral Saba",
+    "provider": "Mistral AI",
+    "providerClass": "mistral",
+    "description": "Mistral Saba is a 24B parameter regional language model tailored for Arabic and South Asian languages. Trained on curated datasets from the Middle East and South Asia, it delivers culturally nuanced and linguistically accurate responses, optimized for single-GPU deployment and high-speed inference.",
+    "badges": ["LLM", "Regional", "Open"],
+    "metadata": {
+      "released": "February 17, 2025",
+      "version": "1.0",
+      "size": "24B"
+    },
+    "features": [
+      "Arabic and Indian-Origin Language Support",
+      "Cultural Context Awareness",
+      "Single-GPU Deployment (150+ tokens/sec)",
+      "Fine-Tuning for Domain-Specific Expertise",
+      "Ideal for Conversational AI and Content Creation",
+      "Available via API and On-Premise Deployment"
+    ],
+    "stats": {
+      "performance": "9.0/10",
+      "accuracy": "9.2/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Llama 4 Scout",
+    "provider": "Meta AI",
+    "providerClass": "meta",
+    "description": "Llama 4 Scout is a multimodal, open-weight AI model with a Mixture of Experts (MoE) architecture, designed for advanced long-context reasoning, multi-document summarization, and visual understanding. It supports an industry-leading context window of 10 million tokens and fits on a single NVIDIA H100 GPU.",
+    "badges": ["LLM", "Multimodal", "Open-Weight"],
+    "metadata": {
+      "released": "April 2025",
+      "version": "4.0",
+      "size": "17B active, 109B total"
+    },
+    "features": [
+      "Native Multimodal Support (Text and Image Input)",
+      "10M Token Context Window",
+      "Mixture of Experts (MoE) Architecture with 16 Experts",
+      "Optimized for Multi-Document Summarization",
+      "Advanced Reasoning Over Large Codebases",
+      "Supports 12 Languages"
+    ],
+    "stats": {
+      "performance": "8.8/10",
+      "accuracy": "8.9/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Llama 4 Maverick",
+    "provider": "Meta AI",
+    "providerClass": "meta",
+    "description": "Llama 4 Maverick is a multimodal, open-weight AI model with a Mixture of Experts (MoE) architecture, optimized for high-quality general assistant and chat use cases. It excels in multilingual image and text understanding, offering high performance at a lower cost compared to Llama 3.3 70B.",
+    "badges": ["LLM", "Multimodal", "Open-Weight"],
+    "metadata": {
+      "released": "April 2025",
+      "version": "4.0",
+      "size": "17B active, 400B total"
+    },
+    "features": [
+      "Native Multimodal Support (Text and Image Input)",
+      "1M Token Context Window",
+      "Mixture of Experts (MoE) Architecture with 128 Experts",
+      "Multilingual Support (12 Languages)",
+      "Optimized for Creative Writing and Chat Applications",
+      "High-Speed Inference with FP8 Quantization"
+    ],
+    "stats": {
+      "performance": "9.0/10",
+      "accuracy": "9.1/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Llama 4 Behemoth",
+    "provider": "Meta AI",
+    "providerClass": "meta",
+    "description": "Llama 4 Behemoth is Meta AI's most powerful multimodal, open-weight AI model, featuring a Mixture of Experts (MoE) architecture with 288 billion active parameters. Designed as a teacher model for distilling knowledge to smaller Llama 4 models, it excels in STEM benchmarks and advanced reasoning tasks. It is still in training and not yet publicly available.",
+    "badges": ["LLM", "Multimodal", "Open-Weight"],
+    "metadata": {
+      "released": "Not yet released (in training as of April 2025)",
+      "version": "4.0",
+      "size": "288B active, ~2T total"
+    },
+    "features": [
+      "Native Multimodal Support (Text and Image Input)",
+      "Mixture of Experts (MoE) Architecture with 16 Experts",
+      "High Performance on STEM Benchmarks",
+      "Teacher Model for Knowledge Distillation",
+      "Optimized for Large-Scale Data Analysis and Complex Reasoning",
+      "Supports Multilingual Tasks (12 Languages)"
+    ],
+    "stats": {
+      "performance": "9.2/10",
+      "accuracy": "9.3/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Command A",
+    "provider": "Cohere",
+    "providerClass": "cohere",
+    "description": "Command A is Cohere’s generative AI model designed for enterprise applications, offering high performance in agentic tasks, retrieval-augmented generation (RAG), and multilingual handling. It achieves efficiency with minimal compute, requiring only two GPUs, and supports 23 languages for business, STEM, and coding tasks.",
+    "badges": ["LLM", "Multilingual", "Enterprise"],
+    "metadata": {
+      "released": "March 2025",
+      "version": "A-03-2025",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Advanced Retrieval-Augmented Generation (RAG)",
+      "Agentic Tool Use for Enterprise Workflows",
+      "Multilingual Support (23 Languages)",
+      "High-Speed Token Streaming (73 tokens/sec)",
+      "Optimized for Conversational and Instruct Modes",
+      "Integration with North AI Platform"
+    ],
+    "stats": {
+      "performance": "9.1/10",
+      "accuracy": "9.2/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Aya Vision",
+    "provider": "Cohere For AI",
+    "providerClass": "cohere",
+    "description": "Aya Vision is a state-of-the-art, open-weight multimodal AI model from Cohere For AI, excelling in multilingual and vision-language tasks across 23 languages. It supports image captioning, visual question answering, and text generation, optimized for research and non-commercial use.",
+    "badges": ["LLM", "Multimodal", "Multilingual", "Open-Weight"],
+    "metadata": {
+      "released": "March 2025",
+      "version": "Not specified",
+      "size": "8B and 32B"
+    },
+    "features": [
+      "Multimodal Support (Text and Image Input)",
+      "Multilingual Capabilities (23 Languages)",
+      "Image Captioning and Visual Question Answering",
+      "Text Extraction from Images (OCR)",
+      "Optimized for Multilingual Benchmarks (AyaVisionBench)",
+      "Open-Weight Availability for Research"
+    ],
+    "stats": {
+      "performance": "8.9/10",
+      "accuracy": "9.0/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "EXAONE 3.0",
+    "provider": "LG AI Research",
+    "providerClass": "lg",
+    "description": "EXAONE 3.0 is LG AI Research's first open-source, instruction-tuned bilingual language model, optimized for English and Korean. It achieves top-tier performance in real-world applications and complex reasoning tasks.",
+    "badges": ["LLM", "Bilingual", "Open"],
+    "metadata": {
+      "released": "August 2024",
+      "version": "3.0",
+      "size": "7.8B"
+    },
+    "features": [
+      "Instruction Tuning",
+      "Bilingual Support (English & Korean)",
+      "High Performance in Real-World Applications",
+      "Complex Reasoning Capabilities",
+      "Open-Source Availability"
+    ],
+    "stats": {
+      "performance": "Not disclosed",
+      "accuracy": "Not disclosed",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Mistral Small 3.1",
+    "provider": "Mistral AI",
+    "providerClass": "mistral",
+    "description": "Mistral Small 3.1 is an open-source, state-of-the-art language model optimized for multimodal understanding, multilingual capabilities, and low-latency performance. It features an expanded context window and is suitable for both enterprise and consumer applications.",
+    "badges": ["LLM", "Multimodal", "Open"],
+    "metadata": {
+      "released": "March 17, 2025",
+      "version": "3.1",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Multimodal Input Processing",
+      "Multilingual Support",
+      "128k Token Context Window",
+      "High Inference Speed (150 tokens/sec)",
+      "On-Device Deployment Capability",
+      "Function Calling",
+      "Fine-Tuning for Specialized Domains"
+    ],
+    "stats": {
+      "performance": "9.0/10",
+      "accuracy": "9.2/10",
+      "license": "Apache 2.0"
+    }
+  },
+  {
+    "name": "TxGemma",
+    "provider": "Google",
+    "providerClass": "google",
+    "description": "TxGemma is a collection of open models tailored for therapeutic development, leveraging large language models to understand and predict properties of therapeutic entities, aiming to improve efficiency in drug discovery.",
+    "badges": ["LLM", "Domain-Specific", "Open"],
+    "metadata": {
+      "released": "March 25, 2025",
+      "version": "1.0",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Therapeutic Entity Understanding",
+      "Property Prediction for Drug Candidates",
+      "Optimized for Biomedical Applications",
+      "Supports Drug Discovery Processes",
+      "Open Models for Research and Development"
+    ],
+    "stats": {
+      "performance": "8.6/10",
+      "accuracy": "8.9/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "ShieldGemma 2",
+    "provider": "Google",
+    "providerClass": "google",
+    "description": "ShieldGemma 2 is a 4 billion parameter image safety classifier built on Gemma 3. It is designed to detect harmful content in both synthetic and natural images, aiding in the development of safer AI applications.",
+    "badges": ["Safety", "Image Classifier", "Open"],
+    "metadata": {
+      "released": "March 12, 2025",
+      "version": "2.0",
+      "size": "4B"
+    },
+    "features": [
+      "Image Safety Classification",
+      "Detection of Harmful Content",
+      "Support for Synthetic and Natural Images",
+      "Integration with Vision-Language Models",
+      "Open Weights for Fine-Tuning"
+    ],
+    "stats": {
+      "performance": "Not disclosed",
+      "accuracy": "Not disclosed",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "PaliGemma 2 Mix",
+    "provider": "Google",
+    "providerClass": "google",
+    "description": "PaliGemma 2 Mix is a multimodal model combining language and vision capabilities, designed for tasks requiring understanding of both text and images. It builds upon the PaliGemma series with enhanced performance.",
+    "badges": ["LLM", "Multimodal", "Open"],
+    "metadata": {
+      "released": "March 2025",
+      "version": "2 Mix",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Text and Image Understanding",
+      "Enhanced Multimodal Reasoning",
+      "Improved Performance over Previous Versions",
+      "Suitable for Diverse Applications",
+      "Optimized for Efficiency"
+    ],
+    "stats": {
+      "performance": "8.5/10",
+      "accuracy": "8.7/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "Gemma 3",
+    "provider": "Google",
+    "providerClass": "google",
+    "description": "Gemma 3 is Google's most advanced open model, supporting multimodal inputs including text, images, and short videos. It is optimized for performance on a single GPU and includes safety features like the ShieldGemma 2 image safety classifier.",
+    "badges": ["LLM", "Multimodal", "Open"],
+    "metadata": {
+      "released": "March 12, 2025",
+      "version": "3.0",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Multimodal Input Processing",
+      "Vision Encoder for High-Resolution Images",
+      "Image Safety Classification",
+      "Support for 35+ Languages",
+      "Optimized for Single GPU Performance"
+    ],
+    "stats": {
+      "performance": "9.0/10",
+      "accuracy": "9.2/10",
+      "license": "Open (with restrictions)"
+    }
+  },
+  {
+    "name": "o3",
+    "provider": "OpenAI",
+    "providerClass": "openai",
+    "description": "OpenAI’s most advanced reasoning model to date, o3 excels in complex tasks across coding, mathematics, science, and visual analysis. It integrates multimodal inputs and agentic tool use, setting new standards in AI capabilities.",
+    "badges": ["LLM", "Multimodal", "Proprietary"],
+    "metadata": {
+      "released": "April 16, 2025",
+      "version": "o3",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Advanced Reasoning",
+      "Multimodal Input Processing",
+      "Agentic Tool Use",
+      "Image Analysis",
+      "Code Generation",
+      "Mathematical Problem Solving"
+    ],
+    "stats": {
+      "performance": "9.5/10",
+      "accuracy": "9.7/10",
+      "license": "Proprietary"
+    }
+  },
+  {
+    "name": "o4-mini",
+    "provider": "OpenAI",
+    "providerClass": "openai",
+    "description": "A compact and efficient model, o4-mini delivers high performance in reasoning tasks, particularly in mathematics and coding, while being optimized for speed and cost-effectiveness.",
+    "badges": ["LLM", "Multimodal", "Proprietary"],
+    "metadata": {
+      "released": "April 16, 2025",
+      "version": "o4-mini",
+      "size": "Not disclosed"
+    },
+    "features": [
+      "Efficient Reasoning",
+      "Mathematical Problem Solving",
+      "Code Generation",
+      "Visual Input Processing",
+      "Tool Integration"
+    ],
+    "stats": {
+      "performance": "8.8/10",
+      "accuracy": "9.0/10",
+      "license": "Proprietary"
+    }
+  },
+  {
     "name": "BitNet b1.58 2B4T",
     "provider": "Microsoft",
     "providerClass": "microsoft",
