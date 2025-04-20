@@ -1,9 +1,11 @@
 @media (max-width: 1024px) {
-  .models-container {
+  .models-container,
+  .tools-container {
     max-width: 950px;
   }
 
-  .model-features {
+  .model-features,
+  .tool-features {
     gap: 0.5rem;
   }
 
@@ -22,13 +24,15 @@
     font-size: 2.25rem;
   }
 
-  .model-card {
+  .model-card,
+  .tool-card {
     flex-direction: column;
     gap: 1.25rem;
     padding: 1.5rem;
   }
 
-  .model-logo-container {
+  .model-logo-container,
+  .tool-logo-container {
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
@@ -37,7 +41,8 @@
     padding-top: 0;
   }
 
-  .model-provider {
+  .model-provider,
+  .tool-provider {
     width: auto;
     margin-top: 0;
   }
@@ -46,7 +51,8 @@
     margin-bottom: 0;
   }
 
-  .models-controls {
+  .models-controls,
+  .tools-controls {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -72,12 +78,14 @@
     justify-content: space-between;
   }
 
-  .model-actions {
+  .model-actions,
+  .tool-actions {
     flex-direction: column;
     width: 100%;
   }
 
-  .model-link {
+  .model-link,
+  .tool-link {
     width: 100%;
   }
 }
@@ -95,11 +103,13 @@
     padding: 1.25rem;
   }
 
-  .model-card {
+  .model-card,
+  .tool-card {
     padding: 1.25rem;
   }
 
-  .model-name {
+  .model-name,
+  .tool-name {
     font-size: 1.5rem;
   }
 
@@ -107,7 +117,8 @@
     padding: 0.6rem;
   }
 
-  .models-controls {
+  .models-controls,
+  .tools-controls {
     padding: 1rem;
     flex-direction: column;
   }

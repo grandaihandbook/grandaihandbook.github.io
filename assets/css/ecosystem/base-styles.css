@@ -18,7 +18,8 @@ body {
   font-size: 2rem;
 }
 
-.models-container {
+.models-container,
+.tools-container {
   max-width: 1300px;
   margin: 0 auto;
   transition: max-width 0.3s ease;

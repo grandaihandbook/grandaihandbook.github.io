@@ -32,7 +32,8 @@
   border-left: 4px solid #22c55e;
 }
 
-.model-card .card-image.google::after {
+.model-card .card-image.google::after,
+.tool-card .card-image.google::after {
   content: "";
   border: 2px solid #4285f4;
   position: absolute;
@@ -45,11 +46,13 @@
   border-radius: 0.75rem;
 }
 
-.model-card:hover .card-image.google::after {
+.model-card:hover .card-image.google::after,
+.tool-card:hover .card-image.google::after {
   opacity: 1;
 }
 
-.model-card .card-image.openai::after {
+.model-card .card-image.openai::after,
+.tool-card .card-image.openai::after {
   content: "";
   border: 2px solid #10a37f;
   position: absolute;
@@ -62,11 +65,13 @@
   border-radius: 0.75rem;
 }
 
-.model-card:hover .card-image.openai::after {
+.model-card:hover .card-image.openai::after,
+.tool-card:hover .card-image.openai::after {
   opacity: 1;
 }
 
-.model-card .card-image.meta::after {
+.model-card .card-image.meta::after,
+.tool-card .card-image.meta::after {
   content: "";
   border: 2px solid #0668e1;
   position: absolute;
@@ -79,11 +84,13 @@
   border-radius: 0.75rem;
 }
 
-.model-card:hover .card-image.meta::after {
+.model-card:hover .card-image.meta::after,
+.tool-card:hover .card-image.meta::after {
   opacity: 1;
 }
 
-.model-card .card-image.anthropic::after {
+.model-card .card-image.anthropic::after,
+.tool-card .card-image.anthropic::after {
   content: "";
   border: 2px solid #b833ff;
   position: absolute;
@@ -96,11 +103,13 @@
   border-radius: 0.75rem;
 }
 
-.model-card:hover .card-image.anthropic::after {
+.model-card:hover .card-image.anthropic::after,
+.tool-card:hover .card-image.anthropic::after {
   opacity: 1;
 }
 
-.model-card .card-image.stability::after {
+.model-card .card-image.stability::after,
+.tool-card .card-image.stability::after {
   content: "";
   border: 2px solid #ff0000;
   position: absolute;
@@ -113,6 +122,7 @@
   border-radius: 0.75rem;
 }
 
-.model-card:hover .card-image.stability::after {
+.model-card:hover .card-image.stability::after,
+.tool-card:hover .card-image.stability::after {
   opacity: 1;
 }

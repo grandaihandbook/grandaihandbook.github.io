@@ -515,6 +515,7 @@ select.filter-select option:focus {
 
 /* If your card elements have a class like .model-card or similar */
 .model-card,
+.tool-card,
 .card,
 [class*="card"] {
   z-index: 1; /* Lower z-index for card elements */
