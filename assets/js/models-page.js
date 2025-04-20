@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const featureBadges = document.querySelectorAll(".feature-badge-label");
   const resetFiltersBtn = document.getElementById("reset-filters");
   const applyFiltersBtn = document.getElementById("apply-filters");
+  const customSelects = document.querySelectorAll(".custom-select");
 
   // Pagination elements
   const pageButtons = document.querySelectorAll(".page-button:not([title])");
@@ -51,6 +52,61 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollBtn.classList.add("scroll-to-top");
   scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
   document.body.appendChild(scrollBtn);
+
+  customSelects.forEach((select) => {
+    const trigger = select.querySelector(".custom-select__trigger");
+    const options = select.querySelectorAll(".custom-option");
+    const triggerSpan = trigger.querySelector("span");
+    const hiddenSelect = select.querySelector(".hidden-select");
+
+    // Toggle dropdown
+    trigger.addEventListener("click", () => {
+      // Close any open dropdowns first
+      customSelects.forEach((s) => {
+        if (s !== select) s.classList.remove("open");
+      });
+
+      // Toggle current dropdown
+      select.classList.toggle("open");
+    });
+
+    // Handle option selection
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        // Update trigger text
+        triggerSpan.textContent = option.textContent;
+
+        // Update selected class
+        options.forEach((opt) => opt.classList.remove("selected"));
+        option.classList.add("selected");
+
+        // Get data value
+        const dataValue = option.getAttribute("data-value");
+        console.log("Selected option data-value:", dataValue);
+
+        // Update hidden select - this is likely where the issue is
+        hiddenSelect.value = dataValue;
+        console.log("Updated hidden select value:", hiddenSelect.value);
+
+        // Make sure the change event fires
+        hiddenSelect.dispatchEvent(new Event("change", { bubbles: true }));
+
+        // Close dropdown
+        select.classList.remove("open");
+      });
+    });
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener("click", (e) => {
+    const isCustomSelect = e.target.closest(".custom-select");
+
+    if (!isCustomSelect) {
+      customSelects.forEach((select) => {
+        select.classList.remove("open");
+      });
+    }
+  });
 
   // EVENT LISTENERS
 
@@ -123,6 +179,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  if (searchInput) {
+    searchInput.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.keyCode === 13) {
+        event.preventDefault();
+
+        if (applyFiltersBtn) {
+          applyFiltersBtn.click();
+        } else {
+          applyFilters();
+        }
+
+        searchInput.blur();
+      }
+    });
+  }
+
   // Search clear functionality
   if (searchClearBtn && searchInput) {
     searchClearBtn.addEventListener("click", () => {
@@ -147,6 +219,27 @@ document.addEventListener("DOMContentLoaded", () => {
       // Reset dropdowns
       document.querySelectorAll(".filter-select").forEach((select) => {
         select.selectedIndex = 0;
+
+        // Add this code to update custom select visual elements
+        const customSelectWrapper = select.closest(".custom-select");
+        if (customSelectWrapper) {
+          const triggerSpan = customSelectWrapper.querySelector(
+            ".custom-select__trigger span"
+          );
+          const options =
+            customSelectWrapper.querySelectorAll(".custom-option");
+
+          // Reset selected option
+          options.forEach((opt) => opt.classList.remove("selected"));
+          const defaultOption = options[0];
+          if (defaultOption) defaultOption.classList.add("selected");
+
+          // Update trigger text
+          if (triggerSpan)
+            triggerSpan.textContent = defaultOption
+              ? defaultOption.textContent
+              : "All";
+        }
       });
 
       // Uncheck all checkboxes
@@ -289,11 +382,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchTerm = searchInput
       ? searchInput.value.trim().toLowerCase()
       : "";
-    const category = categorySelect ? categorySelect.value.toLowerCase() : "";
-    const provider = providerSelect ? providerSelect.value.toLowerCase() : "";
-    const releaseYear = releaseYearSelect ? releaseYearSelect.value : "";
-    const licenseType = licenseTypeSelect
-      ? licenseTypeSelect.value.toLowerCase()
+    const category = document.getElementById("category")
+      ? document.getElementById("category").value.toLowerCase()
+      : "";
+    const provider = document.getElementById("provider")
+      ? document.getElementById("provider").value.toLowerCase()
+      : "";
+    const releaseYear = document.getElementById("release-year")
+      ? document.getElementById("release-year").value
+      : "";
+    const licenseType = document.getElementById("license-type")
+      ? document.getElementById("license-type").value.toLowerCase()
       : "";
 
     // Get active quick filter
@@ -405,20 +504,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Apply provider filter
     if (provider) {
+      console.log(`Attempting to filter by provider: "${provider}"`);
+
+      // Let's examine all provider names in cards before filtering:
+      const allProviders = Array.from(allModelCards).map((card) => {
+        const providerEl = card.querySelector(".model-provider");
+        return providerEl ? providerEl.textContent : "Not found";
+      });
+
+      console.log("All provider names in cards:", allProviders);
+
       filteredCards = filteredCards.filter((card) => {
-        const providerName = card
-          .querySelector(".model-provider")
-          .textContent.toLowerCase();
+        const providerEl = card.querySelector(".model-provider");
+        const providerName = providerEl
+          ? providerEl.textContent.toLowerCase()
+          : "";
 
-        // Special cases for providers
-        if (
-          provider === "google" &&
-          (providerName.includes("google") || providerName.includes("deepmind"))
-        ) {
-          return true;
-        }
+        // Log each comparison
+        console.log(
+          `Comparing: Card provider "${providerName}" with filter "${provider}" - Match: ${providerName.includes(
+            provider
+          )}`
+        );
 
-        return providerName.includes(provider);
+        // Rest of your filter logic...
       });
     }
 
