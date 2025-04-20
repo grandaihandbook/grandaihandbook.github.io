@@ -452,6 +452,19 @@
       background-image: url("/assets/images/ecosystem/competitions.jpg");
     }
 
+    &.weekly {
+      background-image: url("/assets/images/research/weeklybg.jpg");
+    }
+    &.challenges {
+      background-image: url("/assets/images/research/challengebg.jpg");
+    }
+    &.spotlight {
+      background-image: url("/assets/images/research/spotlightbg.jpg");
+    }
+    &.trends {
+      background-image: url("/assets/images/research/trendbg.jpg");
+    }
+
     /* Default gradient background if no image is available */
     &.default {
       background-image: linear-gradient(135deg, #6366f1, #8b5cf6);

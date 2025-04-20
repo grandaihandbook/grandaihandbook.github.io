@@ -284,6 +284,129 @@ hide_title: true
     <a href="{{ '/ecosystem/' | relative_url }}" class="btn btn-primary">Explore Full Ecosystem</a>
   </div>
 </section>
+
+  <!-- RESEARCH SECTION -->
+  <!-- RESEARCH SECTION -->
+  <section class="mb-20">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold">Research <span class="gradient-word">Insights</span></h2>
+    </div>
+    
+    <div class="banner mb-12">
+      <p class="text-center">Our research section features in-depth analyses of groundbreaking papers and emerging technologies that are shaping the future of artificial intelligence.</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="{{ '/research/weekly-papers/' | relative_url }}" class="handbook-card">
+        <!-- Optional category badge -->
+        <div class="category-badge">Research</div>
+        
+        <!-- Image container with floating icon on hover -->
+        <div class="card-image weekly">
+          
+        </div>
+        
+        <div class="card-content">
+          
+          <h3 class="text-xl font-semibold mb-2">Weekly Papers</h3>
+          <p>
+            Curated selection of the most impactful AI research papers, updated every week with summaries and key insights.
+          </p>
+          
+          <!-- Optional read more indicator -->
+          <div class="read-more">
+            View weekly updates
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <a href="{{ '/research/trends/' | relative_url }}" class="handbook-card">
+        <!-- Optional category badge -->
+        <div class="category-badge">Research</div>
+
+        <!-- Image container with floating icon on hover -->
+        <div class="card-image trends">
+
+        </div>
+
+        <div class="card-content">
+
+          <h3 class="text-xl font-semibold mb-2">Trends</h3>
+          <p>
+            Explore emerging patterns and directions in AI research, highlighting breakthrough techniques and methodologies.
+          </p>
+
+          <!-- Optional read more indicator -->
+          <div class="read-more">
+            Discover trends
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <a href="{{ '/research/open-challenges/' | relative_url }}" class="handbook-card">
+        <!-- Optional category badge -->
+        <div class="category-badge">Research</div>
+
+        <!-- Image container with floating icon on hover -->
+        <div class="card-image challenges">
+
+        </div>
+
+        <div class="card-content">
+
+          <h3 class="text-xl font-semibold mb-2">Open Challenges</h3>
+          <p>
+            Critical unsolved problems in AI research, offering opportunities for breakthrough contributions to the field.
+          </p>
+
+          <!-- Optional read more indicator -->
+          <div class="read-more">
+            Explore challenges
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <a href="{{ '/research/author-spotlight/' | relative_url }}" class="handbook-card">
+        <!-- Optional category badge -->
+        <div class="category-badge">Research</div>
+
+        <!-- Image container with floating icon on hover -->
+        <div class="card-image spotlight">
+
+        </div>
+
+        <div class="card-content">
+
+          <h3 class="text-xl font-semibold mb-2">Author Spotlight</h3>
+          <p>
+            In-depth profiles of leading AI researchers, their groundbreaking work, and contributions to the field.
+          </p>
+
+          <!-- Optional read more indicator -->
+          <div class="read-more">
+            Meet the authors
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="text-center mt-10">
+      <a href="{{ '/research/' | relative_url }}" class="btn btn-secondary">Explore Full Research Section</a>
+    </div>
+
+  </section>
   <!-- ROADMAPS SECTION -->
   <section class="mb-20">
   <div class="text-center mb-12">
@@ -423,7 +546,7 @@ hide_title: true
   </div>
 </section>
   
-  <!-- RESEARCH SECTION -->
+  <!-- RESEARCH SECTION
   <section class="mb-20">
     <div class="text-center mb-12">
       <h2 class="text-3xl font-bold">Research <span class="gradient-word">Insights</span></h2>
@@ -436,7 +559,7 @@ hide_title: true
     <div class="text-center mt-10">
       <a href="{{ '/research/' | relative_url }}" class="btn btn-secondary">Explore Research Section</a>
     </div>
-  </section>
+  </section> -->
   
   <!-- COMMUNITY SECTION -->
   <section class="mb-10">
