@@ -55,6 +55,25 @@
   line-height: 1.6;
 }
 
+/* Add this to your models-page.css file */
+
+/* Filter subtitle styling */
+.filter-subtitle {
+  margin-top: 4px;
+  margin-bottom: 12px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Make sure Font Awesome icons display properly */
+.fas {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
 @keyframes shine {
   to {
     left: 100%;
