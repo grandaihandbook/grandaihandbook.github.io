@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Script initialized");
 
-  // Get references to all important DOM elements
   const modelsList = document.querySelector(".models-list");
   const allModelCards = document.querySelectorAll(".model-card");
   const searchInput = document.getElementById("search");
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const applyFiltersBtn = document.getElementById("apply-filters");
   const customSelects = document.querySelectorAll(".custom-select");
 
-  // Pagination elements
   const pageButtons = document.querySelectorAll(".page-button:not([title])");
   const prevButton = document.querySelector(
     '.page-button[title="Previous page"]'
@@ -23,17 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const perPageSelect = document.getElementById("per-page");
   const pageInfo = document.querySelector(".page-info");
 
-  // Form elements
   const categorySelect = document.getElementById("category");
   const providerSelect = document.getElementById("provider");
   const releaseYearSelect = document.getElementById("release-year");
   const licenseTypeSelect = document.getElementById("license-type");
 
-  // INITIAL SETUP - Set up pagination
-  // Added: Store filtered cards globally
   let filteredCards = Array.from(allModelCards);
 
-  // Load saved state or use defaults
   let currentPage = loadFromLocalStorage("currentPage") || 1;
   let itemsPerPage = loadFromLocalStorage("itemsPerPage") || 5;
   if (perPageSelect) perPageSelect.value = itemsPerPage;
@@ -41,13 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let totalItems = allModelCards.length;
   let totalPages = Math.ceil(totalItems / itemsPerPage);
 
-  // Load saved filters and apply them
   loadSavedFilters();
 
-  // Initially hide all cards except the first page
   updateDisplayedCards();
 
-  // Add scroll to top button
   const scrollBtn = document.createElement("div");
   scrollBtn.classList.add("scroll-to-top");
   scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
@@ -59,38 +50,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const triggerSpan = trigger.querySelector("span");
     const hiddenSelect = select.querySelector(".hidden-select");
 
-    // Toggle dropdown
     trigger.addEventListener("click", () => {
-      // Close any open dropdowns first
       customSelects.forEach((s) => {
         if (s !== select) s.classList.remove("open");
       });
 
-      // Toggle current dropdown
       select.classList.toggle("open");
     });
 
-    // Handle option selection
     options.forEach((option) => {
       option.addEventListener("click", () => {
-        // Update trigger text
         triggerSpan.textContent = option.textContent;
 
-        // Update selected class
         options.forEach((opt) => opt.classList.remove("selected"));
         option.classList.add("selected");
 
-        // Get data value
         const dataValue = option.getAttribute("data-value");
         console.log("Selected option data-value:", dataValue);
 
-        // FIXED: First, make sure the hidden select exists
         if (!hiddenSelect) {
           console.error("Hidden select not found for", select);
           return;
         }
 
-        // FIXED: Use selectedIndex to update the select element
         for (let i = 0; i < hiddenSelect.options.length; i++) {
           if (hiddenSelect.options[i].value === dataValue) {
             hiddenSelect.selectedIndex = i;
@@ -98,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        // Also set value directly for good measure
         hiddenSelect.value = dataValue;
 
         console.log("Updated hidden select value:", hiddenSelect.value);
@@ -107,18 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
           hiddenSelect.selectedIndex
         );
 
-        // Make sure the change event fires
         hiddenSelect.dispatchEvent(new Event("change", { bubbles: true }));
 
-        // Close dropdown
         select.classList.remove("open");
       });
     });
   });
 
-  // initCustomDropdowns();
-
-  // Close dropdowns when clicking outside
   document.addEventListener("click", (e) => {
     const isCustomSelect = e.target.closest(".custom-select");
 
@@ -129,9 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // EVENT LISTENERS
-
-  // Scroll to top button
   window.addEventListener("scroll", function () {
     if (window.scrollY > 300) {
       scrollBtn.classList.add("visible");
@@ -144,12 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToTop();
   });
 
-  // Toggle advanced filters
   if (filterToggleBtn && advancedFilters) {
     filterToggleBtn.addEventListener("click", () => {
       advancedFilters.classList.toggle("active");
 
-      // Update button text based on state
       if (advancedFilters.classList.contains("active")) {
         filterToggleBtn.innerHTML =
           '<i class="fas fa-times"></i> <span>Hide Filters</span>';
@@ -160,27 +131,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Quick filter buttons functionality
   quickFilterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      // Remove active class from all buttons
       quickFilterButtons.forEach((btn) => btn.classList.remove("active"));
 
-      // Add active class to clicked button
       button.classList.add("active");
 
-      // Apply filtering based on the clicked button
       applyFilters();
     });
   });
 
-  // Feature badge selection
   featureBadges.forEach((badge) => {
     badge.addEventListener("click", () => {
-      // The checkbox inside will toggle automatically
       const checkbox = badge.querySelector('input[type="checkbox"]');
 
-      // Log selected features for demo
       if (checkbox && checkbox.checked) {
         console.log("Feature selected:", badge.textContent.trim());
       } else if (checkbox) {
@@ -189,7 +153,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Search functionality
   if (searchInput) {
     searchInput.addEventListener("input", () => {
       if (searchInput.value.length > 0) {
@@ -216,32 +179,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Search clear functionality
   if (searchClearBtn && searchInput) {
     searchClearBtn.addEventListener("click", () => {
       searchInput.value = "";
       searchClearBtn.style.display = "none";
       searchInput.focus();
 
-      // Re-apply filters when search is cleared
       applyFilters();
     });
   }
 
-  // Reset filters functionality
   if (resetFiltersBtn) {
     resetFiltersBtn.addEventListener("click", () => {
-      // Clear search input
       if (searchInput) {
         searchInput.value = "";
         if (searchClearBtn) searchClearBtn.style.display = "none";
       }
 
-      // Reset dropdowns
       document.querySelectorAll(".filter-select").forEach((select) => {
         select.selectedIndex = 0;
 
-        // Add this code to update custom select visual elements
         const customSelectWrapper = select.closest(".custom-select");
         if (customSelectWrapper) {
           const triggerSpan = customSelectWrapper.querySelector(
@@ -250,12 +207,10 @@ document.addEventListener("DOMContentLoaded", () => {
           const options =
             customSelectWrapper.querySelectorAll(".custom-option");
 
-          // Reset selected option
           options.forEach((opt) => opt.classList.remove("selected"));
           const defaultOption = options[0];
           if (defaultOption) defaultOption.classList.add("selected");
 
-          // Update trigger text
           if (triggerSpan)
             triggerSpan.textContent = defaultOption
               ? defaultOption.textContent
@@ -263,14 +218,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Uncheck all checkboxes
       document
         .querySelectorAll('input[type="checkbox"]')
         .forEach((checkbox) => {
           checkbox.checked = false;
         });
 
-      // Reset quick filter buttons
       quickFilterButtons.forEach((btn, index) => {
         if (index === 0) {
           btn.classList.add("active");
@@ -279,25 +232,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Reset to page 1
       currentPage = 1;
       saveToLocalStorage("currentPage", currentPage);
       updatePaginationButtons();
 
-      // Apply the reset filters
       applyFilters();
 
-      // Show reset confirmation
       showNotification("Filters have been reset");
     });
   }
 
-  // Apply filters functionality
   if (applyFiltersBtn) {
     applyFiltersBtn.addEventListener("click", () => {
       applyFilters();
 
-      // Close advanced filters
       if (
         advancedFilters &&
         advancedFilters.classList.contains("active") &&
@@ -308,7 +256,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Pagination button functionality
   pageButtons.forEach((button) => {
     button.addEventListener("click", () => {
       currentPage = parseInt(button.textContent);
@@ -319,7 +266,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Previous/Next page buttons
   if (prevButton) {
     prevButton.addEventListener("click", () => {
       if (currentPage > 1) {
@@ -344,13 +290,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Items per page selector
   if (perPageSelect) {
     perPageSelect.addEventListener("change", () => {
       itemsPerPage = parseInt(perPageSelect.value);
       saveToLocalStorage("itemsPerPage", itemsPerPage);
       totalPages = Math.ceil(totalItems / itemsPerPage);
-      currentPage = 1; // Reset to first page when changing items per page
+      currentPage = 1;
       saveToLocalStorage("currentPage", currentPage);
 
       updatePaginationButtons();
@@ -359,19 +304,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Feature tag interactions
   document.querySelectorAll(".feature-tag").forEach((tag) => {
     tag.addEventListener("click", () => {
-      // Fill the search with the feature for demo purposes
       if (searchInput) {
         searchInput.value = tag.textContent.trim();
         if (searchClearBtn) searchClearBtn.style.display = "flex";
 
-        // Apply filters with the new search
         applyFilters();
       }
 
-      // Highlight the feature
       tag.style.backgroundColor = "rgba(79, 70, 229, 0.1)";
       tag.style.borderLeftColor = "#8b5cf6";
 
@@ -382,9 +323,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // HELPER FUNCTIONS
-
-  // Scroll to top function
   function scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -392,14 +330,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Function to apply all filters
   function applyFilters() {
-    // Add a loading state
     if (modelsList) {
       modelsList.style.opacity = "0.6";
     }
 
-    // Collect filter values
     const searchTerm = searchInput
       ? searchInput.value.trim().toLowerCase()
       : "";
@@ -424,7 +359,6 @@ document.addEventListener("DOMContentLoaded", () => {
       licenseType,
     });
 
-    // Get active quick filter
     const activeQuickFilter = document.querySelector(
       ".quick-filter-badge.active"
     );
@@ -432,7 +366,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ? activeQuickFilter.textContent.trim().toLowerCase()
       : "all";
 
-    // Get selected features
     const selectedFeatures = [];
     document
       .querySelectorAll('input[name="features"]:checked')
@@ -440,7 +373,6 @@ document.addEventListener("DOMContentLoaded", () => {
         selectedFeatures.push(checkbox.value.toLowerCase());
       });
 
-    // Save filter settings
     saveFilters(
       searchTerm,
       category,
@@ -451,11 +383,9 @@ document.addEventListener("DOMContentLoaded", () => {
       selectedFeatures
     );
 
-    // Filter the model cards - IMPORTANT: start with ALL cards
     filteredCards = Array.from(allModelCards);
     console.log("Starting with all cards:", filteredCards.length);
 
-    // Apply search filter
     if (searchTerm) {
       filteredCards = filteredCards.filter((card) => {
         const modelName = card
@@ -483,12 +413,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (quickFilterValue !== "all") {
       filteredCards = filteredCards.filter((card) => {
-        // Get all badges
         const badges = Array.from(card.querySelectorAll(".model-badge")).map(
           (badge) => badge.textContent.toLowerCase()
         );
 
-        // Handle special case for "Computer Vision" and other multi-word categories
         if (quickFilterValue === "computer vision") {
           return badges.some(
             (badge) =>
@@ -498,7 +426,6 @@ document.addEventListener("DOMContentLoaded", () => {
           );
         }
 
-        // Check for the filter in any badge
         return badges.some((badge) => badge.includes(quickFilterValue));
       });
     }
@@ -512,7 +439,6 @@ document.addEventListener("DOMContentLoaded", () => {
           (badge) => badge.textContent.toLowerCase()
         );
 
-        // Map category values to what might appear in features or AI type
         const categoryMap = {
           nlp: ["language", "text", "nlp", "llm"],
           cv: ["vision", "image", "computer vision"],
@@ -531,18 +457,15 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Apply provider filter
     if (provider) {
       console.log(`Filtering by provider: "${provider}"`);
 
-      // Count matches
       let matchCount = 0;
 
       filteredCards = filteredCards.filter((card) => {
         const providerEl = card.querySelector(".model-provider");
         const providerText = providerEl ? providerEl.textContent : "";
 
-        // Remove spaces and make case insensitive for more robust matching
         const normalizedCardProvider = providerText
           .toLowerCase()
           .replace(/\s+/g, "");
@@ -564,18 +487,15 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(`Found ${matchCount} matches for provider: "${provider}"`);
       console.log("After provider filter:", filteredCards.length);
 
-      // Reset to page 1 whenever filtering by provider
       currentPage = 1;
       saveToLocalStorage("currentPage", currentPage);
     }
 
     if (releaseYear) {
       filteredCards = filteredCards.filter((card) => {
-        // First, try to find the release date in the expected format
         const metadataItems = card.querySelectorAll(".metadata-item");
         let releaseDate = "";
 
-        // Look for the metadata item with calendar icon (release date)
         for (const item of metadataItems) {
           if (item.querySelector("i.fas.fa-calendar-alt")) {
             releaseDate = item.querySelector("span").textContent;
@@ -583,33 +503,28 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        // If we couldn't find it that way, try the first metadata item
         if (!releaseDate && metadataItems.length > 0) {
           releaseDate = metadataItems[0].querySelector("span").textContent;
         }
 
         if (!releaseDate) return false;
 
-        // Extract year with regex to be more robust
         const yearMatch = releaseDate.match(/\b(20\d{2})\b/);
         const year = yearMatch ? yearMatch[1] : "";
 
         if (releaseYear === "2020") {
-          // Special case for "2020 & Earlier"
           return year && parseInt(year) <= 2020;
         }
         return year === releaseYear;
       });
     }
 
-    // Apply license type filter
     if (licenseType) {
       filteredCards = filteredCards.filter((card) => {
         const license = card
           .querySelector(".stat-box:last-child .stat-value")
           .textContent.toLowerCase();
 
-        // Map license values to what might appear in the stat box
         const licenseMap = {
           open: ["open source", "apache", "mit"],
           commercial: ["commercial"],
@@ -624,14 +539,12 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Apply feature filters
     if (selectedFeatures.length > 0) {
       filteredCards = filteredCards.filter((card) => {
         const features = Array.from(card.querySelectorAll(".feature-tag")).map(
           (tag) => tag.textContent.toLowerCase()
         );
 
-        // Card passes if it has ANY of the selected features
         return selectedFeatures.some((selectedFeature) => {
           return features.some((feature) =>
             feature.includes(selectedFeature.replace("-", " "))
@@ -640,34 +553,27 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Hide all cards initially
     allModelCards.forEach((card) => {
       card.style.display = "none";
     });
 
-    // Update total items and pages
     totalItems = filteredCards.length;
     totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    // Reset to page 1 if current page is now out of bounds
     if (currentPage > totalPages) {
       currentPage = Math.max(1, totalPages);
       saveToLocalStorage("currentPage", currentPage);
     }
 
-    // Update pagination
     updatePaginationButtons();
 
-    // Display filtered cards on the current page
     updateDisplayedCards();
 
-    // Remove loading state after a short delay
     setTimeout(() => {
       if (modelsList) {
         modelsList.style.opacity = "1";
       }
 
-      // Show notification for applied filters with count
       if (
         searchTerm ||
         category ||
@@ -684,14 +590,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 400);
   }
 
-  // Update displayed cards based on current filteredCards and pagination
   function updateDisplayedCards() {
-    // Hide all cards initially
     allModelCards.forEach((card) => {
       card.style.display = "none";
     });
 
-    // Show cards for the current page using the filteredCards array
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = Math.min(startIndex + itemsPerPage, filteredCards.length);
 
@@ -701,11 +604,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Update page info
     updatePageInfo(startIndex, endIndex, filteredCards.length);
   }
 
-  // Update page info text
   function updatePageInfo(
     startIndex = 0,
     endIndex = itemsPerPage,
@@ -718,33 +619,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Update pagination buttons
   function updatePaginationButtons() {
     console.log("Updating pagination buttons with current values:");
     console.log("Current page:", currentPage);
     console.log("Total pages:", totalPages);
     console.log("Items per page:", itemsPerPage);
 
-    // Get the parent container
     const paginationContainer = document.querySelector(".pagination");
     if (!paginationContainer) {
       console.error("Pagination container not found");
       return;
     }
 
-    // Remove all existing number buttons
     const existingButtons = paginationContainer.querySelectorAll(
       ".page-button:not([title])"
     );
     existingButtons.forEach((button) => button.remove());
 
-    // Remove ellipsis elements
     const ellipses = paginationContainer.querySelectorAll(".page-ellipsis");
     ellipses.forEach((ellipsis) => ellipsis.remove());
 
-    // If there are no pages, don't add any buttons
     if (totalPages === 0) {
-      // Hide or disable pagination
       if (prevButton) prevButton.style.opacity = "0.5";
       if (nextButton) nextButton.style.opacity = "0.5";
       if (prevButton) prevButton.style.cursor = "not-allowed";
@@ -752,18 +647,14 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Create new page buttons based on total pages
-    // We'll show max 5 page numbers
     const maxButtons = 5;
     let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
     let endPage = Math.min(totalPages, startPage + maxButtons - 1);
 
-    // Adjust startPage if endPage is at max
     if (endPage === totalPages) {
       startPage = Math.max(1, endPage - maxButtons + 1);
     }
 
-    // Reference to insert before (the next button)
     const nextBtn = paginationContainer.querySelector(
       '.page-button[title="Next page"]'
     );
@@ -772,13 +663,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Add page buttons
     for (let i = startPage; i <= endPage; i++) {
       const pageBtn = document.createElement("button");
       pageBtn.className = "page-button" + (i === currentPage ? " active" : "");
       pageBtn.textContent = i;
 
-      // Add event listener
       pageBtn.addEventListener("click", () => {
         currentPage = i;
         saveToLocalStorage("currentPage", currentPage);
@@ -787,18 +676,15 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollToTop();
       });
 
-      // Insert before the next button
       paginationContainer.insertBefore(pageBtn, nextBtn);
     }
 
-    // Add ellipsis if needed at the end
     if (endPage < totalPages) {
       const ellipsis = document.createElement("div");
       ellipsis.className = "page-ellipsis";
       ellipsis.textContent = "...";
       paginationContainer.insertBefore(ellipsis, nextBtn);
 
-      // Add last page button
       const lastPageBtn = document.createElement("button");
       lastPageBtn.className = "page-button";
       lastPageBtn.textContent = totalPages;
@@ -814,7 +700,6 @@ document.addEventListener("DOMContentLoaded", () => {
       paginationContainer.insertBefore(lastPageBtn, nextBtn);
     }
 
-    // Add ellipsis at the beginning if needed
     if (startPage > 1) {
       const firstPageBtn = document.createElement("button");
       firstPageBtn.className = "page-button";
@@ -828,7 +713,6 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollToTop();
       });
 
-      // Insert after the prev button
       const prevBtn = paginationContainer.querySelector(
         '.page-button[title="Previous page"]'
       );
@@ -844,7 +728,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Disable/enable prev/next buttons
     if (prevButton) {
       prevButton.style.opacity = currentPage === 1 ? "0.5" : "1";
       prevButton.style.cursor = currentPage === 1 ? "not-allowed" : "pointer";
@@ -860,10 +743,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Show notification
-
   function showNotification(message) {
-    // Create notification element
     const notification = document.createElement("div");
     notification.className = "notification";
     notification.innerHTML = `
@@ -873,42 +753,37 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `;
 
-    // Add enhanced styles - bottom middle of the screen
     notification.style.position = "fixed";
     notification.style.bottom = "24px";
     notification.style.left = "50%";
     notification.style.right = "auto";
-    notification.style.transform = "translateX(-50%) translateY(100px)"; // Center horizontally, start below view
-    notification.style.background = "linear-gradient(135deg, #4f46e5, #6366f1)"; // Purple gradient matching your theme
+    notification.style.transform = "translateX(-50%) translateY(100px)";
+    notification.style.background = "linear-gradient(135deg, #4f46e5, #6366f1)";
     notification.style.color = "white";
     notification.style.padding = "14px 20px";
     notification.style.borderRadius = "12px";
-    notification.style.boxShadow = "0 8px 30px rgba(79, 70, 229, 0.25)"; // Colored shadow
+    notification.style.boxShadow = "0 8px 30px rgba(79, 70, 229, 0.25)";
     notification.style.zIndex = "9999";
     notification.style.display = "flex";
     notification.style.alignItems = "center";
     notification.style.gap = "12px";
     notification.style.fontWeight = "500";
     notification.style.opacity = "0";
-    notification.style.transition = "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)"; // More sophisticated animation
-    notification.style.maxWidth = "380px"; // Limit width for better readability
-    notification.style.backdropFilter = "blur(8px)"; // Modern glass effect (works in some browsers)
-    notification.style.border = "1px solid rgba(255, 255, 255, 0.1)"; // Subtle border
+    notification.style.transition = "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)";
+    notification.style.maxWidth = "380px";
+    notification.style.backdropFilter = "blur(8px)";
+    notification.style.border = "1px solid rgba(255, 255, 255, 0.1)";
 
-    // Style for the icon
     const icon = notification.querySelector("i");
     icon.style.fontSize = "20px";
     icon.style.color = "#ffffff";
 
-    // Style for the text
     const span = notification.querySelector("span");
     span.style.fontSize = "15px";
     span.style.lineHeight = "1.4";
 
-    // Add a subtle animation effect with pseudo-element
     notification.style.overflow = "hidden";
 
-    // Create and add a shine effect element
     const shine = document.createElement("div");
     shine.style.position = "absolute";
     shine.style.top = "0";
@@ -920,36 +795,28 @@ document.addEventListener("DOMContentLoaded", () => {
     shine.style.transform = "translateX(-100%)";
     notification.appendChild(shine);
 
-    // Animate the shine effect
     setTimeout(() => {
       shine.style.transition = "transform 1.5s ease-in-out";
       shine.style.transform = "translateX(100%)";
     }, 300);
 
-    // Add to body
     document.body.appendChild(notification);
 
-    // Trigger animation
     setTimeout(() => {
-      notification.style.transform = "translateX(-50%) translateY(0)"; // Center horizontally, normal vertical position
+      notification.style.transform = "translateX(-50%) translateY(0)";
       notification.style.opacity = "1";
     }, 10);
 
-    // Remove after delay
     setTimeout(() => {
-      notification.style.transform = "translateX(-50%) translateY(100px)"; // Move down while fading
+      notification.style.transform = "translateX(-50%) translateY(100px)";
       notification.style.opacity = "0";
 
-      // Remove from DOM after animation completes
       setTimeout(() => {
         document.body.removeChild(notification);
-      }, 400); // Slightly longer to match new transition time
+      }, 400);
     }, 3000);
   }
 
-  // LOCAL STORAGE FUNCTIONS
-
-  // Save filter settings to local storage
   function saveFilters(
     searchTerm,
     category,
@@ -972,38 +839,31 @@ document.addEventListener("DOMContentLoaded", () => {
     saveToLocalStorage("filterState", filterState);
   }
 
-  // Load saved filters and apply them
   function loadSavedFilters() {
     const filterState = loadFromLocalStorage("filterState");
     if (!filterState) return;
 
-    // Restore search input
     if (searchInput && filterState.searchTerm) {
       searchInput.value = filterState.searchTerm;
       if (searchClearBtn) searchClearBtn.style.display = "flex";
     }
 
-    // Restore category
     if (categorySelect && filterState.category) {
       categorySelect.value = filterState.category;
     }
 
-    // Restore provider
     if (providerSelect && filterState.provider) {
       providerSelect.value = filterState.provider;
     }
 
-    // Restore release year
     if (releaseYearSelect && filterState.releaseYear) {
       releaseYearSelect.value = filterState.releaseYear;
     }
 
-    // Restore license type
     if (licenseTypeSelect && filterState.licenseType) {
       licenseTypeSelect.value = filterState.licenseType;
     }
 
-    // Restore quick filter buttons
     if (
       filterState.quickFilterValue &&
       filterState.quickFilterValue !== "all"
@@ -1020,7 +880,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Restore selected features
     if (
       filterState.selectedFeatures &&
       filterState.selectedFeatures.length > 0
@@ -1034,11 +893,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Apply the loaded filters
     applyFilters();
   }
 
-  // Generic localStorage save function with error handling
   function saveToLocalStorage(key, value) {
     try {
       localStorage.setItem(key, JSON.stringify(value));
@@ -1047,7 +904,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Generic localStorage load function with error handling
   function loadFromLocalStorage(key) {
     try {
       const value = localStorage.getItem(key);
@@ -1058,17 +914,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Initialize everything
   console.log("Script initialization completed");
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize custom dropdowns
   initCustomDropdowns();
 });
 
 function initCustomDropdowns() {
-  // Get all custom select elements
   const customSelects = document.querySelectorAll(".custom-select");
 
   customSelects.forEach((select) => {
@@ -1076,144 +929,42 @@ function initCustomDropdowns() {
     const options = select.querySelector(".custom-options");
     const hiddenSelect = select.querySelector(".hidden-select");
 
-    // Add search input to each dropdown
     addSearchToDropdown(select);
 
-    // Toggle dropdown on click
     trigger.addEventListener("click", () => {
-      // Close all other open dropdowns
       customSelects.forEach((s) => {
         if (s !== select) s.classList.remove("open");
       });
 
-      // Toggle current dropdown
       select.classList.toggle("open");
 
-      // If opened, focus on search input
       if (select.classList.contains("open")) {
         const searchInput = select.querySelector(".dropdown-search");
         if (searchInput) setTimeout(() => searchInput.focus(), 100);
       }
     });
 
-    // Handle option selection
     const optionElements = options.querySelectorAll(".custom-option");
     optionElements.forEach((option) => {
       option.addEventListener("click", () => {
-        // Update the trigger text
         trigger.querySelector("span").textContent = option.textContent;
 
-        // Update the hidden select
         hiddenSelect.value = option.getAttribute("data-value");
 
-        // Update selected state
         optionElements.forEach((o) => o.classList.remove("selected"));
         option.classList.add("selected");
 
-        // Trigger change event on hidden select
         const event = new Event("change", { bubbles: true });
         hiddenSelect.dispatchEvent(event);
 
-        // Close the dropdown
         select.classList.remove("open");
       });
     });
   });
 
-  // Close dropdowns when clicking outside
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".custom-select")) {
       customSelects.forEach((select) => select.classList.remove("open"));
     }
   });
 }
-
-// function addSearchToDropdown(selectElement) {
-//   const optionsContainer = selectElement.querySelector(".custom-options");
-
-//   // Create search container
-//   const searchContainer = document.createElement("div");
-//   searchContainer.className = "dropdown-search-container";
-
-//   // Create search icon
-//   const searchIcon = document.createElement("i");
-//   searchIcon.className = "fas fa-search dropdown-search-icon";
-//   searchContainer.appendChild(searchIcon);
-
-//   // Create search input
-//   const searchInput = document.createElement("input");
-//   searchInput.className = "dropdown-search";
-//   searchInput.type = "text";
-//   searchInput.placeholder = "Search...";
-//   searchContainer.appendChild(searchInput);
-
-//   // Create no results message
-//   const noResults = document.createElement("div");
-//   noResults.className = "no-results";
-//   noResults.textContent = "No matching options found";
-
-//   // Insert at the beginning of options container
-//   optionsContainer.insertBefore(searchContainer, optionsContainer.firstChild);
-//   optionsContainer.appendChild(noResults);
-
-//   // Add search functionality
-//   searchInput.addEventListener("input", function () {
-//     const filter = this.value.toLowerCase();
-//     const options = optionsContainer.querySelectorAll(".custom-option");
-//     let matchCount = 0;
-
-//     options.forEach((option) => {
-//       const text = option.textContent.toLowerCase();
-//       if (text.includes(filter)) {
-//         option.classList.remove("hidden");
-//         matchCount++;
-//       } else {
-//         option.classList.add("hidden");
-//       }
-//     });
-
-//     // Show/hide no results message
-//     if (matchCount === 0) {
-//       noResults.classList.add("visible");
-//     } else {
-//       noResults.classList.remove("visible");
-//     }
-//   });
-
-//   // Prevent dropdown from closing when clicking in search input
-//   searchInput.addEventListener("click", function (e) {
-//     e.stopPropagation();
-//   });
-// }
-
-// // Add keyboard navigation for accessibility
-// function addKeyboardNavigation() {
-//   const customSelects = document.querySelectorAll(".custom-select");
-
-//   customSelects.forEach((select) => {
-//     const trigger = select.querySelector(".custom-select__trigger");
-//     const options = select.querySelectorAll(".custom-option:not(.hidden)");
-
-//     // Handle keyboard navigation
-//     select.addEventListener("keydown", function (e) {
-//       if (!select.classList.contains("open")) {
-//         if (e.key === "Enter" || e.key === " " || e.key === "ArrowDown") {
-//           e.preventDefault();
-//           select.classList.add("open");
-//           const searchInput = select.querySelector(".dropdown-search");
-//           if (searchInput) setTimeout(() => searchInput.focus(), 100);
-//         }
-//       } else {
-//         if (e.key === "Escape") {
-//           select.classList.remove("open");
-//           trigger.focus();
-//         }
-//       }
-//     });
-//   });
-// }
-
-// // Initialize keyboard navigation after DOM is loaded
-// document.addEventListener("DOMContentLoaded", function () {
-//   addKeyboardNavigation();
-// });
