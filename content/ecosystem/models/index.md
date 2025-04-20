@@ -329,7 +329,7 @@ layout: default
               <span>Read Paper</span>
             </a>
             <a href="{{ model.url | default: '#' }}" class="model-link primary">View Model Page</a>
-            <a href="{{ model.resources_url | default: '#' }}" class="model-link secondary">Learning Resources</a>
+            <a href="{{ model.resources_url | default: '#' }}" class="model-link primary">Learning Resources</a>
           </div>
         </div>
       </div>
