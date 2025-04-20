@@ -116,6 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // initCustomDropdowns();
+
   // Close dropdowns when clicking outside
   document.addEventListener("click", (e) => {
     const isCustomSelect = e.target.closest(".custom-select");
@@ -859,53 +861,89 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Show notification
+
   function showNotification(message) {
     // Create notification element
     const notification = document.createElement("div");
     notification.className = "notification";
     notification.innerHTML = `
-      <div class="notification-content">
-        <i class="fas fa-check-circle"></i>
-        <span>${message}</span>
-      </div>
-    `;
+    <div class="notification-content">
+      <i class="fas fa-check-circle"></i>
+      <span>${message}</span>
+    </div>
+  `;
 
-    // Add styles
+    // Add enhanced styles - bottom middle of the screen
     notification.style.position = "fixed";
-    notification.style.bottom = "20px";
-    notification.style.right = "20px";
-    notification.style.backgroundColor = "#4ade80";
+    notification.style.bottom = "24px";
+    notification.style.left = "50%";
+    notification.style.right = "auto";
+    notification.style.transform = "translateX(-50%) translateY(100px)"; // Center horizontally, start below view
+    notification.style.background = "linear-gradient(135deg, #4f46e5, #6366f1)"; // Purple gradient matching your theme
     notification.style.color = "white";
-    notification.style.padding = "12px 16px";
-    notification.style.borderRadius = "8px";
-    notification.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.15)";
-    notification.style.zIndex = "1000";
+    notification.style.padding = "14px 20px";
+    notification.style.borderRadius = "12px";
+    notification.style.boxShadow = "0 8px 30px rgba(79, 70, 229, 0.25)"; // Colored shadow
+    notification.style.zIndex = "9999";
     notification.style.display = "flex";
     notification.style.alignItems = "center";
-    notification.style.gap = "8px";
+    notification.style.gap = "12px";
     notification.style.fontWeight = "500";
-    notification.style.transform = "translateY(100px)";
     notification.style.opacity = "0";
-    notification.style.transition = "all 0.3s ease";
+    notification.style.transition = "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)"; // More sophisticated animation
+    notification.style.maxWidth = "380px"; // Limit width for better readability
+    notification.style.backdropFilter = "blur(8px)"; // Modern glass effect (works in some browsers)
+    notification.style.border = "1px solid rgba(255, 255, 255, 0.1)"; // Subtle border
+
+    // Style for the icon
+    const icon = notification.querySelector("i");
+    icon.style.fontSize = "20px";
+    icon.style.color = "#ffffff";
+
+    // Style for the text
+    const span = notification.querySelector("span");
+    span.style.fontSize = "15px";
+    span.style.lineHeight = "1.4";
+
+    // Add a subtle animation effect with pseudo-element
+    notification.style.overflow = "hidden";
+
+    // Create and add a shine effect element
+    const shine = document.createElement("div");
+    shine.style.position = "absolute";
+    shine.style.top = "0";
+    shine.style.left = "0";
+    shine.style.width = "100%";
+    shine.style.height = "100%";
+    shine.style.background =
+      "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%)";
+    shine.style.transform = "translateX(-100%)";
+    notification.appendChild(shine);
+
+    // Animate the shine effect
+    setTimeout(() => {
+      shine.style.transition = "transform 1.5s ease-in-out";
+      shine.style.transform = "translateX(100%)";
+    }, 300);
 
     // Add to body
     document.body.appendChild(notification);
 
     // Trigger animation
     setTimeout(() => {
-      notification.style.transform = "translateY(0)";
+      notification.style.transform = "translateX(-50%) translateY(0)"; // Center horizontally, normal vertical position
       notification.style.opacity = "1";
     }, 10);
 
     // Remove after delay
     setTimeout(() => {
-      notification.style.transform = "translateY(100px)";
+      notification.style.transform = "translateX(-50%) translateY(100px)"; // Move down while fading
       notification.style.opacity = "0";
 
       // Remove from DOM after animation completes
       setTimeout(() => {
         document.body.removeChild(notification);
-      }, 300);
+      }, 400); // Slightly longer to match new transition time
     }, 3000);
   }
 
@@ -1023,3 +1061,159 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize everything
   console.log("Script initialization completed");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize custom dropdowns
+  initCustomDropdowns();
+});
+
+function initCustomDropdowns() {
+  // Get all custom select elements
+  const customSelects = document.querySelectorAll(".custom-select");
+
+  customSelects.forEach((select) => {
+    const trigger = select.querySelector(".custom-select__trigger");
+    const options = select.querySelector(".custom-options");
+    const hiddenSelect = select.querySelector(".hidden-select");
+
+    // Add search input to each dropdown
+    addSearchToDropdown(select);
+
+    // Toggle dropdown on click
+    trigger.addEventListener("click", () => {
+      // Close all other open dropdowns
+      customSelects.forEach((s) => {
+        if (s !== select) s.classList.remove("open");
+      });
+
+      // Toggle current dropdown
+      select.classList.toggle("open");
+
+      // If opened, focus on search input
+      if (select.classList.contains("open")) {
+        const searchInput = select.querySelector(".dropdown-search");
+        if (searchInput) setTimeout(() => searchInput.focus(), 100);
+      }
+    });
+
+    // Handle option selection
+    const optionElements = options.querySelectorAll(".custom-option");
+    optionElements.forEach((option) => {
+      option.addEventListener("click", () => {
+        // Update the trigger text
+        trigger.querySelector("span").textContent = option.textContent;
+
+        // Update the hidden select
+        hiddenSelect.value = option.getAttribute("data-value");
+
+        // Update selected state
+        optionElements.forEach((o) => o.classList.remove("selected"));
+        option.classList.add("selected");
+
+        // Trigger change event on hidden select
+        const event = new Event("change", { bubbles: true });
+        hiddenSelect.dispatchEvent(event);
+
+        // Close the dropdown
+        select.classList.remove("open");
+      });
+    });
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".custom-select")) {
+      customSelects.forEach((select) => select.classList.remove("open"));
+    }
+  });
+}
+
+// function addSearchToDropdown(selectElement) {
+//   const optionsContainer = selectElement.querySelector(".custom-options");
+
+//   // Create search container
+//   const searchContainer = document.createElement("div");
+//   searchContainer.className = "dropdown-search-container";
+
+//   // Create search icon
+//   const searchIcon = document.createElement("i");
+//   searchIcon.className = "fas fa-search dropdown-search-icon";
+//   searchContainer.appendChild(searchIcon);
+
+//   // Create search input
+//   const searchInput = document.createElement("input");
+//   searchInput.className = "dropdown-search";
+//   searchInput.type = "text";
+//   searchInput.placeholder = "Search...";
+//   searchContainer.appendChild(searchInput);
+
+//   // Create no results message
+//   const noResults = document.createElement("div");
+//   noResults.className = "no-results";
+//   noResults.textContent = "No matching options found";
+
+//   // Insert at the beginning of options container
+//   optionsContainer.insertBefore(searchContainer, optionsContainer.firstChild);
+//   optionsContainer.appendChild(noResults);
+
+//   // Add search functionality
+//   searchInput.addEventListener("input", function () {
+//     const filter = this.value.toLowerCase();
+//     const options = optionsContainer.querySelectorAll(".custom-option");
+//     let matchCount = 0;
+
+//     options.forEach((option) => {
+//       const text = option.textContent.toLowerCase();
+//       if (text.includes(filter)) {
+//         option.classList.remove("hidden");
+//         matchCount++;
+//       } else {
+//         option.classList.add("hidden");
+//       }
+//     });
+
+//     // Show/hide no results message
+//     if (matchCount === 0) {
+//       noResults.classList.add("visible");
+//     } else {
+//       noResults.classList.remove("visible");
+//     }
+//   });
+
+//   // Prevent dropdown from closing when clicking in search input
+//   searchInput.addEventListener("click", function (e) {
+//     e.stopPropagation();
+//   });
+// }
+
+// // Add keyboard navigation for accessibility
+// function addKeyboardNavigation() {
+//   const customSelects = document.querySelectorAll(".custom-select");
+
+//   customSelects.forEach((select) => {
+//     const trigger = select.querySelector(".custom-select__trigger");
+//     const options = select.querySelectorAll(".custom-option:not(.hidden)");
+
+//     // Handle keyboard navigation
+//     select.addEventListener("keydown", function (e) {
+//       if (!select.classList.contains("open")) {
+//         if (e.key === "Enter" || e.key === " " || e.key === "ArrowDown") {
+//           e.preventDefault();
+//           select.classList.add("open");
+//           const searchInput = select.querySelector(".dropdown-search");
+//           if (searchInput) setTimeout(() => searchInput.focus(), 100);
+//         }
+//       } else {
+//         if (e.key === "Escape") {
+//           select.classList.remove("open");
+//           trigger.focus();
+//         }
+//       }
+//     });
+//   });
+// }
+
+// // Initialize keyboard navigation after DOM is loaded
+// document.addEventListener("DOMContentLoaded", function () {
+//   addKeyboardNavigation();
+// });
