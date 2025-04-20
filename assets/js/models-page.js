@@ -84,9 +84,28 @@ document.addEventListener("DOMContentLoaded", () => {
         const dataValue = option.getAttribute("data-value");
         console.log("Selected option data-value:", dataValue);
 
-        // Update hidden select - this is likely where the issue is
+        // FIXED: First, make sure the hidden select exists
+        if (!hiddenSelect) {
+          console.error("Hidden select not found for", select);
+          return;
+        }
+
+        // FIXED: Use selectedIndex to update the select element
+        for (let i = 0; i < hiddenSelect.options.length; i++) {
+          if (hiddenSelect.options[i].value === dataValue) {
+            hiddenSelect.selectedIndex = i;
+            break;
+          }
+        }
+
+        // Also set value directly for good measure
         hiddenSelect.value = dataValue;
+
         console.log("Updated hidden select value:", hiddenSelect.value);
+        console.log(
+          "Updated hidden select selected index:",
+          hiddenSelect.selectedIndex
+        );
 
         // Make sure the change event fires
         hiddenSelect.dispatchEvent(new Event("change", { bubbles: true }));
@@ -395,6 +414,14 @@ document.addEventListener("DOMContentLoaded", () => {
       ? document.getElementById("license-type").value.toLowerCase()
       : "";
 
+    console.log("Filter values:", {
+      searchTerm,
+      category,
+      provider,
+      releaseYear,
+      licenseType,
+    });
+
     // Get active quick filter
     const activeQuickFilter = document.querySelector(
       ".quick-filter-badge.active"
@@ -422,8 +449,9 @@ document.addEventListener("DOMContentLoaded", () => {
       selectedFeatures
     );
 
-    // Filter the model cards
+    // Filter the model cards - IMPORTANT: start with ALL cards
     filteredCards = Array.from(allModelCards);
+    console.log("Starting with all cards:", filteredCards.length);
 
     // Apply search filter
     if (searchTerm) {
@@ -448,9 +476,9 @@ document.addEventListener("DOMContentLoaded", () => {
           features.includes(searchTerm)
         );
       });
+      console.log("After search filter:", filteredCards.length);
     }
 
-    // Apply quick filter
     if (quickFilterValue !== "all") {
       filteredCards = filteredCards.filter((card) => {
         // Get all badges
@@ -473,7 +501,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Apply category filter
     if (category) {
       filteredCards = filteredCards.filter((card) => {
         const features = Array.from(card.querySelectorAll(".feature-tag")).map(
@@ -504,34 +531,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Apply provider filter
     if (provider) {
-      console.log(`Attempting to filter by provider: "${provider}"`);
+      console.log(`Filtering by provider: "${provider}"`);
 
-      // Let's examine all provider names in cards before filtering:
-      const allProviders = Array.from(allModelCards).map((card) => {
-        const providerEl = card.querySelector(".model-provider");
-        return providerEl ? providerEl.textContent : "Not found";
-      });
-
-      console.log("All provider names in cards:", allProviders);
+      // Count matches
+      let matchCount = 0;
 
       filteredCards = filteredCards.filter((card) => {
         const providerEl = card.querySelector(".model-provider");
-        const providerName = providerEl
-          ? providerEl.textContent.toLowerCase()
-          : "";
+        const providerText = providerEl ? providerEl.textContent : "";
 
-        // Log each comparison
-        console.log(
-          `Comparing: Card provider "${providerName}" with filter "${provider}" - Match: ${providerName.includes(
-            provider
-          )}`
+        // Remove spaces and make case insensitive for more robust matching
+        const normalizedCardProvider = providerText
+          .toLowerCase()
+          .replace(/\s+/g, "");
+        const normalizedFilterProvider = provider
+          .toLowerCase()
+          .replace(/\s+/g, "");
+
+        const isMatch = normalizedCardProvider.includes(
+          normalizedFilterProvider
         );
 
-        // Rest of your filter logic...
+        if (isMatch) {
+          matchCount++;
+        }
+
+        return isMatch;
       });
+
+      console.log(`Found ${matchCount} matches for provider: "${provider}"`);
+      console.log("After provider filter:", filteredCards.length);
+
+      // Reset to page 1 whenever filtering by provider
+      currentPage = 1;
+      saveToLocalStorage("currentPage", currentPage);
     }
 
-    // Apply release year filter
     if (releaseYear) {
       filteredCards = filteredCards.filter((card) => {
         // First, try to find the release date in the expected format
@@ -630,7 +665,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modelsList.style.opacity = "1";
       }
 
-      // Show notification for applied filters
+      // Show notification for applied filters with count
       if (
         searchTerm ||
         category ||
@@ -640,7 +675,9 @@ document.addEventListener("DOMContentLoaded", () => {
         selectedFeatures.length > 0 ||
         quickFilterValue !== "all"
       ) {
-        showNotification("Filters applied successfully!");
+        showNotification(
+          `Found ${filteredCards.length} models matching your filters`
+        );
       }
     }, 400);
   }
@@ -681,9 +718,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Update pagination buttons
   function updatePaginationButtons() {
+    console.log("Updating pagination buttons with current values:");
+    console.log("Current page:", currentPage);
+    console.log("Total pages:", totalPages);
+    console.log("Items per page:", itemsPerPage);
+
     // Get the parent container
     const paginationContainer = document.querySelector(".pagination");
-    if (!paginationContainer) return;
+    if (!paginationContainer) {
+      console.error("Pagination container not found");
+      return;
+    }
 
     // Remove all existing number buttons
     const existingButtons = paginationContainer.querySelectorAll(
@@ -691,9 +736,19 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     existingButtons.forEach((button) => button.remove());
 
-    // Remove ellipsis
-    const ellipsis = paginationContainer.querySelector(".page-ellipsis");
-    if (ellipsis) ellipsis.remove();
+    // Remove ellipsis elements
+    const ellipses = paginationContainer.querySelectorAll(".page-ellipsis");
+    ellipses.forEach((ellipsis) => ellipsis.remove());
+
+    // If there are no pages, don't add any buttons
+    if (totalPages === 0) {
+      // Hide or disable pagination
+      if (prevButton) prevButton.style.opacity = "0.5";
+      if (nextButton) nextButton.style.opacity = "0.5";
+      if (prevButton) prevButton.style.cursor = "not-allowed";
+      if (nextButton) nextButton.style.cursor = "not-allowed";
+      return;
+    }
 
     // Create new page buttons based on total pages
     // We'll show max 5 page numbers
@@ -710,7 +765,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = paginationContainer.querySelector(
       '.page-button[title="Next page"]'
     );
-    if (!nextBtn) return;
+    if (!nextBtn) {
+      console.error("Next button not found");
+      return;
+    }
 
     // Add page buttons
     for (let i = startPage; i <= endPage; i++) {
@@ -731,7 +789,7 @@ document.addEventListener("DOMContentLoaded", () => {
       paginationContainer.insertBefore(pageBtn, nextBtn);
     }
 
-    // Add ellipsis if needed
+    // Add ellipsis if needed at the end
     if (endPage < totalPages) {
       const ellipsis = document.createElement("div");
       ellipsis.className = "page-ellipsis";
@@ -752,6 +810,36 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       paginationContainer.insertBefore(lastPageBtn, nextBtn);
+    }
+
+    // Add ellipsis at the beginning if needed
+    if (startPage > 1) {
+      const firstPageBtn = document.createElement("button");
+      firstPageBtn.className = "page-button";
+      firstPageBtn.textContent = "1";
+
+      firstPageBtn.addEventListener("click", () => {
+        currentPage = 1;
+        saveToLocalStorage("currentPage", currentPage);
+        updatePaginationButtons();
+        updateDisplayedCards();
+        scrollToTop();
+      });
+
+      // Insert after the prev button
+      const prevBtn = paginationContainer.querySelector(
+        '.page-button[title="Previous page"]'
+      );
+      if (prevBtn) {
+        paginationContainer.insertBefore(firstPageBtn, prevBtn.nextSibling);
+
+        if (startPage > 2) {
+          const ellipsis = document.createElement("div");
+          ellipsis.className = "page-ellipsis";
+          ellipsis.textContent = "...";
+          paginationContainer.insertBefore(ellipsis, firstPageBtn.nextSibling);
+        }
+      }
     }
 
     // Disable/enable prev/next buttons
