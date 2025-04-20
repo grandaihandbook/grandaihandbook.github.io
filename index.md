@@ -546,21 +546,6 @@ hide_title: true
   </div>
 </section>
   
-  <!-- RESEARCH SECTION
-  <section class="mb-20">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold">Research <span class="gradient-word">Insights</span></h2>
-    </div>
-    
-    <div class="banner">
-      <p class="text-center">Our research section features in-depth analyses of groundbreaking papers and emerging technologies that are shaping the future of artificial intelligence.</p>
-    </div>
-    
-    <div class="text-center mt-10">
-      <a href="{{ '/research/' | relative_url }}" class="btn btn-secondary">Explore Research Section</a>
-    </div>
-  </section> -->
-  
   <!-- COMMUNITY SECTION -->
   <section class="mb-10">
     <div class="text-center mb-12">
