@@ -1158,5 +1158,585 @@
     "website_url": "https://fasttext.cc",
     "docs_url": "https://fasttext.cc/docs/en/support.html",
     "logo_url": "https://fasttext.cc/img/fasttext-icon-white-web.png"
+  },
+  {
+    "name": "CatBoost",
+    "provider": "Yandex",
+    "providerClass": "yandex-logo",
+    "description": "CatBoost is a high-performance gradient boosting library that handles categorical features naturally, making it ideal for real-world datasets with mixed data types. It offers superior out-of-the-box performance, built-in GPU acceleration, and requires minimal hyperparameter tuning, making it perfect for both beginners and experts.",
+    "badges": ["Library", "Open Source", "Machine Learning"],
+    "metadata": {
+      "released": "July 2017",
+      "version": "1.2.2",
+      "stars": "7.6k",
+      "forks": "1.1k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Native categorical feature support",
+      "GPU acceleration for training",
+      "Reduced overfitting with ordered boosting",
+      "Fast inference for production use"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/catboost/catboost",
+    "website_url": "https://catboost.ai",
+    "docs_url": "https://catboost.ai/docs/",
+    "logo_url": "https://raw.githubusercontent.com/catboost/catboost/master/catboost_logo.png"
+  },
+  {
+    "name": "PyG (PyTorch Geometric)",
+    "provider": "PyG Team",
+    "providerClass": "pyg-logo",
+    "description": "PyTorch Geometric is a library for deep learning on irregularly structured input data such as graphs, point clouds, and manifolds. It provides efficient data loaders, various graph neural network layers, and high-performance processing for graph-structured data, enabling state-of-the-art graph learning research and applications.",
+    "badges": ["Library", "Open Source", "Graph ML"],
+    "metadata": {
+      "released": "November 2018",
+      "version": "2.4.0",
+      "stars": "19.5k",
+      "forks": "3.4k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "Comprehensive graph neural network layers",
+      "Efficient data loaders for graphs",
+      "GPU-accelerated graph operations",
+      "Integration with PyTorch ecosystem"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/pyg-team/pytorch_geometric",
+    "website_url": "https://pyg.org",
+    "docs_url": "https://pytorch-geometric.readthedocs.io",
+    "logo_url": "https://raw.githubusercontent.com/pyg-team/pyg_sphinx_theme/master/pyg_sphinx_theme/static/img/pyg_logo.png"
+  },
+  {
+    "name": "MindsDB",
+    "provider": "MindsDB",
+    "providerClass": "mindsdb-logo",
+    "description": "MindsDB is an AI automation platform that brings machine learning into databases, enabling developers to build AI applications directly with SQL. It simplifies the integration of AI models with existing data infrastructure, allowing real-time predictions and automated machine learning workflows without requiring data science expertise.",
+    "badges": ["Platform", "Open Source", "AutoML"],
+    "metadata": {
+      "released": "August 2018",
+      "version": "23.11.4",
+      "stars": "20k",
+      "forks": "2.8k",
+      "language": "Python"
+    },
+    "features": [
+      "AI layer for databases",
+      "AutoML with SQL interface",
+      "Integration with multiple data sources",
+      "Real-time model training and predictions"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "GPL-3.0"
+    },
+    "repo_url": "https://github.com/mindsdb/mindsdb",
+    "website_url": "https://mindsdb.com",
+    "docs_url": "https://docs.mindsdb.com",
+    "logo_url": "https://raw.githubusercontent.com/mindsdb/mindsdb/stable/assets/mindsdb_logo.png"
+  },
+  {
+    "name": "Haystack",
+    "provider": "deepset",
+    "providerClass": "deepset-logo",
+    "description": "Haystack is an end-to-end framework for building production-ready NLP applications, focused on search, question answering, and document retrieval. It combines transformer models with traditional search algorithms, providing a flexible architecture for building LLM-powered applications at scale with multiple document stores and retrievers.",
+    "badges": ["Framework", "Open Source", "NLP"],
+    "metadata": {
+      "released": "November 2019",
+      "version": "2.0.0",
+      "stars": "13k",
+      "forks": "1.7k",
+      "language": "Python"
+    },
+    "features": [
+      "Production-ready NLP pipelines",
+      "Integration with LLMs and vector stores",
+      "Flexible document retrieval system",
+      "Question answering and semantic search"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/deepset-ai/haystack",
+    "website_url": "https://haystack.deepset.ai",
+    "docs_url": "https://docs.haystack.deepset.ai",
+    "logo_url": "https://raw.githubusercontent.com/deepset-ai/haystack/main/docs/img/haystack_logo.png"
+  },
+  {
+    "name": "SHAP",
+    "provider": "Scott Lundberg",
+    "providerClass": "shap-logo",
+    "description": "SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using classic Shapley values from game theory, providing a unified measure of feature importance for model interpretability and debugging.",
+    "badges": ["Library", "Open Source", "Explainable AI"],
+    "metadata": {
+      "released": "November 2017",
+      "version": "0.43.0",
+      "stars": "21k",
+      "forks": "3.1k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "Model-agnostic explanations",
+      "Tree-based model optimizations",
+      "Visualization tools for interpretability",
+      "Local and global feature importance"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/shap/shap",
+    "website_url": "https://shap.readthedocs.io",
+    "docs_url": "https://shap.readthedocs.io",
+    "logo_url": "https://raw.githubusercontent.com/shap/shap/master/docs/artwork/shap_header.png"
+  },
+  {
+    "name": "Feast",
+    "provider": "Linux Foundation",
+    "providerClass": "feast-logo",
+    "description": "Feast is an open-source feature store that serves machine learning features to real-time applications with production-grade reliability. It provides a centralized platform for managing feature definitions, ensures consistency between training and serving, and supports both batch and streaming feature computation for ML pipelines.",
+    "badges": ["Platform", "Open Source", "MLOps"],
+    "metadata": {
+      "released": "January 2019",
+      "version": "0.35.0",
+      "stars": "5.2k",
+      "forks": "915",
+      "language": "Python, Go"
+    },
+    "features": [
+      "Centralized feature management",
+      "Real-time feature serving",
+      "Point-in-time correctness",
+      "Integration with data warehouses"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/feast-dev/feast",
+    "website_url": "https://feast.dev",
+    "docs_url": "https://docs.feast.dev",
+    "logo_url": "https://raw.githubusercontent.com/feast-dev/feast/master/docs/assets/feast_logo.png"
+  },
+  {
+    "name": "NeMo",
+    "provider": "NVIDIA",
+    "providerClass": "nvidia-logo",
+    "description": "NVIDIA NeMo is a toolkit for building, training, and fine-tuning GPU-accelerated speech AI and natural language processing models. It provides pre-trained models, training recipes, and optimized building blocks for creating state-of-the-art conversational AI applications, with special support for large language models and multimodal systems.",
+    "badges": ["Framework", "Open Source", "Conversational AI"],
+    "metadata": {
+      "released": "August 2019",
+      "version": "1.21.0",
+      "stars": "10k",
+      "forks": "2.1k",
+      "language": "Python"
+    },
+    "features": [
+      "Pre-trained models for ASR, NLP, and TTS",
+      "Large language model training support",
+      "Multi-GPU and multi-node scaling",
+      "Mixed precision training optimization"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/NVIDIA/NeMo",
+    "website_url": "https://nvidia.github.io/NeMo/",
+    "docs_url": "https://docs.nvidia.com/deeplearning/nemo/",
+    "logo_url": "https://raw.githubusercontent.com/NVIDIA/NeMo/main/docs/source/_static/nemo-icon-256x256.png"
+  },
+  {
+    "name": "MXNet",
+    "provider": "Apache",
+    "providerClass": "apache-logo",
+    "description": "Apache MXNet is a deep learning framework designed for both efficiency and flexibility. It allows mixing symbolic and imperative programming to maximize efficiency and productivity, offering scalability across multiple GPUs and multiple machines, making it suitable for both research and industrial applications.",
+    "badges": ["Framework", "Open Source", "Deep Learning"],
+    "metadata": {
+      "released": "October 2015",
+      "version": "1.9.1",
+      "stars": "20.6k",
+      "forks": "6.8k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Hybrid programming model",
+      "Distributed training support",
+      "Memory efficiency optimizations",
+      "Gluon API for flexibility"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/apache/mxnet",
+    "website_url": "https://mxnet.apache.org",
+    "docs_url": "https://mxnet.apache.org/versions/1.9.1/api",
+    "logo_url": "https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet_logo_2.png"
+  },
+  {
+    "name": "mmdetection",
+    "provider": "OpenMMLab",
+    "providerClass": "openmmlab-logo",
+    "description": "MMDetection is an open-source object detection toolbox based on PyTorch, part of the OpenMMLab project. It provides a modular design with support for various object detection frameworks, extensive model zoo, and flexible configuration system, making it ideal for both research and production deployment of detection models.",
+    "badges": ["Framework", "Open Source", "Computer Vision"],
+    "metadata": {
+      "released": "June 2018",
+      "version": "3.2.0",
+      "stars": "27k",
+      "forks": "9.1k",
+      "language": "Python"
+    },
+    "features": [
+      "Modular design for object detection",
+      "Rich model zoo with pre-trained weights",
+      "Support for mainstream detection methods",
+      "Easy configuration and customization"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/open-mmlab/mmdetection",
+    "website_url": "https://mmdetection.readthedocs.io",
+    "docs_url": "https://mmdetection.readthedocs.io/en/latest/",
+    "logo_url": "https://raw.githubusercontent.com/open-mmlab/mmdetection/main/resources/mmdet-logo.png"
+  },
+  {
+    "name": "TextBlob",
+    "provider": "Steven Loria",
+    "providerClass": "textblob-logo",
+    "description": "TextBlob is a Python library for processing textual data that provides a simple API for common natural language processing tasks. It offers sentiment analysis, part-of-speech tagging, noun phrase extraction, and more, making NLP accessible to developers with its intuitive interface built on top of NLTK and pattern.",
+    "badges": ["Library", "Open Source", "NLP"],
+    "metadata": {
+      "released": "August 2013",
+      "version": "0.17.1",
+      "stars": "8.9k",
+      "forks": "1.1k",
+      "language": "Python"
+    },
+    "features": [
+      "Simple API for common NLP tasks",
+      "Built-in sentiment analysis",
+      "Part-of-speech tagging",
+      "Language translation and detection"
+    ],
+    "stats": {
+      "popularity": "★★★☆☆",
+      "activity": "★★★☆☆",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/sloria/TextBlob",
+    "website_url": "https://textblob.readthedocs.io",
+    "docs_url": "https://textblob.readthedocs.io/en/dev/",
+    "logo_url": "https://raw.githubusercontent.com/sloria/TextBlob/dev/docs/_static/textblob.png"
+  },
+  {
+    "name": "AI Fairness 360",
+    "provider": "IBM",
+    "providerClass": "ibm-logo",
+    "description": "AI Fairness 360 (AIF360) is an extensible open-source toolkit that helps detect and mitigate bias in machine learning models throughout the AI application lifecycle. It provides metrics to test for biases and algorithms to mitigate bias in datasets and models, supporting the development of trustworthy AI systems.",
+    "badges": ["Toolkit", "Open Source", "Ethics"],
+    "metadata": {
+      "released": "September 2018",
+      "version": "0.5.0",
+      "stars": "2.3k",
+      "forks": "769",
+      "language": "Python"
+    },
+    "features": [
+      "Comprehensive bias detection metrics",
+      "Bias mitigation algorithms",
+      "Pre-processing and post-processing techniques",
+      "Integration with scikit-learn pipelines"
+    ],
+    "stats": {
+      "popularity": "★★★☆☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/Trusted-AI/AIF360",
+    "website_url": "https://aif360.mybluemix.net",
+    "docs_url": "https://aif360.readthedocs.io",
+    "logo_url": "https://raw.githubusercontent.com/Trusted-AI/AIF360/master/aif360/aif360-logo.png"
+  },
+  {
+    "name": "Pyro",
+    "provider": "Uber AI Labs",
+    "providerClass": "pyro-logo",
+    "description": "Pyro is a universal probabilistic programming language built on PyTorch. It enables flexible and expressive deep probabilistic modeling, unifying modern deep learning with bayesian modeling through a simple yet powerful API, making it ideal for applications requiring uncertainty quantification and probabilistic inference.",
+    "badges": ["Framework", "Open Source", "Probabilistic Programming"],
+    "metadata": {
+      "released": "November 2017",
+      "version": "1.8.6",
+      "stars": "8.3k",
+      "forks": "980",
+      "language": "Python"
+    },
+    "features": [
+      "Deep probabilistic programming",
+      "Stochastic variational inference",
+      "Integration with PyTorch ecosystem",
+      "Flexible inference algorithms"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/pyro-ppl/pyro",
+    "website_url": "https://pyro.ai",
+    "docs_url": "https://docs.pyro.ai",
+    "logo_url": "https://raw.githubusercontent.com/pyro-ppl/pyro/dev/docs/source/_static/img/pyro_logo.png"
+  },
+  {
+    "name": "Kubeflow",
+    "provider": "Google",
+    "providerClass": "google-logo",
+    "description": "Kubeflow is an open-source project dedicated to making deployments of machine learning workflows on Kubernetes simple, portable, and scalable. It provides a complete platform for deploying, monitoring, and managing complex ML systems in production, with components for experimentation, training, serving, and pipeline orchestration.",
+    "badges": ["Platform", "Open Source", "MLOps"],
+    "metadata": {
+      "released": "December 2017",
+      "version": "1.8.0",
+      "stars": "13.6k",
+      "forks": "2.3k",
+      "language": "Go, Python"
+    },
+    "features": [
+      "ML workflow orchestration on Kubernetes",
+      "Distributed training job management",
+      "Model serving and monitoring",
+      "Integrated MLOps toolchain"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/kubeflow/kubeflow",
+    "website_url": "https://www.kubeflow.org",
+    "docs_url": "https://www.kubeflow.org/docs/",
+    "logo_url": "https://raw.githubusercontent.com/kubeflow/website/master/static/logos/Kubeflow_Logo_RGB.svg"
+  },
+  {
+    "name": "Trax",
+    "provider": "Google",
+    "providerClass": "google-logo",
+    "description": "Trax is an end-to-end library for deep learning that focuses on clear code and speed. It's actively used and maintained by the Google Brain team for advanced research in deep learning, offering a simple API for defining models while providing powerful features for large-scale distributed training and transformer architectures.",
+    "badges": ["Library", "Open Source", "Deep Learning"],
+    "metadata": {
+      "released": "August 2019",
+      "version": "1.4.1",
+      "stars": "7.9k",
+      "forks": "811",
+      "language": "Python"
+    },
+    "features": [
+      "Fast training with JAX acceleration",
+      "Built-in transformer models",
+      "Simple and clear API design",
+      "Scalable to large datasets"
+    ],
+    "stats": {
+      "popularity": "★★★☆☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/google/trax",
+    "website_url": "https://trax-ml.readthedocs.io",
+    "docs_url": "https://trax-ml.readthedocs.io/en/latest/",
+    "logo_url": "https://raw.githubusercontent.com/google/trax/master/docs/assets/trax-logo.png"
+  },
+  {
+    "name": "PyCaret",
+    "provider": "PyCaret",
+    "providerClass": "pycaret-logo",
+    "description": "PyCaret is an open-source, low-code machine learning library in Python that automates machine learning workflows. It's an end-to-end ML solution for data scientists, offering a simple interface to perform common machine learning tasks with just a few lines of code, including data preprocessing, model training, and deployment.",
+    "badges": ["Library", "Open Source", "AutoML"],
+    "metadata": {
+      "released": "April 2020",
+      "version": "3.1.0",
+      "stars": "8.3k",
+      "forks": "1.7k",
+      "language": "Python"
+    },
+    "features": [
+      "Low-code machine learning automation",
+      "Integrated preprocessing pipeline",
+      "Model comparison and ensemble methods",
+      "MLOps integration capabilities"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/pycaret/pycaret",
+    "website_url": "https://pycaret.org",
+    "docs_url": "https://pycaret.gitbook.io/docs/",
+    "logo_url": "https://raw.githubusercontent.com/pycaret/pycaret/master/docs/images/logo.png"
+  },
+  {
+    "name": "BentoML",
+    "provider": "BentoML",
+    "providerClass": "bentoml-logo",
+    "description": "BentoML is an open platform for machine learning model serving and deployment. It simplifies the process of packaging ML models as production-ready API services, supporting various ML frameworks and providing containerization, scaling, and monitoring features for deploying models in production environments.",
+    "badges": ["Platform", "Open Source", "MLOps"],
+    "metadata": {
+      "released": "April 2019",
+      "version": "1.1.7",
+      "stars": "6.3k",
+      "forks": "701",
+      "language": "Python"
+    },
+    "features": [
+      "Framework-agnostic model serving",
+      "Built-in API server with OpenAPI support",
+      "Docker containerization automation",
+      "Cloud deployment integrations"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/bentoml/BentoML",
+    "website_url": "https://www.bentoml.com",
+    "docs_url": "https://docs.bentoml.com",
+    "logo_url": "https://raw.githubusercontent.com/bentoml/BentoML/main/docs/source/_static/img/bentoml-logo.png"
+  },
+  {
+    "name": "Label Studio",
+    "provider": "HumanSignal",
+    "providerClass": "labelstudio-logo",
+    "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format. It provides flexible interfaces for labeling various data types including images, audio, text, time series, and video, supporting both human labeling and automated pre-annotation with machine learning models for efficient dataset creation.",
+    "badges": ["Tool", "Open Source", "Data Labeling"],
+    "metadata": {
+      "released": "October 2019",
+      "version": "1.9.1",
+      "stars": "16k",
+      "forks": "1.9k",
+      "language": "Python, React"
+    },
+    "features": [
+      "Multi-format data annotation interface",
+      "ML-assisted labeling and automation",
+      "Project management and collaboration tools",
+      "Integration with ML pipelines"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/heartexlabs/label-studio",
+    "website_url": "https://labelstud.io",
+    "docs_url": "https://labelstud.io/guide/",
+    "logo_url": "https://raw.githubusercontent.com/heartexlabs/label-studio/master/images/ls_logo.png"
+  },
+  {
+    "name": "Evidently",
+    "provider": "Evidently AI",
+    "providerClass": "evidently-logo",
+    "description": "Evidently is an open-source tool for ML model monitoring and testing that helps evaluate, test, and monitor data and ML model quality throughout the model lifecycle. It provides interactive reports, drift detection, and monitoring dashboards for maintaining ML system health in production environments.",
+    "badges": ["Tool", "Open Source", "Monitoring"],
+    "metadata": {
+      "released": "December 2020",
+      "version": "0.4.7",
+      "stars": "4.6k",
+      "forks": "520",
+      "language": "Python"
+    },
+    "features": [
+      "Interactive model quality reports",
+      "Data and prediction drift detection",
+      "Integration with ML pipelines",
+      "Customizable test suites"
+    ],
+    "stats": {
+      "popularity": "★★★☆☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/evidentlyai/evidently",
+    "website_url": "https://www.evidentlyai.com",
+    "docs_url": "https://docs.evidentlyai.com",
+    "logo_url": "https://raw.githubusercontent.com/evidentlyai/evidently/main/docs/assets/evidently_logo.png"
+  },
+  {
+    "name": "Graphcore Poplar",
+    "provider": "Graphcore",
+    "providerClass": "graphcore-logo",
+    "description": "Poplar is Graphcore's graph programming framework designed specifically for AI compute on Intelligence Processing Units (IPUs). It provides a complete SDK for developing and deploying machine learning models with exceptional performance, offering unique graph-based computing paradigms optimized for AI workloads.",
+    "badges": ["SDK", "Proprietary", "AI Hardware"],
+    "metadata": {
+      "released": "March 2018",
+      "version": "3.3.0",
+      "stars": "605",
+      "forks": "82",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Graph compiler for IPU hardware",
+      "Optimized for AI compute patterns",
+      "Integration with PyTorch and TensorFlow",
+      "Fine-grained parallelism control"
+    ],
+    "stats": {
+      "popularity": "★★★☆☆",
+      "activity": "★★★★☆",
+      "license": "Proprietary"
+    },
+    "repo_url": "https://github.com/graphcore/examples",
+    "website_url": "https://www.graphcore.ai/products/poplar",
+    "docs_url": "https://docs.graphcore.ai/projects/poplar-user-guide/",
+    "logo_url": "https://www.graphcore.ai/assets/img/graphcore-logo.svg"
+  },
+  {
+    "name": "Torchaudio",
+    "provider": "PyTorch",
+    "providerClass": "pytorch-logo",
+    "description": "Torchaudio is an audio library for PyTorch that provides I/O utilities, popular datasets, and common audio transformations. It simplifies audio processing tasks for machine learning applications, offering GPU-accelerated operations for efficient audio feature extraction and transformation in deep learning pipelines.",
+    "badges": ["Library", "Open Source", "Audio Processing"],
+    "metadata": {
+      "released": "May 2019",
+      "version": "2.1.0",
+      "stars": "2.3k",
+      "forks": "604",
+      "language": "Python, C++"
+    },
+    "features": [
+      "Audio I/O and dataset loading",
+      "Common audio transformations",
+      "GPU-accelerated operations",
+      "Integration with PyTorch ecosystem"
+    ],
+    "stats": {
+      "popularity": "★★★☆☆",
+      "activity": "★★★★★",
+      "license": "BSD-3-Clause"
+    },
+    "repo_url": "https://github.com/pytorch/audio",
+    "website_url": "https://pytorch.org/audio",
+    "docs_url": "https://pytorch.org/audio/stable/index.html",
+    "logo_url": "https://pytorch.org/assets/images/pytorch-logo.png"
   }
 ]
