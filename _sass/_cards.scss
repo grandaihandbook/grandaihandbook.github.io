@@ -648,6 +648,10 @@
       background-image: url("/assets/images/roadmap/aibg.jpg");
     }
 
+    &.mlops {
+      background-image: url("/assets/images/roadmap/mlopsbg.jpg");
+    }
+
     /* Default gradient background if no image is available */
     &.default {
       background-image: linear-gradient(135deg, #6366f1, #8b5cf6);
