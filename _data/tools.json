@@ -1,0 +1,1162 @@
+[
+  {
+    "name": "TensorFlow",
+    "provider": "Google",
+    "providerClass": "google-logo",
+    "description": "TensorFlow is a comprehensive, flexible ecosystem of tools, libraries, and community resources for building and deploying machine learning applications. It provides a complete platform for developers, researchers, and enterprises to develop and deploy ML models at scale with high performance, featuring support for distributed computing, production deployment, and mobile/edge device integration.",
+    "badges": ["Framework", "Open Source", "Enterprise"],
+    "metadata": {
+      "released": "November 2015",
+      "version": "2.14.0",
+      "stars": "179k",
+      "forks": "89k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "Deep learning framework with high-level APIs",
+      "Distributed training across multiple devices",
+      "TensorFlow Lite for mobile and embedded devices",
+      "TensorFlow.js for browser-based ML"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/tensorflow/tensorflow",
+    "website_url": "https://www.tensorflow.org",
+    "docs_url": "https://www.tensorflow.org/api_docs",
+    "logo_url": "https://www.tensorflow.org/images/tf_logo_social.png"
+  },
+  {
+    "name": "PyTorch",
+    "provider": "Meta",
+    "providerClass": "meta-logo",
+    "description": "PyTorch is an open-source machine learning library that provides a seamless path from research prototyping to production deployment. Known for its dynamic computational graphs and pythonic syntax, PyTorch offers intuitive design and lightning-fast performance, making it the framework of choice for cutting-edge AI research and professional applications.",
+    "badges": ["Framework", "Open Source", "Research"],
+    "metadata": {
+      "released": "January 2017",
+      "version": "2.1.0",
+      "stars": "73k",
+      "forks": "20k",
+      "language": "Python, C++, CUDA"
+    },
+    "features": [
+      "Dynamic computational graphs for flexible modeling",
+      "Native support for tensors and GPU acceleration",
+      "Distributed training with TorchDistributed",
+      "Strong ecosystem with torchvision and torchaudio"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "BSD-3-Clause"
+    },
+    "repo_url": "https://github.com/pytorch/pytorch",
+    "website_url": "https://pytorch.org",
+    "docs_url": "https://pytorch.org/docs/stable/index.html",
+    "logo_url": "https://pytorch.org/assets/images/pytorch-logo.png"
+  },
+  {
+    "name": "scikit-learn",
+    "provider": "scikit-learn developers",
+    "providerClass": "sklearn-logo",
+    "description": "Scikit-learn is a comprehensive machine learning library that provides simple and efficient tools for data mining and data analysis. Built on NumPy, SciPy, and matplotlib, it features various classification, regression, and clustering algorithms, making it the go-to library for traditional machine learning tasks with an intuitive and consistent API.",
+    "badges": ["Library", "Open Source", "Machine Learning"],
+    "metadata": {
+      "released": "2007",
+      "version": "1.3.1",
+      "stars": "56k",
+      "forks": "25k",
+      "language": "Python, C++, Cython"
+    },
+    "features": [
+      "Comprehensive collection of ML algorithms",
+      "Simple and consistent API across all models",
+      "Excellent documentation and tutorials",
+      "Integration with NumPy and SciPy"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "BSD-3-Clause"
+    },
+    "repo_url": "https://github.com/scikit-learn/scikit-learn",
+    "website_url": "https://scikit-learn.org",
+    "docs_url": "https://scikit-learn.org/stable/documentation.html",
+    "logo_url": "https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png"
+  },
+  {
+    "name": "Hugging Face Transformers",
+    "provider": "Hugging Face",
+    "providerClass": "huggingface-logo",
+    "description": "Transformers provides state-of-the-art pre-trained models and architectures for natural language processing, computer vision, and audio tasks. The library offers thousands of pretrained models that can be used for tasks like text classification, information extraction, question answering, summarization, and more, with seamless integration for training and deployment.",
+    "badges": ["Library", "Open Source", "NLP"],
+    "metadata": {
+      "released": "November 2018",
+      "version": "4.33.0",
+      "stars": "115k",
+      "forks": "23k",
+      "language": "Python"
+    },
+    "features": [
+      "Access to thousands of pretrained models",
+      "Support for NLP, Vision, and Audio tasks",
+      "Easy fine-tuning and transfer learning",
+      "Integration with PyTorch and TensorFlow"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/huggingface/transformers",
+    "website_url": "https://huggingface.co/transformers",
+    "docs_url": "https://huggingface.co/docs/transformers",
+    "logo_url": "https://huggingface.co/front/assets/huggingface_logo.svg"
+  },
+  {
+    "name": "OpenCV",
+    "provider": "Intel",
+    "providerClass": "intel-logo",
+    "description": "OpenCV is the leading open-source computer vision and machine learning software library with over 2500 optimized algorithms. It provides a comprehensive infrastructure for real-time optimized image and video processing applications in a wide variety of fields including facial recognition, object detection, augmented reality, and autonomous vehicles.",
+    "badges": ["Library", "Open Source", "Computer Vision"],
+    "metadata": {
+      "released": "June 2000",
+      "version": "4.8.0",
+      "stars": "71k",
+      "forks": "55k",
+      "language": "C++, Python, Java"
+    },
+    "features": [
+      "Comprehensive computer vision algorithms",
+      "Real-time image and video processing",
+      "Multi-language support and bindings",
+      "CUDA and OpenCL acceleration support"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/opencv/opencv",
+    "website_url": "https://opencv.org",
+    "docs_url": "https://docs.opencv.org",
+    "logo_url": "https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_no_text.png"
+  },
+  {
+    "name": "Keras",
+    "provider": "François Chollet",
+    "providerClass": "keras-logo",
+    "description": "Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano. It provides a simple, flexible, and user-friendly interface for creating and training deep learning models, enabling fast experimentation with deep neural networks through consistent and intuitive APIs.",
+    "badges": ["Framework", "Open Source", "Deep Learning"],
+    "metadata": {
+      "released": "March 2015",
+      "version": "2.14.0",
+      "stars": "60k",
+      "forks": "19k",
+      "language": "Python"
+    },
+    "features": [
+      "User-friendly high-level API",
+      "Modular and composable architecture",
+      "Support for convolutional and recurrent networks",
+      "Seamless CPU and GPU computations"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/keras-team/keras",
+    "website_url": "https://keras.io",
+    "docs_url": "https://keras.io/api/",
+    "logo_url": "https://keras.io/img/logo.png"
+  },
+  {
+    "name": "XGBoost",
+    "provider": "DMLC",
+    "providerClass": "xgboost-logo",
+    "description": "XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible, and portable. It implements machine learning algorithms under the Gradient Boosting framework, providing a parallel tree boosting that solves many data science problems in a fast and accurate way, making it the go-to choice for winning machine learning competitions.",
+    "badges": ["Library", "Open Source", "Machine Learning"],
+    "metadata": {
+      "released": "March 2014",
+      "version": "1.7.6",
+      "stars": "25k",
+      "forks": "8.7k",
+      "language": "C++, Python, R"
+    },
+    "features": [
+      "Highly efficient gradient boosting implementation",
+      "Parallel and distributed computing capabilities",
+      "Handling of missing values automatically",
+      "Regularization to prevent overfitting"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/dmlc/xgboost",
+    "website_url": "https://xgboost.ai",
+    "docs_url": "https://xgboost.readthedocs.io",
+    "logo_url": "https://raw.githubusercontent.com/dmlc/dmlc.github.io/master/img/logo-m/xgboost.png"
+  },
+  {
+    "name": "LangChain",
+    "provider": "LangChain AI",
+    "providerClass": "langchain-logo",
+    "description": "LangChain is a framework for developing applications powered by language models. It enables developers to build context-aware reasoning applications by connecting language models to sources of context and providing a standard interface for chains, agents, retrieval strategies, and other components, making it easier to build complex LLM applications.",
+    "badges": ["Framework", "Open Source", "LLM"],
+    "metadata": {
+      "released": "October 2022",
+      "version": "0.0.340",
+      "stars": "72k",
+      "forks": "11k",
+      "language": "Python, TypeScript"
+    },
+    "features": [
+      "Modular components for LLM applications",
+      "Memory management for conversational systems",
+      "Integration with various LLM providers",
+      "Support for retrieval-augmented generation"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/langchain-ai/langchain",
+    "website_url": "https://www.langchain.com",
+    "docs_url": "https://python.langchain.com/docs/get_started/introduction",
+    "logo_url": "https://raw.githubusercontent.com/langchain-ai/langchain/master/docs/static/img/brand/wordmark-dark.png"
+  },
+  {
+    "name": "Stable Diffusion",
+    "provider": "Stability AI",
+    "providerClass": "stability-logo",
+    "description": "Stable Diffusion is a state-of-the-art latent text-to-image diffusion model that generates photorealistic images from text descriptions. It can create and manipulate images based on text prompts, perform inpainting, outpainting, and image-to-image translations while offering exceptional quality and artistic flexibility, democratizing access to high-quality AI image generation.",
+    "badges": ["Model", "Open Source", "Computer Vision"],
+    "metadata": {
+      "released": "August 2022",
+      "version": "2.1",
+      "stars": "63k",
+      "forks": "11k",
+      "language": "Python"
+    },
+    "features": [
+      "High-quality text-to-image generation",
+      "Image inpainting and outpainting",
+      "Style transfer and image editing",
+      "Open-source with commercial use allowed"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "CreativeML OpenRAIL-M"
+    },
+    "repo_url": "https://github.com/CompVis/stable-diffusion",
+    "website_url": "https://stability.ai/stable-diffusion",
+    "docs_url": "https://github.com/CompVis/stable-diffusion/wiki",
+    "logo_url": "https://stability.ai/assets/stable-diffusion.png"
+  },
+  {
+    "name": "Pandas",
+    "provider": "pandas community",
+    "providerClass": "pandas-logo",
+    "description": "Pandas is a powerful, fast, and flexible open-source data analysis and manipulation tool built on top of Python. It provides data structures like DataFrame and Series for handling structured data, along with a comprehensive set of tools for data cleaning, transformation, and analysis, making it essential for data science workflows.",
+    "badges": ["Library", "Open Source", "Data Analysis"],
+    "metadata": {
+      "released": "January 2009",
+      "version": "2.1.1",
+      "stars": "40k",
+      "forks": "17k",
+      "language": "Python, Cython"
+    },
+    "features": [
+      "Efficient DataFrame objects for data manipulation",
+      "Tools for reading and writing various file formats",
+      "Intelligent data alignment and missing data handling",
+      "Advanced time series functionality"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "BSD-3-Clause"
+    },
+    "repo_url": "https://github.com/pandas-dev/pandas",
+    "website_url": "https://pandas.pydata.org",
+    "docs_url": "https://pandas.pydata.org/docs/",
+    "logo_url": "https://pandas.pydata.org/static/img/pandas_white.svg"
+  },
+  {
+    "name": "YOLO",
+    "provider": "Ultralytics",
+    "providerClass": "ultralytics-logo",
+    "description": "YOLO (You Only Look Once) is a state-of-the-art, real-time object detection system that can process images in real-time with high accuracy. It offers a range of models (YOLOv8, YOLOv5, etc.) that excel at detecting objects in images and videos with exceptional speed-accuracy trade-offs, making it ideal for autonomous vehicles, security systems, and industrial automation.",
+    "badges": ["Model", "Open Source", "Computer Vision"],
+    "metadata": {
+      "released": "June 2016",
+      "version": "8.0.0",
+      "stars": "42k",
+      "forks": "11k",
+      "language": "Python, PyTorch"
+    },
+    "features": [
+      "Real-time object detection capabilities",
+      "Instance segmentation and pose estimation",
+      "Pre-trained models for various use cases",
+      "Easy deployment to edge devices"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "AGPL-3.0"
+    },
+    "repo_url": "https://github.com/ultralytics/ultralytics",
+    "website_url": "https://www.ultralytics.com",
+    "docs_url": "https://docs.ultralytics.com",
+    "logo_url": "https://github.com/ultralytics/assets/raw/main/logo/Ultralytics_Logotype_Original.svg"
+  },
+  {
+    "name": "FastAPI",
+    "provider": "Sebastián Ramírez",
+    "providerClass": "fastapi-logo",
+    "description": "FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.7+ based on standard Python type hints. It provides automatic API documentation, validation, serialization, and asynchronous support, making it ideal for building microservices and ML model serving endpoints with minimal code while maintaining high performance.",
+    "badges": ["Framework", "Open Source", "API Development"],
+    "metadata": {
+      "released": "December 2018",
+      "version": "0.103.1",
+      "stars": "64k",
+      "forks": "5.4k",
+      "language": "Python"
+    },
+    "features": [
+      "Automatic interactive API documentation",
+      "Data validation and serialization using Pydantic",
+      "Native async support for high performance",
+      "Type hints for better IDE support"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/tiangolo/fastapi",
+    "website_url": "https://fastapi.tiangolo.com",
+    "docs_url": "https://fastapi.tiangolo.com/tutorial/",
+    "logo_url": "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
+  },
+  {
+    "name": "spaCy",
+    "provider": "Explosion AI",
+    "providerClass": "spacy-logo",
+    "description": "spaCy is an industrial-strength natural language processing library designed for production use. It offers fast and accurate syntactic analysis, named entity recognition, dependency parsing, and built-in deep learning integration, providing developers with efficient tools for building sophisticated NLP pipelines that can handle large volumes of text.",
+    "badges": ["Library", "Open Source", "NLP"],
+    "metadata": {
+      "released": "February 2015",
+      "version": "3.6.1",
+      "stars": "28k",
+      "forks": "4.3k",
+      "language": "Python, Cython"
+    },
+    "features": [
+      "Fast and accurate NLP pipelines",
+      "Pre-trained models for multiple languages",
+      "Named entity recognition and dependency parsing",
+      "Deep learning integration with transformers"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/explosion/spaCy",
+    "website_url": "https://spacy.io",
+    "docs_url": "https://spacy.io/usage",
+    "logo_url": "https://spacy.io/_static/spacy-logo.svg"
+  },
+  {
+    "name": "MLflow",
+    "provider": "Linux Foundation",
+    "providerClass": "mlflow-logo",
+    "description": "MLflow is an open-source platform for managing the end-to-end machine learning lifecycle. It provides tools for experiment tracking, model packaging, model registry, and deployment, enabling data scientists and ML engineers to develop, collaborate, and productionize machine learning models efficiently while maintaining reproducibility and version control.",
+    "badges": ["Platform", "Open Source", "MLOps"],
+    "metadata": {
+      "released": "June 2018",
+      "version": "2.7.1",
+      "stars": "16k",
+      "forks": "3.7k",
+      "language": "Python, JavaScript"
+    },
+    "features": [
+      "Experiment tracking and versioning",
+      "Model packaging in standard formats",
+      "Model registry for versioning and staging",
+      "Integration with major ML frameworks"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/mlflow/mlflow",
+    "website_url": "https://mlflow.org",
+    "docs_url": "https://mlflow.org/docs/latest/index.html",
+    "logo_url": "https://mlflow.org/images/MLflow-logo-final-black.png"
+  },
+  {
+    "name": "Ray",
+    "provider": "Anyscale",
+    "providerClass": "ray-logo",
+    "description": "Ray is a unified framework for scaling AI and Python applications from a laptop to a cluster. It provides a simple, universal API for building distributed applications, including capabilities for distributed training, hyperparameter tuning, reinforcement learning, and serving, making it essential for scaling machine learning workflows to production.",
+    "badges": ["Framework", "Open Source", "Distributed Computing"],
+    "metadata": {
+      "released": "May 2017",
+      "version": "2.7.0",
+      "stars": "29k",
+      "forks": "4.9k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "Distributed computing for ML workflows",
+      "Scalable hyperparameter tuning with Ray Tune",
+      "Reinforcement learning with Ray RLlib",
+      "Model serving with Ray Serve"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/ray-project/ray",
+    "website_url": "https://www.ray.io",
+    "docs_url": "https://docs.ray.io/en/latest/",
+    "logo_url": "https://docs.ray.io/en/latest/_static/ray_logo.png"
+  },
+  {
+    "name": "MediaPipe",
+    "provider": "Google",
+    "providerClass": "google-logo",
+    "description": "MediaPipe is a cross-platform framework for building multimodal applied machine learning pipelines. It provides out-of-the-box solutions for common perception tasks like hand tracking, face detection, and pose estimation, enabling developers to create sophisticated AR and perception applications with minimal effort across mobile, web, and IoT devices.",
+    "badges": ["Framework", "Open Source", "Computer Vision"],
+    "metadata": {
+      "released": "June 2019",
+      "version": "0.10.7",
+      "stars": "24k",
+      "forks": "5k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Cross-platform ML pipeline framework",
+      "Pre-built solutions for perception tasks",
+      "Real-time performance on mobile devices",
+      "Integration with TensorFlow Lite"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/google/mediapipe",
+    "website_url": "https://developers.google.com/mediapipe",
+    "docs_url": "https://developers.google.com/mediapipe/solutions/guide",
+    "logo_url": "https://developers.google.com/mediapipe/images/mediapipe_logo.png"
+  },
+  {
+    "name": "Gradio",
+    "provider": "Hugging Face",
+    "providerClass": "huggingface-logo",
+    "description": "Gradio is an open-source Python library that helps you create machine learning demos and web applications with just a few lines of code. It enables rapid prototyping and sharing of machine learning models through user-friendly web interfaces, supporting various input and output types and making ML models accessible to non-technical users.",
+    "badges": ["Library", "Open Source", "UI Framework"],
+    "metadata": {
+      "released": "February 2019",
+      "version": "3.50.0",
+      "stars": "25k",
+      "forks": "1.9k",
+      "language": "Python, JavaScript"
+    },
+    "features": [
+      "Quick ML demo creation with minimal code",
+      "Support for multiple input/output types",
+      "Built-in sharing capabilities",
+      "Integration with Hugging Face Hub"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/gradio-app/gradio",
+    "website_url": "https://www.gradio.app",
+    "docs_url": "https://www.gradio.app/docs/",
+    "logo_url": "https://www.gradio.app/_app/immutable/assets/gradio.8a5e8876.svg"
+  },
+  {
+    "name": "JAX",
+    "provider": "Google",
+    "providerClass": "google-logo",
+    "description": "JAX is a high-performance numerical computation library that combines NumPy's familiar API with automatic differentiation and hardware acceleration. It provides composable function transformations for machine learning research, including automatic differentiation, vectorization, and GPU/TPU acceleration, making it ideal for cutting-edge ML research and production deployment.",
+    "badges": ["Library", "Open Source", "Deep Learning"],
+    "metadata": {
+      "released": "December 2018",
+      "version": "0.4.16",
+      "stars": "26k",
+      "forks": "2.4k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "Automatic differentiation for gradient computation",
+      "Hardware acceleration on GPUs and TPUs",
+      "Composable function transformations",
+      "NumPy-compatible API for easy adoption"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/google/jax",
+    "website_url": "https://jax.readthedocs.io",
+    "docs_url": "https://jax.readthedocs.io/en/latest/",
+    "logo_url": "https://raw.githubusercontent.com/google/jax/main/images/jax_logo_250px.png"
+  },
+  {
+    "name": "DVC",
+    "provider": "Iterative",
+    "providerClass": "dvc-logo",
+    "description": "DVC (Data Version Control) is an open-source version control system for machine learning projects. It works alongside Git to manage and version large data files, ML models, and experiments, providing reproducibility and collaboration features specifically designed for data science teams, making ML projects as maintainable as software projects.",
+    "badges": ["Tool", "Open Source", "MLOps"],
+    "metadata": {
+      "released": "May 2017",
+      "version": "3.27.0",
+      "stars": "13k",
+      "forks": "1.1k",
+      "language": "Python"
+    },
+    "features": [
+      "Version control for data and models",
+      "ML pipeline management and automation",
+      "Experiment tracking and comparison",
+      "Storage-agnostic remote data management"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/iterative/dvc",
+    "website_url": "https://dvc.org",
+    "docs_url": "https://dvc.org/doc",
+    "logo_url": "https://dvc.org/img/logo.svg"
+  },
+  {
+    "name": "Detectron2",
+    "provider": "Meta",
+    "providerClass": "meta-logo",
+    "description": "Detectron2 is Meta AI Research's next-generation library that provides state-of-the-art detection and segmentation algorithms. It features flexible and modular design, high performance, and extensive support for various computer vision tasks including object detection, instance segmentation, keypoint detection, and panoptic segmentation, making it a go-to choice for computer vision research.",
+    "badges": ["Framework", "Open Source", "Computer Vision"],
+    "metadata": {
+      "released": "October 2019",
+      "version": "0.6",
+      "stars": "27k",
+      "forks": "7.3k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "State-of-the-art object detection algorithms",
+      "Instance and semantic segmentation",
+      "Panoptic segmentation capabilities",
+      "Flexible model architecture design"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/facebookresearch/detectron2",
+    "website_url": "https://detectron2.readthedocs.io",
+    "docs_url": "https://detectron2.readthedocs.io/en/latest/",
+    "logo_url": "https://github.com/facebookresearch/detectron2/raw/main/.github/Detectron2-Logo-Horz.svg"
+  },
+  {
+    "name": "LightGBM",
+    "provider": "Microsoft",
+    "providerClass": "microsoft-logo",
+    "description": "LightGBM is a gradient boosting framework that uses tree-based learning algorithms. It's designed for distributed and efficient training, making it ideal for large-scale machine learning tasks with remarkable speed and accuracy. LightGBM excels at handling large datasets with lower memory usage and offers parallel and GPU learning capabilities.",
+    "badges": ["Library", "Open Source", "Machine Learning"],
+    "metadata": {
+      "released": "October 2016",
+      "version": "4.1.0",
+      "stars": "16k",
+      "forks": "3.8k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Faster training speed and higher efficiency",
+      "Lower memory usage with large datasets",
+      "Parallel and GPU learning supported",
+      "Optimal split finding with histogram-based algorithms"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/microsoft/LightGBM",
+    "website_url": "https://lightgbm.readthedocs.io",
+    "docs_url": "https://lightgbm.readthedocs.io/en/latest/",
+    "logo_url": "https://lightgbm.readthedocs.io/en/latest/_static/LightGBM_logo_black_text.svg"
+  },
+  {
+    "name": "Fairseq",
+    "provider": "Meta",
+    "providerClass": "meta-logo",
+    "description": "Fairseq is a sequence modeling toolkit for training custom models for translation, summarization, language modeling and other text generation tasks. It provides state-of-the-art implementations of sequence models including transformers, convolutional nets, and LSTMs, with a focus on research flexibility and production efficiency.",
+    "badges": ["Framework", "Open Source", "NLP"],
+    "metadata": {
+      "released": "August 2017",
+      "version": "0.12.2",
+      "stars": "29k",
+      "forks": "6.3k",
+      "language": "Python"
+    },
+    "features": [
+      "State-of-the-art sequence modeling architectures",
+      "Distributed training on multiple GPUs/machines",
+      "Flexible and extensible research framework",
+      "Pre-trained models for various NLP tasks"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/facebookresearch/fairseq",
+    "website_url": "https://fairseq.readthedocs.io",
+    "docs_url": "https://fairseq.readthedocs.io/en/latest/",
+    "logo_url": "https://raw.githubusercontent.com/facebookresearch/fairseq/main/fairseq.png"
+  },
+  {
+    "name": "ONNX",
+    "provider": "Linux Foundation",
+    "providerClass": "onnx-logo",
+    "description": "ONNX (Open Neural Network Exchange) is an open format built to represent machine learning models. It defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers, facilitating seamless model interoperability across different platforms.",
+    "badges": ["Standard", "Open Source", "Interoperability"],
+    "metadata": {
+      "released": "September 2017",
+      "version": "1.14.1",
+      "stars": "16k",
+      "forks": "3.8k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Framework-agnostic model representation",
+      "Extensive operator support across frameworks",
+      "Model optimization and conversion tools",
+      "Hardware acceleration support"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/onnx/onnx",
+    "website_url": "https://onnx.ai",
+    "docs_url": "https://onnx.ai/onnx/",
+    "logo_url": "https://raw.githubusercontent.com/onnx/onnx.github.io/main/assets/ONNX-Logo.svg"
+  },
+  {
+    "name": "AllenNLP",
+    "provider": "Allen Institute for AI",
+    "providerClass": "allennlp-logo",
+    "description": "AllenNLP is an open-source NLP research library built on PyTorch. It provides modular components, abstractions, and implementations for common NLP tasks, making it easy to develop state-of-the-art deep learning models for natural language understanding, featuring high-quality reference implementations and research-focused design.",
+    "badges": ["Library", "Open Source", "NLP"],
+    "metadata": {
+      "released": "September 2017",
+      "version": "2.10.1",
+      "stars": "11.7k",
+      "forks": "2.3k",
+      "language": "Python"
+    },
+    "features": [
+      "High-level abstractions for NLP research",
+      "Reference implementations of state-of-the-art models",
+      "Configuration-driven experiment management",
+      "Comprehensive evaluation metrics and visualization"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/allenai/allennlp",
+    "website_url": "https://allennlp.org",
+    "docs_url": "https://docs.allennlp.org",
+    "logo_url": "https://raw.githubusercontent.com/allenai/allennlp/main/docs/img/allennlp-logo-dark.png"
+  },
+  {
+    "name": "Optuna",
+    "provider": "Preferred Networks",
+    "providerClass": "optuna-logo",
+    "description": "Optuna is an automatic hyperparameter optimization framework that allows for efficient optimization of machine learning model parameters. It provides a define-by-run API, distributed optimization capabilities, and supports pruning of unpromising trials, making hyperparameter tuning more efficient and accessible for ML practitioners.",
+    "badges": ["Framework", "Open Source", "AutoML"],
+    "metadata": {
+      "released": "December 2018",
+      "version": "3.3.0",
+      "stars": "9.1k",
+      "forks": "981",
+      "language": "Python"
+    },
+    "features": [
+      "Define-by-run API for flexible search spaces",
+      "State-of-the-art optimization algorithms",
+      "Distributed hyperparameter optimization",
+      "Visualization dashboard for optimization process"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/optuna/optuna",
+    "website_url": "https://optuna.org",
+    "docs_url": "https://optuna.readthedocs.io",
+    "logo_url": "https://raw.githubusercontent.com/optuna/optuna/master/docs/image/optuna-logo.png"
+  },
+  {
+    "name": "Horovod",
+    "provider": "Uber",
+    "providerClass": "horovod-logo",
+    "description": "Horovod is a distributed deep learning training framework for TensorFlow, Keras, PyTorch, and Apache MXNet. It enables fast and easy distributed training by using ring-allreduce algorithm, making distributed training as simple as running a single-GPU training script while achieving near-linear scalability.",
+    "badges": ["Framework", "Open Source", "Distributed Computing"],
+    "metadata": {
+      "released": "October 2017",
+      "version": "0.28.1",
+      "stars": "13.8k",
+      "forks": "2.2k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Efficient distributed training for multiple frameworks",
+      "Ring-allreduce algorithm for optimal performance",
+      "Minimal code changes for distributed training",
+      "Support for CPU, GPU, and heterogeneous clusters"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/horovod/horovod",
+    "website_url": "https://horovod.ai",
+    "docs_url": "https://horovod.readthedocs.io",
+    "logo_url": "https://raw.githubusercontent.com/horovod/horovod/master/docs/assets/logo.png"
+  },
+  {
+    "name": "DeepSpeed",
+    "provider": "Microsoft",
+    "providerClass": "microsoft-logo",
+    "description": "DeepSpeed is a deep learning optimization library that makes distributed training easy, efficient, and effective. It enables training of large models with trillions of parameters, offering advanced optimizations like ZeRO, pipeline parallelism, and 3D parallelism, while significantly reducing memory requirements and training time.",
+    "badges": ["Library", "Open Source", "Distributed Computing"],
+    "metadata": {
+      "released": "May 2020",
+      "version": "0.10.3",
+      "stars": "32k",
+      "forks": "3.8k",
+      "language": "Python, C++"
+    },
+    "features": [
+      "ZeRO optimizer for memory efficiency",
+      "Pipeline parallelism for large model training",
+      "Expert parallelism for MoE models",
+      "Automatic mixed precision training"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/microsoft/DeepSpeed",
+    "website_url": "https://www.deepspeed.ai",
+    "docs_url": "https://deepspeed.readthedocs.io",
+    "logo_url": "https://www.deepspeed.ai/assets/images/DeepSpeed_light.svg"
+  },
+  {
+    "name": "Kornia",
+    "provider": "Kornia AI",
+    "providerClass": "kornia-logo",
+    "description": "Kornia is a differentiable computer vision library for PyTorch that provides a set of routines and differentiable modules to solve generic computer vision problems. It enables end-to-end training of deep learning models with geometric computer vision operations, making complex visual tasks differentiable and GPU-accelerated.",
+    "badges": ["Library", "Open Source", "Computer Vision"],
+    "metadata": {
+      "released": "March 2019",
+      "version": "0.7.0",
+      "stars": "9.2k",
+      "forks": "942",
+      "language": "Python"
+    },
+    "features": [
+      "Differentiable computer vision operations",
+      "GPU-accelerated image processing",
+      "Augmentation pipelines for training",
+      "Geometric computer vision algorithms"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/kornia/kornia",
+    "website_url": "https://kornia.org",
+    "docs_url": "https://kornia.readthedocs.io",
+    "logo_url": "https://raw.githubusercontent.com/kornia/data/main/kornia_logo.png"
+  },
+  {
+    "name": "Weights & Biases",
+    "provider": "Weights & Biases",
+    "providerClass": "wandb-logo",
+    "description": "Weights & Biases (W&B) is a ML experiment tracking platform that provides tools for experiment tracking, model optimization, and dataset versioning. It offers a seamless integration with popular ML frameworks, enabling teams to track metrics, visualize model performance, and collaborate effectively on machine learning projects.",
+    "badges": ["Platform", "Open Source", "MLOps"],
+    "metadata": {
+      "released": "May 2018",
+      "version": "0.15.12",
+      "stars": "8.2k",
+      "forks": "605",
+      "language": "Python"
+    },
+    "features": [
+      "Experiment tracking and visualization",
+      "Hyperparameter sweep orchestration",
+      "Model and dataset versioning",
+      "Team collaboration and reporting"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/wandb/wandb",
+    "website_url": "https://wandb.ai",
+    "docs_url": "https://docs.wandb.ai",
+    "logo_url": "https://raw.githubusercontent.com/wandb/assets/main/wandb-github-badge-gradient.svg"
+  },
+  {
+    "name": "Sentence Transformers",
+    "provider": "UKPLab",
+    "providerClass": "sentence-transformers-logo",
+    "description": "Sentence Transformers is a Python framework for state-of-the-art sentence, text, and image embeddings. It provides an easy method to compute dense vector representations for sentences, paragraphs, and images, enabling semantic search, clustering, and information retrieval tasks with remarkable efficiency and accuracy.",
+    "badges": ["Library", "Open Source", "NLP"],
+    "metadata": {
+      "released": "August 2019",
+      "version": "2.2.2",
+      "stars": "13.2k",
+      "forks": "2.3k",
+      "language": "Python"
+    },
+    "features": [
+      "Pre-trained models for sentence embeddings",
+      "Multi-lingual and cross-lingual models",
+      "Easy fine-tuning for domain adaptation",
+      "Efficient similarity search implementations"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/UKPLab/sentence-transformers",
+    "website_url": "https://www.sbert.net",
+    "docs_url": "https://www.sbert.net/docs/",
+    "logo_url": "https://raw.githubusercontent.com/UKPLab/sentence-transformers/master/docs/img/logo.png"
+  },
+  {
+    "name": "Prophet",
+    "provider": "Meta",
+    "providerClass": "meta-logo",
+    "description": "Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data, making it ideal for business forecasting.",
+    "badges": ["Library", "Open Source", "Time Series"],
+    "metadata": {
+      "released": "February 2017",
+      "version": "1.1.5",
+      "stars": "17.5k",
+      "forks": "4.5k",
+      "language": "Python, R"
+    },
+    "features": [
+      "Automatic seasonality detection",
+      "Robust to missing data and outliers",
+      "Built-in holiday effects",
+      "Intuitive parameter tuning"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/facebook/prophet",
+    "website_url": "https://facebook.github.io/prophet/",
+    "docs_url": "https://facebook.github.io/prophet/docs/quick_start.html",
+    "logo_url": "https://raw.githubusercontent.com/facebook/prophet/main/docs/static/img/prophet_logo.png"
+  },
+  {
+    "name": "Rasa",
+    "provider": "Rasa Technologies",
+    "providerClass": "rasa-logo",
+    "description": "Rasa is an open-source machine learning framework for building conversational AI assistants and chatbots. It provides tools for intent classification, entity extraction, and dialogue management, enabling developers to create contextual AI assistants that can have natural conversations while integrating with existing systems.",
+    "badges": ["Framework", "Open Source", "Conversational AI"],
+    "metadata": {
+      "released": "December 2016",
+      "version": "3.6.12",
+      "stars": "17.5k",
+      "forks": "4.4k",
+      "language": "Python"
+    },
+    "features": [
+      "Natural language understanding pipeline",
+      "Dialogue management with machine learning",
+      "Custom action server for integration",
+      "Multilingual chatbot support"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/RasaHQ/rasa",
+    "website_url": "https://rasa.com",
+    "docs_url": "https://rasa.com/docs/rasa/",
+    "logo_url": "https://raw.githubusercontent.com/RasaHQ/rasa/main/rasa_horizontal_purple.png"
+  },
+  {
+    "name": "Streamlit",
+    "provider": "Streamlit",
+    "providerClass": "streamlit-logo",
+    "description": "Streamlit is an open-source Python library that makes it easy to create custom web apps for machine learning and data science. It turns data scripts into shareable web apps in minutes, requiring no front-end experience, making it perfect for data scientists and ML engineers to create interactive demos and dashboards.",
+    "badges": ["Library", "Open Source", "UI Framework"],
+    "metadata": {
+      "released": "October 2019",
+      "version": "1.27.2",
+      "stars": "30k",
+      "forks": "2.7k",
+      "language": "Python"
+    },
+    "features": [
+      "Simple Python API for web app creation",
+      "Built-in widgets for data visualization",
+      "Real-time app updates during development",
+      "Easy deployment and sharing"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/streamlit/streamlit",
+    "website_url": "https://streamlit.io",
+    "docs_url": "https://docs.streamlit.io",
+    "logo_url": "https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.svg"
+  },
+  {
+    "name": "Flax",
+    "provider": "Google",
+    "providerClass": "google-logo",
+    "description": "Flax is a neural network library for JAX designed for flexibility and high performance. It offers a simple, scalable, and flexible approach to neural network construction, particularly suited for research environments where customization and performance are paramount, leveraging JAX's powerful transformation capabilities.",
+    "badges": ["Library", "Open Source", "Deep Learning"],
+    "metadata": {
+      "released": "March 2020",
+      "version": "0.7.4",
+      "stars": "5.3k",
+      "forks": "574",
+      "language": "Python"
+    },
+    "features": [
+      "Neural network library built on JAX",
+      "Flexible module system for research",
+      "Automatic state management",
+      "Seamless integration with JAX transforms"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/google/flax",
+    "website_url": "https://flax.readthedocs.io",
+    "docs_url": "https://flax.readthedocs.io/en/latest/",
+    "logo_url": "https://raw.githubusercontent.com/google/flax/main/docs/_static/flax.png"
+  },
+  {
+    "name": "MONAI",
+    "provider": "Project MONAI",
+    "providerClass": "monai-logo",
+    "description": "MONAI is a PyTorch-based framework for deep learning in healthcare imaging. It provides domain-optimized foundational capabilities for developing healthcare imaging training workflows, offering a comprehensive set of medical image-specific operations, models, and utilities for research and clinical applications.",
+    "badges": ["Framework", "Open Source", "Medical Imaging"],
+    "metadata": {
+      "released": "April 2020",
+      "version": "1.3.0",
+      "stars": "5.1k",
+      "forks": "948",
+      "language": "Python"
+    },
+    "features": [
+      "Medical image-specific data operations",
+      "Standardized training workflows",
+      "Pre-trained models for medical tasks",
+      "Integration with popular medical formats"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/Project-MONAI/MONAI",
+    "website_url": "https://monai.io",
+    "docs_url": "https://docs.monai.io",
+    "logo_url": "https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/docs/images/MONAI-logo-color.png"
+  },
+  {
+    "name": "PaddlePaddle",
+    "provider": "Baidu",
+    "providerClass": "baidu-logo",
+    "description": "PaddlePaddle (PArallel Distributed Deep LEarning) is an industrial platform with advanced technologies and rich features for deep learning. It provides an easy-to-use, efficient, flexible, and scalable deep learning platform, with special focus on deployability and enterprise applications in Chinese language processing and industry use cases.",
+    "badges": ["Framework", "Open Source", "Deep Learning"],
+    "metadata": {
+      "released": "September 2016",
+      "version": "2.5.1",
+      "stars": "21.5k",
+      "forks": "5.4k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "High-performance distributed training",
+      "Extensive model repository",
+      "Strong support for NLP in Chinese",
+      "Industrial deployment optimization"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/PaddlePaddle/Paddle",
+    "website_url": "https://www.paddlepaddle.org.cn",
+    "docs_url": "https://www.paddlepaddle.org.cn/documentation/docs/en/guides/index_en.html",
+    "logo_url": "https://raw.githubusercontent.com/PaddlePaddle/Paddle/develop/doc/imgs/paddlepaddle-logo.png"
+  },
+  {
+    "name": "Ludwig",
+    "provider": "Uber",
+    "providerClass": "ludwig-logo",
+    "description": "Ludwig is a declarative machine learning framework that makes it easy to define deep learning pipelines with a simple configuration file. It enables users to train state-of-the-art models without writing code, supporting a variety of data types and tasks, making ML accessible to non-experts while being flexible for researchers.",
+    "badges": ["Framework", "Open Source", "AutoML"],
+    "metadata": {
+      "released": "February 2019",
+      "version": "0.8.1",
+      "stars": "10.5k",
+      "forks": "1.2k",
+      "language": "Python"
+    },
+    "features": [
+      "Declarative model definition via YAML",
+      "Support for multiple data types",
+      "Automatic feature preprocessing",
+      "Integration with popular ML libraries"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★☆",
+      "license": "Apache 2.0"
+    },
+    "repo_url": "https://github.com/ludwig-ai/ludwig",
+    "website_url": "https://ludwig.ai",
+    "docs_url": "https://ludwig.ai/latest/",
+    "logo_url": "https://raw.githubusercontent.com/ludwig-ai/ludwig-docs/master/docs/images/ludwig_hero.png"
+  },
+  {
+    "name": "TensorRT",
+    "provider": "NVIDIA",
+    "providerClass": "nvidia-logo",
+    "description": "TensorRT is NVIDIA's SDK for high-performance deep learning inference. It includes a deep learning inference optimizer and runtime that delivers low latency and high throughput for inference applications, optimizing neural network models to leverage NVIDIA GPUs with precision calibration and layer fusion capabilities.",
+    "badges": ["SDK", "Performance", "Inference"],
+    "metadata": {
+      "released": "September 2016",
+      "version": "8.6.1",
+      "stars": "8.5k",
+      "forks": "2.2k",
+      "language": "C++, Python"
+    },
+    "features": [
+      "Deep learning inference optimization",
+      "Multi-precision inference (FP32, FP16, INT8)",
+      "Dynamic tensor memory management",
+      "Layer and tensor fusion"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★★★",
+      "license": "Proprietary"
+    },
+    "repo_url": "https://github.com/NVIDIA/TensorRT",
+    "website_url": "https://developer.nvidia.com/tensorrt",
+    "docs_url": "https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html",
+    "logo_url": "https://developer.nvidia.com/sites/default/files/akamai/TensorRT/NV_TensorRT_Visual_2C_RGB-625x625.png"
+  },
+  {
+    "name": "Auto-GPT",
+    "provider": "Significant Gravitas",
+    "providerClass": "autogpt-logo",
+    "description": "Auto-GPT is an experimental open-source application showcasing the capabilities of the GPT-4 language model. It autonomously develops and manages businesses to increase net worth, demonstrating the potential of autonomous AI agents. The project features goal-oriented task execution and self-improvement capabilities.",
+    "badges": ["Application", "Open Source", "Autonomous AI"],
+    "metadata": {
+      "released": "March 2023",
+      "version": "0.4.7",
+      "stars": "157k",
+      "forks": "40k",
+      "language": "Python"
+    },
+    "features": [
+      "Autonomous AI agent framework",
+      "GPT-4 powered decision making",
+      "Internet access for research and data gathering",
+      "Long-term and short-term memory management"
+    ],
+    "stats": {
+      "popularity": "★★★★★",
+      "activity": "★★★★★",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/Significant-Gravitas/Auto-GPT",
+    "website_url": "https://agpt.co",
+    "docs_url": "https://docs.agpt.co",
+    "logo_url": "https://raw.githubusercontent.com/Significant-Gravitas/Auto-GPT/master/docs/content/imgs/Auto_GPT_Logo.png"
+  },
+  {
+    "name": "fastText",
+    "provider": "Meta",
+    "providerClass": "meta-logo",
+    "description": "fastText is a library for efficient learning of word representations and sentence classification. It allows for training of supervised and unsupervised models on massive datasets quickly, providing high-quality word vectors for 157 languages and supporting text classification with blazing speed and efficiency.",
+    "badges": ["Library", "Open Source", "NLP"],
+    "metadata": {
+      "released": "August 2016",
+      "version": "0.9.2",
+      "stars": "25.5k",
+      "forks": "4.7k",
+      "language": "C++"
+    },
+    "features": [
+      "Fast and accurate text classification",
+      "Efficient word representation learning",
+      "Pre-trained models for 157 languages",
+      "Subword information for better representations"
+    ],
+    "stats": {
+      "popularity": "★★★★☆",
+      "activity": "★★★☆☆",
+      "license": "MIT"
+    },
+    "repo_url": "https://github.com/facebookresearch/fastText",
+    "website_url": "https://fasttext.cc",
+    "docs_url": "https://fasttext.cc/docs/en/support.html",
+    "logo_url": "https://fasttext.cc/img/fasttext-icon-white-web.png"
+  }
+]
