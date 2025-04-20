@@ -82,7 +82,7 @@ layout: default
             </div>
             <div class="custom-options">
               <span class="custom-option selected" data-value="">All Providers</span>
-              <span class="custom-option" data-value="zerooneai">01 AI</span>
+              <span class="custom-option" data-value="01 AI">01 AI</span>
               <span class="custom-option" data-value="adobe">Adobe</span>
               <span class="custom-option" data-value="alibaba">Alibaba</span>
               <span class="custom-option" data-value="allenai">Allen AI</span>
@@ -93,9 +93,7 @@ layout: default
               <span class="custom-option" data-value="blackforest">Black Forest Labs</span>
               <span class="custom-option" data-value="cohere">Cohere</span>
               <span class="custom-option" data-value="deepseek">DeepSeek</span>
-              <span class="custom-option" data-value="deepseek-ai">DeepSeekAI</span>
               <span class="custom-option" data-value="google">Google</span>
-              <span class="custom-option" data-value="google-deepmind">Google DeepMind</span>
               <span class="custom-option" data-value="huggingface">Hugging Face</span>
               <span class="custom-option" data-value="ibm">IBM</span>
               <span class="custom-option" data-value="ideogram">Ideogram</span>
@@ -103,7 +101,6 @@ layout: default
               <span class="custom-option" data-value="kyutai">Kyutai</span>
               <span class="custom-option" data-value="luma">Luma</span>
               <span class="custom-option" data-value="meta">Meta</span>
-              <span class="custom-option" data-value="metaai">Meta AI</span>
               <span class="custom-option" data-value="microsoft">Microsoft</span>
               <span class="custom-option" data-value="midjourney">Midjourney</span>
               <span class="custom-option" data-value="mistral">Mistral AI</span>
@@ -123,8 +120,42 @@ layout: default
             </div>
             <select id="provider" class="filter-select hidden-select">
               <option value="">All Providers</option>
-              <option value="zerooneai">01 AI</option>
-              <!-- Other options remain the same as in your original select -->
+              <option value="01 AI">01 AI</option>
+              <option value="adobe">Adobe</option>
+              <option value="alibaba">Alibaba</option>
+              <option value="allenai">Allen AI</option>
+              <option value="amazon">Amazon</option>
+              <option value="lighton">AnswerAI and LightOn</option>
+              <option value="anthropic">Anthropic</option>
+              <option value="apple">Apple</option>
+              <option value="blackforest">Black Forest Labs</option>
+              <option value="cohere">Cohere</option>
+              <option value="deepseek">DeepSeek</option>
+              <option value="google">Google</option>
+              <option value="huggingface">Hugging Face</option>
+              <option value="ibm">IBM</option>
+              <option value="ideogram">Ideogram</option>
+              <option value="kling">KLING</option>
+              <option value="kyutai">Kyutai</option>
+              <option value="luma">Luma</option>
+              <option value="meta">Meta</option>
+              <option value="metaai">Meta AI</option>
+              <option value="microsoft">Microsoft</option>
+              <option value="midjourney">Midjourney</option>
+              <option value="mistral">Mistral AI</option>
+              <option value="nous">Nous Research</option>
+              <option value="nvidia">NVIDIA</option>
+              <option value="openai">OpenAI</option>
+              <option value="pika">Pika</option>
+              <option value="recraft">Recraft</option>
+              <option value="reka">Reka AI</option>
+              <option value="rhymes">Rhymes AI</option>
+              <option value="runway">Runway</option>
+              <option value="stability">Stability AI</option>
+              <option value="sunoai">Suno AI</option>
+              <option value="tii">TII</option>
+              <option value="udio">Udio</option>
+              <option value="xai">xAI</option>
             </select>
           </div>
         </div>
