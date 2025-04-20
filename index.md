@@ -202,7 +202,7 @@ hide_title: true
   </div>
 </a>
 
-<a href="{{ '/ecosystem/tools/' | relative_url }}" class="handbook-card">
+<a href="{{ '/content/ecosystem/tools/' | relative_url }}" class="handbook-card">
   <!-- Optional category badge -->
   <div class="category-badge">Ecosystem</div>
   
