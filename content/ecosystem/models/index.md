@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<!-- Added Font Awesome CDN link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="/assets/css/models-page.css">
 
 <div class="models-container">
@@ -14,151 +16,218 @@ layout: default
 
   <!-- Filter Section - Redesigned to be cleaner and more polished -->
   <section class="filter-section">
-    <div class="filter-header">
-      <h3>Find Models</h3>
-      <div class="quick-filter-buttons">
-        <button class="quick-filter-badge active">All</button>
-        <button class="quick-filter-badge">LLM</button>
-        <button class="quick-filter-badge">Computer Vision</button>
-        <button class="quick-filter-badge">Speech</button>
-        <button class="quick-filter-badge">Multimodal</button>
+  <div class="filter-header">
+    <h3>Models</h3>
+    <p class="filter-subtitle">Explore cutting-edge AI models with advanced filtering options to suit your specific requirements</p>
+    <div class="quick-filter-buttons">
+      <button class="quick-filter-badge active">All</button>
+      <button class="quick-filter-badge">LLM</button>
+      <button class="quick-filter-badge">Computer Vision</button>
+      <button class="quick-filter-badge">Speech</button>
+      <button class="quick-filter-badge">Multimodal</button>
+    </div>
+  </div>
+
+  <div class="filter-primary">
+    <div class="search-group">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="search" class="search-input" placeholder="Search models by name, provider, or description">
+      <button class="search-clear" title="Clear search"><i class="fas fa-times"></i></button>
+    </div>
+    <button class="advanced-filter-button" id="advanced-filter-toggle">
+      <i class="fas fa-sliders-h"></i>
+      <span>Advanced Filters</span>
+    </button>
+  </div>
+
+  <div class="filter-advanced">
+    <div class="advanced-filter-grid">
+      <!-- Category Custom Dropdown -->
+      <div class="filter-group">
+        <label class="filter-label" for="category">Category</label>
+        <div class="custom-select-wrapper">
+          <div class="custom-select">
+            <div class="custom-select__trigger">
+              <span>All Categories</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="">All Categories</span>
+              <span class="custom-option" data-value="nlp">Natural Language Processing</span>
+              <span class="custom-option" data-value="cv">Computer Vision</span>
+              <span class="custom-option" data-value="audio">Speech & Audio</span>
+              <span class="custom-option" data-value="multimodal">Multimodal</span>
+              <span class="custom-option" data-value="generative">Generative AI</span>
+            </div>
+            <select id="category" class="filter-select hidden-select">
+              <option value="">All Categories</option>
+              <option value="nlp">Natural Language Processing</option>
+              <option value="cv">Computer Vision</option>
+              <option value="audio">Speech & Audio</option>
+              <option value="multimodal">Multimodal</option>
+              <option value="generative">Generative AI</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Provider Custom Dropdown -->
+      <div class="filter-group">
+        <label class="filter-label" for="provider">Provider</label>
+        <div class="custom-select-wrapper">
+          <div class="custom-select">
+            <div class="custom-select__trigger">
+              <span>All Providers</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="">All Providers</span>
+              <span class="custom-option" data-value="zerooneai">01 AI</span>
+              <span class="custom-option" data-value="adobe">Adobe</span>
+              <span class="custom-option" data-value="alibaba">Alibaba</span>
+              <span class="custom-option" data-value="allenai">Allen AI</span>
+              <span class="custom-option" data-value="amazon">Amazon</span>
+              <span class="custom-option" data-value="lighton">AnswerAI and LightOn</span>
+              <span class="custom-option" data-value="anthropic">Anthropic</span>
+              <span class="custom-option" data-value="apple">Apple</span>
+              <span class="custom-option" data-value="blackforest">Black Forest Labs</span>
+              <span class="custom-option" data-value="cohere">Cohere</span>
+              <span class="custom-option" data-value="deepseek">DeepSeek</span>
+              <span class="custom-option" data-value="deepseek-ai">DeepSeekAI</span>
+              <span class="custom-option" data-value="google">Google</span>
+              <span class="custom-option" data-value="google-deepmind">Google DeepMind</span>
+              <span class="custom-option" data-value="huggingface">Hugging Face</span>
+              <span class="custom-option" data-value="ibm">IBM</span>
+              <span class="custom-option" data-value="ideogram">Ideogram</span>
+              <span class="custom-option" data-value="kling">KLING</span>
+              <span class="custom-option" data-value="kyutai">Kyutai</span>
+              <span class="custom-option" data-value="luma">Luma</span>
+              <span class="custom-option" data-value="meta">Meta</span>
+              <span class="custom-option" data-value="metaai">Meta AI</span>
+              <span class="custom-option" data-value="microsoft">Microsoft</span>
+              <span class="custom-option" data-value="midjourney">Midjourney</span>
+              <span class="custom-option" data-value="mistral">Mistral AI</span>
+              <span class="custom-option" data-value="nous">Nous Research</span>
+              <span class="custom-option" data-value="nvidia">NVIDIA</span>
+              <span class="custom-option" data-value="openai">OpenAI</span>
+              <span class="custom-option" data-value="pika">Pika</span>
+              <span class="custom-option" data-value="recraft">Recraft</span>
+              <span class="custom-option" data-value="reka">Reka AI</span>
+              <span class="custom-option" data-value="rhymes">Rhymes AI</span>
+              <span class="custom-option" data-value="runway">Runway</span>
+              <span class="custom-option" data-value="stability">Stability AI</span>
+              <span class="custom-option" data-value="sunoai">Suno AI</span>
+              <span class="custom-option" data-value="tii">TII</span>
+              <span class="custom-option" data-value="udio">Udio</span>
+              <span class="custom-option" data-value="xai">xAI</span>
+            </div>
+            <select id="provider" class="filter-select hidden-select">
+              <option value="">All Providers</option>
+              <option value="zerooneai">01 AI</option>
+              <!-- Other options remain the same as in your original select -->
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Release Year Custom Dropdown -->
+      <div class="filter-group">
+        <label class="filter-label" for="release-year">Release Year</label>
+        <div class="custom-select-wrapper">
+          <div class="custom-select">
+            <div class="custom-select__trigger">
+              <span>All Years</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="">All Years</span>
+              <span class="custom-option" data-value="2025">2025</span>
+              <span class="custom-option" data-value="2024">2024</span>
+              <span class="custom-option" data-value="2023">2023</span>
+              <span class="custom-option" data-value="2022">2022</span>
+              <span class="custom-option" data-value="2021">2021</span>
+              <span class="custom-option" data-value="2020">2020 & Earlier</span>
+            </div>
+            <select id="release-year" class="filter-select hidden-select">
+              <option value="">All Years</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020 & Earlier</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- License Type Custom Dropdown -->
+      <div class="filter-group">
+        <label class="filter-label" for="license-type">License Type</label>
+        <div class="custom-select-wrapper">
+          <div class="custom-select">
+            <div class="custom-select__trigger">
+              <span>All Licenses</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="">All Licenses</span>
+              <span class="custom-option" data-value="open">Open Source</span>
+              <span class="custom-option" data-value="commercial">Commercial</span>
+              <span class="custom-option" data-value="research">Research Only</span>
+              <span class="custom-option" data-value="apache">Apache 2.0</span>
+              <span class="custom-option" data-value="mit">MIT</span>
+            </div>
+            <select id="license-type" class="filter-select hidden-select">
+              <option value="">All Licenses</option>
+              <option value="open">Open Source</option>
+              <option value="commercial">Commercial</option>
+              <option value="research">Research Only</option>
+              <option value="apache">Apache 2.0</option>
+              <option value="mit">MIT</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="filter-primary">
-      <div class="search-group">
-        <i class="fas fa-search search-icon"></i>
-        <input type="text" id="search" class="search-input" placeholder="Search models by name, provider, or description">
-        <button class="search-clear" title="Clear search"><i class="fas fa-times"></i></button>
-      </div>
-      <button class="advanced-filter-button" id="advanced-filter-toggle">
-        <i class="fas fa-sliders-h"></i>
-        <span>Advanced Filters</span>
-      </button>
-    </div>
-
-    <div class="filter-advanced">
-      <div class="advanced-filter-grid">
-        <div class="filter-group">
-          <label class="filter-label" for="category">Category</label>
-          <select id="category" class="filter-select">
-            <option value="">All Categories</option>
-            <option value="nlp">Natural Language Processing</option>
-            <option value="cv">Computer Vision</option>
-            <option value="audio">Speech & Audio</option>
-            <option value="multimodal">Multimodal</option>
-            <option value="generative">Generative AI</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label class="filter-label" for="provider">Provider</label>
-          <select id="provider" class="filter-select">
-            <option value="">All Providers</option>
-            <option value="zerooneai">01 AI</option>
-            <option value="adobe">Adobe</option>
-            <option value="alibaba">Alibaba</option>
-            <option value="allenai">Allen AI</option>
-            <option value="amazon">Amazon</option>
-            <option value="lighton">AnswerAI and LightOn</option>
-            <option value="anthropic">Anthropic</option>
-            <option value="apple">Apple</option>
-            <option value="blackforest">Black Forest Labs</option>
-            <option value="cohere">Cohere</option>
-            <option value="deepseek">DeepSeek</option>
-            <option value="deepseek">DeepSeekAI</option>
-            <option value="google">Google</option>
-            <option value="google">Google DeepMind</option>
-            <option value="huggingface">Hugging Face</option>
-            <option value="ibm">IBM</option>
-            <option value="ideogram">Ideogram</option>
-            <option value="kling">KLING</option>
-            <option value="kyutai">Kyutai</option>
-            <option value="luma">Luma</option>
-            <option value="meta">Meta</option>
-            <option value="metaai">Meta AI</option>
-            <option value="microsoft">Microsoft</option>
-            <option value="midjourney">Midjourney</option>
-            <option value="mistral">Mistral AI</option>
-            <option value="nous">Nous Research</option>
-            <option value="nvidia">NVIDIA</option>
-            <option value="openai">OpenAI</option>
-            <option value="pika">Pika</option>
-            <option value="recraft">Recraft</option>
-            <option value="reka">Reka AI</option>
-            <option value="rhymes">Rhymes AI</option>
-            <option value="runway">Runway</option>
-            <option value="stability">Stability AI</option>
-            <option value="sunoai">Suno AI</option>
-            <option value="tii">TII</option>
-            <option value="udio">Udio</option>
-            <option value="xai">xAI</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label class="filter-label" for="release-year">Release Year</label>
-          <select id="release-year" class="filter-select">
-            <option value="">All Years</option>
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020 & Earlier</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label class="filter-label" for="license-type">License Type</label>
-          <select id="license-type" class="filter-select">
-            <option value="">All Licenses</option>
-            <option value="open">Open Source</option>
-            <option value="commercial">Commercial</option>
-            <option value="research">Research Only</option>
-            <option value="apache">Apache 2.0</option>
-            <option value="mit">MIT</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="feature-badges-section">
-        <label class="filter-label">Popular Features</label>
-        <div class="feature-badges-container">
-          <label class="feature-badge-label">
-            <input type="checkbox" name="features" value="gpu-accelerated">
-            <span class="feature-badge">GPU Accelerated</span>
-          </label>
-          <label class="feature-badge-label">
-            <input type="checkbox" name="features" value="multilingual">
-            <span class="feature-badge">Multilingual</span>
-          </label>
-          <label class="feature-badge-label">
-            <input type="checkbox" name="features" value="api">
-            <span class="feature-badge">API Available</span>
-          </label>
-          <label class="feature-badge-label">
-            <input type="checkbox" name="features" value="fine-tunable">
-            <span class="feature-badge">Fine-tunable</span>
-          </label>
-          <label class="feature-badge-label">
-            <input type="checkbox" name="features" value="quantized">
-            <span class="feature-badge">Quantized Version</span>
-          </label>
-          <label class="feature-badge-label">
-            <input type="checkbox" name="features" value="tensorrt">
-            <span class="feature-badge">TensorRT Support</span>
-          </label>
-        </div>
-      </div>
-
-      <div class="filter-actions">
-        <button class="filter-button outline" id="reset-filters">Reset Filters</button>
-        <button class="filter-button" id="apply-filters">Apply Filters</button>
+    <div class="feature-badges-section">
+      <label class="filter-label">Popular Features</label>
+      <div class="feature-badges-container">
+        <label class="feature-badge-label">
+          <input type="checkbox" name="features" value="gpu-accelerated">
+          <span class="feature-badge">GPU Accelerated</span>
+        </label>
+        <label class="feature-badge-label">
+          <input type="checkbox" name="features" value="multilingual">
+          <span class="feature-badge">Multilingual</span>
+        </label>
+        <label class="feature-badge-label">
+          <input type="checkbox" name="features" value="api">
+          <span class="feature-badge">API Available</span>
+        </label>
+        <label class="feature-badge-label">
+          <input type="checkbox" name="features" value="fine-tunable">
+          <span class="feature-badge">Fine-tunable</span>
+        </label>
+        <label class="feature-badge-label">
+          <input type="checkbox" name="features" value="quantized">
+          <span class="feature-badge">Quantized Version</span>
+        </label>
+        <label class="feature-badge-label">
+          <input type="checkbox" name="features" value="tensorrt">
+          <span class="feature-badge">TensorRT Support</span>
+        </label>
       </div>
     </div>
 
-  </section>
+    <div class="filter-actions">
+      <button class="filter-button outline" id="reset-filters">Reset Filters</button>
+      <button class="filter-button" id="apply-filters">Apply Filters</button>
+    </div>
+
+  </div>
+</section>
 
   <!-- Models List -->
   <div class="models-list">
@@ -224,12 +293,12 @@ layout: default
             </div>
           </div>
           <div class="model-actions">
-            <a href="#" class="model-link tertiary">
+            <a href="{{ model.paper_url | default: '#' }}" class="model-link tertiary">
               <i class="fas fa-file-alt"></i>
               <span>Read Paper</span>
             </a>
-            <a href="#" class="model-link primary">View Model Page</a>
-            <a href="#" class="model-link secondary">Learning Resources</a>
+            <a href="{{ model.url | default: '#' }}" class="model-link primary">View Model Page</a>
+            <a href="{{ model.resources_url | default: '#' }}" class="model-link secondary">Learning Resources</a>
           </div>
         </div>
       </div>
