@@ -102,8 +102,67 @@ layout: default
           </div>
         </div>
 
-        <!-- Release Year and License Type Dropdowns (identical structure) -->
-        <!-- ... existing code ... -->
+        <!-- Release Year Custom Dropdown -->
+        <div class="filter-group">
+          <label class="filter-label" for="release-year">Release Year</label>
+          <div class="custom-select-wrapper">
+            <div class="custom-select">
+              <div class="custom-select__trigger">
+                <span>All Years</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="custom-options">
+                <span class="custom-option selected" data-value="">All Years</span>
+                <span class="custom-option" data-value="2023">2023</span>
+                <span class="custom-option" data-value="2022">2022</span>
+                <span class="custom-option" data-value="2021">2021</span>
+                <span class="custom-option" data-value="2020">2020</span>
+                <span class="custom-option" data-value="2019">2019</span>
+                <span class="custom-option" data-value="older">2018 & Older</span>
+              </div>
+              <select id="release-year" class="filter-select hidden-select">
+                <option value="">All Years</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="older">2018 & Older</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- License Type Custom Dropdown -->
+        <div class="filter-group">
+          <label class="filter-label" for="license-type">License Type</label>
+          <div class="custom-select-wrapper">
+            <div class="custom-select">
+              <div class="custom-select__trigger">
+                <span>All Licenses</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="custom-options">
+                <span class="custom-option selected" data-value="">All Licenses</span>
+                <span class="custom-option" data-value="mit">MIT</span>
+                <span class="custom-option" data-value="apache">Apache 2.0</span>
+                <span class="custom-option" data-value="gpl">GPL</span>
+                <span class="custom-option" data-value="bsd">BSD</span>
+                <span class="custom-option" data-value="proprietary">Proprietary</span>
+                <span class="custom-option" data-value="other">Other</span>
+              </div>
+              <select id="license-type" class="filter-select hidden-select">
+                <option value="">All Licenses</option>
+                <option value="mit">MIT</option>
+                <option value="apache">Apache 2.0</option>
+                <option value="gpl">GPL</option>
+                <option value="bsd">BSD</option>
+                <option value="proprietary">Proprietary</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="feature-badges-section">
