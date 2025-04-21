@@ -18,7 +18,7 @@ hide_title: true
     <h1 class="hero-title">
       The Grand AI Handbook
     </h1>
-    <p class="hero-text">Your definitive guide to artificial intelligence — From foundational concepts to cutting-edge innovations</p>
+    <p class="hero-text">Traverse the full spectrum of machine intelligence — from algorithmic origins to the threshold of artificial consciousness</p>
     
     <div class="hero-buttons">
       <a href="{{ '/content/handbooks/' | relative_url }}" class="button-primary">Explore Handbooks</a>
@@ -26,13 +26,260 @@ hide_title: true
     </div>
   </div>
 </section>
+<section class="timeline-section">
+  <div class="timeline-container">
+    <!-- Glowing effect for the timeline -->
+    <div class="glow-effect"></div>
+    
+    <!-- Main timeline line -->
+    <div class="timeline-line">
+      <div class="timeline-progress"></div>
+    </div>
+    
+    <!-- Separators -->
+    <!-- <div class="timeline-separator" style="left: 30%; --separator-delay: 1.2s;"></div>
+    <div class="timeline-separator era-boundary" style="left: 60%; --separator-delay: 1.6s;"></div>
+    <div class="timeline-separator" style="left: 90%; --separator-delay: 2s;"></div> -->
+    <!-- Era labels with hover info cards -->
+
+    <div class="era-label" style="left: 30%;">
+      Narrow Intelligence
+      <div class="era-info">
+        <div class="era-title">Artificial Narrow Intelligence (ANI)</div>
+        <div class="era-description">Specialized AI that excels at specific tasks, like image recognition or game-playing, but lacks general reasoning. Powers early AI breakthroughs.</div>
+      </div>
+    </div>
+    <div class="era-label" style="left: 60%;">
+      General Intelligence
+      <div class="era-info">
+        <div class="era-title">Artificial General Intelligence (AGI)</div>
+        <div class="era-description">AI with human-like reasoning, capable of learning and solving diverse problems across domains, rivaling human intelligence.</div>
+      </div>
+    </div>
+    <div class="era-label" style="left: 90%;">
+      Super Intelligence
+      <div class="era-info">
+        <div class="era-title">Artificial Super Intelligence (ASI)</div>
+        <div class="era-description">AI surpassing human intelligence, with unparalleled problem-solving and creativity, potentially reshaping the future of humanity.</div>
+      </div>
+    </div>
+    <!-- Milestone 1: 1950 - Turing Test (Top) -->
+    <div class="milestone top" style="left: 6%;" id="milestone-1">
+      <div class="milestone-dot dot-1950">
+        <div class="milestone-inner">
+          <span class="milestone-year">1950</span>
+          <span class="milestone-icon">🧪</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-1"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">Turing Test</div>
+        <div class="milestone-description">Alan Turing proposes the "imitation game" to test if machines can mimic human intelligence, sparking AI research.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 2: 1956 - Dartmouth Conference (Bottom) -->
+    <div class="milestone bottom" style="left: 12%;" id="milestone-2">
+      <div class="milestone-dot dot-1956">
+        <div class="milestone-inner">
+          <span class="milestone-year">1956</span>
+          <span class="milestone-icon">⚙️</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-2"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">Dartmouth Conference</div>
+        <div class="milestone-description">The term "Artificial Intelligence" is coined, launching AI as a formal field with ambitious goals.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 3: 1958 - Perceptron (Top) -->
+    <div class="milestone top" style="left: 18%;" id="milestone-3">
+      <div class="milestone-dot dot-1958">
+        <div class="milestone-inner">
+          <span class="milestone-year">1958</span>
+          <span class="milestone-icon">🧠</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-3"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">Perceptron</div>
+        <div class="milestone-description">Frank Rosenblatt’s Perceptron introduces neural networks, laying the groundwork for modern deep learning.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 4: 1986 - Backpropagation (Bottom) -->
+    <div class="milestone bottom" style="left: 24%;" id="milestone-4">
+      <div class="milestone-dot dot-1986">
+        <div class="milestone-inner">
+          <span class="milestone-year">1986</span>
+          <span class="milestone-icon">🔄</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-4"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">Backpropagation</div>
+        <div class="milestone-description">Rumelhart, Hinton, and Williams popularize backpropagation, enabling efficient training of neural networks.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 5: 2006 - Deep Learning Revolution (Top) -->
+    <div class="milestone top" style="left: 30%;" id="milestone-5">
+      <div class="milestone-dot dot-2006">
+        <div class="milestone-inner">
+          <span class="milestone-year">2006</span>
+          <span class="milestone-icon">🧮</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-5"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">Deep Learning Revolution</div>
+        <div class="milestone-description">Geoffrey Hinton’s breakthroughs in deep neural networks ignite the modern deep learning era.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 6: 2012 - AlexNet (Bottom) -->
+    <div class="milestone bottom" style="left: 36%;" id="milestone-6">
+      <div class="milestone-dot dot-2012">
+        <div class="milestone-inner">
+          <span class="milestone-year">2012</span>
+          <span class="milestone-icon">🔍</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-6"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">AlexNet</div>
+        <div class="milestone-description">AlexNet’s convolutional neural network dominates ImageNet, proving deep learning’s power for computer vision.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 7: 2016 - AlphaGo (Top) -->
+    <div class="milestone top" style="left: 42%;" id="milestone-7">
+      <div class="milestone-dot dot-2016">
+        <div class="milestone-inner">
+          <span class="milestone-year">2016</span>
+          <span class="milestone-icon">🎮</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-7"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">AlphaGo</div>
+        <div class="milestone-description">DeepMind’s AlphaGo defeats world champion Lee Sedol at Go, showcasing AI’s ability to master complex strategy games.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 8: 2017 - Transformer (Bottom) -->
+    <div class="milestone bottom" style="left: 48%;" id="milestone-8">
+      <div class="milestone-dot dot-2017">
+        <div class="milestone-inner">
+          <span class="milestone-year">2017</span>
+          <span class="milestone-icon">📜</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-8"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">Transformer</div>
+        <div class="milestone-description">The “Attention is All You Need” paper introduces Transformers, revolutionizing NLP and enabling models like BERT and GPT.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 9: 2020 - AlphaFold (Top) -->
+    <div class="milestone top" style="left: 54%;" id="milestone-9">
+      <div class="milestone-dot dot-2020">
+        <div class="milestone-inner">
+          <span class="milestone-year">2020</span>
+          <span class="milestone-icon">🧬</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-9"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">AlphaFold</div>
+        <div class="milestone-description">DeepMind’s AlphaFold solves the decades-old protein folding problem, transforming biology with AI-driven predictions.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 10: 2021 - GPT-3 Applications (Bottom) -->
+    <div class="milestone bottom" style="left: 60%;" id="milestone-10">
+      <div class="milestone-dot dot-2021">
+        <div class="milestone-inner">
+          <span class="milestone-year">2021</span>
+          <span class="milestone-icon">💬</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-10"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">GPT-3 Applications</div>
+        <div class="milestone-description">OpenAI’s GPT-3 powers tools like GitHub Copilot, revolutionizing coding and text generation with its 175B parameters.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 11: 2022 - ChatGPT & DALL-E 2 (Top) -->
+    <div class="milestone top" style="left: 66%;" id="milestone-11">
+      <div class="milestone-dot dot-2022">
+        <div class="milestone-inner">
+          <span class="milestone-year">2022</span>
+          <span class="milestone-icon">🤖</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-11"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">ChatGPT & DALL-E 2</div>
+        <div class="milestone-description">ChatGPT captivates millions with conversational AI, while DALL-E 2 and Stable Diffusion redefine creativity with text-to-image generation.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 12: 2024 - Reasoning Breakthroughs (Bottom) -->
+    <div class="milestone bottom" style="left: 72%;" id="milestone-12">
+      <div class="milestone-dot dot-2024">
+        <div class="milestone-inner">
+          <span class="milestone-year">2024</span>
+          <span class="milestone-icon">🧩</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-12"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">Reasoning Breakthroughs</div>
+        <div class="milestone-description">AI models achieve human-like reasoning, excelling in complex problem-solving, logic, and scientific discovery, rivaling expert performance.</div>
+      </div>
+    </div>
+
+    <!-- Milestone 13: 2030 - Path to AGI (Top) -->
+    <div class="milestone top" style="left: 90%;" id="milestone-13">
+      <div class="milestone-dot dot-2030">
+        <div class="milestone-inner">
+          <span class="milestone-year">2030</span>
+          <span class="milestone-icon">🚀</span>
+        </div>
+      </div>
+      <div class="milestone-connector" id="connector-13"></div>
+      <div class="milestone-info">
+        <div class="milestone-title">Path to AGI</div>
+        <div class="milestone-description">Early AGI systems emerge, capable of general reasoning across domains, heralding a new era of superintelligent machines.</div>
+      </div>
+    </div>
+
+    <!-- Current year marker -->
+    <div class="current-year-marker" id="current-year-marker">
+      <div class="current-year-line"></div>
+      <div class="current-year-dot"></div>
+      <div class="current-year-label">YOU ARE HERE (2025)</div>
+    </div>
+
+    <!-- Floating elements container -->
+    <div class="floating-elements-container" id="floating-elements"></div>
+
+    <!-- Particles container -->
+    <div class="particles-container" id="particles-container"></div>
+
+  </div>
+</section>
 
 <div class="container mx-auto px-4">
   <!-- FEATURES SECTION -->
   <section class="features-container mb-20">
     <div class="features-title text-center mb-12">
-      <h2 class="text-3xl font-bold">The <span class="gradient-word">Ultimate</span> AI Knowledge Hub</h2>
-      <p class="max-w-3xl mx-auto mt-4">A meticulously curated resource designed to illuminate the complex world of artificial intelligence through structured learning paths, expert insights, and practical applications.</p>
+      <h2 class="text-3xl font-bold">HUMANITY'S <span class="gradient-word">GREATEST TECHNOLOGICAL</span> LEAP</h2>
+      <p class="max-w-3xl mx-auto mt-4">Where science meets philosophy. Where mathematics shapes reality. Where code becomes consciousness.</p>
     </div>
     
     <!-- Forced horizontal layout with equal heights -->
