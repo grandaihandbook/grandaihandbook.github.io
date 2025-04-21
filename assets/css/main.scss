@@ -1,5 +1,6 @@
 ---
 ---
+
 /* =============================================================================
    Grand AI Handbook - Main Stylesheet
    This file imports all modular components of the site's CSS architecture
@@ -50,8 +51,6 @@
 /* Card components for featuring content, handbooks, roadmaps, etc. */
 @import "cards";
 
-
-
 /* Styling for Markdown-generated content and documentation */
 @import "markdown";
 
@@ -61,5 +60,6 @@
 /* Transitions, hover effects, and motion design */
 @import "animations";
 
+@import "timeline";
 // @import "markdown-content";
 /* Note: sidebar.css is maintained as a separate file to prevent conflicts */
