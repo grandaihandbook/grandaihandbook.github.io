@@ -4,25 +4,107 @@ title: Home
 hide_title: true
 ---
 
-<section class="hero rounded-2xl">
-  <!-- Decorative elements -->
-  <div class="accent-circle top-right"></div>
-  <div class="accent-circle bottom-left"></div>
+<section class="hero">
+  <!-- Mouse trail container for interactive effect -->
+  <div id="mouse-trail-container"></div>
   
-  <!-- Floating geometric shapes -->
-  <div class="geometric-shape triangle"></div>
-  <div class="geometric-shape square"></div>
-  <div class="geometric-shape circle"></div>
+  <!-- Ambient light effects -->
+  <div class="ambient-light light-1"></div>
+  <div class="ambient-light light-2"></div>
   
-  <div class="hero-content text-center">
-    <h1 class="hero-title">
-      The Grand AI Handbook
-    </h1>
-    <p class="hero-text">Traverse the full spectrum of machine intelligence — from algorithmic origins to the threshold of artificial consciousness</p>
+  <!-- Wave section transition at the bottom -->
+  <div class="wave-bottom">
+    <div class="wave-inner">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <!-- Base dark wave layer -->
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" class="shape-fill-1"></path>
+        
+        <!-- Middle blue accent wave -->
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" class="shape-fill-2"></path>
+        
+        <!-- Top cyan accent wave with glow -->
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill-3 shape-glow"></path>
+      </svg>
+    </div>
+  </div>
+  
+  <div class="hero-inner">
+    <!-- Enhanced Wave SVG path with more dynamic paths -->
+    <svg class="wave-path" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+      <path class="wave-line" d="M0,400 C300,300 600,500 900,400 C1200,300 1440,450 1440,400" />
+      <path class="wave-line" d="M0,600 C200,500 600,700 900,600 C1200,500 1440,550 1440,600" />
+      <path class="wave-line" d="M0,200 C250,250 500,150 750,200 C1000,250 1440,150 1440,200" />
+      <path class="wave-line" d="M0,300 C150,350 300,250 450,300 C600,350 750,250 900,300 C1050,350 1200,250 1350,300 C1440,350 1440,300 1440,300" />
+      <!-- Additional waves with more dynamic paths -->
+      <path class="wave-line" d="M0,150 C150,100 300,200 450,150 C600,100 750,180 900,150 C1050,120 1200,170 1350,150 C1440,130 1440,150 1440,150" />
+      <path class="wave-line" d="M0,500 C150,550 300,450 450,500 C600,550 750,450 900,500 C1050,550 1200,450 1350,500 C1440,550 1440,500 1440,500" />
+      <path class="wave-line" d="M0,700 C300,650 600,750 900,700 C1200,650 1440,730 1440,700" />
+    </svg>
     
-    <div class="hero-buttons">
-      <a href="{{ '/content/handbooks/' | relative_url }}" class="button-primary">Explore Handbooks</a>
-      <a href="{{ '/content/roadmaps/' | relative_url }}" class="button-secondary">View Career Paths</a>
+    <!-- Enhanced 3D Objects -->
+    <div class="object-3d circle-3d"></div>
+    <div class="object-3d torus-3d">
+      <div class="torus-inner"></div>
+    </div>
+    <div class="object-3d small-circle"></div>
+    <div class="object-3d dark-circle"></div>
+    <div class="object-3d dark-circle-2"></div>
+    
+    <!-- Enhanced 3D elements -->
+    <div class="object-3d blue-sphere"></div>
+    <div class="object-3d glow-circle"></div>
+    
+    <!-- Enhanced additional 3D elements -->
+    <div class="object-3d cube-3d"></div>
+    <div class="object-3d pyramid-3d"></div>
+    <div class="object-3d ring-3d"></div>
+    
+    <!-- New holographic prism -->
+    <div class="holographic-prism">
+      <div class="prism-side prism-side-1"></div>
+      <div class="prism-side prism-side-2"></div>
+      <div class="prism-side prism-side-3"></div>
+      <div class="prism-side prism-side-4"></div>
+      <div class="prism-side prism-side-5"></div>
+      <div class="prism-side prism-side-6"></div>
+    </div>
+    
+    <!-- Neon light effects -->
+    <div class="neon-line neon-line-1"></div>
+    <div class="neon-line neon-line-2"></div>
+    <div class="neon-line neon-line-3"></div>
+    
+    <!-- Enhanced floating dots with varied sizes -->
+    <div class="floating-dot dot-1"></div>
+    <div class="floating-dot dot-2"></div>
+    <div class="floating-dot dot-3"></div>
+    <div class="floating-dot dot-4"></div>
+    <div class="floating-dot dot-5"></div>
+    <div class="floating-dot dot-6"></div>
+    <div class="floating-dot dot-7"></div>
+    <div class="floating-dot dot-8"></div>
+    <div class="floating-dot dot-9"></div>
+    <div class="floating-dot dot-10"></div>
+    
+    <!-- Enhanced colored shapes -->
+    <div class="colored-shape">
+      <div class="shape-element shape-red"></div>
+      <div class="shape-element shape-blue"></div>
+      <div class="shape-element shape-green"></div>
+    </div>
+    
+    <!-- Enhanced Hero content with animated text -->
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span>Artificial Intelligence</span> has no limits.<br>
+        Why should we?
+      </h1>
+      <p class="hero-text">Traverse the full spectrum of machine intelligence — from algorithmic origins to the threshold of artificial consciousness.</p>
+      
+      <div class="hero-buttons">
+        <a href="{{ '/content/handbooks/' | relative_url }}" class="button-primary">Explore Handbooks</a>
+        <a href="/content/research/" class="button-primary">Explore Research</a>
+      </div>
     </div>
   </div>
 </section>
@@ -787,4 +869,3 @@ hide_title: true
       </div>
     </div>
   </section>
-</div>
