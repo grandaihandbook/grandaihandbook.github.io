@@ -102,7 +102,7 @@ hide_title: true
       <p class="hero-text">Traverse the full spectrum of machine intelligence — from algorithmic origins to the threshold of artificial consciousness.</p>
       
       <div class="hero-buttons">
-        <a href="{{ '/content/handbooks/' | relative_url }}" class="button-primary">Explore Handbooks</a>
+        <a href="{{ '/content/handbooks/' | relative_url }}" class="button-primary">View Handbooks</a>
         <a href="/content/research/" class="button-primary">Explore Research</a>
       </div>
     </div>
