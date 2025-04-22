@@ -250,17 +250,17 @@
   z-index: 1;
 }
 
-.markdown-content h1 {
+.hero-header {
   color: rgba(255, 255, 255, 0.95) !important;
   line-height: 1.5 !important;
 }
 
-.markdown-content a {
+.hero-hyperlink {
   color: rgba(255, 255, 255, 0.95) !important;
 }
 
-.markdown-content p {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+.hero-paragraph {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   max-width: 700px;
   margin: 0 auto 2.5rem auto;
   font-weight: 400;
@@ -780,7 +780,7 @@
 }
 
 .hero-text {
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   max-width: 600px;
   margin-bottom: 2.5rem;
   font-weight: 400;

@@ -95,15 +95,15 @@ hide_title: true
     
     <!-- Enhanced Hero content with animated text -->
     <div class="hero-content">
-      <h1 class="hero-title">
+      <h1 class="hero-title hero-header">
         <span>Artificial Intelligence</span> has no limits.<br>
         Why should we?
       </h1>
-      <p class="hero-text">Traverse the full spectrum of machine intelligence — from algorithmic origins to the threshold of artificial consciousness.</p>
+      <p class="hero-text hero-paragraph">Traverse the full spectrum of machine intelligence — from algorithmic origins to the threshold of artificial consciousness.</p>
       
       <div class="hero-buttons">
-        <a href="{{ '/content/handbooks/' | relative_url }}" class="button-primary">View Handbooks</a>
-        <a href="/content/research/" class="button-primary">Explore Research</a>
+        <a href="{{ '/content/handbooks/' | relative_url }}" class="hero-hyperlink button-primary">View Handbooks</a>
+        <a href="/content/research/" class="hero-hyperlink button-primary">Explore Research</a>
       </div>
     </div>
   </div>
@@ -588,7 +588,7 @@ hide_title: true
 </a>
   </div>
   <div class="text-center mt-10">
-    <a href="{{ '/ecosystem/' | relative_url }}" class="btn btn-primary">Explore Full Ecosystem</a>
+    <a href="{{ '/ecosystem/' | relative_url }}" class="btn btn-primary">Explore Ecosystem</a>
   </div>
 </section>
 
@@ -709,7 +709,7 @@ hide_title: true
     </div>
 
     <div class="text-center mt-10">
-      <a href="{{ '/research/' | relative_url }}" class="btn btn-secondary">Explore Full Research Section</a>
+      <a href="{{ '/research/' | relative_url }}" class="btn btn-primary">Explore Research Section</a>
     </div>
 
   </section>
@@ -822,7 +822,7 @@ hide_title: true
   </div>
   
   <div class="text-center mt-10">
-    <a href="{{ '/roadmaps/' | relative_url }}" class="btn btn-primary">Explore All Roadmaps</a>
+    <a href="{{ '/roadmaps/' | relative_url }}" class="btn btn-primary">Explore Roadmaps</a>
   </div>
 </section>
   <!-- COMMUNITY SECTION -->
