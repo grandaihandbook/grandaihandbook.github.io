@@ -603,7 +603,7 @@ hide_title: true
     </div> -->
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="{{ '/research/weekly-papers/' | relative_url }}" class="handbook-card">
+      <a href="{{ '/content/research/weekly-papers/' | relative_url }}" class="handbook-card">
         <!-- Optional category badge -->
         <div class="category-badge">Research</div>
         
