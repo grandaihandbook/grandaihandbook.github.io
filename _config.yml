@@ -50,7 +50,13 @@ collections:
     permalink: /content/handbooks/mlops/:path/
   research:
     output: true
-    permalink: /research/:path/
+    permalink: /content/research/:path/
+  weekly-papers:
+    output: true
+    permalink: /content/research/weekly-papers/:path
+  weekly-papers2025:
+    output: true
+    permalink: /content/research/weekly-papers/2025/:path
   roadmaps:
     output: true
     permalink: /roadmaps/:path/
