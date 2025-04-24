@@ -22,7 +22,7 @@
           <h3>A Review of DeepSeek Models</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2503.11486" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -42,7 +42,7 @@
       <h3>Hierarchical Multi-Step Reward Models for Enhanced Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.13551" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -63,7 +63,7 @@
       <h3>DAPO: Open-Source LLM Reinforcement Learning System</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.14476" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -84,7 +84,7 @@
       <h3>Compute Optimal Scaling of Skills</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">University of Wisconsin and Meta AI</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.10061" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -105,7 +105,7 @@
       <h3>Thinking Machines: Survey of Reasoning Techniques</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.10814" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -126,7 +126,7 @@
       <h3>A Survey on Efficient Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.16419" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -147,7 +147,7 @@
       <h3>A-MEM: Agentic Memory for LLM Agents</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Rutgers University and Ant Group</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.12110" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -168,7 +168,7 @@
       <h3>DeepMesh: Artist-like 3D Mesh Generation</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Tsinghua University, Nanyang Technological University, ShengShu</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.15265" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -189,7 +189,7 @@
       <h3>Deep Learning is Not So Mysterious or Different</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Andrew Gordon Wilson (New York University)</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.02113" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -210,7 +210,7 @@
       <h3>GNNs as Predictors of Agentic Workflow Performances</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.11301" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -286,12 +286,12 @@
 </section>
   </div>
   <div class="weekly-paper-nav">
-    <a href="next-week.html" class="weekly-paper-nav-next">
+    <a href="/content/research/weekly-papers/2025/week13/" class="weekly-paper-nav-next">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
       
     </a>
-    <a href="prev-week.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week11/" class="weekly-paper-nav-prev">
       
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
