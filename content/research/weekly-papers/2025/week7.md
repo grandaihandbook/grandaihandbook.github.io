@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">February 11-17, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Reasoning</span> <span class="weekly-paper-tag">BCI</span> <span class="weekly-paper-tag">Efficiency</span> <span class="weekly-paper-tag">Memory</span> </div> </div> <h1 class="weekly-paper-title">Week 7: Latent Reasoning, Brain Interfaces, and Enhanced LLM Efficiency</h1> <p class="weekly-paper-description">This week features innovative approaches to scaling AI reasoning capabilities, breakthroughs in non-invasive brain-to-text decoding, and novel frameworks for reinforcement learning. Key papers highlight latent space reasoning, memory augmentation, and techniques for improving reasoning efficiency and robustness.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>Scaling up Test-Time Compute with Latent Reasoning</h3> <div class="paper-card-meta"> <span class="paper-authors">Anonymous</span> <a href="#" class="paper-link">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>This work introduces a latent recurrent-depth transformer that scales test-time reasoning without relying on additional token generation, achieving improvements comparable to a 50B parameter model despite having only 3.5B parameters.</p> <ul class="paper-points"> <li>Unrolls a recurrent block at inference to run for arbitrary steps without modifying the input sequence</li> <li>Works with standard pretraining without requiring specialized CoT datasets</li> <li>Reveals self-organizing computation patterns in latent space for different types of tasks</li> </ul> <div class="paper-quote"> <p>"This approach adds a third axis to LLM scaling—beyond model size and context length—by focusing on test-time compute, suggesting future models may reason in continuous latent space rather than rely solely on token-based reasoning."</p> </div> </div> </div>
+<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">February 11-17, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Reasoning</span> <span class="weekly-paper-tag">BCI</span> <span class="weekly-paper-tag">Efficiency</span> <span class="weekly-paper-tag">Memory</span> </div> </div> <h1 class="weekly-paper-title">Week 7: Latent Reasoning, Brain Interfaces, and Enhanced LLM Efficiency</h1> <p class="weekly-paper-description">This week features innovative approaches to scaling AI reasoning capabilities, breakthroughs in non-invasive brain-to-text decoding, and novel frameworks for reinforcement learning. Key papers highlight latent space reasoning, memory augmentation, and techniques for improving reasoning efficiency and robustness.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>Scaling up Test-Time Compute with Latent Reasoning</h3> <div class="paper-card-meta"> <span class="paper-authors">Anonymous</span> <a href="https://arxiv.org/abs/2502.05171" class="paper-link" target="_blank" rel="noopener">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>This work introduces a latent recurrent-depth transformer that scales test-time reasoning without relying on additional token generation, achieving improvements comparable to a 50B parameter model despite having only 3.5B parameters.</p> <ul class="paper-points"> <li>Unrolls a recurrent block at inference to run for arbitrary steps without modifying the input sequence</li> <li>Works with standard pretraining without requiring specialized CoT datasets</li> <li>Reveals self-organizing computation patterns in latent space for different types of tasks</li> </ul> <div class="paper-quote"> <p>"This approach adds a third axis to LLM scaling—beyond model size and context length—by focusing on test-time compute, suggesting future models may reason in continuous latent space rather than rely solely on token-based reasoning."</p> </div> </div> </div>
   <div class="paper-card">
     <div class="paper-card-header">
       <h3>Brain2Qwerty: Non-Invasive Brain-to-Text Decoding</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Meta AI</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://ai.meta.com/research/publications/brain-to-text-decoding-a-non-invasive-approach-via-typing/" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -25,7 +25,7 @@
       <h3>Reinforcement Learning via Self-Play (RLSP)</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.06773" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -46,7 +46,7 @@
       <h3>Competitive Programming with Large Reasoning Models</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">OpenAI</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.06807" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -67,7 +67,7 @@
       <h3>Training Language Models to Reason Efficiently</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.04463" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -88,7 +88,7 @@
       <h3>Large Memory Models (LM2)</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.06049" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -109,7 +109,7 @@
       <h3>Auditing Prompt Caching</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Stanford</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.07776" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -130,7 +130,7 @@
       <h3>Step Back to Leap Forward: Self-Backtracking</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.04404" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -151,7 +151,7 @@
       <h3>SOLOMON: Neuro-Inspired Reasoning Architecture</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">IBM</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.04384" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -172,7 +172,7 @@
       <h3>ReasonFlux: Hierarchical Reasoning Framework</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.06772" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -246,4 +246,4 @@
 
   </div>
 </section>
-</div> <div class="weekly-paper-nav"> <a href="week8.html" class="weekly-paper-nav-next"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Next Week  </a> <a href="week6.html" class="weekly-paper-nav-prev">  Previous Week <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a> </div> </div>
+</div> <div class="weekly-paper-nav"> <a href="/content/research/weekly-papers/2025/week8/" class="weekly-paper-nav-next"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Next Week  </a> <a href="/content/research/weekly-papers/2025/week6/" class="weekly-paper-nav-prev">  Previous Week <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a> </div> </div>
