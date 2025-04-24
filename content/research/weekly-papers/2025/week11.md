@@ -22,7 +22,7 @@
           <h3>Gemma 3: Lightweight Open Model Family</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Google</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -42,7 +42,7 @@
       <h3>Traveling Waves for Spatial Integration</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Harvard University and Western University</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.06034" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -63,7 +63,7 @@
       <h3>Transformers without Normalization</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Meta, NYU, MIT, and Princeton</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.10622" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -84,7 +84,7 @@
       <h3>Monitoring Reasoning Models for Misbehavior</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">OpenAI</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://cdn.openai.com/pdf/34f2ada6-870f-4c26-9790-fd8def56387f/CoT_Monitoring.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -105,7 +105,7 @@
       <h3>Plan-and-Act: Long-Horizon Task Planning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">UC Berkeley and University of Tokyo</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.09572" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -126,7 +126,7 @@
       <h3>Gemini Robotics: Embodied AI Models</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Google DeepMind</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://storage.googleapis.com/deepmind-media/gemini-robotics/gemini_robotics_report.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -147,7 +147,7 @@
       <h3>Search-R1: RL for Search-Augmented Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.09516" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -168,7 +168,7 @@
       <h3>Auditing LLMs for Hidden Objectives</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anthropic</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://assets.anthropic.com/m/317564659027fb33/original/Auditing-Language-Models-for-Hidden-Objectives.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -189,7 +189,7 @@
       <h3>Post Training of LLMs (PoLMs)</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.06072" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -210,7 +210,7 @@
       <h3>Block Diffusion: Combining AR and Diffusion</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Cornell Tech, Stanford, and Cohere</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.09573" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -286,12 +286,12 @@
 </section>
   </div>
   <div class="weekly-paper-nav">
-    <a href="next-week.html" class="weekly-paper-nav-next">
+    <a href="/content/research/weekly-papers/2025/week12/" class="weekly-paper-nav-next">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
       
     </a>
-    <a href="prev-week.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week10/" class="weekly-paper-nav-prev">
       
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
