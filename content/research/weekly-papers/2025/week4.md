@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">January 21-27, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Reasoning</span> <span class="weekly-paper-tag">Benchmarks</span> <span class="weekly-paper-tag">RL</span> <span class="weekly-paper-tag">Agents</span> </div> </div> <h1 class="weekly-paper-title">Week 4: DeepSeek-R1, Advanced Reasoning, and Multi-Agent Systems</h1> <p class="weekly-paper-description">This week features major advancements in LLM reasoning capabilities, challenging benchmarks, and innovative agent architectures. Key papers highlight reinforcement learning approaches for reasoning, multi-agent frameworks for handling long contexts, and insights into model awareness and security.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>DeepSeek-R1: Advanced Reasoning through RL</h3> <div class="paper-card-meta"> <span class="paper-authors">DeepSeek</span> <a href="#" class="paper-link">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>DeepSeek introduces two key models for advanced reasoning: DeepSeek-R1-Zero using pure reinforcement learning without supervised fine-tuning, and DeepSeek-R1 combining RL with cold-start data for improved output quality.</p> <ul class="paper-points"> <li>R1-Zero achieves 71.0% pass rate on AIME 2024, matching OpenAI-o1-0912 through pure RL</li> <li>R1 uses multi-stage approach with initial fine-tuning, RL training, and rejection sampling</li> <li>Successfully distilled capabilities to smaller models, with 7B model outperforming larger competitors</li> </ul> <div class="paper-quote"> <p>"DeepSeek-R1 demonstrates that combining selective fine-tuning with RL enables both strong reasoning and high-quality outputs, achieving 79.8% accuracy on AIME 2024 and 97.3% on MATH-500."</p> </div> </div> </div>
+<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">January 21-27, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Reasoning</span> <span class="weekly-paper-tag">Benchmarks</span> <span class="weekly-paper-tag">RL</span> <span class="weekly-paper-tag">Agents</span> </div> </div> <h1 class="weekly-paper-title">Week 4: DeepSeek-R1, Advanced Reasoning, and Multi-Agent Systems</h1> <p class="weekly-paper-description">This week features major advancements in LLM reasoning capabilities, challenging benchmarks, and innovative agent architectures. Key papers highlight reinforcement learning approaches for reasoning, multi-agent frameworks for handling long contexts, and insights into model awareness and security.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>DeepSeek-R1: Advanced Reasoning through RL</h3> <div class="paper-card-meta"> <span class="paper-authors">DeepSeek</span> <a href="https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>DeepSeek introduces two key models for advanced reasoning: DeepSeek-R1-Zero using pure reinforcement learning without supervised fine-tuning, and DeepSeek-R1 combining RL with cold-start data for improved output quality.</p> <ul class="paper-points"> <li>R1-Zero achieves 71.0% pass rate on AIME 2024, matching OpenAI-o1-0912 through pure RL</li> <li>R1 uses multi-stage approach with initial fine-tuning, RL training, and rejection sampling</li> <li>Successfully distilled capabilities to smaller models, with 7B model outperforming larger competitors</li> </ul> <div class="paper-quote"> <p>"DeepSeek-R1 demonstrates that combining selective fine-tuning with RL enables both strong reasoning and high-quality outputs, achieving 79.8% accuracy on AIME 2024 and 97.3% on MATH-500."</p> </div> </div> </div>
   <div class="paper-card">
     <div class="paper-card-header">
       <h3>Humanity's Last Exam: Ultimate Benchmark</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://static.scale.com/uploads/654197dc94d34f66c0f5184e/Publication%20Ready%20Humanity's%20Last%20Exam.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -25,7 +25,7 @@
       <h3>k1.5: Scaling RL with LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Kimi</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://github.com/MoonshotAI/Kimi-k1.5/blob/main/Kimi_k1.5.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -46,7 +46,7 @@
       <h3>Chain-of-Agents: Collaborative Processing</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://openreview.net/pdf?id=LuCLf4BJsr" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -67,7 +67,7 @@
       <h3>Can LLMs Plan? Algorithm-of-Thoughts Plus</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.13545" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -88,7 +88,7 @@
       <h3>Hallucinations Improve LLMs in Drug Discovery</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.13824" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -109,7 +109,7 @@
       <h3>Trading Test-Time Compute for Adversarial Robustness</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://cdn.openai.com/papers/trading-inference-time-compute-for-adversarial-robustness-20250121_1.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -130,7 +130,7 @@
       <h3>IntellAgent: Automated AI Evaluation Framework</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.11067" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -151,7 +151,7 @@
       <h3>LLMs and Behavioral Awareness</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.11120" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -172,7 +172,7 @@
       <h3>Agentic RAG Overview</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.09136" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -246,4 +246,4 @@
 
   </div>
 </section>
-</div> <div class="weekly-paper-nav"> <a href="week5.html" class="weekly-paper-nav-next"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Next Week  </a> <a href="week3.html" class="weekly-paper-nav-prev"> Previous Week <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a> </div> </div>
+</div> <div class="weekly-paper-nav"> <a href="/content/research/weekly-papers/2025/week5/" class="weekly-paper-nav-next"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Next Week  </a> <a href="/content/research/weekly-papers/2025/week3/" class="weekly-paper-nav-prev"> Previous Week <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a> </div> </div>
