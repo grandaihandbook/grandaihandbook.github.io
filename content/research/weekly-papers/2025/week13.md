@@ -22,7 +22,7 @@
           <h3>Tracing the Thoughts of LLMs</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anthropic</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://www.anthropic.com/research/tracing-thoughts-language-model" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -42,7 +42,7 @@
       <h3>Qwen2.5-Omni: Thinker-Talker Architecture</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://github.com/QwenLM/Qwen2.5-Omni/blob/main/assets/Qwen2.5_Omni.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -63,7 +63,7 @@
       <h3>AgentRxiv: Autonomous Research Framework</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Johns Hopkins & ETH Zurich</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.18102" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -84,7 +84,7 @@
       <h3>Neural Alignment via Speech Embeddings</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Google Research</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://www.nature.com/articles/s41562-025-02105-9" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -105,7 +105,7 @@
       <h3>Chain-of-Tools (CoTools)</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.16779" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -126,7 +126,7 @@
       <h3>MemInsight: Structured Memory for LLM Agents</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.21760v1" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -147,7 +147,7 @@
       <h3>Emotional Well-being on ChatGPT</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">OpenAI & MIT Media Lab</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://cdn.openai.com/papers/15987609-5f71-433c-9972-e91131f399a1/openai-affective-use-study.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -168,7 +168,7 @@
       <h3>Play2Prompt: Zero-Shot Tool Learning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">MIT CSAIL and IBM</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.14432" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -189,7 +189,7 @@
       <h3>Synthetic Data Generation Using LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.14023" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -210,7 +210,7 @@
       <h3>Current and Future Use of LLMs for Knowledge Work</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.16774v1" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -286,12 +286,12 @@
 </section>
   </div>
   <div class="weekly-paper-nav">
-    <a href="week14.html" class="weekly-paper-nav-next">
+    <a href="/content/research/weekly-papers/2025/week14/" class="weekly-paper-nav-next">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
       
     </a>
-    <a href="week12.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week12/" class="weekly-paper-nav-prev">
       
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
