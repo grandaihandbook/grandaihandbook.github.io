@@ -22,7 +22,7 @@
           <h3>A Few Tokens Are All You Need</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Tencent AI Lab and CUHK, Shenzhen</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2503.02875" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -42,7 +42,7 @@
       <h3>A Deep Dive into Reasoning LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.21321" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -63,7 +63,7 @@
       <h3>Cognitive Behaviors that Enable Self-Improving Reasoners</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Stanford University</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.01307" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -84,7 +84,7 @@
       <h3>Conversational Speech Model (CSM)</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Sesame</span>
-        <a href="#" class="paper-link">Technical Report</a>
+        <a href="https://www.sesame.com/research/crossing_the_uncanny_valley_of_voice" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -105,7 +105,7 @@
       <h3>Forecasting Rare Language Model Behaviors</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anthropic</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.16797" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -126,7 +126,7 @@
       <h3>Differentiable Logic Cellular Automata</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Google's Paradigms of Intelligence</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://google-research.github.io/self-organising-systems/difflogic-ca/?hn" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -147,7 +147,7 @@
       <h3>How Well do LLMs Compress Their Own Chain-of-Thought?</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.01141" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -168,7 +168,7 @@
       <h3>LADDER: Recursive Problem Simplification</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.00735" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -189,7 +189,7 @@
       <h3>Agentic Reward Modeling</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.19328" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -210,7 +210,7 @@
       <h3>Fractal Generative Models</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">MIT CSAIL & Google DeepMind</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.17437" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -286,11 +286,11 @@
 </section>
   </div>
   <div class="weekly-paper-nav">
-    <a href="next-collection.html" class="weekly-paper-nav-next">
+    <a href="/content/research/weekly-papers/2025/week11/" class="weekly-paper-nav-next">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
     </a>
-    <a href="previous-collection.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week9/" class="weekly-paper-nav-prev">
       
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
