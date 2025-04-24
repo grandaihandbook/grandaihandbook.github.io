@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">January 14-20, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Adaptation</span> <span class="weekly-paper-tag">MoE</span> <span class="weekly-paper-tag">Multimodal</span> <span class="weekly-paper-tag">Agents</span> </div> </div> <h1 class="weekly-paper-title">Week 3: Self-Adaptation, MiniMax-01, and Multimodal Reasoning</h1> <p class="weekly-paper-description">This week showcases innovations in adaptive LLM systems, advanced mixture-of-experts models, and novel multimodal reasoning frameworks. Key papers highlight real-time model adaptation, extended context capabilities, and specialized agent systems for domains from psychology to chemistry.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>Transformer^2: Self-Adaptive LLMs</h3> <div class="paper-card-meta"> <span class="paper-authors">Anonymous</span> <a href="#" class="paper-link">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>Transformer^2 introduces a novel self-adaptation framework that adapts LLMs for unseen tasks in real-time by selectively adjusting singular components of their weight matrices.</p> <ul class="paper-points"> <li>Features a dispatch system that analyzes and identifies properties of incoming tasks</li> <li>Combines "expert" vectors trained via reinforcement learning for task-specific behaviors</li> <li>Claims greater efficiency than LoRA with fewer parameters and cross-architecture compatibility</li> </ul> <div class="paper-quote"> <p>"Transformer^2 enables dynamic model adaptation without requiring separate fine-tuning for each task, offering a more flexible and efficient approach to task specialization."</p> </div> </div> </div>
+<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">January 14-20, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Adaptation</span> <span class="weekly-paper-tag">MoE</span> <span class="weekly-paper-tag">Multimodal</span> <span class="weekly-paper-tag">Agents</span> </div> </div> <h1 class="weekly-paper-title">Week 3: Self-Adaptation, MiniMax-01, and Multimodal Reasoning</h1> <p class="weekly-paper-description">This week showcases innovations in adaptive LLM systems, advanced mixture-of-experts models, and novel multimodal reasoning frameworks. Key papers highlight real-time model adaptation, extended context capabilities, and specialized agent systems for domains from psychology to chemistry.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>Transformer^2: Self-Adaptive LLMs</h3> <div class="paper-card-meta"> <span class="paper-authors">Anonymous</span> <a href="https://arxiv.org/abs/2501.06252" class="paper-link" target="_blank" rel="noopener">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>Transformer^2 introduces a novel self-adaptation framework that adapts LLMs for unseen tasks in real-time by selectively adjusting singular components of their weight matrices.</p> <ul class="paper-points"> <li>Features a dispatch system that analyzes and identifies properties of incoming tasks</li> <li>Combines "expert" vectors trained via reinforcement learning for task-specific behaviors</li> <li>Claims greater efficiency than LoRA with fewer parameters and cross-architecture compatibility</li> </ul> <div class="paper-quote"> <p>"Transformer^2 enables dynamic model adaptation without requiring separate fine-tuning for each task, offering a more flexible and efficient approach to task specialization."</p> </div> </div> </div>
   <div class="paper-card">
     <div class="paper-card-header">
       <h3>MiniMax-01: Extreme-Scale MoE Model</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.08313" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -25,7 +25,7 @@
       <h3>VideoRAG: Video-Enhanced Retrieval System</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.05874" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -46,7 +46,7 @@
       <h3>Learning to Memorize at Test Time</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.00663" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -67,7 +67,7 @@
       <h3>Foundations of LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.09223" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -88,7 +88,7 @@
       <h3>OmniThink: Iterative Knowledge Expansion</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.09751" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -109,7 +109,7 @@
       <h3>Enhancing RAG: Systematic Exploration</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.07391" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -130,7 +130,7 @@
       <h3>AutoCBT: Multi-Agent Therapy Framework</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.09426" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -151,7 +151,7 @@
       <h3>MVoT: Multimodal Visualization-of-Thought</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.07542" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -172,7 +172,7 @@
       <h3>ChemAgent: Dynamic Library for Chemical Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.06590" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -246,4 +246,4 @@
 
   </div>
 </section>
-</div> <div class="weekly-paper-nav"> <a href="week4.html" class="weekly-paper-nav-next"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Next Week  </a> <a href="week2.html" class="weekly-paper-nav-prev">  Previous Week  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a> </div> </div>
+</div> <div class="weekly-paper-nav"> <a href="/content/research/weekly-papers/2025/week4/" class="weekly-paper-nav-next"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Next Week  </a> <a href="/content/research/weekly-papers/2025/week2/" class="weekly-paper-nav-prev">  Previous Week  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a> </div> </div>
