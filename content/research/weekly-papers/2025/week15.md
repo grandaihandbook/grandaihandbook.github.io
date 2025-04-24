@@ -25,7 +25,7 @@
             <h3>The AI Scientist V2</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Anonymous</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://pub.sakana.ai/ai-scientist-v2/paper/paper.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -46,7 +46,7 @@
             <h3>Benchmarking Browsing Agents</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">OpenAI</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://cdn.openai.com/pdf/5e10f4ab-d6f7-442e-9508-59515c65e35d/browsecomp.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -67,7 +67,7 @@
             <h3>OLMOTrace</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Allen Institute for AI, University of Washington</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://arxiv.org/abs/2504.07096" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -88,7 +88,7 @@
             <h3>Concise Reasoning via RL</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Anonymous</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://arxiv.org/abs/2504.05185" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -109,7 +109,7 @@
             <h3>Rethinking Reflection in Pre-Training</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Anonymous</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://arxiv.org/abs/2504.04022" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -130,7 +130,7 @@
             <h3>Efficient KG Reasoning for Small LLMs</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Anonymous</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://arxiv.org/abs/2504.03137" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -151,7 +151,7 @@
             <h3>Compute Agent Arena</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Anonymous</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://arena.xlang.ai/blog/computer-agent-arena" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -172,7 +172,7 @@
             <h3>Agentic Knowledgeable Self-awareness</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Anonymous</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://arxiv.org/abs/2504.03553v1" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -193,7 +193,7 @@
             <h3>One-Minute Video Generation with Test-Time Training</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Anonymous</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://test-time-training.github.io/video-dit/assets/ttt_cvpr_2025.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -214,7 +214,7 @@
             <h3>NoProp</h3>
             <div class="paper-card-meta">
               <span class="paper-authors">Anonymous</span>
-              <a href="#" class="paper-link">Paper Link</a>
+              <a href="https://arxiv.org/abs/2503.24322" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
             </div>
           </div>
           <div class="paper-card-content">
@@ -289,11 +289,11 @@
     </div>
 
     <div class="weekly-paper-nav">
-      <a href="week16.html" class="weekly-paper-nav-next">
+      <a href="/content/research/weekly-papers/2025/week16/" class="weekly-paper-nav-next">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
         Next Week
       </a>
-      <a href="week14.html" class="weekly-paper-nav-prev">
+      <a href="/content/research/weekly-papers/2025/week14/" class="weekly-paper-nav-prev">
         Previous Week
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
