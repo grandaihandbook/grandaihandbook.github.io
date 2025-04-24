@@ -24,7 +24,7 @@
           <h3>GUI-R1: Reinforcement Learning Framework for GUI Agents</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">National University of Singapore, Chinese Academy of Sciences</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.10458" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -45,7 +45,7 @@
           <h3>d1: Scaling Reasoning in Diffusion LLMs via RL</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.12216" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -66,7 +66,7 @@
           <h3>Enhancing Non-Reasoning Models with Reasoning Models</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.09639" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -87,7 +87,7 @@
           <h3>AgentA/B: Automated A/B Testing with LLM Agents</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.09723" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -108,7 +108,7 @@
           <h3>Reasoning Models Can Be Effective Without Thinking</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://www.arxiv.org/abs/2504.09858" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -129,7 +129,7 @@
           <h3>SocioVerse: Large-Scale Social Simulation with LLM Agents</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Fudan University, Collaborators</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.10157" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -150,7 +150,7 @@
           <h3>DocAgent: Dependency-Aware Codebase Documentation</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Meta AI</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.08725" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -171,7 +171,7 @@
           <h3>SWE-PolyBench: Multi-Language Coding Benchmark</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.08703v1" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -192,7 +192,7 @@
           <h3>A Survey of Frontiers in LLM Reasoning</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.09037" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -213,7 +213,7 @@
           <h3>Advances in Embodied Agents, Smart Cities, and Earth Science</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.09848" class="paper-link" target="_blank" rel="noopener"> Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -289,12 +289,12 @@
   </div>
   
   <div class="weekly-paper-nav">
-  <a href="week16.html" class="weekly-paper-nav-next">
+  <a href="/content/research/weekly-papers/2025/week17/" class="weekly-paper-nav-next">
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
       
     </a>
-    <a href="week14.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week15/" class="weekly-paper-nav-prev">
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
     </a>
