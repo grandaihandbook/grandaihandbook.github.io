@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">February 4-10, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Reasoning</span> <span class="weekly-paper-tag">Efficiency</span> <span class="weekly-paper-tag">Animation</span> <span class="weekly-paper-tag">Agents</span> </div> </div> <h1 class="weekly-paper-title">Week 6: Test-Time Scaling, Human Animation, and Advanced Reasoning</h1> <p class="weekly-paper-description">This week features innovations in LLM reasoning efficiency, realistic human animation from single images, and novel frameworks for agent collaboration. Key papers highlight data-efficient fine-tuning, associative thought chains, and architecture search for multi-agent systems.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>s1: Simple Test-Time Scaling</h3> <div class="paper-card-meta"> <span class="paper-authors">Stanford, UW, and Collaborators</span> <a href="#" class="paper-link">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>Researchers introduce s1, a method to boost LLM performance by using extra compute at inference time, achieving impressive results with a small but high-quality dataset and novel decoding techniques.</p> <ul class="paper-points"> <li>Curated s1K, only 1,000 challenging questions with detailed reasoning traces</li> <li>Implements "budget forcing" with a "Wait" token to make models think longer</li> <li>The resulting s1-32B outperforms OpenAI's o1-preview by up to +27% on competition-level math</li> </ul> <div class="paper-quote"> <p>"With test-time scaling, s1-32B boosts accuracy on AIME24 from 50% to 57%, demonstrating how additional inference time computation can push models beyond their normal limits."</p> </div> </div> </div>
+<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">February 4-10, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Reasoning</span> <span class="weekly-paper-tag">Efficiency</span> <span class="weekly-paper-tag">Animation</span> <span class="weekly-paper-tag">Agents</span> </div> </div> <h1 class="weekly-paper-title">Week 6: Test-Time Scaling, Human Animation, and Advanced Reasoning</h1> <p class="weekly-paper-description">This week features innovations in LLM reasoning efficiency, realistic human animation from single images, and novel frameworks for agent collaboration. Key papers highlight data-efficient fine-tuning, associative thought chains, and architecture search for multi-agent systems.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>s1: Simple Test-Time Scaling</h3> <div class="paper-card-meta"> <span class="paper-authors">Stanford, UW, and Collaborators</span> <a href="http://arxiv.org/abs/2501.19393" class="paper-link" target="_blank" rel="noopener">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>Researchers introduce s1, a method to boost LLM performance by using extra compute at inference time, achieving impressive results with a small but high-quality dataset and novel decoding techniques.</p> <ul class="paper-points"> <li>Curated s1K, only 1,000 challenging questions with detailed reasoning traces</li> <li>Implements "budget forcing" with a "Wait" token to make models think longer</li> <li>The resulting s1-32B outperforms OpenAI's o1-preview by up to +27% on competition-level math</li> </ul> <div class="paper-quote"> <p>"With test-time scaling, s1-32B boosts accuracy on AIME24 from 50% to 57%, demonstrating how additional inference time computation can push models beyond their normal limits."</p> </div> </div> </div>
   <div class="paper-card">
     <div class="paper-card-header">
       <h3>OmniHuman-1: One-Stage Human Animation</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">ByteDance AI Lab</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="http://arxiv.org/abs/2502.01061" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -25,7 +25,7 @@
       <h3>LIMO: Less Is More for Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="http://arxiv.org/abs/2502.03387" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -46,7 +46,7 @@
       <h3>CoAT: Chain-of-Associated-Thoughts</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="http://arxiv.org/abs/2502.02390" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -67,7 +67,7 @@
       <h3>Syntriever: Training Retrievers with LLM-Generated Data</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="http://arxiv.org/abs/2502.03824" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -88,7 +88,7 @@
       <h3>Demystifying Long Chain-of-Thought Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.03373" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -109,7 +109,7 @@
       <h3>Self-MoA: Rethinking Mixture-of-Agents</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="http://arxiv.org/abs/2502.00674" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -130,7 +130,7 @@
       <h3>MaAS: Multi-agent Architecture Search</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="http://arxiv.org/abs/2502.04180" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -151,7 +151,7 @@
       <h3>Advancing Reasoning in LLMs: A Survey</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="http://arxiv.org/abs/2502.03671" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -172,7 +172,7 @@
       <h3>Text Data Augmentation for LLMs: A Survey</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="http://arxiv.org/abs/2501.18845" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -246,4 +246,4 @@
 
   </div>
 </section>
-</div> <div class="weekly-paper-nav"> <a href="week7.html" class="weekly-paper-nav-next"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>  Next Week </a> <a href="week5.html" class="weekly-paper-nav-prev"> Previous Week <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> </a> </div> </div>
+</div> <div class="weekly-paper-nav"> <a href="/content/research/weekly-papers/2025/week7/" class="weekly-paper-nav-next"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>  Next Week </a> <a href="/content/research/weekly-papers/2025/week5/" class="weekly-paper-nav-prev"> Previous Week <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> </a> </div> </div>
