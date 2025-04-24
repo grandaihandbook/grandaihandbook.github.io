@@ -22,7 +22,7 @@
           <h3>o3-mini: Cost-Efficient Reasoning Model</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">OpenAI</span>
-            <a href="#" class="paper-link">System Card</a>
+            <a href="https://cdn.openai.com/o3-mini-system-card.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -42,7 +42,7 @@
       <h3>Qwen2.5-1M: Million-Token Context Models</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Qwen</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2.5-1M/Qwen2_5_1M_Technical_Report.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -63,7 +63,7 @@
       <h3>Janus-Pro: Enhanced Multimodal Understanding and Generation</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://github.com/deepseek-ai/Janus/blob/main/janus_pro_tech_report.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -84,7 +84,7 @@
       <h3>On the Underthinking of o1-like LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.18585" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -105,7 +105,7 @@
       <h3>Diverse Preference Optimization (DivPO)</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.18101" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -126,7 +126,7 @@
       <h3>Usage Recommendation for DeepSeek-R1</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">DeepSeek</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.17030" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -147,7 +147,7 @@
       <h3>Docling: Unified Document Parsing</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.17887" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -168,7 +168,7 @@
       <h3>Improving RAG through Multi-Agent RL</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.15228" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -189,7 +189,7 @@
       <h3>TensorLLM: Efficient Attention Compression</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.15674" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -210,7 +210,7 @@
       <h3>TokenVerse: Multi-Concept Personalization</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Google DeepMind and Collaborators</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.12224" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -286,12 +286,12 @@
 </section>
   </div>
   <div class="weekly-paper-nav">
-    <a href="week6.html" class="weekly-paper-nav-next">
+    <a href="/content/research/weekly-papers/2025/week6/" class="weekly-paper-nav-next">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
       
     </a>
-    <a href="week4.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week4/" class="weekly-paper-nav-prev">
       
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
