@@ -22,7 +22,7 @@
           <h3>PaperBench: Benchmarking AI Agents on Research Replication</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">OpenAI</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/abs/2504.01848" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -43,7 +43,7 @@
       <h3>Command A: An Enterprise-Ready LLM</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Cohere</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2504.00698" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -64,7 +64,7 @@
       <h3>CodeScientist: Autonomous Scientific Experimentation</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">AI2</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.22708" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -85,7 +85,7 @@
       <h3>RARE: Retrieval-Augmented Reasoning Model</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.23513" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -106,7 +106,7 @@
       <h3>Why do LLMs Attend to First Token?</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2504.02732" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -127,7 +127,7 @@
       <h3>MedAgentSim: Automated Hospital Simulation</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.22678" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -148,7 +148,7 @@
       <h3>Open Deep Search (ODS): Open-Source Search AI</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Sentient, UW, Princeton, UC Berkeley</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.20201" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -169,7 +169,7 @@
       <h3>Z1: Efficient Test-time Scaling with Code</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2504.00810v1" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -190,7 +190,7 @@
       <h3>A Survey of Efficient Reasoning for LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.24377" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -211,7 +211,7 @@
       <h3>Hidden Factual Knowledge in LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2503.15299" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -287,13 +287,13 @@
 </section>
 </div>
   <div class="weekly-paper-nav">
-    <a href="week15.html" class="weekly-paper-nav-next">
+    <a href="/content/research/weekly-papers/2025/week15/" class="weekly-paper-nav-next">
 
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
 
     </a>
-    <a href="week13.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week13/" class="weekly-paper-nav-prev">
 
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
