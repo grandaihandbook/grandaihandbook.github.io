@@ -22,7 +22,7 @@
           <h3>Claude 3.7 Sonnet: Hybrid Reasoning Model</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anthropic</span>
-            <a href="#" class="paper-link">System Card</a>
+            <a href="https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -42,7 +42,7 @@
       <h3>GPT-4.5: Broader Knowledge and Improved Alignment</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">OpenAI</span>
-        <a href="#" class="paper-link">System Card</a>
+        <a href="https://cdn.openai.com/gpt-4-5-system-card-2272025.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -63,7 +63,7 @@
       <h3>Chain-of-Draft: Efficient Reasoning with Fewer Tokens</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.18600" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -84,7 +84,7 @@
       <h3>Emergent Misalignment from Narrow Task Training</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.17424" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -105,7 +105,7 @@
       <h3>FFTNet: An Efficient Alternative to Self-Attention</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.18394" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -126,7 +126,7 @@
       <h3>PlanGEN: Constraint-Guided Planning Framework</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.16111" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -147,7 +147,7 @@
       <h3>METAL: Multi-Agent Framework for Chart Generation</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.17651" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -168,7 +168,7 @@
       <h3>LightThinker: Dynamic Reasoning Compression</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.15589" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -189,7 +189,7 @@
       <h3>A Systematic Survey of Prompt Optimization</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.16923" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -210,7 +210,7 @@
       <h3>Protein LLMs: Architectures and Applications</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2502.17504" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -286,12 +286,12 @@
 </section>
   </div>
   <div class="weekly-paper-nav">
-    <a href="week10.html" class="weekly-paper-nav-next">
+    <a href="/content/research/weekly-papers/2025/week10/" class="weekly-paper-nav-next">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
       
     </a>
-    <a href="week8.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week8/" class="weekly-paper-nav-prev">
       
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
