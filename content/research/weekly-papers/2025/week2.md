@@ -22,7 +22,7 @@
           <h3>Cache-Augmented Generation (CAG)</h3>
           <div class="paper-card-meta">
             <span class="paper-authors">Anonymous</span>
-            <a href="#" class="paper-link">Paper Link</a>
+            <a href="https://arxiv.org/pdf/2412.15605" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
           </div>
         </div>
         <div class="paper-card-content">
@@ -42,7 +42,7 @@
       <h3>Agent Laboratory: Autonomous Research</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.04227" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -63,7 +63,7 @@
       <h3>Long Context vs. RAG for LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.01880" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -84,7 +84,7 @@
       <h3>Search-o1: Agentic Search Framework</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.05366" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -105,7 +105,7 @@
       <h3>Meta Chain-of-Thought: System 2 Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.04682" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -126,7 +126,7 @@
       <h3>rStar-Math: Enhanced Math Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.04519" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -147,7 +147,7 @@
       <h3>Cosmos World Foundation Model</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://research.nvidia.com/publication/2025-01_cosmos-world-foundation-model-platform-physical-ai" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -168,7 +168,7 @@
       <h3>Process Reinforcement through Implicit Rewards</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://curvy-check-498.notion.site/Process-Reinforcement-through-Implicit-Rewards-15f4fcb9c42180f1b498cc9b2eaf896f" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -189,7 +189,7 @@
       <h3>Can LLMs Design Good Questions?</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.03491" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -210,7 +210,7 @@
       <h3>A Survey on LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.04040" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -286,12 +286,12 @@
 </section>
   </div>
   <div class="weekly-paper-nav">
-    <a href="week3.html" class="weekly-paper-nav-next">
+    <a href="/content/research/weekly-papers/2025/week3/" class="weekly-paper-nav-next">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Next Week
       
     </a>
-    <a href="week1.html" class="weekly-paper-nav-prev">
+    <a href="/content/research/weekly-papers/2025/week1/" class="weekly-paper-nav-prev">
       
       Previous Week
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
