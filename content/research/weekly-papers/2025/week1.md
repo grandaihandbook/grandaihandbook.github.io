@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">January 1-6, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Agents</span> <span class="weekly-paper-tag">Models</span> <span class="weekly-paper-tag">Medical</span> <span class="weekly-paper-tag">Memory</span> </div> </div> <h1 class="weekly-paper-title">Week 1: Agent Ecosystems, OLMo 2, and Medical AI</h1> <p class="weekly-paper-description">This first week of 2025 features research on agent ecosystems, open-source language models, mathematical reasoning benchmarks, and specialized medical AI systems. Key papers explore agent limitations, memory-enhanced architectures, and quantization techniques for image generation models.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>Agents Are Not Enough: Toward a New Ecosystem</h3> <div class="paper-card-meta"> <span class="paper-authors">Anonymous</span> <a href="#" class="paper-link">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>This paper argues that while AI agents show promise, they alone cannot address the challenges in autonomous task execution, proposing instead a more comprehensive ecosystem approach.</p> <ul class="paper-points"> <li>Combines three key components: Agents, Sims, and Assistants</li> <li>Agents serve as narrow, purpose-driven modules for specific tasks</li> <li>Sims represent user preferences while Assistants coordinate the ecosystem</li> </ul> <div class="paper-quote"> <p>"The proposed ecosystem recognizes the limitations of standalone agents, offering a more holistic approach to autonomous systems that better integrates user preferences and specialized capabilities."</p> </div> </div> </div>
+<link rel="stylesheet" href="/assets/css/research/weekly-papers.css"> <link rel="stylesheet" href="/assets/css/research/weekly-paper-detail.css"> <div class="weekly-paper-container"> <div class="weekly-paper-header"> <div class="weekly-paper-meta"> <span class="weekly-paper-date">January 1-6, 2025</span> <div class="weekly-paper-tags"> <span class="weekly-paper-tag">Agents</span> <span class="weekly-paper-tag">Models</span> <span class="weekly-paper-tag">Medical</span> <span class="weekly-paper-tag">Memory</span> </div> </div> <h1 class="weekly-paper-title">Week 1: Agent Ecosystems, OLMo 2, and Medical AI</h1> <p class="weekly-paper-description">This first week of 2025 features research on agent ecosystems, open-source language models, mathematical reasoning benchmarks, and specialized medical AI systems. Key papers explore agent limitations, memory-enhanced architectures, and quantization techniques for image generation models.</p> </div> <div class="weekly-paper-content"> <section class="weekly-paper-section"> <h2>Research Highlights</h2> <div class="paper-card"> <div class="paper-card-header"> <h3>Agents Are Not Enough: Toward a New Ecosystem</h3> <div class="paper-card-meta"> <span class="paper-authors">Anonymous</span> <a href="https://www.arxiv.org/abs/2412.16241" class="paper-link" target="_blank" rel="noopener">Paper Link</a> </div> </div> <div class="paper-card-content"> <p>This paper argues that while AI agents show promise, they alone cannot address the challenges in autonomous task execution, proposing instead a more comprehensive ecosystem approach.</p> <ul class="paper-points"> <li>Combines three key components: Agents, Sims, and Assistants</li> <li>Agents serve as narrow, purpose-driven modules for specific tasks</li> <li>Sims represent user preferences while Assistants coordinate the ecosystem</li> </ul> <div class="paper-quote"> <p>"The proposed ecosystem recognizes the limitations of standalone agents, offering a more holistic approach to autonomous systems that better integrates user preferences and specialized capabilities."</p> </div> </div> </div>
   <div class="paper-card">
     <div class="paper-card-header">
       <h3>OLMo 2: Enhanced Open Language Model</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Allen Institute for AI</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2501.00656" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -25,7 +25,7 @@
       <h3>Machine-Assisted Proof in Mathematics</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://www.ams.org//notices/202501/rnoti-p6.pdf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -46,7 +46,7 @@
       <h3>Putnam-AXIOM: Higher Level Mathematical Reasoning</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://openreview.net/forum?id=YXnwlZe0yf&noteId=yrsGpHd0Sf" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -67,7 +67,7 @@
       <h3>On the Overthinking of LLMs</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2412.21187" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -88,7 +88,7 @@
       <h3>MEDEC: Medical Error Detection and Correction</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2412.19260" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -109,7 +109,7 @@
       <h3>1.58-bit FLUX: Efficient Image Model Quantization</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2412.18653" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -130,7 +130,7 @@
       <h3>Aviary: Extensible Gymnasium for Language Agents</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2412.21154" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -151,7 +151,7 @@
       <h3>Memory Layers at Scale</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2412.09764" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -172,7 +172,7 @@
       <h3>HuatuoGPT-o1: Medical Reasoning Enhancement</h3>
       <div class="paper-card-meta">
         <span class="paper-authors">Anonymous</span>
-        <a href="#" class="paper-link">Paper Link</a>
+        <a href="https://arxiv.org/abs/2412.18925" class="paper-link" target="_blank" rel="noopener">Paper Link</a>
       </div>
     </div>
     <div class="paper-card-content">
@@ -246,4 +246,4 @@
 
   </div>
 </section>
-</div> <div class="weekly-paper-nav"> <a href="week2.html" class="weekly-paper-nav-next"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>  Next Week </a> </div> </div>
+</div> <div class="weekly-paper-nav"> <a href="/content/research/weekly-papers/2025/week2/" class="weekly-paper-nav-next"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>  Next Week </a> </div> </div>
