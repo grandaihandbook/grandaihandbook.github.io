@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <!-- Added Font Awesome CDN link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="/assets/css/ecosystem-page.css">
@@ -11,7 +7,7 @@ layout: default
   <header class="content-header">
     <h1>AI Models Directory</h1>
     <div class="header-accent"></div>
-    <p class="description">Explore our curated collection of machine learning and AI models from leading research organizations and companies.</p>
+    <p class="description">Explore our curated collection of machine learning and AI models, featuring innovations from top research institutions and leading companies. Discover powerful models across various domains, including language, vision, and decision-making, all in one place.</p>
   </header>
 
   <!-- Filter Section - Redesigned to be cleaner and more polished -->
@@ -325,7 +321,6 @@ layout: default
           </div>
           <div class="model-actions">
             <a href="{{ model.paper_url | default: '#' }}" class="model-link tertiary">
-              <i class="fas fa-file-alt"></i>
               <span>Read Paper</span>
             </a>
             <a href="{{ model.url | default: '#' }}" class="model-link primary">View Model Page</a>
