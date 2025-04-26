@@ -7,6 +7,52 @@
   </div>
 
   <div class="pioneers-grid">
+    <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Alan Turing</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">AI Foundations</span>
+          <span class="pioneer-tag">Turing Test</span>
+          <span class="pioneer-tag">Computation</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">University of Manchester (Historical)</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Proposed the Turing Test</li>
+              <li>Developed Turing Machine</li>
+              <li>Laid foundations for computation</li>
+              <li>Contributed to codebreaking in WWII</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Theoretical computer science, artificial intelligence, and computation theory.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://www.turing.org.uk/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=6T8y0gQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg" alt="Alan Turing">
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Geoffrey Hinton -->
     <div class="pioneer-card">
       <div class="pioneer-card-content">
@@ -436,7 +482,7 @@
             </div>
           </div>
           <div class="pioneer-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Daphne_Koller_2018.jpg" alt="Daphne Koller">
+            <img src="https://s.wsj.net/public/resources/images/BN-IT601_WEEKEN_12S_20150604180445.jpg" alt="Daphne Koller">
           </div>
         </div>
       </div>
@@ -1687,7 +1733,700 @@
     </div>
 
   </div>
-
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Herbert Simon</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">AI Foundations</span>
+          <span class="pioneer-tag">Cognitive Science</span>
+          <span class="pioneer-tag">Decision Making</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">Carnegie Mellon University (Emeritus)</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Developed Logic Theorist</li>
+              <li>Pioneered cognitive science</li>
+              <li>Contributed to bounded rationality</li>
+              <li>Won Nobel Prize in Economics</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Artificial intelligence, decision-making, and cognitive psychology.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://www.cmu.edu/herbert-simon/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=6T8y0gQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Herbert_Simon_portrait.jpg" alt="Herbert Simon">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Barbara Grosz</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">NLP</span>
+          <span class="pioneer-tag">Multi-Agent Systems</span>
+          <span class="pioneer-tag">AI Ethics</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">Harvard University</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Developed discourse analysis in NLP</li>
+              <li>Pioneered collaborative planning</li>
+              <li>Advocated for AI ethics</li>
+              <li>Led Harvard AI initiatives</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Natural language processing, multi-agent systems, and ethical AI.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://grosz.seas.harvard.edu/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=8wU5z7UAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://grosz.seas.harvard.edu/files/grosz/images/barbara_grosz.jpg" alt="Barbara Grosz">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Tom Mitchell</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Machine Learning</span>
+          <span class="pioneer-tag">Cognitive Science</span>
+          <span class="pioneer-tag">NLP</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">Carnegie Mellon University</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Authored "Machine Learning" textbook</li>
+              <li>Developed Never-Ending Language Learner</li>
+              <li>Pioneered learning theory</li>
+              <li>Advanced cognitive neuroscience</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Machine learning, natural language processing, and cognitive science.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="http://www.cs.cmu.edu/~tom/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=6T8y0gQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://www.cs.cmu.edu/~tom/images/tom_mitchell.jpg" alt="Tom Mitchell">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Rodney Brooks</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Robotics</span>
+          <span class="pioneer-tag">Behavior-Based AI</span>
+          <span class="pioneer-tag">AI Applications</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">MIT (Emeritus) & Robust.AI</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Developed behavior-based robotics</li>
+              <li>Co-founded iRobot</li>
+              <li>Created Roomba vacuum robot</li>
+              <li>Authored "Flesh and Machines"</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Robotics, behavior-based AI, and practical AI applications.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://rodneybrooks.com/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=6T8y0gQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://rodneybrooks.com/images/rodney_brooks.jpg" alt="Rodney Brooks">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Yutaka Matsuo</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Deep Learning</span>
+          <span class="pioneer-tag">AI Applications</span>
+          <span class="pioneer-tag">NLP</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">University of Tokyo</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Advanced deep learning in Japan</li>
+              <li>Developed AI for social media analysis</li>
+              <li>Leads Deep Learning Lab at UTokyo</li>
+              <li>Authored influential AI books</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Deep learning, natural language processing, and AI for social applications.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://www.is.s.u-tokyo.ac.jp/english/~matsuo/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=zv5K8pQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://www.is.s.u-tokyo.ac.jp/english/~matsuo/images/yutaka_matsuo.jpg" alt="Yutaka Matsuo">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Daniela Rus</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Robotics</span>
+          <span class="pioneer-tag">Distributed Systems</span>
+          <span class="pioneer-tag">AI Applications</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">MIT</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Developed soft robotics</li>
+              <li>Advanced distributed robotic systems</li>
+              <li>Leads MIT CSAIL</li>
+              <li>Pioneered autonomous vehicle research</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Robotics, distributed AI, and autonomous systems.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://people.csail.mit.edu/rus/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=8wU5z7UAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://people.csail.mit.edu/rus/images/daniela_rus.jpg" alt="Daniela Rus">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Pedro Domingos</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Machine Learning</span>
+          <span class="pioneer-tag">Data Mining</span>
+          <span class="pioneer-tag">AI Theory</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">University of Washington</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Authored "The Master Algorithm"</li>
+              <li>Developed Markov logic networks</li>
+              <li>Advanced data mining techniques</li>
+              <li>Influenced ML education</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Machine learning, data mining, and unified AI frameworks.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://homes.cs.washington.edu/~pedrod/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=6T8y0gQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://homes.cs.washington.edu/~pedrod/images/pedro_domingos.jpg" alt="Pedro Domingos">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Andrew Barto</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Reinforcement Learning</span>
+          <span class="pioneer-tag">AI Theory</span>
+          <span class="pioneer-tag">Cognitive Science</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">University of Massachusetts Amherst</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Co-authored "Reinforcement Learning: An Introduction"</li>
+              <li>Developed temporal-difference learning</li>
+              <li>Advanced RL algorithms</li>
+              <li>Influenced cognitive modeling</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Reinforcement learning, cognitive science, and computational neuroscience.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://www.cs.umass.edu/~barto/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=6T8y0gQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://www.cs.umass.edu/~barto/images/andrew_barto.jpg" alt="Andrew Barto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Ruslan Salakhutdinov</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Deep Learning</span>
+          <span class="pioneer-tag">Probabilistic Models</span>
+          <span class="pioneer-tag">NLP</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">Carnegie Mellon University</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Developed deep belief networks</li>
+              <li>Advanced probabilistic deep learning</li>
+              <li>Contributed to multimodal AI</li>
+              <li>Leads CMU AI research</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Deep learning, probabilistic modeling, and natural language processing.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="http://www.cs.cmu.edu/~rsalakhu/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=0l1n5f0AAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="http://www.cs.cmu.edu/~rsalakhu/images/ruslan_salakhutdinov.jpg" alt="Ruslan Salakhutdinov">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Andrej Karpathy</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Deep Learning</span>
+          <span class="pioneer-tag">Computer Vision</span>
+          <span class="pioneer-tag">NLP</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">OpenAI</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Developed ConvNetJS</li>
+              <li>Contributed to Tesla Autopilot</li>
+              <li>Advanced large-scale language models</li>
+              <li>Created popular deep learning tutorials</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Deep learning, computer vision, and natural language processing.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://karpathy.ai/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=m3v-4eUAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://karpathy.ai/images/andrej_karpathy.jpg" alt="Andrej Karpathy">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Jeff Dean</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Deep Learning</span>
+          <span class="pioneer-tag">Systems</span>
+          <span class="pioneer-tag">AI Infrastructure</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">Google Research</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Co-developed TensorFlow</li>
+              <li>Advanced Google Brain</li>
+              <li>Pioneered large-scale AI systems</li>
+              <li>Contributed to MapReduce</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Deep learning, AI infrastructure, and scalable systems.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://research.google/people/jeff/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=0f1n5f0AAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://research.google/people/jeff/images/jeff_dean.jpg" alt="Jeff Dean">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Aleksander Madry</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Adversarial Robustness</span>
+          <span class="pioneer-tag">Deep Learning</span>
+          <span class="pioneer-tag">AI Safety</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">MIT</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Advanced adversarial training</li>
+              <li>Developed robust ML models</li>
+              <li>Contributed to AI safety</li>
+              <li>Leads MIT Center for Deployable ML</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Adversarial robustness, deep learning, and secure AI systems.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://people.csail.mit.edu/madry/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=zv5K8pQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://people.csail.mit.edu/madry/images/aleksander_madry.jpg" alt="Aleksander Madry">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Dawn Song</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">AI Security</span>
+          <span class="pioneer-tag">Privacy</span>
+          <span class="pioneer-tag">Deep Learning</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">UC Berkeley</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Developed secure ML frameworks</li>
+              <li>Advanced differential privacy</li>
+              <li>Pioneered blockchain security</li>
+              <li>Leads Berkeley RISELab</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>AI security, privacy-preserving ML, and blockchain.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://people.eecs.berkeley.edu/~dawnsong/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=8wU5z7UAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://people.eecs.berkeley.edu/~dawnsong/images/dawn_song.jpg" alt="Dawn Song">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Ayanna Howard</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Robotics</span>
+          <span class="pioneer-tag">Human-Robot Interaction</span>
+          <span class="pioneer-tag">AI Ethics</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">The Ohio State University</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Developed accessible robotics</li>
+              <li>Advanced human-robot interaction</li>
+              <li>Advocated for diversity in AI</li>
+              <li>Contributed to healthcare robotics</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Robotics, human-robot interaction, and ethical AI.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://engineering.osu.edu/people/howard.1046" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=zv5K8pQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://engineering.osu.edu/sites/default/files/styles/portrait/public/images/people/howard_ayanna.jpg" alt="Ayanna Howard">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">François Chollet</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">Deep Learning</span>
+          <span class="pioneer-tag">Frameworks</span>
+          <span class="pioneer-tag">AI Education</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">Google</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Created Keras framework</li>
+              <li>Authored "Deep Learning with Python"</li>
+              <li>Advanced deep learning accessibility</li>
+              <li>Contributed to TensorFlow</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Deep learning frameworks, AI education, and scalable machine learning.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://fchollet.com/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=zv5K8pQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+            <a href="https://twitter.com/fchollet" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+              Twitter
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://fchollet.com/images/francois_chollet.jpg" alt="François Chollet">
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   
 </div>
