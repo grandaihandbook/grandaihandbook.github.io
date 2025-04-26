@@ -681,7 +681,7 @@ hide_title: true
         </div>
       </a>
 
-      <a href="{{ '/research/author-spotlight/' | relative_url }}" class="handbook-card">
+      <a href="{{ '/content/research/ai-pioneers/' | relative_url }}" class="handbook-card">
         <!-- Optional category badge -->
         <div class="category-badge">Research</div>
 
@@ -692,7 +692,7 @@ hide_title: true
 
         <div class="card-content">
 
-          <h3 class="text-xl font-semibold mb-2">Author Spotlight</h3>
+          <h3 class="text-xl font-semibold mb-2">Pioneers of AI</h3>
           <p>
             In-depth profiles of leading AI researchers, their groundbreaking work, and contributions to the field.
           </p>
@@ -709,11 +709,10 @@ hide_title: true
     </div>
 
     <div class="text-center mt-10">
-      <a href="{{ '/research/' | relative_url }}" class="btn btn-primary">Explore Research Section</a>
+      <a href="{{ '/content/research/' | relative_url }}" class="btn btn-primary">Explore Research Section</a>
     </div>
 
   </section>
-  <!-- ROADMAPS SECTION -->
 <!-- ROADMAPS SECTION -->
 <section class="mb-20">
   <div class="text-center mb-12">

@@ -195,7 +195,7 @@
             </div>
           </div>
           <div class="pioneer-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Yann_LeCun_2018.jpg" alt="Yann LeCun">
+            <img src="https://engineering.nyu.edu/sites/default/files/styles/square_large_default_1x/public/2018-06/yann-lecun.jpg?h=65172a10&itok=NItwgG8z" alt="Yann LeCun">
           </div>
         </div>
       </div>
@@ -244,7 +244,7 @@
             </div>
           </div>
           <div class="pioneer-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Andrew_Ng_2017.jpg" alt="Andrew Ng">
+            <img src="https://media.wired.com/photos/5988aa7c2b5c9d564887b762/master/w_2560%2Cc_limit/AndrewNG-TA.jpg" alt="Andrew Ng">
           </div>
         </div>
       </div>
@@ -292,7 +292,7 @@
             </div>
           </div>
           <div class="pioneer-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Demis_Hassabis_Royal_Society.jpg" alt="Demis Hassabis">
+            <img src="https://cdn.britannica.com/45/263445-050-B552B2A3/Demis-Hassabis-CEO-and-co-founder-of-Google-DeepMind-winner-of-2024-Nobel-Prize-in-Chemistry.jpg" alt="Demis Hassabis">
           </div>
         </div>
       </div>
@@ -340,7 +340,7 @@
             </div>
           </div>
           <div class="pioneer-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/J%C3%BCrgen_Schmidhuber_-_2017.jpg" alt="Jürgen Schmidhuber">
+            <img src="https://faculty.kaust.edu.sa/files-asset/53495485/KAUST_CEMSE_Juergen_Schmidhuber_DSC_2542_4K.jpg" alt="Jürgen Schmidhuber">
           </div>
         </div>
       </div>
@@ -388,7 +388,7 @@
             </div>
           </div>
           <div class="pioneer-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Ian_Goodfellow_2017.jpg" alt="Ian Goodfellow">
+            <img src="https://wp.technologyreview.com/wp-content/uploads/2018/02/ma18-iangoodfellow2-2.png?crop=0px%2C0px%2C1411px%2C2116px&w=700" alt="Ian Goodfellow">
           </div>
         </div>
       </div>
@@ -1593,6 +1593,100 @@
         </div>
       </div>
     </div>
+    <div class="pioneer-card">
+      <div class="pioneer-card-content">
+        <div class="pioneer-meta">
+          <h3 class="pioneer-name">John McCarthy</h3>
+          <div class="pioneer-tags">
+            <span class="pioneer-tag">AI Foundations</span>
+            <span class="pioneer-tag">Lisp</span>
+            <span class="pioneer-tag">Logic-Based AI</span>
+          </div>
+        </div>
+        <div class="pioneer-details">
+          <div class="pioneer-info">
+            <div class="pioneer-affiliation">
+              <span class="info-label">Affiliation</span>
+              <span class="info-value">Stanford University (Emeritus)</span>
+            </div>
+            <div class="pioneer-contributions">
+              <span class="info-label">Notable Contributions</span>
+              <ul>
+                <li>Coined the term "Artificial Intelligence"</li>
+                <li>Developed Lisp programming language</li>
+                <li>Pioneered logic-based AI</li>
+                <li>Founded Stanford AI Lab</li>
+              </ul>
+            </div>
+            <div class="pioneer-research">
+              <span class="info-label">Research Focus</span>
+              <p>Artificial intelligence, formal reasoning, and programming languages.</p>
+            </div>
+            <div class="pioneer-links">
+              <a href="http://www-formal.stanford.edu/jmc/" target="_blank" class="pioneer-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                Website
+              </a>
+              <a href="https://scholar.google.com/citations?user=6T8y0gQAAAAJ" target="_blank" class="pioneer-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                Google Scholar
+              </a>
+            </div>
+          </div>
+          <div class="pioneer-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/John_McCarthy_Stanford.jpg" alt="John McCarthy">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="pioneer-card">
+    <div class="pioneer-card-content">
+      <div class="pioneer-meta">
+        <h3 class="pioneer-name">Marvin Minsky</h3>
+        <div class="pioneer-tags">
+          <span class="pioneer-tag">AI Foundations</span>
+          <span class="pioneer-tag">Cognitive Science</span>
+          <span class="pioneer-tag">Neural Networks</span>
+        </div>
+      </div>
+      <div class="pioneer-details">
+        <div class="pioneer-info">
+          <div class="pioneer-affiliation">
+            <span class="info-label">Affiliation</span>
+            <span class="info-value">MIT (Emeritus)</span>
+          </div>
+          <div class="pioneer-contributions">
+            <span class="info-label">Notable Contributions</span>
+            <ul>
+              <li>Co-founded MIT AI Lab</li>
+              <li>Developed early neural networks</li>
+              <li>Authored "The Society of Mind"</li>
+              <li>Pioneered cognitive AI</li>
+            </ul>
+          </div>
+          <div class="pioneer-research">
+            <span class="info-label">Research Focus</span>
+            <p>Artificial intelligence, cognitive science, and computational models of mind.</p>
+          </div>
+          <div class="pioneer-links">
+            <a href="https://web.media.mit.edu/~minsky/" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              Website
+            </a>
+            <a href="https://scholar.google.com/citations?user=6T8y0gQAAAAJ" target="_blank" class="pioneer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+        <div class="pioneer-image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Marvin_Minsky_at_OLPC.jpg" alt="Marvin Minsky">
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   </div>
   
