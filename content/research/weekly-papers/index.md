@@ -5,7 +5,11 @@
     <h1>Weekly AI Papers</h1>
     <p>Stay updated with the latest AI research papers, curated and summarized weekly for researchers, practitioners, and enthusiasts. Discover breakthrough innovations, emerging trends, and groundbreaking papers from leading labs and researchers worldwide.</p>
   </div>
-
+  <div class="attribution-notice">
+    <div class="attribution-content">
+      <p>Weekly AI Papers is inspired by <a href="https://nlp.elvissaravia.com/t/ai">NLP Newsletter</a> by dair.ai by <strong>Elvis Saravia</strong>. I've curated and organized the content to provide regular updates on the latest AI research, adding summaries and contextual information to enhance the educational experience.</p>
+    </div>
+  </div>
   <div class="year-section">
     <h2 class="year-heading">2025</h2>
     
