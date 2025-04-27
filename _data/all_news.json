@@ -1,0 +1,316 @@
+{
+  "articles": [
+    {
+      "title": "Optimizing Transformer-Based Diffusion Models for Video Generation",
+      "excerpt": "State-of-the-art image diffusion models take tens of seconds to process a single image. This article explores techniques to optimize transformer-based architectures for faster and more efficient video generation.",
+      "date": "Apr 21, 2025",
+      "tags": ["Diffusion Models", "Video Generation"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/optimizing-transformer-diffusion/"
+    },
+    {
+      "title": "NVIDIA Blackwell Delivers Massive Performance Leaps in MLPerf Inference",
+      "excerpt": "The compute demands for large language model (LLM) inference are growing rapidly, fueled by the popularity of applications like ChatGPT, Claude, and Gemini. NVIDIA's new architecture tackles these challenges.",
+      "date": "Apr 08, 2025",
+      "tags": ["NVIDIA", "Hardware"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/nvidia-blackwell-inference/"
+    },
+    {
+      "title": "Boost Llama Model Performance on Microsoft Azure AI Foundry",
+      "excerpt": "Microsoft, in collaboration with NVIDIA, announced transformative performance improvements for Meta's Llama family of models on Azure AI Foundry, enabling faster, more cost-effective AI implementations.",
+      "date": "Mar 20, 2025",
+      "tags": ["Llama", "Microsoft Azure"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/llama-azure-performance/"
+    },
+    {
+      "title": "Introducing NVIDIA Dynamo, A Low-Latency Distributed Inference Solution",
+      "excerpt": "NVIDIA announced the release of NVIDIA Dynamo today at GTC 2025. NVIDIA Dynamo is a high-performance distributed inference system designed specifically for low-latency, high-throughput generative AI deployments.",
+      "date": "Mar 19, 2025",
+      "tags": ["NVIDIA", "Inference"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/nvidia-dynamo-inference/"
+    },
+    {
+      "title": "NVIDIA Blackwell Delivers World-Record DeepSeek-R1 Inference Performance",
+      "excerpt": "NVIDIA announced world-record DeepSeek-R1 inference performance at NVIDIA GTC yesterday. The new Blackwell architecture delivers breakthrough performance and efficiency for state-of-the-art LLMs.",
+      "date": "Mar 18, 2025",
+      "tags": ["NVIDIA", "Inference"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/nvidia-deepseek-inference/"
+    },
+    {
+      "title": "Optimizing Qwen2.5-Coder Throughput with NVIDIA TensorRT-LLM",
+      "excerpt": "Large language models (LLMs) that specialize in coding have been steadily adopted into developer workflows. This article explores optimization techniques for peak performance with Qwen2.5-Coder.",
+      "date": "Feb 14, 2025",
+      "tags": ["TensorRT", "Code Generation"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/qwen-coder-optimization/"
+    },
+    {
+      "title": "Optimize AI Inference Performance with NVIDIA Full-Stack Solutions",
+      "excerpt": "The explosion of AI-driven applications has placed unprecedented demands on both training and inference infrastructure. Learn how NVIDIA's full-stack approach can maximize your inference performance.",
+      "date": "Jan 24, 2025",
+      "tags": ["Inference", "NVIDIA"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/nvidia-inference-solutions/"
+    },
+    {
+      "title": "NVIDIA TensorRT-LLM Now Supports Recurrent Drafting for Optimizing Inference",
+      "excerpt": "Recurrent drafting (referred to as ReDrafting) is a novel speculative decoding technique developed by NVIDIA Research that dramatically improves inference performance for transformer-based LLMs.",
+      "date": "Dec 19, 2024",
+      "tags": ["TensorRT", "Inference"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/tensorrt-recurrent-drafting/"
+    },
+    {
+      "title": "Accelerating Mistral-Large Inference with NVIDIA TensorRT-LLM",
+      "excerpt": "Mistral AI's new flagship model, Mistral-Large, delivers exceptional performance across reasoning, coding, math, and multilingual tasks. This guide demonstrates how to optimize inference with NVIDIA TensorRT-LLM.",
+      "date": "Dec 15, 2024",
+      "tags": ["Mistral", "TensorRT"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/mistral-large-tensorrt/"
+    },
+    {
+      "title": "Maximizing LLM Performance with NVIDIA NIM Microservices",
+      "excerpt": "NVIDIA NIM is a containerized microservice that simplifies deploying optimized AI models, providing a standardized API for everything from model provisioning to monitoring and management.",
+      "date": "Dec 10, 2024",
+      "tags": ["NVIDIA", "Microservices"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/nvidia-nim-performance/"
+    },
+    {
+      "title": "Breakthrough in Efficient Model Compression Using Knowledge Distillation",
+      "excerpt": "Knowledge distillation has emerged as a powerful technique for compressing large models into smaller, more efficient versions while retaining most of their performance. This article explores recent advances.",
+      "date": "Dec 05, 2024",
+      "tags": ["Model Compression", "Distillation"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/efficient-knowledge-distillation/"
+    },
+    {
+      "title": "Implementing Vision Transformers for Medical Image Analysis",
+      "excerpt": "Vision Transformers (ViT) are revolutionizing medical image analysis with their ability to capture long-range dependencies and contextual information. Learn how to implement ViTs for healthcare applications.",
+      "date": "Nov 28, 2024",
+      "tags": ["Vision Transformers", "Healthcare"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/vision-transformers-medical/"
+    },
+    {
+      "title": "Advanced Techniques for Fine-tuning Large Language Models",
+      "excerpt": "Fine-tuning large language models can significantly improve their performance on specific tasks or domains. This article covers advanced techniques including LoRA, QLoRA, and parameter-efficient methods.",
+      "date": "Nov 22, 2024",
+      "tags": ["Fine-tuning", "LLMs"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/advanced-llm-fine-tuning/"
+    },
+    {
+      "title": "Scaling Laws for Neural Language Models: Recent Discoveries",
+      "excerpt": "Recent research has revealed fascinating scaling laws that govern how neural language models improve as they grow in size. This article examines the implications for model development and deployment.",
+      "date": "Nov 18, 2024",
+      "tags": ["Scaling Laws", "Language Models"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/neural-scaling-laws/"
+    },
+    {
+      "title": "Benchmarking Attention Mechanisms in Transformer Architectures",
+      "excerpt": "The attention mechanism is central to transformer architecture, but many variants have emerged. This comprehensive benchmarking study compares performance across different attention implementations.",
+      "date": "Nov 12, 2024",
+      "tags": ["Attention Mechanisms", "Transformers"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/attention-benchmarking/"
+    },
+    {
+      "title": "Hardware-Aware Neural Architecture Search for Edge Devices",
+      "excerpt": "Neural Architecture Search (NAS) can now incorporate hardware constraints to automatically discover optimized model architectures for specific edge devices, balancing accuracy and efficiency.",
+      "date": "Nov 05, 2024",
+      "tags": ["NAS", "Edge Computing"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/hardware-aware-nas/"
+    },
+    {
+      "title": "Multimodal Retrieval-Augmented Generation: Beyond Text",
+      "excerpt": "Retrieval-Augmented Generation (RAG) has been extended to multimodal contexts, enabling models to retrieve and incorporate images, audio, and video information in their reasoning and generation processes.",
+      "date": "Oct 30, 2024",
+      "tags": ["RAG", "Multimodal"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/multimodal-rag/"
+    },
+    {
+      "title": "Quantum Machine Learning: Current State and Future Directions",
+      "excerpt": "Quantum computing promises to revolutionize machine learning by solving certain problems exponentially faster than classical computers. This overview examines current quantum ML algorithms and applications.",
+      "date": "Oct 26, 2024",
+      "tags": ["Quantum Computing", "Machine Learning"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/quantum-ml-overview/"
+    },
+    {
+      "title": "Zero-shot Learning Breakthroughs in Computer Vision",
+      "excerpt": "Recent advances in zero-shot learning are enabling computer vision systems to recognize objects they've never seen during training. This article explores the latest techniques and their applications.",
+      "date": "Oct 22, 2024",
+      "tags": ["Zero-shot Learning", "Computer Vision"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/zero-shot-vision/"
+    },
+    {
+      "title": "Transformer Models for Time Series Forecasting",
+      "excerpt": "While transformers revolutionized NLP and computer vision, they're now making significant inroads in time series forecasting. Learn how these architectures are being adapted for temporal data.",
+      "date": "Oct 18, 2024",
+      "tags": ["Time Series", "Forecasting"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/transformer-time-series/"
+    },
+    {
+      "title": "Neuromorphic Computing: Brain-Inspired AI Architectures",
+      "excerpt": "Neuromorphic computing aims to mimic the brain's architecture for more efficient AI processing. This article explores current neuromorphic chips and their advantages for specific AI workloads.",
+      "date": "Oct 15, 2024",
+      "tags": ["Neuromorphic", "Hardware"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/neuromorphic-computing/"
+    },
+    {
+      "title": "Self-Supervised Learning Advances in Speech Recognition",
+      "excerpt": "Self-supervised learning has transformed speech recognition by leveraging massive amounts of unlabeled audio data. This article reviews recent breakthroughs and their impact on speech technologies.",
+      "date": "Oct 10, 2024",
+      "tags": ["Self-Supervised", "Speech"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/self-supervised-speech/"
+    },
+    {
+      "title": "Automated Machine Learning: State of AutoML in 2025",
+      "excerpt": "AutoML has matured significantly, enabling non-experts to develop high-quality machine learning models. This comprehensive review examines the current capabilities and limitations of AutoML platforms.",
+      "date": "Oct 05, 2024",
+      "tags": ["AutoML", "Machine Learning"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/automl-2025/"
+    },
+    {
+      "title": "Federated Learning for Privacy-Preserving Healthcare Analytics",
+      "excerpt": "Federated learning allows medical institutions to collaborate on AI models without sharing sensitive patient data. This article explores successful implementations and best practices in healthcare.",
+      "date": "Sep 28, 2024",
+      "tags": ["Federated Learning", "Healthcare"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/federated-healthcare/"
+    },
+    {
+      "title": "Prompt Engineering Techniques for Video Generation Models",
+      "excerpt": "Creating effective prompts for video generation models requires different strategies than text-to-image systems. Learn advanced prompt engineering techniques specifically for video generation.",
+      "date": "Sep 22, 2024",
+      "tags": ["Prompt Engineering", "Video Generation"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/video-prompt-engineering/"
+    },
+    {
+      "title": "Energy-Efficient Model Training: Reducing AI's Carbon Footprint",
+      "excerpt": "Training large AI models consumes significant energy. This article examines techniques to reduce the environmental impact of model training while maintaining performance.",
+      "date": "Sep 18, 2024",
+      "tags": ["Green AI", "Efficiency"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/energy-efficient-training/"
+    },
+    {
+      "title": "Reinforcement Learning from Human Feedback: Implementation Guide",
+      "excerpt": "RLHF has become a critical technique for aligning AI systems with human preferences. This practical guide walks through implementing RLHF for different model types and applications.",
+      "date": "Sep 15, 2024",
+      "tags": ["RLHF", "Alignment"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/rlhf-implementation/"
+    },
+    {
+      "title": "Sparse Expert Models: Architecture and Training Strategies",
+      "excerpt": "Sparse expert models like Mixture-of-Experts (MoE) offer exceptional scaling efficiency. This technical overview covers architecture design, training strategies, and deployment considerations.",
+      "date": "Sep 10, 2024",
+      "tags": ["Sparse Models", "MoE"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/sparse-expert-models/"
+    },
+    {
+      "title": "Advances in Synthetic Data Generation for Computer Vision",
+      "excerpt": "Synthetic data is increasingly important for training computer vision models, particularly for rare scenarios or sensitive domains. This article covers recent advances in synthetic data generation.",
+      "date": "Sep 05, 2024",
+      "tags": ["Synthetic Data", "Computer Vision"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/synthetic-vision-data/"
+    },
+    {
+      "title": "Implementing Chain-of-Thought Prompting for Complex Reasoning Tasks",
+      "excerpt": "Chain-of-thought prompting dramatically improves LLMs' reasoning capabilities. This guide provides practical implementation strategies across different domains and model architectures.",
+      "date": "Aug 30, 2024",
+      "tags": ["Chain-of-Thought", "Reasoning"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/chain-of-thought-guide/"
+    },
+    {
+      "title": "Ethical Considerations in Multimodal Foundation Models",
+      "excerpt": "Multimodal foundation models raise unique ethical concerns beyond text-only systems. This article examines issues including representation bias, deepfakes, and content moderation challenges.",
+      "date": "Aug 25, 2024",
+      "tags": ["AI Ethics", "Multimodal"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/multimodal-ethics/"
+    },
+    {
+      "title": "Benchmarking Graph Neural Networks for Scientific Applications",
+      "excerpt": "Graph Neural Networks (GNNs) have shown promise across scientific domains from molecular modeling to particle physics. This study benchmarks leading GNN architectures on scientific tasks.",
+      "date": "Aug 20, 2024",
+      "tags": ["GNNs", "Scientific AI"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/gnn-scientific-benchmarks/"
+    },
+    {
+      "title": "Continual Learning Strategies to Prevent Catastrophic Forgetting",
+      "excerpt": "Catastrophic forgetting remains a major challenge for AI systems that need to learn continuously. This article reviews the latest techniques to enable models to learn new tasks without forgetting old ones.",
+      "date": "Aug 15, 2024",
+      "tags": ["Continual Learning", "Neural Networks"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/prevent-catastrophic-forgetting/"
+    },
+    {
+      "title": "Interpretable Machine Learning for Critical Decision Systems",
+      "excerpt": "In high-stakes domains like healthcare and finance, model interpretability is crucial. This article explores techniques that balance performance with transparent decision-making.",
+      "date": "Aug 10, 2024",
+      "tags": ["Interpretability", "Decision Systems"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/interpretable-critical-systems/"
+    },
+    {
+      "title": "Transformer Architecture Innovations: Beyond Attention",
+      "excerpt": "While attention mechanisms defined the original transformer, recent innovations have introduced alternatives that reduce computational complexity. This overview examines these architectural advances.",
+      "date": "Aug 05, 2024",
+      "tags": ["Transformers", "Architecture"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/beyond-attention/"
+    },
+    {
+      "title": "ML-Driven Scientific Discovery: Case Studies and Methodologies",
+      "excerpt": "Machine learning is accelerating scientific discovery across fields. This article presents case studies where ML has led to breakthrough discoveries and the methodologies that enabled them.",
+      "date": "Jul 30, 2024",
+      "tags": ["Scientific Discovery", "ML Applications"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/ml-scientific-discovery/"
+    },
+    {
+      "title": "Causal Inference in Deep Learning: Methods and Applications",
+      "excerpt": "Causal inference capabilities are increasingly important for AI systems. This article explores how causal reasoning can be incorporated into deep learning architectures.",
+      "date": "Jul 25, 2024",
+      "tags": ["Causal Inference", "Deep Learning"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/causal-deep-learning/"
+    },
+    {
+      "title": "Real-Time Neural Rendering for Interactive Applications",
+      "excerpt": "Neural rendering techniques are transforming graphics applications, but real-time performance remains challenging. This guide covers optimization strategies for interactive neural rendering.",
+      "date": "Jul 20, 2024",
+      "tags": ["Neural Rendering", "Graphics"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/real-time-neural-rendering/"
+    },
+    {
+      "title": "Robustness in Large Language Models: Evaluation and Enhancement",
+      "excerpt": "LLMs can be brittle under adversarial inputs or domain shifts. This article evaluates robustness across leading models and presents techniques to enhance reliability.",
+      "date": "Jul 15, 2024",
+      "tags": ["Robustness", "LLMs"],
+      "image": "/api/placeholder/500/300",
+      "link": "/research/llm-robustness/"
+    }
+  ]
+}
