@@ -3,7 +3,7 @@
 <!-- Featured AI Trends Section -->
 <div class="ai-trends-container">
   <div class="ai-trends-header">
-    <h1>AI Research</h1>
+    <h1>AI News</h1>
     <p>Stay informed with our analysis of emerging patterns, breakthrough technologies, and transformative applications in artificial intelligence. Our page offers insight into what's shaping the future of AI.</p>
   </div>
   
