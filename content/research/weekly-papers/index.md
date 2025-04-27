@@ -12,7 +12,26 @@
   </div>
   <div class="year-section">
     <h2 class="year-heading">2025</h2>
-    
+    <div class="timeline">
+      <div class="weekly-card">
+          <div class="weekly-card-content">
+              <div class="weekly-meta">
+                  <span class="weekly-date">April 22-28, 2025</span>
+                  <div class="weekly-tags">
+                      <span class="weekly-tag">LLMs</span>
+                      <span class="weekly-tag">Reasoning</span>
+                      <span class="weekly-tag">Agents</span>
+                  </div>
+              </div>
+              <h3 class="weekly-title">Week 17: Advancements in LLM Capabilities and Applications</h3>
+              <p class="weekly-description">This week's research highlights significant progress in understanding and enhancing LLM reasoning, pushing the boundaries of efficiency with 1-bit models, developing sophisticated GUI and UX agents, and improving vision-language understanding and code generation.</p>
+              <a href="/content/research/weekly-papers/2025/week17/" class="weekly-read-more">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+          </div>
+      </div>
+  </div>
     <div class="timeline">
       <div class="weekly-card">
         <div class="weekly-card-content">
