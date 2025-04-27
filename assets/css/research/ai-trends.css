@@ -796,6 +796,11 @@ a:hover {
 .markdown-content h3 {
   margin-top: 0.5rem;
 }
+
+.markdown-content img {
+  margin: 0px 0px 1.5rem;
+}
+
 .news-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
