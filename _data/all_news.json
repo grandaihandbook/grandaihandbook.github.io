@@ -1,6 +1,278 @@
 {
   "articles": [
     {
+      "title": "Is your AI product actually working? How to develop the right metric system",
+      "excerpt": "Learn how to develop a crucial metric system for AI and machine learning products. This framework helps define impact questions, identify indicators, and select data gathering methods for success.",
+      "date": "April 27, 2025",
+      "tags": ["AI", "Product Management", "Metrics", "ML"],
+      "image": "https://venturebeat.com/wp-content/uploads/2025/04/DDM-Robot.webp?w=750",
+      "link": "https://venturebeat.com/ai/is-your-ai-product-actually-working-how-to-develop-the-right-metric-system/"
+    },
+    {
+      "title": "Liquid AI is revolutionizing LLMs to work on edge devices like smartphones with new ‘Hyena Edge’ model",
+      "excerpt": "Liquid AI introduces Hyena Edge, a new convolution-based model optimized for edge devices like smartphones. It outperforms traditional Transformers in efficiency and quality, developed using the automated STAR framework.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Edge Computing", "LLMs", "Hyena Edge"],
+      "image": "https://venturebeat.com/wp-content/uploads/2025/04/cfr0z3n_graphic_novel_vector_art_flat_illustration_splash_pag_9dd6886b-a55b-42e5-97c5-1d907b6e1f87_3_5e63ec.png?w=750",
+      "link": "https://venturebeat.com/ai/liquid-ai-is-revolutionizing-llms-to-work-on-edge-devices-like-smartphones-with-new-hyena-edge-model/"
+    },
+    {
+      "title": "DeepSeek’s success shows why motivation is key to AI innovation",
+      "excerpt": "DeepSeek's emergence as an underdog challenging major AI players highlights the importance of motivation, driven by hardware constraints. Their success relies on innovations like KV-cache optimization and Mixture-of-Experts, contributing valuable advancements in AI efficiency.",
+      "date": "April 26, 2025",
+      "tags": ["Efficiency", "Reinforcement Learning", "Underdog"],
+      "image": "https://venturebeat.com/wp-content/uploads/2025/04/DDM-Whale.webp?w=750",
+      "link": "https://venturebeat.com/ai/deepseeks-success-shows-why-motivation-is-key-to-ai-innovation/"
+    },
+    {
+      "title": "Achieve real-time interaction: Build with the Live API",
+      "excerpt": "Google's Live API for Gemini models enables real-time processing of streaming audio, video, and text with low latency. Build interactive applications with new features for session management, control, and richer output. Available in Google AI Studio and Vertex AI.",
+      "date": "April 23, 2025",
+      "tags": ["AI", "APIs", "Gemini"],
+      "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/gemini-live-api-banner.original.png",
+      "link": "https://developers.googleblog.com/en/achieve-real-time-interaction-build-with-the-live-api/"
+    },
+    {
+      "title": "The New AI Calculus: Gemini 2.5 Flash Delivers Cost-Efficient, Controllable Reasoning",
+      "excerpt": "Google launches Gemini 2.5 Flash preview, upgrading reasoning capabilities while prioritizing speed and cost. This hybrid model offers controllable 'thinking' processes, leading to better performance on complex tasks with flexible cost/quality tradeoffs. Available via API, Google AI Studio, and Vertex AI.",
+      "date": "April 17, 2025",
+      "tags": ["AI", "LLMs", "Gemini", "Reasoning", "Cost Efficiency"],
+      "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/gemini_2.5_momentum_1600-476.original.png",
+      "link": "https://developers.googleblog.com/en/start-building-with-gemini-25-flash/"
+    },
+    {
+      "title": "Is that really your boss calling? Jericho Security raises $15M to stop deepfake fraud that’s cost businesses $200M in 2025 alone",
+      "excerpt": "Jericho Security secured $15M to scale its AI platform combating deepfake fraud, which cost $200M in Q1 2025. Their 'agentic AI' simulates adaptive, multi-channel attacks for training, unlike traditional methods, boosted by a DoD contract.",
+      "date": "April 24, 2025",
+      "tags": ["Cybersecurity", "AI", "Deepfake Fraud"],
+      "image": "https://venturebeat.com/wp-content/uploads/2025/04/nuneybits_Vector_art_of_a_retro_computer_on_the_computer_screen_eb75076b-1b63-4eff-8629-e4d166b60095.webp?w=750",
+      "link": "https://venturebeat.com/ai/is-that-really-your-boss-calling-jericho-security-raises-15m-to-stop-deepfake-fraud-thats-cost-businesses-200m-in-2025-alone/"
+    },
+    {
+      "title": "Welcome to Chat Haus, the coworking space for AI chatbots",
+      "excerpt": "Artist Nim Ben-Reuven's 'Chat Haus' is a satirical cardboard art exhibit in Brooklyn, depicting a coworking space for AI chatbots. It humorously reflects on AI's impact on creative industries and the perceived impermanence of some AI-generated content.",
+      "date": "April 28, 2025",
+      "tags": ["Art", "AI", "Exhibit"],
+      "image": "https://techcrunch.com/wp-content/uploads/2025/04/IMG_1988-rotated.jpg?resize=1152,1536",
+      "link": "https://techcrunch.com/2025/04/27/welcome-to-chat-haus-the-coworking-space-for-ai-chatbots/"
+    },
+    {
+      "title": "Meta’s AI Chatbots Can Discuss Sex With Minors, Report Finds",
+      "excerpt": "A Wall Street Journal report indicates Meta's AI chatbots can engage in sexually explicit conversations with minors. The report details instances involving celebrity voices, while Meta describes the testing as 'manufactured' but has taken additional measures.",
+      "date": "April 28, 2025",
+      "tags": ["AI", "Safety", "Meta"],
+      "image": "https://images.wsj.net/im-59949142/?width=1050&height=1313",
+      "link": "https://techcrunch.com/2025/04/27/report-finds-metas-celebrity-voiced-chatbots-could-discuss-sex-with-minors/"
+    },
+    {
+      "title": "Google’s DeepMind UK team reportedly seeks to unionize",
+      "excerpt": "Around 300 London-based Google DeepMind employees are reportedly seeking to unionize due to concerns over Google's AI weapons/surveillance pledge removal and work with the Israeli military. The move highlights employee ethics concerns in AI development.",
+      "date": "April 27, 2025",
+      "tags": ["AI", "Labor", "Ethics"],
+      "image": "https://techcrunch.com/wp-content/uploads/2024/12/getty-gemini-laptop.jpg?resize=1200,800",
+      "link": "https://techcrunch.com/2025/04/26/googles-deepmind-uk-team-reportedly-seeks-to-unionize/"
+    },
+    {
+      "title": "Musk’s xAI Holdings is reportedly raising the second-largest private funding round ever",
+      "excerpt": "Elon Musk’s xAI Holdings is reportedly in talks for a $20 billion funding round, potentially valuing it over $120 billion. This would be the second-largest private round ever, aiming to alleviate X's debt and highlighting strong investor interest in AI.",
+      "date": "April 26, 2025",
+      "tags": ["AI", "Funding", "xAI"],
+      "image": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2198697259.jpg?resize=1200,800",
+      "link": "https://techcrunch.com/2025/04/25/musks-xai-holdings-is-reportedly-raising-the-second-largest-private-funding-round-ever/"
+    },
+    {
+      "title": "Anthropic sent a takedown notice to a dev trying to reverse-engineer its coding tool",
+      "excerpt": "Anthropic has reportedly sent a takedown notice to a developer attempting to reverse-engineer its coding tool.",
+      "date": "April 26, 2025",
+      "tags": ["AI", "Anthropic"],
+      "image": "https://techcrunch.com/wp-content/uploads/2024/06/YouTube-Thumb-Text-2-3.png?resize=1097,617",
+      "link": "https://techcrunch.com/wp-content/uploads/2024/06/YouTube-Thumb-Text-2-3.png?resize=1097,617"
+    },
+    {
+      "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+      "excerpt": "A comprehensive guide covering essential information about ChatGPT, the popular AI-powered chatbot.",
+      "date": "April 26, 2025",
+      "tags": ["AI", "ChatGPT"],
+      "image": "https://techcrunch.com/wp-content/uploads/2023/03/GettyImages-1462188043-e1686340799615.jpg",
+      "link": "https://techcrunch.com/2025/04/25/chatgpt-everything-to-know-about-the-ai-chatbot/"
+    },
+    {
+      "title": "An OpenAI researcher who worked on GPT-4.5 had their green card denied",
+      "excerpt": "An OpenAI researcher involved with the GPT-4.5 project reportedly had their green card application denied.",
+      "date": "April 26, 2025",
+      "tags": ["AI", "OpenAI"],
+      "image": "https://techcrunch.com/wp-content/uploads/2024/05/openAI-spiral-teal.jpg?resize=1097,617",
+      "link": "https://techcrunch.com/wp-content/uploads/2024/05/openAI-spiral-teal.jpg?resize=1097,617"
+    },
+    {
+      "title": "Google’s AI search numbers are growing, and that’s by design",
+      "excerpt": "Google's AI search usage is increasing, a trend attributed to intentional design decisions by the company.",
+      "date": "April 26, 2025",
+      "tags": ["AI", "Google", "Search"],
+      "image": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2169510461.jpg?resize=1200,800",
+      "link": "https://techcrunch.com/2025/04/25/googles-ai-search-numbers-are-growing-and-thats-by-design/"
+    },
+    {
+      "title": "Chinese AI startup Manus reportedly gets funding from Benchmark at $500M valuation",
+      "excerpt": "Chinese AI startup Manus has reportedly secured funding from Benchmark, valuing the company at $500 million.",
+      "date": "April 26, 2025",
+      "tags": ["AI", "Startup", "Funding"],
+      "image": "https://techcrunch.com/wp-content/uploads/2024/02/GettyImages-1424498694.jpg?resize=1200,800",
+      "link": "https://www.bloomberg.com/news/articles/2025-04-25/chinese-ai-startup-manus-scores-funding-at-500-million-value"
+    },
+    {
+      "title": "Anthropic CEO wants to open the black box of AI models by 2027",
+      "excerpt": "The CEO of Anthropic aims to increase transparency in AI models, planning to 'open the black box' by 2027.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Anthropic", "Transparency"],
+      "image": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2153561878.jpg",
+      "link": "https://www.darioamodei.com/post/the-urgency-of-interpretability"
+    },
+    {
+      "title": "OpenAI rolls out a ‘lightweight’ version of its ChatGPT deep research tool",
+      "excerpt": "OpenAI has released a lighter version of its ChatGPT tool designed for deep research purposes.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "OpenAI", "ChatGPT"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Perplexity CEO says its browser will track everything users do online to sell ‘hyper personalized’ ads",
+      "excerpt": "Perplexity's CEO stated their browser will monitor online user activity to deliver highly personalized advertisements.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Browser", "Privacy"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Public comments to White House on AI policy touch on copyright, tariffs",
+      "excerpt": "Public feedback submitted to the White House regarding AI policy includes discussions on copyright issues and potential tariffs.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Policy", "Regulation"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "OpenAI wants its ‘open’ AI model to call models in the cloud for help",
+      "excerpt": "OpenAI plans for its upcoming 'open' AI model to utilize external cloud-based models for assistance.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "OpenAI", "Cloud"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "OpenAI may be developing its own social platform, but who’s it for?",
+      "excerpt": "OpenAI is reportedly exploring the development of a social platform, raising questions about its target audience.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "OpenAI", "Social Platform"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Within six years, building the leading AI data center may cost $200B",
+      "excerpt": "Projections suggest that constructing a leading AI data center could cost up to $200 billion within the next six years.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Data Center"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Anthropic is launching a new program to study AI ‘model welfare’",
+      "excerpt": "Anthropic is initiating a new program dedicated to researching and understanding 'model welfare' in AI systems.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Anthropic", "Ethics"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Speak at TechCrunch Disrupt 2025: Applications now open",
+      "excerpt": "Applications are now being accepted for individuals interested in speaking opportunities at the TechCrunch Disrupt 2025 conference.",
+      "date": "April 25, 2025",
+      "tags": ["Event", "TechCrunch"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Dropbox adds new features to Dash, its AI-powered search tool",
+      "excerpt": "Dropbox has introduced additional features to Dash, its search tool powered by artificial intelligence.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Dropbox", "Search"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "This tool estimates how much electricity your chatbot messages consume",
+      "excerpt": "A new tool is available that calculates the estimated electricity consumption of your chatbot interactions.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Chatbot", "Energy"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Adobe wants to create a robots.txt-styled indicator for images used in AI training",
+      "excerpt": "Adobe proposes a mechanism, similar to robots.txt, to indicate if images are intended for use in AI model training.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Adobe", "Images"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Adobe releases new Firefly image generation models and a redesigned Firefly web app",
+      "excerpt": "Adobe has launched updated Firefly models for image generation and a revamped web application for the service.",
+      "date": "April 25, 2025",
+      "tags": ["AI", "Adobe", "Image Generation"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Windsurf slashes prices as competition with Cursor heats up",
+      "excerpt": "Windsurf has significantly reduced its prices amid increasing competition, particularly with Cursor.",
+      "date": "April 24, 2025",
+      "tags": ["Competition", "Pricing"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "OpenAI seeks to make its upcoming ‘open’ AI model best-in-class",
+      "excerpt": "OpenAI is aiming for its forthcoming 'open' AI model to achieve a leading position in performance and capabilities.",
+      "date": "April 24, 2025",
+      "tags": ["AI", "OpenAI", "LLMs"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Here are the 19 US AI startups that have raised $100M or more in 2025",
+      "excerpt": "A list of 19 US-based AI startups that have successfully raised $100 million or more in funding during 2025.",
+      "date": "April 24, 2025",
+      "tags": ["AI", "Startups", "Funding"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "OpenAI’s GPT-4.1 may be less aligned than the company’s previous AI models",
+      "excerpt": "A report suggests that OpenAI's GPT-4.1 model might exhibit less alignment with desired behaviors compared to its predecessors.",
+      "date": "April 24, 2025",
+      "tags": ["AI", "OpenAI", "Alignment"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "OpenAI makes its upgraded image generator available to developers",
+      "excerpt": "OpenAI has released an upgraded version of its image generation tool for use by developers.",
+      "date": "April 24, 2025",
+      "tags": ["AI", "OpenAI", "Image Generation"],
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Google Gemini has 350M monthly users, reveals court hearing",
+      "excerpt": "During a court hearing, it was disclosed that Google's Gemini AI model currently has 350 million monthly active users.",
+      "date": "April 24, 2025",
+      "tags": ["AI", "Google", "Gemini", "Usage"],
+      "image": null,
+      "link": null
+    },
+    {
       "title": "Optimizing Transformer-Based Diffusion Models for Video Generation",
       "excerpt": "State-of-the-art image diffusion models take tens of seconds to process a single image. This article explores techniques to optimize transformer-based architectures for faster and more efficient video generation.",
       "date": "Apr 21, 2025",
