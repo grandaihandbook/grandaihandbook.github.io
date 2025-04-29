@@ -9,7 +9,7 @@
   
   <div class="attribution-notice">
     <div class="attribution-content">
-      <p>Our AI News section delivers in-depth coverage and thoughtful analysis of the latest advancements in artificial intelligence. Curated to highlight emerging technologies, key research breakthroughs, industry trends, and real-world applications, each article provides valuable insights into how AI is shaping the future across domains. Stay informed with the evolving landscape of AI innovation and discovery.</p>
+      <p>Our AI News section delivers in depth coverage and thoughtful analysis of the latest advancements in artificial intelligence. Curated to highlight emerging technologies, key research breakthroughs, industry trends, and real-world applications, each article provides valuable insights into how AI is shaping the future across domains. Stay informed with the evolving landscape of AI innovation and discovery.</p>
     </div>
   </div>
   
