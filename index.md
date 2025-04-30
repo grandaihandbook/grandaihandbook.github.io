@@ -4,6 +4,7 @@ title: Home
 hide_title: true
 ---
 
+<link rel="stylesheet" href="/assets/css/handbooks/handbooks.css">
 <section class="hero">
   <!-- Mouse trail container for interactive effect -->
   <div id="mouse-trail-container"></div>
@@ -335,121 +336,92 @@ hide_title: true
 </section>
 
 <div class="container mx-auto px-4">
-  <!-- FEATURES SECTION -->
-  <section class="features-container mb-20">
-    <div class="features-title text-center mb-12">
-      <h2 class="text-3xl font-bold">HUMANITY'S <span class="gradient-word">GREATEST TECHNOLOGICAL</span> LEAP</h2>
-      <p class="max-w-3xl mx-auto mt-4">Where science meets philosophy. Where mathematics shapes reality. Where code becomes consciousness.</p>
+  <section class="features-section">
+    <div class="features-header">
+      <h2 class="features-heading">HUMANITY'S <span class="gradient-word">GREATEST TECHNOLOGICAL</span> LEAP</h2>
     </div>
     
-    <!-- Forced horizontal layout with equal heights -->
-    <div class="flex overflow-x-auto pb-6" style="min-width: 100%; scrollbar-width: none;">
+    <div class="features-container">
       <!-- Feature Card 1 -->
-      <div class="feature-card flex-shrink-0 flex flex-col" style="width: 24%; margin-right: 1.33%; height: 400px;">
-        <div class="feature-header">
-          <div class="feature-icon">
-            <span role="img" aria-label="Brain" style="font-size: 24px;">🧠</span>
-          </div>
-          <h3>Mastering AI Fundamentals</h3>
-        </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3 class="feature-title">In-Depth Notebooks</h3>
         <div class="feature-divider"></div>
-        <div class="feature-content flex-grow">
-          <ul class="feature-list">
-            <li class="feature-item">Domain-specific handbooks with progressive learning paths</li>
-            <li class="feature-item">Intuitive explanations of complex algorithms</li>
-            <li class="feature-item">Interactive visualizations of key concepts</li>
-            <li class="feature-item">Practical implementations with annotated code samples</li>
-          </ul>
-        </div>
       </div>
       
       <!-- Feature Card 2 -->
-      <div class="feature-card flex-shrink-0 flex flex-col" style="width: 24%; margin-right: 1.33%; height: 400px;">
-        <div class="feature-header">
-          <div class="feature-icon">
-            <span role="img" aria-label="Microscope" style="font-size: 24px;">🔬</span>
-          </div>
-          <h3>Research & Innovation</h3>
-        </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔬</div>
+        <h3 class="feature-title">Research & Innovation</h3>
         <div class="feature-divider"></div>
-        <div class="feature-content flex-grow">
-          <ul class="feature-list">
-            <li class="feature-item">Expert analyses of breakthrough research papers</li>
-            <li class="feature-item">Technical concepts translated into accessible insights</li>
-            <li class="feature-item">Comparative evaluations of emerging techniques</li>
-            <li class="feature-item">Future directions and research opportunities</li>
-          </ul>
-        </div>
       </div>
       
       <!-- Feature Card 3 -->
-      <div class="feature-card flex-shrink-0 flex flex-col" style="width: 24%; margin-right: 1.33%; height: 400px;">
-        <div class="feature-header">
-          <div class="feature-icon">
-            <span role="img" aria-label="Rocket" style="font-size: 24px;">🚀</span>
-          </div>
-          <h3>Career Development</h3>
-        </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3 class="feature-title">Career Development</h3>
         <div class="feature-divider"></div>
-        <div class="feature-content flex-grow">
-          <ul class="feature-list">
-            <li class="feature-item">Comprehensive roadmaps for AI specializations</li>
-            <li class="feature-item">Strategic skill acquisition frameworks</li>
-            <li class="feature-item">Curated learning resources for each career stage</li>
-            <li class="feature-item">Industry-relevant project recommendations</li>
-          </ul>
-        </div>
       </div>
       
       <!-- Feature Card 4 -->
-      <div class="feature-card flex-shrink-0 flex flex-col" style="width: 24%; height: 400px;">
-        <div class="feature-header">
-          <div class="feature-icon">
-            <span role="img" aria-label="Gear" style="font-size: 24px;">⚙️</span>
-          </div>
-          <h3>Practical Resources</h3>
-        </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚙️</div>
+        <h3 class="feature-title">Practical Resources</h3>
         <div class="feature-divider"></div>
-        <div class="feature-content flex-grow">
-          <ul class="feature-list">
-            <li class="feature-item">Advanced tutorials for all experience levels</li>
-            <li class="feature-item">Critical evaluations of AI tools and frameworks</li>
-            <li class="feature-item">Specialized datasets with preparation guides</li>
-            <li class="feature-item">Best practices for production AI systems</li>
-          </ul>
-        </div>
       </div>
     </div>
     
-    <div class="blockquote-container">
-  <blockquote class="centered">
-    "Bridging the gap between theoretical concepts and practical applications in artificial intelligence."
-  </blockquote>
-</div>
+    <!-- Premium Quote Section -->
+    <div class="quote-container">
+      <div class="quote-content">
+        <div class="quote-decoration left"></div>
+        <div class="quote-decoration right"></div>
+        <p class="quote-text">
+          <span class="quote-mark-open">"</span>
+          One place to learn AI the way it was meant to be understood — cutting through the noise with clarity, depth, and real understanding. One handbook. <br> All of AI.
+          <span class="quote-mark-close">"</span>
+        </p>
+      </div>
+    </div>
   </section>
 </div>
   
-  <!-- HANDBOOKS SECTION -->
-  <section class="mb-20">
+<!-- HANDBOOKS SECTION -->
+<section class="mb-20 container mx-auto px-4">
   <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold">Featured <span class="gradient-word">Handbooks</span></h2>
+    <h2 class="text-3xl font-bold text-gray-900">Featured <span class="gradient-word">Handbooks</span></h2>
+    <div class=""></div>
   </div>
   
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
     {% for handbook in site.data.navigation.handbooks limit:4 %}
-      <a href="{{ handbook.url | relative_url }}" class="handbook-card">
-        <!-- Optional category badge -->
-        <div class="category-badge">{{ handbook.category | default: "Handbook" }}</div>
-        
-        <!-- Image container with floating icon on hover -->
+      <div class="handbook-card">
         <div class="card-image {% if handbook.title == 'Generative AI' %}generative-ai{% elsif handbook.title == 'Foundation Models' %}foundation-models{% elsif handbook.title == 'Computer Vision' %}computer-vision{% elsif handbook.title == 'Reinforcement Learning' %}reinforcement-learning{% else %}default{% endif %}">
-          
+          <div class="category-badge">{{ handbook.category | default: "Handbook" }}</div>
         </div>
-        
-        <div class="card-content">
-          
-          <h3 class="text-xl font-semibold mb-2">{{ handbook.title }}</h3>
-          <p>
+        <div class="handbook-card-content">
+          <h3 class="handbook-title">{{ handbook.title }}</h3>
+          <div class="handbook-tags">
+            {% case handbook.title %}
+              {% when "Generative AI" %}
+                <span class="handbook-tag">Transformers</span>
+                <span class="handbook-tag">Diffusion</span>
+                <span class="handbook-tag">GANs</span>
+              {% when "Foundation Models" %}
+                <span class="handbook-tag">Transfer Learning</span>
+                <span class="handbook-tag">Fine-tuning</span>
+                <span class="handbook-tag">Scaling Laws</span>
+              {% when "Computer Vision" %}
+                <span class="handbook-tag">CNNs</span>
+                <span class="handbook-tag">ViT</span>
+                <span class="handbook-tag">YOLO</span>
+              {% when "Reinforcement Learning" %}
+                <span class="handbook-tag">DQN</span>
+                <span class="handbook-tag">PPO</span>
+                <span class="handbook-tag">SAC</span>
+            {% endcase %}
+          </div>
+          <p class="handbook-description">
             {% case handbook.title %}
               {% when "Generative AI" %}
                 Master transformer-based language and vision models, multimodal systems, and advanced optimization for next-generation AI.
@@ -461,367 +433,361 @@ hide_title: true
                 Understand policy optimization, multi-agent systems, and decision-making under uncertainty.
             {% endcase %}
           </p>
-          
-          <!-- Optional read more indicator -->
-          <div class="read-more">
-            Explore handbook
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
+          <div class="button-container">
+            <a href="{{ handbook.url | relative_url }}" class="handbook-read-more">
+              Explore Handbook
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
           </div>
         </div>
-      </a>
+      </div>
     {% endfor %}
   </div>
   
   <div class="text-center mt-10">
-    <a href="{{ '/content/handbooks/' | relative_url }}" class="btn btn-primary">View All Handbooks</a>
+    <a href="{{ '/content/handbooks/' | relative_url }}" class="btn btn-primary">
+      <span>View All Handbooks</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+    </a>
   </div>
 </section>
-  <!-- ECOSYSTEM SECTION -->
-<section class="mb-20">
+
+<!-- ECOSYSTEM SECTION -->
+<section class="mb-20 container mx-auto px-4">
   <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold">AI <span class="gradient-word">Ecosystem</span></h2>
-  </div>
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <a href="{{ '/content/ecosystem/models/' | relative_url }}" class="handbook-card">
-      <!-- Optional category badge -->
-      <div class="category-badge">Ecosystem</div>
-  <!-- Image container with floating icon on hover -->
-  <div class="card-image models">
-    
+    <h2 class="text-3xl font-bold text-gray-900">AI <span class="gradient-word">Ecosystem</span></h2>
+    <div class=""></div>
   </div>
   
-  <div class="card-content">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Ecosystem Card 1: Models -->
+    <div class="handbook-card">
+      <div class="card-image models">
+        <div class="category-badge">Ecosystem</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Models</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">State-of-the-art</span>
+          <span class="handbook-tag">Benchmarks</span>
+          <span class="handbook-tag">Implementation</span>
+        </div>
+        <p class="handbook-description">
+          Comprehensive directory of state-of-the-art AI models across domains, with performance benchmarks and implementation guides.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/content/ecosystem/models/' | relative_url }}" class="handbook-read-more">
+            Explore Models
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
     
-    <h3 class="text-xl font-semibold mb-2">Models</h3>
-    <p>
-      Comprehensive directory of state-of-the-art AI models across domains, with performance benchmarks and implementation guides.
-    </p>
+    <!-- Ecosystem Card 2: Tools -->
+    <div class="handbook-card">
+      <div class="card-image tools">
+        <div class="category-badge">Ecosystem</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Tools</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Frameworks</span>
+          <span class="handbook-tag">Development</span>
+          <span class="handbook-tag">Libraries</span>
+        </div>
+        <p class="handbook-description">
+          Curated collection of essential AI software, frameworks, and development environments with practical implementation guidance.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/content/ecosystem/tools/' | relative_url }}" class="handbook-read-more">
+            Explore Tools
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
     
-    <!-- Optional read more indicator -->
-    <div class="read-more">
-      Explore models
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
+    <!-- Ecosystem Card 3: Benchmarks -->
+    <div class="handbook-card">
+      <div class="card-image benchmarks">
+        <div class="category-badge">Ecosystem</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Benchmarks</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Performance</span>
+          <span class="handbook-tag">Evaluation</span>
+          <span class="handbook-tag">Analysis</span>
+        </div>
+        <p class="handbook-description">
+          In-depth analysis of standardized performance metrics and evaluation frameworks for comparing AI system capabilities.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/ecosystem/benchmarks/' | relative_url }}" class="handbook-read-more">
+            Explore Benchmarks
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Ecosystem Card 4: Competitions -->
+    <div class="handbook-card">
+      <div class="card-image competitions">
+        <div class="category-badge">Ecosystem</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Competitions</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Challenges</span>
+          <span class="handbook-tag">Contests</span>
+          <span class="handbook-tag">Collaboration</span>
+        </div>
+        <p class="handbook-description">
+          Guide to major AI challenges, contests, and collaborative opportunities for developing and testing cutting-edge solutions.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/ecosystem/competitions/' | relative_url }}" class="handbook-read-more">
+            Explore Competitions
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-</a>
-
-<a href="{{ '/content/ecosystem/tools/' | relative_url }}" class="handbook-card">
-  <!-- Optional category badge -->
-  <div class="category-badge">Ecosystem</div>
   
-  <!-- Image container with floating icon on hover -->
-  <div class="card-image tools">
-    
-  </div>
-  
-  <div class="card-content">
-    
-    <h3 class="text-xl font-semibold mb-2">Tools</h3>
-    <p>
-      Curated collection of essential AI software, frameworks, and development environments with practical implementation guidance.
-    </p>
-    
-    <!-- Optional read more indicator -->
-    <div class="read-more">
-      Explore tools
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-    </div>
-  </div>
-</a>
-
-<a href="{{ '/ecosystem/benchmarks/' | relative_url }}" class="handbook-card">
-  <!-- Optional category badge -->
-  <div class="category-badge">Ecosystem</div>
-  
-  <!-- Image container with floating icon on hover -->
-  <div class="card-image benchmarks">
-    
-  </div>
-  
-  <div class="card-content">
-    
-    <h3 class="text-xl font-semibold mb-2">Benchmarks</h3>
-    <p>
-      In-depth analysis of standardized performance metrics and evaluation frameworks for comparing AI system capabilities.
-    </p>
-    
-    <!-- Optional read more indicator -->
-    <div class="read-more">
-      Explore benchmarks
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-    </div>
-  </div>
-</a>
-
-<a href="{{ '/ecosystem/competitions/' | relative_url }}" class="handbook-card">
-  <!-- Optional category badge -->
-  <div class="category-badge">Ecosystem</div>
-  
-  <!-- Image container with floating icon on hover -->
-  <div class="card-image competitions">
-    
-  </div>
-  
-  <div class="card-content">
-    
-    <h3 class="text-xl font-semibold mb-2">Competitions</h3>
-    <p>
-      Guide to major AI challenges, contests, and collaborative opportunities for developing and testing cutting-edge solutions.
-    </p>
-    
-    <!-- Optional read more indicator -->
-    <div class="read-more">
-      Explore competitions
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-    </div>
-  </div>
-</a>
-  </div>
   <div class="text-center mt-10">
-    <a href="{{ '/ecosystem/' | relative_url }}" class="btn btn-primary">Explore Ecosystem</a>
+    <a href="{{ '/ecosystem/' | relative_url }}" class="btn btn-primary">
+      <span>Explore Ecosystem</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+    </a>
   </div>
 </section>
 
-  <!-- RESEARCH SECTION -->
-  <section class="mb-20">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold">Research <span class="gradient-word">Insights</span></h2>
+<!-- RESEARCH SECTION -->
+<section class="mb-20 container mx-auto px-4">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold text-gray-900">Research <span class="gradient-word">Insights</span></h2>
+    <div class=""></div>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Research Card 1: Weekly Papers -->
+    <div class="handbook-card">
+      <div class="card-image weekly">
+        <div class="category-badge">Research</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Weekly Papers</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Latest Research</span>
+          <span class="handbook-tag">Summaries</span>
+          <span class="handbook-tag">Analysis</span>
+        </div>
+        <p class="handbook-description">
+          Curated selection of the most impactful AI research papers, updated every week with summaries and key insights.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/content/research/weekly-papers/' | relative_url }}" class="handbook-read-more">
+            View Weekly Updates
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
     </div>
     
-    <!-- <div class="banner mb-12">
-      <p class="text-center">Our research section features in-depth analyses of groundbreaking papers and emerging technologies that are shaping the future of artificial intelligence.</p>
-    </div> -->
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="{{ '/content/research/weekly-papers/' | relative_url }}" class="handbook-card">
-        <!-- Optional category badge -->
+    <!-- Research Card 2: AI News -->
+    <div class="handbook-card">
+      <div class="card-image trends">
         <div class="category-badge">Research</div>
-        
-        <!-- Image container with floating icon on hover -->
-        <div class="card-image weekly">
-          
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">AI News</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Trends</span>
+          <span class="handbook-tag">Breakthroughs</span>
+          <span class="handbook-tag">Updates</span>
         </div>
-        
-        <div class="card-content">
-          
-          <h3 class="text-xl font-semibold mb-2">Weekly Papers</h3>
-          <p>
-            Curated selection of the most impactful AI research papers, updated every week with summaries and key insights.
-          </p>
-          
-          <!-- Optional read more indicator -->
-          <div class="read-more">
-            View weekly updates
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </div>
-        </div>
-      </a>
-
-      <a href="{{ '/content/research/ai-trends/' | relative_url }}" class="handbook-card">
-        <!-- Optional category badge -->
-        <div class="category-badge">Research</div>
-
-        <!-- Image container with floating icon on hover -->
-        <div class="card-image trends">
-
-        </div>
-
-        <div class="card-content">
-
-          <h3 class="text-xl font-semibold mb-2">AI News</h3>
-          <p>
-            Explore emerging patterns and directions in AI research, highlighting breakthrough techniques and methodologies.
-          </p>
-
-          <!-- Optional read more indicator -->
-          <div class="read-more">
+        <p class="handbook-description">
+          Explore emerging patterns and directions in AI research, highlighting breakthrough techniques and methodologies.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/content/research/ai-trends/' | relative_url }}" class="handbook-read-more">
             Read News
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
         </div>
-      </a>
-
-      <a href="{{ '/research/open-challenges/' | relative_url }}" class="handbook-card">
-        <!-- Optional category badge -->
-        <div class="category-badge">Research</div>
-
-        <!-- Image container with floating icon on hover -->
-        <div class="card-image challenges">
-
-        </div>
-
-        <div class="card-content">
-
-          <h3 class="text-xl font-semibold mb-2">Open Challenges</h3>
-          <p>
-            Critical unsolved problems in AI research, offering opportunities for breakthrough contributions to the field.
-          </p>
-
-          <!-- Optional read more indicator -->
-          <div class="read-more">
-            Explore challenges
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </div>
-        </div>
-      </a>
-
-      <a href="{{ '/content/research/ai-pioneers/' | relative_url }}" class="handbook-card">
-        <!-- Optional category badge -->
-        <div class="category-badge">Research</div>
-
-        <!-- Image container with floating icon on hover -->
-        <div class="card-image spotlight">
-
-        </div>
-
-        <div class="card-content">
-
-          <h3 class="text-xl font-semibold mb-2">Pioneers of AI</h3>
-          <p>
-            In-depth profiles of leading AI researchers, their groundbreaking work, and contributions to the field.
-          </p>
-
-          <!-- Optional read more indicator -->
-          <div class="read-more">
-            Meet the authors
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </div>
-        </div>
-      </a>
+      </div>
     </div>
-
-    <div class="text-center mt-10">
-      <a href="{{ '/content/research/' | relative_url }}" class="btn btn-primary">Explore Research Section</a>
+    
+    <!-- Research Card 3: Open Challenges -->
+    <div class="handbook-card">
+      <div class="card-image challenges">
+        <div class="category-badge">Research</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Open Challenges</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Unsolved Problems</span>
+          <span class="handbook-tag">Research Gaps</span>
+          <span class="handbook-tag">Opportunities</span>
+        </div>
+        <p class="handbook-description">
+          Critical unsolved problems in AI research, offering opportunities for breakthrough contributions to the field.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/research/open-challenges/' | relative_url }}" class="handbook-read-more">
+            Explore Challenges
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
     </div>
-
-  </section>
-<!-- ROADMAPS SECTION -->
-<section class="mb-20">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold">AI Career <span class="gradient-word">Roadmaps</span></h2>
-  </div>
-  
-  <!-- Using the same grid layout as other sections -->
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- Machine Learning Engineer Card -->
-    <a href="{{ '/roadmaps/machine-learning-engineer' | relative_url }}" class="handbook-card">
-      <!-- Keeping the roadmap badge -->
-      <div class="category-badge">Roadmap</div>
-      
-      <!-- Image container -->
-      <div class="card-image ml-engineer"></div>
-      
-      <div class="card-content">
-        <h3 class="text-xl font-semibold mb-2">Machine Learning Engineer</h3>
-        <p>Strategic progression from fundamental programming skills to advanced MLOps and system deployment.</p>
-        
-        <div class="specialty-tags mt-4">
-          <span class="specialty-tag">Deep Learning</span>
-          <span class="specialty-tag">MLOps</span>
-          <span class="specialty-tag">Deployment</span>
+    
+    <!-- Research Card 4: Pioneers of AI -->
+    <div class="handbook-card">
+      <div class="card-image spotlight">
+        <div class="category-badge">Research</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Pioneers of AI</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Researchers</span>
+          <span class="handbook-tag">Contributions</span>
+          <span class="handbook-tag">Profiles</span>
         </div>
-        
-        <!-- Using the same read-more style as other sections -->
-        <div class="read-more">
-          View roadmap
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
+        <p class="handbook-description">
+          In-depth profiles of leading AI researchers, their groundbreaking work, and contributions to the field.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/content/research/ai-pioneers/' | relative_url }}" class="handbook-read-more">
+            Meet the Authors
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
         </div>
       </div>
-    </a>
-
-    <!-- Data Scientist Card -->
-    <a href="{{ '/roadmaps/data-scientist' | relative_url }}" class="handbook-card">
-      <div class="category-badge">Roadmap</div>
-      <div class="card-image data-scientist"></div>
-      <div class="card-content">
-        <h3 class="text-xl font-semibold mb-2">Data Scientist</h3>
-        <p>Comprehensive journey from statistics and SQL to advanced machine learning and causal inference.</p>
-
-        <div class="specialty-tags mt-4">
-          <span class="specialty-tag">Statistics</span>
-          <span class="specialty-tag">ML</span>
-          <span class="specialty-tag">Big Data</span>
-        </div>
-
-        <div class="read-more">
-          View roadmap
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </div>
-      </div>
-    </a>
-
-    <!-- AI Researcher Card -->
-    <a href="{{ '/roadmaps/ai-researcher' | relative_url }}" class="handbook-card">
-      <div class="category-badge">Roadmap</div>
-      <div class="card-image ai-researcher"></div>
-      <div class="card-content">
-        <h3 class="text-xl font-semibold mb-2">AI Researcher</h3>
-        <p>Structured path from mathematical foundations to publishing novel research and architecture design.</p>
-
-        <div class="specialty-tags mt-4">
-          <span class="specialty-tag">Math</span>
-          <span class="specialty-tag">Advanced ML</span>
-          <span class="specialty-tag">Research</span>
-        </div>
-
-        <div class="read-more">
-          View roadmap
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </div>
-      </div>
-    </a>
-
-    <!-- MLOps Engineer Card -->
-    <a href="{{ '/roadmaps/mlops-engineer' | relative_url }}" class="handbook-card">
-      <div class="category-badge">Roadmap</div>
-      <div class="card-image mlops-engineer"></div>
-      <div class="card-content">
-        <h3 class="text-xl font-semibold mb-2">MLOps Engineer</h3>
-        <p>Specialized journey from DevOps principles to machine learning pipelines and production-ready AI systems.</p>
-
-        <div class="specialty-tags mt-4">
-          <span class="specialty-tag">DevOps</span>
-          <span class="specialty-tag">Pipelines</span>
-          <span class="specialty-tag">Monitoring</span>
-        </div>
-
-        <div class="read-more">
-          View roadmap
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </div>
-      </div>
-    </a>
-
+    </div>
   </div>
   
   <div class="text-center mt-10">
-    <a href="{{ '/roadmaps/' | relative_url }}" class="btn btn-primary">Explore Roadmaps</a>
+    <a href="{{ '/content/research/' | relative_url }}" class="btn btn-primary">
+      <span>Explore Research Section</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ROADMAPS SECTION -->
+<section class="mb-20 container mx-auto px-4">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold text-gray-900">AI Career <span class="gradient-word">Roadmaps</span></h2>
+    <div class=""></div>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Roadmap Card 1: Machine Learning Engineer -->
+    <div class="handbook-card">
+      <div class="card-image ml-engineer">
+        <div class="category-badge">Roadmap</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Machine Learning Engineer</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Deep Learning</span>
+          <span class="handbook-tag">MLOps</span>
+          <span class="handbook-tag">Deployment</span>
+        </div>
+        <p class="handbook-description">
+          Strategic progression from fundamental programming skills to advanced MLOps and system deployment.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/roadmaps/machine-learning-engineer' | relative_url }}" class="handbook-read-more">
+            View Roadmap
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Roadmap Card 2: Data Scientist -->
+    <div class="handbook-card">
+      <div class="card-image data-scientist">
+        <div class="category-badge">Roadmap</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">Data Scientist</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Statistics</span>
+          <span class="handbook-tag">ML</span>
+          <span class="handbook-tag">Big Data</span>
+        </div>
+        <p class="handbook-description">
+          Comprehensive journey from statistics and SQL to advanced machine learning and causal inference.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/roadmaps/data-scientist' | relative_url }}" class="handbook-read-more">
+            View Roadmap
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Roadmap Card 3: AI Researcher -->
+    <div class="handbook-card">
+      <div class="card-image ai-researcher">
+        <div class="category-badge">Roadmap</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">AI Researcher</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">Math</span>
+          <span class="handbook-tag">Advanced ML</span>
+          <span class="handbook-tag">Research</span>
+        </div>
+        <p class="handbook-description">
+          Structured path from mathematical foundations to publishing novel research and architecture design.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/roadmaps/ai-researcher' | relative_url }}" class="handbook-read-more">
+            View Roadmap
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Roadmap Card 4: MLOps Engineer -->
+    <div class="handbook-card">
+      <div class="card-image mlops-engineer">
+        <div class="category-badge">Roadmap</div>
+      </div>
+      <div class="handbook-card-content">
+        <h3 class="handbook-title">MLOps Engineer</h3>
+        <div class="handbook-tags">
+          <span class="handbook-tag">DevOps</span>
+          <span class="handbook-tag">Pipelines</span>
+          <span class="handbook-tag">Monitoring</span>
+        </div>
+        <p class="handbook-description">
+          Specialized journey from DevOps principles to machine learning pipelines and production-ready AI systems.
+        </p>
+        <div class="button-container">
+          <a href="{{ '/roadmaps/mlops-engineer' | relative_url }}" class="handbook-read-more">
+            View Roadmap
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center mt-10">
+    <a href="{{ '/roadmaps/' | relative_url }}" class="btn btn-primary">
+      <span>Explore Roadmaps</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+    </a>
   </div>
 </section>
   <!-- COMMUNITY SECTION -->
