@@ -1,10 +1,11 @@
+<link rel="stylesheet" href="/assets/css/handbooks/features.css">
 <link rel="stylesheet" href="/assets/css/handbooks/handbooks.css">
 
 <div class="handbooks-container">
   <!-- Header Section -->
   <div class="handbooks-header">
     <h1>AI Handbooks</h1>
-    <div class="header-accent"></div>
+    <!-- <div class="header-accent"></div> -->
     <p class="description">Browse our collection of comprehensive AI handbooks covering various domains and technologies. Each handbook is designed to take you from fundamentals to advanced concepts with clear explanations, examples, and practical applications.</p>
   </div>
 
