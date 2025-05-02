@@ -1,341 +1,367 @@
-/**
- * Sidebar Navigation Functionality
- */
-
-// Track the currently active section
-let currentActiveSection = null;
-
-function toggleSection(sectionId) {
-  var content = document.getElementById(sectionId + "-content");
-  var chevron = document.getElementById(sectionId + "-chevron");
-
-  if (content) {
-    // Check if this is a top-level section (not a subsection)
-    var isTopLevelSection = !content.closest(".subsection");
-
-    // Only close other sections if this is a top-level section
-    if (isTopLevelSection) {
-      // Close all other top-level sections
-      var allTopLevelSections = document.querySelectorAll(
-        ".section > .section-content"
-      );
-      allTopLevelSections.forEach(function (section) {
-        if (
-          section.id !== sectionId + "-content" &&
-          !section.classList.contains("permanently-expanded")
-        ) {
-          section.classList.remove("expanded");
-          var secId = section.id.replace("-content", "");
-          var chev = document.getElementById(secId + "-chevron");
-          if (chev) {
-            chev.textContent = "▶";
-            chev.classList.remove("expanded");
-          }
-        }
-      });
-    }
-
-    // Toggle the current section
-    content.classList.toggle("expanded");
-
-    // Update the current active section
-    if (content.classList.contains("expanded")) {
-      currentActiveSection = sectionId;
-    } else if (currentActiveSection === sectionId) {
-      currentActiveSection = null;
-    }
-  }
-
-  if (chevron) {
-    chevron.textContent = content.classList.contains("expanded") ? "▼" : "▶";
-    chevron.classList.toggle("expanded");
-  }
-
-  // Save expanded sections state
-  saveExpandedSections();
-}
-
-// Check if a section is a parent of another section
-function isParentSection(potentialParentId, childId) {
-  const childContent = document.getElementById(childId + "-content");
-  if (!childContent) return false;
-
-  let parent = childContent.parentElement;
-  while (parent) {
-    if (parent.id === potentialParentId + "-content") {
-      return true;
-    }
-    parent = parent.parentElement;
-  }
-  return false;
-}
-
-function expandParentSection(link) {
-  let element = link;
-
-  // Traverse up to find all parent sections and expand them
-  while (element) {
-    const sectionContent = element.closest(".section-content");
-    if (sectionContent) {
-      sectionContent.classList.add("expanded");
-      const sectionId = sectionContent.id.replace("-content", "");
-      currentActiveSection = sectionId; // Update the current active section
-
-      const chevron = document.getElementById(sectionId + "-chevron");
-      if (chevron) {
-        chevron.textContent = "▼";
-        chevron.classList.add("expanded");
-      }
-
-      // Continue up the DOM tree to find parent sections
-      element = sectionContent.parentElement;
-    } else {
-      break;
-    }
-  }
-}
-
-function setActiveLinkByURL() {
-  var currentPath = window.location.pathname;
-  var navLinks = document.querySelectorAll(".nav-link");
-  var exactMatchFound = false;
-
-  // First try to find an exact match
-  navLinks.forEach(function (link) {
-    var linkPath = link.getAttribute("href");
-
-    if (linkPath === currentPath) {
-      link.classList.add("active");
-      exactMatchFound = true;
-      expandParentSection(link);
-    } else {
-      link.classList.remove("active");
-    }
-  });
-
-  // If no exact match, find a partial match
-  if (!exactMatchFound) {
-    navLinks.forEach(function (link) {
-      var linkPath = link.getAttribute("href");
-
-      if (linkPath !== "/" && currentPath.startsWith(linkPath)) {
-        link.classList.add("active");
-        expandParentSection(link);
-      }
-    });
-  }
-
-  // Save scroll position to localStorage
-  localStorage.setItem(
-    "sidebarScrollPosition",
-    document.getElementById("sidebar").scrollTop
-  );
-}
-
-// Implement sidebar persistence
-function restoreSidebarState() {
-  // Restore expanded sections from localStorage
-  const expandedSections = JSON.parse(
-    localStorage.getItem("expandedSections") || "[]"
-  );
-  expandedSections.forEach((sectionId) => {
-    const content = document.getElementById(sectionId + "-content");
-    const chevron = document.getElementById(sectionId + "-chevron");
-
-    if (content) {
-      content.classList.add("expanded");
-    }
-
-    if (chevron) {
-      chevron.textContent = "▼";
-      chevron.classList.add("expanded");
-    }
-  });
-
-  // Restore scroll position
-  const scrollPosition = localStorage.getItem("sidebarScrollPosition");
-  if (scrollPosition) {
-    document.getElementById("sidebar").scrollTop = parseInt(scrollPosition);
-  }
-
-  // Restore sidebar collapsed state
-  const isCollapsed = localStorage.getItem("sidebarCollapsed") === "true";
-  const sidebar = document.getElementById("sidebar");
-  const sidebarToggle =
-    document.getElementById("sidebar-toggle") ||
-    document.getElementById("sidebarCollapse");
-
-  if (isCollapsed && sidebar && sidebarToggle) {
-    sidebar.classList.add("collapsed");
-    document.body.classList.add("sidebar-collapsed");
-    updateToggleIcon(sidebarToggle, true);
-  }
-}
-
-// Save expanded sections to localStorage
-function saveExpandedSections() {
-  const expandedSections = [];
-  document.querySelectorAll(".section-content.expanded").forEach((section) => {
-    const sectionId = section.id.replace("-content", "");
-    expandedSections.push(sectionId);
-  });
-
-  localStorage.setItem("expandedSections", JSON.stringify(expandedSections));
-}
-
-// Update toggle icon based on sidebar state
-function updateToggleIcon(toggleButton, isCollapsed) {
-  if (isCollapsed) {
-    toggleButton.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="12" y1="5" x2="12" y2="19"></line>
-        <line x1="5" y1="12" x2="19" y2="12"></line>
-      </svg>
-    `;
-  } else {
-    toggleButton.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    `;
-  }
-}
-
+// Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  var sidebarToggle =
-    document.getElementById("sidebar-toggle") ||
-    document.getElementById("sidebarCollapse");
-  var mobileToggle = document.getElementById("mobile-toggle");
-  var sidebar = document.getElementById("sidebar");
-  var overlay = document.getElementById("sidebar-overlay");
+  // === MOBILE MENU TOGGLE FUNCTIONALITY ===
+  const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+  const topNavMain = document.getElementById("top-nav-main");
 
-  // Set up click handlers for navigation links
-  var navLinks = document.querySelectorAll(".nav-link");
-  navLinks.forEach(function (link) {
-    link.addEventListener("click", function (e) {
-      // Remove active class from all links
-      navLinks.forEach(function (innerLink) {
-        innerLink.classList.remove("active");
-      });
+  function checkMenuState() {
+    const menu = document.getElementById("menu-dropdown");
+    if (!menu) return;
 
-      // Add active class to clicked link
-      this.classList.add("active");
+    console.log("Menu element:", menu);
+    console.log("Menu display style:", window.getComputedStyle(menu).display);
+    console.log("Menu has active class:", menu.classList.contains("active"));
+    console.log("Menu visibility:", window.getComputedStyle(menu).visibility);
+    console.log("Menu z-index:", window.getComputedStyle(menu).zIndex);
+    console.log("Menu position:", window.getComputedStyle(menu).position);
+  }
 
-      // Expand parent sections
-      expandParentSection(this);
+  checkMenuState();
 
-      // Save the state
-      saveExpandedSections();
+  if (mobileMenuToggle && topNavMain) {
+    mobileMenuToggle.addEventListener("click", function () {
+      // Toggle the 'open' class on the main navigation menu
+      topNavMain.classList.toggle("open");
+      // Check if the menu is now open
+      const isExpanded = topNavMain.classList.contains("open");
+      // Update the aria-expanded attribute for accessibility
+      mobileMenuToggle.setAttribute(
+        "aria-expanded",
+        isExpanded ? "true" : "false"
+      );
+    });
+  }
+
+  // === SEARCH FUNCTIONALITY ===
+  const searchContainer = document.getElementById("search-container");
+  const searchInput = document.getElementById("search-input");
+  const searchButton = document.getElementById("search-button");
+  const searchOverlay = document.getElementById("search-overlay");
+  const searchOverlayInput = document.getElementById("search-overlay-input");
+  const searchOverlayClose = document.getElementById("search-overlay-close");
+
+  if (
+    searchContainer &&
+    searchInput &&
+    searchButton &&
+    searchOverlay &&
+    searchOverlayInput &&
+    searchOverlayClose
+  ) {
+    // --- Top Nav Search Bar ---
+
+    // Expand inline search bar on click (if not already expanded)
+    searchContainer.addEventListener("click", function (e) {
+      if (!searchContainer.classList.contains("expanded")) {
+        searchContainer.classList.add("expanded");
+        searchInput.focus(); // Focus the input field
+        e.stopPropagation(); // Prevent the document click listener from closing it immediately
+      }
+    });
+
+    // Keep expanded state when input is focused
+    searchInput.addEventListener("focus", function () {
+      if (!searchContainer.classList.contains("expanded")) {
+        searchContainer.classList.add("expanded");
+      }
+    });
+
+    // Close inline search bar when clicking outside
+    document.addEventListener("click", function (e) {
+      // Check if the click target is outside the search container
+      if (!searchContainer.contains(e.target)) {
+        searchContainer.classList.remove("expanded");
+      }
+    });
+
+    // Prevent closing when clicking inside the search input itself
+    searchInput.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+
+    // --- Search Overlay ---
+
+    // Open overlay search when the search button is clicked *while* the inline bar is expanded
+    // Or on mobile where the button is always visible for search
+    searchButton.addEventListener("click", function (e) {
+      // Check screen width or if the inline container is meant to expand (desktop behavior)
+      if (
+        window.innerWidth <= 1024 ||
+        searchContainer.classList.contains("expanded")
+      ) {
+        // On smaller screens OR if the inline search is expanded, clicking the button opens the overlay
+        e.preventDefault(); // Prevent default button action (like form submission if it were type="submit")
+        searchOverlay.classList.add("open");
+        searchOverlayInput.value = searchInput.value; // Copy value from inline input
+        searchOverlayInput.focus(); // Focus the overlay input
+        searchButton.setAttribute("aria-expanded", "true"); // Indicate overlay is open
+        searchContainer.classList.remove("expanded"); // Close inline search if open
+      }
+      // On larger screens, if the inline search isn't expanded yet, the first click on the container handles expansion.
+      // If it *is* expanded, this listener will open the overlay as per the condition above.
+    });
+
+    // Close overlay search using the close button
+    searchOverlayClose.addEventListener("click", function () {
+      searchOverlay.classList.remove("open");
+      searchButton.setAttribute("aria-expanded", "false");
+    });
+
+    // Close overlay search with the ESC key
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && searchOverlay.classList.contains("open")) {
+        searchOverlay.classList.remove("open");
+        searchButton.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  // === MEGA DROPDOWN FUNCTIONALITY ===
+  const dropdownItems = document.querySelectorAll(".has-dropdown");
+  let activeDropdown = null; // Track the currently open dropdown
+  let closeTimer = null; // Timer for delayed closing on mouseleave
+
+  // Function to open a specific dropdown menu
+  function openDropdown(item) {
+    // Close any other currently open dropdown first
+    if (activeDropdown && activeDropdown !== item) {
+      closeDropdown(activeDropdown);
+    }
+
+    // Open the target dropdown
+    item.classList.add("active");
+    const navLink = item.querySelector(".nav-link");
+    if (navLink) {
+      navLink.setAttribute("aria-expanded", "true"); // Set accessibility attribute
+    }
+    activeDropdown = item; // Set this as the currently active dropdown
+  }
+
+  // Function to close a specific dropdown menu
+  function closeDropdown(item) {
+    item.classList.remove("active");
+    const navLink = item.querySelector(".nav-link");
+    if (navLink) {
+      navLink.setAttribute("aria-expanded", "false"); // Reset accessibility attribute
+    }
+    if (activeDropdown === item) {
+      activeDropdown = null; // Clear the active dropdown tracker
+    }
+  }
+
+  // Add event listeners to each dropdown item
+  dropdownItems.forEach((item) => {
+    const navLink = item.querySelector(".nav-link");
+    const megaDropdown = item.querySelector(".mega-dropdown"); // Could be .dropdown-menu too, but mega handles both
+
+    if (!navLink || !megaDropdown) return; // Skip if essential elements are missing
+
+    let isOverNavItem = false;
+    let isOverDropdown = false;
+
+    // Function to check if mouse is over nav item or dropdown, and close if not
+    function checkAndCloseDropdown() {
+      // Only close if the mouse is neither over the nav item nor its dropdown
+      if (!isOverNavItem && !isOverDropdown) {
+        closeDropdown(item);
+      }
+    }
+
+    // --- Mouse Hover Logic (Desktop) ---
+    item.addEventListener("mouseenter", function () {
+      if (window.innerWidth > 1024) {
+        // Only apply hover logic on larger screens
+        isOverNavItem = true;
+        if (closeTimer) clearTimeout(closeTimer); // Cancel any pending close operation
+        openDropdown(item); // Open this dropdown
+      }
+    });
+
+    item.addEventListener("mouseleave", function () {
+      if (window.innerWidth > 1024) {
+        isOverNavItem = false;
+        // Set a short delay before checking if we should close
+        // This allows moving the mouse from the nav item to the dropdown without it closing
+        closeTimer = setTimeout(checkAndCloseDropdown, 150);
+      }
+    });
+
+    megaDropdown.addEventListener("mouseenter", function () {
+      if (window.innerWidth > 1024) {
+        isOverDropdown = true;
+        if (closeTimer) clearTimeout(closeTimer); // Cancel close timer if mouse enters dropdown
+      }
+    });
+
+    megaDropdown.addEventListener("mouseleave", function () {
+      if (window.innerWidth > 1024) {
+        isOverDropdown = false;
+        // Set delay before checking again
+        closeTimer = setTimeout(checkAndCloseDropdown, 150);
+      }
+    });
+
+    // --- Click Logic (Primarily for Mobile/Tablet, but adapted for Desktop) ---
+    navLink.addEventListener("click", function (e) {
+      // Check if it's a touch device or small screen where click is primary interaction
+      if (window.innerWidth <= 1024) {
+        e.preventDefault(); // Prevent navigation on mobile toggle
+        if (item.classList.contains("active")) {
+          closeDropdown(item);
+        } else {
+          openDropdown(item);
+        }
+      } else {
+        // On desktop, allow normal navigation *unless* the dropdown isn't open yet.
+        // If it's not open, prevent default and open it. If already open, allow link to navigate.
+        // This handles cases where user clicks quickly instead of hovering.
+        if (!item.classList.contains("active")) {
+          e.preventDefault();
+          openDropdown(item);
+        }
+        // If item *is* active (already open from hover or previous click), let the default link navigation proceed.
+      }
     });
   });
 
-  // Do NOT add click event listeners here - the inline onclick handlers need to work
-  // (We'll keep the original onclick="toggleSection('sectionId')" attributes in the HTML)
-
-  // Desktop sidebar toggle
-  if (sidebarToggle && sidebar) {
-    sidebarToggle.addEventListener("click", function () {
-      sidebar.classList.toggle("collapsed");
-      document.body.classList.toggle("sidebar-collapsed");
-
-      const isCollapsed = sidebar.classList.contains("collapsed");
-      localStorage.setItem("sidebarCollapsed", isCollapsed);
-
-      updateToggleIcon(sidebarToggle, isCollapsed);
-    });
-  }
-
-  // Mobile sidebar toggle
-  if (mobileToggle && sidebar && overlay) {
-    mobileToggle.addEventListener("click", function () {
-      sidebar.classList.toggle("open");
-      overlay.classList.toggle("visible");
-    });
-  }
-
-  // Close sidebar when clicking overlay
-  if (overlay && sidebar) {
-    overlay.addEventListener("click", function () {
-      sidebar.classList.remove("open");
-      overlay.classList.remove("visible");
-    });
-  }
-
-  // Set active link based on URL
-  setActiveLinkByURL();
-
-  // Restore sidebar state from previous session
-  restoreSidebarState();
-
-  // Search functionality
-  var searchInput = document.querySelector(".search-input");
-  if (searchInput) {
-    searchInput.addEventListener("input", function (e) {
-      var searchTerm = e.target.value.toLowerCase();
-
-      if (searchTerm.length > 1) {
-        performSearch(searchTerm);
-      } else {
-        resetSearch();
-      }
-    });
-  }
-
-  // Save scroll position when user scrolls the sidebar
-  if (sidebar) {
-    sidebar.addEventListener("scroll", function () {
-      localStorage.setItem("sidebarScrollPosition", sidebar.scrollTop);
-    });
-  }
-});
-
-function performSearch(searchTerm) {
-  var navLinks = document.querySelectorAll(".nav-link");
-  var hasResults = false;
-
-  navLinks.forEach(function (link) {
-    var linkText = link.textContent.toLowerCase();
-    var sectionContent = link.closest(".section-content");
-
-    if (linkText.includes(searchTerm)) {
-      link.style.display = "block";
-      link.classList.add("search-result");
-      hasResults = true;
-
-      if (sectionContent) {
-        sectionContent.classList.add("expanded");
-
-        var sectionId = sectionContent.id.replace("-content", "");
-        var chevron = document.getElementById(sectionId + "-chevron");
-        if (chevron) {
-          chevron.textContent = "▼";
-          chevron.classList.add("expanded");
-        }
-
-        // Make sure parent sections are expanded too
-        expandParentSection(link);
-      }
-    } else {
-      link.style.display = "none";
-      link.classList.remove("search-result");
+  // Close dropdown when clicking outside of any dropdown item/menu
+  document.addEventListener("click", function (e) {
+    if (activeDropdown && !e.target.closest(".has-dropdown")) {
+      // Check if click is outside the active dropdown item/content
+      closeDropdown(activeDropdown);
     }
   });
 
-  if (!hasResults) {
-    console.log("No results found for: " + searchTerm);
-  }
-}
-
-function resetSearch() {
-  var navLinks = document.querySelectorAll(".nav-link");
-
-  navLinks.forEach(function (link) {
-    link.style.display = "block";
-    link.classList.remove("search-result");
+  // Close dropdown with the Escape key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && activeDropdown) {
+      const linkToFocus = activeDropdown.querySelector(".nav-link");
+      closeDropdown(activeDropdown);
+      if (linkToFocus) linkToFocus.focus(); // Return focus to the trigger link
+    }
   });
 
-  // Restore previous section state
-  restoreSidebarState();
-}
+  // Close any open dropdown on window resize if screen becomes small
+  window.addEventListener("resize", function () {
+    if (activeDropdown && window.innerWidth <= 1024) {
+      closeDropdown(activeDropdown);
+    }
+  });
+
+  // === DOTS MENU DROPDOWN CODE (REVISED & FIXED) ===
+  const menuToggle = document.getElementById("menu-dropdown-toggle");
+  if (menuToggle) {
+    menuToggle.addEventListener("click", function () {
+      // Check state after a slight delay to account for CSS transitions
+      setTimeout(checkMenuState, 100);
+    });
+  }
+  const menuContent = document.getElementById("menu-dropdown");
+
+  // --- DEBUG: Check if elements are selected ---
+  console.log("Dots Menu Toggle Button:", menuToggle);
+  console.log("Dots Menu Content Div:", menuContent);
+  // --- END DEBUG ---
+
+  if (menuToggle && menuContent) {
+    // Create a variable to track menu state
+    let isMenuOpen = false;
+
+    // Direct style manipulation (bypassing class toggling)
+    function toggleMenu() {
+      isMenuOpen = !isMenuOpen;
+
+      // Explicitly set style properties
+      if (isMenuOpen) {
+        menuContent.style.display = "block";
+        menuToggle.setAttribute("aria-expanded", "true");
+      } else {
+        menuContent.style.display = "none";
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+
+      console.log("Menu toggled - Now open:", isMenuOpen);
+    }
+
+    // Toggle menu on button click
+    menuToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (e) {
+      if (
+        isMenuOpen &&
+        !menuToggle.contains(e.target) &&
+        !menuContent.contains(e.target)
+      ) {
+        toggleMenu();
+      }
+    });
+
+    // Close menu with Escape key
+    document.addEventListener("keydown", function (e) {
+      if (isMenuOpen && e.key === "Escape") {
+        toggleMenu();
+        menuToggle.focus();
+      }
+    });
+
+    // Prevent clicks inside menu from closing it
+    menuContent.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  }
+  if (menuToggle && menuContent) {
+    // Create a variable to track menu state
+    let isMenuOpen = false;
+
+    // Direct style manipulation (bypassing class toggling)
+    function toggleMenu() {
+      isMenuOpen = !isMenuOpen;
+
+      // Explicitly set style properties
+      if (isMenuOpen) {
+        menuContent.style.display = "block";
+        menuToggle.setAttribute("aria-expanded", "true");
+      } else {
+        menuContent.style.display = "none";
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+
+      console.log("Menu toggled - Now open:", isMenuOpen);
+    }
+
+    // Toggle menu on button click
+    menuToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (e) {
+      if (
+        isMenuOpen &&
+        !menuToggle.contains(e.target) &&
+        !menuContent.contains(e.target)
+      ) {
+        toggleMenu();
+      }
+    });
+
+    // Close menu with Escape key
+    document.addEventListener("keydown", function (e) {
+      if (isMenuOpen && e.key === "Escape") {
+        toggleMenu();
+        menuToggle.focus();
+      }
+    });
+
+    // Prevent clicks inside menu from closing it
+    menuContent.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  }
+  // === END DOTS MENU DROPDOWN CODE ===
+}); // End of DOMContentLoaded
