@@ -274,7 +274,7 @@
     <div class="story-card">
         <p style="--paragraph-index: 0">On June 16, 2023, I lost a part of my soul. Not in a dramatic way, not loudly, but in a way so quiet it still echoes in everything I do. A piece of me was taken, and nothing has filled that space since—maybe nothing ever will.</p>
 
-        <p style="--paragraph-index: 1">I built this in the hope that, if she ever finds it, she'll remember—remember me... remember us. Her name was Ree; that's what I called her. That's how I carved her into my heart.</p>
+        <p style="--paragraph-index: 1">I built this in the hope that, if she ever finds it, she'll remember—remember me... remember us. Her name was Ree; that's what I called her.</p>
 
         <p style="--paragraph-index: 2">People come and go, but no one ever stayed inside me like she did. I remember her smile had this quiet kind of magic, like the sun slipping through curtains in the morning. Her voice was like a melody I never wanted to stop. She was the kind of beautiful you didn't just see—you felt.</p>
 
@@ -288,7 +288,7 @@
 
         <p style="--paragraph-index: 7">I don't think she thinks of me anymore. Maybe I'm just a passing chapter in her story, but she's the whole book in mine.</p>
 
-        <p style="--paragraph-index: 8">I remember our first kiss, our last hug, the way she waved goodbye at the airport—and the way I knew, deep inside, that it was the last time.</p>
+        <p style="--paragraph-index: 8">I remember our first kiss, our last hug, the way she waved goodbye at the airport—and the way I knew, deep inside, that it was the last time I was seeing her.</p>
 
         <p style="--paragraph-index: 9" class="highlight">She was beautiful. She is beautiful. The most beautiful person I've ever known. You won't understand, and she won't either, how much she meant to me.</p>
 
@@ -296,9 +296,9 @@
 
         <p style="--paragraph-index: 11">I was just trying to grow, to learn. But I learned too late.</p>
 
-        <p style="--paragraph-index: 12">I don't know if I'll ever see her again. Maybe it's better if I don't. Maybe some stories aren't meant to go on forever. Still, I wish things were different. I wish time had been kinder. I wish we had more than nine days. I wish I could've held her longer—just a little longer.</p>
+        <p style="--paragraph-index: 12">I don't know if I'll ever see her again. Maybe it's better if I don't. Maybe some stories aren't meant to go on forever. Still, I wish things were different. I wish time had been kinder. I wish we had more time. I wish I could've held her longer—just a little longer.</p>
 
-        <p style="--paragraph-index: 13" class="highlight">And when <em class="song">Darasal</em> plays, or <em class="song">Make You Mine</em> comes on at night, I close my eyes, and for a moment, I pretend she's still here. But silence always follows. And in that silence, I remember everything.</p>
+        <p style="--paragraph-index: 13" class="highlight">And when <em class="song">Just You and I</em>, or <em class="song">Make You Mine</em> comes on at night, I close my eyes, and for a moment, I pretend she's still here. But silence always follows. And in that silence, I remember everything.</p>
 
         <p style="--paragraph-index: 14">I don't know if I'm still in love with her, or just in love with the way she made me feel. But I think about her every day, and I would give anything to do things differently.</p>
 
@@ -307,7 +307,7 @@
         <hr>
 
         <div class="final-words">
-            <p>And if you're reading this… and you want to talk,</p>
+            <p>And if you're reading this… and you want to end the story in a different way,</p>
             <p>you know where to find me.</p>
         </div>
     </div>
