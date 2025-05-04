@@ -221,7 +221,7 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
             </video>
           </div>
           <div class="item-text">
-            <h3>Powering the next frontier of space innovation</h3>
+            <h3>Powering the next frontier of space innovation.</h3>
             </div>
         </div>
 
@@ -232,7 +232,7 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
             </video>
           </div>
           <div class="item-text">
-             <h3>Redefining the boundaries of art and creative expression</h3>
+             <h3>Redefining the boundaries of art and creative expression.</h3>
             </div>
         </div>
 
@@ -264,7 +264,17 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
             </video>
           </div>
           <div class="item-text">
-             <h3>Monitoring the health of coral reefs in a changing climate</h3>
+             <h3>Monitoring the health of coral reefs in a changing climate.</h3>
+            </div>
+        </div>
+        <div class="carousel-item" id="item6">
+          <div class="item-media">
+             <video loop muted playsinline> <source src="/assets/videos/main/6.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="item-text">
+             <h3>Enhancing the immersive experience of gaming in a rapidly evolving digital landscape.</h3>
             </div>
         </div>
 
@@ -281,6 +291,7 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
       <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
       <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
       <button class="indicator" data-slide="4" aria-label="Go to slide 5"></button>
+      <button class="indicator" data-slide="5" aria-label="Go to slide 6"></button>
     </div>
 
   </div> </section>
