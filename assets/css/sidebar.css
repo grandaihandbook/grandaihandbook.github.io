@@ -94,74 +94,47 @@ body {
   flex-shrink: 0;
   letter-spacing: -0.01em;
   position: relative;
+  background-image: linear-gradient(
+    90deg,
+    #0ea5e9,
+    #6366f1,
+    #8b5cf6,
+    #d946ef,
+    #ec4899,
+    #f97316,
+    #eab308
+  );
+  background-size: 200%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: var(--text-color);
+  transition: color 0.3s ease;
 }
 
 .site-title:hover {
-  animation: color-wave 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: wave-reveal 2.5s ease forwards;
 }
 
-@keyframes color-wave {
+@keyframes wave-reveal {
   0% {
+    background-position: -100%;
     color: var(--text-color);
   }
-  15% {
-    background: linear-gradient(
-      90deg,
-      #0ea5e9 -10%,
-      #6366f1 10%,
-      #8b5cf6 30%,
-      #d946ef 50%,
-      #ec4899 70%,
-      #f97316 90%,
-      #eab308 110%
-    );
-    background-size: 120% 100%;
-    background-position: -100% 0;
-    -webkit-background-clip: text;
-    background-clip: text;
+  10% {
     color: transparent;
   }
-  45% {
-    background: linear-gradient(
-      90deg,
-      #0ea5e9 -10%,
-      #6366f1 10%,
-      #8b5cf6 30%,
-      #d946ef 50%,
-      #ec4899 70%,
-      #f97316 90%,
-      #eab308 110%
-    );
-    background-size: 120% 100%;
-    background-position: 0% 0;
-    -webkit-background-clip: text;
-    background-clip: text;
+  50% {
+    background-position: 100%;
     color: transparent;
   }
-  75% {
-    background: linear-gradient(
-      90deg,
-      #0ea5e9 -10%,
-      #6366f1 10%,
-      #8b5cf6 30%,
-      #d946ef 50%,
-      #ec4899 70%,
-      #f97316 90%,
-      #eab308 110%
-    );
-    background-size: 120% 100%;
-    background-position: 100% 0;
-    -webkit-background-clip: text;
-    background-clip: text;
+  90% {
     color: transparent;
   }
   100% {
+    background-position: 200%;
     color: var(--text-color);
   }
-}
-
-.site-title:hover::after {
-  color: var(--text-color);
 }
 
 .top-nav-main {
@@ -674,46 +647,71 @@ body {
   font-weight: 500;
   font-size: 0.85rem;
   padding: 8px 16px;
-  border-radius: var(--border-radius-sm);
-  border: 1px solid var(--border-color);
   white-space: nowrap;
-  transition: background-color var(--transition-speed-fast),
-    border-color var(--transition-speed-fast),
-    color var(--transition-speed-fast), transform var(--transition-speed-fast),
-    box-shadow var(--transition-speed-fast);
   cursor: pointer;
   height: 40px;
+  position: relative;
+  z-index: 0;
+  border: none;
+  border-radius: 32px;
+  overflow: hidden;
+  transition: transform var(--transition-speed-fast),
+    box-shadow var(--transition-speed-fast);
 }
 
 .nav-link-button svg {
   width: 16px;
   height: 16px;
   fill: currentColor;
+  z-index: 2;
+  position: relative;
 }
 
 .nav-link-button.github-link {
-  color: var(--text-secondary);
-  background-color: var(--bg-color);
+  color: #fff;
+  background-color: #000;
 }
 
-.nav-link-button.github-link:hover,
-.nav-link-button.github-link:focus {
-  background-color: var(--bg-hover);
-  border-color: var(--text-secondary);
-  color: var(--text-color);
+.nav-link-button.github-link::after {
+  content: "";
+  background: linear-gradient(
+    33deg,
+    #000 15%,
+    #2daeb8 25%,
+    #4285f4 52%,
+    #000 82%
+  );
+  background-position: 100%;
+  background-size: 800%;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link-button.github-link:hover::after {
+  animation: gradient-button-flow 2s ease-in-out;
+  background-position: 100% 0;
+  opacity: 1;
+}
+
+.nav-link-button.github-link:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-sm);
-  outline: none;
 }
 
 .nav-link-button.github-link:active {
   transform: translateY(0);
   box-shadow: none;
-  background-color: #e8eaed;
 }
 
 .nav-link-button.github-link:focus-visible {
   box-shadow: 0 0 0 3px var(--focus-ring-color);
+  outline: none;
 }
 
 .github-icon {
@@ -721,6 +719,15 @@ body {
   height: 16px;
   vertical-align: middle;
   fill: currentColor;
+}
+
+@keyframes gradient-button-flow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
 }
 
 .search-overlay {
