@@ -5,77 +5,62 @@ hide_title: true
 ---
 
 <link rel="stylesheet" href="/assets/css/handbooks/handbooks.css">
-<section class="hero">
-  <!-- Mouse trail container for interactive effect -->
-  <div id="mouse-trail-container"></div>
-  
-  <!-- Ambient light effects -->
-  <div class="ambient-light light-1"></div>
-  <div class="ambient-light light-2"></div>
-  
-  <!-- Wave section transition at the bottom -->
-  <div class="wave-bottom">
-    <div class="wave-inner">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <!-- Base dark wave layer -->
-        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" class="shape-fill-1"></path>
-        
-        <!-- Middle blue accent wave -->
-        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" class="shape-fill-2"></path>
-        
-        <!-- Top cyan accent wave with glow -->
-        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill-3 shape-glow"></path>
-      </svg>
-    </div>
+<div class="markdown-content">
+  <section class="hero">
+  <!-- Main content on left -->
+  <div class="hero-content">
+    <h1 class="hero-title">AI is limitless. Are you?</h1>
+    <p class="hero-subtitle">
+      Finally understand AI the right way. This essential handbook replaces confusing jargon with remarkably clear explanations and genuinely deep insights, consolidating every key concept and critical layer into one straightforward guide focused squarely on practical understanding.
+    </p>
   </div>
   
-  <div class="hero-inner">
-    <!-- Enhanced Wave SVG path with more dynamic paths -->
-    <svg class="wave-path" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
-      <path class="wave-line" d="M0,400 C300,300 600,500 900,400 C1200,300 1440,450 1440,400" />
-      <path class="wave-line" d="M0,600 C200,500 600,700 900,600 C1200,500 1440,550 1440,600" />
-      <path class="wave-line" d="M0,200 C250,250 500,150 750,200 C1000,250 1440,150 1440,200" />
-      <path class="wave-line" d="M0,300 C150,350 300,250 450,300 C600,350 750,250 900,300 C1050,350 1200,250 1350,300 C1440,350 1440,300 1440,300" />
-      <!-- Additional waves with more dynamic paths -->
-      <path class="wave-line" d="M0,150 C150,100 300,200 450,150 C600,100 750,180 900,150 C1050,120 1200,170 1350,150 C1440,130 1440,150 1440,150" />
-      <path class="wave-line" d="M0,500 C150,550 300,450 450,500 C600,550 750,450 900,500 C1050,550 1200,450 1350,500 C1440,550 1440,500 1440,500" />
-      <path class="wave-line" d="M0,700 C300,650 600,750 900,700 C1200,650 1440,730 1440,700" />
-    </svg>
-    
-    <!-- Enhanced 3D Objects -->
-    <div class="object-3d circle-3d"></div>
-    <div class="object-3d torus-3d">
+  <!-- Enhanced shapes container with more elements -->
+  <div class="shapes-container">
+    <!-- Original 3D objects -->
+    <div class="circle-3d"></div>
+    <div class="torus-3d">
       <div class="torus-inner"></div>
     </div>
-    <div class="object-3d small-circle"></div>
-    <div class="object-3d dark-circle"></div>
-    <div class="object-3d dark-circle-2"></div>
-    
-    <!-- Enhanced 3D elements -->
-    <div class="object-3d blue-sphere"></div>
-    <div class="object-3d glow-circle"></div>
-    
-    <!-- Enhanced additional 3D elements -->
-    <div class="object-3d cube-3d"></div>
-    <div class="object-3d pyramid-3d"></div>
-    <div class="object-3d ring-3d"></div>
-    
-    <!-- New holographic prism -->
-    <div class="holographic-prism">
-      <div class="prism-side prism-side-1"></div>
-      <div class="prism-side prism-side-2"></div>
-      <div class="prism-side prism-side-3"></div>
-      <div class="prism-side prism-side-4"></div>
-      <div class="prism-side prism-side-5"></div>
-      <div class="prism-side prism-side-6"></div>
+    <div class="glow-circle"></div>
+    <div class="hexagon"></div>
+    <div class="prism">
+      <div class="prism-face"></div>
+      <div class="prism-face"></div>
+      <div class="prism-face"></div>
     </div>
+    <div class="cube"></div>
     
-    <!-- Neon light effects -->
-    <div class="neon-line neon-line-1"></div>
-    <div class="neon-line neon-line-2"></div>
-    <div class="neon-line neon-line-3"></div>
+    <!-- New 3D objects -->
+    <div class="pyramid"></div>
+    <div class="cylinder"></div>
+    <div class="ring"></div>
+    <div class="floating-cube"></div>
     
-    <!-- Enhanced floating dots with varied sizes -->
+    <!-- Connectors between shapes -->
+    <div class="connector connector-1"></div>
+    <div class="connector connector-2"></div>
+    <div class="connector connector-3"></div>
+    <div class="connector connector-4"></div>
+    
+    <!-- Glow orbs -->
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    
+    <!-- Particles -->
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+    <div class="particle particle-5"></div>
+    <div class="particle particle-6"></div>
+    <div class="particle particle-7"></div>
+    <div class="particle particle-8"></div>
+    <div class="particle particle-9"></div>
+    <div class="particle particle-10"></div>
+    
+    <!-- Original floating dots -->
     <div class="floating-dot dot-1"></div>
     <div class="floating-dot dot-2"></div>
     <div class="floating-dot dot-3"></div>
@@ -84,712 +69,349 @@ hide_title: true
     <div class="floating-dot dot-6"></div>
     <div class="floating-dot dot-7"></div>
     <div class="floating-dot dot-8"></div>
-    <div class="floating-dot dot-9"></div>
-    <div class="floating-dot dot-10"></div>
     
-    <!-- Enhanced colored shapes -->
-    <div class="colored-shape">
-      <div class="shape-element shape-red"></div>
-      <div class="shape-element shape-blue"></div>
-      <div class="shape-element shape-green"></div>
-    </div>
-    
-    <!-- Enhanced Hero content with animated text -->
-    <div class="hero-content">
-      <h1 class="hero-title hero-header">
-        <span>Artificial Intelligence</span> has no limits.<br>
-        Why should we?
-      </h1>
-      <p class="hero-text hero-paragraph">Traverse the full spectrum of machine intelligence — from algorithmic origins to the threshold of artificial consciousness.</p>
-      
-      <div class="hero-buttons">
-        <a href="{{ '/content/handbooks/' | relative_url }}" class="hero-hyperlink button-primary">View Handbooks</a>
-        <a href="/content/research/" class="hero-hyperlink button-primary">Explore Research</a>
-      </div>
-    </div>
+    <!-- Original neon lines -->
+    <div class="neon-line neon-line-1"></div>
+    <div class="neon-line neon-line-2"></div>
+    <div class="neon-line neon-line-3"></div>
+
+    <!-- Original pulse rings -->
+    <div class="pulse-ring"></div>
+    <div class="pulse-ring pulse-ring-2"></div>
+
+    <!-- New animated glow effect -->
+    <div class="glow-effect"></div>
+
   </div>
 </section>
+</div>
 <section class="timeline-section">
-  <div class="text-center" style="margin-bottom: 80px;">
-  <h2 class="text-3xl font-bold">AI MILESTONES: <span class="gradient-word">THE EVOLUTION OF</span> INTELLIGENCE</h2>
-</div>
-  <div class="timeline-container">
-  
-    <!-- Main timeline line -->
-    <div class="timeline-line">
-      <div class="timeline-progress"></div>
+  <div class="timeline-header">
+    <div class="timeline-titles">
+      <h2 class="timeline-title">AI MILESTONES</h2>
+      <div class="timeline-subtitle">
+Artificial Intelligence began in the 1950s with foundational theories and early computers like the Turing Test. The 1980s introduced expert systems and early machine learning for specialized tasks. The 2000s leveraged big data and neural networks, enabling advances in vision and language. Now, AI is driving toward Artificial General Intelligence, aiming to achieve human-like reasoning across diverse domains.</div>
     </div>
     
-    <!-- Era labels with hover info cards -->
-    <!-- <div class="era-label" style="top: 25%;">
-      Narrow Intelligence
-      <div class="era-info">
-        <div class="era-title">Artificial Narrow Intelligence (ANI)</div>
-        <div class="era-description">Specialized AI that excels at specific tasks, like image recognition or game-playing, but lacks general reasoning. Powers early AI breakthroughs.</div>
+    <div class="timeline-container">
+      <!-- Main timeline line -->
+      <div class="timeline-line">
+        <div class="timeline-progress"></div>
       </div>
-    </div>
-    <div class="era-label" style="top: 55%;">
-      General Intelligence
-      <div class="era-info">
-        <div class="era-title">Artificial General Intelligence (AGI)</div>
-        <div class="era-description">AI with human-like reasoning, capable of learning and solving diverse problems across domains, rivaling human intelligence.</div>
-      </div>
-    </div>
-    <div class="era-label" style="top: 85%;">
-      Super Intelligence
-      <div class="era-info">
-        <div class="era-title">Artificial Super Intelligence (ASI)</div>
-        <div class="era-description">AI surpassing human intelligence, with unparalleled problem-solving and creativity, potentially reshaping the future of humanity.</div>
-      </div>
-    </div> -->
-    
-    <!-- Milestone 1: 1950 - Turing Test (Left) -->
-    <div class="milestone left" id="milestone-1" style="top: 0%;">
-      <div class="milestone-dot dot-1950">
-        <div class="milestone-inner">
-          <span class="milestone-year">1950</span>
-          <span class="milestone-icon">🧪</span>
+      
+      <!-- Milestone 1: 1950 - Turing Test -->
+      <div class="milestone" id="milestone-1" style="left: 4%;">
+        <div class="milestone-dot dot-1950">
+          <div class="milestone-inner">
+            <span class="milestone-year">1950</span>
+          </div>
+        </div>
+        <div class="milestone-info">
+          <div class="milestone-title">Turing Test</div>
+          <div class="milestone-description">Alan Turing's "imitation game" tests if machines can mimic human intelligence, laying the philosophical foundation for AI research.</div>
         </div>
       </div>
-      <div class="milestone-info">
-        <div class="milestone-title">Turing Test</div>
-        <div class="milestone-description">Alan Turing's "imitation game" tests if machines can mimic human intelligence, laying the philosophical foundation for AI research.</div>
-      </div>
-    </div>
 
-    <!-- Milestone 2: 1956 - Dartmouth Conference (Right) -->
-    <div class="milestone right" id="milestone-2" style="top: 7.3%;">
-      <div class="milestone-dot dot-1956">
-        <div class="milestone-inner">
-          <span class="milestone-year">1956</span>
-          <span class="milestone-icon">⚙️</span>
+      <!-- Milestone 2: 1986 - Neural Networks Revival -->
+      <div class="milestone" id="milestone-2" style="left: 20%;">
+        <div class="milestone-dot dot-1986">
+          <div class="milestone-inner">
+            <span class="milestone-year">1986</span>
+          </div>
+        </div>
+        <div class="milestone-info">
+          <div class="milestone-title">Neural Networks Revival</div>
+          <div class="milestone-description">Backpropagation algorithms enable efficient neural network training, reviving a field that had been largely abandoned for decades.</div>
         </div>
       </div>
-      <div class="milestone-info">
-        <div class="milestone-title">Dartmouth Conference</div>
-        <div class="milestone-description">John McCarthy and others coin "Artificial Intelligence" at Dartmouth, marking AI's birth as a discipline focused on simulating learning.</div>
-      </div>
-    </div>
 
-    <!-- Milestone 3: 1958 - Perceptron (Left) -->
-    <div class="milestone left" id="milestone-3" style="top: 14.6%;">
-      <div class="milestone-dot dot-1958">
-        <div class="milestone-inner">
-          <span class="milestone-year">1958</span>
-          <span class="milestone-icon">🧠</span>
+      <!-- Milestone 3: 2012 - Deep Learning Revolution -->
+      <div class="milestone" id="milestone-3" style="left: 36%;">
+        <div class="milestone-dot dot-2012">
+          <div class="milestone-inner">
+            <span class="milestone-year">2012</span>
+          </div>
+        </div>
+        <div class="milestone-info">
+          <div class="milestone-title">Deep Learning Revolution</div>
+          <div class="milestone-description">AlexNet wins the ImageNet competition, demonstrating deep learning's power and kickstarting the modern AI boom.</div>
         </div>
       </div>
-      <div class="milestone-info">
-        <div class="milestone-title">Perceptron</div>
-        <div class="milestone-description">Frank Rosenblatt's Perceptron, a learning neural network, recognizes simple patterns, paving the way for modern deep learning.</div>
-      </div>
-    </div>
 
-    <!-- Milestone 4: 1986 - Backpropagation (Right) -->
-    <div class="milestone right" id="milestone-4" style="top: 21.9%;">
-      <div class="milestone-dot dot-1986">
-        <div class="milestone-inner">
-          <span class="milestone-year">1986</span>
-          <span class="milestone-icon">🔄</span>
+      <!-- Milestone 4: 2017 - Transformer Architecture -->
+      <div class="milestone" id="milestone-4" style="left: 52%;">
+        <div class="milestone-dot dot-2017">
+          <div class="milestone-inner">
+            <span class="milestone-year">2017</span>
+          </div>
+        </div>
+        <div class="milestone-info">
+          <div class="milestone-title">Transformer Architecture</div>
+          <div class="milestone-description">Google's attention-based Transformer architecture revolutionizes natural language processing, enabling models like BERT and GPT.</div>
         </div>
       </div>
-      <div class="milestone-info">
-        <div class="milestone-title">Backpropagation</div>
-        <div class="milestone-description">Rumelhart, Hinton, and Williams popularize backpropagation, enabling efficient neural network training and reviving interest in deep learning.</div>
-      </div>
-    </div>
 
-    <!-- Milestone 5: 2006 - Deep Learning Revolution (Left) -->
-    <div class="milestone left" id="milestone-5" style="top: 29.2%;">
-      <div class="milestone-dot dot-2006">
-        <div class="milestone-inner">
-          <span class="milestone-year">2006</span>
-          <span class="milestone-icon">🧮</span>
+      <!-- Milestone 5: 2022 - AI Goes Mainstream -->
+      <div class="milestone" id="milestone-5" style="left: 68%;">
+        <div class="milestone-dot dot-2022">
+          <div class="milestone-inner">
+            <span class="milestone-year">2022</span>
+          </div>
+        </div>
+        <div class="milestone-info">
+          <div class="milestone-title">AI Goes Mainstream</div>
+          <div class="milestone-description">ChatGPT and DALL-E bring powerful AI capabilities to millions of users, dramatically changing public perception of artificial intelligence.</div>
         </div>
       </div>
-      <div class="milestone-info">
-        <div class="milestone-title">Deep Learning Revolution</div>
-        <div class="milestone-description">Geoffrey Hinton's deep belief networks make training deep neural networks practical, sparking the deep learning boom.</div>
-      </div>
-    </div>
 
-    <!-- Milestone 6: 2012 - AlexNet (Right) -->
-    <div class="milestone right" id="milestone-6" style="top: 36.5%;">
-      <div class="milestone-dot dot-2012">
-        <div class="milestone-inner">
-          <span class="milestone-year">2012</span>
-          <span class="milestone-icon">🔍</span>
+      <!-- Milestone 6: 2030 - General Intelligence -->
+      <div class="milestone" id="milestone-6" style="left: 84%;">
+        <div class="milestone-dot dot-2030">
+          <div class="milestone-inner">
+            <span class="milestone-year">2030</span>
+          </div>
+        </div>
+        <div class="milestone-info">
+          <div class="milestone-title">General Intelligence</div>
+          <div class="milestone-description">AI systems achieve human-level intelligence across diverse domains, demonstrating flexible reasoning, common sense, and transferable knowledge.</div>
         </div>
       </div>
-      <div class="milestone-info">
-        <div class="milestone-title">AlexNet</div>
-        <div class="milestone-description">AlexNet, a GPU-accelerated deep neural network, wins ImageNet with a 15% error rate, boosting deep learning's popularity.</div>
-      </div>
-    </div>
 
-    <!-- Milestone 7: 2016 - AlphaGo (Left) -->
-    <div class="milestone left" id="milestone-7" style="top: 43.8%;">
-      <div class="milestone-dot dot-2016">
-        <div class="milestone-inner">
-          <span class="milestone-year">2016</span>
-          <span class="milestone-icon">🎮</span>
-        </div>
+      <!-- Current year marker -->
+      <div class="current-year-marker" id="current-year-marker" style="left: 80%;">
+        <div class="current-year-line"></div>
+        <div class="current-year-dot"></div>
+        <div class="current-year-label">YOU ARE HERE (2025)</div>
       </div>
-      <div class="milestone-info">
-        <div class="milestone-title">AlphaGo</div>
-        <div class="milestone-description">DeepMind's AlphaGo beats Go champion Lee Sedol using neural networks and reinforcement learning, showcasing strategic AI prowess.</div>
-      </div>
-    </div>
-
-    <!-- Milestone 8: 2017 - Transformer (Right) -->
-    <div class="milestone right" id="milestone-8" style="top: 51.1%;">
-      <div class="milestone-dot dot-2017">
-        <div class="milestone-inner">
-          <span class="milestone-year">2017</span>
-          <span class="milestone-icon">📜</span>
-        </div>
-      </div>
-      <div class="milestone-info">
-        <div class="milestone-title">Transformer Architecture</div>
-        <div class="milestone-description">Google's Transformer architecture, with self-attention, revolutionizes NLP, enabling models like BERT and GPT.</div>
-      </div>
-    </div>
-
-    <!-- Milestone 9: 2020 - AlphaFold (Left) -->
-    <div class="milestone left" id="milestone-9" style="top: 58.4%;">
-      <div class="milestone-dot dot-2020">
-        <div class="milestone-inner">
-          <span class="milestone-year">2020</span>
-          <span class="milestone-icon">🧬</span>
-        </div>
-      </div>
-      <div class="milestone-info">
-        <div class="milestone-title">AlphaFold</div>
-        <div class="milestone-description">DeepMind's AlphaFold solves protein folding with near-experimental accuracy, transforming biology and drug discovery.</div>
-      </div>
-    </div>
-
-    <!-- Milestone 10: 2021 - GPT-3 Applications (Right) -->
-    <div class="milestone right" id="milestone-10" style="top: 65.7%;">
-      <div class="milestone-dot dot-2021">
-        <div class="milestone-inner">
-          <span class="milestone-year">2021</span>
-          <span class="milestone-icon">💬</span>
-        </div>
-      </div>
-      <div class="milestone-info">
-        <div class="milestone-title">GPT-3 Applications</div>
-        <div class="milestone-description">OpenAI's 175-billion-parameter GPT-3 excels in text generation and code completion, powering tools like GitHub Copilot.</div>
-      </div>
-    </div>
-
-    <!-- Milestone 11: 2022 - ChatGPT & DALL-E 2 (Left) -->
-    <div class="milestone left" id="milestone-11" style="top: 73%;">
-      <div class="milestone-dot dot-2022">
-        <div class="milestone-inner">
-          <span class="milestone-year">2022</span>
-          <span class="milestone-icon">🤖</span>
-        </div>
-      </div>
-      <div class="milestone-info">
-        <div class="milestone-title">ChatGPT & DALL-E 2</div>
-        <div class="milestone-description">OpenAI's ChatGPT and DALL-E 2 bring conversational AI and text-to-image generation to millions, reshaping creativity.</div>
-      </div>
-    </div>
-
-    <!-- Milestone 12: 2024 - Reasoning Breakthroughs (Right) -->
-    <div class="milestone right" id="milestone-12" style="top: 80.3%;">
-      <div class="milestone-dot dot-2024">
-        <div class="milestone-inner">
-          <span class="milestone-year">2024</span>
-          <span class="milestone-icon">🧩</span>
-        </div>
-      </div>
-      <div class="milestone-info">
-        <div class="milestone-title">Reasoning Breakthroughs</div>
-        <div class="milestone-description">AI models achieve human-like reasoning in science, math, and logic, advancing beyond pattern recognition.</div>
-      </div>
-    </div>
-
-    <!-- Milestone 13: 2030 - Path to AGI (Left) -->
-    <div class="milestone left" id="milestone-13" style="top: 92%;">
-      <div class="milestone-dot dot-2030">
-        <div class="milestone-inner">
-          <span class="milestone-year">2030</span>
-          <span class="milestone-icon">🚀</span>
-        </div>
-      </div>
-      <div class="milestone-info">
-        <div class="milestone-title">Path to AGI</div>
-        <div class="milestone-description">Early AGI systems emerge, with flexible learning, common sense reasoning, and generalization across diverse domains.</div>
-      </div>
-    </div>
-
-    <!-- Current year marker -->
-    <div class="current-year-marker" id="current-year-marker" style="top: 88%;">
-      <div class="current-year-line"></div>
-      <div class="current-year-dot"></div>
-      <div class="current-year-label">YOU ARE HERE (2025)</div>
     </div>
 
   </div>
 </section>
+<!-- Features Carousel Section -->
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="chevron-left" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+  </symbol>
+</svg>
+<section class="features-carousel">
+  <div class="carousel-container">
+    <div class="carousel-header">
+      <div class="carousel-title-container">
+        <h2 class="carousel-title">AI is Unleashing Human Potential at Unprecedented Scale</h2>
+      </div>
+      <div class="carousel-subtitle-container">
+        <p class="carousel-subtitle">Transforming limitations into possibilities through revolutionary digital intelligence that amplifies creativity, accelerates discovery, and democratizes access to knowledge and tools once reserved for specialists.</p>
+      </div>
+    </div>
 
-<div class="container mx-auto px-4">
-  <section class="features-section">
-    <div class="features-header">
-      <h2 class="features-heading">HUMANITY'S <span class="gradient-word">GREATEST TECHNOLOGICAL</span> LEAP</h2>
-    </div>
-    
-    <div class="features-container">
-      <!-- Feature Card 1 -->
-      <div class="feature-card">
-        <div class="feature-icon">🧠</div>
-        <h3 class="feature-title">In-Depth Notebooks</h3>
-        <div class="feature-divider"></div>
-      </div>
-      
-      <!-- Feature Card 2 -->
-      <div class="feature-card">
-        <div class="feature-icon">🔬</div>
-        <h3 class="feature-title">Research & Innovation</h3>
-        <div class="feature-divider"></div>
-      </div>
-      
-      <!-- Feature Card 3 -->
-      <div class="feature-card">
-        <div class="feature-icon">🚀</div>
-        <h3 class="feature-title">Career Development</h3>
-        <div class="feature-divider"></div>
-      </div>
-      
-      <!-- Feature Card 4 -->
-      <div class="feature-card">
-        <div class="feature-icon">⚙️</div>
-        <h3 class="feature-title">Practical Resources</h3>
-        <div class="feature-divider"></div>
-      </div>
-    </div>
-    
-    <!-- Premium Quote Section -->
-    <div class="quote-container">
-      <div class="quote-content">
-        <div class="quote-decoration left"></div>
-        <div class="quote-decoration right"></div>
-        <p class="quote-text">
-          <span class="quote-mark-open">"</span>
-          One place to learn AI the way it was meant to be understood — cutting through the noise with clarity, depth, and real understanding. One handbook. <br> All of AI.
-          <span class="quote-mark-close">"</span>
-        </p>
-      </div>
-    </div>
-  </section>
-</div>
-  
-<!-- HANDBOOKS SECTION -->
-<section class="mb-20 container mx-auto px-4">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold text-gray-900">Featured <span class="gradient-word">Handbooks</span></h2>
-    <div class=""></div>
-  </div>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    {% for handbook in site.data.navigation.handbooks limit:4 %}
-      <div class="handbook-card">
-        <div class="card-image {% if handbook.title == 'Generative AI' %}generative-ai{% elsif handbook.title == 'Foundation Models' %}foundation-models{% elsif handbook.title == 'Computer Vision' %}computer-vision{% elsif handbook.title == 'Reinforcement Learning' %}reinforcement-learning{% else %}default{% endif %}">
-          <div class="category-badge">{{ handbook.category | default: "Handbook" }}</div>
-        </div>
-        <div class="handbook-card-content">
-          <h3 class="handbook-title">{{ handbook.title }}</h3>
-          <div class="handbook-tags">
-            {% case handbook.title %}
-              {% when "Generative AI" %}
-                <span class="handbook-tag">Transformers</span>
-                <span class="handbook-tag">Diffusion</span>
-                <span class="handbook-tag">GANs</span>
-              {% when "Foundation Models" %}
-                <span class="handbook-tag">Transfer Learning</span>
-                <span class="handbook-tag">Fine-tuning</span>
-                <span class="handbook-tag">Scaling Laws</span>
-              {% when "Computer Vision" %}
-                <span class="handbook-tag">CNNs</span>
-                <span class="handbook-tag">ViT</span>
-                <span class="handbook-tag">YOLO</span>
-              {% when "Reinforcement Learning" %}
-                <span class="handbook-tag">DQN</span>
-                <span class="handbook-tag">PPO</span>
-                <span class="handbook-tag">SAC</span>
-            {% endcase %}
+    <div class="carousel-items-wrapper">
+      <button class="carousel-nav prev-button" aria-label="Previous slide">
+         <svg role="presentation" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+            <use href="#chevron-left"></use>
+         </svg>
+      </button>
+
+      <div class="carousel-track" id="featuresCarousel">
+        <div class="carousel-item" id="item1"> <div class="item-media">
+            <video loop muted playsinline> <source src="/assets/videos/main/1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <p class="handbook-description">
-            {% case handbook.title %}
-              {% when "Generative AI" %}
-                Master transformer-based language and vision models, multimodal systems, and advanced optimization for next-generation AI.
-              {% when "Foundation Models" %}
-                Explore advanced language understanding, generation, and multimodal integration strategies.
-              {% when "Computer Vision" %}
-                Delve into neural architectures, object detection, segmentation, and visual reasoning systems.
-              {% when "Reinforcement Learning" %}
-                Understand policy optimization, multi-agent systems, and decision-making under uncertainty.
-            {% endcase %}
-          </p>
-          <div class="button-container">
-            <a href="{{ handbook.url | relative_url }}" class="handbook-read-more">
-              Explore Handbook
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <div class="item-text">
+            <h3>Powering the next frontier of space innovation</h3>
+            </div>
+        </div>
+
+       <div class="carousel-item" id="item2">
+          <div class="item-media">
+            <video loop muted playsinline> <source src="/assets/videos/main/2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="item-text">
+             <h3>Redefining the boundaries of art and creative expression</h3>
+            </div>
+        </div>
+
+        <div class="carousel-item" id="item3">
+          <div class="item-media">
+             <video loop muted playsinline> <source src="/assets/videos/main/3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="item-text">
+             <h3>Enabling safer, smarter autonomous vehicles.</h3>
+            </div>
+        </div>
+
+        <div class="carousel-item" id="item4">
+          <div class="item-media">
+             <video loop muted playsinline> <source src="/assets/videos/main/4.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="item-text">
+             <h3> Unlocking immersive worlds through augmented reality.</h3>
+            </div>
+        </div>
+        <div class="carousel-item" id="item5">
+          <div class="item-media">
+             <video loop muted playsinline> <source src="/assets/videos/main/5.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="item-text">
+             <h3>Monitoring the health of coral reefs in a changing climate</h3>
+            </div>
+        </div>
+
+
+
+      </div> <button class="carousel-nav next-button" aria-label="Next slide">
+         <svg role="presentation" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+             <use href="#chevron-right"></use>
+         </svg>
+      </button>
+    </div> <div class="carousel-indicators">
+      <button class="indicator" data-slide="0" aria-label="Go to slide 1"></button>
+      <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+      <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+      <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
+      <button class="indicator" data-slide="4" aria-label="Go to slide 5"></button>
+    </div>
+
+  </div> </section>
+<!-- What's new in Grand AI Handbook Section -->
+<section class="news-section">
+  <div class="news-container">
+    <h2 class="news-title">What's new in Grand AI Handbook</h2>
+    
+    <div class="news-grid">
+      <!-- Left column cards -->
+      <div class="news-column left-column">
+        <div class="card-group">
+          <!-- Card 1 -->
+          <div class="news-card">
+            <a href="#" class="card-link">
+              <div class="card-image">
+                <img src="/assets/images/research/weeklybg.jpg" alt="weekly">
+              </div>
+              <h3 class="card-title">Your Weekly AI Paper Roundup (Week 18)</h3>
+            </a>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="news-card">
+            <a href="#" class="card-link">
+              <div class="card-image">
+                <img src="/assets/images/handbooks/28.jpg" alt="AI Agents Handbook">
+              </div>
+              <h3 class="card-title">The AI Agents Handbook is officially launched!</h3>
             </a>
           </div>
         </div>
       </div>
-    {% endfor %}
+      
+      <!-- Center large card -->
+      <div class="news-column center-column">
+        <div class="news-card large-card">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <img src="/assets/images/opportunities/tech-talks/io25.jpg" alt="Conference">
+            </div>
+            <h3 class="card-title">Mark your calendars for Google I/O 2025.</h3>
+            <p class="card-description">The Premier Developer Conference of the Year</p>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Right column cards -->
+      <div class="news-column right-column">
+        <div class="card-group">
+          <!-- Card 4 -->
+          <div class="news-card">
+            <a href="#" class="card-link">
+              <div class="card-image">
+                <img src="/assets/images/research/1 (2).jpg" alt="Gemma model">
+              </div>
+              <h3 class="card-title">Top AI Papers of 2024: A Monthly Review</h3>
+            </a>
+          </div>
+          
+          <!-- Card 5 -->
+          <div class="news-card">
+            <a href="#" class="card-link">
+              <div class="card-image">
+                <img src="/assets/images/ecosystem/models2.JPG" alt="Health AI">
+              </div>
+              <h3 class="card-title">Qwen3, Phi4, OLMo2... so many models launched!</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  <div class="text-center mt-10">
-    <a href="{{ '/content/handbooks/' | relative_url }}" class="btn btn-primary">
-      <span>View All Handbooks</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-    </a>
+</section>
+<section class="follow-social-section">
+  <div class="follow-social-inner">
+    <h1 class="follow-heading">Explore More with GrandAIHandbook’s Creator</h1>
+    
+    <div class="social-container">
+        <!-- YouTube Card -->
+        <div class="social-card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                    <path fill="#FFFFFF" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+            </div>
+            <h2 class="platform-name">YouTube</h2>
+            <p class="description">Join our community of curious minds – subscribe for regular doses of inspiration and learning.</p>
+            <a href="#" class="dropdown-cta-button">Learn more</a>
+        </div>
+        
+        <!-- Kaggle Card -->
+        <div class="social-card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="#20BEFF" d="M17.4 18.5h-2.3c-.2 0-.3-.1-.4-.2l-2.6-3.2-2.6 3.2c-.1.1-.2.2-.4.2H6.8c-.2 0-.3-.1-.3-.2s0-.2.1-.3L10.5 12 6.6 6c-.1-.1-.1-.2-.1-.3 0-.1.1-.2.3-.2h2.3c.2 0 .3.1.4.2L12 8.9l2.6-3.2c.1-.1.2-.2.4-.2h2.3c.2 0 .3.1.3.2s0 .2-.1.3L13.7 12l3.9 6c.1.1.1.2.1.3-.1.1-.2.2-.3.2z"/>
+                </svg>
+            </div>
+            <h2 class="platform-name">Kaggle</h2>
+            <p class="description">Follow my Kaggle profile to connect with fellow data enthusiasts and explore new insights.</p>
+            <a href="#" class="dropdown-cta-button">Learn more</a>
+        </div>
+        
+        <!-- LinkedIn Card -->
+        <div class="social-card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="#0a66c2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </div>
+            <h2 class="platform-name">LinkedIn</h2>
+            <p class="description">Connect on LinkedIn to expand your network and explore new opportunities together.</p>
+            <a href="#" class="dropdown-cta-button">Learn more</a>
+        </div>
+        
+        <!-- GitHub Card -->
+        <div class="social-card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="#181717" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+            </div>
+            <h2 class="platform-name">GitHub</h2>
+            <p class="description">Connect with fellow developers by checking out my projects on GitHub.</p>
+            <a href="#" class="dropdown-cta-button">Learn more</a>
+        </div>
+    </div>
   </div>
 </section>
 
-<!-- ECOSYSTEM SECTION -->
-<section class="mb-20 container mx-auto px-4">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold text-gray-900">AI <span class="gradient-word">Ecosystem</span></h2>
-    <div class=""></div>
-  </div>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- Ecosystem Card 1: Models -->
-    <div class="handbook-card">
-      <div class="card-image models">
-        <div class="category-badge">Ecosystem</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Models</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">State-of-the-art</span>
-          <span class="handbook-tag">Benchmarks</span>
-          <span class="handbook-tag">Implementation</span>
-        </div>
-        <p class="handbook-description">
-          Comprehensive directory of state-of-the-art AI models across domains, with performance benchmarks and implementation guides.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/content/ecosystem/models/' | relative_url }}" class="handbook-read-more">
-            Explore Models
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Ecosystem Card 2: Tools -->
-    <div class="handbook-card">
-      <div class="card-image tools">
-        <div class="category-badge">Ecosystem</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Tools</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Frameworks</span>
-          <span class="handbook-tag">Development</span>
-          <span class="handbook-tag">Libraries</span>
-        </div>
-        <p class="handbook-description">
-          Curated collection of essential AI software, frameworks, and development environments with practical implementation guidance.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/content/ecosystem/tools/' | relative_url }}" class="handbook-read-more">
-            Explore Tools
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Ecosystem Card 3: Benchmarks -->
-    <div class="handbook-card">
-      <div class="card-image benchmarks">
-        <div class="category-badge">Ecosystem</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Benchmarks</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Performance</span>
-          <span class="handbook-tag">Evaluation</span>
-          <span class="handbook-tag">Analysis</span>
-        </div>
-        <p class="handbook-description">
-          In-depth analysis of standardized performance metrics and evaluation frameworks for comparing AI system capabilities.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/ecosystem/benchmarks/' | relative_url }}" class="handbook-read-more">
-            Explore Benchmarks
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Ecosystem Card 4: Competitions -->
-    <div class="handbook-card">
-      <div class="card-image competitions">
-        <div class="category-badge">Ecosystem</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Competitions</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Challenges</span>
-          <span class="handbook-tag">Contests</span>
-          <span class="handbook-tag">Collaboration</span>
-        </div>
-        <p class="handbook-description">
-          Guide to major AI challenges, contests, and collaborative opportunities for developing and testing cutting-edge solutions.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/ecosystem/competitions/' | relative_url }}" class="handbook-read-more">
-            Explore Competitions
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="text-center mt-10">
-    <a href="{{ '/ecosystem/' | relative_url }}" class="btn btn-primary">
-      <span>Explore Ecosystem</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-    </a>
-  </div>
-</section>
-
-<!-- RESEARCH SECTION -->
-<section class="mb-20 container mx-auto px-4">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold text-gray-900">Research <span class="gradient-word">Insights</span></h2>
-    <div class=""></div>
-  </div>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- Research Card 1: Weekly Papers -->
-    <div class="handbook-card">
-      <div class="card-image weekly">
-        <div class="category-badge">Research</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Weekly Papers</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Latest Research</span>
-          <span class="handbook-tag">Summaries</span>
-          <span class="handbook-tag">Analysis</span>
-        </div>
-        <p class="handbook-description">
-          Curated selection of the most impactful AI research papers, updated every week with summaries and key insights.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/content/research/weekly-papers/' | relative_url }}" class="handbook-read-more">
-            View Weekly Updates
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Research Card 2: AI News -->
-    <div class="handbook-card">
-      <div class="card-image trends">
-        <div class="category-badge">Research</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">AI News</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Trends</span>
-          <span class="handbook-tag">Breakthroughs</span>
-          <span class="handbook-tag">Updates</span>
-        </div>
-        <p class="handbook-description">
-          Explore emerging patterns and directions in AI research, highlighting breakthrough techniques and methodologies.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/content/research/ai-trends/' | relative_url }}" class="handbook-read-more">
-            Read News
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Research Card 3: Open Challenges -->
-    <div class="handbook-card">
-      <div class="card-image challenges">
-        <div class="category-badge">Research</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Open Challenges</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Unsolved Problems</span>
-          <span class="handbook-tag">Research Gaps</span>
-          <span class="handbook-tag">Opportunities</span>
-        </div>
-        <p class="handbook-description">
-          Critical unsolved problems in AI research, offering opportunities for breakthrough contributions to the field.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/research/open-challenges/' | relative_url }}" class="handbook-read-more">
-            Explore Challenges
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Research Card 4: Pioneers of AI -->
-    <div class="handbook-card">
-      <div class="card-image spotlight">
-        <div class="category-badge">Research</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Pioneers of AI</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Researchers</span>
-          <span class="handbook-tag">Contributions</span>
-          <span class="handbook-tag">Profiles</span>
-        </div>
-        <p class="handbook-description">
-          In-depth profiles of leading AI researchers, their groundbreaking work, and contributions to the field.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/content/research/ai-pioneers/' | relative_url }}" class="handbook-read-more">
-            Meet the Authors
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="text-center mt-10">
-    <a href="{{ '/content/research/' | relative_url }}" class="btn btn-primary">
-      <span>Explore Research Section</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-    </a>
-  </div>
-</section>
-
-<!-- ROADMAPS SECTION -->
-<section class="mb-20 container mx-auto px-4">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold text-gray-900">AI Career <span class="gradient-word">Roadmaps</span></h2>
-    <div class=""></div>
-  </div>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- Roadmap Card 1: Machine Learning Engineer -->
-    <div class="handbook-card">
-      <div class="card-image ml-engineer">
-        <div class="category-badge">Roadmap</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Machine Learning Engineer</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Deep Learning</span>
-          <span class="handbook-tag">MLOps</span>
-          <span class="handbook-tag">Deployment</span>
-        </div>
-        <p class="handbook-description">
-          Strategic progression from fundamental programming skills to advanced MLOps and system deployment.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/roadmaps/machine-learning-engineer' | relative_url }}" class="handbook-read-more">
-            View Roadmap
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Roadmap Card 2: Data Scientist -->
-    <div class="handbook-card">
-      <div class="card-image data-scientist">
-        <div class="category-badge">Roadmap</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">Data Scientist</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Statistics</span>
-          <span class="handbook-tag">ML</span>
-          <span class="handbook-tag">Big Data</span>
-        </div>
-        <p class="handbook-description">
-          Comprehensive journey from statistics and SQL to advanced machine learning and causal inference.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/roadmaps/data-scientist' | relative_url }}" class="handbook-read-more">
-            View Roadmap
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Roadmap Card 3: AI Researcher -->
-    <div class="handbook-card">
-      <div class="card-image ai-researcher">
-        <div class="category-badge">Roadmap</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">AI Researcher</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">Math</span>
-          <span class="handbook-tag">Advanced ML</span>
-          <span class="handbook-tag">Research</span>
-        </div>
-        <p class="handbook-description">
-          Structured path from mathematical foundations to publishing novel research and architecture design.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/roadmaps/ai-researcher' | relative_url }}" class="handbook-read-more">
-            View Roadmap
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Roadmap Card 4: MLOps Engineer -->
-    <div class="handbook-card">
-      <div class="card-image mlops-engineer">
-        <div class="category-badge">Roadmap</div>
-      </div>
-      <div class="handbook-card-content">
-        <h3 class="handbook-title">MLOps Engineer</h3>
-        <div class="handbook-tags">
-          <span class="handbook-tag">DevOps</span>
-          <span class="handbook-tag">Pipelines</span>
-          <span class="handbook-tag">Monitoring</span>
-        </div>
-        <p class="handbook-description">
-          Specialized journey from DevOps principles to machine learning pipelines and production-ready AI systems.
-        </p>
-        <div class="button-container">
-          <a href="{{ '/roadmaps/mlops-engineer' | relative_url }}" class="handbook-read-more">
-            View Roadmap
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="text-center mt-10">
-    <a href="{{ '/roadmaps/' | relative_url }}" class="btn btn-primary">
-      <span>Explore Roadmaps</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-    </a>
-  </div>
-</section>
   <!-- COMMUNITY SECTION -->
   <section class="mb-10">
     <div class="text-center mb-12">

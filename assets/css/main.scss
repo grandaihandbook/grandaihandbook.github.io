@@ -16,6 +16,10 @@
 /* Design tokens and variables that ensure consistency across the site */
 @import "variables";
 
+@import "carousel";
+@import "social";
+@import "news";
+
 /* Browser normalization and CSS reset */
 @import "reset";
 

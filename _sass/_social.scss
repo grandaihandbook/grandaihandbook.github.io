@@ -1,0 +1,203 @@
+/* Full-width section that breaks out of parent containers */
+.follow-social-section {
+  position: relative !important;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 60px 0 !important;
+  font-family: "Google Sans", Arial, sans-serif !important;
+  color: #202124 !important;
+  background-color: #fff !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+
+/* CSS Variables for consistent theming */
+:root {
+  --text-color: #202124 !important;
+  --text-secondary: #5f6368 !important;
+  --bg-hover: rgba(0, 0, 0, 0.05) !important;
+  --primary-color: #1a73e8 !important;
+  --focus-ring-color: rgba(26, 115, 232, 0.4) !important;
+  --transition-speed-fast: 0.2s !important;
+}
+
+/* Container for the actual content to maintain proper spacing */
+.follow-social-inner {
+  width: 90% !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Heading styles with !important */
+.follow-heading {
+  text-align: center !important;
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
+  margin: 0 0 40px 0 !important;
+  color: #202124 !important;
+  font-family: "Google Sans", Arial, sans-serif !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.5px !important;
+  width: 100% !important;
+  border-bottom: none !important;
+}
+
+section h2.platform-name::after {
+  background: none;
+}
+
+.social-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 4rem !important;
+  width: 100% !important;
+  max-width: 1400px !important;
+}
+
+.social-card {
+  flex: 1 !important;
+  min-width: 250px !important;
+  max-width: 300px !important;
+  border: 1px solid #dadce0 !important;
+  border-radius: 8px !important;
+  padding: 30px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  background-color: #fff !important;
+  transition: box-shadow 0.2s ease !important;
+}
+
+.social-card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+.icon {
+  margin-bottom: 20px !important;
+}
+
+.markdown-content h2.platform-name {
+  font: 400 1.5rem / 56px "Google Sans Display", Arial, Helvetica, sans-serif !important;
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
+  margin-top: 0px !important;
+}
+
+/* H2 styles with !important */
+.platform-name {
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+  color: #202124 !important;
+  font-family: "Google Sans", Arial, sans-serif !important;
+  line-height: 1.3 !important;
+}
+
+/* Paragraph styles with !important */
+.description {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #5f6368 !important;
+  margin-bottom: 20px !important;
+  margin-top: 0 !important;
+  flex-grow: 1 !important;
+  font-family: "Google Sans", Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* New button style */
+.dropdown-cta-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.6rem 1.5rem !important;
+  border: 1px solid var(--text-secondary) !important;
+  border-radius: 999px !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+  transition: background-color var(--transition-speed-fast),
+    border-color var(--transition-speed-fast),
+    color var(--transition-speed-fast) !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  line-height: 1.4 !important;
+}
+
+.dropdown-cta-button:hover {
+  background-color: var(--bg-hover) !important;
+  border-color: var(--text-color) !important;
+  color: var(--text-color) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown-cta-button:focus {
+  outline: none !important;
+}
+
+.dropdown-cta-button:focus-visible {
+  outline: none !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px var(--focus-ring-color) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .social-container {
+    justify-content: center !important;
+  }
+
+  .social-card {
+    flex: 0 0 calc(50% - 20px) !important;
+    max-width: calc(50% - 20px) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .follow-heading {
+    font-size: 32px !important;
+    margin: 0 0 30px 0 !important;
+  }
+
+  .social-card {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .social-container {
+    gap: 16px !important;
+  }
+
+  .platform-name {
+    font-size: 20px !important;
+  }
+
+  .description {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .follow-social-section {
+    padding: 40px 0 !important;
+  }
+
+  .follow-heading {
+    font-size: 28px !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .social-card {
+    padding: 20px 16px !important;
+  }
+}

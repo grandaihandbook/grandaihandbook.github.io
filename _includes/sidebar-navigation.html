@@ -3,21 +3,688 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/sidebar.css" />
+    <link rel="stylesheet" href="/assets/css/sidebar.css" />
     <title>The Grand AI Handbook</title>
   </head>
   <body>
-    <div id="title-bar">
-      <div class="title-bar-content">
+    <header class="top-nav-header">
+      <div class="top-nav-container">
+        <div class="top-nav-left">
+          <button
+            class="mobile-menu-toggle"
+            id="mobile-menu-toggle"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <a href="/" class="site-title">The Grand AI Handbook</a>
+          <nav class="top-nav-main" id="top-nav-main">
+            <ul class="nav-list">
+              <li class="nav-item has-dropdown">
+  <a
+    href="/content/handbooks/"
+    class="nav-link"
+    aria-haspopup="true"
+    aria-expanded="false"
+    >AI Handbooks</a
+  >
+
+  <div class="mega-dropdown">
+    <div class="mega-dropdown-inner style-like-image">
+      <div class="mega-dropdown-title-area">
+        <h2 class="dropdown-main-title">
+          Comprehensive Guides to AI Technologies
+        </h2>
+        <a href="/content/handbooks/" class="dropdown-cta-button">Explore All Handbooks</a>
+      </div>
+
+      <div class="mega-dropdown-cards-area">
+        <div class="dropdown-cards-grid">
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/handbooks/1.jpg"
+                alt="Abstract representation of generative AI"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Generative AI</h3>
+            <p class="dropdown-card-description">
+              Learn about AI systems that create new content including text, images, audio, and more.
+            </p>
+            <a href="/content/handbooks/generative-ai/" class="dropdown-card-link"
+              >View Handbook <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/handbooks/2.jpg"
+                alt="Visual representation of foundation models"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Foundation Models</h3>
+            <p class="dropdown-card-description">
+              Discover large-scale AI models trained on diverse data that serve as a base for fine-tuning.
+            </p>
+            <a href="/content/handbooks/foundation-models/" class="dropdown-card-link"
+              >View Handbook <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/handbooks/3.jpg"
+                alt="Visual representation of computer vision technology"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Computer Vision</h3>
+            <p class="dropdown-card-description">
+              Understand how AI systems process, analyze, and gain understanding from visual information.
+            </p>
+            <a href="/content/handbooks/computer-vision/" class="dropdown-card-link"
+              >View Handbook <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/handbooks/4.jpg"
+                alt="Abstract representation of reinforcement learning"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Reinforcement Learning</h3>
+            <p class="dropdown-card-description">
+              Explore how AI agents learn optimal behaviors through trial and error with feedback.
+            </p>
+            <a href="/content/handbooks/reinforcement-learning/" class="dropdown-card-link"
+              >View Handbook <span class="arrow-icon">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+              <li class="nav-item has-dropdown">
+            <a
+              href="/content/ecosystem/"
+              class="nav-link"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Ecosystem</a
+            >
+
+            <div class="mega-dropdown">
+              <div class="mega-dropdown-inner style-like-image">
+                <div class="mega-dropdown-title-area">
+                  <h2 class="dropdown-main-title">
+                    The Infrastructure Behind Intelligence
+                  </h2>
+                  <a href="/content/ecosystem/" class="dropdown-cta-button">Explore Ecosystem</a>
+                </div>
+
+                <div class="mega-dropdown-cards-area">
+                  <div class="dropdown-cards-grid">
+                    <div class="dropdown-card">
+                      <div class="dropdown-card-image">
+                        <img
+                          src="/assets/images/ecosystem/models.jpg" 
+                          alt="Abstract colorful dots representing AI"
+                        />
+                      </div>
+                      <h3 class="dropdown-card-title">Models</h3>
+                      <p class="dropdown-card-description">
+                        Explore cutting-edge AI models with performance insights.                      </p>
+                      <a href="/content/ecosystem/models/" class="dropdown-card-link" 
+                        >Explore Models <span class="arrow-icon">→</span></a
+                      >
+                    </div>
+
+                    <div class="dropdown-card">
+                      <div class="dropdown-card-image">
+                        <img
+                          src="/assets/images/ecosystem/tools.jpg" /* Replace with your actual image path */
+                          alt="Colorful swirls representing AI milestones"
+                        />
+                      </div>
+                      <h3 class="dropdown-card-title">Tools</h3>
+                      <p class="dropdown-card-description">
+                        Explore foundational AI software, frameworks, and development environments.
+                      </p>
+                      <a href="/content/ecosystem/tools/" class="dropdown-card-link" /* Replace with your link */
+                        >Explore Tools <span class="arrow-icon">→</span></a
+                      >
+                    </div>
+
+                    <div class="dropdown-card">
+                      <div class="dropdown-card-image">
+                        <img
+                          src="/assets/images/ecosystem/benchmarks.jpg" /* Replace with your actual image path */
+                          alt="Abstract blue patterns representing AI research"
+                        />
+                      </div>
+                      <h3 class="dropdown-card-title">Benchmarks</h3>
+                      <p class="dropdown-card-description">
+                        Benchmarking AI systems through standardized evaluation.
+                      </p>
+                      <a href="/content/ecosystem/benchmarks/" class="dropdown-card-link" /* Replace with your link */
+                        >Explore Benchmarks <span class="arrow-icon">→</span></a
+                      >
+                    </div>
+
+                    <div class="dropdown-card">
+                      <div class="dropdown-card-image">
+                        <img
+                          src="/assets/images/ecosystem/competitions.jpg" /* Replace with your actual image path */
+                          alt="People reading together"
+                        />
+                      </div>
+                      <h3 class="dropdown-card-title">Competitions</h3>
+                      <p class="dropdown-card-description">
+                        Your hub for AI contests, challenges, and innovation platforms.
+                      </p>
+                      <a href="/content/ecosystem/competitions/" class="dropdown-card-link" /* Replace with your link */
+                        >Explore Competitions <span class="arrow-icon">→</span></a
+                      >
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+              <li class="nav-item has-dropdown">
+  
+    <a href="/content/research/"
+    class="nav-link"
+    aria-haspopup="true"
+    aria-expanded="false"
+    >Research</a
+  >
+
+  <div class="mega-dropdown">
+    <div class="mega-dropdown-inner style-like-image">
+      <div class="mega-dropdown-title-area">
+        <h2 class="dropdown-main-title">
+          Leading Insights in AI Research
+        </h2>
+        <a href="/content/research/" class="dropdown-cta-button">Explore Research</a>
+      </div>
+
+      <div class="mega-dropdown-cards-area">
+        <div class="dropdown-cards-grid">
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/research/1 (3).jpg"
+                alt="Graph showing upward trends in AI development"
+              />
+            </div>
+            <h3 class="dropdown-card-title">AI Trends</h3>
+            <p class="dropdown-card-description">
+              Analysis of emerging patterns and directions in artificial intelligence research.
+            </p>
+            <a href="/content/research/ai-trends/" class="dropdown-card-link"
+              >Explore AI Trends <span class="arrow-icon">→</span></a
+            >
+          </div>
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/research/weeklybg.jpg"
+                alt="Stack of research papers"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Weekly Papers</h3>
+            <p class="dropdown-card-description">
+              Stay current with our weekly curation of groundbreaking AI research papers.
+            </p>
+            <a href="/content/research/weekly-papers/" class="dropdown-card-link"
+              >Explore Weekly Papers <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/research/1 (2).jpg"
+                alt="Timeline showing yearly progress in AI"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Year Review</h3>
+            <p class="dropdown-card-description">
+              Comprehensive annual summaries of major breakthroughs and advancements in AI.
+            </p>
+            <a href="/content/research/year-review/2024/" class="dropdown-card-link"
+              >Explore Year Review <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/research/5.jpg"
+                alt="Portraits of influential AI researchers"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Pioneers of AI</h3>
+            <p class="dropdown-card-description">
+              Profiles of visionary researchers and innovators shaping the field of AI.
+            </p>
+            <a href="/content/research/pioneers-of-ai/" class="dropdown-card-link"
+              >Explore Pioneers of AI <span class="arrow-icon">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+              <li class="nav-item has-dropdown">
+  
+    <a href="/content/career-paths/"
+    class="nav-link"
+    aria-haspopup="true"
+    aria-expanded="false"
+    >Career Paths</a
+  >
+
+  <div class="mega-dropdown">
+    <div class="mega-dropdown-inner style-like-image">
+      <div class="mega-dropdown-title-area">
+        <h2 class="dropdown-main-title">
+          Build Your Future in AI
+        </h2>
+        <a href="/content/career-paths/" class="dropdown-cta-button">Explore All Career Paths</a>
+      </div>
+
+      <div class="mega-dropdown-cards-area">
+        <div class="dropdown-cards-grid">
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/roadmap/mlbg.jpg"
+                alt="Person working on machine learning models"
+              />
+            </div>
+            <h3 class="dropdown-card-title">ML Engineer</h3>
+            <p class="dropdown-card-description">
+              Develop and deploy machine learning models for real-world applications.
+            </p>
+            <a href="/content/career-paths/ml-engineer/" class="dropdown-card-link"
+              >Explore ML Engineer <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets//images/roadmap/dsbg.jpg"
+                alt="Person analyzing data visualizations"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Data Scientist</h3>
+            <p class="dropdown-card-description">
+              Extract insights from data and build predictive models to solve business challenges.
+            </p>
+            <a href="/content/career-paths/data-scientist/" class="dropdown-card-link"
+              >Explore Data Scientist <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/roadmap/mlopsbg.jpg"
+                alt="Person managing ML deployment infrastructure"
+              />
+            </div>
+            <h3 class="dropdown-card-title">MLOps Engineer</h3>
+            <p class="dropdown-card-description">
+              Build and maintain infrastructure for deploying ML models at scale.
+            </p>
+            <a href="/content/career-paths/mlops-engineer/" class="dropdown-card-link"
+              >Explore MLOps Engineer <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+  <div class="dropdown-card-image">
+    <img
+      src="/assets/images/roadmap/aibg.jpg"
+      alt="Person working on robotics systems"
+    />
+  </div>
+  <h3 class="dropdown-card-title">Robotics Engineer</h3>
+  <p class="dropdown-card-description">
+    Design, build, and program intelligent robotic systems using AI and control theory.
+  </p>
+  <a href="/content/career-paths/robotics-engineer/" class="dropdown-card-link">
+    Explore Robotics Engineer <span class="arrow-icon">→</span>
+  </a>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="nav-item has-dropdown">
+  
+    <a href="/content/resources/"
+    class="nav-link"
+    aria-haspopup="true"
+    aria-expanded="false"
+    >Resources</a
+  >
+
+  <div class="mega-dropdown">
+    <div class="mega-dropdown-inner style-like-image">
+      <div class="mega-dropdown-title-area">
+        <h2 class="dropdown-main-title">
+          Essential AI Learning Materials
+        </h2>
+        <a href="/content/resources/" class="dropdown-cta-button">Explore All Resources</a>
+      </div>
+
+      <div class="mega-dropdown-cards-area">
+        <div class="dropdown-cards-grid">
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/resources/1.jpg"
+                alt="Stack of AI and machine learning books"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Books</h3>
+            <p class="dropdown-card-description">
+              Curated collection of essential readings on AI and machine learning topics.
+            </p>
+            <a href="/content/resources/books/" class="dropdown-card-link"
+              >Explore Books <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/resources/2.jpg"
+                alt="Online learning interface showing AI course"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Courses</h3>
+            <p class="dropdown-card-description">
+              Comprehensive learning paths from beginner to advanced AI concepts.
+            </p>
+            <a href="/content/resources/courses/" class="dropdown-card-link"
+              >Explore Courses <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/resources/3.jpg"
+                alt="Quick reference guide for AI concepts"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Cheatsheets</h3>
+            <p class="dropdown-card-description">
+              Quick reference guides for algorithms, libraries, and AI frameworks.
+            </p>
+            <a href="/content/resources/cheatsheets/" class="dropdown-card-link"
+              >Explore Cheatsheets <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/resources/4.jpg"
+                alt="Step-by-step AI tutorial with code"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Tutorials</h3>
+            <p class="dropdown-card-description">
+              Hands-on, practical guides for implementing AI techniques and projects.
+            </p>
+            <a href="/content/resources/tutorials/" class="dropdown-card-link"
+              >Explore Tutorials <span class="arrow-icon">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+             <li class="nav-item has-dropdown">
+  
+    <a href="/content/opportunities/"
+    class="nav-link"
+    aria-haspopup="true"
+    aria-expanded="false"
+    >Opportunities</a
+  >
+
+  <div class="mega-dropdown">
+    <div class="mega-dropdown-inner style-like-image">
+      <div class="mega-dropdown-title-area">
+        <h2 class="dropdown-main-title">
+          Connect with the AI Community
+        </h2>
+        <a href="/content/opportunities/" class="dropdown-cta-button">Explore All Opportunities</a>
+      </div>
+
+      <div class="mega-dropdown-cards-area">
+        <div class="dropdown-cards-grid">
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/opportunities/1.jpg"
+                alt="AI conference with attendees networking"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Conferences</h3>
+            <p class="dropdown-card-description">
+              Find upcoming AI research conferences and submission deadlines.
+            </p>
+            <a href="/content/opportunities/conferences/" class="dropdown-card-link"
+              >Explore Conferences <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/opportunities/2.jpg"
+                alt="Student receiving scholarship certificate"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Scholarships</h3>
+            <p class="dropdown-card-description">
+              Educational funding opportunities for AI and ML students.
+            </p>
+            <a href="/content/opportunities/scholarships/" class="dropdown-card-link"
+              >Explore Scholarships <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/opportunities/3.jpg"
+                alt="Researchers collaborating in AI lab"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Fellowships</h3>
+            <p class="dropdown-card-description">
+              Research and industry fellowship programs for AI practitioners.
+            </p>
+            <a href="/content/opportunities/fellowships/" class="dropdown-card-link"
+              >Explore Fellowships <span class="arrow-icon">→</span></a
+            >
+          </div>
+
+          <div class="dropdown-card">
+            <div class="dropdown-card-image">
+              <img
+                src="/assets/images/opportunities/4.jpg"
+                alt="Large tech event keynote presentation"
+              />
+            </div>
+            <h3 class="dropdown-card-title">Tech Events</h3>
+            <p class="dropdown-card-description">
+              Major industry events like Google I/O, NVIDIA GTC, and Microsoft Build.
+            </p>
+            <a href="/content/opportunities/tech-events/" class="dropdown-card-link"
+              >Explore Tech Events <span class="arrow-icon">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+              <li class="nav-item">
+                <a href="/content/support/" class="nav-link">Support</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="top-nav-right">
+          <div class="search-container" id="search-container">
+            <input
+              type="search"
+              class="search-input"
+              id="search-input"
+              placeholder="Search The Grand AI Handbook..."
+              aria-label="Search Input"
+            />
+            <button
+              class="search-button"
+              id="search-button"
+              aria-label="Submit search"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <a
+            href="https://github.com/{{ site.github_username }}/{{ site.repository }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-link-button github-link"
+          >
+            <svg
+              class="github-icon"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              ></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <div class="menu-dropdown-container">
+  <button class="menu-dropdown-button" id="menu-dropdown-toggle" aria-label="Menu" aria-expanded="false">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="1"></circle>
+      <circle cx="12" cy="5" r="1"></circle>
+      <circle cx="12" cy="19" r="1"></circle>
+    </svg>
+  </button>
+  <div class="menu-dropdown" id="menu-dropdown">
+    <ul class="menu-dropdown-list">
+      <li class="menu-dropdown-item"><a href="/content/extras/about/">About</a></li>
+      <li class="menu-dropdown-item"><a href="/content/connect/">Connect</a></li>
+      <li class="menu-dropdown-item"><a href="/content/contact/">Contact</a></li>
+      <li class="menu-dropdown-item"><a href="/content/faq/">FAQ</a></li>
+      <li class="menu-dropdown-item"><a href="/content/faq/">Code of Conduct</a></li>
+      <li class="menu-dropdown-item"><a href="/content/faq/">Contributing</a></li>
+    </ul>
+  </div>
+</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="search-overlay" id="search-overlay">
+      <div class="search-overlay-content">
+        <form class="search-overlay-form" action="/search" method="get">
+          <input
+            type="search"
+            name="q"
+            class="search-overlay-input"
+            id="search-overlay-input"
+            placeholder="Search The Grand AI Handbook..."
+            aria-label="Search Input"
+          />
+          <button
+            type="submit"
+            class="search-overlay-submit"
+            aria-label="Submit search"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
         <button
-          id="sidebar-toggle"
-          class="sidebar-toggle"
-          aria-label="Toggle Sidebar"
+          class="search-overlay-close-button"
+          id="search-overlay-close"
+          aria-label="Close search bar"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -25,1354 +692,18 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </button>
-        <div class="logo">
-          <a href="/" class="site-title">The Grand AI Handbook</a>
-        </div>
-        <div class="nav-links">
-          <a
-            href="https://github.com/{{ site.github_username }}/{{ site.repository }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-link github-link"
-            >GitHub</a
-          >
-        </div>
       </div>
     </div>
 
-    <button class="mobile-toggle" id="mobile-toggle">Menu</button>
+    <!-- <main id="content">
+      <h1>Page Title</h1>
+      <p>This is the main content area.</p>
+    </main> -->
 
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-search">
-        <input
-          type="text"
-          class="search-input"
-          placeholder="Search..."
-          aria-label="Search navigation"
-        />
-      </div>
-
-      <div class="nav-content">
-        <div class="section">
-          <div class="section-header" onclick="toggleSection('handbooks')">
-            <span>AI Handbooks</span>
-            <span class="chevron" id="handbooks-chevron">▶</span>
-          </div>
-          <div class="section-content" id="handbooks-content">
-            <a href="/content/handbooks/" class="nav-link">Handbooks Home</a>
-
-            <div class="subsection">
-              <div class="section-header" onclick="toggleSection('top-ai')">
-                <span>Top AI Fields</span>
-                <span class="chevron" id="top-ai-chevron">▶</span>
-              </div>
-              <div class="section-content" id="top-ai-content">
-                <div class="subsection">
-                  <div class="section-header" onclick="toggleSection('genai')">
-                    <span>Generative AI</span>
-                    <span class="chevron" id="genai-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="genai-content">
-                    <a href="/content/handbooks/generative-ai/" class="nav-link"
-                      >Overview</a
-                    >
-                    <a
-                      href="/content/handbooks/generative-ai/section1/"
-                      class="nav-link"
-                      >I: Foundation: Statistical Prediction and ML</a
-                    >
-                    <a
-                      href="/content/handbooks/generative-ai/section2/"
-                      class="nav-link"
-                      >II: Neural Networks and Deep Learning</a
-                    >
-                    <a
-                      href="/content/handbooks/generative-ai/section3/"
-                      class="nav-link"
-                      >III: LLM Architecture and Training
-                    </a>
-                    <a
-                      href="/content/handbooks/generative-ai/section4/"
-                      class="nav-link"
-                      >IV: Finetuning and Alignment
-                    </a>
-                    <a
-                      href="/content/handbooks/generative-ai/section5/"
-                      class="nav-link"
-                      >V: Applications and Interpretability
-                    </a>
-                    <a
-                      href="/content/handbooks/generative-ai/section6/"
-                      class="nav-link"
-                      >VI: Inference Optimization
-                    </a>
-                    <a
-                      href="/content/handbooks/generative-ai/section7/"
-                      class="nav-link"
-                      >VII: Addressing the Quadratic Scaling Problem
-                    </a>
-                    <a
-                      href="/content/handbooks/generative-ai/section8/"
-                      class="nav-link"
-                      >VIII: Beyond Transformers: Other Generative Models
-                    </a>
-                    <a
-                      href="/content/handbooks/generative-ai/section9/"
-                      class="nav-link"
-                      >IX: Multimodal Models</a
-                    >
-                  </div>
-                </div>
-                <div class="subsection">
-                  <div class="section-header" onclick="toggleSection('fm')">
-                    <span>Foundation Models</span>
-                    <span class="chevron" id="fm-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="fm-content">
-                    <a
-                      href="/content/handbooks/foundation-models/"
-                      class="nav-link"
-                      >Overview</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section1/"
-                      class="nav-link"
-                      >I: Foundation Models and Their Applications</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section2/"
-                      class="nav-link"
-                      >II: NLP and Computer Vision</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section3/"
-                      class="nav-link"
-                      >III: RNN and CNN</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section4/"
-                      class="nav-link"
-                      >IV: Early Transformer Variants</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section5/"
-                      class="nav-link"
-                      >V: Self-Attention and Transformers</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section6/"
-                      class="nav-link"
-                      >VI: Efficient Transformers</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section7/"
-                      class="nav-link"
-                      >VII: Parameter-Efficient Tuning</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section8/"
-                      class="nav-link"
-                      >VIII: Language Model Pretraining</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section9/"
-                      class="nav-link"
-                      >IX: Large Language Models</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section10/"
-                      class="nav-link"
-                      >X: Scaling Law</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section11/"
-                      class="nav-link"
-                      >XI: Instruction Tuning and RLHF</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section12/"
-                      class="nav-link"
-                      >XII: Efficient LLM Training</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section13/"
-                      class="nav-link"
-                      >XIII: Efficient LLM Inference</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section14/"
-                      class="nav-link"
-                      >XIV: Compress and Sparsify LLM</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section15/"
-                      class="nav-link"
-                      >XV: LLM Prompting</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section16/"
-                      class="nav-link"
-                      >XVI: Vision Transformers</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section17/"
-                      class="nav-link"
-                      >XVII: Diffusion Models</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section18/"
-                      class="nav-link"
-                      >XVIII: Image Generation</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section19/"
-                      class="nav-link"
-                      >XIX: Multimodal Pretraining</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section20/"
-                      class="nav-link"
-                      >XX: Large Multimodal Models</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section21/"
-                      class="nav-link"
-                      >XXI: Tool Augmentation</a
-                    >
-                    <a
-                      href="/content/handbooks/foundation-models/section22/"
-                      class="nav-link"
-                      >XXII: Retrieval Augmentation</a
-                    >
-                  </div>
-                </div>
-
-                <div class="subsection">
-                  <div class="section-header" onclick="toggleSection('cv')">
-                    <span>Computer Vision</span>
-                    <span class="chevron" id="cv-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="cv-content">
-                    <a
-                      href="/content/handbooks/computer-vision/"
-                      class="nav-link"
-                      >Overview</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section1/"
-                      class="nav-link"
-                      >I: Mathematical and Statistical Foundations</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section2/"
-                      class="nav-link"
-                      >II: Core Concepts and Traditional Methods</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section3/"
-                      class="nav-link"
-                      >III: Deep Learning Foundations for Vision</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section4/"
-                      class="nav-link"
-                      >IV: CNN Architectures and Enhancements</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section5/"
-                      class="nav-link"
-                      >V: Core and Extended Vision Tasks</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section6/"
-                      class="nav-link"
-                      >VI: Advanced Learning Paradigms</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section7/"
-                      class="nav-link"
-                      >VII: Vision Transformers and Large-Scale Models</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section8/"
-                      class="nav-link"
-                      >VIII: 3D and Geometric Vision</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section9/"
-                      class="nav-link"
-                      >IX: Generative Vision Models</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section10/"
-                      class="nav-link"
-                      >X: Multimodal and Dynamic Vision</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section11/"
-                      class="nav-link"
-                      >XI: Efficiency and Optimization</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section12/"
-                      class="nav-link"
-                      >XII: Evaluation and Applications</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section13/"
-                      class="nav-link"
-                      >XIII: Deployment, Ethics, and Future Directions</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section14/"
-                      class="nav-link"
-                      >XIV: Summary of Key Concepts</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section15/"
-                      class="nav-link"
-                      >XV: Resources for further learning</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section16/"
-                      class="nav-link"
-                      >XVI: Glossary</a
-                    >
-                    <a
-                      href="/content/handbooks/computer-vision/section17/"
-                      class="nav-link"
-                      >XVII: References</a
-                    >
-                  </div>
-                </div>
-                <div class="subsection">
-                  <div class="section-header" onclick="toggleSection('rl')">
-                    <span>Reinforcement Learning</span>
-                    <span class="chevron" id="rl-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="rl-content">
-                    <a
-                      href="/content/handbooks/reinforcement-learning/"
-                      class="nav-link"
-                      >Overview</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section1/"
-                      class="nav-link"
-                      >I: Mathematical and Statistical Foundations</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section2/"
-                      class="nav-link"
-                      >II: Core Concepts of Reinforcement Learning</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section3/"
-                      class="nav-link"
-                      >III: Classical RL Algorithms</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section4/"
-                      class="nav-link"
-                      >IV: Deep Reinforcement Learning Foundations</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section5/"
-                      class="nav-link"
-                      >V: Advanced RL Paradigms</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section6/"
-                      class="nav-link"
-                      >VI: Multi-Agent and Game-Theoretic RL</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section7/"
-                      class="nav-link"
-                      >VII: RL with Human Interaction</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section8/"
-                      class="nav-link"
-                      >VIII: Exploration and Representation Learning in RL</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section9/"
-                      class="nav-link"
-                      >IX: Transformers in RL</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section10/"
-                      class="nav-link"
-                      >X: Alignment and Reasoning with Transformers</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section11/"
-                      class="nav-link"
-                      >XI: RL for Sequential and Structured Tasks</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section12/"
-                      class="nav-link"
-                      >XII: Scalability and Efficiency in RL</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section13/"
-                      class="nav-link"
-                      >XIII: Evaluation and Benchmarking</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section14/"
-                      class="nav-link"
-                      >XIV: Applications of RL</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section15/"
-                      class="nav-link"
-                      >XV: Deployment, Ethics, and Future Directions</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section16/"
-                      class="nav-link"
-                      >XVI: Summary of Key Concepts</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section17/"
-                      class="nav-link"
-                      >XVII: Resources for Further Learning</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section18/"
-                      class="nav-link"
-                      >XVIII: Glossary</a
-                    >
-                    <a
-                      href="/content/handbooks/reinforcement-learning/section19/"
-                      class="nav-link"
-                      >XIX: References</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="subsection">
-              <div class="section-header" onclick="toggleSection('core-ai')">
-                <span>Core AI Fields</span>
-                <span class="chevron" id="core-ai-chevron">▶</span>
-              </div>
-              <div class="section-content" id="core-ai-content">
-                <div class="subsection">
-                <div class="section-header" onclick="toggleSection('machine-learning')">
-                  <span>Machine Learning</span>
-                  <span class="chevron" id="machine-learning-chevron">▶</span>
-                </div>
-                <div class="section-content" id="machine-learning-content">
-                  <a href="/content/handbooks/machine-learning/" class="nav-link"
-                    >Overview</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section1/" class="nav-link"
-                    >I: Introduction to Machine Learning</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section2/" class="nav-link"
-                    >II: Foundational Concepts</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section3/" class="nav-link"
-                    >III: The Machine Learning Workflow & Core Concepts</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section4/" class="nav-link"
-                    >IV: Supervised Learning - Regression Techniques</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section5/" class="nav-link"
-                    >V: Supervised Learning - Classification Techniques</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section6/" class="nav-link"
-                    >VI: Tree-Based Methods</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section7/" class="nav-link"
-                    >VII: Ensemble Methods - Combining Classical Models</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section8/" class="nav-link"
-                    >VIII: Unsupervised Learning</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section9/" class="nav-link"
-                    >IX: Neural Networks and Deep Learning Fundamentals</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section10/" class="nav-link"
-                    >X: Deep Learning Architectures</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section11/" class="nav-link"
-                    >XI: Advanced Non-Ensemble ML Techniques</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section12/" class="nav-link"
-                    >XII: Practical Data Science for Robust ML</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section13/" class="nav-link"
-                    >XIII: Model Tuning, Interpretability, and Deployment</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section14/" class="nav-link"
-                    >XIV: ML Development Ecosystem and Tools</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section15/" class="nav-link"
-                    >XV: Machine Learning in Specialized Domains</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section16/" class="nav-link"
-                    >XVI: Ethics and Responsible Machine Learning</a
-                  >
-                  <a href="/content/handbooks/machine-learning/section17/" class="nav-link"
-                    >XVII: Future Trends and Advanced Directions</a
-                  >
-                </div>
-              </div>
-                              <div class="subsection">
-                <div class="section-header" onclick="toggleSection('deep-learning')">
-                  <span>Deep Learning</span>
-                  <span class="chevron" id="deep-learning-chevron">▶</span>
-                </div>
-                <div class="section-content" id="deep-learning-content">
-                  <a href="/content/handbooks/deep-learning/" class="nav-link"
-                    >Overview</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section1/" class="nav-link"
-                    >I: Introduction to Deep Learning</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section2/" class="nav-link"
-                    >II: Neural Network Fundamentals</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section3/" class="nav-link"
-                    >III: Practical Training Techniques</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section4/" class="nav-link"
-                    >IV: Convolutional Neural Networks (CNNs)</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section5/" class="nav-link"
-                    >V: Sequence Modeling: RNNs, LSTMs, GRUs</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section6/" class="nav-link"
-                    >VI: Sequence Modeling: Attention and Transformers</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section7/" class="nav-link"
-                    >VII: Generative Deep Learning I: Autoencoders and GANs</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section8/" class="nav-link"
-                    >VIII: Generative Deep Learning II: Diffusion and Flow-based Models</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section9/" class="nav-link"
-                    >IX: Advanced Deep Learning Architectures</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section10/" class="nav-link"
-                    >X: Advanced Training Concepts</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section11/" class="nav-link"
-                    >XI: Practical Deep Learning & Implementation</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section12/" class="nav-link"
-                    >XII: Deep Learning Frameworks & Ecosystem</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section13/" class="nav-link"
-                    >XIII: Deep Learning Applications In-Depth</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section14/" class="nav-link"
-                    >XIV: Responsible AI in Deep Learning</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section15/" class="nav-link"
-                    >XV: Efficiency and Optimization</a
-                  >
-                  <a href="/content/handbooks/deep-learning/section16/" class="nav-link"
-                    >XVI: Future Trends in Deep Learning</a
-                  >
-                </div>
-              </div>
-                <div class="subsection">
-                  <div class="section-header" onclick="toggleSection('nlp')">
-                    <span>Natural Language Processing</span>
-                    <span class="chevron" id="nlp-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="nlp-content">
-                    <a href="/content/handbooks/nlp/" class="nav-link"
-                      >Overview</a
-                    >
-                    <a href="/content/handbooks/nlp/section1/" class="nav-link"
-                      >I: Linguistic and Computational Foundations</a
-                    >
-                    <a href="/content/handbooks/nlp/section2/" class="nav-link"
-                      >II: Traditional NLP Techniques</a
-                    >
-                    <a href="/content/handbooks/nlp/section3/" class="nav-link"
-                      >III: Statistical NLP Methods</a
-                    >
-                    <a href="/content/handbooks/nlp/section4/" class="nav-link"
-                      >IV: Neural Networks for NLP</a
-                    >
-                    <a href="/content/handbooks/nlp/section5/" class="nav-link"
-                      >V: Word Embeddings and Representations</a
-                    >
-                    <a href="/content/handbooks/nlp/section6/" class="nav-link"
-                      >VI: Transformer Models</a
-                    >
-                    <a href="/content/handbooks/nlp/section7/" class="nav-link"
-                      >VII: Pretraining and Scaling</a
-                    >
-                    <a href="/content/handbooks/nlp/section8/" class="nav-link"
-                      >VIII: Exploration in NLP</a
-                    >
-                    <a href="/content/handbooks/nlp/section9/" class="nav-link"
-                      >IX: Finetuning and Adaptation</a
-                    >
-                    <a href="/content/handbooks/nlp/section10/" class="nav-link"
-                      >X: Alignment and Ethics</a
-                    >
-                    <a href="/content/handbooks/nlp/section11/" class="nav-link"
-                      >XI: Multilingual NLP</a
-                    >
-                    <a href="/content/handbooks/nlp/section12/" class="nav-link"
-                      >XII: Complex NLP Tasks</a
-                    >
-                    <a href="/content/handbooks/nlp/section13/" class="nav-link"
-                      >XIII: Multimodal NLP</a
-                    >
-                    <a href="/content/handbooks/nlp/section14/" class="nav-link"
-                      >XIV: Efficiency and Deployment</a
-                    >
-                    <a href="/content/handbooks/nlp/section15/" class="nav-link"
-                      >XV: Evaluation and Benchmarks</a
-                    >
-                    <a href="/content/handbooks/nlp/section16/" class="nav-link"
-                      >XVI: Applications and Future Directions</a
-                    >
-                  </div>
-                </div>
-                <div class="subsection">
-                <div class="section-header" onclick="toggleSection('llm')">
-                  <span>Large Language Models</span>
-                  <span class="chevron" id="llm-chevron">▶</span>
-                </div>
-                <div class="section-content" id="llm-content">
-                  <a href="/content/handbooks/llm/" class="nav-link"
-                    >Overview</a
-                  >
-                  <a href="/content/handbooks/llm/section1/" class="nav-link"
-                    >I: Foundations and Theoretical Underpinnings</a
-                  >
-                  <a href="/content/handbooks/llm/section2/" class="nav-link"
-                    >II: Pre-training LLMs: Data, Objectives, and Scale</a
-                  >
-                  <a href="/content/handbooks/llm/section3/" class="nav-link"
-                    >III: Adaptation: Post-Pre-training Methods</a
-                  >
-                  <a href="/content/handbooks/llm/section4/" class="nav-link"
-                    >IV: Evaluation: Measuring LLM Capabilities and Limitations</a
-                  >
-                  <a href="/content/handbooks/llm/section5/" class="nav-link"
-                    >V: Interacting with LLMs: Prompting, Inference, and Applications</a
-                  >
-                  <a href="/content/handbooks/llm/section6/" class="nav-link"
-                    >VI: LLM Operations (LLMOps) and Deployment</a
-                  >
-                  <a href="/content/handbooks/llm/section7/" class="nav-link"
-                    >VII: Addressing Limitations and Advanced Topics</a
-                  >
-                  <a href="/content/handbooks/llm/section8/" class="nav-link"
-                    >VIII: Responsible AI: Ethics, Safety, and Governance</a
-                  >
-                  <a href="/content/handbooks/llm/section9/" class="nav-link"
-                    >IX: Multimodal LLMs</a
-                  >
-                  <a href="/content/handbooks/llm/section10/" class="nav-link"
-                    >X: Future Directions and Conclusion</a
-                  >
-                </div>
-              </div>
-                <div class="subsection">
-                  <div class="section-header" onclick="toggleSection('mlops')">
-                    <span>MLOps</span>
-                    <span class="chevron" id="mlops-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="mlops-content">
-                    <a href="/content/handbooks/mlops/" class="nav-link"
-                      >Overview</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section1/"
-                      class="nav-link"
-                      >I: Foundations of MLOps</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section2/"
-                      class="nav-link"
-                      >II: Data Management for MLOps</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section3/"
-                      class="nav-link"
-                      >III: Model Development</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section4/"
-                      class="nav-link"
-                      >IV: Model Deployment</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section5/"
-                      class="nav-link"
-                      >V: Monitoring and Maintenance</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section6/"
-                      class="nav-link"
-                      >VI: Scalability and Optimization</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section7/"
-                      class="nav-link"
-                      >VII: Collaboration and Workflow</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section8/"
-                      class="nav-link"
-                      >VIII: Ethics and Responsible AI</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section9/"
-                      class="nav-link"
-                      >IX: MLOps for Specialized Domains</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section10/"
-                      class="nav-link"
-                      >X: Large Language Model Operations (LLMOps)</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section11/"
-                      class="nav-link"
-                      >XI: Advanced MLOps Techniques</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section12/"
-                      class="nav-link"
-                      >XII: Multimodal and Cross-Disciplinary MLOps</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section13/"
-                      class="nav-link"
-                      >XIII: Evaluation and Benchmarking</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section14/"
-                      class="nav-link"
-                      >XIV: MLOps Tools and Ecosystems</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section15/"
-                      class="nav-link"
-                      >XV: Industry Applications</a
-                    >
-                    <a
-                      href="/content/handbooks/mlops/section16/"
-                      class="nav-link"
-                      >XVI: Future Directions in MLOps</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="subsection">
-              <div class="section-header" onclick="toggleSection('ai-domains')">
-                <span>AI Domains</span>
-                <span class="chevron" id="ai-domains-chevron">▶</span>
-              </div>
-              <div class="section-content" id="ai-domains-content">
-                <div class="subsection">
-                  <div class="section-header" onclick="toggleSection('xai')">
-                    <span>Explainable AI</span>
-                    <span class="chevron" id="xai-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="xai-content">
-                    <a
-                      href="/content/handbooks/explainable-ai/"
-                      class="nav-link"
-                      >Overview</a
-                    >
-                    <a
-                      href="/content/handbooks/explainable-ai/section1/"
-                      class="nav-link"
-                      >I: Foundations of Interpretability</a
-                    >
-                    <a
-                      href="/content/handbooks/explainable-ai/section2/"
-                      class="nav-link"
-                      >II: Interpretable Models</a
-                    >
-                    <a
-                      href="/content/handbooks/explainable-ai/section3/"
-                      class="nav-link"
-                      >III: Local Model-Agnostic Methods</a
-                    >
-                    <a
-                      href="/content/handbooks/explainable-ai/section4/"
-                      class="nav-link"
-                      >IV: Global Model-Agnostic Methods</a
-                    >
-                    <a
-                      href="/content/handbooks/explainable-ai/section5/"
-                      class="nav-link"
-                      >V: Neural, Generative, and RL Model Interpretability</a
-                    >
-                    <a
-                      href="/content/handbooks/explainable-ai/section6/"
-                      class="nav-link"
-                      >VI: Practical Considerations</a
-                    >
-                    <a
-                      href="/content/handbooks/explainable-ai/section7/"
-                      class="nav-link"
-                      >VII: Beyond the Methods</a
-                    >
-                  </div>
-                </div>
-                <a
-                  href="/content/handbooks/federated-learning/"
-                  class="nav-link"
-                  >Federated Learning</a
-                >
-                <a href="/content/handbooks/multimodal-ai/" class="nav-link"
-                  >Multimodal AI</a
-                >
-                <a
-                  href="/content/handbooks/recommender-systems/"
-                  class="nav-link"
-                  >Recommender Systems</a
-                >
-                <a href="/content/handbooks/robotics-ai/" class="nav-link"
-                  >Robotics & AI</a
-                >
-                <a href="/content/handbooks/self-driving-cars/" class="nav-link"
-                  >Self-Driving Cars</a
-                >
-                <a href="/content/handbooks/audio-ai/" class="nav-link"
-                  >Audio AI</a
-                >
-                <a href="/content/handbooks/document-dl/" class="nav-link"
-                  >Deep Learning for Documents</a
-                >
-                <div class="subsection">
-  <div class="section-header" onclick="toggleSection('ai-agents')">
-    <span>AI Agents</span>
-    <span class="chevron" id="ai-agents-chevron">▶</span>
-  </div>
-  <div class="section-content" id="ai-agents-content">
-    <a href="/content/handbooks/ai-agents/" class="nav-link"
-      >Overview</a
-    >
-    <a href="/content/handbooks/ai-agents/section1/" class="nav-link"
-      >I: Introduction to AI Agents</a
-    >
-    <a href="/content/handbooks/ai-agents/section2/" class="nav-link"
-      >II: Foundational AI/ML for Agents</a
-    >
-    <a href="/content/handbooks/ai-agents/section3/" class="nav-link"
-      >III: Core Agent Capabilities</a
-    >
-    <a href="/content/handbooks/ai-agents/section4/" class="nav-link"
-      >IV: Agent Development Lifecycle</a
-    >
-    <a href="/content/handbooks/ai-agents/section5/" class="nav-link"
-      >V: Agent Deployment and Interaction</a
-    >
-    <a href="/content/handbooks/ai-agents/section6/" class="nav-link"
-      >VI: Operations and Management (AgentOps)</a
-    >
-    <a href="/content/handbooks/ai-agents/section7/" class="nav-link"
-      >VII: Multi-Agent Systems (MAS)</a
-    >
-    <a href="/content/handbooks/ai-agents/section8/" class="nav-link"
-      >VIII: Ethics, Safety, and Alignment</a
-    >
-    <a href="/content/handbooks/ai-agents/section9/" class="nav-link"
-      >IX: Agents in Specialized Domains</a
-    >
-    <a href="/content/handbooks/ai-agents/section10/" class="nav-link"
-      >X: Tooling and Ecosystem Deep Dive</a
-    >
-    <a href="/content/handbooks/ai-agents/section11/" class="nav-link"
-      >XI: Advanced and Frontier Topics</a
-    >
-    <a href="/content/handbooks/ai-agents/section12/" class="nav-link"
-      >XII: Future Directions and Conclusion</a
-    >
-  </div>
-</div>
-              </div>
-            </div>
-            <div class="subsection">
-              <div
-                class="section-header"
-                onclick="toggleSection('specialized-ai')"
-              >
-                <span>Specialized AI Techniques</span>
-                <span class="chevron" id="specialized-ai-chevron">▶</span>
-              </div>
-              <div class="section-content" id="specialized-ai-content">
-                <a href="/content/handbooks/bayesian-ml/" class="nav-link"
-                  >Bayesian Machine Learning</a
-                >
-                <a href="/content/handbooks/efficient-ai/" class="nav-link"
-                  >Efficient AI & Optimization</a
-                >
-                <a
-                  href="/content/handbooks/graph-neural-networks/"
-                  class="nav-link"
-                  >Graph Neural Networks</a
-                >
-                <a
-                  href="/content/handbooks/representation-learning/"
-                  class="nav-link"
-                  >Representation Learning</a
-                >
-                <a
-                  href="/content/handbooks/self-supervised-learning/"
-                  class="nav-link"
-                  >Self-Supervised Learning</a
-                >
-                <a href="/content/handbooks/time-series/" class="nav-link"
-                  >Time Series Forecasting</a
-                >
-                <div class="subsection">
-  <div class="subsection">
-  <div class="section-header" onclick="toggleSection('quantum-ml')">
-    <span>Quantum Machine Learning</span>
-    <span class="chevron" id="quantum-ml-chevron">▶</span>
-  </div>
-  <div class="section-content" id="quantum-ml-content">
-    <a href="/content/handbooks/quantum-ml/" class="nav-link"
-      >Overview</a
-    >
-    <a href="/content/handbooks/quantum-ml/section1/" class="nav-link"
-      >I: Introduction to Quantum Machine Learning</a
-    >
-    <a href="/content/handbooks/quantum-ml/section2/" class="nav-link"
-      >II: Foundational Concepts</a
-    >
-    <a href="/content/handbooks/quantum-ml/section3/" class="nav-link"
-      >III: Core QML Building Blocks</a
-    >
-    <a href="/content/handbooks/quantum-ml/section4/" class="nav-link"
-      >IV: Quantum Algorithms for Machine Learning Tasks</a
-    >
-    <a href="/content/handbooks/quantum-ml/section5/" class="nav-link"
-      >V: Implementation and Execution of QML</a
-    >
-    <a href="/content/handbooks/quantum-ml/section6/" class="nav-link"
-      >VI: Dealing with Noise: Error Mitigation and Correction</a
-    >
-    <a href="/content/handbooks/quantum-ml/section7/" class="nav-link"
-      >VII: Training and Optimization in QML</a
-    >
-    <a href="/content/handbooks/quantum-ml/section8/" class="nav-link"
-      >VIII: QML Operations (QMLOps)</a
-    >
-    <a href="/content/handbooks/quantum-ml/section9/" class="nav-link"
-      >IX: Potential Applications and Use Cases</a
-    >
-    <a href="/content/handbooks/quantum-ml/section10/" class="nav-link"
-      >X: Challenges and Current Limitations</a
-    >
-    <a href="/content/handbooks/quantum-ml/section11/" class="nav-link"
-      >XI: QML Software, Cloud Platforms, and Tools</a
-    >
-    <a href="/content/handbooks/quantum-ml/section12/" class="nav-link"
-      >XII: Advanced QML Topics</a
-    >
-    <a href="/content/handbooks/quantum-ml/section13/" class="nav-link"
-      >XIII: Future Directions and Outlook</a
-    >
-  </div>
-</div>
-                <a
-                  href="/content/handbooks/continual-learning/"
-                  class="nav-link"
-                  >Continual Learning</a
-                >
-                <a href="/content/handbooks/adversarial-ml/" class="nav-link"
-                  >Adversarial Machine Learning</a
-                >
-                <a href="/content/handbooks/tabular-dl/" class="nav-link"
-                  >Tabular Deep Learning</a
-                >
-                <a href="/content/handbooks/knowledge-graphs/" class="nav-link"
-                  >Knowledge Graphs</a
-                >
-                <a href="/content/handbooks/automl/" class="nav-link">AutoML</a>
-                <a
-                  href="/content/handbooks/prompt-engineering/"
-                  class="nav-link"
-                  >Prompt Engineering</a
-                >
-                <a
-                  href="/content/handbooks/genetic-algorithms/"
-                  class="nav-link"
-                  >Genetic Algorithms</a
-                >
-                <a
-                  href="/content/handbooks/evolutionary-algorithms/"
-                  class="nav-link"
-                  >Evolutionary Algorithms</a
-                >
-                <a
-                  href="/content/handbooks/swarm-intelligence/"
-                  class="nav-link"
-                  >Swarm Intelligence</a
-                >
-              </div>
-            </div>
-            <div class="subsection">
-              <div class="section-header" onclick="toggleSection('applied-ai')">
-                <span>Applied AI & Ethics</span>
-                <span class="chevron" id="applied-ai-chevron">▶</span>
-              </div>
-              <div class="section-content" id="applied-ai-content">
-                <a href="/content/handbooks/ai-ethics/" class="nav-link"
-                  >AI Ethics & Fairness</a
-                >
-                <a href="/content/handbooks/ai-art/" class="nav-link"
-                  >AI for Art & Aesthetics</a
-                >
-                <a href="/content/handbooks/edge-ai/" class="nav-link"
-                  >AI for Edge & IoT</a
-                >
-                <a href="/content/handbooks/ai-finance/" class="nav-link"
-                  >AI in Finance</a
-                >
-                <a href="/content/handbooks/ai-healthcare/" class="nav-link"
-                  >AI in Healthcare</a
-                >
-                <a href="/content/handbooks/gaming-ai/" class="nav-link"
-                  >AI for Gaming</a
-                >
-                <a href="/content/handbooks/cybersecurity-ai/" class="nav-link"
-                  >AI for Cybersecurity</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="section-header" onclick="toggleSection('ecosystem')">
-            <span>Ecosystem</span>
-            <span class="chevron" id="ecosystem-chevron">▶</span>
-          </div>
-          <div class="section-content" id="ecosystem-content">
-            <a href="/content/ecosystem/" class="nav-link">Ecosystem Home</a>
-            <a href="/content/ecosystem/models/" class="nav-link">Models</a>
-            <a href="/content/ecosystem/tools/" class="nav-link">Tools</a>
-            <a href="/content/ecosystem/benchmarks/" class="nav-link"
-              >Benchmarks</a
-            >
-            <div class="subsection">
-              <div
-                class="section-header"
-                onclick="toggleSection('competitions')"
-              >
-                <span>Competitions</span>
-                <span class="chevron" id="competitions-chevron">▶</span>
-              </div>
-              <div class="section-content" id="competitions-content">
-                <a href="/content/ecosystem/competitions/" class="nav-link"
-                  >Active Competitions</a
-                >
-                <a href="/content/ecosystem/past-competitions/" class="nav-link"
-                  >Past Competitions</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="section-header" onclick="toggleSection('research')">
-            <span>Research</span>
-            <span class="chevron" id="research-chevron">▶</span>
-          </div>
-          <div class="section-content" id="research-content">
-            <a href="/content/research/" class="nav-link">Research Home</a>
-            <div class="subsection">
-              <div
-                class="section-header"
-                onclick="toggleSection('research-highlights')"
-              >
-                <span>Research Highlights</span>
-                <span class="chevron" id="research-highlights-chevron">▶</span>
-              </div>
-              <div class="section-content" id="research-highlights-content">
-                <div class="subsection">
-                  <div
-                    class="section-header"
-                    onclick="toggleSection('weekly-papers')"
-                  >
-                    <span>Weekly Papers</span>
-                    <span class="chevron" id="weekly-papers-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="weekly-papers-content">
-                    <a href="/content/research/weekly-papers/" class="nav-link"
-                      >Weekly Home</a
-                    >
-                    <div class="subsection">
-                      <div
-                        class="section-header"
-                        onclick="toggleSection('year-2025')"
-                      >
-                        <span>2025</span>
-                        <span class="chevron" id="year-2025-chevron">▶</span>
-                      </div>
-                      <div class="section-content" id="year-2025-content">
-                        <a
-                          href="/content/research/weekly-papers/2025/week17/"
-                          class="nav-link"
-                          >Week 17</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week16/"
-                          class="nav-link"
-                          >Week 16</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week15/"
-                          class="nav-link"
-                          >Week 15</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week14/"
-                          class="nav-link"
-                          >Week 14</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week13/"
-                          class="nav-link"
-                          >Week 13</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week12/"
-                          class="nav-link"
-                          >Week 12</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week11/"
-                          class="nav-link"
-                          >Week 11</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week10/"
-                          class="nav-link"
-                          >Week 10</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week9/"
-                          class="nav-link"
-                          >Week 9</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week8/"
-                          class="nav-link"
-                          >Week 8</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week7/"
-                          class="nav-link"
-                          >Week 7</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week6/"
-                          class="nav-link"
-                          >Week 6</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week5/"
-                          class="nav-link"
-                          >Week 5</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week4/"
-                          class="nav-link"
-                          >Week 4</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week3/"
-                          class="nav-link"
-                          >Week 3</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week2/"
-                          class="nav-link"
-                          >Week 2</a
-                        >
-                        <a
-                          href="/content/research/weekly-papers/2025/week1/"
-                          class="nav-link"
-                          >Week 1</a
-                        >
-                      </div>
-                    </div>
-                    <div class="subsection">
-                      <div
-                        class="section-header"
-                        onclick="toggleSection('year-2024')"
-                      >
-                        <span>2024</span>
-                        <span class="chevron" id="year-2024-chevron">▶</span>
-                      </div>
-                      <div class="section-content" id="year-2024-content">
-                        <a
-                          href="/content/research/weekly-papers/2024/week52.html"
-                          class="nav-link"
-                          >Week 52</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="subsection">
-                  <div
-                    class="section-header"
-                    onclick="toggleSection('year-review')"
-                  >
-                    <span>Year Review</span>
-                    <span class="chevron" id="year-review-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="year-review-content">
-                    <a
-                      href="/content/research/year-review/2024/"
-                      class="nav-link"
-                      >2024</a
-                    >
-                    <!-- <a
-                      href="/content/research/year-review/2023/"
-                      class="nav-link"
-                      >2023</a
-                    > -->
-                  </div>
-                </div>
-                <!-- Modified Landmark Papers section with dropdown -->
-                <div class="subsection">
-                  <div
-                    class="section-header"
-                    onclick="toggleSection('landmark-papers')"
-                  >
-                    <span>Landmark Papers</span>
-                    <span class="chevron" id="landmark-papers-chevron">▶</span>
-                  </div>
-                  <div class="section-content" id="landmark-papers-content">
-                    <a
-                      href="/content/research/landmark-papers/large-language-models/"
-                      class="nav-link"
-                      >Large Language Models</a
-                    >
-                    <a
-                      href="/content/research/landmark-papers/generative-ai/"
-                      class="nav-link"
-                      >Generative AI</a
-                    >
-                    <a
-                      href="/content/research/landmark-papers/computer-vision/"
-                      class="nav-link"
-                      >Computer Vision</a
-                    >
-                  </div>
-                </div>
-                <a href="/content/research/surveys/" class="nav-link"
-                  >Surveys</a
-                >
-              </div>
-              <div
-                class="section-header"
-                onclick="toggleSection('ai-spotlight')"
-              >
-                <span>AI Spotlight</span>
-                <span class="chevron" id="ai-spotlight-chevron">▶</span>
-              </div>
-              <div class="section-content" id="ai-spotlight-content">
-                <a href="/content/research/ai-trends/" class="nav-link"
-                  >AI News</a
-                >
-                <a href="/content/research/open-challenges/" class="nav-link"
-                  >Open Challenges</a
-                >
-              </div>
-              <div class="section-header" onclick="toggleSection('deep-dive')">
-                <span>Community & Contrib</span>
-                <span class="chevron" id="deep-dive-chevron">▶</span>
-              </div>
-              <div class="section-content" id="deep-dive-content">
-                <a href="/content/research/ai-pioneers/" class="nav-link"
-                  >Pioneers of AI</a
-                >
-                <a href="/content/research/curated-guides/" class="nav-link"
-                  >Curated Guides</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header" onclick="toggleSection('career')">
-            <span>Career Paths</span>
-            <span class="chevron" id="career-chevron">▶</span>
-          </div>
-          <div class="section-content" id="career-content">
-            <a href="/content/career-paths/" class="nav-link"
-              >Career Paths Home</a
-            >
-            <a href="/content/career-paths/ml-engineer" class="nav-link"
-              >ML Engineer</a
-            >
-            <a href="/content/career-paths/data-scientist" class="nav-link"
-              >Data Scientist</a
-            >
-            <a href="/content/career-paths/ai-researcher" class="nav-link"
-              >AI Researcher</a
-            >
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header" onclick="toggleSection('resources')">
-            <span>Resources</span>
-            <span class="chevron" id="resources-chevron">▶</span>
-          </div>
-          <div class="section-content" id="resources-content">
-            <a href="/content/resources/" class="nav-link">Resources Home</a>
-            <a href="/content/tools/" class="nav-link">AI Tools & Libraries</a>
-            <a href="/content/datasets/" class="nav-link">Datasets</a>
-            <a href="/content/books/" class="nav-link">Books & Papers</a>
-            <a href="/content/tutorials/" class="nav-link">Tutorials</a>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-header" onclick="toggleSection('about')">
-            <span>About</span>
-            <span class="chevron" id="about-chevron">▶</span>
-          </div>
-          <div class="section-content" id="about-content">
-            <a href="/content/about/project" class="nav-link">About Project</a>
-            <a href="/content/team/" class="nav-link">Team</a>
-            <a href="/content/contact/" class="nav-link">Contact</a>
-            <a href="/content/about/contributing" class="nav-link"
-              >How to Contribute</a
-            >
-            <a href="/content/about/code-of-conduct" class="nav-link"
-              >Code of Conduct</a
-            >
-          </div>
-        </div>
-      </div>
-    </aside>
-
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-    <script src="../assets/js/sidebar.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
   </body>
 </html>

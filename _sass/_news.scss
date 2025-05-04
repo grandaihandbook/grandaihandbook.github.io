@@ -1,0 +1,358 @@
+/* Grand AI Handbook News Section Styles with Higher Specificity */
+
+/* Main section container */
+section.news-section {
+  width: 100%;
+  margin: 0;
+  // padding: 30px 0;
+  font-family: "Google Sans", Arial, sans-serif;
+  min-height: 750px; /* Increased minimum height for the section */
+}
+
+/* Inner container */
+section.news-section div.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+}
+
+/* Section title */
+section.news-section h2.news-title {
+  color: black !important;
+  margin-bottom: 16px !important;
+  margin-top: 16px !important;
+  font-size: 3rem !important;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif !important;
+  line-height: 1.1666666667 !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.5px !important;
+}
+
+/* Grid layout */
+section.news-section div.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 24px;
+  height: calc(100% - 80px); /* Account for title space */
+  min-height: 550px; /* Minimum height for the grid */
+}
+
+/* Column styling */
+section.news-section div.news-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Card group for vertical columns to ensure equal height distribution */
+section.news-section div.card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+/* Make first card take up space before last card */
+section.news-section div.card-group div.news-card:first-child {
+  flex: 1;
+}
+
+/* Card styling */
+section.news-section div.news-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+section.news-section a.card-link,
+section.news-section a.card-link:link,
+section.news-section a.card-link:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  border-bottom: none !important;
+  background: none !important;
+}
+
+section.news-section a.card-link:hover,
+section.news-section a.card-link:active,
+section.news-section a.card-link:focus {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background: none !important;
+}
+
+.markdown-content section.news-section a.card-link,
+.markdown-content section.news-section a.card-link:link,
+.markdown-content section.news-section a.card-link:visited,
+.markdown-content section.news-section a.card-link:hover,
+.markdown-content section.news-section a.card-link:active,
+.markdown-content section.news-section a.card-link:focus {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  background: none !important;
+}
+
+/* Image container */
+section.news-section div.news-card div.card-image {
+  width: 100% !important;
+  // overflow: hidden !important;
+  border-radius: 8px !important;
+  margin-bottom: 16px !important;
+  transition: border-radius 0.3s ease !important;
+  position: relative !important;
+}
+
+.card-image {
+  background-color: transparent !important;
+  color: transparent !important;
+  background: transparent !important;
+  height: 205px !important;
+  overflow: visible !important;
+}
+
+// .card-image.large-card {
+//   height: 250px !important;
+//   overflow: visible !important;
+// }
+
+.markdown-content img {
+  box-shadow: none !important;
+}
+
+/* Override parent gradient */
+section.news-section div.news-card div.card-image::before {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  opacity: 0 !important;
+}
+
+section.news-section div.news-card div.card-image img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out !important;
+  position: relative !important;
+  z-index: 2 !important; /* Higher than any potential overlay */
+  border-radius: 8px !important; /* Initial border radius matching container */
+}
+
+section.news-section div.news-card:hover div.card-image {
+  border-radius: 12px !important; /* Increase border radius on hover */
+  transition: border-radius 0.3s ease-in-out !important;
+}
+
+section.news-section div.news-card:hover div.card-image img {
+  border-radius: 3rem !important; /* Larger rounded corners on hover */
+  transition: border-radius 0.3s ease-in-out !important;
+}
+
+/* Card title */
+section.news-section div.news-card h3.card-title {
+  font-size: 1.25rem !important;
+  line-height: 1.4 !important;
+  font-weight: 400 !important;
+  letter-spacing: initial !important;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif !important;
+  // font-size: 16px !important;
+  // font-weight: 500 !important;
+  color: #202124 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  padding: 0 !important;
+  border: none !important;
+  color: black !important;
+}
+
+/* Card description - only for large card */
+section.news-section div.news-card p.card-description {
+  color: #5f6368 !important;
+  margin: 12px 0 0 0 !important;
+  line-height: 1.5 !important;
+  display: block !important;
+  margin-block-start: 1em !important;
+  margin-block-end: 1em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+  unicode-bidi: isolate !important;
+  font: 400 16px/24px "Google Sans", Roboto, Arial, Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+}
+section.news-section div.news-card div.card-image img[src$=".png"] {
+  background-color: white !important; /* Adds a white background behind transparent PNGs */
+  object-fit: contain !important; /* Ensures the entire image is visible */
+  padding: 8px !important; /* Optional: adds some padding around the PNG */
+}
+/* Specific styling for large center card */
+section.news-section div.large-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+section.news-section div.large-card a.card-link {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+section.news-section div.large-card div.card-image {
+  flex: 1 !important;
+  height: auto !important; /* Changed from 0 to auto */
+  min-height: 350px !important; /* Set minimum height */
+  padding-bottom: 0 !important; /* Remove aspect ratio padding */
+  position: relative !important;
+}
+
+section.news-section div.large-card div.card-image img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+section.news-section div.large-card h3.card-title {
+  font-size: 1.75rem !important;
+  line-height: 1.2857142857 !important;
+  font-weight: 400 !important;
+  letter-spacing: initial !important;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif !important;
+  // margin-bottom: 16px !important;
+  margin-top: 24px !important;
+  color: black !important;
+}
+
+/* Center card takes full height */
+section.news-section div.center-column {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+section.news-section div.center-column div.news-card {
+  height: 100% !important;
+  flex: 1 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  section.news-section div.news-grid {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-areas:
+      "center center"
+      "left right" !important;
+    min-height: 650px !important;
+  }
+
+  section.news-section div.left-column {
+    grid-area: left !important;
+  }
+
+  section.news-section div.center-column {
+    grid-area: center !important;
+    margin-bottom: 24px !important;
+    height: 400px !important; /* Fixed height on tablet */
+  }
+
+  section.news-section div.large-card div.card-image {
+    min-height: 300px !important;
+  }
+
+  section.news-section div.right-column {
+    grid-area: right !important;
+  }
+
+  section.news-section div.large-card h3.card-title {
+    font-size: 18px !important;
+    color: black !important;
+    font-family: "Google Sans", Arial, Helvetica, sans-serif !important;
+  }
+}
+
+@media (max-width: 768px) {
+  section.news-section {
+    min-height: 1200px !important; /* Increased for mobile */
+  }
+
+  section.news-section div.news-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "center"
+      "left"
+      "right" !important;
+    min-height: 1000px !important;
+  }
+
+  section.news-section h2.news-title {
+    font-size: 28px !important;
+    margin-bottom: 24px !important;
+    font-family: "Google Sans", Arial, Helvetica, sans-serif !important;
+    color: black !important;
+  }
+
+  section.news-section div.center-column {
+    height: 350px !important; /* Fixed height on mobile */
+  }
+
+  section.news-section div.large-card div.card-image {
+    min-height: 250px !important;
+  }
+}
+
+section.news-section div.right-column div.card-group div.news-card:last-child {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+section.news-section
+  div.right-column
+  div.card-group
+  div.news-card:last-child
+  .card-image {
+  height: 230px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  flex: none !important; /* Prevent flex growing */
+}
+
+section.news-section
+  div.right-column
+  div.card-group
+  div.news-card:last-child
+  .card-image
+  img {
+  position: static !important; /* Override absolute positioning */
+  height: 205px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+section.news-section
+  div.right-column
+  div.card-group
+  div.news-card:last-child
+  h3.card-title {
+  position: static !important; /* Ensure title is in normal flow */
+  // margin-top: 16px !important; /* Add space between image and title */
+  z-index: 5 !important;
+  // background-color: white !important;
+}
+
+/* Ensure card link properly structures content */
+section.news-section
+  div.right-column
+  div.card-group
+  div.news-card:last-child
+  a.card-link {
+  display: flex !important;
+  flex-direction: column !important;
+}

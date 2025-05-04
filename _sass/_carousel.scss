@@ -1,0 +1,428 @@
+/* Features Carousel Styles - Final Consolidated Version */
+
+/* Main carousel container */
+.features-carousel {
+  position: relative !important;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 60px 0 !important;
+  font-family: "Google Sans", "Roboto", sans-serif !important;
+  color: #202124 !important;
+  background-color: #fff !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  max-width: none !important;
+}
+
+/* Inner container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1800px; /* Default max-width */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+.carousel-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.markdown-content h2 {
+  font: 400 48px / 56px "Google Sans Display", Arial, Helvetica, sans-serif !important;
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
+  margin-top: 0px !important;
+}
+
+.markdown-content h2::after {
+  background-color: none;
+  background: none;
+}
+
+.carousel-title-container {
+  flex: 0 0 48%;
+}
+
+.carousel-subtitle-container {
+  flex: 0 0 48%;
+}
+
+.carousel-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0;
+  color: #202124;
+}
+
+.carousel-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #5f6368;
+  margin: 0;
+}
+
+/* Carousel Items Wrapper */
+.carousel-items-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* Removed align-items: center to align track top */
+  overflow: hidden;
+  /* Adjusted for ~450px video + text: */
+  min-height: 750px; /* Adjust if needed */
+  margin-bottom: 25px;
+}
+
+/* Carousel Track (Container for Sliding Items) */
+.carousel-track {
+  position: relative; /* Context for absolute items */
+  width: 100%;
+  max-width: 1150px;
+  height: auto; /* Allow height adjust */
+  margin: 0 auto; /* Center track */
+  overflow: visible; /* Allow potential item shadows */
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  align-self: flex-start; /* Align track to top of wrapper */
+}
+
+/* Individual Carousel Items */
+.carousel-item {
+  position: absolute; /* For carousel functionality */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Height based on content */
+  opacity: 0;
+  /* --- Stack children vertically --- */
+  display: flex;
+  flex-direction: column;
+  /* --- End stacking --- */
+  pointer-events: none;
+  background-color: transparent; /* Let children handle background/border */
+  border: none;
+  border-radius: 0;
+  overflow: visible; /* Let children handle overflow */
+  will-change: transform, opacity;
+  z-index: 1;
+  max-width: 1150px; /* Match track width */
+  margin: 0 auto;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  z-index: 2; /* Active item is on top */
+  pointer-events: auto;
+}
+
+/* Item Media (Video Container) */
+.item-media {
+  width: 100%;
+  flex-shrink: 0; /* Prevent shrinking */
+  overflow: hidden; /* Clip video to rounded corners */
+  position: relative; /* Context for potential overlays */
+  /* --- Control vertical size --- */
+  max-height: 600px; /* Adjust this value to size video */
+  /* --- Border styling --- */
+  border: 1px solid #dadce0;
+  border-bottom: none; /* Joins with text block */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px; /* Square bottom corners */
+  border-bottom-right-radius: 16px;
+  z-index: 1; /* Lower stack order */
+  /* Optional: helps center video if letterboxed, provides bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; /* Black background for potential letterboxing */
+}
+
+/* Video Element */
+.item-media video {
+  width: 100%; /* Try to fill width */
+  height: auto; /* Let height adjust based on aspect ratio */
+  max-height: 100%; /* Ensure video doesn't exceed container's max-height */
+  object-fit: contain; /* Scale video down to fit, preserve aspect ratio */
+  display: block; /* Prevents extra space below */
+  /* Radius is applied by the container's overflow:hidden */
+}
+
+/* Text Content Container */
+.item-text {
+  width: 60rem;
+  // text-align: center;
+  // margin: 0 auto; /* Center horizontally */
+  // margin-top: 0; /* Prevent negative margin */
+  // padding: 8px 20px;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #fff;
+  /* --- Force position BELOW video --- */
+  position: static !important; /* Override conflicting styles, keep in flex flow */
+  z-index: 2; /* Higher stack order (precaution) */
+}
+
+.item-text h3 {
+  font: 500 18px/24px "Google Sans", "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #202124;
+  max-width: 85%;
+}
+
+/* Learn more link (optional) */
+.learn-more-link {
+  display: inline-flex;
+  align-items: center;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+  position: relative;
+  margin-top: 16px; /* Add some space above if needed */
+}
+
+.learn-more-link:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1a73e8;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.learn-more-link:hover {
+  color: #174ea6;
+}
+
+.learn-more-link:hover:after {
+  transform: scaleX(1);
+}
+
+.arrow-icon {
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.learn-more-link:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* Navigation Controls */
+.carousel-nav {
+  position: absolute;
+  top: calc(
+    50% - 50px
+  ); /* Adjust vertical position relative to wrapper height */
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: white;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  color: #202124;
+  transition: opacity 250ms, box-shadow 250ms;
+  opacity: 0.75;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.markdown-content h3 {
+  margin: 24px 0 18px !important;
+  color: #202124 !important;
+  font: 400 36px / 44px "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
+  line-height: 1.3 !important;
+  text-align: start;
+}
+
+.markdown-content p {
+  color: #5f6368 !important;
+  font: 400 18px / 28px "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
+}
+
+.carousel-nav:hover {
+  background-color: #fff;
+  opacity: 1;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+
+.prev-button {
+  /* Adjust left position based on track width (1150px / 2 = 575px) + button half-width (32px) + desired gap */
+  left: max(20px, calc(50% - 575px - 40px));
+}
+
+.next-button {
+  /* Adjust right position based on track width (1150px / 2 = 575px) + button half-width (32px) + desired gap */
+  right: max(20px, calc(50% - 575px - 40px));
+}
+
+.carousel-nav svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Indicators */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0 0;
+  gap: 0; /* No gap visually, but buttons have width */
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.indicator {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 20px;
+  outline: none;
+  position: relative;
+  width: 20px;
+  padding: 0;
+  margin: 0 4px;
+  transition: none;
+}
+
+.indicator:before {
+  border: 1px solid #000; /* Border for inactive */
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: calc(50% - 6px); /* Center the 10px dot + 1px border */
+  top: calc(50% - 6px);
+  background-color: transparent;
+}
+
+.indicator.active:before {
+  background: #000; /* Background for active */
+  border: none;
+  height: 10px; /* Ensure size remains consistent */
+  width: 10px;
+  left: calc(50% - 5px); /* Center the 10px dot */
+  top: calc(50% - 5px);
+  transform: none; /* Remove scale if not needed */
+}
+
+.indicator:hover:before {
+  border-color: #5f6368; /* Hover effect for inactive */
+}
+
+/* --- Responsive Styles --- */
+
+@media (min-width: 1600px) {
+  /* Optional: Adjust nav button positioning for very wide screens */
+  .prev-button {
+    left: calc(50% - 575px - 30px); /* Increase gap */
+  }
+  .next-button {
+    right: calc(50% - 575px - 30px); /* Increase gap */
+  }
+}
+
+@media (min-width: 1300px) {
+  /* Optional: Increase container width */
+  .carousel-container {
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  /* Bring nav buttons closer to the edge when space is limited */
+  .prev-button {
+    left: 20px;
+  }
+  .next-button {
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-header {
+    flex-direction: column;
+    align-items: center; /* Center align header items */
+    text-align: center; /* Center align text */
+  }
+
+  .carousel-title-container,
+  .carousel-subtitle-container {
+    flex: 0 0 100%;
+    padding: 0;
+    margin-bottom: 10px; /* Reduce margin */
+    width: 90%; /* Limit width */
+  }
+  .carousel-subtitle-container {
+    margin-bottom: 20px; /* Restore bottom margin for subtitle */
+  }
+
+  .carousel-title {
+    font-size: 2rem;
+  }
+
+  .carousel-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Adjust wrapper height for smaller screens */
+  .carousel-items-wrapper {
+    min-height: 550px; /* Adjust based on content */
+  }
+
+  /* Adjust video max-height on smaller screens */
+  .item-media {
+    max-height: 350px; /* Make video smaller on mobile */
+    /* Consider using aspect-ratio on mobile if fixed height is not ideal */
+    /* aspect-ratio: 16 / 10; */
+    /* max-height: none; */ /* Remove max-height if using aspect-ratio */
+  }
+
+  /* Smaller Nav buttons */
+  .carousel-nav {
+    width: 48px;
+    height: 48px;
+    top: calc(50% - 24px); /* Adjust position based on new size */
+  }
+
+  .carousel-nav svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .prev-button {
+    left: 16px;
+  }
+
+  .next-button {
+    right: 16px;
+  }
+}
