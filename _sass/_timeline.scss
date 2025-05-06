@@ -621,3 +621,176 @@ section h2.timeline-title::after {
 .current-year-dot {
   z-index: 52 !important; /* Increased z-index to ensure visibility */
 }
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Each milestone will float at a slightly different pace */
+#milestone-1 .milestone-dot {
+  animation: floatAnimation 8s ease-in-out infinite;
+}
+
+#milestone-2 .milestone-dot {
+  animation: floatAnimation 10s ease-in-out infinite 0.5s;
+}
+
+#milestone-3 .milestone-dot {
+  animation: floatAnimation 7s ease-in-out infinite 1s;
+}
+
+#milestone-4 .milestone-dot {
+  animation: floatAnimation 9s ease-in-out infinite 1.5s;
+}
+
+#milestone-5 .milestone-dot {
+  animation: floatAnimation 11s ease-in-out infinite 2s;
+}
+
+#milestone-6 .milestone-dot {
+  animation: floatAnimation 8s ease-in-out infinite 2.5s;
+}
+
+/* Decorative floating dots */
+.decorative-dot {
+  position: absolute;
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.decorative-dot.small {
+  width: 8px;
+  height: 8px;
+}
+
+.decorative-dot.medium {
+  width: 12px;
+  height: 12px;
+}
+
+.decorative-dot.large {
+  width: 16px;
+  height: 16px;
+}
+
+/* Floating animation for decorative dots */
+@keyframes floatDot {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(0, -20px);
+  }
+  75% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+/* Neural network connecting lines */
+.network-line {
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgba(99, 102, 241, 0.05),
+    rgba(99, 102, 241, 0.15)
+  );
+  height: 1px;
+  transform-origin: 0 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Particles flowing along timeline */
+.timeline-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 5px rgba(99, 102, 241, 0.6), 0 0 10px rgba(99, 102, 241, 0.3);
+  pointer-events: none;
+  z-index: 6;
+}
+
+/* Improved contrast for milestone info */
+.milestone-title {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 10px;
+}
+
+.milestone-description {
+  font-size: 1.05rem;
+  color: #303030;
+  line-height: 1.6;
+}
+
+/* Responsive optimizations for floating animations */
+@media (max-width: 768px) {
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    } /* Reduced floating height on mobile */
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .decorative-dot {
+    opacity: 0.4 !important; /* Slightly less visible on mobile */
+  }
+
+  .decorative-dot.small {
+    width: 6px;
+    height: 6px;
+  }
+
+  .decorative-dot.medium {
+    width: 9px;
+    height: 9px;
+  }
+
+  .decorative-dot.large {
+    width: 12px;
+    height: 12px;
+  }
+
+  .network-line {
+    opacity: 0.5 !important; /* Less visible lines on mobile */
+  }
+}
+
+/* Prefers-reduced-motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .milestone-dot,
+  .decorative-dot,
+  .timeline-particle {
+    animation: none !important;
+    transition: none !important;
+  }
+}
