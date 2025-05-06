@@ -88,7 +88,7 @@ hide_title: true
 <section class="timeline-section">
   <div class="timeline-header">
     <div class="timeline-titles">
-      <h2 class="timeline-title">AI MILESTONES</h2>
+      <h2 class="timeline-title">The milestones we have achieved</h2>
       <div class="timeline-subtitle">
 Artificial Intelligence began in the 1950s with foundational theories and early computers like the Turing Test. The 1980s introduced expert systems and early machine learning for specialized tasks. The 2000s leveraged big data and neural networks, enabling advances in vision and language. Now, AI is driving toward Artificial General Intelligence, aiming to achieve human-like reasoning across diverse domains.</div>
     </div>
@@ -295,6 +295,126 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
     </div>
 
   </div> </section>
+  <!-- Content Section -->
+<section class="content-section">
+  <div class="content-container">
+    <!-- Left column - Header and content options -->
+    <div class="content-intro">
+      <h2 class="content-heading">Resources to empower your journey</h2>
+      
+      <!-- Content options list -->
+      <div class="content-options">
+        <div class="content-option active" data-content="handbooks">
+          <div class="option-indicator"></div>
+          <div class="option-text">Handbooks</div>
+        </div>
+        
+        <div class="content-option" data-content="ecosystem">
+          <div class="option-indicator"></div>
+          <div class="option-text">Ecosystem</div>
+        </div>
+        
+        <div class="content-option" data-content="research">
+          <div class="option-indicator"></div>
+          <div class="option-text">Research</div>
+        </div>
+        
+        <div class="content-option" data-content="career-paths">
+          <div class="option-indicator"></div>
+          <div class="option-text">Career Paths</div>
+        </div>
+        
+        <div class="content-option" data-content="resources">
+          <div class="option-indicator"></div>
+          <div class="option-text">Resources</div>
+        </div>
+        
+        <div class="content-option" data-content="opportunities">
+          <div class="option-indicator"></div>
+          <div class="option-text">Opportunities</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right column - Content details with images -->
+    <div class="content-details">
+      <!-- Content slider container for transition effect -->
+      <div class="content-slider">
+        <!-- Content will be dynamically shown based on selection -->
+        <div class="content-item active" data-content="handbooks">
+          <div class="content-image">
+            <img src="/assets/images/handbooks/3.jpg" alt="Handbooks">
+          </div>
+          <div class="content-info">
+            <h3>Comprehensive Handbooks</h3>
+            <p>Our detailed handbooks provide step-by-step guidance for beginners and advanced practitioners alike, covering methodologies, best practices, and technical implementations.</p>
+            <a href="#" class="learn-more">Access handbooks <span class="arrow">→</span></a>
+          </div>
+        </div>
+        
+        <div class="content-item" data-content="ecosystem">
+          <div class="content-image">
+            <img src="/assets/images/ecosystem/tools.jpg" alt="Ecosystem">
+          </div>
+          <div class="content-info">
+            <h3>Global Ecosystem</h3>
+            <p>Connect with our worldwide network of partners, institutions, and communities collaborating to advance innovation and implement solutions to complex challenges.</p>
+            <a href="#" class="learn-more">Explore ecosystem <span class="arrow">→</span></a>
+          </div>
+        </div>
+        
+        <div class="content-item" data-content="research">
+          <div class="content-image">
+            <img src="/assets/images/research/weeklybg.jpg" alt="Research">
+          </div>
+          <div class="content-info">
+            <h3>Cutting-Edge Research</h3>
+            <p>Discover our latest breakthroughs, publications, and ongoing research initiatives across multiple disciplines, from fundamental science to applied technology.</p>
+            <a href="#" class="learn-more">View research <span class="arrow">→</span></a>
+          </div>
+        </div>
+        
+        <div class="content-item" data-content="career-paths">
+          <div class="content-image">
+            <img src="/assets/images/roadmap/mlopsbg.jpg" alt="Career Paths">
+          </div>
+          <div class="content-info">
+            <h3>Career Development Paths</h3>
+            <p>Find guidance on career progression, specialized training opportunities, and skill development programs designed to help you advance professionally in your field.</p>
+            <a href="#" class="learn-more">Explore careers <span class="arrow">→</span></a>
+          </div>
+        </div>
+        
+        <div class="content-item" data-content="resources">
+          <div class="content-image">
+            <img src="/assets/images/resources/3.jpg" alt="Resources">
+          </div>
+          <div class="content-info">
+            <h3>Educational Resources</h3>
+            <p>Access a rich library of learning materials, interactive tools, datasets, and tutorials designed to support continuous learning and development.</p>
+            <a href="#" class="learn-more">Browse resources <span class="arrow">→</span></a>
+          </div>
+        </div>
+        
+        <div class="content-item" data-content="opportunities">
+          <div class="content-image">
+            <img src="/assets/images/opportunities/4.jpg" alt="Opportunities">
+          </div>
+          <div class="content-info">
+            <h3>Collaboration Opportunities</h3>
+            <p>Discover funding opportunities, grants, fellowships, and partnership possibilities for researchers, institutions, and organizations looking to make an impact.</p>
+            <a href="#" class="learn-more">Find opportunities <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Progress timer bar -->
+      <div class="progress-timer">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- What's new in Grand AI Handbook Section -->
 <section class="news-section">
   <div class="news-container">

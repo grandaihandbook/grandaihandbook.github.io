@@ -1,0 +1,281 @@
+/* Content Section Styles */
+.content-section {
+  position: relative !important;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 100px 0 !important;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #ffffff !important;
+  background-color: #1a1a1a !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  max-width: none !important;
+}
+
+.content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  /* Reduced gap to bring sections closer */
+  gap: 30px;
+  padding: 0 30px;
+}
+
+/* Left column styles */
+.content-intro {
+  flex: 0 0 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+
+.content-options {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.content-option {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  // padding: 10px 0;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.content-option.active {
+  opacity: 1;
+}
+
+.option-indicator {
+  width: 2px;
+  height: 50px;
+  background-color: #e8eaed;
+  margin-right: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.content-option.active .option-indicator {
+  background-color: #e8eaed;
+  height: 80px; /* Increased height for active indicator */
+  transition: height 0.5s ease-in-out;
+}
+
+/* Timer animation on the active indicator */
+.content-option.active .option-indicator::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to bottom, #2daeb8, #4285f4);
+  animation: indicatorFill 5s linear forwards;
+}
+
+@keyframes indicatorFill {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.option-text {
+  font-size: 1rem;
+  font-weight: 500;
+  font: 400 16px / 28px "Google Sans", "Roboto", Arial, Helvetica, sans-serif;
+  color: #e8eaed;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+/* Right column styles */
+.content-details {
+  flex: 1;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content during transitions */
+}
+
+/* Slider container for horizontal transitions */
+.content-slider {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.content-item {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  pointer-events: none;
+}
+
+.content-item.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+  pointer-events: all;
+}
+
+.content-item.prev {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.content-image {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  /* Increased height for larger images */
+  height: 500px;
+  position: relative;
+}
+
+.content-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* This makes images cover the entire container */
+  object-position: center; /* Center the image */
+}
+
+.content-info {
+  padding: 0 10px;
+}
+
+.content-info h3 {
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
+  font: 400 36px / 44px "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
+  color: #ffffff !important;
+  padding-right: 20px !important;
+}
+
+.content-info p {
+  line-height: 1.6 !important;
+  // color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 24px !important;
+  color: #bdc1c6 !important;
+  letter-spacing: 0.1px !important;
+  font: 400 16px / 24px "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
+}
+
+.markdown-content a.learn-more {
+  display: inline-flex !important;
+  align-items: center !important;
+  color: #8ab4f8 !important;
+  font: 500 16px / 24px "Google Sans", Roboto, Arial, Helvetica, sans-serif !important;
+  text-decoration: none !important;
+}
+
+.arrow {
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.learn-more:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Progress timer bar */
+.progress-timer {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #4285f4;
+  background: linear-gradient(to right, #2daeb8, #4285f4);
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .content-container {
+    gap: 25px;
+  }
+
+  .content-intro {
+    flex: 0 0 380px;
+  }
+
+  .content-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .content-intro {
+    flex: 1 1 auto;
+  }
+
+  .content-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .content-option {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+
+  .content-item {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 60px 0;
+  }
+
+  .content-heading {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .content-options {
+    flex-direction: column;
+  }
+
+  .content-option {
+    flex: 1 1 100%;
+  }
+}
+
+.markdown-content h2.content-heading {
+  font: 60px / 72px "Google Sans Display", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
