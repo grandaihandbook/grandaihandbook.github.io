@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
       dot.classList.add(sizeClass);
 
       // Random position
-      const left = Math.random() * 100;
+      const left = 5 + Math.random() * 90; // Keep within 5-95% range
       const top = 20 + Math.random() * 60;
       dot.style.left = `${left}%`;
       dot.style.top = `${top}%`;
@@ -149,23 +149,64 @@ document.addEventListener("DOMContentLoaded", () => {
       // Random opacity
       dot.style.opacity = 0.3 + Math.random() * 0.5;
 
-      // Random animation duration and delay
-      const duration = 15 + Math.random() * 20;
-      const delay = Math.random() * 10;
-      dot.style.animation = `floatDot ${duration}s ease-in-out infinite ${delay}s`;
+      // Custom dynamic animation
+      // Instead of using the CSS animation, we'll do custom animation with JavaScript
+      const initialLeft = left;
+      const initialTop = top;
+      const moveRangeX = 5 + Math.random() * 10; // Horizontal movement range (%)
+      const moveRangeY = 10 + Math.random() * 15; // Vertical movement range (%)
+      const speedFactor = 0.2 + Math.random() * 0.3; // Random speed
+      const phaseOffset = Math.random() * Math.PI * 2; // Random starting point in animation
 
-      container.appendChild(dot);
+      // Store dot data for animation
       dots.push({
         element: dot,
-        left: left,
-        top: top,
+        initialLeft: initialLeft,
+        initialTop: initialTop,
+        moveRangeX: moveRangeX,
+        moveRangeY: moveRangeY,
+        speedFactor: speedFactor,
+        phaseOffset: phaseOffset,
       });
+
+      container.appendChild(dot);
     }
+
+    // Animate dots with requestAnimationFrame for smoother performance
+    let startTime = null;
+
+    function animateDots(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+
+      // Update each dot position
+      dots.forEach((dot) => {
+        // Calculate new position using sine waves for smooth natural movement
+        const xOffset =
+          Math.sin((elapsed * dot.speedFactor) / 1000 + dot.phaseOffset) *
+          dot.moveRangeX;
+        const yOffset =
+          Math.cos((elapsed * dot.speedFactor) / 1000 + dot.phaseOffset * 1.5) *
+          dot.moveRangeY;
+
+        // Apply new position
+        dot.element.style.left = `${dot.initialLeft + xOffset}%`;
+        dot.element.style.top = `${dot.initialTop + yOffset}%`;
+      });
+
+      // Continue animation
+      requestAnimationFrame(animateDots);
+    }
+
+    // Start animation
+    requestAnimationFrame(animateDots);
 
     // After all dots are created, create neural network connections
     setTimeout(() => {
       createNeuralNetworkLines(dots, container);
     }, 100);
+
+    return dots; // Return dots array for use in updating network lines
   }
 
   // Function to create neural network connections between dots
@@ -173,21 +214,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // Only connect some dots to avoid visual clutter
     const maxConnections = 30;
     let connectionCount = 0;
+    const connections = [];
 
     // For each dot, connect to 1-3 nearby dots
     dots.forEach((dot, index) => {
       // Calculate distance to all other dots and sort by distance
-      const connections = dots
+      const nearbyDots = dots
         .map((otherDot, otherIndex) => {
           if (otherIndex === index) return null; // Skip self
 
-          const dx = dot.left - otherDot.left;
-          const dy = dot.top - otherDot.top;
+          const dx = dot.initialLeft - otherDot.initialLeft;
+          const dy = dot.initialTop - otherDot.initialTop;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           return {
             dot: otherDot,
             distance: distance,
+            index: otherIndex,
           };
         })
         .filter((item) => item !== null)
@@ -199,34 +242,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
       for (
         let i = 0;
-        i < Math.min(maxLocalConnections, connections.length);
+        i < Math.min(maxLocalConnections, nearbyDots.length);
         i++
       ) {
         if (connectionCount >= maxConnections) break;
-        if (connections[i].distance > maxDistance) continue;
-
-        const targetDot = connections[i].dot;
+        if (nearbyDots[i].distance > maxDistance) continue;
 
         // Create the connection line
         const line = document.createElement("div");
         line.className = "network-line";
 
-        // Position the line at the source dot
-        line.style.left = `${dot.left}%`;
-        line.style.top = `${dot.top}%`;
-
-        // Calculate the line's length and angle
-        const dx = targetDot.left - dot.left;
-        const dy = targetDot.top - dot.top;
-        const length = Math.sqrt(dx * dx + dy * dy);
-        const angle = (Math.atan2(dy, dx) * 180) / Math.PI;
-
-        // Set the line's width and rotation
-        line.style.width = `${length}%`;
-        line.style.transform = `rotate(${angle}deg)`;
-
         // Add line to the container
         container.appendChild(line);
+
+        // Store connection data for updating
+        connections.push({
+          line: line,
+          source: dot,
+          target: nearbyDots[i].dot,
+        });
+
         connectionCount++;
 
         // Fade in the line
@@ -235,6 +270,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000 + Math.random() * 2000);
       }
     });
+
+    // Function to update line positions as dots move
+    function updateLines() {
+      connections.forEach((conn) => {
+        // Get current positions of source and target dots
+        const sourceX = parseFloat(conn.source.element.style.left);
+        const sourceY = parseFloat(conn.source.element.style.top);
+        const targetX = parseFloat(conn.target.element.style.left);
+        const targetY = parseFloat(conn.target.element.style.top);
+
+        // Calculate the line's length and angle
+        const dx = targetX - sourceX;
+        const dy = targetY - sourceY;
+        const length = Math.sqrt(dx * dx + dy * dy);
+        const angle = (Math.atan2(dy, dx) * 180) / Math.PI;
+
+        // Update the line's position, width and rotation
+        conn.line.style.left = `${sourceX}%`;
+        conn.line.style.top = `${sourceY}%`;
+        conn.line.style.width = `${length}%`;
+        conn.line.style.transform = `rotate(${angle}deg)`;
+      });
+
+      // Continue updating
+      requestAnimationFrame(updateLines);
+    }
+
+    // Start updating line positions
+    requestAnimationFrame(updateLines);
   }
 
   // Function to create flowing particles along the timeline
