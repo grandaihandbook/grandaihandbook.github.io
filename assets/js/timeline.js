@@ -402,4 +402,212 @@ document.addEventListener("DOMContentLoaded", () => {
   if (prefersReducedMotion) {
     document.body.classList.add("reduced-motion");
   }
+
+  // NEW ENHANCED FUNCTIONS
+
+  // Enhanced particle system with scroll responsiveness
+  function createEnhancedParticles() {
+    const particles = document.querySelectorAll(".decorative-dot");
+    let scrollY = window.scrollY || window.pageYOffset;
+    let lastScrollY = scrollY;
+
+    // Response to scroll
+    window.addEventListener("scroll", () => {
+      scrollY = window.scrollY || window.pageYOffset;
+      const scrollDelta = scrollY - lastScrollY;
+
+      particles.forEach((particle) => {
+        // Get current position values
+        const particleY = parseFloat(particle.style.top);
+        const particleX = parseFloat(particle.style.left);
+
+        if (!isNaN(particleY) && !isNaN(particleX)) {
+          // Apply subtle movement on scroll
+          particle.style.top = `${particleY + scrollDelta * 0.01}%`;
+          particle.style.left = `${particleX + scrollDelta * 0.002}%`;
+        }
+      });
+
+      lastScrollY = scrollY;
+    });
+  }
+
+  // Create animated pathways between milestone dots
+  function createMilestonePathways() {
+    const container = document.querySelector(".timeline-container");
+    const milestones = document.querySelectorAll(".milestone");
+
+    // For consecutive milestones, create animated pathways
+    for (let i = 0; i < milestones.length - 1; i++) {
+      const start = milestones[i].querySelector(".milestone-dot");
+      const end = milestones[i + 1].querySelector(".milestone-dot");
+
+      const startRect = start.getBoundingClientRect();
+      const endRect = end.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+
+      // Create pathway
+      const pathway = document.createElement("div");
+      pathway.className = "neural-pathway";
+      container.appendChild(pathway);
+
+      // Calculate relative positions
+      const startLeft =
+        ((startRect.left + startRect.width / 2 - containerRect.left) /
+          containerRect.width) *
+        100;
+      const startTop =
+        ((startRect.top + startRect.height / 2 - containerRect.top) /
+          containerRect.height) *
+        100;
+      const endLeft =
+        ((endRect.left + endRect.width / 2 - containerRect.left) /
+          containerRect.width) *
+        100;
+
+      // Position and size pathway
+      pathway.style.left = `${startLeft}%`;
+      pathway.style.top = `${startTop}%`;
+      pathway.style.width = `${endLeft - startLeft}%`;
+
+      // Add flowing particles to pathway
+      for (let j = 0; j < 3; j++) {
+        const particle = document.createElement("div");
+        particle.className = "pathway-particle";
+        pathway.appendChild(particle);
+
+        // Add random delay for natural flow
+        particle.style.animationDelay = `${j * 1.5 + Math.random()}s`;
+      }
+    }
+  }
+
+  // Enhanced neural network connections that light up
+  function enhanceNeuralConnections() {
+    const connections = document.querySelectorAll(".network-line");
+    const milestones = document.querySelectorAll(".milestone");
+
+    // Make connections light up on milestone hover
+    milestones.forEach((milestone) => {
+      const dot = milestone.querySelector(".milestone-dot");
+
+      dot.addEventListener("mouseenter", () => {
+        const dotRect = dot.getBoundingClientRect();
+
+        connections.forEach((connection) => {
+          const connRect = connection.getBoundingClientRect();
+
+          // Calculate distance from milestone to connection
+          const dotCenterX = dotRect.left + dotRect.width / 2;
+          const dotCenterY = dotRect.top + dotRect.height / 2;
+          const connCenterX = connRect.left + connRect.width / 2;
+          const connCenterY = connRect.top + connRect.height / 2;
+
+          const distance = Math.sqrt(
+            Math.pow(dotCenterX - connCenterX, 2) +
+              Math.pow(dotCenterY - connCenterY, 2)
+          );
+
+          // Activate nearby connections
+          if (distance < 200) {
+            connection.classList.add("connection-active");
+          }
+        });
+      });
+
+      dot.addEventListener("mouseleave", () => {
+        // Remove active class with delay for smooth transition
+        setTimeout(() => {
+          connections.forEach((connection) => {
+            connection.classList.remove("connection-active");
+          });
+        }, 300);
+      });
+    });
+  }
+
+  // Detect when milestones are approached during scroll
+  function detectMilestoneApproach() {
+    const milestones = document.querySelectorAll(".milestone");
+
+    function isElementCloseToCenterViewport(el) {
+      const rect = el.getBoundingClientRect();
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      const windowCenter = windowHeight / 2;
+      const elementCenter = rect.top + rect.height / 2;
+
+      // Check if element is close to center of viewport
+      return Math.abs(elementCenter - windowCenter) < windowHeight * 0.3;
+    }
+
+    function checkMilestones() {
+      milestones.forEach((milestone) => {
+        const dot = milestone.querySelector(".milestone-dot");
+
+        if (isElementCloseToCenterViewport(milestone)) {
+          if (!dot.classList.contains("in-view")) {
+            dot.classList.add("in-view");
+
+            // Remove class after animation completes
+            setTimeout(() => {
+              dot.classList.remove("in-view");
+            }, 2000);
+          }
+        }
+      });
+    }
+
+    // Initial check
+    checkMilestones();
+
+    // Check on scroll with throttling for performance
+    let ticking = false;
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          checkMilestones();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
+
+  // Add white circle indicators to milestone dots
+  function addMilestoneIndicators() {
+    const milestoneDots = document.querySelectorAll(".milestone-dot");
+
+    milestoneDots.forEach((dot) => {
+      // Create wrapper for rotation
+      const wrapper = document.createElement("div");
+      wrapper.className = "milestone-indicator-wrapper";
+      dot.appendChild(wrapper);
+
+      // Create white circle indicator inside the wrapper
+      const indicator = document.createElement("div");
+      indicator.className = "milestone-indicator-option3";
+      wrapper.appendChild(indicator);
+    });
+  }
+
+  // Create subtle wave background animation
+  function createWaveBackground() {
+    const container = document.querySelector(".timeline-container");
+
+    // Create wave element
+    const wave = document.createElement("div");
+    wave.className = "timeline-wave";
+    container.insertBefore(wave, container.firstChild);
+  }
+
+  // Initialize enhanced visual features
+  setTimeout(() => {
+    createEnhancedParticles();
+    createMilestonePathways();
+    enhanceNeuralConnections();
+    detectMilestoneApproach();
+    addMilestoneIndicators();
+    createWaveBackground();
+  }, 3000);
 });

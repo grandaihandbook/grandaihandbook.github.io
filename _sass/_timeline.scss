@@ -1,3 +1,17 @@
+/* Material You Design System Colors */
+:root {
+  --timeline-primary: #4285f4; /* Google Blue */
+  --timeline-primary-light: rgba(66, 133, 244, 0.2);
+  --timeline-secondary: #0f9d58; /* Google Green */
+  --timeline-tertiary: #f4b400; /* Google Yellow */
+  --timeline-quaternary: #db4437; /* Google Red */
+  --timeline-neutral: #202124;
+  --timeline-surface: #ffffff;
+  --timeline-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --timeline-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --timeline-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.14);
+}
+
 .timeline-section {
   width: 100vw !important;
   margin-left: calc(-50vw + 50%) !important;
@@ -67,6 +81,37 @@ section h2.timeline-title::after {
   padding: 180px 0; /* Equal space above and below for popups */
   height: 460px; /* Increased height for alternating popups */
   overflow: visible; /* Allow info cards to overflow */
+  perspective: 1000px; /* Add perspective for 3D effects */
+}
+
+/* ENHANCEMENT: Wave background animation */
+.timeline-wave {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 20%;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(66, 133, 244, 0.03) 0%,
+    rgba(15, 157, 88, 0.03) 50%,
+    rgba(66, 133, 244, 0.03) 100%
+  );
+  z-index: 0;
+  border-radius: 100px;
+  animation: waveAnimation 15s ease-in-out infinite;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    transform: translateY(-8px) scaleY(1.03);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 /* Updated timeline line with dark color scheme */
@@ -123,7 +168,7 @@ section h2.timeline-title::after {
   border-radius: 6px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   animation: progressLine 2.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  z-index: 2;
+  z-index: 5 !important; /* Increased z-index to ensure visibility */
 }
 
 @keyframes progressLine {
@@ -158,7 +203,7 @@ section h2.timeline-title::after {
   z-index: 10;
 }
 
-/* Updated milestone dots with refined design */
+/* ENHANCEMENT: Milestone dot styles with Material You */
 .milestone-dot {
   width: 85px;
   height: 85px;
@@ -170,14 +215,30 @@ section h2.timeline-title::after {
   font-family: "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
   font-size: 1.2rem;
   position: relative;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   background: linear-gradient(135deg, #ffffff, #f0f0f5);
   border: 3px solid rgba(30, 30, 30, 0.7);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.15),
-    0 0 30px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.8),
-    inset 0 0 30px rgba(255, 255, 255, 0.4);
+  box-shadow: var(--timeline-shadow-md);
   z-index: 12;
   cursor: pointer;
+  overflow: visible;
+}
+
+/* ENHANCEMENT: White circle indicator */
+.milestone-indicator {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  transform: translate(25%, -25%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .milestone-inner {
@@ -191,6 +252,21 @@ section h2.timeline-title::after {
   border-radius: 50%;
   overflow: hidden;
   z-index: 1;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* ENHANCEMENT: Rotation on hover */
+.milestone-dot:hover .milestone-inner {
+  animation: rotateDot 10s linear infinite;
+}
+
+@keyframes rotateDot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Updated year text color to dark */
@@ -201,13 +277,54 @@ section h2.timeline-title::after {
   z-index: 2;
   font-family: "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  letter-spacing: -0.02em;
 }
 
+/* ENHANCEMENT: Pulse animation when milestones are approached */
+@keyframes approachPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: var(--timeline-shadow-md);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(66, 133, 244, 0.3), 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: var(--timeline-shadow-md);
+  }
+}
+
+.milestone-dot.in-view {
+  animation: approachPulse 2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ENHANCEMENT: Enhanced hover effect */
 .milestone-dot:hover {
-  transform: scale(1.15);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 20px 45px rgba(0, 0, 0, 0.15),
-    0 0 40px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.9),
-    inset 0 0 40px rgba(255, 255, 255, 0.5);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: var(--timeline-shadow-lg), 0 0 20px rgba(66, 133, 244, 0.3),
+    0 0 40px rgba(66, 133, 244, 0.2);
+}
+
+/* ENHANCEMENT: Material You milestone dot hover colors */
+.dot-1950:hover {
+  border-color: var(--timeline-primary);
+}
+.dot-1986:hover {
+  border-color: var(--timeline-secondary);
+}
+.dot-2012:hover {
+  border-color: var(--timeline-tertiary);
+}
+.dot-2017:hover {
+  border-color: var(--timeline-quaternary);
+}
+.dot-2022:hover {
+  border-color: var(--timeline-primary);
+}
+.dot-2030:hover {
+  border-color: var(--timeline-secondary);
 }
 
 .milestone-info {
@@ -215,9 +332,10 @@ section h2.timeline-title::after {
   background: rgba(255, 255, 255, 0.97);
   padding: 28px 32px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--timeline-shadow-md);
   width: 360px;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   z-index: 100;
@@ -240,15 +358,32 @@ section h2.timeline-title::after {
   bottom: 105px;
 }
 
+/* ENHANCEMENT: Gentle bounce animation for info cards */
+@keyframes infoBounce {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-5px);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .milestone-dot:hover + .milestone-info,
 .milestone-info:hover {
   opacity: 1;
   pointer-events: auto;
-  transform: translateY(0);
-}
-
-.milestone-info:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.12);
+  animation: infoBounce 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  box-shadow: var(--timeline-shadow-lg);
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -290,18 +425,19 @@ section h2.timeline-title::after {
 
 /* Updated title color to dark */
 .milestone-title {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #000000;
   font-family: "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
-  font-size: 1.3rem;
-  color: #1a1a1a;
   margin-bottom: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding-bottom: 10px;
 }
 
 .milestone-description {
   font-size: 1.05rem;
-  color: #4b5563;
+  font-family: "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
+  color: #303030;
   line-height: 1.6;
 }
 
@@ -309,7 +445,7 @@ section h2.timeline-title::after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 30;
+  z-index: 50 !important; /* Increased z-index to ensure visibility */
   opacity: 0;
   transition: opacity 1s ease 2s;
   pointer-events: none;
@@ -344,7 +480,7 @@ section h2.timeline-title::after {
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.4),
     0 0 30px rgba(0, 0, 0, 0.2);
   animation: pulseMarker 2s infinite;
-  z-index: 2;
+  z-index: 52 !important; /* Increased z-index to ensure visibility */
 }
 
 @keyframes pulseMarker {
@@ -439,7 +575,185 @@ section h2.timeline-title::after {
     inset 0 0 40px rgba(255, 255, 255, 0.5);
 }
 
-/* Responsive styles - unchanged from original */
+/* Add subtle inner circle to milestone dots */
+.milestone-dot::after {
+  content: "";
+  position: absolute;
+  width: 76%;
+  height: 76%;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+/* Each milestone will float at a slightly different pace */
+#milestone-1 .milestone-dot {
+  animation: floatAnimation 8s ease-in-out infinite;
+}
+
+#milestone-2 .milestone-dot {
+  animation: floatAnimation 10s ease-in-out infinite 0.5s;
+}
+
+#milestone-3 .milestone-dot {
+  animation: floatAnimation 7s ease-in-out infinite 1s;
+}
+
+#milestone-4 .milestone-dot {
+  animation: floatAnimation 9s ease-in-out infinite 1.5s;
+}
+
+#milestone-5 .milestone-dot {
+  animation: floatAnimation 11s ease-in-out infinite 2s;
+}
+
+#milestone-6 .milestone-dot {
+  animation: floatAnimation 8s ease-in-out infinite 2.5s;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Decorative floating dots */
+.decorative-dot {
+  position: absolute;
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.decorative-dot.small {
+  width: 8px;
+  height: 8px;
+}
+
+.decorative-dot.medium {
+  width: 12px;
+  height: 12px;
+}
+
+.decorative-dot.large {
+  width: 16px;
+  height: 16px;
+}
+
+/* Floating animation for decorative dots */
+@keyframes floatDot {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(15px, -15px);
+  }
+  40% {
+    transform: translate(5px, -25px);
+  }
+  60% {
+    transform: translate(-10px, -15px);
+  }
+  80% {
+    transform: translate(-15px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* ENHANCEMENT: Neural network connecting lines */
+.network-line {
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgba(99, 102, 241, 0.05),
+    rgba(99, 102, 241, 0.15)
+  );
+  height: 1px;
+  transform-origin: 0 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: background 0.4s ease, opacity 0.4s ease;
+}
+
+/* ENHANCEMENT: Active network connections */
+.network-line.connection-active {
+  background: linear-gradient(
+    to right,
+    rgba(66, 133, 244, 0.3),
+    rgba(15, 157, 88, 0.3)
+  );
+  opacity: 0.8 !important;
+  height: 2px;
+  box-shadow: 0 0 10px rgba(66, 133, 244, 0.3);
+}
+
+/* ENHANCEMENT: Neural pathways between milestones */
+.neural-pathway {
+  position: absolute;
+  height: 2px;
+  background: rgba(66, 133, 244, 0.1);
+  transform-origin: left center;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.pathway-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(66, 133, 244, 0.6);
+  filter: blur(1px);
+  top: 50%;
+  transform: translateY(-50%);
+  animation: flowParticle 6s linear infinite;
+  box-shadow: 0 0 10px rgba(66, 133, 244, 0.4);
+}
+
+@keyframes flowParticle {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* Particles flowing along timeline */
+.timeline-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 5px rgba(99, 102, 241, 0.6), 0 0 10px rgba(99, 102, 241, 0.3);
+  pointer-events: none;
+  z-index: 6;
+}
+
+/* Responsive styles - updated for enhanced features */
 @media (max-width: 1200px) {
   .timeline-header {
     width: 95%;
@@ -461,6 +775,16 @@ section h2.timeline-title::after {
   .milestone-info {
     width: 330px;
     padding: 24px 28px;
+  }
+
+  .timeline-wave {
+    height: 50%;
+    top: 25%;
+  }
+
+  .milestone-indicator {
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -493,6 +817,18 @@ section h2.timeline-title::after {
 
   .milestone-year {
     font-size: 1.2rem;
+  }
+
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 }
 
@@ -550,6 +886,55 @@ section h2.timeline-title::after {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.05);
   }
+
+  .milestone-indicator {
+    width: 10px;
+    height: 10px;
+  }
+
+  .neural-pathway {
+    height: 1px;
+  }
+
+  .pathway-particle {
+    width: 4px;
+    height: 4px;
+  }
+
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    } /* Reduced floating height on mobile */
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .decorative-dot {
+    opacity: 0.4 !important; /* Slightly less visible on mobile */
+  }
+
+  .decorative-dot.small {
+    width: 6px;
+    height: 6px;
+  }
+
+  .decorative-dot.medium {
+    width: 9px;
+    height: 9px;
+  }
+
+  .decorative-dot.large {
+    width: 12px;
+    height: 12px;
+  }
+
+  .network-line {
+    opacity: 0.5 !important; /* Less visible lines on mobile */
+  }
 }
 
 @media (max-width: 576px) {
@@ -588,208 +973,15 @@ section h2.timeline-title::after {
   .milestone-description {
     font-size: 0.85rem;
   }
-}
-/* Add subtle inner circle to milestone dots */
-.milestone-dot::after {
-  content: "";
-  position: absolute;
-  width: 76%;
-  height: 76%;
-  border-radius: 50%;
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.5);
-  z-index: 2;
-}
 
-/* Enhanced milestone appearance */
-.milestone-dot {
-  /* Keep your existing styles and add these enhancements */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.15),
-    0 0 30px rgba(0, 0, 0, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.8),
-    inset 0 0 30px rgba(255, 255, 255, 0.4);
-}
-
-/* Enhanced year text appearance */
-.milestone-year {
-  letter-spacing: -0.02em;
-}
-
-/* Also fix the progress line and current year marker */
-.timeline-progress {
-  z-index: 5 !important; /* Increased z-index to ensure visibility */
-}
-
-.current-year-marker {
-  z-index: 50 !important; /* Increased z-index to ensure visibility */
-}
-
-.current-year-dot {
-  z-index: 52 !important; /* Increased z-index to ensure visibility */
-}
-
-@keyframes floatAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Each milestone will float at a slightly different pace */
-#milestone-1 .milestone-dot {
-  animation: floatAnimation 8s ease-in-out infinite;
-}
-
-#milestone-2 .milestone-dot {
-  animation: floatAnimation 10s ease-in-out infinite 0.5s;
-}
-
-#milestone-3 .milestone-dot {
-  animation: floatAnimation 7s ease-in-out infinite 1s;
-}
-
-#milestone-4 .milestone-dot {
-  animation: floatAnimation 9s ease-in-out infinite 1.5s;
-}
-
-#milestone-5 .milestone-dot {
-  animation: floatAnimation 11s ease-in-out infinite 2s;
-}
-
-#milestone-6 .milestone-dot {
-  animation: floatAnimation 8s ease-in-out infinite 2.5s;
-}
-
-/* Decorative floating dots */
-.decorative-dot {
-  position: absolute;
-  background: rgba(99, 102, 241, 0.2);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.decorative-dot.small {
-  width: 8px;
-  height: 8px;
-}
-
-.decorative-dot.medium {
-  width: 12px;
-  height: 12px;
-}
-
-.decorative-dot.large {
-  width: 16px;
-  height: 16px;
-}
-
-/* Floating animation for decorative dots */
-@keyframes floatDot {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(10px, -10px);
-  }
-  50% {
-    transform: translate(0, -20px);
-  }
-  75% {
-    transform: translate(-10px, -10px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-/* Neural network connecting lines */
-.network-line {
-  position: absolute;
-  background: linear-gradient(
-    to right,
-    rgba(99, 102, 241, 0.05),
-    rgba(99, 102, 241, 0.15)
-  );
-  height: 1px;
-  transform-origin: 0 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-/* Particles flowing along timeline */
-.timeline-particle {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  box-shadow: 0 0 5px rgba(99, 102, 241, 0.6), 0 0 10px rgba(99, 102, 241, 0.3);
-  pointer-events: none;
-  z-index: 6;
-}
-
-/* Improved contrast for milestone info */
-.milestone-title {
-  font-weight: 500;
-  font-size: 1.2rem;
-  color: #000000;
-  font-family: "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
-  margin-bottom: 14px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  padding-bottom: 10px;
-}
-
-.milestone-description {
-  font-size: 1.05rem;
-  font-family: "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
-  color: #303030;
-  line-height: 1.6;
-}
-
-/* Responsive optimizations for floating animations */
-@media (max-width: 768px) {
-  @keyframes floatAnimation {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-8px);
-    } /* Reduced floating height on mobile */
-    100% {
-      transform: translateY(0);
-    }
+  .milestone-indicator {
+    width: 8px;
+    height: 8px;
   }
 
-  .decorative-dot {
-    opacity: 0.4 !important; /* Slightly less visible on mobile */
-  }
-
-  .decorative-dot.small {
-    width: 6px;
-    height: 6px;
-  }
-
-  .decorative-dot.medium {
-    width: 9px;
-    height: 9px;
-  }
-
-  .decorative-dot.large {
-    width: 12px;
-    height: 12px;
-  }
-
-  .network-line {
-    opacity: 0.5 !important; /* Less visible lines on mobile */
+  .timeline-wave {
+    height: 40%;
+    top: 30%;
   }
 }
 
@@ -797,29 +989,545 @@ section h2.timeline-title::after {
 @media (prefers-reduced-motion: reduce) {
   .milestone-dot,
   .decorative-dot,
-  .timeline-particle {
+  .timeline-particle,
+  .pathway-particle,
+  .milestone-inner,
+  .timeline-wave {
     animation: none !important;
     transition: none !important;
   }
+
+  .milestone-dot:hover .milestone-inner {
+    animation: none !important;
+  }
+
+  .milestone-dot:hover + .milestone-info,
+  .milestone-info:hover {
+    animation: none !important;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .milestone-dot.in-view {
+    animation: none !important;
+  }
 }
 
-@keyframes floatDot {
+/* Remove the wave background */
+.timeline-wave {
+  display: none !important;
+}
+
+/* Fix milestone dot - remove the extra borders and indicators */
+.milestone-dot {
+  position: relative;
+  overflow: visible;
+}
+
+/* Keep the inner container with year text stable */
+.milestone-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  /* Remove rotation animation from inner container */
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Remove other decorative elements */
+.milestone-dot::before {
+  display: none !important;
+}
+
+.milestone-dot::after {
+  display: none !important;
+}
+
+/* Use a wrapper for the rotating animation to separate from floating */
+.milestone-indicator-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: rotateIndicatorWrapper 10s linear infinite;
+  z-index: 19;
+}
+
+/* Create a single white circle indicator */
+.milestone-indicator {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes rotateIndicatorWrapper {
   0% {
-    transform: translate(0, 0);
-  }
-  20% {
-    transform: translate(15px, -15px);
-  }
-  40% {
-    transform: translate(5px, -25px);
-  }
-  60% {
-    transform: translate(-10px, -15px);
-  }
-  80% {
-    transform: translate(-15px, -5px);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translate(0, 0);
+    transform: rotate(360deg);
+  }
+}
+
+/* Milestone dot hover - maintain dark scheme */
+.milestone-dot:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14), 0 0 20px rgba(0, 0, 0, 0.1),
+    0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+/* Keep dark color schemes for milestone dots */
+.dot-1950:hover {
+  border-color: #1a1a1a;
+}
+.dot-1986:hover {
+  border-color: #222222;
+}
+.dot-2012:hover {
+  border-color: #2a2a2a;
+}
+.dot-2017:hover {
+  border-color: #333333;
+}
+.dot-2022:hover {
+  border-color: #3a3a3a;
+}
+.dot-2030:hover {
+  border-color: #000000;
+}
+
+/* Neural pathway - dark scheme */
+.neural-pathway {
+  background: rgba(30, 30, 30, 0.1);
+}
+
+.pathway-particle {
+  background: rgba(30, 30, 30, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Active network connections - dark scheme */
+.network-line.connection-active {
+  background: linear-gradient(
+    to right,
+    rgba(30, 30, 30, 0.3),
+    rgba(50, 50, 50, 0.3)
+  );
+  opacity: 0.8 !important;
+  height: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments for the indicator */
+@media (max-width: 1200px) {
+  .milestone-indicator {
+    width: 10px;
+    height: 10px;
+    top: -5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .milestone-indicator {
+    width: 10px;
+    height: 10px;
+    top: -5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .milestone-indicator {
+    width: 8px;
+    height: 8px;
+    top: -4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .milestone-indicator {
+    width: 6px;
+    height: 6px;
+    top: -3px;
+  }
+}
+/* Make neural network connections more subtle */
+.network-line {
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgba(99, 102, 241, 0.03),
+    rgba(99, 102, 241, 0.06)
+  );
+  height: 1px;
+  transform-origin: 0 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: background 0.4s ease, opacity 0.4s ease;
+}
+
+/* Reduce prominence of network connections on hover */
+.network-line.connection-active {
+  background: linear-gradient(
+    to right,
+    rgba(30, 30, 30, 0.1),
+    rgba(50, 50, 50, 0.15)
+  );
+  opacity: 0.4 !important; /* Reduced opacity */
+  height: 1px; /* Thinner line */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Reduced glow */
+}
+
+/* Make neural pathway more subtle */
+.neural-pathway {
+  background: rgba(30, 30, 30, 0.05);
+  opacity: 0.6;
+}
+
+.pathway-particle {
+  background: rgba(30, 30, 30, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  width: 4px;
+  height: 4px;
+  opacity: 0.5;
+}
+/* Teal-blue gradient indicators that progress from light to dark */
+.milestone-indicator {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 20;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: filter 0.3s ease;
+}
+
+/* Milestone-specific indicator styling with teal-blue progression */
+#milestone-1 .milestone-indicator {
+  background: linear-gradient(135deg, #80ffff, #4dc7c7); /* Lightest teal */
+  filter: drop-shadow(0 0 3px rgba(77, 199, 199, 0.4));
+}
+
+#milestone-2 .milestone-indicator {
+  background: linear-gradient(135deg, #66ebeb, #3db0b0); /* Light teal */
+  filter: drop-shadow(0 0 3px rgba(61, 176, 176, 0.4));
+}
+
+#milestone-3 .milestone-indicator {
+  background: linear-gradient(135deg, #4dd6d6, #2daeb8); /* Medium teal */
+  filter: drop-shadow(0 0 3px rgba(45, 174, 184, 0.4));
+}
+
+#milestone-4 .milestone-indicator {
+  background: linear-gradient(135deg, #33c1c1, #1c99a9); /* Medium-dark teal */
+  filter: drop-shadow(0 0 3px rgba(28, 153, 169, 0.5));
+}
+
+#milestone-5 .milestone-indicator {
+  background: linear-gradient(135deg, #1aacc1, #0c859b); /* Dark teal */
+  filter: drop-shadow(0 0 3px rgba(12, 133, 155, 0.5));
+}
+
+#milestone-6 .milestone-indicator {
+  background: linear-gradient(135deg, #0d97b5, #07708c); /* Darkest teal-blue */
+  filter: drop-shadow(0 0 3px rgba(7, 112, 140, 0.6));
+}
+
+/* Enhanced hover effect */
+.milestone-dot:hover .milestone-indicator {
+  filter: drop-shadow(0 0 5px rgba(0, 210, 255, 0.7));
+}
+
+/* Responsive adjustments remain the same */
+@media (max-width: 1200px) {
+  .milestone-indicator {
+    width: 10px;
+    height: 10px;
+    top: -5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .milestone-indicator {
+    width: 10px;
+    height: 10px;
+    top: -5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .milestone-indicator {
+    width: 8px;
+    height: 8px;
+    top: -4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .milestone-indicator {
+    width: 6px;
+    height: 6px;
+    top: -3px;
+  }
+}
+
+.milestone-indicator-option1 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 20;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#milestone-1 .milestone-indicator-option1 {
+  background: linear-gradient(135deg, #00c6ff, #0072ff); /* Electric blue */
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.5), 0 0 15px rgba(0, 114, 255, 0.3);
+}
+
+#milestone-2 .milestone-indicator-option1 {
+  background: linear-gradient(135deg, #0099ff, #0051ff); /* Medium blue */
+  box-shadow: 0 0 8px rgba(0, 153, 255, 0.5), 0 0 15px rgba(0, 81, 255, 0.3);
+}
+
+#milestone-3 .milestone-indicator-option1 {
+  background: linear-gradient(135deg, #0066ff, #2638ff); /* Royal blue */
+  box-shadow: 0 0 8px rgba(0, 102, 255, 0.5), 0 0 15px rgba(38, 56, 255, 0.3);
+}
+
+#milestone-4 .milestone-indicator-option1 {
+  background: linear-gradient(135deg, #0033ff, #4924ff); /* Blue-purple */
+  box-shadow: 0 0 8px rgba(0, 51, 255, 0.5), 0 0 15px rgba(73, 36, 255, 0.3);
+}
+
+#milestone-5 .milestone-indicator-option1 {
+  background: linear-gradient(135deg, #5204ff, #7215f9); /* Purple */
+  box-shadow: 0 0 8px rgba(82, 4, 255, 0.5), 0 0 15px rgba(114, 21, 249, 0.3);
+}
+
+#milestone-6 .milestone-indicator-option1 {
+  background: linear-gradient(135deg, #6600ff, #9900ff); /* Deep purple */
+  box-shadow: 0 0 8px rgba(102, 0, 255, 0.5), 0 0 15px rgba(153, 0, 255, 0.3);
+}
+
+/* Option 2: Neon Evolution (White to Cyan to Blue to Magenta) */
+.milestone-indicator-option2 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 20;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+#milestone-1 .milestone-indicator-option2 {
+  background: #ffffff; /* Pure white */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+#milestone-2 .milestone-indicator-option2 {
+  background: #a0ffff; /* Pale cyan */
+  box-shadow: 0 0 8px rgba(160, 255, 255, 0.8),
+    0 0 15px rgba(160, 255, 255, 0.5);
+}
+
+#milestone-3 .milestone-indicator-option2 {
+  background: #00ffff; /* Cyan */
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.8), 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+#milestone-4 .milestone-indicator-option2 {
+  background: #00a0ff; /* Sky blue */
+  box-shadow: 0 0 8px rgba(0, 160, 255, 0.8), 0 0 15px rgba(0, 160, 255, 0.5);
+}
+
+#milestone-5 .milestone-indicator-option2 {
+  background: #6060ff; /* Blue-purple */
+  box-shadow: 0 0 8px rgba(96, 96, 255, 0.8), 0 0 15px rgba(96, 96, 255, 0.5);
+}
+
+#milestone-6 .milestone-indicator-option2 {
+  background: #ff00ff; /* Magenta */
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.8), 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+/* Option 3: Modern AI Evolution (Green to Blue Gradient with Glassy Finish) */
+.milestone-indicator-option3 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 20;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-size: 200% 200%;
+  animation: shiftGradient 4s ease infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes shiftGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#milestone-1 .milestone-indicator-option3 {
+  background: linear-gradient(45deg, #00ff8f, #00a1ff);
+  box-shadow: 0 0 8px rgba(0, 255, 143, 0.4), 0 0 15px rgba(0, 161, 255, 0.3);
+}
+
+#milestone-2 .milestone-indicator-option3 {
+  background: linear-gradient(45deg, #00e5a1, #0090e5);
+  box-shadow: 0 0 8px rgba(0, 229, 161, 0.4), 0 0 15px rgba(0, 144, 229, 0.3);
+}
+
+#milestone-3 .milestone-indicator-option3 {
+  background: linear-gradient(45deg, #00ccb4, #0080cc);
+  box-shadow: 0 0 8px rgba(0, 204, 180, 0.4), 0 0 15px rgba(0, 128, 204, 0.3);
+}
+
+#milestone-4 .milestone-indicator-option3 {
+  background: linear-gradient(45deg, #00b2c7, #0070b2);
+  box-shadow: 0 0 8px rgba(0, 178, 199, 0.4), 0 0 15px rgba(0, 112, 178, 0.3);
+}
+
+#milestone-5 .milestone-indicator-option3 {
+  background: linear-gradient(45deg, #0099da, #0060a0);
+  box-shadow: 0 0 8px rgba(0, 153, 218, 0.4), 0 0 15px rgba(0, 96, 160, 0.3);
+}
+
+#milestone-6 .milestone-indicator-option3 {
+  background: linear-gradient(45deg, #0080ff, #0050cc);
+  box-shadow: 0 0 8px rgba(0, 128, 255, 0.4), 0 0 15px rgba(0, 80, 204, 0.3);
+}
+
+/* Option 4: Metallic Evolution (Silver to Gold with Reflective Finish) */
+.milestone-indicator-option4 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 20;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#milestone-1 .milestone-indicator-option4 {
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0, #d0d0d0, #e0e0e0);
+  box-shadow: 0 0 8px rgba(240, 240, 240, 0.5),
+    inset 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+#milestone-2 .milestone-indicator-option4 {
+  background: linear-gradient(135deg, #e0e0e0, #d0d0d0, #c0c0c0, #d0d0d0);
+  box-shadow: 0 0 8px rgba(224, 224, 224, 0.5),
+    inset 0 0 3px rgba(255, 255, 255, 0.7);
+}
+
+#milestone-3 .milestone-indicator-option4 {
+  background: linear-gradient(135deg, #d0d0d0, #c0c0c0, #b0b0b0, #c0c0c0);
+  box-shadow: 0 0 8px rgba(208, 208, 208, 0.5),
+    inset 0 0 3px rgba(255, 255, 255, 0.6);
+}
+
+#milestone-4 .milestone-indicator-option4 {
+  background: linear-gradient(135deg, #f5e7cc, #e8d5b0, #d9c090, #e8d5b0);
+  box-shadow: 0 0 8px rgba(245, 231, 204, 0.5),
+    inset 0 0 3px rgba(255, 255, 230, 0.6);
+}
+
+#milestone-5 .milestone-indicator-option4 {
+  background: linear-gradient(135deg, #ffd700, #e6c300, #cca800, #e6c300);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5),
+    inset 0 0 3px rgba(255, 240, 180, 0.6);
+}
+
+#milestone-6 .milestone-indicator-option4 {
+  background: linear-gradient(135deg, #ffce00, #fcba03, #e5a800, #fcba03);
+  box-shadow: 0 0 8px rgba(255, 206, 0, 0.6),
+    inset 0 0 4px rgba(255, 236, 150, 0.8);
+}
+
+/* Enhanced hover effect for all options */
+.milestone-dot:hover .milestone-indicator-option1,
+.milestone-dot:hover .milestone-indicator-option2,
+.milestone-dot:hover .milestone-indicator-option3,
+.milestone-dot:hover .milestone-indicator-option4 {
+  transform: translateX(-50%) scale(1.2);
+  box-shadow: 0 0 12px currentColor, 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments for all options */
+@media (max-width: 1200px) {
+  .milestone-indicator-option1,
+  .milestone-indicator-option2,
+  .milestone-indicator-option3,
+  .milestone-indicator-option4 {
+    width: 10px;
+    height: 10px;
+    top: -5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .milestone-indicator-option1,
+  .milestone-indicator-option2,
+  .milestone-indicator-option3,
+  .milestone-indicator-option4 {
+    width: 8px;
+    height: 8px;
+    top: -4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .milestone-indicator-option1,
+  .milestone-indicator-option2,
+  .milestone-indicator-option3,
+  .milestone-indicator-option4 {
+    width: 6px;
+    height: 6px;
+    top: -3px;
   }
 }
