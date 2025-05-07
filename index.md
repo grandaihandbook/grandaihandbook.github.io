@@ -9,7 +9,7 @@ hide_title: true
   <section class="hero">
   <!-- Main content on left -->
   <div class="hero-content">
-    <h1 class="hero-title">AI is limitless. Are you?</h1>
+    <h1 class="hero-title">AI is <span class="gradient-text">limitless</span>. Are you?</h1>
     <p class="hero-subtitle">
       Finally understand AI the right way. This essential handbook replaces confusing jargon with remarkably clear explanations and genuinely deep insights, consolidating every key concept and critical layer into one straightforward guide focused squarely on practical understanding.
     </p>
@@ -195,6 +195,9 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
   <symbol id="chevron-right" viewBox="0 0 24 24">
     <path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
   </symbol>
+  <symbol id="arrow-right" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+  </symbol>
 </svg>
 <section class="features-carousel">
   <div class="carousel-container">
@@ -222,6 +225,12 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
           </div>
           <div class="item-text">
             <h3>Powering the next frontier of space innovation.</h3>
+            <a href="#" class="learn-more-button">
+              Learn More
+              <svg role="presentation" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                <use href="#arrow-right"></use>
+              </svg>
+            </a>
             </div>
         </div>
 
@@ -233,6 +242,12 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
           </div>
           <div class="item-text">
              <h3>Redefining the boundaries of art and creative expression.</h3>
+             <a href="#" class="learn-more-button">
+              Learn More
+              <svg role="presentation" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                <use href="#arrow-right"></use>
+              </svg>
+            </a>
             </div>
         </div>
 
@@ -244,6 +259,12 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
           </div>
           <div class="item-text">
              <h3>Enabling safer, smarter autonomous vehicles.</h3>
+             <a href="#" class="learn-more-button">
+              Learn More
+              <svg role="presentation" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                <use href="#arrow-right"></use>
+              </svg>
+            </a>
             </div>
         </div>
 
@@ -255,6 +276,12 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
           </div>
           <div class="item-text">
              <h3> Unlocking immersive worlds through augmented reality.</h3>
+             <a href="#" class="learn-more-button">
+              Learn More
+              <svg role="presentation" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                <use href="#arrow-right"></use>
+              </svg>
+            </a>
             </div>
         </div>
         <div class="carousel-item" id="item5">
@@ -265,6 +292,12 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
           </div>
           <div class="item-text">
              <h3>Monitoring the health of coral reefs in a changing climate.</h3>
+             <a href="#" class="learn-more-button">
+              Learn More
+              <svg role="presentation" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                <use href="#arrow-right"></use>
+              </svg>
+            </a>
             </div>
         </div>
         <div class="carousel-item" id="item6">
@@ -275,6 +308,12 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
           </div>
           <div class="item-text">
              <h3>Enhancing the immersive experience of gaming in a rapidly evolving digital landscape.</h3>
+             <a href="#" class="learn-more-button">
+              Learn More
+              <svg role="presentation" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                <use href="#arrow-right"></use>
+              </svg>
+            </a>
             </div>
         </div>
 

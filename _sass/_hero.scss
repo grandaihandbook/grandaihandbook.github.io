@@ -116,7 +116,7 @@
 /* Hero content (now on left) */
 .markdown-content .hero-content {
   // padding: 0 3rem !important;
-  max-width: 48% !important; /* Slightly smaller to come closer to shapes */
+  max-width: 30% !important; /* Slightly smaller to come closer to shapes */
   position: relative !important;
   z-index: 5 !important;
   margin-left: 2% !important; /* Add some margin from left edge */
@@ -125,7 +125,7 @@
 /* Typography */
 .markdown-content h1.hero-title {
   color: #fff !important;
-  font-size: 4rem !important;
+  font-size: 5rem !important;
   padding-bottom: 0px !important;
   margin-bottom: 1.5rem !important;
   font-weight: 400 !important;
@@ -875,4 +875,43 @@
   .markdown-content .connector {
     display: none !important;
   }
+}
+
+@keyframes textGradientFlow {
+  0% {
+    background-position: 0% 50%;
+    color: white; /* Start with white text */
+  }
+  20% {
+    color: transparent; /* Transition to gradient */
+  }
+  100% {
+    background-position: 100% 50%;
+    color: transparent;
+  }
+}
+
+/* Create a span class for the word "limitless" that will have the gradient */
+.markdown-content .gradient-text {
+  background: linear-gradient(
+    33deg,
+    #fff 5%,
+    /* Less white space */ #2daeb8 30%,
+    /* Start teal earlier */ #2daeb8 65%,
+    /* Extend teal to middle */ #4285f4 80%,
+    /* Start blue at middle */ #4285f4 95% /* Extend blue to almost end */
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: white; /* Start with white text */
+  font-size: inherit; /* Inherit font size from parent */
+  font-weight: inherit; /* Inherit font weight from parent */
+  line-height: inherit; /* Inherit line height from parent */
+  display: inline; /* Use inline instead of inline-block */
+}
+
+/* Class to apply the animation */
+.markdown-content .animate-text-gradient {
+  animation: textGradientFlow 4s ease-out forwards; /* Slower, smoother transition */
 }

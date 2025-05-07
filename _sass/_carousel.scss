@@ -78,7 +78,7 @@
   /* Removed align-items: center to align track top */
   overflow: hidden;
   /* Adjusted for ~450px video + text: */
-  min-height: 750px; /* Adjust if needed */
+  min-height: 800px; /* Adjust if needed */
   margin-bottom: 25px;
 }
 
@@ -426,4 +426,100 @@
   .next-button {
     right: 16px;
   }
+}
+
+/* Learn More Button styling */
+.learn-more-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  z-index: 0;
+  border: none;
+  border-radius: 32px;
+  overflow: hidden;
+  transition: transform var(--transition-speed-fast),
+    box-shadow var(--transition-speed-fast);
+  color: #fff;
+  background-color: #000;
+  margin-top: 0px;
+}
+
+.learn-more-button svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  z-index: 2;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.learn-more-button::after {
+  content: "";
+  background: linear-gradient(
+    33deg,
+    #000 15%,
+    #2daeb8 25%,
+    #4285f4 52%,
+    #000 82%
+  );
+  background-position: 100%;
+  background-size: 800%;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.learn-more-button:hover::after {
+  animation: gradient-button-flow 2s ease-in-out;
+  background-position: 100% 0;
+  opacity: 1;
+}
+
+.learn-more-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.learn-more-button:hover svg {
+  transform: translateX(3px);
+}
+
+.learn-more-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.learn-more-button:focus-visible {
+  box-shadow: 0 0 0 3px var(--focus-ring-color);
+  outline: none;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+.markdown-content a.learn-more-button {
+  color: #fff;
+  border-bottom: none;
+}
+
+.markdown-content a.learn-more-button:hover {
+  border-bottom-style: none;
 }
