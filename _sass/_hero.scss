@@ -101,7 +101,7 @@
   display: flex !important;
   align-items: center !important;
   justify-content: flex-end !important; /* Distribute space between content and shapes */
-  font-family: "Inter", sans-serif !important;
+  font-family: "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
   position: relative !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
@@ -129,7 +129,7 @@
   padding-bottom: 0px !important;
   margin-bottom: 1.5rem !important;
   font-weight: 400 !important;
-  font-family: "Inter", sans-serif !important;
+  font-family: "Google Sans", "Roboto", Arial, Helvetica, sans-serif !important;
   border-bottom: none !important;
   line-height: 1.2 !important;
 }
@@ -896,10 +896,10 @@
   background: linear-gradient(
     33deg,
     #fff 5%,
-    /* Less white space */ #2daeb8 30%,
-    /* Start teal earlier */ #2daeb8 65%,
-    /* Extend teal to middle */ #4285f4 80%,
-    /* Start blue at middle */ #4285f4 95% /* Extend blue to almost end */
+    #2daeb8 30%,
+    #2daeb8 65%,
+    #4285f4 80%,
+    #4285f4 95%
   );
   background-size: 300% 300%;
   background-clip: text;
@@ -911,7 +911,23 @@
   display: inline; /* Use inline instead of inline-block */
 }
 
-/* Class to apply the animation */
+/* Class to apply the animation - much faster now */
 .markdown-content .animate-text-gradient {
-  animation: textGradientFlow 4s ease-out forwards; /* Slower, smoother transition */
+  animation: textGradientFlow 2s ease-out forwards; /* Reduced from 4s to 2s */
+}
+
+/* Define the animation keyframes */
+@keyframes textGradientFlow {
+  0% {
+    background-position: 0% 50%;
+    color: white;
+  }
+  10% {
+    /* Quicker transition to transparent */
+    color: transparent;
+  }
+  100% {
+    background-position: 100% 50%;
+    color: transparent;
+  }
 }

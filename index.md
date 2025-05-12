@@ -9,7 +9,7 @@ hide_title: true
   <section class="hero">
   <!-- Main content on left -->
   <div class="hero-content">
-    <h1 class="hero-title">AI is <span class="gradient-text">limitless</span>. Are you?</h1>
+    <h1 class="hero-title">AI is <span class="gradient-text">limitless.</span> Are you?</h1>
     <p class="hero-subtitle">
       Finally understand AI the right way. This essential handbook replaces confusing jargon with remarkably clear explanations and genuinely deep insights, consolidating every key concept and critical layer into one straightforward guide focused squarely on practical understanding.
     </p>
@@ -88,7 +88,7 @@ hide_title: true
 <section class="timeline-section">
   <div class="timeline-header">
     <div class="timeline-titles">
-      <h2 class="timeline-title">The milestones we have achieved</h2>
+      <h2 class="timeline-title">The <span class="gradient-text-from-black">milestones</span> we have achieved</h2>
       <div class="timeline-subtitle">
 Artificial Intelligence began in the 1950s with foundational theories and early computers like the Turing Test. The 1980s introduced expert systems and early machine learning for specialized tasks. The 2000s leveraged big data and neural networks, enabling advances in vision and language. Now, AI is driving toward Artificial General Intelligence, aiming to achieve human-like reasoning across diverse domains.</div>
     </div>
@@ -165,7 +165,7 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
       </div>
 
       <!-- Milestone 6: 2030 - General Intelligence -->
-      <div class="milestone" id="milestone-6" style="left: 84%;">
+      <div class="milestone" id="milestone-6" style="left: 90%;">
         <div class="milestone-dot dot-2030">
           <div class="milestone-inner">
             <span class="milestone-year">2030</span>
@@ -178,7 +178,7 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
       </div>
 
       <!-- Current year marker -->
-      <div class="current-year-marker" id="current-year-marker" style="left: 80%;">
+      <div class="current-year-marker" id="current-year-marker" style="left: 85%;">
         <div class="current-year-line"></div>
         <div class="current-year-dot"></div>
         <div class="current-year-label">YOU ARE HERE (2025)</div>
@@ -203,7 +203,7 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
   <div class="carousel-container">
     <div class="carousel-header">
       <div class="carousel-title-container">
-        <h2 class="carousel-title">AI is Unleashing Human Potential at Unprecedented Scale</h2>
+        <h2 class="carousel-title">AI is Unleashing Human Potential at <span class="gradient-text-from-black">Unprecedented</span> <span class="gradient-text-from-black">Scale</span></h2>
       </div>
       <div class="carousel-subtitle-container">
         <p class="carousel-subtitle">Transforming limitations into possibilities through revolutionary digital intelligence that amplifies creativity, accelerates discovery, and democratizes access to knowledge and tools once reserved for specialists.</p>
@@ -457,7 +457,7 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
 <!-- What's new in Grand AI Handbook Section -->
 <section class="news-section">
   <div class="news-container">
-    <h2 class="news-title">What's new in Grand AI Handbook</h2>
+    <h2 class="news-title"><span class="gradient-text-from-black"> What's new</span> in Grand AI Handbook</h2>
     
     <div class="news-grid">
       <!-- Left column cards -->
@@ -527,7 +527,7 @@ Artificial Intelligence began in the 1950s with foundational theories and early 
 </section>
 <section class="follow-social-section">
   <div class="follow-social-inner">
-    <h1 class="follow-heading">Explore More with GrandAIHandbook’s Creator</h1>
+    <h1 class="follow-heading"><span class="gradient-text-from-black">Explore More</span> with Creator</h1>
     
     <div class="social-container">
         <!-- YouTube Card -->

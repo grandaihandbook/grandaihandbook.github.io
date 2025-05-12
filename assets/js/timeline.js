@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Sequential animation of timeline elements
   setTimeout(() => {
-    // Show milestones in sequence
     const milestones = [
       document.getElementById("milestone-1"),
       document.getElementById("milestone-2"),
@@ -11,37 +9,201 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("milestone-6"),
     ];
 
-    // Initialize progress indicator to make sure it starts from 0
     const progressLine = document.querySelector(".timeline-progress");
     progressLine.style.width = "0";
 
-    // Reset and trigger animation
-    void progressLine.offsetWidth; // Force reflow
+    void progressLine.offsetWidth;
     progressLine.style.animation =
       "progressLine 2.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards";
 
+    // Create the indicators with their random starting positions
+    milestones.forEach((milestone) => {
+      const dot = milestone.querySelector(".milestone-dot");
+
+      // Random angle between 0-360 degrees
+      const randomAngle = Math.floor(Math.random() * 360);
+
+      // Convert angle to radians for calculation
+      const angleRad = randomAngle * (Math.PI / 180);
+
+      // Calculate the position based on the angle
+      const radius = dot.offsetWidth / 2; // Radius of milestone dot
+      const topOffset = -Math.sin(angleRad) * radius;
+      const leftOffset = Math.cos(angleRad) * radius;
+
+      // Create the indicator directly (no wrapper needed)
+      const indicator = document.createElement("div");
+      indicator.className = "milestone-indicator";
+
+      // Position it absolutely within the milestone dot
+      indicator.style.position = "absolute";
+      indicator.style.top = `calc(50% + ${topOffset}px)`;
+      indicator.style.left = `calc(50% + ${leftOffset}px)`;
+      indicator.style.transform = "translate(-50%, -50%)";
+      indicator.style.opacity = "0";
+
+      // Store the angle for animation
+      indicator.dataset.angle = randomAngle;
+
+      // Add to the milestone dot
+      dot.appendChild(indicator);
+
+      // Create the animation immediately but make it invisible
+      animateIndicator(indicator, dot);
+    });
+
+    // Now make the milestones and indicators visible in sequence
     milestones.forEach((milestone, index) => {
       setTimeout(() => {
         milestone.classList.add("animated");
-      }, 300 + index * 200); // Slightly slower animation for fewer elements
+
+        const indicator = milestone.querySelector(".milestone-indicator");
+        if (indicator) {
+          indicator.style.opacity = "1";
+        }
+      }, 300 + index * 200);
     });
 
-    // Show current year marker
     setTimeout(() => {
       document.getElementById("current-year-marker").style.opacity = "1";
     }, 2200);
   }, 500);
 
-  // Make milestones interactive with hover effects
+  function enhanceMilestoneDots() {
+    document.querySelectorAll(".milestone-dot").forEach((dot) => {
+      // Ensure the dot's ::before and ::after elements are properly visible
+      dot.style.position = "relative";
+      dot.style.overflow = "visible";
+
+      // Add a subtle pulse to the concentric rings
+      const ringPulse = document.createElement("div");
+      ringPulse.className = "ring-pulse";
+      ringPulse.style.position = "absolute";
+      ringPulse.style.top = "0";
+      ringPulse.style.left = "0";
+      ringPulse.style.width = "100%";
+      ringPulse.style.height = "100%";
+      ringPulse.style.borderRadius = "50%";
+      ringPulse.style.background = "transparent";
+      ringPulse.style.boxShadow = "inset 0 0 0 1px rgba(255, 255, 255, 0.1)";
+      ringPulse.style.animation = `pulseConcentric ${
+        8 + Math.random() * 4
+      }s ease-in-out infinite alternate`;
+      ringPulse.style.zIndex = "1";
+
+      dot.appendChild(ringPulse);
+    });
+  }
+
+  function addIndicatorTrails() {
+    // For each milestone dot
+    document.querySelectorAll(".milestone-dot").forEach((dot) => {
+      const indicator = dot.querySelector(".milestone-indicator");
+      if (!indicator) return;
+
+      // Set up the animation
+      let lastX = 0;
+      let lastY = 0;
+
+      // Function to create a trail element
+      function createTrail() {
+        // Get current indicator position
+        const rect = indicator.getBoundingClientRect();
+        const dotRect = dot.getBoundingClientRect();
+
+        // Only create trail if we have a previous position and indicator is visible
+        if (lastX && lastY && indicator.style.opacity !== "0") {
+          // Create trail element
+          const trail = document.createElement("div");
+          trail.className = "indicator-trail";
+
+          // Set size (smaller than indicator)
+          const size = Math.max(
+            4,
+            parseInt(getComputedStyle(indicator).width) * 0.6
+          );
+          trail.style.width = size + "px";
+          trail.style.height = size + "px";
+
+          // Get position relative to dot
+          const relativeX = rect.left - dotRect.left + rect.width / 2;
+          const relativeY = rect.top - dotRect.top + rect.height / 2;
+
+          // Position in the same place as indicator
+          trail.style.position = "absolute";
+          trail.style.left = relativeX + "px";
+          trail.style.top = relativeY + "px";
+
+          // Match background color
+          trail.style.background = getComputedStyle(indicator).background;
+          trail.style.opacity = "0.7";
+
+          // Add to dot
+          dot.appendChild(trail);
+
+          // Fade out and remove
+          setTimeout(() => {
+            trail.style.transition = "opacity 0.5s, transform 0.5s";
+            trail.style.opacity = "0";
+            trail.style.transform = "scale(0.5)";
+
+            setTimeout(() => dot.removeChild(trail), 500);
+          }, 10);
+        }
+
+        // Store current position for next time
+        lastX = rect.left;
+        lastY = rect.top;
+      }
+
+      // Create trails at interval
+      const interval = setInterval(() => {
+        if (document.body.contains(dot)) {
+          createTrail();
+        } else {
+          clearInterval(interval);
+        }
+      }, 100);
+    });
+  }
+
+  function animateIndicator(indicator, dot) {
+    let angle = parseFloat(indicator.dataset.angle);
+    const radius = dot.offsetWidth / 2;
+    const speed = 0.5 + Math.random() * 1;
+
+    function updatePosition() {
+      // Update angle
+      angle = (angle + speed) % 360;
+
+      // Convert to radians
+      const angleRad = angle * (Math.PI / 180);
+
+      // Calculate new position
+      const topOffset = -Math.sin(angleRad) * radius;
+      const leftOffset = Math.cos(angleRad) * radius;
+
+      // Update position
+      indicator.style.top = `calc(50% + ${topOffset}px)`;
+      indicator.style.left = `calc(50% + ${leftOffset}px)`;
+
+      // Continue animation if element exists
+      if (document.body.contains(indicator)) {
+        requestAnimationFrame(updatePosition);
+      }
+    }
+
+    // Start the animation
+    requestAnimationFrame(updatePosition);
+  }
+
   const allMilestones = document.querySelectorAll(".milestone");
   allMilestones.forEach((milestone) => {
     const dot = milestone.querySelector(".milestone-dot");
     const info = milestone.querySelector(".milestone-info");
 
     dot.addEventListener("mouseenter", () => {
-      // Add extra glow on hover
       if (dot.classList.contains("dot-2030")) {
-        // Special glow for white 2030 dot
         dot.style.boxShadow = `
           0 0 25px rgba(99, 102, 241, 0.7),
           0 0 40px rgba(99, 102, 241, 0.4),
@@ -50,7 +212,6 @@ document.addEventListener("DOMContentLoaded", () => {
           inset 0 0 40px rgba(255, 255, 255, 0.6)
         `;
       } else {
-        // Regular glow for other dots
         dot.style.boxShadow = `
           0 0 20px rgba(99, 102, 241, 0.7),
           0 0 30px rgba(99, 102, 241, 0.4),
@@ -61,9 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     dot.addEventListener("mouseleave", () => {
-      // Restore original shadow on mouse leave
       if (dot.classList.contains("dot-2030")) {
-        // Reset white 2030 dot shadow
         dot.style.boxShadow = `
           0 0 25px rgba(99, 102, 241, 0.6),
           0 0 40px rgba(99, 102, 241, 0.3),
@@ -72,7 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
           inset 0 0 30px rgba(255, 255, 255, 0.5)
         `;
       } else {
-        // Reset regular dot shadow
         dot.style.boxShadow = `
           0 0 15px rgba(99, 102, 241, 0.4),
           0 0 25px rgba(99, 102, 241, 0.2),
@@ -83,7 +241,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Function to create pulsing neon glow effect on the timeline
   function pulseTimelineGlow() {
     const timeline = document.querySelector(".timeline-line");
     let intensity = 0;
@@ -118,20 +275,17 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(pulse);
   }
 
-  // Initialize the timeline glow effect
   pulseTimelineGlow();
 
-  // Function to create floating decorative dots
   function createDecorativeDots() {
     const container = document.querySelector(".timeline-container");
-    const dotCount = 20; // Number of floating dots
+    const dotCount = 20;
     const dots = [];
 
     for (let i = 0; i < dotCount; i++) {
       const dot = document.createElement("div");
       dot.className = "decorative-dot";
 
-      // Random size class
       const sizeClass =
         Math.random() < 0.4
           ? "small"
@@ -140,25 +294,20 @@ document.addEventListener("DOMContentLoaded", () => {
           : "large";
       dot.classList.add(sizeClass);
 
-      // Random position
-      const left = 5 + Math.random() * 90; // Keep within 5-95% range
+      const left = 5 + Math.random() * 90;
       const top = 20 + Math.random() * 60;
       dot.style.left = `${left}%`;
       dot.style.top = `${top}%`;
 
-      // Random opacity
       dot.style.opacity = 0.3 + Math.random() * 0.5;
 
-      // Custom dynamic animation
-      // Instead of using the CSS animation, we'll do custom animation with JavaScript
       const initialLeft = left;
       const initialTop = top;
-      const moveRangeX = 5 + Math.random() * 10; // Horizontal movement range (%)
-      const moveRangeY = 10 + Math.random() * 15; // Vertical movement range (%)
-      const speedFactor = 0.2 + Math.random() * 0.3; // Random speed
-      const phaseOffset = Math.random() * Math.PI * 2; // Random starting point in animation
+      const moveRangeX = 5 + Math.random() * 10;
+      const moveRangeY = 10 + Math.random() * 15;
+      const speedFactor = 0.2 + Math.random() * 0.3;
+      const phaseOffset = Math.random() * Math.PI * 2;
 
-      // Store dot data for animation
       dots.push({
         element: dot,
         initialLeft: initialLeft,
@@ -172,16 +321,13 @@ document.addEventListener("DOMContentLoaded", () => {
       container.appendChild(dot);
     }
 
-    // Animate dots with requestAnimationFrame for smoother performance
     let startTime = null;
 
     function animateDots(timestamp) {
       if (!startTime) startTime = timestamp;
       const elapsed = timestamp - startTime;
 
-      // Update each dot position
       dots.forEach((dot) => {
-        // Calculate new position using sine waves for smooth natural movement
         const xOffset =
           Math.sin((elapsed * dot.speedFactor) / 1000 + dot.phaseOffset) *
           dot.moveRangeX;
@@ -189,39 +335,31 @@ document.addEventListener("DOMContentLoaded", () => {
           Math.cos((elapsed * dot.speedFactor) / 1000 + dot.phaseOffset * 1.5) *
           dot.moveRangeY;
 
-        // Apply new position
         dot.element.style.left = `${dot.initialLeft + xOffset}%`;
         dot.element.style.top = `${dot.initialTop + yOffset}%`;
       });
 
-      // Continue animation
       requestAnimationFrame(animateDots);
     }
 
-    // Start animation
     requestAnimationFrame(animateDots);
 
-    // After all dots are created, create neural network connections
     setTimeout(() => {
       createNeuralNetworkLines(dots, container);
     }, 100);
 
-    return dots; // Return dots array for use in updating network lines
+    return dots;
   }
 
-  // Function to create neural network connections between dots
   function createNeuralNetworkLines(dots, container) {
-    // Only connect some dots to avoid visual clutter
     const maxConnections = 30;
     let connectionCount = 0;
     const connections = [];
 
-    // For each dot, connect to 1-3 nearby dots
     dots.forEach((dot, index) => {
-      // Calculate distance to all other dots and sort by distance
       const nearbyDots = dots
         .map((otherDot, otherIndex) => {
-          if (otherIndex === index) return null; // Skip self
+          if (otherIndex === index) return null;
 
           const dx = dot.initialLeft - otherDot.initialLeft;
           const dy = dot.initialTop - otherDot.initialTop;
@@ -236,9 +374,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .filter((item) => item !== null)
         .sort((a, b) => a.distance - b.distance);
 
-      // Connect to 1-3 closest dots if within threshold distance
       const maxLocalConnections = 1 + Math.floor(Math.random() * 3);
-      const maxDistance = 30; // Max distance for connection (as percentage of container)
+      const maxDistance = 30;
 
       for (
         let i = 0;
@@ -248,14 +385,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (connectionCount >= maxConnections) break;
         if (nearbyDots[i].distance > maxDistance) continue;
 
-        // Create the connection line
         const line = document.createElement("div");
         line.className = "network-line";
 
-        // Add line to the container
         container.appendChild(line);
 
-        // Store connection data for updating
         connections.push({
           line: line,
           source: dot,
@@ -264,75 +398,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
         connectionCount++;
 
-        // Fade in the line
         setTimeout(() => {
           line.style.opacity = 0.2 + Math.random() * 0.3;
         }, 1000 + Math.random() * 2000);
       }
     });
 
-    // Function to update line positions as dots move
     function updateLines() {
       connections.forEach((conn) => {
-        // Get current positions of source and target dots
         const sourceX = parseFloat(conn.source.element.style.left);
         const sourceY = parseFloat(conn.source.element.style.top);
         const targetX = parseFloat(conn.target.element.style.left);
         const targetY = parseFloat(conn.target.element.style.top);
 
-        // Calculate the line's length and angle
         const dx = targetX - sourceX;
         const dy = targetY - sourceY;
         const length = Math.sqrt(dx * dx + dy * dy);
         const angle = (Math.atan2(dy, dx) * 180) / Math.PI;
 
-        // Update the line's position, width and rotation
         conn.line.style.left = `${sourceX}%`;
         conn.line.style.top = `${sourceY}%`;
         conn.line.style.width = `${length}%`;
         conn.line.style.transform = `rotate(${angle}deg)`;
       });
 
-      // Continue updating
       requestAnimationFrame(updateLines);
     }
 
-    // Start updating line positions
     requestAnimationFrame(updateLines);
   }
 
-  // Function to create flowing particles along the timeline
   function createTimelineParticles() {
     const timeline = document.querySelector(".timeline-line");
     const timelineContainer = document.querySelector(".timeline-container");
-    const particleCount = 10;
 
-    // Get timeline dimensions
-    const timelineRect = timeline.getBoundingClientRect();
-    const timelineWidth = timeline.offsetWidth;
-    const containerRect = timelineContainer.getBoundingClientRect();
+    function isElementInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+      );
+    }
 
     function createParticle() {
-      // Don't create particles if timeline is not visible
       if (!isElementInViewport(timeline)) return;
 
       const particle = document.createElement("div");
       particle.className = "timeline-particle";
 
-      // Start from the beginning of the timeline
       particle.style.left = "5%";
 
-      // Random size (2-4px)
       const size = 2 + Math.random() * 2;
       particle.style.width = `${size}px`;
       particle.style.height = `${size}px`;
 
-      // Random opacity (0.5-1)
       particle.style.opacity = 0.5 + Math.random() * 0.5;
 
       timelineContainer.appendChild(particle);
 
-      // Animate the particle along the timeline
       const duration = 5000 + Math.random() * 10000;
       let progress = 0;
       let lastTimestamp = null;
@@ -349,9 +473,8 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        // Easing function for natural movement
         const position = easeInOut(progress);
-        particle.style.left = `${5 + position * 79}%`; // Move from 5% to 84%
+        particle.style.left = `${5 + position * 79}%`;
 
         requestAnimationFrame(moveParticle);
       }
@@ -359,7 +482,6 @@ document.addEventListener("DOMContentLoaded", () => {
       requestAnimationFrame(moveParticle);
     }
 
-    // Create particles at random intervals
     function scheduleParticle() {
       const delay = 300 + Math.random() * 1000;
       setTimeout(() => {
@@ -368,16 +490,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }, delay);
     }
 
-    // Start creating particles after initial animations
     setTimeout(scheduleParticle, 3000);
   }
 
-  // Helper function for particle animation
   function easeInOut(t) {
     return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
   }
 
-  // Helper function to check if an element is in the viewport
   function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -387,42 +506,30 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  // Call function to create dots after timeline is loaded
   setTimeout(createDecorativeDots, 1000);
-
-  // Create timeline particles
   setTimeout(createTimelineParticles, 2500);
 
-  // Check if user prefers reduced motion
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   ).matches;
-
-  // If reduced motion is preferred, set a class on the body element
   if (prefersReducedMotion) {
     document.body.classList.add("reduced-motion");
   }
 
-  // NEW ENHANCED FUNCTIONS
-
-  // Enhanced particle system with scroll responsiveness
   function createEnhancedParticles() {
     const particles = document.querySelectorAll(".decorative-dot");
     let scrollY = window.scrollY || window.pageYOffset;
     let lastScrollY = scrollY;
 
-    // Response to scroll
     window.addEventListener("scroll", () => {
       scrollY = window.scrollY || window.pageYOffset;
       const scrollDelta = scrollY - lastScrollY;
 
       particles.forEach((particle) => {
-        // Get current position values
         const particleY = parseFloat(particle.style.top);
         const particleX = parseFloat(particle.style.left);
 
         if (!isNaN(particleY) && !isNaN(particleX)) {
-          // Apply subtle movement on scroll
           particle.style.top = `${particleY + scrollDelta * 0.01}%`;
           particle.style.left = `${particleX + scrollDelta * 0.002}%`;
         }
@@ -432,12 +539,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Create animated pathways between milestone dots
   function createMilestonePathways() {
     const container = document.querySelector(".timeline-container");
     const milestones = document.querySelectorAll(".milestone");
 
-    // For consecutive milestones, create animated pathways
     for (let i = 0; i < milestones.length - 1; i++) {
       const start = milestones[i].querySelector(".milestone-dot");
       const end = milestones[i + 1].querySelector(".milestone-dot");
@@ -446,12 +551,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const endRect = end.getBoundingClientRect();
       const containerRect = container.getBoundingClientRect();
 
-      // Create pathway
       const pathway = document.createElement("div");
       pathway.className = "neural-pathway";
       container.appendChild(pathway);
 
-      // Calculate relative positions
       const startLeft =
         ((startRect.left + startRect.width / 2 - containerRect.left) /
           containerRect.width) *
@@ -465,29 +568,24 @@ document.addEventListener("DOMContentLoaded", () => {
           containerRect.width) *
         100;
 
-      // Position and size pathway
       pathway.style.left = `${startLeft}%`;
       pathway.style.top = `${startTop}%`;
       pathway.style.width = `${endLeft - startLeft}%`;
 
-      // Add flowing particles to pathway
       for (let j = 0; j < 3; j++) {
         const particle = document.createElement("div");
         particle.className = "pathway-particle";
         pathway.appendChild(particle);
 
-        // Add random delay for natural flow
         particle.style.animationDelay = `${j * 1.5 + Math.random()}s`;
       }
     }
   }
 
-  // Enhanced neural network connections that light up
   function enhanceNeuralConnections() {
     const connections = document.querySelectorAll(".network-line");
     const milestones = document.querySelectorAll(".milestone");
 
-    // Make connections light up on milestone hover
     milestones.forEach((milestone) => {
       const dot = milestone.querySelector(".milestone-dot");
 
@@ -497,7 +595,6 @@ document.addEventListener("DOMContentLoaded", () => {
         connections.forEach((connection) => {
           const connRect = connection.getBoundingClientRect();
 
-          // Calculate distance from milestone to connection
           const dotCenterX = dotRect.left + dotRect.width / 2;
           const dotCenterY = dotRect.top + dotRect.height / 2;
           const connCenterX = connRect.left + connRect.width / 2;
@@ -508,7 +605,6 @@ document.addEventListener("DOMContentLoaded", () => {
               Math.pow(dotCenterY - connCenterY, 2)
           );
 
-          // Activate nearby connections
           if (distance < 200) {
             connection.classList.add("connection-active");
           }
@@ -516,7 +612,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       dot.addEventListener("mouseleave", () => {
-        // Remove active class with delay for smooth transition
         setTimeout(() => {
           connections.forEach((connection) => {
             connection.classList.remove("connection-active");
@@ -526,7 +621,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Detect when milestones are approached during scroll
   function detectMilestoneApproach() {
     const milestones = document.querySelectorAll(".milestone");
 
@@ -537,7 +631,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const windowCenter = windowHeight / 2;
       const elementCenter = rect.top + rect.height / 2;
 
-      // Check if element is close to center of viewport
       return Math.abs(elementCenter - windowCenter) < windowHeight * 0.3;
     }
 
@@ -549,7 +642,6 @@ document.addEventListener("DOMContentLoaded", () => {
           if (!dot.classList.contains("in-view")) {
             dot.classList.add("in-view");
 
-            // Remove class after animation completes
             setTimeout(() => {
               dot.classList.remove("in-view");
             }, 2000);
@@ -558,10 +650,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // Initial check
     checkMilestones();
 
-    // Check on scroll with throttling for performance
     let ticking = false;
     window.addEventListener("scroll", () => {
       if (!ticking) {
@@ -574,40 +664,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Add white circle indicators to milestone dots
-  function addMilestoneIndicators() {
-    const milestoneDots = document.querySelectorAll(".milestone-dot");
-
-    milestoneDots.forEach((dot) => {
-      // Create wrapper for rotation
-      const wrapper = document.createElement("div");
-      wrapper.className = "milestone-indicator-wrapper";
-      dot.appendChild(wrapper);
-
-      // Create white circle indicator inside the wrapper
-      const indicator = document.createElement("div");
-      indicator.className = "milestone-indicator-option3";
-      wrapper.appendChild(indicator);
-    });
-  }
-
-  // Create subtle wave background animation
   function createWaveBackground() {
     const container = document.querySelector(".timeline-container");
-
-    // Create wave element
     const wave = document.createElement("div");
     wave.className = "timeline-wave";
     container.insertBefore(wave, container.firstChild);
   }
 
-  // Initialize enhanced visual features
   setTimeout(() => {
     createEnhancedParticles();
     createMilestonePathways();
     enhanceNeuralConnections();
     detectMilestoneApproach();
-    addMilestoneIndicators();
     createWaveBackground();
+    setTimeout(enhanceMilestoneDots, 2000);
+
+    // setTimeout(() => {
+    //   addIndicatorTrails();
+    // }, 500);
   }, 3000);
 });
