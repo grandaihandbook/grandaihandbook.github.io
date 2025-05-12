@@ -1,0 +1,559 @@
+/* AI Paradigms Section Styling with Enhancements */
+/* Import Inter variable font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* CSS Variables for type scale and colors */
+:root {
+  --scale-ratio: 1.25; /* Type scale ratio */
+  --base-size: 18px; /* Base font size for descriptions */
+  --primary-color: rgba(45, 174, 184, 0.1); /* Indigo */
+  --accent-color: rgba(66, 133, 244, 0.1); /* Pink */
+  --text-primary: #111;
+  --text-secondary: #444;
+  --card-bg: #fff;
+  --button-bg: #f5f5f7;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.ai-paradigms-section {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 20px 0 40px; /* Reduced from 80px 0 60px */
+  background-color: #fff;
+  color: var(--text-primary);
+  font-family: "Inter", "Google Sans", "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+.ai-paradigms-section:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.ai-paradigms-container {
+  margin: 0 auto;
+  padding-left: 25rem; /* Keeping the 25rem padding as requested */
+  padding-right: 2rem;
+  overflow: visible; /* Ensure hover effects aren't cut off */
+}
+
+/* Header Styling with refined typography */
+.ai-paradigms-header {
+  margin-bottom: 30px; /* Reduced from 60px */
+}
+
+.markdown-content h3.video-title {
+  margin-top: 4px !important;
+}
+
+.markdown-content img.video-thumbnail {
+  margin: 0px !important;
+}
+
+.markdown-content h2.paradigms-title {
+  font-size: calc(
+    var(--base-size) * var(--scale-ratio) * var(--scale-ratio) *
+      var(--scale-ratio)
+  ); /* ~35px */
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  max-width: 1200px;
+  font-variation-settings: "wght" 700;
+  background-image: linear-gradient(
+    90deg,
+    var(--text-primary),
+    #4338ca,
+    var(--text-primary)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.5s ease;
+}
+
+/* .paradigms-title:hover {
+  color: transparent;
+  animation: textShine 8s ease-in-out infinite alternate;
+} */
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.paradigms-subtitle {
+  font-size: calc(var(--base-size) * var(--scale-ratio)); /* ~22.5px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  max-width: 1000px;
+  font-variation-settings: "wght" 400;
+}
+
+/* Cards Container */
+.paradigms-cards-container {
+  position: relative;
+  margin-bottom: 30px; /* Reduced from 80px */
+}
+
+.paradigms-scroll-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  padding: 10px 0 20px; /* Reduced bottom padding from 40px */
+  padding-left: 25px; /* Add left padding to prevent first card from being cut off */
+  margin-bottom: 10px; /* Reduced from 20px */
+  /* margin-left: -20px; Negative margin to offset the card margin */
+}
+
+.paradigms-scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+/* Card Styling with enhancements */
+.paradigm-card {
+  flex: 0 0 400px; /* Increased width */
+  background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+    linear-gradient(135deg, var(--primary-color), var(--accent-color))
+      border-box;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 36px;
+  color: var(--text-primary);
+  scroll-snap-align: start;
+  position: relative;
+  min-height: 250px;
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  /* Added margin with more on left side to create space for hover effect */
+  margin: 8px;
+  margin-left: 20px;
+
+  /* Initial state for animation */
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.paradigm-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.paradigm-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(79, 70, 229, 0.05);
+  z-index: 5; /* Ensure hovered card appears above others */
+}
+
+.card-title {
+  font-size: calc(var(--base-size) * var(--scale-ratio)); /* ~22.5px */
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  font-variation-settings: "wght" 700;
+  transition: font-variation-settings 0.3s ease;
+}
+
+.paradigm-card:hover .card-title {
+  font-variation-settings: "wght" 720;
+}
+
+.card-description {
+  font-size: var(--base-size);
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-variation-settings: "wght" 400;
+  letter-spacing: 0.01em;
+}
+
+/* Plus Button with subtle enhancements */
+.card-plus-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f6f6f6, #ffffff);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.card-plus-button:hover {
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.card-plus-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Navigation Buttons with enhancements */
+.paradigms-navigation {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 80px; /* Move from right edge */
+  width: fit-content;
+}
+
+.nav-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f6f6f6, #ffffff);
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.nav-button:hover {
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.nav-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Bottom Divider with gradient */
+.paradigms-divider {
+  width: 70%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0),
+    rgba(79, 70, 229, 0.3),
+    rgba(219, 39, 119, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 0 auto 15px auto; /* Reduced from 30px */
+  position: relative;
+  display: block; /* Ensure it's a block element */
+  clear: both; /* Clear any floats */
+  z-index: 1; /* Ensure it's above any background elements */
+}
+
+.paradigms-divider {
+  width: 60%;
+  height: 2px; /* Thinner line for simplicity */
+  background: linear-gradient(#fff, #bdc1c6, #fff);
+  margin: 0 auto 15px auto; /* Keeping the reduced bottom margin */
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1440px) {
+  .ai-paradigms-container {
+    padding: 0 60px;
+  }
+
+  .paradigms-title {
+    font-size: calc(
+      var(--base-size) * var(--scale-ratio) * var(--scale-ratio) * 0.9
+    );
+  }
+}
+
+@media (max-width: 1024px) {
+  .ai-paradigms-container {
+    padding: 0 40px;
+  }
+
+  .paradigms-title {
+    font-size: calc(
+      var(--base-size) * var(--scale-ratio) * var(--scale-ratio) * 0.8
+    );
+  }
+
+  .paradigms-subtitle {
+    font-size: calc(var(--base-size) * var(--scale-ratio) * 0.9);
+  }
+
+  .paradigm-card {
+    flex: 0 0 340px;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-paradigms-section {
+    padding: 30px 0 20px; /* Reduced from 60px 0 40px */
+  }
+
+  .ai-paradigms-container {
+    padding: 0 20px;
+  }
+
+  .paradigms-title {
+    font-size: calc(
+      var(--base-size) * var(--scale-ratio) * var(--scale-ratio) * 0.7
+    );
+  }
+
+  .paradigms-subtitle {
+    font-size: calc(var(--base-size) * 0.95);
+  }
+
+  .paradigm-card {
+    flex: 0 0 300px;
+    padding: 28px;
+  }
+
+  .card-title {
+    font-size: calc(var(--base-size) * var(--scale-ratio) * 0.85);
+  }
+
+  .card-description {
+    font-size: calc(var(--base-size) * 0.9);
+  }
+}
+/* Arrow Link with gradient SVG */
+.card-arrow-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f6f6f6, #ffffff);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* Create gradient for the SVG icon */
+.card-arrow-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Apply gradient to SVG stroke */
+.card-arrow-button svg path {
+  stroke: url(#arrowGradient);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.card-arrow-button:hover {
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Optional: Animate gradient on hover */
+.card-arrow-button:hover svg path {
+  stroke-dasharray: 30;
+  stroke-dashoffset: 0;
+  animation: dashOffset 1.5s linear infinite;
+}
+
+@keyframes dashOffset {
+  from {
+    stroke-dashoffset: 30;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#content {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+/* Video Section Styling - Complete CSS */
+.video-section {
+  margin: 40px auto 20px; /* Auto margins horizontally center the section */
+  width: 100%;
+  max-width: 1100px; /* Fixed width to control how wide the video stretches */
+  padding-bottom: 40px; /* Added padding to the bottom */
+  position: relative;
+  left: -12.5rem; /* This counteracts the parent's 25rem left padding */
+}
+
+/* Video container (the actual video player area) */
+.video-container {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  max-height: 675px;
+}
+
+.video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a4db5;
+}
+
+.video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.play-button svg {
+  width: 60px;
+  height: 60px;
+}
+
+/* Content below video */
+.video-content-container {
+  display: flex;
+  width: 100%;
+  min-height: 150px;
+}
+
+.video-title-container {
+  flex: 0 0 40%;
+  padding-right: 30px;
+  min-height: 150px;
+}
+
+.video-description-container {
+  flex: 0 0 60%;
+  min-height: 150px;
+}
+
+/* Video title styling */
+.video-title {
+  font-size: calc(var(--base-size) * var(--scale-ratio));
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+/* Project link styling */
+.project-contrails-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #1a73e8;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.project-contrails-link svg {
+  transition: transform 0.3s ease;
+}
+
+.project-contrails-link:hover svg {
+  transform: translateX(3px);
+}
+
+/* Video description styling */
+.video-description {
+  font-size: var(--base-size);
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Responsive adjustments for the video section */
+@media (max-width: 1440px) {
+  .video-section {
+    left: -8rem; /* Adjust the offset for smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .video-section {
+    left: -4rem; /* Adjust for tablets */
+    max-width: 90%;
+  }
+
+  .video-content-container {
+    flex-direction: column;
+  }
+
+  .video-title-container,
+  .video-description-container {
+    flex: 0 0 100%;
+    padding-right: 0;
+  }
+
+  .video-title-container {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    left: 0;
+    max-width: 100%;
+  }
+}

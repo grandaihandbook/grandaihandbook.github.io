@@ -1,0 +1,957 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
+
+/* Core Animations */
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.5;
+  }
+  25% {
+    transform: translate(10px, -10px) rotate(2deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(20px, 0) rotate(0deg);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translate(10px, 10px) rotate(-2deg);
+    opacity: 0.9;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 0 40px currentColor;
+    filter: brightness(1.3);
+  }
+}
+
+@keyframes neonPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.8),
+      0 0 15px rgba(79, 172, 254, 0.5), 0 0 30px rgba(79, 172, 254, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.8),
+      0 0 25px rgba(79, 172, 254, 0.5), 0 0 50px rgba(79, 172, 254, 0.3);
+  }
+}
+
+@keyframes rotate3D {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(180deg) rotateZ(90deg);
+  }
+}
+
+@keyframes orbiting {
+  0% {
+    transform: rotate(0deg) translateX(20px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+}
+
+@keyframes pulsing {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Advanced Animations */
+@keyframes particleFloat {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translate(15px, -15px);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(30px, 5px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translate(10px, 20px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg) rotateX(60deg);
+  }
+  100% {
+    transform: rotate(360deg) rotateX(60deg);
+  }
+}
+
+@keyframes floatingShape {
+  0%,
+  100% {
+    transform: perspective(500px) rotateX(20deg) rotateY(30deg) translateY(0);
+  }
+  50% {
+    transform: perspective(500px) rotateX(40deg) rotateY(60deg)
+      translateY(-20px);
+  }
+}
+
+@keyframes glowBreathe {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes energyPulse {
+  0%,
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 0 30px currentColor;
+  }
+}
+
+@keyframes textGradientFlow {
+  0% {
+    background-position: 0% 50%;
+    color: white;
+  }
+  10% {
+    color: transparent;
+  }
+  100% {
+    background-position: 100% 50%;
+    color: transparent;
+  }
+}
+
+/* Hero section styles */
+.markdown-content .hero {
+  background-color: #000000 !important;
+  min-height: 50vh !important;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  padding-bottom: 3rem !important;
+  margin-bottom: 0 !important;
+}
+
+.markdown-content .hero * {
+  box-sizing: border-box !important;
+}
+
+/* Hero content */
+.markdown-content .hero-content {
+  max-width: 30% !important;
+  position: relative !important;
+  z-index: 5 !important;
+  margin-left: 2% !important;
+}
+
+/* Typography */
+.markdown-content h1.hero-title {
+  color: #fff !important;
+  font-size: 5rem !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 1.5rem !important;
+  font-weight: 400 !important;
+  border-bottom: none !important;
+  line-height: 1.2 !important;
+}
+
+.markdown-content h1.hero-title strong {
+  font-weight: 900 !important;
+}
+
+.markdown-content .hero-subtitle {
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+  color: #fff !important;
+  margin-bottom: 2.5rem !important;
+  line-height: 1.6 !important;
+  max-width: 650px !important;
+  margin-top: 0 !important;
+}
+
+/* Button */
+.markdown-content .button {
+  display: inline-block !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  padding: 1rem 2.5rem !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.markdown-content .button:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Shapes container */
+.markdown-content .shapes-container {
+  position: relative !important;
+  width: 48% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  margin-right: 2% !important;
+}
+
+/* Gradient text effect */
+.markdown-content .gradient-text {
+  background: linear-gradient(
+    33deg,
+    #fff 5%,
+    #2daeb8 30%,
+    #2daeb8 65%,
+    #4285f4 80%,
+    #4285f4 95%
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: white;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  display: inline;
+}
+
+.markdown-content .animate-text-gradient {
+  animation: textGradientFlow 2s ease-out forwards;
+}
+
+/* 3D objects - with different shapes */
+.markdown-content .octahedron {
+  position: absolute !important;
+  width: 180px !important;
+  height: 180px !important;
+  right: 15% !important;
+  top: 25% !important;
+  border-radius: 0 !important;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 40, 0.4),
+    rgba(15, 15, 25, 0.4)
+  ) !important;
+  box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.05),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5), 10px 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(79, 172, 254, 0.2) !important;
+  animation: float 15s ease-in-out infinite !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform-style: preserve-3d !important;
+}
+
+.markdown-content .spiral-sphere {
+  position: absolute !important;
+  width: 120px !important;
+  height: 120px !important;
+  right: 70% !important;
+  top: 55% !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #4338ca, #8b5cf6) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(67, 56, 202, 0.3),
+    0 0 80px rgba(99, 102, 241, 0.2) !important;
+  animation: float 12s ease-in-out infinite 1s !important;
+  backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-image: repeating-conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0) 47.5%,
+    rgba(255, 255, 255, 0.1) 50%
+  );
+  background-size: 20px 20px;
+}
+
+.markdown-content .spiral-inner {
+  position: absolute !important;
+  width: 60px !important;
+  height: 60px !important;
+  background-color: #000 !important;
+  border-radius: 50% !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.6),
+    0 0 8px rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.markdown-content .plasma-orb {
+  position: absolute !important;
+  width: 60px !important;
+  height: 60px !important;
+  right: 75% !important;
+  top: 40% !important;
+  border-radius: 50% !important;
+  background: rgba(0, 242, 254, 0.1) !important;
+  box-shadow: 0 0 30px rgba(0, 242, 254, 0.5), 0 0 80px rgba(0, 242, 254, 0.2) !important;
+  animation: pulse 6s ease-in-out infinite !important;
+  border: 2px solid rgba(0, 242, 254, 0.3) !important;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 242, 254, 0.4) 0%,
+    rgba(0, 242, 254, 0.1) 40%,
+    rgba(0, 242, 254, 0) 70%
+  );
+}
+
+.markdown-content .diamond {
+  position: absolute !important;
+  width: 100px !important;
+  height: 100px !important;
+  right: 40% !important;
+  top: 25% !important;
+  background: linear-gradient(135deg, #6366f1, #a855f7) !important;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(163, 85, 247, 0.3) !important;
+  animation: float 18s ease-in-out infinite 3s !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  transform: rotate(45deg) !important;
+}
+
+.markdown-content .tetrahedron {
+  position: absolute !important;
+  width: 80px !important;
+  height: 80px !important;
+  right: 65% !important;
+  top: 15% !important;
+  transform-style: preserve-3d !important;
+  transform: rotateX(20deg) rotateY(30deg) !important;
+  animation: rotate3D 20s linear infinite !important;
+}
+
+.markdown-content .tetra-face {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 242, 254, 0.2),
+    rgba(99, 102, 241, 0.2)
+  ) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.3) !important;
+  backdrop-filter: blur(5px) !important;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.markdown-content .tetra-face:nth-child(1) {
+  transform: translateZ(40px) !important;
+}
+
+.markdown-content .tetra-face:nth-child(2) {
+  transform: rotateY(120deg) translateZ(40px) !important;
+}
+
+.markdown-content .tetra-face:nth-child(3) {
+  transform: rotateY(240deg) translateZ(40px) !important;
+}
+
+.markdown-content .tetra-face:nth-child(4) {
+  transform: rotateX(90deg) translateZ(40px) !important;
+}
+
+.markdown-content .crystal {
+  position: absolute !important;
+  width: 70px !important;
+  height: 110px !important;
+  right: 20% !important;
+  top: 60% !important;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 30, 40, 0.4),
+    rgba(15, 15, 25, 0.4)
+  ) !important;
+  border: 1px solid rgba(0, 242, 254, 0.3) !important;
+  box-shadow: 0 0 30px rgba(0, 242, 254, 0.2) !important;
+  animation: float 14s ease-in-out infinite 5s !important;
+  transform: perspective(500px) rotateX(10deg) rotateY(20deg) !important;
+  clip-path: polygon(50% 0%, 80% 25%, 80% 75%, 50% 100%, 20% 75%, 20% 25%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+/* New 3D objects */
+.markdown-content .cone {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  right: 35% !important;
+  bottom: 25% !important;
+  border-left: 50px solid transparent !important;
+  border-right: 50px solid transparent !important;
+  border-bottom: 100px solid rgba(79, 172, 254, 0.3) !important;
+  transform: perspective(500px) rotateX(-30deg) !important;
+  animation: float 16s ease-in-out infinite 3.5s !important;
+  filter: drop-shadow(0 10px 20px rgba(79, 172, 254, 0.2)) !important;
+}
+
+.markdown-content .capsule {
+  position: absolute !important;
+  width: 60px !important;
+  height: 120px !important;
+  right: 65% !important;
+  top: 30% !important;
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.2),
+    rgba(99, 102, 241, 0.2)
+  ) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 30px rgba(168, 85, 247, 0.2) !important;
+  transform: perspective(500px) rotate(30deg) !important;
+  animation: float 14s ease-in-out infinite 2s !important;
+  backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.markdown-content .orbital-ring {
+  position: absolute !important;
+  width: 100px !important;
+  height: 100px !important;
+  right: 25% !important;
+  top: 65% !important;
+  border-radius: 50% !important;
+  border: 8px solid transparent !important;
+  background: linear-gradient(135deg, #4facfe, #00f2fe) border-box !important;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) !important;
+  -webkit-mask-composite: xor !important;
+  mask-composite: exclude !important;
+  animation: rotateRing 15s linear infinite !important;
+  box-shadow: 0 0 25px rgba(79, 172, 254, 0.6), 0 0 40px rgba(0, 242, 254, 0.3) !important;
+  transform: perspective(500px) rotateX(70deg) !important;
+}
+
+.markdown-content .dodecahedron {
+  position: absolute !important;
+  width: 70px !important;
+  height: 70px !important;
+  right: 50% !important;
+  top: 45% !important;
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.2),
+    rgba(99, 102, 241, 0.2)
+  ) !important;
+  border: 1px solid rgba(168, 85, 247, 0.3) !important;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2) !important;
+  animation: floatingShape 10s ease-in-out infinite !important;
+  clip-path: polygon(
+    50% 0%,
+    80% 10%,
+    100% 35%,
+    100% 70%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
+    0% 70%,
+    0% 35%,
+    20% 10%
+  ) !important;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+/* Connectors between shapes */
+.markdown-content .connector {
+  position: absolute !important;
+  height: 1px !important;
+  background: linear-gradient(
+    90deg,
+    rgba(99, 102, 241, 0.1),
+    rgba(79, 172, 254, 0.3)
+  ) !important;
+  z-index: 1 !important;
+  opacity: 0.5 !important;
+}
+
+.markdown-content .connector-1 {
+  width: 150px !important;
+  right: 30% !important;
+  top: 35% !important;
+  transform: rotate(30deg) !important;
+}
+
+.markdown-content .connector-2 {
+  width: 120px !important;
+  right: 60% !important;
+  top: 25% !important;
+  transform: rotate(-15deg) !important;
+}
+
+.markdown-content .connector-3 {
+  width: 180px !important;
+  right: 45% !important;
+  bottom: 40% !important;
+  transform: rotate(-45deg) !important;
+}
+
+.markdown-content .connector-4 {
+  width: 160px !important;
+  right: 55% !important;
+  top: 55% !important;
+  transform: rotate(60deg) !important;
+}
+
+/* Energy nodes */
+.markdown-content .energy-node {
+  position: absolute !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  z-index: 3 !important;
+  animation: energyPulse 4s ease-in-out infinite !important;
+}
+
+.markdown-content .node-1 {
+  width: 20px !important;
+  height: 20px !important;
+  right: 40% !important;
+  top: 30% !important;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.8), 0 0 40px rgba(168, 85, 247, 0.4) !important;
+  animation-delay: 1s !important;
+}
+
+.markdown-content .node-2 {
+  width: 15px !important;
+  height: 15px !important;
+  right: 70% !important;
+  top: 50% !important;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.8), 0 0 40px rgba(0, 242, 254, 0.4) !important;
+  animation-delay: 2.5s !important;
+}
+
+.markdown-content .node-3 {
+  width: 12px !important;
+  height: 12px !important;
+  right: 25% !important;
+  top: 60% !important;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 40px rgba(99, 102, 241, 0.4) !important;
+  animation-delay: 4s !important;
+}
+
+/* Particles */
+.markdown-content .particle {
+  position: absolute !important;
+  width: 3px !important;
+  height: 3px !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-radius: 50% !important;
+  opacity: 0.5 !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(79, 172, 254, 0.3) !important;
+  animation: particleFloat 15s infinite ease-in-out !important;
+}
+
+.markdown-content .particle-1 {
+  right: 30% !important;
+  top: 20% !important;
+  animation-delay: 0s !important;
+}
+
+.markdown-content .particle-2 {
+  right: 40% !important;
+  top: 40% !important;
+  animation-delay: 1s !important;
+}
+
+.markdown-content .particle-3 {
+  right: 50% !important;
+  top: 10% !important;
+  animation-delay: 2s !important;
+}
+
+.markdown-content .particle-4 {
+  right: 60% !important;
+  top: 50% !important;
+  animation-delay: 3s !important;
+}
+
+.markdown-content .particle-5 {
+  right: 70% !important;
+  top: 30% !important;
+  animation-delay: 4s !important;
+}
+
+.markdown-content .particle-6 {
+  right: 80% !important;
+  top: 60% !important;
+  animation-delay: 5s !important;
+}
+
+.markdown-content .particle-7 {
+  right: 20% !important;
+  top: 70% !important;
+  animation-delay: 6s !important;
+}
+
+.markdown-content .particle-8 {
+  right: 90% !important;
+  top: 20% !important;
+  animation-delay: 7s !important;
+}
+
+.markdown-content .particle-9 {
+  right: 45% !important;
+  top: 75% !important;
+  animation-delay: 8s !important;
+}
+
+.markdown-content .particle-10 {
+  right: 65% !important;
+  top: 15% !important;
+  animation-delay: 9s !important;
+}
+
+/* Floating dots */
+.markdown-content .floating-dot {
+  position: absolute !important;
+  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  animation: floatSlow 20s ease-in-out infinite !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+    0 0 40px rgba(79, 172, 254, 0.5) !important;
+}
+
+.markdown-content .dot-1 {
+  width: 8px !important;
+  height: 8px !important;
+  right: 80% !important;
+  top: 25% !important;
+  animation-delay: 0s !important;
+}
+
+.markdown-content .dot-2 {
+  width: 6px !important;
+  height: 6px !important;
+  right: 20% !important;
+  top: 65% !important;
+  animation-delay: 2s !important;
+}
+
+.markdown-content .dot-3 {
+  width: 10px !important;
+  height: 10px !important;
+  right: 35% !important;
+  top: 15% !important;
+  animation-delay: 4s !important;
+  background: rgba(0, 242, 254, 0.9) !important;
+}
+
+.markdown-content .dot-4 {
+  width: 7px !important;
+  height: 7px !important;
+  right: 15% !important;
+  bottom: 35% !important;
+  animation-delay: 6s !important;
+}
+
+.markdown-content .dot-5 {
+  width: 5px !important;
+  height: 5px !important;
+  right: 50% !important;
+  top: 45% !important;
+  animation-delay: 8s !important;
+}
+
+.markdown-content .dot-6 {
+  width: 9px !important;
+  height: 9px !important;
+  right: 25% !important;
+  top: 30% !important;
+  animation-delay: 3s !important;
+  background: rgba(168, 85, 247, 0.9) !important;
+}
+
+.markdown-content .dot-7 {
+  width: 4px !important;
+  height: 4px !important;
+  right: 75% !important;
+  top: 60% !important;
+  animation-delay: 5s !important;
+}
+
+.markdown-content .dot-8 {
+  width: 6px !important;
+  height: 6px !important;
+  right: 15% !important;
+  bottom: 60% !important;
+  animation-delay: 7s !important;
+  background: rgba(99, 102, 241, 0.9) !important;
+}
+
+/* Energy beams */
+.markdown-content .energy-beam {
+  position: absolute !important;
+  height: 2px !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #4facfe,
+    #00f2fe,
+    transparent
+  ) !important;
+  box-shadow: 0 0 10px rgba(79, 172, 254, 0.8), 0 0 20px rgba(0, 242, 254, 0.4) !important;
+  animation: neonPulse 4s infinite alternate !important;
+}
+
+.markdown-content .beam-1 {
+  width: 180px !important;
+  right: 20% !important;
+  bottom: 30% !important;
+  transform: rotate(-25deg) !important;
+  animation-delay: 0s !important;
+}
+
+.markdown-content .beam-2 {
+  width: 140px !important;
+  right: 45% !important;
+  top: 40% !important;
+  transform: rotate(35deg) !important;
+  animation-delay: 2s !important;
+}
+
+.markdown-content .beam-3 {
+  width: 120px !important;
+  right: 70% !important;
+  top: 55% !important;
+  transform: rotate(10deg) !important;
+  animation-delay: 4s !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #a855f7,
+    #6366f1,
+    transparent
+  ) !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.8), 0 0 20px rgba(99, 102, 241, 0.4) !important;
+}
+
+/* Pulse rings */
+.markdown-content .pulse-ring {
+  position: absolute !important;
+  width: 100px !important;
+  height: 100px !important;
+  right: 55% !important;
+  top: 35% !important;
+  border-radius: 50% !important;
+  border: 2px solid rgba(99, 102, 241, 0.5) !important;
+  animation: pulsing 3s ease-in-out infinite !important;
+}
+
+.markdown-content .pulse-ring-2 {
+  width: 150px !important;
+  height: 150px !important;
+  right: 30% !important;
+  top: 60% !important;
+  border-color: rgba(0, 242, 254, 0.3) !important;
+  animation-delay: 1s !important;
+  animation-duration: 4s !important;
+}
+
+/* Background glow effect */
+.markdown-content .glow-effect {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background: radial-gradient(
+    circle at 60% 50%,
+    rgba(99, 102, 241, 0.03) 0%,
+    transparent 70%
+  ) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  animation: glowBreathe 8s ease-in-out infinite !important;
+}
+
+.markdown-content .shapes-container::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background: radial-gradient(
+      circle at 70% 30%,
+      rgba(0, 242, 254, 0.02) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(168, 85, 247, 0.02) 0%,
+      transparent 60%
+    ) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .markdown-content .hero {
+    flex-direction: column !important;
+    padding: 3rem 0 !important;
+  }
+
+  .markdown-content .shapes-container {
+    width: 100% !important;
+    height: 300px !important;
+    margin: 0 !important;
+    order: 2 !important;
+  }
+
+  .markdown-content .hero-content {
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    order: 1 !important;
+  }
+
+  .markdown-content h1.hero-title {
+    font-size: 3.5rem !important;
+  }
+
+  .markdown-content .hero-subtitle {
+    font-size: 1.25rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .markdown-content .ring,
+  .markdown-content .capsule,
+  .markdown-content .cone,
+  .markdown-content .dodecahedron {
+    transform: scale(0.8) !important;
+  }
+
+  .markdown-content .connector {
+    opacity: 0.3 !important;
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .markdown-content .hero-content {
+    padding: 2rem !important;
+  }
+
+  .markdown-content h1.hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .markdown-content .hero-subtitle {
+    font-size: 1.125rem !important;
+  }
+
+  .markdown-content .octahedron {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .markdown-content .spiral-sphere {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .markdown-content .spiral-inner {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .markdown-content .diamond,
+  .markdown-content .tetrahedron,
+  .markdown-content .crystal,
+  .markdown-content .orbital-ring,
+  .markdown-content .capsule,
+  .markdown-content .cone,
+  .markdown-content .dodecahedron {
+    transform: scale(0.6) !important;
+  }
+
+  .markdown-content .energy-node {
+    transform: scale(0.8) !important;
+  }
+
+  .markdown-content .connector {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .markdown-content .shapes-container {
+    height: 250px !important;
+  }
+}

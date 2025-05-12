@@ -1,990 +1,1094 @@
-<link rel="stylesheet" href="/assets/css/handbooks/features.css">
-<link rel="stylesheet" href="/assets/css/handbooks/handbooks.css">
-
-<div class="handbooks-container">
-  <!-- Header Section -->
-  <div class="handbooks-header">
-    <h1>AI Handbooks</h1>
-    <!-- <div class="header-accent"></div> -->
-    <p class="description">Browse our collection of comprehensive AI handbooks covering various domains and technologies. Each handbook is designed to take you from fundamentals to advanced concepts with clear explanations, examples, and practical applications.</p>
-  </div>
-
-  <!-- Attribution Notice -->
-  <div class="attribution-notice">
-    <div class="attribution-content">
-      <p>Our handbooks provide structured knowledge about various domains of artificial intelligence. Each is carefully designed to build your understanding from basic principles to advanced applications with practical examples and exercises.</p>
+<link rel="stylesheet" href="/assets/css/handbooks/hero.css">
+<link rel="stylesheet" href="/assets/css/handbooks/recommended.css">
+<link rel="stylesheet" href="/assets/css/handbooks/ai-paradigms.css">
+<div class="markdown-content">
+  <section class="hero">
+    <!-- Main content on left -->
+    <div class="hero-content">
+      <h1 class="hero-title">AI <span class="gradient-text animate-text-gradient">Handbooks</span></h1>
+      <p class="hero-subtitle">
+        Comprehensive guides to artificial intelligence concepts, techniques, and applications. Each handbook provides structured learning from fundamentals to advanced topics with clear explanations and practical examples.
+      </p>
+      <!-- <a href="#explore" class="button">Explore Collection</a> -->
     </div>
-  </div>
-
-  <!-- Grid of Handbook Cards -->
-  <div class="handbooks-grid">
-    <!-- Card 1: Generative AI -->
-  <div class="handbook-card">
-    <div class="card-image generative-ai">
-      <div class="category-badge">Generative AI</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Generative AI</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Transformers</span>
-        <span class="handbook-tag">Diffusion</span>
-        <span class="handbook-tag">GANs</span>
+    
+    <!-- Enhanced shapes container with different elements -->
+    <div class="shapes-container">
+      <!-- 3D objects with different positions -->
+      <div class="octahedron"></div>
+      <div class="spiral-sphere">
+        <div class="spiral-inner"></div>
       </div>
-      <p class="handbook-description">Systems that create text, images, music, and code through AI techniques.</p>
-      <div class="button-container">
-        <a href="/content/handbooks/generative-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      <div class="plasma-orb"></div>
+      <div class="diamond"></div>
+      <div class="tetrahedron">
+        <div class="tetra-face"></div>
+        <div class="tetra-face"></div>
+        <div class="tetra-face"></div>
+        <div class="tetra-face"></div>
+      </div>
+      <div class="crystal"></div>
+      
+      <!-- New 3D objects -->
+      <div class="cone"></div>
+      <div class="capsule"></div>
+      <div class="orbital-ring"></div>
+      <div class="dodecahedron"></div>
+      
+      <!-- Connectors between shapes -->
+      <div class="connector connector-1"></div>
+      <div class="connector connector-2"></div>
+      <div class="connector connector-3"></div>
+      <div class="connector connector-4"></div>
+      
+      <!-- Energy nodes -->
+      <div class="energy-node node-1"></div>
+      <div class="energy-node node-2"></div>
+      <div class="energy-node node-3"></div>
+      
+      <!-- Particles -->
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+      <div class="particle particle-5"></div>
+      <div class="particle particle-6"></div>
+      <div class="particle particle-7"></div>
+      <div class="particle particle-8"></div>
+      <div class="particle particle-9"></div>
+      <div class="particle particle-10"></div>
+      
+      <!-- Floating dots with different positions -->
+      <div class="floating-dot dot-1"></div>
+      <div class="floating-dot dot-2"></div>
+      <div class="floating-dot dot-3"></div>
+      <div class="floating-dot dot-4"></div>
+      <div class="floating-dot dot-5"></div>
+      <div class="floating-dot dot-6"></div>
+      <div class="floating-dot dot-7"></div>
+      <div class="floating-dot dot-8"></div>
+      
+      <!-- Energy beams -->
+      <div class="energy-beam beam-1"></div>
+      <div class="energy-beam beam-2"></div>
+      <div class="energy-beam beam-3"></div>
+
+      <!-- Pulse rings -->
+      <div class="pulse-ring"></div>
+      <div class="pulse-ring pulse-ring-2"></div>
+
+      <!-- Animated glow effect -->
+      <div class="glow-effect"></div>
+    </div>
+
+  </section>
+  <div class="most-recommended-section">
+  <div class="most-recommended-container">
+    <div class="most-recommended-content">
+      <div class="most-recommended-label">MOST RECOMMENDED</div>
+      
+      <h2 class="most-recommended-title">Generative AI</h2>
+      
+      <div class="most-recommended-description">
+        <p>Generative AI represents a breakthrough class of systems capable of creating text, images, music, and code through advanced AI techniques. Our handbook explores the fundamental architecture behind models like GPT-4, DALL-E, and Midjourney, guiding you through transformer networks, diffusion processes, and GANs.</p>
+        <p>We cover everything from understanding latent spaces to implementing practical applications, with clear explanations of prompting strategies, fine-tuning methods, and evaluation techniques.</p>
+        <p>Whether you're building your first chatbot or exploring state-of-the-art image synthesis methods, this handbook provides the essential knowledge to harness generative AI's transformative capabilities.</p>
+        <a href="/content/handbooks/generative-ai/" class="learn-more-button">
+          View Handbook
         </a>
       </div>
     </div>
-  </div>
-
-  <!-- Card 2: Foundation Models -->
-  <div class="handbook-card">
-    <div class="card-image foundation-models">
-      <div class="category-badge">Core AI Fields</div>
+    
+    <div class="most-recommended-image">
+      <img src="/assets/images/handbooks/10.jpg" alt="Generative AI visualization">
     </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Foundation Models</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Transfer Learning</span>
-        <span class="handbook-tag">Fine-tuning</span>
-        <span class="handbook-tag">Scaling Laws</span>
-      </div>
-      <p class="handbook-description">Large-scale AI models trained on diverse data for many tasks.</p>
-      <div class="button-container">
-        <a href="/content/handbooks/foundation-models/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+  </div>
+</div>
+<div class="most-recommended-section reverse-layout">
+  <div class="most-recommended-container">
+    <!-- Keep the same order as the first section, let CSS handle the reversal -->
+    <div class="most-recommended-content">
+      <div class="most-recommended-label">MOST RECOMMENDED</div>
+      
+      <h2 class="most-recommended-title">Reinforcement Learning</h2>
+      
+      <div class="most-recommended-description">
+        <p>Reinforcement Learning represents the cutting edge of AI systems that learn through interaction and feedback. Our comprehensive handbook examines how intelligent agents develop optimal behaviors by maximizing rewards in complex environments, from mastering games like chess and Go to controlling robots and optimizing energy systems.</p>
+        <p>We guide you through fundamental algorithms including Deep Q-Networks (DQN), Proximal Policy Optimization (PPO), and Soft Actor-Critic (SAC), with clear explanations of value functions, policy gradients, and model-based approaches.</p>
+        <p>Designed for both beginners and experienced practitioners, this handbook bridges the gap between theory and implementation with practical examples and case studies from robotics, gaming, and autonomous systems.</p>
+        <a href="/content/handbooks/reinforcement-learning/" class="learn-more-button">
+          View Handbook
         </a>
       </div>
     </div>
-  </div>
-
-  <!-- Card 3: Computer Vision -->
-  <div class="handbook-card">
-    <div class="card-image computer-vision">
-      <div class="category-badge">Computer Vision</div>
+    
+    <div class="most-recommended-image">
+      <img src="/assets/images/handbooks/3.jpg" alt="Reinforcement Learning visualization">
     </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Computer Vision</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">CNNs</span>
-        <span class="handbook-tag">ViT</span>
-        <span class="handbook-tag">YOLO</span>
-      </div>
-      <p class="handbook-description">How AI systems process and understand visual information.</p>
-      <div class="button-container">
-        <a href="/content/handbooks/computer-vision/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+  </div>
+</div>
+<div class="most-recommended-section">
+  <div class="most-recommended-container">
+    <div class="most-recommended-content">
+      <div class="most-recommended-label">MOST RECOMMENDED</div>
+      
+      <h2 class="most-recommended-title">Computer Vision</h2>
+      
+      <div class="most-recommended-description">
+        <p>Computer Vision represents one of AI's most transformative domains, teaching machines to interpret and understand visual information. Our handbook provides a comprehensive exploration of the field, from classical techniques to cutting-edge deep learning approaches including Convolutional Neural Networks (CNNs), Vision Transformers (ViT), and YOLO object detection frameworks.</p>
+        <p>We guide you through essential concepts like image classification, object detection, semantic segmentation, and instance segmentation with practical implementations using popular libraries such as PyTorch, TensorFlow, and OpenCV, making complex techniques accessible and applicable.</p>
+        <p>Whether you're developing autonomous navigation systems, medical imaging diagnostics, or facial recognition applications, this handbook equips you with the fundamental knowledge and practical skills to implement computer vision solutions across diverse domains.</p>
+        <a href="/content/handbooks/computer-vision/" class="learn-more-button">
+          View Handbook
         </a>
       </div>
     </div>
-  </div>
-
-  <!-- Card 4: Reinforcement Learning -->
-  <div class="handbook-card">
-    <div class="card-image reinforcement-learning">
-      <div class="category-badge">Reinforcement Learning</div>
+    
+    <div class="most-recommended-image">
+      <img src="/assets/images/handbooks/7.jpg" alt="Computer Vision visualization">
     </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Reinforcement Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">DQN</span>
-        <span class="handbook-tag">PPO</span>
-        <span class="handbook-tag">SAC</span>
-      </div>
-      <p class="handbook-description">How AI agents learn through interaction with environments.</p>
-      <div class="button-container">
-        <a href="/content/handbooks/reinforcement-learning/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+  </div>
+</div>
+<div class="most-recommended-section reverse-layout">
+  <div class="most-recommended-container">
+    <div class="most-recommended-content">
+      <div class="most-recommended-label">MOST RECOMMENDED</div>
+      
+      <h2 class="most-recommended-title">Large Language Models</h2>
+      
+      <div class="most-recommended-description">
+        <p>Large Language Models represent a revolutionary shift in artificial intelligence, capable of understanding and generating human language with remarkable sophistication. Our handbook explores the architecture and functioning of models like GPT, LLaMA, and Claude, demystifying transformer networks, attention mechanisms, and the principles that enable these systems to process and generate text at scale.</p>
+        <p>We provide comprehensive coverage of essential techniques including prompting strategies, few-shot learning, fine-tuning approaches, and Reinforcement Learning from Human Feedback (RLHF), with practical guidance on implementation, optimization, and responsible deployment.</p>
+        <p>From developing conversational agents and content creation tools to building knowledge retrieval systems and code assistants, this handbook equips you with the knowledge to effectively harness LLMs' capabilities while navigating their limitations and ethical considerations.</p>
+        <a href="/content/handbooks/large-language-models/" class="learn-more-button">
+          View Handbook
         </a>
       </div>
     </div>
-  </div>
-
-  <!-- Card 5: Machine Learning -->
-  <div class="handbook-card">
-    <div class="card-image machine-learning">
-      <div class="category-badge">Core AI Fields</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Machine Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Supervised</span>
-        <span class="handbook-tag">Unsupervised</span>
-        <span class="handbook-tag">Semi-supervised</span>
-      </div>
-      <p class="handbook-description">Algorithms that enable computers to learn from data.</p>
-      <div class="button-container">
-        <a href="/handbooks/machine-learning/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
+    
+    <div class="most-recommended-image">
+      <img src="/assets/images/handbooks/8.jpg" alt="Large Language Models visualization">
     </div>
   </div>
+</div>
 
-  <!-- Card 6: Deep Learning -->
-  <div class="handbook-card">
-    <div class="card-image deep-learning">
-      <div class="category-badge">Core AI Fields</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Deep Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Neural Networks</span>
-        <span class="handbook-tag">Backprop</span>
-        <span class="handbook-tag">Activation Functions</span>
-      </div>
-      <p class="handbook-description">Neural network architectures that power modern AI systems.</p>
-      <div class="button-container">
-        <a href="/handbooks/deep-learning/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
+<svg width="0" height="0" style="position: absolute;">
+  <defs>
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2D2D" /> <!-- Primary color (Indigo) -->
+      <stop offset="100%" stop-color="#555555" /> <!-- Accent color (Pink) -->
+    </linearGradient>
+  </defs>
+</svg>
+<div class="ai-paradigms-section">
+  <!-- Add this SVG definition for the gradient -->
 
-  <!-- Card 7: NLP -->
-  <div class="handbook-card">
-    <div class="card-image nlp">
-      <div class="category-badge">NLP</div>
+  <div class="ai-paradigms-container">
+    <div class="ai-paradigms-header">
+      <h2 class="paradigms-title"><span class="gradient-text animate-text-gradient">Fundamental AI Paradigms</span>, Core Models & Generative Capabilities</h2>
+      <p class="paradigms-subtitle">This theme covers the foundational ways machines learn, the overarching model architectures, and the ability to generate new content.</p>
     </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">NLP</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">BERT</span>
-        <span class="handbook-tag">GPT</span>
-        <span class="handbook-tag">T5</span>
+    
+    <div class="paradigms-cards-container">
+      <div class="paradigms-scroll-container">
+        <!-- Card 1 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Generative AI</h3>
+          <p class="card-description">AI systems capable of creating novel content (text, images, audio, etc.).</p>
+          <a href="#generative-ai" class="card-arrow-button" aria-label="Learn more about Generative AI">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Foundation Models</h3>
+          <p class="card-description">Large-scale models trained on vast data, adaptable to many tasks (often the basis for Generative AI).</p>
+          <a href="#foundation-models" class="card-arrow-button" aria-label="Learn more about Foundation Models">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Large Language Models (LLMs)</h3>
+          <p class="card-description">A key type of foundation model focused on understanding and generating human language; a core component of much current Generative AI.</p>
+          <a href="#llms" class="card-arrow-button" aria-label="Learn more about Large Language Models">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Machine Learning (ML)</h3>
+          <p class="card-description">The broad field of algorithms that enable systems to learn from data.</p>
+          <a href="/content/handbooks/machine-learning/" class="card-arrow-button" aria-label="Learn more about Machine Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Deep Learning (DL)</h3>
+          <p class="card-description">A subfield of ML using multi-layered neural networks, critical for current Foundation Models and Generative AI.</p>
+          <a href="#deep-learning" class="card-arrow-button" aria-label="Learn more about Deep Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 6 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Reinforcement Learning (RL)</h3>
+          <p class="card-description">AI learns through trial and error by interacting with an environment.</p>
+          <a href="#reinforcement-learning" class="card-arrow-button" aria-label="Learn more about Reinforcement Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 7 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Self-Supervised Learning</h3>
+          <p class="card-description">Models learn from the data itself by creating supervisory signals from unlabeled data.</p>
+          <a href="#self-supervised-learning" class="card-arrow-button" aria-label="Learn more about Self-Supervised Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 8 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Representation Learning</h3>
+          <p class="card-description">Focuses on learning meaningful and useful ways to represent data, crucial for model performance.</p>
+          <a href="#representation-learning" class="card-arrow-button" aria-label="Learn more about Representation Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 9 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Bayesian Machine Learning</h3>
+          <p class="card-description">Probabilistic approach to machine learning, dealing with uncertainty.</p>
+          <a href="#bayesian-ml" class="card-arrow-button" aria-label="Learn more about Bayesian Machine Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 10 -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Continual Learning</h3>
+          <p class="card-description">Enabling models to learn sequentially from new data over time without forgetting past knowledge.</p>
+          <a href="#continual-learning" class="card-arrow-button" aria-label="Learn more about Continual Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        
       </div>
-      <p class="handbook-description">How AI systems understand and generate human language.</p>
-      <div class="button-container">
-        <a href="/content/handbooks/nlp/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 8: Large Language Models -->
-  <div class="handbook-card">
-    <div class="card-image llm">
-      <div class="category-badge">Core AI Fields</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Large Language Models</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Transformers</span>
-        <span class="handbook-tag">Attention</span>
-        <span class="handbook-tag">RLHF</span>
-      </div>
-      <p class="handbook-description">Neural networks trained to understand and generate language.</p>
-      <div class="button-container">
-        <a href="/handbooks/large-language-models/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 9: MLOps -->
-  <div class="handbook-card">
-    <div class="card-image mlops">
-      <div class="category-badge">Core AI Fields</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">MLOps</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Deployment</span>
-        <span class="handbook-tag">Monitoring</span>
-        <span class="handbook-tag">Versioning</span>
-      </div>
-      <p class="handbook-description">Deploying and managing ML models in production.</p>
-      <div class="button-container">
-        <a href="/content/handbooks/mlops/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecapching="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 10: Explainable AI -->
-  <div class="handbook-card">
-    <div class="card-image explainable-ai">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Explainable AI (XAI)</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">LIME</span>
-        <span class="handbook-tag">SHAP</span>
-        <span class="handbook-tag">Feature Importance</span>
-      </div>
-      <p class="handbook-description">Understanding and interpreting AI decision-making.</p>
-      <div class="button-container">
-        <a href="/content/handbooks/explainable-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 11: AI Agents -->
-  <div class="handbook-card">
-    <div class="card-image ai-agents">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">AI Agents</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Reinforcement Learning</span>
-        <span class="handbook-tag">Multi-agent Systems</span>
-        <span class="handbook-tag">Robotics</span>
-      </div>
-      <p class="handbook-description">Exploring autonomous AI systems that can perceive, decide, and act independently.</p>
-      <div class="button-container">
-        <a href="/handbooks/ai-agents/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 12: Federated Learning -->
-  <div class="handbook-card">
-    <div class="card-image federated-learning">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Federated Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Privacy</span>
-        <span class="handbook-tag">Distributed</span>
-        <span class="handbook-tag">Encryption</span>
-      </div>
-      <p class="handbook-description">Training models across decentralized devices while preserving privacy.</p>
-      <div class="button-container">
-        <a href="/handbooks/federated-learning/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 13: Multimodal AI -->
-  <div class="handbook-card">
-    <div class="card-image multimodal-ai">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Multimodal AI</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Vision-Language</span>
-        <span class="handbook-tag">CLIP</span>
-        <span class="handbook-tag">Multimodal Fusion</span>
-      </div>
-      <p class="handbook-description">Systems that process and connect multiple types of data inputs.</p>
-      <div class="button-container">
-        <a href="/handbooks/multimodal-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 14: Recommender Systems -->
-  <div class="handbook-card">
-    <div class="card-image recommender-systems">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Recommender Systems</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Collaborative Filtering</span>
-        <span class="handbook-tag">Content-Based</span>
-        <span class="handbook-tag">Matrix Factorization</span>
-      </div>
-      <p class="handbook-description">AI systems that suggest relevant items to users.</p>
-      <div class="button-container">
-        <a href="/handbooks/recommender-systems/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 15: Robotics & AI -->
-  <div class="handbook-card">
-    <div class="card-image robotics-ai">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Robotics & AI</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Control</span>
-        <span class="handbook-tag">Perception</span>
-        <span class="handbook-tag">Manipulation</span>
-      </div>
-      <p class="handbook-description">How AI systems power and control physical robots.</p>
-      <div class="button-container">
-        <a href="/handbooks/robotics-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 16: Self-Driving Cars -->
-  <div class="handbook-card">
-    <div class="card-image self-driving-cars">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Self-Driving Cars</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Computer Vision</span>
-        <span class="handbook-tag">Decision Making</span>
-        <span class="handbook-tag">Path Planning</span>
-      </div>
-      <p class="handbook-description">AI technologies enabling autonomous vehicle navigation.</p>
-      <div class="button-container">
-        <a href="/handbooks/self-driving-cars/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 17: Audio AI -->
-  <div class="handbook-card">
-    <div class="card-image audio-ai">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Audio AI</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Speech Recognition</span>
-        <span class="handbook-tag">Audio Synthesis</span>
-        <span class="handbook-tag">Acoustic Models</span>
-      </div>
-      <p class="handbook-description">AI systems for speech recognition, audio generation and processing.</p>
-      <div class="button-container">
-        <a href="/handbooks/audio-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 18: Audio AI -->
-  <div class="handbook-card">
-    <div class="card-image document-dl">
-      <div class="category-badge">AI Domains</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Deep Learning for Documents</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">OCR</span>
-        <span class="handbook-tag">Layout Understanding</span>
-        <span class="handbook-tag">Document Parsing</span>
-      </div>
-      <p class="handbook-description">AI techniques for optical character recognition, layout analysis, and document understanding.</p>
-      <div class="button-container">
-        <a href="/handbooks/document-dl/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 19: Quantum ML -->
-  <div class="handbook-card">
-    <div class="card-image quantum-ml">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Quantum ML</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Quantum Circuits</span>
-        <span class="handbook-tag">Hybrid Algorithms</span>
-        <span class="handbook-tag">Quantum Advantage</span>
-      </div>
-      <p class="handbook-description">The intersection of quantum computing and machine learning algorithms.</p>
-      <div class="button-container">
-        <a href="/handbooks/quantum-ml/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 20: Bayesian Machine Learning -->
-  <div class="handbook-card">
-    <div class="card-image bayesian-ml">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Bayesian Machine Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Probability</span>
-        <span class="handbook-tag">Uncertainty</span>
-        <span class="handbook-tag">MCMC</span>
-      </div>
-      <p class="handbook-description">Probabilistic approaches to ML using Bayesian inference.</p>
-      <div class="button-container">
-        <a href="/handbooks/bayesian-ml/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 21: Continual Learning -->
-  <div class="handbook-card">
-    <div class="card-image continual-learning">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Continual Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Lifelong Learning</span>
-        <span class="handbook-tag">Catastrophic Forgetting</span>
-        <span class="handbook-tag">Incremental Learning</span>
-      </div>
-      <p class="handbook-description">AI systems that learn incrementally over time without forgetting previous knowledge.</p>
-      <div class="button-container">
-        <a href="/handbooks/continual-learning/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 21: Adversarial Machine Learning -->
-  <div class="handbook-card">
-    <div class="card-image adversarial-ml">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Adversarial Machine Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Adversarial Examples</span>
-        <span class="handbook-tag">Robustness</span>
-        <span class="handbook-tag">Security</span>
-      </div>
-      <p class="handbook-description">Techniques to attack and defend AI models against adversarial examples and data poisoning.</p>
-      <div class="button-container">
-        <a href="/handbooks/adversarial-ml/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 22: Tabular Deep Learning -->
-  <div class="handbook-card">
-    <div class="card-image tabular-dl">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Tabular Deep Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Tabular Data</span>
-        <span class="handbook-tag">Neural Networks</span>
-        <span class="handbook-tag">Feature Engineering</span>
-      </div>
-      <p class="handbook-description">Deep learning techniques for structured, tabular data in applications like finance and healthcare.</p>
-      <div class="button-container">
-        <a href="/handbooks/tabular-dl/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 23: Efficient AI & Optimization -->
-  <div class="handbook-card">
-    <div class="card-image efficient-ai">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Efficient AI & Optimization</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Quantization</span>
-        <span class="handbook-tag">Pruning</span>
-        <span class="handbook-tag">Knowledge Distillation</span>
-      </div>
-      <p class="handbook-description">Techniques to make AI systems faster and more resource-efficient.</p>
-      <div class="button-container">
-        <a href="/handbooks/efficient-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 24: Knowledge Graphs -->
-  <div class="handbook-card">
-    <div class="card-image knowledge-graphs">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Knowledge Graphs</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Semantic Networks</span>
-        <span class="handbook-tag">Graph Reasoning</span>
-        <span class="handbook-tag">Ontologies</span>
-      </div>
-      <p class="handbook-description">Structured representations of knowledge for reasoning, search, and recommendation systems.</p>
-      <div class="button-container">
-        <a href="/handbooks/knowledge-graphs/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
+      
+      <!-- Navigation buttons -->
+      <div class="paradigms-navigation">
+        <button class="nav-button nav-prev" aria-label="Previous slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2L2 10L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="nav-button nav-next" aria-label="Next slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
   
-  <!-- Card 25: Graph Neural Networks -->
-  <div class="handbook-card">
-    <div class="card-image graph-neural-networks">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Graph Neural Networks</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">GCN</span>
-        <span class="handbook-tag">Graph Embeddings</span>
-        <span class="handbook-tag">Message Passing</span>
-      </div>
-      <p class="handbook-description">Neural networks designed to work with graph-structured data.</p>
-      <div class="button-container">
-        <a href="/handbooks/graph-neural-networks/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 26: AutoML -->
-  <div class="handbook-card">
-    <div class="card-image automl">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">AutoML</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Automation</span>
-        <span class="handbook-tag">Hyperparameter Optimization</span>
-        <span class="handbook-tag">NAS</span>
-      </div>
-      <p class="handbook-description">Tools and techniques for automating model selection, hyperparameter tuning, and pipeline design.</p>
-      <div class="button-container">
-        <a href="/handbooks/automl/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 27: Representation Learning -->
-  <div class="handbook-card">
-    <div class="card-image representation-learning">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Representation Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Embeddings</span>
-        <span class="handbook-tag">Feature Learning</span>
-        <span class="handbook-tag">Latent Space</span>
-      </div>
-      <p class="handbook-description">Methods for learning useful data representations without supervision.</p>
-      <div class="button-container">
-        <a href="/handbooks/representation-learning/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 28: Self-Supervised Learning -->
-  <div class="handbook-card">
-    <div class="card-image self-supervised-learning">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Self-Supervised Learning</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Contrastive Learning</span>
-        <span class="handbook-tag">Masking</span>
-        <span class="handbook-tag">SimCLR</span>
-      </div>
-      <p class="handbook-description">Learning from unlabeled data using automatically generated supervision.</p>
-      <div class="button-container">
-        <a href="/handbooks/self-supervised-learning/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 29: Time Series Forecasting -->
-  <div class="handbook-card">
-    <div class="card-image time-series">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Time Series Forecasting</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">ARIMA</span>
-        <span class="handbook-tag">Prophet</span>
-        <span class="handbook-tag">LSTM</span>
-      </div>
-      <p class="handbook-description">AI methods for predicting future values based on past observations.</p>
-      <div class="button-container">
-        <a href="/handbooks/time-series/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 30: Prompt Engineering -->
-  <div class="handbook-card">
-    <div class="card-image prompt-engineering">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Prompt Engineering</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Chain-of-Thought</span>
-        <span class="handbook-tag">ReAct</span>
-        <span class="handbook-tag">LLM Judge</span>
-      </div>
-      <p class="handbook-description">Mastering the art and science of crafting effective prompts for language models.</p>
-      <div class="button-container">
-        <a href="/handbooks/prompt-engineering/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 31: Genetic Algorithms -->
-  <div class="handbook-card">
-    <div class="card-image genetic-algorithms">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Genetic Algorithms</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Evolutionary Computation</span>
-        <span class="handbook-tag">Optimization</span>
-        <span class="handbook-tag">Fitness Functions</span>
-      </div>
-      <p class="handbook-description">Evolutionary algorithms using chromosome-based representations for optimization and search problems.</p>
-      <div class="button-container">
-        <a href="/handbooks/genetic-algorithms/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 32: Evolutionary Algorithms -->
-  <div class="handbook-card">
-    <div class="card-image evolutionary-algorithms">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Evolutionary Algorithms</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Evolution Strategies</span>
-        <span class="handbook-tag">Genetic Programming</span>
-        <span class="handbook-tag">Optimization</span>
-      </div>
-      <p class="handbook-description">Bio-inspired algorithms for optimization, including genetic algorithms, evolution strategies, and more.</p>
-      <div class="button-container">
-        <a href="/handbooks/evolutionary-algorithms/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 33: Swarm Intelligence -->
-  <div class="handbook-card">
-    <div class="card-image swarm-intelligence">
-      <div class="category-badge">Specialized AI Techniques</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">Swarm Intelligence</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Collective Intelligence</span>
-        <span class="handbook-tag">Optimization</span>
-        <span class="handbook-tag">Decentralized Systems</span>
-      </div>
-      <p class="handbook-description">AI techniques inspired by collective behavior in nature for optimization and decentralized systems.</p>
-      <div class="button-container">
-        <a href="/handbooks/swarm-intelligence/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 34: AI Ethics & Fairness -->
-  <div class="handbook-card">
-    <div class="card-image ai-ethics">
-      <div class="category-badge">Applied AI & Ethics</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">AI Ethics & Fairness</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Bias</span>
-        <span class="handbook-tag">Governance</span>
-        <span class="handbook-tag">Transparency</span>
-      </div>
-      <p class="handbook-description">Ensuring AI systems are fair, accountable, and transparent.</p>
-      <div class="button-container">
-        <a href="/handbooks/ai-ethics/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 35: AI for Art & Aesthetics -->
-  <div class="handbook-card">
-    <div class="card-image ai-art">
-      <div class="category-badge">Applied AI & Ethics</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">AI for Art & Aesthetics</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Creativity</span>
-        <span class="handbook-tag">Style Transfer</span>
-        <span class="handbook-tag">Stable Diffusion</span>
-      </div>
-      <p class="handbook-description">How AI systems create and evaluate visual art and design.</p>
-      <div class="button-container">
-        <a href="/handbooks/ai-art/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 36: AI for Edge & IoT -->
-  <div class="handbook-card">
-    <div class="card-image edge-ai">
-      <div class="category-badge">Applied AI & Ethics</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">AI for Edge & IoT</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">TinyML</span>
-        <span class="handbook-tag">Embedded</span>
-        <span class="handbook-tag">Energy Efficiency</span>
-      </div>
-      <p class="handbook-description">Deploying AI on resource-constrained devices and IoT networks.</p>
-      <div class="button-container">
-        <a href="/handbooks/edge-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 37: AI in Finance -->
-  <div class="handbook-card">
-  <div class="card-image ai-finance">
-    <div class="category-badge">Applied AI & Ethics</div>
-  </div>
-  <div class="handbook-card-content">
-    <h3 class="handbook-title">AI in Finance</h3>
-    <div class="handbook-tags">
-      <span class="handbook-tag">Trading</span>
-      <span class="handbook-tag">Risk</span>
-      <span class="handbook-tag">Fraud Detection</span>
-    </div>
-    <p class="handbook-description">Applications of AI in financial markets and institutions.</p>
-    <div class="button-container">
-      <a href="/handbooks/ai-finance/" class="handbook-read-more">
-        Explore Handbook
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </a>
-    </div>
-  </div>
+  <!-- Bottom divider -->
+  <div class="paradigms-divider"></div>
 </div>
-
-  <!-- Card 38: AI for Gaming -->
-  <div class="handbook-card">
-    <div class="card-image gaming-ai">
-      <div class="category-badge">Applied AI & Ethics</div>
+<div class="ai-paradigms-section">
+  <div class="ai-paradigms-container">
+    <div class="ai-paradigms-header">
+      <h2 class="paradigms-title">AI Specializations for <span class="gradient-text animate-text-gradient">Specific Data Types</span> & Tasks</h2>
+      <p class="paradigms-subtitle">These topics are specialized fields within AI, often defined by the type of data they process or the specific tasks they aim to solve.</p>
     </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">AI for Gaming</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Game AI</span>
-        <span class="handbook-tag">Procedural Content</span>
-        <span class="handbook-tag">Player Modeling</span>
-      </div>
-      <p class="handbook-description">AI techniques for creating intelligent agents, game content, and player experiences in gaming.</p>
-      <div class="button-container">
-        <a href="/handbooks/gaming-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 39: AI in Healthcare -->
-  <div class="handbook-card">
-    <div class="card-image ai-healthcare">
-      <div class="category-badge">Applied AI & Ethics</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">AI in Healthcare</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Medical Imaging</span>
-        <span class="handbook-tag">Diagnostics</span>
-        <span class="handbook-tag">Genomics</span>
-      </div>
-      <p class="handbook-description">How AI is transforming medical diagnosis, treatment, and research.</p>
-      <div class="button-container">
-        <a href="/handbooks/ai-healthcare/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Card 40: AI for Cybersecurity -->
-  <div class="handbook-card">
-    <div class="card-image cybersecurity-ai">
-      <div class="category-badge">Applied AI & Ethics</div>
-    </div>
-    <div class="handbook-card-content">
-      <h3 class="handbook-title">AI for Cybersecurity</h3>
-      <div class="handbook-tags">
-        <span class="handbook-tag">Threat Detection</span>
-        <span class="handbook-tag">Anomaly Detection</span>
-        <span class="handbook-tag">Network Security</span>
-      </div>
-      <p class="handbook-description">Using AI to detect threats, analyze network vulnerabilities, and automate security responses.</p>
-      <div class="button-container">
-        <a href="/handbooks/cybersecurity-ai/" class="handbook-read-more">
-          Explore Handbook
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  </div>
-
-  <!-- How to Use These Handbooks Section -->
-  <div class="how-to-use-section">
-    <div class="handbooks-section-header">
-      <h2 class="handbooks-section-title">How to Use These Handbooks</h2>
-      <div class="handbooks-section-accent"></div>
-    </div>
-    
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">1️⃣</div>
-        <h3>Start with Fundamentals</h3>
-        <div class="feature-divider"></div>
-        <p>Begin with the introductory sections to build a solid foundation before moving to more advanced concepts.</p>
+    <div class="video-section">
+      <!-- Video container -->
+      <div class="video-container">
+        <div class="video-player">
+          <img src="/assets/images/handbooks/42.jpg" alt="Blue sky with contrails" class="video-thumbnail" />
+          
+        </div>
       </div>
       
-      <div class="feature-card">
-        <div class="feature-icon">2️⃣</div>
-        <h3>Explore Techniques</h3>
-        <div class="feature-divider"></div>
-        <p>Dive into specific techniques and architectures that interest you most for your projects or research.</p>
+      <!-- Content below video - with title on left and description on right -->
+      <div class="video-content-container">
+        <div class="video-title-container">
+          <h3 class="video-title">The Selective Ear: When AI Listens to Some Voices But Not Others</h3>
+          <a href="/content/handbooks/generative-ai/" class="learn-more-button">
+            Learn More
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+        <div class="video-description-container">
+          <p class="video-description">
+            Sound-based AI systems are revolutionizing how we interact with technology, yet they consistently misunderstand certain accents, languages, and speech patterns. Behind these technical failures lie fundamental questions about representation in training data. Who collects voice samples, from whom, and for what purpose? This examination reveals how audio technologies can reinforce linguistic hierarchies and proposes pathways toward more inclusive sonic recognition.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="paradigms-cards-container">
+      <div class="paradigms-scroll-container">
+        <!-- Card 1: NLP -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Natural Language Processing (NLP)</h3>
+          <p class="card-description">Enabling computers to understand, interpret, and generate human language.</p>
+          <p class="card-description"><em>Strongly related: Large Language Models, Prompt Engineering.</em></p>
+          <a href="#nlp" class="card-arrow-button" aria-label="Learn more about NLP">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 2: Computer Vision -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Computer Vision</h3>
+          <p class="card-description">Enabling computers to "see" and interpret visual information.</p>
+          <a href="#computer-vision" class="card-arrow-button" aria-label="Learn more about Computer Vision">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 3: Audio AI -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Audio AI</h3>
+          <p class="card-description">AI focused on processing, understanding, and generating sound and speech.</p>
+          <a href="#audio-ai" class="card-arrow-button" aria-label="Learn more about Audio AI">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 4: Multimodal AI -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Multimodal AI</h3>
+          <p class="card-description">AI systems that can process and integrate information from multiple modalities (e.g., text, image, audio).</p>
+          <a href="#multimodal-ai" class="card-arrow-button" aria-label="Learn more about Multimodal AI">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 5: Deep Learning for Documents -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Deep Learning for Documents</h3>
+          <p class="card-description">Applying DL techniques to understand and extract information from documents.</p>
+          <a href="#document-dl" class="card-arrow-button" aria-label="Learn more about Deep Learning for Documents">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 6: Information Retrieval -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Information Retrieval</h3>
+          <p class="card-description">Finding relevant information from large collections of data (often text, but can be other types).</p>
+          <a href="#information-retrieval" class="card-arrow-button" aria-label="Learn more about Information Retrieval">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 7: Graph Neural Networks -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Graph Neural Networks (GNNs)</h3>
+          <p class="card-description">Neural networks designed for data structured as graphs.</p>
+          <a href="#gnns" class="card-arrow-button" aria-label="Learn more about Graph Neural Networks">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 8: Knowledge Graphs -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Knowledge Graphs</h3>
+          <p class="card-description">Representing knowledge in a structured graph format, often used with GNNs or NLP systems.</p>
+          <a href="#knowledge-graphs" class="card-arrow-button" aria-label="Learn more about Knowledge Graphs">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 9: Tabular Deep Learning -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Tabular Deep Learning</h3>
+          <p class="card-description">Applying deep learning to structured, table-based data.</p>
+          <a href="#tabular-dl" class="card-arrow-button" aria-label="Learn more about Tabular Deep Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 10: Time Series Forecasting -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Time Series Forecasting</h3>
+          <p class="card-description">Predicting future values based on historical time-ordered data.</p>
+          <a href="#time-series" class="card-arrow-button" aria-label="Learn more about Time Series Forecasting">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
       </div>
       
-      <div class="feature-card">
-        <div class="feature-icon">3️⃣</div>
-        <h3>Try Applications</h3>
-        <div class="feature-divider"></div>
-        <p>Apply your knowledge to practical use cases and projects with our guided examples and tutorials.</p>
+      <!-- Navigation buttons -->
+      <div class="paradigms-navigation">
+        <button class="nav-button nav-prev" aria-label="Previous slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2L2 10L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="nav-button nav-next" aria-label="Next slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
-
-  <!-- Coming Soon Section -->
-  <div class="coming-soon-section">
-    <div class="handbooks-section-header">
-      <h2 class="handbooks-section-title">Coming Soon</h2>
-      <div class="handbooks-section-accent"></div>
-    </div>
-    
-    <div class="coming-soon-grid">
-      <div class="coming-soon-card">
-        <div class="coming-soon-icon">📊</div>
-        <h3>Time Series Forecasting</h3>
-        <p>Learn to predict future values based on historical patterns using state-of-the-art models and techniques</p>
-      </div>
-      
-      <div class="coming-soon-card">
-        <div class="coming-soon-icon">⚛️</div>
-        <h3>Quantum Machine Learning</h3>
-        <p>Explore the intersection of quantum computing and machine learning for computational advantages</p>
-      </div>
-      
-      <div class="coming-soon-card">
-        <div class="coming-soon-icon">🔒</div>
-        <h3>Federated Learning</h3>
-        <p>Train models while preserving privacy across distributed devices with advanced encryption techniques</p>
-      </div>
-    </div>
-    
-    <div class="suggestion-cta">
-      <p>Can't find the handbook you're looking for? Want to contribute to existing ones?</p>
-      <a href="https://github.com/{{ site.github_username }}/{{ site.repository }}/issues/new?assignees=&labels=content+request&template=content_suggestion.md&title=New+Handbook+Suggestion" class="suggest-button" target="_blank" rel="noopener noreferrer">
-        Suggest a New Handbook
-      </a>
-    </div>
-  </div>
+  
+  <!-- Bottom divider -->
+  <div class="paradigms-divider"></div>
 </div>
+<div class="ai-paradigms-section">
+  <div class="ai-paradigms-container">
+    <div class="ai-paradigms-header">
+      <h2 class="paradigms-title">Building <span class="gradient-text animate-text-gradient">Intelligent & Autonomous</span> Systems</h2>
+      <p class="paradigms-subtitle">This theme groups areas focused on creating systems that can perceive, reason, act, and make recommendations autonomously.</p>
+    </div>
+    <div class="video-section">
+      <!-- Video container -->
+      <div class="video-container">
+        <div class="video-player">
+          <img src="/assets/images/handbooks/44.jpg" alt="Blue sky with contrails" class="video-thumbnail" />
+          
+        </div>
+      </div>
+      
+      <!-- Content below video - with title on left and description on right -->
+      <div class="video-content-container">
+        <div class="video-title-container">
+          <h3 class="video-title">Self-Driving Revolution: From Laboratory to Highway</h3>
+          <a href="/content/handbooks/generative-ai/" class="learn-more-button">
+            Learn More
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+        <div class="video-description-container">
+          <p class="video-description">
+            Self-driving technology represents one of the most ambitious applications of AI, requiring seamless integration of computer vision, sensor fusion, and real-time decision making. These vehicles must navigate unpredictable urban environments, anticipate human behavior, and make split-second ethical judgments—all while operating within regulatory frameworks that vary across regions. Despite significant progress, challenges remain in handling edge cases, achieving robust performance in adverse weather conditions, and establishing accountability frameworks for inevitable accidents.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="paradigms-cards-container">
+      <div class="paradigms-scroll-container">
+        <!-- Card 1: AI Agents -->
+        <div class="paradigm-card">
+          <h3 class="card-title">AI Agents</h3>
+          <p class="card-description">Autonomous entities that perceive their environment and take actions to achieve goals.</p>
+          <a href="#ai-agents" class="card-arrow-button" aria-label="Learn more about AI Agents">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 2: Robotics & AI -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Robotics & AI</h3>
+          <p class="card-description">The integration of AI to create intelligent robots capable of complex tasks.</p>
+          <a href="#robotics-ai" class="card-arrow-button" aria-label="Learn more about Robotics & AI">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 3: Self-Driving Cars -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Self-Driving Cars</h3>
+          <p class="card-description">A specialized application of AI and robotics for autonomous vehicles.</p>
+          <a href="#self-driving-cars" class="card-arrow-button" aria-label="Learn more about Self-Driving Cars">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 4: Flying Cars -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Flying Cars</h3>
+          <p class="card-description">An emerging application combining advanced robotics, AI for navigation and control.</p>
+          <a href="#flying-cars" class="card-arrow-button" aria-label="Learn more about Flying Cars">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 5: Sensor Fusion -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Sensor Fusion</h3>
+          <p class="card-description">Combining data from multiple sensors to achieve a more accurate and comprehensive understanding of the environment (critical for robotics, self-driving cars, etc.).</p>
+          <a href="#sensor-fusion" class="card-arrow-button" aria-label="Learn more about Sensor Fusion">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 6: Recommender Systems -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Recommender Systems</h3>
+          <p class="card-description">AI that predicts user preferences and suggests relevant items or content.</p>
+          <a href="#recommender-systems" class="card-arrow-button" aria-label="Learn more about Recommender Systems">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Navigation buttons -->
+      <div class="paradigms-navigation">
+        <button class="nav-button nav-prev" aria-label="Previous slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2L2 10L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="nav-button nav-next" aria-label="Next slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom divider -->
+  <div class="paradigms-divider"></div>
+</div>
+<div class="ai-paradigms-section">
+  <div class="ai-paradigms-container">
+    <div class="ai-paradigms-header">
+      <h2 class="paradigms-title">Engineering, <span class="gradient-text animate-text-gradient">Optimization & Operationalization</span> of AI</h2>
+      <p class="paradigms-subtitle">These topics relate to the practical aspects of developing, deploying, and efficiently running AI models.</p>
+    </div>
+    <div class="video-section">
+      <!-- Video container -->
+      <div class="video-container">
+        <div class="video-player">
+          <img src="/assets/images/handbooks/45.jpg" alt="Blue sky with contrails" class="video-thumbnail" />
+          
+        </div>
+      </div>
+      
+      <!-- Content below video - with title on left and description on right -->
+      <div class="video-content-container">
+        <div class="video-title-container">
+          <h3 class="video-title">The Art and Science of Modern GPU Acceleration</h3>
+          <a href="/content/handbooks/generative-ai/" class="learn-more-button">
+            Learn More
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+        <div class="video-description-container">
+          <p class="video-description">
+            Graphics processing units transform AI training through massive parallelization, reducing computation from weeks to hours. Programming frameworks like CUDA orchestrate complex memory hierarchies and thread patterns across thousands of cores. Mastering these architectures demands deep understanding of workload distribution and hardware-specific optimizations. As AI models grow, innovative memory management techniques continue pushing the boundaries of what's computationally possible with modern GPUs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="paradigms-cards-container">
+      <div class="paradigms-scroll-container">
+        <!-- Card 1: MLOps -->
+        <div class="paradigm-card">
+          <h3 class="card-title">MLOps (Machine Learning Operations)</h3>
+          <p class="card-description">Practices for streamlining the lifecycle of ML models from development to production and maintenance.</p>
+          <a href="#mlops" class="card-arrow-button" aria-label="Learn more about MLOps">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 2: AutoML -->
+        <div class="paradigm-card">
+          <h3 class="card-title">AutoML (Automated Machine Learning)</h3>
+          <p class="card-description">Automating various stages of the machine learning pipeline.</p>
+          <a href="#automl" class="card-arrow-button" aria-label="Learn more about AutoML">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 3: Efficient AI & Optimization -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Efficient AI & Optimization</h3>
+          <p class="card-description">Techniques to make AI models smaller, faster, and more energy-efficient.</p>
+          <a href="#efficient-ai" class="card-arrow-button" aria-label="Learn more about Efficient AI & Optimization">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 4: GPU programming -->
+        <div class="paradigm-card">
+          <h3 class="card-title">GPU Programming</h3>
+          <p class="card-description">Essential skill for developing and training computationally intensive deep learning models.</p>
+          <a href="#gpu-programming" class="card-arrow-button" aria-label="Learn more about GPU Programming">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 5: Prompt Engineering -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Prompt Engineering</h3>
+          <p class="card-description">The art and science of crafting effective inputs (prompts) to guide generative AI models (especially LLMs) to desired outputs.</p>
+          <p class="card-description"><em>Also closely related to NLP and LLMs in Theme 1 & 2.</em></p>
+          <a href="#prompt-engineering" class="card-arrow-button" aria-label="Learn more about Prompt Engineering">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Navigation buttons -->
+      <div class="paradigms-navigation">
+        <button class="nav-button nav-prev" aria-label="Previous slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2L2 10L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="nav-button nav-next" aria-label="Next slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom divider -->
+  <div class="paradigms-divider"></div>
+</div>
+<div class="ai-paradigms-section">
+  <div class="ai-paradigms-container">
+    <div class="ai-paradigms-header">
+      <h2 class="paradigms-title"><span class="gradient-text animate-text-gradient">Advanced Algorithmic Approaches</span> & Specialized Learning</h2>
+      <p class="paradigms-subtitle">This includes specific algorithmic families and advanced topics within machine learning.</p>
+    </div>
+    <div class="video-section">
+      <!-- Video container -->
+      <div class="video-container">
+        <div class="video-player">
+          <img src="/assets/images/handbooks/43.jpg" alt="Blue sky with contrails" class="video-thumbnail" />
+          
+        </div>
+      </div>
+      
+      <!-- Content below video - with title on left and description on right -->
+      <div class="video-content-container">
+        <div class="video-title-container">
+          <h3 class="video-title">The Quantum Advantage in Machine Learning</h3>
+          <a href="/content/handbooks/generative-ai/" class="learn-more-button">
+            Learn More
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+        <div class="video-description-container">
+          <p class="video-description">
+            Quantum computing principles offer unprecedented approaches to processing complex data distributions and optimizing high-dimensional models. Researchers are developing algorithms that leverage quantum phenomena to potentially exponentially accelerate training on certain problem classes. Current limitations in qubit stability and coherence time present significant engineering challenges for practical implementations. The field stands at a critical juncture between theoretical breakthroughs and the hardware capabilities needed to realize quantum ML's full potential.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="paradigms-cards-container">
+      <div class="paradigms-scroll-container">
+        <!-- Card 1: Genetic Algorithms -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Genetic Algorithms</h3>
+          <p class="card-description">Optimization algorithms inspired by natural selection.</p>
+          <a href="#genetic-algorithms" class="card-arrow-button" aria-label="Learn more about Genetic Algorithms">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 2: Evolutionary Algorithms -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Evolutionary Algorithms</h3>
+          <p class="card-description">Broader class of algorithms based on principles of biological evolution.</p>
+          <a href="#evolutionary-algorithms" class="card-arrow-button" aria-label="Learn more about Evolutionary Algorithms">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 3: Swarm Intelligence -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Swarm Intelligence</h3>
+          <p class="card-description">AI systems inspired by collective behavior in decentralized systems (e.g., ant colonies).</p>
+          <a href="#swarm-intelligence" class="card-arrow-button" aria-label="Learn more about Swarm Intelligence">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 4: Quantum ML -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Quantum ML</h3>
+          <p class="card-description">Exploring the intersection of quantum computing and machine learning.</p>
+          <a href="#quantum-ml" class="card-arrow-button" aria-label="Learn more about Quantum ML">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 5: Adversarial Machine Learning -->
+        <div class="paradigm-card">
+          <h3 class="card-title">Adversarial Machine Learning</h3>
+          <p class="card-description">Studying attacks on ML models and methods to make them more robust.</p>
+          <a href="#adversarial-ml" class="card-arrow-button" aria-label="Learn more about Adversarial Machine Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Navigation buttons -->
+      <div class="paradigms-navigation">
+        <button class="nav-button nav-prev" aria-label="Previous slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2L2 10L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="nav-button nav-next" aria-label="Next slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom divider -->
+  <div class="paradigms-divider"></div>
+</div>
+<div class="ai-paradigms-section">
+  <div class="ai-paradigms-container">
+    <div class="ai-paradigms-header">
+      <h2 class="paradigms-title">AI Applications in <span class="gradient-text animate-text-gradient">Specific Domains</span></h2>
+      <p class="paradigms-subtitle">This category lists areas where AI is being applied to solve domain-specific problems.</p>
+    </div>
+    <div class="video-section">
+      <!-- Video container -->
+      <div class="video-container">
+        <div class="video-player">
+          <img src="/assets/images/handbooks/46.jpg" alt="Blue sky with contrails" class="video-thumbnail" />
+          
+        </div>
+      </div>
+      
+      <!-- Content below video - with title on left and description on right -->
+      <div class="video-content-container">
+        <div class="video-title-container">
+          <h3 class="video-title">Beyond Button-Mashing: AI Masters Virtual Worlds</h3>
+          <a href="/content/handbooks/generative-ai/" class="learn-more-button">
+            Learn More
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+        <div class="video-description-container">
+          <p class="video-description">
+            AlphaStar and OpenAI Five pioneered superhuman game AI through deep reinforcement learning, developing surprising strategies after processing centuries' worth of simulated gameplay. Google's SIMA agent now extends this further, interpreting natural language commands across multiple 3D games while demonstrating impressive transfer learning between environments. Meanwhile, Genie 2 can generate interactive 3D worlds from single images, featuring emergent physics and complex animations that serve as training grounds for next-generation AI agents.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="paradigms-cards-container">
+      <div class="paradigms-scroll-container">
+        <!-- Card 1: AI for Art & Aesthetics -->
+        <div class="paradigm-card">
+          <h3 class="card-title">AI for Art & Aesthetics</h3>
+          <p class="card-description">Using AI to create or analyze artistic and aesthetic content.</p>
+          <a href="#ai-art" class="card-arrow-button" aria-label="Learn more about AI for Art & Aesthetics">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 2: AI for Edge & IoT -->
+        <div class="paradigm-card">
+          <h3 class="card-title">AI for Edge & IoT</h3>
+          <p class="card-description">Deploying AI models on edge devices and within Internet of Things ecosystems.</p>
+          <a href="#ai-edge-iot" class="card-arrow-button" aria-label="Learn more about AI for Edge & IoT">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 3: AI in Finance -->
+        <div class="paradigm-card">
+          <h3 class="card-title">AI in Finance</h3>
+          <p class="card-description">Applications like fraud detection, algorithmic trading, and risk assessment.</p>
+          <a href="#ai-finance" class="card-arrow-button" aria-label="Learn more about AI in Finance">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 4: AI for Gaming -->
+        <div class="paradigm-card">
+          <h3 class="card-title">AI for Gaming</h3>
+          <p class="card-description">Enhancing game experiences through intelligent NPCs, procedural content generation, etc.</p>
+          <a href="#ai-gaming" class="card-arrow-button" aria-label="Learn more about AI for Gaming">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 5: AI in Healthcare -->
+        <div class="paradigm-card">
+          <h3 class="card-title">AI in Healthcare</h3>
+          <p class="card-description">Use in diagnostics, drug discovery, personalized medicine, and operational efficiency.</p>
+          <a href="#ai-healthcare" class="card-arrow-button" aria-label="Learn more about AI in Healthcare">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Card 6: AI for Cybersecurity -->
+        <div class="paradigm-card">
+          <h3 class="card-title">AI for Cybersecurity</h3>
+          <p class="card-description">Employing AI to detect, prevent, and respond to cyber threats.</p>
+          <a href="#ai-cybersecurity" class="card-arrow-button" aria-label="Learn more about AI for Cybersecurity">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Navigation buttons -->
+      <div class="paradigms-navigation">
+        <button class="nav-button nav-prev" aria-label="Previous slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2L2 10L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="nav-button nav-next" aria-label="Next slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom divider -->
+  <div class="paradigms-divider"></div>
+</div>
+<div class="ai-paradigms-section">
+  <div class="ai-paradigms-container">
+    <div class="ai-paradigms-header">
+      <h2 class="paradigms-title">Ensuring <span class="gradient-text animate-text-gradient">Trustworthy, Ethical</span> & Understandable AI</h2>
+      <p class="paradigms-subtitle">These are critical considerations for the responsible development and deployment of AI.</p>
+    </div>
+    <div class="video-section">
+      <!-- Video container -->
+      <div class="video-container">
+        <div class="video-player">
+          <img src="/assets/images/handbooks/47.jpg" alt="Blue sky with contrails" class="video-thumbnail" />
+          
+        </div>
+      </div>
+      
+      <!-- Content below video - with title on left and description on right -->
+      <div class="video-content-container">
+        <div class="video-title-container">
+          <h3 class="video-title">Machines Don't Have Biases. The Humans Who Build Them Do.</h3>
+          <a href="/content/handbooks/generative-ai/" class="learn-more-button">
+            Learn More
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+        <div class="video-description-container">
+          <p class="video-description">
+            Every algorithm reflects the values, assumptions, and limitations of its creators. When we delegate decisions to AI, we risk amplifying existing social inequities at unprecedented scale. The path to ethical AI requires diverse teams, transparent processes, and systems that recognize the full spectrum of human experience. Accountability cannot be automated – it must be deliberately designed into every step of development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="paradigms-cards-container">
+      <div class="paradigms-scroll-container">
+        <div class="paradigm-card">
+          <h3 class="card-title">Explainable AI (XAI)</h3>
+          <p class="card-description">Techniques to understand and interpret the decisions made by AI models.</p>
+          <a href="#explainable-ai" class="card-arrow-button" aria-label="Learn more about Explainable AI (XAI)">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="paradigm-card">
+          <h3 class="card-title">AI Ethics & Fairness</h3>
+          <p class="card-description">Addressing moral implications, bias, accountability, and transparency in AI systems.</p>
+          <a href="#ai-ethics" class="card-arrow-button" aria-label="Learn more about AI Ethics & Fairness">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="paradigm-card">
+          <h3 class="card-title">Machine Unlearning</h3>
+          <p class="card-description">Removing the impact of specific data from trained AI models to uphold privacy, correct biases, or update information efficiently.</p>
+          <a href="#machine-unlearning" class="card-arrow-button" aria-label="Learn more about Machine Unlearning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div class="paradigm-card">
+          <h3 class="card-title">Federated Learning</h3>
+          <p class="card-description">Training models across decentralized devices while keeping data localized.</p>
+          <a href="#federated-learning" class="card-arrow-button" aria-label="Learn more about Federated Learning">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="paradigms-navigation">
+        <button class="nav-button nav-prev" aria-label="Previous slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 2L2 10L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="nav-button nav-next" aria-label="Next slide">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  
+  </div>
+
+<script src="/assets/js/handbooks/ai-paradigms.js"></script>
