@@ -1,77 +1,75 @@
-// Script to enhance academic content reading experience
-document.addEventListener("DOMContentLoaded", function () {
-  // Add academic-content class to the content
-  const contentBody = document.querySelector(".content-body");
-  if (contentBody) {
-    contentBody.classList.add("academic-content");
-  }
-
-  // Create reading progress indicator
-  const progressBar = document.createElement("div");
-  progressBar.classList.add("reading-progress");
-  document.body.appendChild(progressBar);
-
-  // Update reading progress
-  function updateReadingProgress() {
-    const scrollTop =
-      document.documentElement.scrollTop || document.body.scrollTop;
-    const scrollHeight =
-      document.documentElement.scrollHeight || document.body.scrollHeight;
-    const clientHeight =
-      document.documentElement.clientHeight || window.innerHeight;
-    const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
-    progressBar.style.width = scrolled + "%";
-  }
-
-  // Add scroll event listener
-  window.addEventListener("scroll", updateReadingProgress);
-
-  // Initialize progress bar
-  updateReadingProgress();
-
-  // External links open in new tab
-  const externalLinks = document.querySelectorAll(
-    '.academic-content a[href^="http"]'
+// handbook-vertical-tabs-script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const tabLinks = document.querySelectorAll(".vertical-tab-link");
+  const contentPanels = document.querySelectorAll(".tab-content-panel");
+  const templatesContainer = document.querySelector(
+    ".section-content-templates"
   );
-  externalLinks.forEach((link) => {
-    if (!link.hasAttribute("target")) {
-      link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noopener noreferrer");
-    }
+
+  function switchTab(targetTabId) {
+    // Update active state for tab links
+    tabLinks.forEach((link) => {
+      if (link.getAttribute("data-tab") === targetTabId) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+
+    // Show/hide content panels
+    contentPanels.forEach((panel) => {
+      const panelId = panel.id.replace("tab-content-", "");
+      if (panelId === targetTabId) {
+        // If content is not already loaded (and not the overview tab)
+        if (targetTabId !== "overview" && panel.innerHTML.trim() === "") {
+          const template = templatesContainer.querySelector(
+            `#template-${targetTabId}`
+          );
+          if (template) {
+            panel.innerHTML = template.innerHTML; // Populate with template content
+          } else {
+            panel.innerHTML =
+              '<div class="content-panel-header"><h2>Content Not Found</h2></div><div class="content-panel-body"><p>Content for this section is currently unavailable.</p></div>';
+          }
+        }
+        panel.classList.add("active");
+      } else {
+        panel.classList.remove("active");
+      }
+    });
+  }
+
+  tabLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const targetTabId = link.getAttribute("data-tab");
+      switchTab(targetTabId);
+      // Update URL hash without triggering hashchange listener again if not needed
+      if (window.location.hash !== `#${targetTabId}`) {
+        window.location.hash = targetTabId;
+      }
+    });
   });
 
-  // Add section navigation if needed
-  if (!document.querySelector(".section-navigation")) {
-    const sectionNav = document.createElement("div");
-    sectionNav.classList.add("section-navigation");
-
-    // Check if previous/next section variables exist
-    if (typeof window.prevSection !== "undefined") {
-      const prevLink = document.createElement("a");
-      prevLink.href = window.prevSection;
-      prevLink.classList.add("prev-section");
-      prevLink.innerHTML =
-        '<span class="nav-arrow">←</span><span class="nav-text">Previous Section</span>';
-      sectionNav.appendChild(prevLink);
-    } else {
-      sectionNav.appendChild(document.createElement("div"));
+  // Function to activate tab based on URL hash
+  function activateTabFromHash() {
+    let targetTabId = "overview"; // Default to overview
+    if (window.location.hash) {
+      const hash = window.location.hash.substring(1);
+      // Check if a tab link exists for this hash
+      const targetLink = document.querySelector(
+        `.vertical-tab-link[data-tab="${hash}"]`
+      );
+      if (targetLink) {
+        targetTabId = hash;
+      }
     }
-
-    if (typeof window.nextSection !== "undefined") {
-      const nextLink = document.createElement("a");
-      nextLink.href = window.nextSection;
-      nextLink.classList.add("next-section");
-      nextLink.innerHTML =
-        '<span class="nav-text">Next Section</span><span class="nav-arrow">→</span>';
-      sectionNav.appendChild(nextLink);
-    }
-
-    // Add navigation to the end of content
-    if (
-      contentBody &&
-      (typeof prevSection !== "undefined" || typeof nextSection !== "undefined")
-    ) {
-      contentBody.appendChild(sectionNav);
-    }
+    switchTab(targetTabId);
   }
+
+  // Activate tab on initial load
+  activateTabFromHash();
+
+  // Listen for hash changes (e.g., browser back/forward)
+  window.addEventListener("hashchange", activateTabFromHash, false);
 });
