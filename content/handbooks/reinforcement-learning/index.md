@@ -1,183 +1,184 @@
----
-layout: default
-title: "Reinforcement Learning Handbook"
-description: "A comprehensive guide to reinforcement learning, from foundational concepts to advanced transformer-based methods and real-world applications."
----
+<link rel="stylesheet" href="/assets/css/section-academic.css">
+<div class="handbook-container-vertical-tabs">
+<div class="handbook-container-inner">
+    <aside class="handbook-vertical-nav">
+        <div class="vertical-nav-header">
+            <h1>Reinforcement Learning</h1>
+            <div class="header-accent-vertical"></div>
+        </div>
+        <ul class="vertical-tabs-list">
+            <li class="vertical-tab-ul"><a href="#overview" data-tab="overview" class="vertical-tab-link active">Overview</a></li>
+            <li class="vertical-tab-ul"><a href="#s1" data-tab="s1" class="vertical-tab-link">Foundations</a></li>
+            <li class="vertical-tab-ul"><a href="#s2" data-tab="s2" class="vertical-tab-link">Core Concepts</a></li>
+            <li class="vertical-tab-ul"><a href="#s3" data-tab="s3" class="vertical-tab-link">Classical Algorithms</a></li>
+            <li class="vertical-tab-ul"><a href="#s4" data-tab="s4" class="vertical-tab-link">Deep RL</a></li>
+            <li class="vertical-tab-ul"><a href="#s5" data-tab="s5" class="vertical-tab-link">Advanced Paradigms</a></li>
+            <li class="vertical-tab-ul"><a href="#s6" data-tab="s6" class="vertical-tab-link">Multi-Agent RL</a></li>
+            <li class="vertical-tab-ul"><a href="#s7" data-tab="s7" class="vertical-tab-link">Human Interaction</a></li>
+            <li class="vertical-tab-ul"><a href="#s8" data-tab="s8" class="vertical-tab-link">Exploration</a></li>
+            <li class="vertical-tab-ul"><a href="#s9" data-tab="s9" class="vertical-tab-link">Transformers in RL</a></li>
+            <li class="vertical-tab-ul"><a href="#s10" data-tab="s10" class="vertical-tab-link">Alignment</a></li>
+            <li class="vertical-tab-ul"><a href="#s11" data-tab="s11" class="vertical-tab-link">Structured Tasks</a></li>
+            <li class="vertical-tab-ul"><a href="#s12" data-tab="s12" class="vertical-tab-link">Scalability</a></li>
+            <li class="vertical-tab-ul"><a href="#s13" data-tab="s13" class="vertical-tab-link">Evaluation</a></li>
+            <li class="vertical-tab-ul"><a href="#s14" data-tab="s14" class="vertical-tab-link">Applications</a></li>
+            <li class="vertical-tab-ul"><a href="#s15" data-tab="s15" class="vertical-tab-link">Future Directions</a></li>
+        </ul>
+        <div class="vertical-nav-footer">
+             <p><strong>Related Handbooks:</strong></p>
+            <ul>
+                <li><a href="/content/handbooks/computer-vision/">Computer Vision Handbook</a></li>
+                <li><a href="/content/handbooks/generative-ai/">Generative AI Handbook</a></li>
+                <li><a href="/content/handbooks/deep-learning/">Deep Learning Handbook</a></li>
+            </ul>
+        </div>
+    </aside>
 
-<link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
+    <main class="handbook-vertical-content-area">
+        <div id="tab-content-overview" class="tab-content-panel active welcome-section">
+            <div class="content-panel-header">
+                <h2>Welcome to the Reinforcement Learning Handbook</h2>
+            </div>
+            <div class="content-panel-body welcome-panel">
+                <p><strong>About this Handbook:</strong> This comprehensive resource guides you through the fascinating field of Reinforcement Learning (RL). From mathematical foundations to cutting-edge transformer-based methods, this handbook provides a structured approach to understanding how intelligent agents learn to make decisions through interaction with their environment.</p>
+                <p><strong>Learning Path Suggestion:</strong></p>
+                <ul class="learning-path-list">
+                    <li><span class="step-number">1</span> Begin with mathematical and statistical foundations essential for reinforcement learning (Section 1).</li>
+                    <li><span class="step-number">2</span> Master core RL concepts, including Markov Decision Processes and temporal difference learning (Section 2).</li>
+                    <li><span class="step-number">3</span> Explore classical RL algorithms like Q-learning and policy gradients (Section 3).</li>
+                    <li><span class="step-number">4</span> Progress to deep RL fundamentals, including DQN and actor-critic methods (Section 4).</li>
+                    <li><span class="step-number">5</span> Discover advanced paradigms like model-based RL, offline RL, and multi-agent systems (Sections 5-6).</li>
+                    <li><span class="step-number">6</span> Examine human interaction, exploration strategies, and transformer-based approaches (Sections 7-10).</li>
+                    <li><span class="step-number">7</span> Learn about RL applications, evaluation methods, and future directions (Sections 11-15).</li>
+                </ul>
+                <p class="last-updated"><em>This handbook is a living document, regularly updated to reflect the latest research and industry best practices. <strong>Last major review: May 2025.</strong></em></p>
+            </div>
+        </div>
 
-<div class="attribution-notice">
-  <div class="attribution-content">
-    <p>This handbook is inspired by the need for a unified resource on Reinforcement Learning, grounded in theoretical foundations and practical implementations. All credit for the conceptual framework goes to the reinforcement learning community, including influential tools like Gymnasium, Stable-Baselines3, and Ray RLlib. I’ve curated and structured the content to deliver a cohesive learning path, incorporating practical examples and hands-on guidance to elevate the educational experience.</p>
-  </div>
+        <div id="tab-content-s1" class="tab-content-panel"></div>
+        <div id="tab-content-s2" class="tab-content-panel"></div>
+        <div id="tab-content-s3" class="tab-content-panel"></div>
+        <div id="tab-content-s4" class="tab-content-panel"></div>
+        <div id="tab-content-s5" class="tab-content-panel"></div>
+        <div id="tab-content-s6" class="tab-content-panel"></div>
+        <div id="tab-content-s7" class="tab-content-panel"></div>
+        <div id="tab-content-s8" class="tab-content-panel"></div>
+        <div id="tab-content-s9" class="tab-content-panel"></div>
+        <div id="tab-content-s10" class="tab-content-panel"></div>
+        <div id="tab-content-s11" class="tab-content-panel"></div>
+        <div id="tab-content-s12" class="tab-content-panel"></div>
+        <div id="tab-content-s13" class="tab-content-panel"></div>
+        <div id="tab-content-s14" class="tab-content-panel"></div>
+        <div id="tab-content-s15" class="tab-content-panel"></div>
+    </main>
+
+    <div class="section-content-templates" style="display: none;">
+        <div id="template-s1">
+            <div class="content-panel-header">
+                <h2>Mathematical and Statistical Foundations</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section1.md %}
+        </div>
+
+        <div id="template-s2">
+            <div class="content-panel-header">
+                <h2>Core Concepts of Reinforcement Learning</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section2.md %}
+        </div>
+
+        <div id="template-s3">
+            <div class="content-panel-header">
+                <h2>Classical RL Algorithms</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section3.md %}
+        </div>
+
+        <div id="template-s4">
+            <div class="content-panel-header">
+                <h2>Deep Reinforcement Learning Foundations</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section4.md %}
+        </div>
+
+        <div id="template-s5">
+            <div class="content-panel-header">
+                <h2>Advanced RL Paradigms</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section5.md %}
+        </div>
+
+        <div id="template-s6">
+            <div class="content-panel-header">
+                <h2>Multi-Agent and Game-Theoretic RL</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section6.md %}
+        </div>
+
+        <div id="template-s7">
+            <div class="content-panel-header">
+                <h2>RL with Human Interaction</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section7.md %}
+        </div>
+
+        <div id="template-s8">
+            <div class="content-panel-header">
+                <h2>Exploration and Representation Learning in RL</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section8.md %}
+        </div>
+
+        <div id="template-s9">
+            <div class="content-panel-header">
+                <h2>Transformers in RL</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section9.md %}
+        </div>
+
+        <div id="template-s10">
+            <div class="content-panel-header">
+                <h2>Alignment and Reasoning with Transformers</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section10.md %}
+        </div>
+
+        <div id="template-s11">
+            <div class="content-panel-header">
+                <h2>RL for Sequential and Structured Tasks</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section11.md %}
+        </div>
+
+        <div id="template-s12">
+            <div class="content-panel-header">
+                <h2>Scalability and Efficiency in RL</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section12.md %}
+        </div>
+
+        <div id="template-s13">
+            <div class="content-panel-header">
+                <h2>Evaluation and Benchmarking</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section13.md %}
+        </div>
+
+        <div id="template-s14">
+            <div class="content-panel-header">
+                <h2>Applications of RL</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section14.md %}
+        </div>
+
+        <div id="template-s15">
+            <div class="content-panel-header">
+                <h2>Deployment, Ethics, and Future Directions</h2>
+            </div>
+            {% include /content/handbooks/reinforcement-learning/section15.md %}
+        </div>
+    </div>
+
 </div>
-
-<div class="key-concept">
-  <strong>Note:</strong> This handbook is regularly updated to reflect the latest advancements in reinforcement learning. Each section builds upon previous concepts, creating a cohesive learning path from basic principles to cutting-edge techniques and applications.
 </div>
-
-<h2 id="handbook-sections">Handbook Sections</h2>
-
-<div class="sections-grid">
-  <!-- Section I -->
-  <div class="section-card">
-    <h3 id="s1">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section1/' | relative_url }}">Section I: Mathematical and Statistical Foundations</a>
-    </h3>
-    <p><strong>Goal:</strong> Establish the mathematical and statistical groundwork essential for understanding reinforcement learning techniques.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section1/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section II -->
-  <div class="section-card">
-    <h3 id="s2">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section2/' | relative_url }}">Section II: Core Concepts of Reinforcement Learning</a>
-    </h3>
-    <p><strong>Goal:</strong> Introduce foundational RL concepts, including Markov Decision Processes, dynamic programming, and temporal difference learning.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section2/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section III -->
-  <div class="section-card">
-    <h3 id="s3">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section3/' | relative_url }}">Section III: Classical RL Algorithms</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey classical RL methods like Q-learning, policy gradients, and exploration strategies.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section3/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IV -->
-  <div class="section-card">
-    <h3 id="s4">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section4/' | relative_url }}">Section IV: Deep Reinforcement Learning Foundations</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore deep RL fundamentals, including DQN, actor-critic methods, and training optimizations.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section4/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section V -->
-  <div class="section-card">
-    <h3 id="s5">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section5/' | relative_url }}">Section V: Advanced RL Paradigms</a>
-    </h3>
-    <p><strong>Goal:</strong> Examine advanced RL techniques like model-based RL, offline RL, imitation learning, and hierarchical RL.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section5/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VI -->
-  <div class="section-card">
-    <h3 id="s6">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section6/' | relative_url }}">Section VI: Multi-Agent and Game-Theoretic RL</a>
-    </h3>
-    <p><strong>Goal:</strong> Investigate multi-agent RL, including cooperative, competitive, and game-theoretic frameworks like zero-sum games.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section6/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VII -->
-  <div class="section-card">
-    <h3 id="s7">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section7/' | relative_url }}">Section VII: RL with Human Interaction</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey RL methods incorporating human feedback, safety constraints, and explainability.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section7/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VIII -->
-  <div class="section-card">
-    <h3 id="s8">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section8/' | relative_url }}">Section VIII: Exploration and Representation Learning in RL</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore advanced exploration strategies, including curiosity-driven methods, and representation learning for RL.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section8/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IX -->
-  <div class="section-card">
-    <h3 id="s9">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section9/' | relative_url }}">Section IX: Transformers in RL</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey transformer-based RL methods, from sequence modeling to multi-modal and robotic applications.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section9/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section X -->
-  <div class="section-card">
-    <h3 id="s10">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section10/' | relative_url }}">Section X: Alignment and Reasoning with Transformers</a>
-    </h3>
-    <p><strong>Goal:</strong> Examine transformer-based alignment techniques and reasoning capabilities in RL contexts.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section10/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XI -->
-  <div class="section-card">
-    <h3 id="s11">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section11/' | relative_url }}">Section XI: RL for Sequential and Structured Tasks</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore RL applications in sequential decision-making, NLP, vision, and graph-based tasks.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section11/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XII -->
-  <div class="section-card">
-    <h3 id="s12">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section12/' | relative_url }}">Section XII: Scalability and Efficiency in RL</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey techniques for distributed RL, sample efficiency, and hardware acceleration.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section12/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XIII -->
-  <div class="section-card">
-    <h3 id="s13">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section13/' | relative_url }}">Section XIII: Evaluation and Benchmarking</a>
-    </h3>
-    <p><strong>Goal:</strong> Examine RL benchmarks, evaluation challenges, and sim-to-real testing methodologies.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section13/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XIV -->
-  <div class="section-card">
-    <h3 id="s14">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section14/' | relative_url }}">Section XIV: Applications of RL</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey RL applications in robotics, autonomous systems, games, finance, and healthcare.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section14/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XV -->
-  <div class="section-card">
-    <h3 id="s15">
-      <a href="{{ '/content/handbooks/reinforcement-learning/section15/' | relative_url }}">Section XV: Deployment, Ethics, and Future Directions</a>
-    </h3>
-    <p><strong>Goal:</strong> Address RL deployment strategies, ethical considerations, and emerging trends.</p>
-    <a href="{{ '/content/handbooks/reinforcement-learning/section15/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-</div>
-
-<div class="resource-links">
-  <h3>Related Handbooks</h3>
-  <ul>
-    <li><a href="{{ '/handbooks/computer-vision/' | relative_url }}">Computer Vision Handbook</a> - Explore visual perception techniques</li>
-    <li><a href="{{ '/handbooks/generative-ai/' | relative_url }}">Generative AI Handbook</a> - Dive into generative modeling techniques</li>
-    <li><a href="{{ '/handbooks/deep-learning/' | relative_url }}">Deep Learning Handbook</a> - Master neural network architectures and training</li>
-  </ul>
-</div>
-
-<div class="summary-section">
-  <h3>Learning Path</h3>
-  <ul>
-    <li>Begin with mathematical foundations and core RL concepts like MDPs and Q-learning</li>
-    <li>Progress through classical and deep RL algorithms, including DQN and actor-critic methods</li>
-    <li>Explore advanced paradigms like model-based RL, offline RL, and multi-agent systems</li>
-    <li>Examine transformer-based RL, alignment techniques, and reasoning capabilities</li>
-    <li>Discover applications, evaluation methods, and ethical considerations in RL</li>
-  </ul>
-</div>
-
-<script>
-  // Navigation variables - no previous for index
-  var nextSection = "/content/handbooks/reinforcement-learning/section1.md";
-</script>
-
-<script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
+<script src="/assets/js/section-academic.js"></script>
