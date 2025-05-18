@@ -1,217 +1,193 @@
----
-layout: default
-title: "Deep Learning Handbook"
-description: "Architectures, Training, and Applications of Deep Learning: From Fundamentals to Cutting-Edge Techniques"
----
+<link rel="stylesheet" href="/assets/css/section-academic.css">
+<div class="handbook-container-vertical-tabs">
+<div class="handbook-container-inner">
+    <aside class="handbook-vertical-nav">
+        <div class="vertical-nav-header">
+            <h1>Deep Learning</h1>
+            <div class="header-accent-vertical"></div>
+        </div>
+        <ul class="vertical-tabs-list">
+            <li class="vertical-tab-ul"><a href="#overview" data-tab="overview" class="vertical-tab-link active">Overview</a></li>
+            <li class="vertical-tab-ul"><a href="#s1" data-tab="s1" class="vertical-tab-link">Introduction</a></li>
+            <li class="vertical-tab-ul"><a href="#s2" data-tab="s2" class="vertical-tab-link">NN Fundamentals</a></li>
+            <li class="vertical-tab-ul"><a href="#s3" data-tab="s3" class="vertical-tab-link">Training Techniques</a></li>
+            <li class="vertical-tab-ul"><a href="#s4" data-tab="s4" class="vertical-tab-link">CNNs</a></li>
+            <li class="vertical-tab-ul"><a href="#s5" data-tab="s5" class="vertical-tab-link">RNNs & LSTMs</a></li>
+            <li class="vertical-tab-ul"><a href="#s6" data-tab="s6" class="vertical-tab-link">Transformers</a></li>
+            <li class="vertical-tab-ul"><a href="#s7" data-tab="s7" class="vertical-tab-link">Autoencoders & GANs</a></li>
+            <li class="vertical-tab-ul"><a href="#s8" data-tab="s8" class="vertical-tab-link">Diffusion Models</a></li>
+            <li class="vertical-tab-ul"><a href="#s9" data-tab="s9" class="vertical-tab-link">Advanced Architectures</a></li>
+            <li class="vertical-tab-ul"><a href="#s10" data-tab="s10" class="vertical-tab-link">Advanced Training</a></li>
+            <li class="vertical-tab-ul"><a href="#s11" data-tab="s11" class="vertical-tab-link">Implementation</a></li>
+            <li class="vertical-tab-ul"><a href="#s12" data-tab="s12" class="vertical-tab-link">Frameworks</a></li>
+            <li class="vertical-tab-ul"><a href="#s13" data-tab="s13" class="vertical-tab-link">Applications</a></li>
+            <li class="vertical-tab-ul"><a href="#s14" data-tab="s14" class="vertical-tab-link">Responsible AI</a></li>
+            <li class="vertical-tab-ul"><a href="#s15" data-tab="s15" class="vertical-tab-link">Efficiency</a></li>
+            <li class="vertical-tab-ul"><a href="#s16" data-tab="s16" class="vertical-tab-link">Future Trends</a></li>
+        </ul>
+        <div class="vertical-nav-footer">
+             <p><strong>Related Handbooks:</strong></p>
+            <ul>
+                <li><a href="/content/handbooks/machine-learning/">Machine Learning Handbook</a></li>
+                <li><a href="/content/handbooks/computer-vision/">Computer Vision Handbook</a></li>
+                <li><a href="/content/handbooks/nlp/">NLP Handbook</a></li>
+                <li><a href="/content/handbooks/reinforcement-learning/">RL Handbook</a></li>
+            </ul>
+        </div>
+    </aside>
 
-<link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
+    <main class="handbook-vertical-content-area">
+        <div id="tab-content-overview" class="tab-content-panel active welcome-section">
+            <div class="content-panel-header">
+                <h2>Welcome to the Deep Learning Handbook</h2>
+            </div>
+            <div class="content-panel-body welcome-panel">
+                <p><strong>About this Handbook:</strong> This comprehensive resource guides you through the architectures, training methodologies, and applications of deep learning. From fundamental neural network principles to cutting-edge techniques, this handbook provides a structured approach to understanding modern deep learning systems.</p>
+                <p><strong>Learning Path Suggestion:</strong></p>
+                <ul class="learning-path-list">
+                    <li><span class="step-number">1</span> Begin with fundamental concepts of neural networks and deep learning principles (Sections 1-2).</li>
+                    <li><span class="step-number">2</span> Master the essential techniques for training and optimizing deep networks (Section 3).</li>
+                    <li><span class="step-number">3</span> Explore different neural architectures for various data types: visual (Section 4) and sequential (Sections 5-6).</li>
+                    <li><span class="step-number">4</span> Dive into generative models for creative content generation (Sections 7-8).</li>
+                    <li><span class="step-number">5</span> Build advanced skills with specialized architectures, transfer learning, and practical implementation (Sections 9-12).</li>
+                    <li><span class="step-number">6</span> Apply deep learning across domains, address ethical considerations, and explore future trends (Sections 13-16).</li>
+                </ul>
+                <p class="last-updated"><em>This handbook is a living document, regularly updated to reflect the latest research and industry best practices. <strong>Last major review: May 2025.</strong></em></p>
+            </div>
+        </div>
 
-<div class="attribution-notice">
-  <div class="attribution-content">
-    <p>This handbook provides a comprehensive guide to deep learning, covering neural network architectures, training methodologies, and real-world applications. It serves practitioners, researchers, and engineers working with modern deep learning systems.</p>
-  </div>
+        <div id="tab-content-s1" class="tab-content-panel"></div>
+        <div id="tab-content-s2" class="tab-content-panel"></div>
+        <div id="tab-content-s3" class="tab-content-panel"></div>
+        <div id="tab-content-s4" class="tab-content-panel"></div>
+        <div id="tab-content-s5" class="tab-content-panel"></div>
+        <div id="tab-content-s6" class="tab-content-panel"></div>
+        <div id="tab-content-s7" class="tab-content-panel"></div>
+        <div id="tab-content-s8" class="tab-content-panel"></div>
+        <div id="tab-content-s9" class="tab-content-panel"></div>
+        <div id="tab-content-s10" class="tab-content-panel"></div>
+        <div id="tab-content-s11" class="tab-content-panel"></div>
+        <div id="tab-content-s12" class="tab-content-panel"></div>
+        <div id="tab-content-s13" class="tab-content-panel"></div>
+        <div id="tab-content-s14" class="tab-content-panel"></div>
+        <div id="tab-content-s15" class="tab-content-panel"></div>
+        <div id="tab-content-s16" class="tab-content-panel"></div>
+    </main>
+
+    <div class="section-content-templates" style="display: none;">
+        <div id="template-s1">
+            <div class="content-panel-header">
+                <h2>Introduction to Deep Learning</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section1.md %}
+        </div>
+
+        <div id="template-s2">
+            <div class="content-panel-header">
+                <h2>Neural Network Fundamentals</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section2.md %}
+        </div>
+
+        <div id="template-s3">
+            <div class="content-panel-header">
+                <h2>Practical Training Techniques</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section3.md %}
+        </div>
+
+        <div id="template-s4">
+            <div class="content-panel-header">
+                <h2>Convolutional Neural Networks (CNNs)</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section4.md %}
+        </div>
+
+        <div id="template-s5">
+            <div class="content-panel-header">
+                <h2>Sequence Modeling: RNNs, LSTMs, GRUs</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section5.md %}
+        </div>
+
+        <div id="template-s6">
+            <div class="content-panel-header">
+                <h2>Sequence Modeling: Attention and Transformers</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section6.md %}
+        </div>
+
+        <div id="template-s7">
+            <div class="content-panel-header">
+                <h2>Generative Deep Learning I: Autoencoders and GANs</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section7.md %}
+        </div>
+
+        <div id="template-s8">
+            <div class="content-panel-header">
+                <h2>Generative Deep Learning II: Diffusion and Flow-based Models</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section8.md %}
+        </div>
+
+        <div id="template-s9">
+            <div class="content-panel-header">
+                <h2>Advanced Deep Learning Architectures</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section9.md %}
+        </div>
+
+        <div id="template-s10">
+            <div class="content-panel-header">
+                <h2>Advanced Training Concepts</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section10.md %}
+        </div>
+
+        <div id="template-s11">
+            <div class="content-panel-header">
+                <h2>Practical Deep Learning & Implementation</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section11.md %}
+        </div>
+
+        <div id="template-s12">
+            <div class="content-panel-header">
+                <h2>Deep Learning Frameworks & Ecosystem</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section12.md %}
+        </div>
+
+        <div id="template-s13">
+            <div class="content-panel-header">
+                <h2>Deep Learning Applications In-Depth</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section13.md %}
+        </div>
+
+        <div id="template-s14">
+            <div class="content-panel-header">
+                <h2>Responsible AI in Deep Learning</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section14.md %}
+        </div>
+
+        <div id="template-s15">
+            <div class="content-panel-header">
+                <h2>Efficiency and Optimization</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section15.md %}
+        </div>
+
+        <div id="template-s16">
+            <div class="content-panel-header">
+                <h2>Future Trends in Deep Learning</h2>
+            </div>
+            {% include /content/handbooks/deep-learning/section16.md %}
+        </div>
+    </div>
+
 </div>
-
-<div class="key-concept">
-  <strong>Note:</strong> This handbook presents a structured learning path from basic neural network principles to advanced architectures and research frontiers. Each section builds upon previous concepts, creating a cohesive journey from foundational elements to state-of-the-art techniques and ethical considerations.
 </div>
-
-<h2 id="handbook-sections">Handbook Sections</h2>
-
-<div class="sections-grid">
-  <!-- Section I -->
-  <div class="section-card">
-    <h3 id="s1">
-      <a href="{{ '/content/handbooks/deep-learning/section1/' | relative_url }}">Section I: Introduction to Deep Learning</a>
-    </h3>
-    
-    <p>Core concepts of deep learning, its relationship to AI and machine learning, historical development, and essential mathematical and computational foundations.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section1/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section II -->
-  <div class="section-card">
-    <h3 id="s2">
-      <a href="{{ '/content/handbooks/deep-learning/section2/' | relative_url }}">Section II: Neural Network Fundamentals</a>
-    </h3>
-    
-    <p>Essential components of neural networks from neurons and activation functions to loss functions, gradient descent, backpropagation, and optimization algorithms.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section2/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section III -->
-  <div class="section-card">
-    <h3 id="s3">
-      <a href="{{ '/content/handbooks/deep-learning/section3/' | relative_url }}">Section III: Practical Training Techniques</a>
-    </h3>
-    
-    <p>Methods to improve training stability and model generalization, including regularization strategies, normalization approaches, and effective hyperparameter optimization.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section3/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IV -->
-  <div class="section-card">
-    <h3 id="s4">
-      <a href="{{ '/content/handbooks/deep-learning/section4/' | relative_url }}">Section IV: Convolutional Neural Networks (CNNs)</a>
-    </h3>
-    
-    <p>Deep dive into convolutional neural networks from basic principles to modern architectures like ResNet and EfficientNet, and their applications in computer vision.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section4/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section V -->
-  <div class="section-card">
-    <h3 id="s5">
-      <a href="{{ '/content/handbooks/deep-learning/section5/' | relative_url }}">Section V: Sequence Modeling: RNNs, LSTMs, GRUs</a>
-    </h3>
-    
-    <p>Understanding recurrent architectures for sequential data processing, their variants, limitations, and applications in text, time series, and speech.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section5/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VI -->
-  <div class="section-card">
-    <h3 id="s6">
-      <a href="{{ '/content/handbooks/deep-learning/section6/' | relative_url }}">Section VI: Sequence Modeling: Attention and Transformers</a>
-    </h3>
-    
-    <p>The revolution in sequence modeling brought by attention mechanisms and transformer architectures, from fundamental concepts to breakthrough models like BERT and GPT.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section6/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VII -->
-  <div class="section-card">
-    <h3 id="s7">
-      <a href="{{ '/content/handbooks/deep-learning/section7/' | relative_url }}">Section VII: Generative Deep Learning I: Autoencoders and GANs</a>
-    </h3>
-    
-    <p>Exploring generative models including autoencoders, variational autoencoders (VAEs), and the GAN family of architectures for creative content generation.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section7/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VIII -->
-  <div class="section-card">
-    <h3 id="s8">
-      <a href="{{ '/content/handbooks/deep-learning/section8/' | relative_url }}">Section VIII: Generative Deep Learning II: Diffusion and Flow-based Models</a>
-    </h3>
-    
-    <p>Advanced generative approaches including diffusion-based methods (DDPM, DDIM) and flow-based models that enable exact likelihood computation and invertible transformations.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section8/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IX -->
-  <div class="section-card">
-    <h3 id="s9">
-      <a href="{{ '/content/handbooks/deep-learning/section9/' | relative_url }}">Section IX: Advanced Deep Learning Architectures</a>
-    </h3>
-    
-    <p>Specialized architectures for graph-structured data, reinforcement learning with deep networks, and geometric approaches that leverage symmetry properties.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section9/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section X -->
-  <div class="section-card">
-    <h3 id="s10">
-      <a href="{{ '/content/handbooks/deep-learning/section10/' | relative_url }}">Section X: Advanced Training Concepts</a>
-    </h3>
-    
-    <p>Sophisticated training approaches including transfer learning, self-supervised methods like contrastive learning, and strategies for learning multiple tasks efficiently.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section10/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XI -->
-  <div class="section-card">
-    <h3 id="s11">
-      <a href="{{ '/content/handbooks/deep-learning/section11/' | relative_url }}">Section XI: Practical Deep Learning & Implementation</a>
-    </h3>
-    
-    <p>Practical techniques for working with deep learning systems, from data augmentation and hardware optimization to effective debugging and visualization approaches.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section11/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XII -->
-  <div class="section-card">
-    <h3 id="s12">
-      <a href="{{ '/content/handbooks/deep-learning/section12/' | relative_url }}">Section XII: Deep Learning Frameworks & Ecosystem</a>
-    </h3>
-    
-    <p>Mastering the major deep learning frameworks and ecosystems that enable modern development, including TensorFlow, PyTorch, Hugging Face, and specialized libraries.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section12/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XIII -->
-  <div class="section-card">
-    <h3 id="s13">
-      <a href="{{ '/content/handbooks/deep-learning/section13/' | relative_url }}">Section XIII: Deep Learning Applications In-Depth</a>
-    </h3>
-    
-    <p>Detailed exploration of deep learning applications across computer vision, NLP, speech processing, and specialized domains from science to finance.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section13/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XIV -->
-  <div class="section-card">
-    <h3 id="s14">
-      <a href="{{ '/content/handbooks/deep-learning/section14/' | relative_url }}">Section XIV: Responsible AI in Deep Learning</a>
-    </h3>
-    
-    <p>Addressing critical ethical considerations in deep learning, including bias mitigation, model explainability, privacy preservation, and protection against adversarial attacks.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section14/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XV -->
-  <div class="section-card">
-    <h3 id="s15">
-      <a href="{{ '/content/handbooks/deep-learning/section15/' | relative_url }}">Section XV: Efficiency and Optimization</a>
-    </h3>
-    
-    <p>Methods for deploying deep learning in resource-constrained environments through pruning, quantization, knowledge distillation, and efficient architecture design.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section15/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XVI -->
-  <div class="section-card">
-    <h3 id="s16">
-      <a href="{{ '/content/handbooks/deep-learning/section16/' | relative_url }}">Section XVI: Future Trends in Deep Learning</a>
-    </h3>
-    
-    <p>Exploring emerging directions in deep learning research, from foundation models and multimodal approaches to neuro-symbolic AI and hardware innovations.</p>
-    <a href="{{ '/content/handbooks/deep-learning/section16/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-</div>
-
-<div class="resource-links">
-  <h3>Related Handbooks</h3>
-  <ul>
-    <li><a href="{{ '/content/handbooks/machine-learning/' | relative_url }}">Machine Learning Handbook</a> - Broader context of ML beyond deep learning</li>
-    <li><a href="{{ '/content/handbooks/computer-vision/' | relative_url }}">Computer Vision Handbook</a> - Specialized focus on visual data analysis</li>
-    <li><a href="{{ '/content/handbooks/nlp/' | relative_url }}">Natural Language Processing Handbook</a> - In-depth coverage of language technologies</li>
-    <li><a href="{{ '/content/handbooks/reinforcement-learning/' | relative_url }}">Reinforcement Learning Handbook</a> - Focused exploration of RL techniques</li>
-  </ul>
-</div>
-
-<div class="summary-section">
-  <h3>Learning Path</h3>
-  <ul>
-    <li>Begin with fundamental concepts of neural networks and deep learning principles</li>
-    <li>Master the essential techniques for training and optimizing deep networks</li>
-    <li>Explore convolutional architectures for visual data processing</li>
-    <li>Understand recurrent and transformer architectures for sequential data</li>
-    <li>Dive into generative models for creative content generation</li>
-    <li>Learn specialized architectures for graphs, reinforcement learning, and geometric data</li>
-    <li>Develop advanced training skills including transfer learning and self-supervision</li>
-    <li>Master practical implementation, debugging, and distributed training</li>
-    <li>Become proficient with major deep learning frameworks and ecosystems</li>
-    <li>Apply deep learning to diverse domains from vision to language to science</li>
-    <li>Address ethical considerations of bias, explainability, and privacy</li>
-    <li>Optimize models for efficient deployment in constrained environments</li>
-    <li>Stay current with emerging trends and research frontiers</li>
-  </ul>
-</div>
-
-<script>
-  // Navigation variables - no previous for index
-    window.nextSection = "/content/handbooks/deep-learning/section1/";
-</script>
-
-<script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
+<script src="/assets/js/section-academic.js"></script>
