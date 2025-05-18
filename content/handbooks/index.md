@@ -160,7 +160,7 @@
         <p>Large Language Models represent a revolutionary shift in artificial intelligence, capable of understanding and generating human language with remarkable sophistication. Our handbook explores the architecture and functioning of models like GPT, LLaMA, and Claude, demystifying transformer networks, attention mechanisms, and the principles that enable these systems to process and generate text at scale.</p>
         <p>We provide comprehensive coverage of essential techniques including prompting strategies, few-shot learning, fine-tuning approaches, and Reinforcement Learning from Human Feedback (RLHF), with practical guidance on implementation, optimization, and responsible deployment.</p>
         <p>From developing conversational agents and content creation tools to building knowledge retrieval systems and code assistants, this handbook equips you with the knowledge to effectively harness LLMs' capabilities while navigating their limitations and ethical considerations.</p>
-        <a href="/content/handbooks/large-language-models/" class="learn-more-button">
+        <a href="/content/handbooks/llms/" class="learn-more-button">
           View Handbook
         </a>
       </div>
@@ -195,7 +195,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Generative AI</h3>
           <p class="card-description">AI systems capable of creating novel content (text, images, audio, etc.).</p>
-          <a href="#generative-ai" class="card-arrow-button" aria-label="Learn more about Generative AI">
+          <a href="/content/handbooks/generative-ai/" class="card-arrow-button" aria-label="Learn more about Generative AI">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -207,7 +207,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Foundation Models</h3>
           <p class="card-description">Large-scale models trained on vast data, adaptable to many tasks (often the basis for Generative AI).</p>
-          <a href="#foundation-models" class="card-arrow-button" aria-label="Learn more about Foundation Models">
+          <a href="/content/handbooks/foundation-models/" class="card-arrow-button" aria-label="Learn more about Foundation Models">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -219,7 +219,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Large Language Models (LLMs)</h3>
           <p class="card-description">A key type of foundation model focused on understanding and generating human language; a core component of much current Generative AI.</p>
-          <a href="#llms" class="card-arrow-button" aria-label="Learn more about Large Language Models">
+          <a href="/content/handbooks/llms/" class="card-arrow-button" aria-label="Learn more about Large Language Models">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -243,7 +243,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Deep Learning (DL)</h3>
           <p class="card-description">A subfield of ML using multi-layered neural networks, critical for current Foundation Models and Generative AI.</p>
-          <a href="#deep-learning" class="card-arrow-button" aria-label="Learn more about Deep Learning">
+          <a href="/content/handbooks/deep-learning/" class="card-arrow-button" aria-label="Learn more about Deep Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -255,7 +255,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Reinforcement Learning (RL)</h3>
           <p class="card-description">AI learns through trial and error by interacting with an environment.</p>
-          <a href="#reinforcement-learning" class="card-arrow-button" aria-label="Learn more about Reinforcement Learning">
+          <a href="/content/handbooks/reinforcement-learning/" class="card-arrow-button" aria-label="Learn more about Reinforcement Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -267,7 +267,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Self-Supervised Learning</h3>
           <p class="card-description">Models learn from the data itself by creating supervisory signals from unlabeled data.</p>
-          <a href="#self-supervised-learning" class="card-arrow-button" aria-label="Learn more about Self-Supervised Learning">
+          <a href="/content/handbooks/self-supervised-learning/" class="card-arrow-button" aria-label="Learn more about Self-Supervised Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -279,7 +279,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Representation Learning</h3>
           <p class="card-description">Focuses on learning meaningful and useful ways to represent data, crucial for model performance.</p>
-          <a href="#representation-learning" class="card-arrow-button" aria-label="Learn more about Representation Learning">
+          <a href="/content/handbooks/representation-learning/" class="card-arrow-button" aria-label="Learn more about Representation Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -291,7 +291,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Bayesian Machine Learning</h3>
           <p class="card-description">Probabilistic approach to machine learning, dealing with uncertainty.</p>
-          <a href="#bayesian-ml" class="card-arrow-button" aria-label="Learn more about Bayesian Machine Learning">
+          <a href="/content/handbooks/bayesian-ml/" class="card-arrow-button" aria-label="Learn more about Bayesian Machine Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -303,7 +303,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Continual Learning</h3>
           <p class="card-description">Enabling models to learn sequentially from new data over time without forgetting past knowledge.</p>
-          <a href="#continual-learning" class="card-arrow-button" aria-label="Learn more about Continual Learning">
+          <a href="/content/handbooks/continual-learning/" class="card-arrow-button" aria-label="Learn more about Continual Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -373,7 +373,7 @@
           <h3 class="card-title">Natural Language Processing (NLP)</h3>
           <p class="card-description">Enabling computers to understand, interpret, and generate human language.</p>
           <p class="card-description"><em>Strongly related: Large Language Models, Prompt Engineering.</em></p>
-          <a href="#nlp" class="card-arrow-button" aria-label="Learn more about NLP">
+          <a href="/content/handbooks/nlp/" class="card-arrow-button" aria-label="Learn more about NLP">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -385,7 +385,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Computer Vision</h3>
           <p class="card-description">Enabling computers to "see" and interpret visual information.</p>
-          <a href="#computer-vision" class="card-arrow-button" aria-label="Learn more about Computer Vision">
+          <a href="/content/handbooks/computer-vision/" class="card-arrow-button" aria-label="Learn more about Computer Vision">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -397,7 +397,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Audio AI</h3>
           <p class="card-description">AI focused on processing, understanding, and generating sound and speech.</p>
-          <a href="#audio-ai" class="card-arrow-button" aria-label="Learn more about Audio AI">
+          <a href="/content/handbooks/audio-ai/" class="card-arrow-button" aria-label="Learn more about Audio AI">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -409,7 +409,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Multimodal AI</h3>
           <p class="card-description">AI systems that can process and integrate information from multiple modalities (e.g., text, image, audio).</p>
-          <a href="#multimodal-ai" class="card-arrow-button" aria-label="Learn more about Multimodal AI">
+          <a href="/content/handbooks/multimodal-ai/" class="card-arrow-button" aria-label="Learn more about Multimodal AI">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -421,7 +421,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Deep Learning for Documents</h3>
           <p class="card-description">Applying DL techniques to understand and extract information from documents.</p>
-          <a href="#document-dl" class="card-arrow-button" aria-label="Learn more about Deep Learning for Documents">
+          <a href="/content/handbooks/document-dl/" class="card-arrow-button" aria-label="Learn more about Deep Learning for Documents">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -433,7 +433,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Information Retrieval</h3>
           <p class="card-description">Finding relevant information from large collections of data (often text, but can be other types).</p>
-          <a href="#information-retrieval" class="card-arrow-button" aria-label="Learn more about Information Retrieval">
+          <a href="/content/handbooks/information-retrieval/" class="card-arrow-button" aria-label="Learn more about Information Retrieval">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -445,7 +445,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Graph Neural Networks (GNNs)</h3>
           <p class="card-description">Neural networks designed for data structured as graphs.</p>
-          <a href="#gnns" class="card-arrow-button" aria-label="Learn more about Graph Neural Networks">
+          <a href="/content/handbooks/gnns/" class="card-arrow-button" aria-label="Learn more about Graph Neural Networks">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -457,7 +457,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Knowledge Graphs</h3>
           <p class="card-description">Representing knowledge in a structured graph format, often used with GNNs or NLP systems.</p>
-          <a href="#knowledge-graphs" class="card-arrow-button" aria-label="Learn more about Knowledge Graphs">
+          <a href="/content/handbooks/knowledge-graphs/" class="card-arrow-button" aria-label="Learn more about Knowledge Graphs">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -469,7 +469,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Tabular Deep Learning</h3>
           <p class="card-description">Applying deep learning to structured, table-based data.</p>
-          <a href="#tabular-dl" class="card-arrow-button" aria-label="Learn more about Tabular Deep Learning">
+          <a href="/content/handbooks/tabular-dl/" class="card-arrow-button" aria-label="Learn more about Tabular Deep Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -481,7 +481,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Time Series Forecasting</h3>
           <p class="card-description">Predicting future values based on historical time-ordered data.</p>
-          <a href="#time-series" class="card-arrow-button" aria-label="Learn more about Time Series Forecasting">
+          <a href="/content/handbooks/time-series/" class="card-arrow-button" aria-label="Learn more about Time Series Forecasting">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -548,7 +548,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AI Agents</h3>
           <p class="card-description">Autonomous entities that perceive their environment and take actions to achieve goals.</p>
-          <a href="#ai-agents" class="card-arrow-button" aria-label="Learn more about AI Agents">
+          <a href="/content/handbooks/ai-agents/" class="card-arrow-button" aria-label="Learn more about AI Agents">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -560,7 +560,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Robotics & AI</h3>
           <p class="card-description">The integration of AI to create intelligent robots capable of complex tasks.</p>
-          <a href="#robotics-ai" class="card-arrow-button" aria-label="Learn more about Robotics & AI">
+          <a href="/content/handbooks/robotics-ai/" class="card-arrow-button" aria-label="Learn more about Robotics & AI">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -572,7 +572,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Self-Driving Cars</h3>
           <p class="card-description">A specialized application of AI and robotics for autonomous vehicles.</p>
-          <a href="#self-driving-cars" class="card-arrow-button" aria-label="Learn more about Self-Driving Cars">
+          <a href="/content/handbooks/self-driving-cars/" class="card-arrow-button" aria-label="Learn more about Self-Driving Cars">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -584,7 +584,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Flying Cars</h3>
           <p class="card-description">An emerging application combining advanced robotics, AI for navigation and control.</p>
-          <a href="#flying-cars" class="card-arrow-button" aria-label="Learn more about Flying Cars">
+          <a href="/content/handbooks/flying-cars/" class="card-arrow-button" aria-label="Learn more about Flying Cars">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -596,7 +596,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Sensor Fusion</h3>
           <p class="card-description">Combining data from multiple sensors to achieve a more accurate and comprehensive understanding of the environment (critical for robotics, self-driving cars, etc.).</p>
-          <a href="#sensor-fusion" class="card-arrow-button" aria-label="Learn more about Sensor Fusion">
+          <a href="/content/handbooks/sensor-fusion/" class="card-arrow-button" aria-label="Learn more about Sensor Fusion">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -608,7 +608,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Recommender Systems</h3>
           <p class="card-description">AI that predicts user preferences and suggests relevant items or content.</p>
-          <a href="#recommender-systems" class="card-arrow-button" aria-label="Learn more about Recommender Systems">
+          <a href="/content/handbooks/recommender-systems/" class="card-arrow-button" aria-label="Learn more about Recommender Systems">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -675,7 +675,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">MLOps (Machine Learning Operations)</h3>
           <p class="card-description">Practices for streamlining the lifecycle of ML models from development to production and maintenance.</p>
-          <a href="#mlops" class="card-arrow-button" aria-label="Learn more about MLOps">
+          <a href="/content/handbooks/mlops/" class="card-arrow-button" aria-label="Learn more about MLOps">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -687,7 +687,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AutoML (Automated Machine Learning)</h3>
           <p class="card-description">Automating various stages of the machine learning pipeline.</p>
-          <a href="#automl" class="card-arrow-button" aria-label="Learn more about AutoML">
+          <a href="/content/handbooks/automl/" class="card-arrow-button" aria-label="Learn more about AutoML">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -699,7 +699,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Efficient AI & Optimization</h3>
           <p class="card-description">Techniques to make AI models smaller, faster, and more energy-efficient.</p>
-          <a href="#efficient-ai" class="card-arrow-button" aria-label="Learn more about Efficient AI & Optimization">
+          <a href="/content/handbooks/efficient-ai/" class="card-arrow-button" aria-label="Learn more about Efficient AI & Optimization">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -711,7 +711,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">GPU Programming</h3>
           <p class="card-description">Essential skill for developing and training computationally intensive deep learning models.</p>
-          <a href="#gpu-programming" class="card-arrow-button" aria-label="Learn more about GPU Programming">
+          <a href="/content/handbooks/gpu-programming/" class="card-arrow-button" aria-label="Learn more about GPU Programming">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -724,7 +724,7 @@
           <h3 class="card-title">Prompt Engineering</h3>
           <p class="card-description">The art and science of crafting effective inputs (prompts) to guide generative AI models (especially LLMs) to desired outputs.</p>
           <p class="card-description"><em>Also closely related to NLP and LLMs in Theme 1 & 2.</em></p>
-          <a href="#prompt-engineering" class="card-arrow-button" aria-label="Learn more about Prompt Engineering">
+          <a href="/content/handbooks/prompt-engineering/" class="card-arrow-button" aria-label="Learn more about Prompt Engineering">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -791,7 +791,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Genetic Algorithms</h3>
           <p class="card-description">Optimization algorithms inspired by natural selection.</p>
-          <a href="#genetic-algorithms" class="card-arrow-button" aria-label="Learn more about Genetic Algorithms">
+          <a href="/content/handbooks/genetic-algorithms/" class="card-arrow-button" aria-label="Learn more about Genetic Algorithms">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -803,7 +803,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Evolutionary Algorithms</h3>
           <p class="card-description">Broader class of algorithms based on principles of biological evolution.</p>
-          <a href="#evolutionary-algorithms" class="card-arrow-button" aria-label="Learn more about Evolutionary Algorithms">
+          <a href="/content/handbooks/evolutionary-algorithms/" class="card-arrow-button" aria-label="Learn more about Evolutionary Algorithms">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -815,7 +815,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Swarm Intelligence</h3>
           <p class="card-description">AI systems inspired by collective behavior in decentralized systems (e.g., ant colonies).</p>
-          <a href="#swarm-intelligence" class="card-arrow-button" aria-label="Learn more about Swarm Intelligence">
+          <a href="/content/handbooks/swarm-intelligence/" class="card-arrow-button" aria-label="Learn more about Swarm Intelligence">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -827,7 +827,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Quantum ML</h3>
           <p class="card-description">Exploring the intersection of quantum computing and machine learning.</p>
-          <a href="#quantum-ml" class="card-arrow-button" aria-label="Learn more about Quantum ML">
+          <a href="/content/handbooks/quantum-ml/" class="card-arrow-button" aria-label="Learn more about Quantum ML">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -839,7 +839,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Adversarial Machine Learning</h3>
           <p class="card-description">Studying attacks on ML models and methods to make them more robust.</p>
-          <a href="#adversarial-ml" class="card-arrow-button" aria-label="Learn more about Adversarial Machine Learning">
+          <a href="/content/handbooks/adversarial-ml/" class="card-arrow-button" aria-label="Learn more about Adversarial Machine Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -906,7 +906,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AI for Art & Aesthetics</h3>
           <p class="card-description">Using AI to create or analyze artistic and aesthetic content.</p>
-          <a href="#ai-art" class="card-arrow-button" aria-label="Learn more about AI for Art & Aesthetics">
+          <a href="/content/handbooks/ai-art/" class="card-arrow-button" aria-label="Learn more about AI for Art & Aesthetics">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -918,7 +918,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AI for Edge & IoT</h3>
           <p class="card-description">Deploying AI models on edge devices and within Internet of Things ecosystems.</p>
-          <a href="#ai-edge-iot" class="card-arrow-button" aria-label="Learn more about AI for Edge & IoT">
+          <a href="/content/handbooks/ai-edge-iot/" class="card-arrow-button" aria-label="Learn more about AI for Edge & IoT">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -930,7 +930,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AI in Finance</h3>
           <p class="card-description">Applications like fraud detection, algorithmic trading, and risk assessment.</p>
-          <a href="#ai-finance" class="card-arrow-button" aria-label="Learn more about AI in Finance">
+          <a href="/content/handbooks/ai-finance/" class="card-arrow-button" aria-label="Learn more about AI in Finance">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -942,7 +942,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AI for Gaming</h3>
           <p class="card-description">Enhancing game experiences through intelligent NPCs, procedural content generation, etc.</p>
-          <a href="#ai-gaming" class="card-arrow-button" aria-label="Learn more about AI for Gaming">
+          <a href="/content/handbooks/ai-gaming/" class="card-arrow-button" aria-label="Learn more about AI for Gaming">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -954,7 +954,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AI in Healthcare</h3>
           <p class="card-description">Use in diagnostics, drug discovery, personalized medicine, and operational efficiency.</p>
-          <a href="#ai-healthcare" class="card-arrow-button" aria-label="Learn more about AI in Healthcare">
+          <a href="/content/handbooks/ai-healthcare/" class="card-arrow-button" aria-label="Learn more about AI in Healthcare">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -966,7 +966,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AI for Cybersecurity</h3>
           <p class="card-description">Employing AI to detect, prevent, and respond to cyber threats.</p>
-          <a href="#ai-cybersecurity" class="card-arrow-button" aria-label="Learn more about AI for Cybersecurity">
+          <a href="/content/handbooks/ai-cybersecurity/" class="card-arrow-button" aria-label="Learn more about AI for Cybersecurity">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1032,7 +1032,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Explainable AI (XAI)</h3>
           <p class="card-description">Techniques to understand and interpret the decisions made by AI models.</p>
-          <a href="#explainable-ai" class="card-arrow-button" aria-label="Learn more about Explainable AI (XAI)">
+          <a href="/content/handbooks/explainable-ai/" class="card-arrow-button" aria-label="Learn more about Explainable AI (XAI)">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1043,7 +1043,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">AI Ethics & Fairness</h3>
           <p class="card-description">Addressing moral implications, bias, accountability, and transparency in AI systems.</p>
-          <a href="#ai-ethics" class="card-arrow-button" aria-label="Learn more about AI Ethics & Fairness">
+          <a href="/content/handbooks/ai-ethics/" class="card-arrow-button" aria-label="Learn more about AI Ethics & Fairness">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1054,7 +1054,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Machine Unlearning</h3>
           <p class="card-description">Removing the impact of specific data from trained AI models to uphold privacy, correct biases, or update information efficiently.</p>
-          <a href="#machine-unlearning" class="card-arrow-button" aria-label="Learn more about Machine Unlearning">
+          <a href="/content/handbooks/machine-unlearning/" class="card-arrow-button" aria-label="Learn more about Machine Unlearning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1064,7 +1064,7 @@
         <div class="paradigm-card">
           <h3 class="card-title">Federated Learning</h3>
           <p class="card-description">Training models across decentralized devices while keeping data localized.</p>
-          <a href="#federated-learning" class="card-arrow-button" aria-label="Learn more about Federated Learning">
+          <a href="/content/handbooks/federated-learning/" class="card-arrow-button" aria-label="Learn more about Federated Learning">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 2L14 8L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M14 8H2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
