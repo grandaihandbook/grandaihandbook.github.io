@@ -1,224 +1,204 @@
----
-layout: default
-title: "Machine Learning Handbook"
-description: "A comprehensive guide to machine learning, from fundamental concepts to advanced techniques and applications."
----
+<link rel="stylesheet" href="/assets/css/section-academic.css">
+<div class="handbook-container-vertical-tabs">
+<div class="handbook-container-inner">
+    <aside class="handbook-vertical-nav">
+        <div class="vertical-nav-header">
+            <h1>Machine Learning</h1>
+            <div class="header-accent-vertical"></div>
+        </div>
+        <ul class="vertical-tabs-list">
+            <li class="vertical-tab-ul"><a href="#overview" data-tab="overview" class="vertical-tab-link active">Overview</a></li>
+            <li class="vertical-tab-ul"><a href="#s1" data-tab="s1" class="vertical-tab-link">Introduction</a></li>
+            <li class="vertical-tab-ul"><a href="#s2" data-tab="s2" class="vertical-tab-link">Foundations</a></li>
+            <li class="vertical-tab-ul"><a href="#s3" data-tab="s3" class="vertical-tab-link">ML Workflow</a></li>
+            <li class="vertical-tab-ul"><a href="#s4" data-tab="s4" class="vertical-tab-link">Regression</a></li>
+            <li class="vertical-tab-ul"><a href="#s5" data-tab="s5" class="vertical-tab-link">Classification</a></li>
+            <li class="vertical-tab-ul"><a href="#s6" data-tab="s6" class="vertical-tab-link">Tree Methods</a></li>
+            <li class="vertical-tab-ul"><a href="#s7" data-tab="s7" class="vertical-tab-link">Ensemble Methods</a></li>
+            <li class="vertical-tab-ul"><a href="#s8" data-tab="s8" class="vertical-tab-link">Unsupervised Learning</a></li>
+            <li class="vertical-tab-ul"><a href="#s9" data-tab="s9" class="vertical-tab-link">Neural Networks</a></li>
+            <li class="vertical-tab-ul"><a href="#s10" data-tab="s10" class="vertical-tab-link">Deep Learning</a></li>
+            <li class="vertical-tab-ul"><a href="#s11" data-tab="s11" class="vertical-tab-link">Advanced Techniques</a></li>
+            <li class="vertical-tab-ul"><a href="#s12" data-tab="s12" class="vertical-tab-link">Data Science</a></li>
+            <li class="vertical-tab-ul"><a href="#s13" data-tab="s13" class="vertical-tab-link">Model Deployment</a></li>
+            <li class="vertical-tab-ul"><a href="#s14" data-tab="s14" class="vertical-tab-link">ML Ecosystem</a></li>
+            <li class="vertical-tab-ul"><a href="#s15" data-tab="s15" class="vertical-tab-link">Specialized Domains</a></li>
+            <li class="vertical-tab-ul"><a href="#s16" data-tab="s16" class="vertical-tab-link">Ethics</a></li>
+            <li class="vertical-tab-ul"><a href="#s17" data-tab="s17" class="vertical-tab-link">Future Trends</a></li>
+        </ul>
+        <div class="vertical-nav-footer">
+             <p><strong>Related Handbooks:</strong></p>
+            <ul>
+                <li><a href="/content/handbooks/deep-learning/">Deep Learning Handbook</a></li>
+                <li><a href="/content/handbooks/data-science/">Data Science Handbook</a></li>
+                <li><a href="/content/handbooks/nlp/">NLP Handbook</a></li>
+                <li><a href="/content/handbooks/computer-vision/">Computer Vision Handbook</a></li>
+            </ul>
+        </div>
+    </aside>
 
-<link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
+    <main class="handbook-vertical-content-area">
+        <div id="tab-content-overview" class="tab-content-panel active welcome-section">
+            <div class="content-panel-header">
+                <h2>Welcome to the Machine Learning Handbook</h2>
+            </div>
+            <div class="content-panel-body welcome-panel">
+                <p><strong>About this Handbook:</strong> This comprehensive resource guides you through the entire landscape of machine learning, from foundational concepts to advanced techniques and real-world applications. Whether you're a beginner or experienced practitioner, this handbook provides a structured approach to understanding the algorithms, workflows, and best practices that power modern ML systems.</p>
+                <p><strong>Learning Path Suggestion:</strong></p>
+                <ul class="learning-path-list">
+                    <li><span class="step-number">1</span> Begin with ML fundamentals, key terminology, and essential mathematical background (Sections 1-2).</li>
+                    <li><span class="step-number">2</span> Master the ML workflow, feature engineering, and model evaluation principles (Section 3).</li>
+                    <li><span class="step-number">3</span> Explore supervised learning techniques for regression and classification problems (Sections 4-5).</li>
+                    <li><span class="step-number">4</span> Understand tree-based methods and powerful ensemble approaches (Sections 6-7).</li>
+                    <li><span class="step-number">5</span> Discover unsupervised learning for pattern discovery and dimensionality reduction (Section 8).</li>
+                    <li><span class="step-number">6</span> Progress to neural networks, deep learning, and advanced specialized techniques (Sections 9-11).</li>
+                    <li><span class="step-number">7</span> Develop practical skills in data preparation, model deployment, and domain-specific applications (Sections 12-15).</li>
+                    <li><span class="step-number">8</span> Address ethical considerations and explore emerging trends in the field (Sections 16-17).</li>
+                </ul>
+                <p class="last-updated"><em>This handbook is a living document, regularly updated to reflect the latest research and industry best practices. <strong>Last major review: May 2025.</strong></em></p>
+            </div>
+        </div>
 
-<div class="attribution-notice">
-  <div class="attribution-content">
-    <p>This handbook provides a comprehensive overview of the field of Machine Learning. It covers foundations, techniques, applications, and emerging trends for practitioners at all levels.</p>
-  </div>
+        <div id="tab-content-s1" class="tab-content-panel"></div>
+        <div id="tab-content-s2" class="tab-content-panel"></div>
+        <div id="tab-content-s3" class="tab-content-panel"></div>
+        <div id="tab-content-s4" class="tab-content-panel"></div>
+        <div id="tab-content-s5" class="tab-content-panel"></div>
+        <div id="tab-content-s6" class="tab-content-panel"></div>
+        <div id="tab-content-s7" class="tab-content-panel"></div>
+        <div id="tab-content-s8" class="tab-content-panel"></div>
+        <div id="tab-content-s9" class="tab-content-panel"></div>
+        <div id="tab-content-s10" class="tab-content-panel"></div>
+        <div id="tab-content-s11" class="tab-content-panel"></div>
+        <div id="tab-content-s12" class="tab-content-panel"></div>
+        <div id="tab-content-s13" class="tab-content-panel"></div>
+        <div id="tab-content-s14" class="tab-content-panel"></div>
+        <div id="tab-content-s15" class="tab-content-panel"></div>
+        <div id="tab-content-s16" class="tab-content-panel"></div>
+        <div id="tab-content-s17" class="tab-content-panel"></div>
+    </main>
+
+    <div class="section-content-templates" style="display: none;">
+        <div id="template-s1">
+            <div class="content-panel-header">
+                <h2>Introduction to Machine Learning</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section1.md %}
+        </div>
+
+        <div id="template-s2">
+            <div class="content-panel-header">
+                <h2>Foundational Concepts</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section2.md %}
+        </div>
+
+        <div id="template-s3">
+            <div class="content-panel-header">
+                <h2>The Machine Learning Workflow & Core Concepts</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section3.md %}
+        </div>
+
+        <div id="template-s4">
+            <div class="content-panel-header">
+                <h2>Supervised Learning - Regression Techniques</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section4.md %}
+        </div>
+
+        <div id="template-s5">
+            <div class="content-panel-header">
+                <h2>Supervised Learning - Classification Techniques</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section5.md %}
+        </div>
+
+        <div id="template-s6">
+            <div class="content-panel-header">
+                <h2>Tree-Based Methods</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section6.md %}
+        </div>
+
+        <div id="template-s7">
+            <div class="content-panel-header">
+                <h2>Ensemble Methods - Combining Classical Models</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section7.md %}
+        </div>
+
+        <div id="template-s8">
+            <div class="content-panel-header">
+                <h2>Unsupervised Learning</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section8.md %}
+        </div>
+
+        <div id="template-s9">
+            <div class="content-panel-header">
+                <h2>Neural Networks and Deep Learning Fundamentals</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section9.md %}
+        </div>
+
+        <div id="template-s10">
+            <div class="content-panel-header">
+                <h2>Deep Learning Architectures</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section10.md %}
+        </div>
+
+        <div id="template-s11">
+            <div class="content-panel-header">
+                <h2>Advanced Non-Ensemble ML Techniques</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section11.md %}
+        </div>
+
+        <div id="template-s12">
+            <div class="content-panel-header">
+                <h2>Practical Data Science for Robust ML</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section12.md %}
+        </div>
+
+        <div id="template-s13">
+            <div class="content-panel-header">
+                <h2>Model Tuning, Interpretability, and Deployment</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section13.md %}
+        </div>
+
+        <div id="template-s14">
+            <div class="content-panel-header">
+                <h2>ML Development Ecosystem and Tools</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section14.md %}
+        </div>
+
+        <div id="template-s15">
+            <div class="content-panel-header">
+                <h2>Machine Learning in Specialized Domains</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section15.md %}
+        </div>
+
+        <div id="template-s16">
+            <div class="content-panel-header">
+                <h2>Ethics and Responsible Machine Learning</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section16.md %}
+        </div>
+
+        <div id="template-s17">
+            <div class="content-panel-header">
+                <h2>Future Trends and Advanced Directions</h2>
+            </div>
+            {% include /content/handbooks/machine-learning/section17.md %}
+        </div>
+    </div>
+
 </div>
-
-<div class="key-concept">
-  <strong>Note:</strong> This handbook is structured as a complete learning path from statistical foundations to cutting-edge ML research. Each section builds upon previous concepts, creating a cohesive journey from basic principles to advanced applications.
 </div>
-
-<h2 id="handbook-sections">Handbook Sections</h2>
-
-<div class="sections-grid">
-  <!-- Section I -->
-  <div class="section-card">
-    <h3 id="s1">
-      <a href="{{ '/content/handbooks/machine-learning/section1/' | relative_url }}">Section I: Introduction to Machine Learning</a>
-    </h3>
-    
-    <p>Defining ML fundamentals, learning paradigms, key terminology, and the historical development of the field from early statistical roots to modern approaches.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section1/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section II -->
-  <div class="section-card">
-    <h3 id="s2">
-      <a href="{{ '/content/handbooks/machine-learning/section2/' | relative_url }}">Section II: Foundational Concepts</a>
-    </h3>
-    
-    <p>Essential mathematical background including linear algebra, calculus, probability theory, and statistics, plus practical programming tools for ML implementation.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section2/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section III -->
-  <div class="section-card">
-    <h3 id="s3">
-      <a href="{{ '/content/handbooks/machine-learning/section3/' | relative_url }}">Section III: The Machine Learning Workflow & Core Concepts</a>
-    </h3>
-    
-    <p>Comprehensive coverage of the ML workflow from problem definition to deployment, plus in-depth coverage of feature engineering, model evaluation, and the bias-variance tradeoff.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section3/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IV -->
-  <div class="section-card">
-    <h3 id="s4">
-      <a href="{{ '/content/handbooks/machine-learning/section4/' | relative_url }}">Section IV: Supervised Learning - Regression Techniques</a>
-    </h3>
-    
-    <p>Exploring regression methods from linear models to advanced techniques, including diagnostics, robustness, and non-linear approaches.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section4/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section V -->
-  <div class="section-card">
-    <h3 id="s5">
-      <a href="{{ '/content/handbooks/machine-learning/section5/' | relative_url }}">Section V: Supervised Learning - Classification Techniques</a>
-    </h3>
-    
-    <p>Examining classification algorithms from logistic regression and linear discriminant analysis to more complex approaches like SVMs with kernels and Naive Bayes.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section5/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VI -->
-  <div class="section-card">
-    <h3 id="s6">
-      <a href="{{ '/content/handbooks/machine-learning/section6/' | relative_url }}">Section VI: Tree-Based Methods</a>
-    </h3>
-    
-    <p>Detailed exploration of decision trees, including their structure, splitting criteria, and methods for controlling complexity and preventing overfitting.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section6/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VII -->
-  <div class="section-card">
-    <h3 id="s7">
-      <a href="{{ '/content/handbooks/machine-learning/section7/' | relative_url }}">Section VII: Ensemble Methods - Combining Classical Models</a>
-    </h3>
-    
-    <p>Comprehensive coverage of ensemble methods from basic concepts to state-of-the-art implementations like XGBoost, LightGBM, and CatBoost.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section7/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VIII -->
-  <div class="section-card">
-    <h3 id="s8">
-      <a href="{{ '/content/handbooks/machine-learning/section8/' | relative_url }}">Section VIII: Unsupervised Learning</a>
-    </h3>
-    
-    <p>Exploring unsupervised learning approaches for discovering patterns in unlabeled data, reducing dimensions, and detecting anomalies.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section8/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IX -->
-  <div class="section-card">
-    <h3 id="s9">
-      <a href="{{ '/content/handbooks/machine-learning/section9/' | relative_url }}">Section IX: Neural Networks and Deep Learning Fundamentals</a>
-    </h3>
-    
-    <p>Foundation concepts in neural networks, including architecture, activation functions, backpropagation, optimization algorithms, and regularization.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section9/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-
-  <!-- Section X -->
-  <div class="section-card">
-    <h3 id="s10">
-      <a href="{{ '/content/handbooks/machine-learning/section10/' | relative_url }}">Section X: Deep Learning Architectures</a>
-    </h3>
-    
-    <p>Exploring specialized neural network architectures for different data types and tasks, from CNNs for images to transformers for sequential data.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section10/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-
-  <!-- Section XI -->
-  <div class="section-card">
-    <h3 id="s11">
-      <a href="{{ '/content/handbooks/machine-learning/section11/' | relative_url }}">Section XI: Advanced Non-Ensemble ML Techniques</a>
-    </h3>
-    
-    <p>Coverage of specialized ML approaches beyond standard supervised and unsupervised learning, including reinforcement learning and recommendation.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section11/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-
-  <!-- Section XII -->
-  <div class="section-card">
-    <h3 id="s12">
-      <a href="{{ '/content/handbooks/machine-learning/section12/' | relative_url }}">Section XII: Practical Data Science for Robust ML</a>
-    </h3>
-    
-    <p>Practical techniques for preparing data for ML, addressing common challenges, and engineering effective features.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section12/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-
-  <!-- Section XIII -->
-  <div class="section-card">
-    <h3 id="s13">
-      <a href="{{ '/content/handbooks/machine-learning/section13/' | relative_url }}">Section XIII: Model Tuning, Interpretability, and Deployment</a>
-    </h3>
-    
-    <p>Methods for optimizing model performance, understanding model decisions, and deploying models to production environments.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section13/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-
-  <!-- Section XIV -->
-  <div class="section-card">
-    <h3 id="s14">
-      <a href="{{ '/content/handbooks/machine-learning/section14/' | relative_url }}">Section XIV: ML Development Ecosystem and Tools</a>
-    </h3>
-    
-    <p>Overview of the essential tools and libraries for ML development, from scikit-learn to TensorFlow/PyTorch and visualization frameworks.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section14/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-
-  <!-- Section XV -->
-  <div class="section-card">
-    <h3 id="s15">
-      <a href="{{ '/content/handbooks/machine-learning/section15/' | relative_url }}">Section XV: Machine Learning in Specialized Domains</a>
-    </h3>
-    
-    <p>Application of ML techniques to specialized domains and data types, from text and images to time series and graph data.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section15/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-
-  <!-- Section XVI -->
-  <div class="section-card">
-    <h3 id="s16">
-      <a href="{{ '/content/handbooks/machine-learning/section16/' | relative_url }}">Section XVI: Ethics and Responsible Machine Learning</a>
-    </h3>
-    
-    <p>Addressing the critical ethical considerations in ML including bias, fairness, privacy, transparency, and governance frameworks.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section16/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-
-  <!-- Section XVII -->
-  <div class="section-card">
-    <h3 id="s17">
-      <a href="{{ '/content/handbooks/machine-learning/section17/' | relative_url }}">Section XVII: Future Trends and Advanced Directions</a>
-    </h3>
-    
-    <p>Exploring the cutting-edge and future directions of the field, from AutoML to causal inference and foundation models.</p>
-    <a href="{{ '/content/handbooks/machine-learning/section17/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-</div>
-
-<div class="resource-links">
-  <h3>Related Handbooks</h3>
-  <ul>
-    <li><a href="{{ '/content/handbooks/deep-learning/' | relative_url }}">Deep Learning Handbook</a> - Focus on neural network architectures and techniques</li>
-    <li><a href="{{ '/content/handbooks/data-science/' | relative_url }}">Data Science Handbook</a> - Broader context of data analysis and interpretation</li>
-    <li><a href="{{ '/content/handbooks/nlp/' | relative_url }}">Natural Language Processing Handbook</a> - Specialized techniques for text data</li>
-    <li><a href="{{ '/content/handbooks/computer-vision/' | relative_url }}">Computer Vision Handbook</a> - Specialized techniques for image and video data</li>
-  </ul>
-</div>
-
-<div class="summary-section">
-  <h3>Learning Path</h3>
-  <ul>
-    <li>Start with fundamental concepts in statistics, probability, and basic ML terminology</li>
-    <li>Build a solid foundation in the ML workflow and feature engineering</li>
-    <li>Master both regression and classification techniques</li>
-    <li>Explore tree-based methods and powerful ensemble approaches</li>
-    <li>Understand unsupervised learning for pattern discovery and dimensionality reduction</li>
-    <li>Progress to neural networks and deep learning architectures</li>
-    <li>Learn specialized techniques for different data types and domains</li>
-    <li>Develop practical skills in data preprocessing and model deployment</li>
-    <li>Address ethical considerations and responsible ML practices</li>
-    <li>Stay current with emerging trends and advanced research directions</li>
-  </ul>
-</div>
-
-<script>
-  // Navigation variables - no previous for index
-    window.nextSection = "/content/handbooks/machine-learning/section1/";
-</script>
-
-<script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
+<script src="/assets/js/section-academic.js"></script>

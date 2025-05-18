@@ -1,192 +1,192 @@
----
-layout: default
-title: "MLOps Handbook"
-description: "A comprehensive guide to Machine Learning Operations, from foundational principles to advanced deployment and optimization techniques."
----
+<link rel="stylesheet" href="/assets/css/section-academic.css">
+<div class="handbook-container-vertical-tabs">
+<div class="handbook-container-inner">
+    <aside class="handbook-vertical-nav">
+        <div class="vertical-nav-header">
+            <h1>MLOps</h1>
+            <div class="header-accent-vertical"></div>
+        </div>
+        <ul class="vertical-tabs-list">
+            <li class="vertical-tab-ul"><a href="#overview" data-tab="overview" class="vertical-tab-link active">Overview</a></li>
+            <li class="vertical-tab-ul"><a href="#s1" data-tab="s1" class="vertical-tab-link">Foundations</a></li>
+            <li class="vertical-tab-ul"><a href="#s2" data-tab="s2" class="vertical-tab-link">Data Management</a></li>
+            <li class="vertical-tab-ul"><a href="#s3" data-tab="s3" class="vertical-tab-link">Model Development</a></li>
+            <li class="vertical-tab-ul"><a href="#s4" data-tab="s4" class="vertical-tab-link">Deployment</a></li>
+            <li class="vertical-tab-ul"><a href="#s5" data-tab="s5" class="vertical-tab-link">Monitoring</a></li>
+            <li class="vertical-tab-ul"><a href="#s6" data-tab="s6" class="vertical-tab-link">Scalability</a></li>
+            <li class="vertical-tab-ul"><a href="#s7" data-tab="s7" class="vertical-tab-link">Collaboration</a></li>
+            <li class="vertical-tab-ul"><a href="#s8" data-tab="s8" class="vertical-tab-link">Ethics & Responsible AI</a></li>
+            <li class="vertical-tab-ul"><a href="#s9" data-tab="s9" class="vertical-tab-link">Specialized Domains</a></li>
+            <li class="vertical-tab-ul"><a href="#s10" data-tab="s10" class="vertical-tab-link">LLMOps</a></li>
+            <li class="vertical-tab-ul"><a href="#s11" data-tab="s11" class="vertical-tab-link">Advanced Techniques</a></li>
+            <li class="vertical-tab-ul"><a href="#s12" data-tab="s12" class="vertical-tab-link">Multimodal MLOps</a></li>
+            <li class="vertical-tab-ul"><a href="#s13" data-tab="s13" class="vertical-tab-link">Evaluation</a></li>
+            <li class="vertical-tab-ul"><a href="#s14" data-tab="s14" class="vertical-tab-link">Tools & Ecosystems</a></li>
+            <li class="vertical-tab-ul"><a href="#s15" data-tab="s15" class="vertical-tab-link">Industry Applications</a></li>
+            <li class="vertical-tab-ul"><a href="#s16" data-tab="s16" class="vertical-tab-link">Future Directions</a></li>
+        </ul>
+        <div class="vertical-nav-footer">
+             <p><strong>Related Handbooks:</strong></p>
+            <ul>
+                <li><a href="/content/handbooks/nlp/">NLP Handbook</a></li>
+                <li><a href="/content/handbooks/devops/">DevOps Handbook</a></li>
+                <li><a href="/content/handbooks/data-engineering/">Data Engineering Handbook</a></li>
+            </ul>
+        </div>
+    </aside>
 
-<link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
+    <main class="handbook-vertical-content-area">
+        <div id="tab-content-overview" class="tab-content-panel active welcome-section">
+            <div class="content-panel-header">
+                <h2>Welcome to the MLOps Handbook</h2>
+            </div>
+            <div class="content-panel-body welcome-panel">
+                <p><strong>About this Handbook:</strong> This comprehensive resource guides you through the world of Machine Learning Operations (MLOps). From foundational principles to advanced deployment techniques, this handbook provides a structured approach to effectively developing, deploying, and maintaining machine learning systems in production environments.</p>
+                <p><strong>Learning Path Suggestion:</strong></p>
+                <ul class="learning-path-list">
+                    <li><span class="step-number">1</span> Begin with foundational principles of MLOps, understanding how it combines machine learning, software engineering, and DevOps (Section 1).</li>
+                    <li><span class="step-number">2</span> Master data management, model development, and deployment strategies for ML systems (Sections 2-4).</li>
+                    <li><span class="step-number">3</span> Explore monitoring, scalability, and collaboration techniques for production-grade ML systems (Sections 5-7).</li>
+                    <li><span class="step-number">4</span> Address ethics, specialized domains, and large language model operations (Sections 8-10).</li>
+                    <li><span class="step-number">5</span> Dive into advanced techniques and multimodal approaches for complex ML systems (Sections 11-12).</li>
+                    <li><span class="step-number">6</span> Understand evaluation practices, tools, industry applications, and future trends in MLOps (Sections 13-16).</li>
+                </ul>
+                <p class="last-updated"><em>This handbook is a living document, regularly updated to reflect the latest research and industry best practices. <strong>Last major review: May 2025.</strong></em></p>
+            </div>
+        </div>
 
-<div class="attribution-notice">
-  <div class="attribution-content">
-    <p>This handbook is inspired by the need for a structured resource on MLOps, building on industry practices and academic foundations. All credit for the conceptual framework goes to the MLOps community, including tools like MLflow, Neptune and Kubeflow. I've curated and structured the content to provide a cohesive learning path, adding practical examples and hands-on guidance to enhance the educational experience.</p>
-  </div>
+        <div id="tab-content-s1" class="tab-content-panel"></div>
+        <div id="tab-content-s2" class="tab-content-panel"></div>
+        <div id="tab-content-s3" class="tab-content-panel"></div>
+        <div id="tab-content-s4" class="tab-content-panel"></div>
+        <div id="tab-content-s5" class="tab-content-panel"></div>
+        <div id="tab-content-s6" class="tab-content-panel"></div>
+        <div id="tab-content-s7" class="tab-content-panel"></div>
+        <div id="tab-content-s8" class="tab-content-panel"></div>
+        <div id="tab-content-s9" class="tab-content-panel"></div>
+        <div id="tab-content-s10" class="tab-content-panel"></div>
+        <div id="tab-content-s11" class="tab-content-panel"></div>
+        <div id="tab-content-s12" class="tab-content-panel"></div>
+        <div id="tab-content-s13" class="tab-content-panel"></div>
+        <div id="tab-content-s14" class="tab-content-panel"></div>
+        <div id="tab-content-s15" class="tab-content-panel"></div>
+        <div id="tab-content-s16" class="tab-content-panel"></div>
+    </main>
+
+    <div class="section-content-templates" style="display: none;">
+        <div id="template-s1">
+            <div class="content-panel-header">
+                <h2>Foundations of MLOps</h2>
+            </div>
+            {% include /content/handbooks/mlops/section1.md %}
+        </div>
+
+        <div id="template-s2">
+            <div class="content-panel-header">
+                <h2>Data Management for MLOps</h2>
+            </div>
+            {% include /content/handbooks/mlops/section2.md %}
+        </div>
+
+        <div id="template-s3">
+            <div class="content-panel-header">
+                <h2>Model Development</h2>
+            </div>
+            {% include /content/handbooks/mlops/section3.md %}
+        </div>
+
+        <div id="template-s4">
+            <div class="content-panel-header">
+                <h2>Model Deployment</h2>
+            </div>
+            {% include /content/handbooks/mlops/section4.md %}
+        </div>
+
+        <div id="template-s5">
+            <div class="content-panel-header">
+                <h2>Monitoring and Maintenance</h2>
+            </div>
+            {% include /content/handbooks/mlops/section5.md %}
+        </div>
+
+        <div id="template-s6">
+            <div class="content-panel-header">
+                <h2>Scalability and Optimization</h2>
+            </div>
+            {% include /content/handbooks/mlops/section6.md %}
+        </div>
+
+        <div id="template-s7">
+            <div class="content-panel-header">
+                <h2>Collaboration and Workflow</h2>
+            </div>
+            {% include /content/handbooks/mlops/section7.md %}
+        </div>
+
+        <div id="template-s8">
+            <div class="content-panel-header">
+                <h2>Ethics and Responsible AI</h2>
+            </div>
+            {% include /content/handbooks/mlops/section8.md %}
+        </div>
+
+        <div id="template-s9">
+            <div class="content-panel-header">
+                <h2>MLOps for Specialized Domains</h2>
+            </div>
+            {% include /content/handbooks/mlops/section9.md %}
+        </div>
+
+        <div id="template-s10">
+            <div class="content-panel-header">
+                <h2>Large Language Model Operations (LLMOps)</h2>
+            </div>
+            {% include /content/handbooks/mlops/section10.md %}
+        </div>
+
+        <div id="template-s11">
+            <div class="content-panel-header">
+                <h2>Advanced MLOps Techniques</h2>
+            </div>
+            {% include /content/handbooks/mlops/section11.md %}
+        </div>
+
+        <div id="template-s12">
+            <div class="content-panel-header">
+                <h2>Multimodal and Cross-Disciplinary MLOps</h2>
+            </div>
+            {% include /content/handbooks/mlops/section12.md %}
+        </div>
+
+        <div id="template-s13">
+            <div class="content-panel-header">
+                <h2>Evaluation and Benchmarking</h2>
+            </div>
+            {% include /content/handbooks/mlops/section13.md %}
+        </div>
+
+        <div id="template-s14">
+            <div class="content-panel-header">
+                <h2>MLOps Tools and Ecosystems</h2>
+            </div>
+            {% include /content/handbooks/mlops/section14.md %}
+        </div>
+
+        <div id="template-s15">
+            <div class="content-panel-header">
+                <h2>Industry Applications</h2>
+            </div>
+            {% include /content/handbooks/mlops/section15.md %}
+        </div>
+
+        <div id="template-s16">
+            <div class="content-panel-header">
+                <h2>Future Directions in MLOps</h2>
+            </div>
+            {% include /content/handbooks/mlops/section16.md %}
+        </div>
+    </div>
+
 </div>
-
-<div class="key-concept">
-  <strong>Note:</strong> This handbook is regularly updated to reflect advancements in MLOps tools, frameworks, and best practices. Each section builds on previous concepts, creating a progressive learning journey from core principles to real-world applications and future trends.
 </div>
-
-<h2 id="handbook-sections">Handbook Sections</h2>
-
-<div class="sections-grid">
-  <!-- Section I -->
-  <div class="section-card">
-    <h3 id="s1">
-      <a href="{{ '/content/handbooks/mlops/section1/' | relative_url }}">Section I: Foundations of MLOps</a>
-    </h3>
-    <p><strong>Goal:</strong> Introduce core principles combining machine learning, software engineering, and DevOps for operationalizing ML systems.</p>
-    <a href="{{ '/content/handbooks/mlops/section1/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section II -->
-  <div class="section-card">
-    <h3 id="s2">
-      <a href="{{ '/content/handbooks/mlops/section2/' | relative_url }}">Section II: Data Management for MLOps</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore strategies for handling data in ML pipelines, including ingestion, preprocessing, versioning, and governance.</p>
-    <a href="{{ '/content/handbooks/mlops/section2/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section III -->
-  <div class="section-card">
-    <h3 id="s3">
-      <a href="{{ '/content/handbooks/mlops/section3/' | relative_url }}">Section III: Model Development</a>
-    </h3>
-    <p><strong>Goal:</strong> Cover techniques for building, training, and evaluating ML models in a reproducible and scalable manner.</p>
-    <a href="{{ '/content/handbooks/mlops/section3/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IV -->
-  <div class="section-card">
-    <h3 id="s4">
-      <a href="{{ '/content/handbooks/mlops/section4/' | relative_url }}">Section IV: Model Deployment</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey methods for deploying ML models into production, including batch, real-time, and cloud-based approaches.</p>
-    <a href="{{ '/content/handbooks/mlops/section4/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section V -->
-  <div class="section-card">
-    <h3 id="s5">
-      <a href="{{ '/content/handbooks/mlops/section5/' | relative_url }}">Section V: Monitoring and Maintenance</a>
-    </h3>
-    <p><strong>Goal:</strong> Discuss strategies for monitoring model performance, retraining, and handling incidents in production.</p>
-    <a href="{{ '/content/handbooks/mlops/section5/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VI -->
-  <div class="section-card">
-    <h3 id="s6">
-      <a href="{{ '/content/handbooks/mlops/section6/' | relative_url }}">Section VI: Scalability and Optimization</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore techniques for scaling ML systems and optimizing training and inference for efficiency.</p>
-    <a href="{{ '/content/handbooks/mlops/section6/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VII -->
-  <div class="section-card">
-    <h3 id="s7">
-      <a href="{{ '/content/handbooks/mlops/section7/' | relative_url }}">Section VII: Collaboration and Workflow</a>
-    </h3>
-    <p><strong>Goal:</strong> Examine tools and practices for fostering teamwork, reproducibility, and mature MLOps workflows.</p>
-    <a href="{{ '/content/handbooks/mlops/section7/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VIII -->
-  <div class="section-card">
-    <h3 id="s8">
-      <a href="{{ '/content/handbooks/mlops/section8/' | relative_url }}">Section VIII: Ethics and Responsible AI</a>
-    </h3>
-    <p><strong>Goal:</strong> Address approaches for building fair, explainable, and privacy-preserving ML systems.</p>
-    <a href="{{ '/content/handbooks/mlops/section8/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IX -->
-  <div class="section-card">
-    <h3 id="s9">
-      <a href="{{ '/content/handbooks/mlops/section9/' | relative_url }}">Section IX: MLOps for Specialized Domains</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey MLOps adaptations for industries like healthcare, finance, IoT, and autonomous systems.</p>
-    <a href="{{ '/content/handbooks/mlops/section9/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section X -->
-  <div class="section-card">
-    <h3 id="s10">
-      <a href="{{ '/content/handbooks/mlops/section10/' | relative_url }}">Section X: Large Language Model Operations (LLMOps)</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore operational challenges and techniques for deploying and managing large language models.</p>
-    <a href="{{ '/content/handbooks/mlops/section10/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XI -->
-  <div class="section-card">
-    <h3 id="s11">
-      <a href="{{ '/content/handbooks/mlops/section11/' | relative_url }}">Section XI: Advanced MLOps Techniques</a>
-    </h3>
-    <p><strong>Goal:</strong> Cover cutting-edge methods like AutoMLOps, continual learning, and multi-model systems.</p>
-    <a href="{{ '/content/handbooks/mlops/section11/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XII -->
-  <div class="section-card">
-    <h3 id="s12">
-      <a href="{{ '/content/handbooks/mlops/section12/' | relative_url }}">Section XII: Multimodal and Cross-Disciplinary MLOps</a>
-    </h3>
-    <p><strong>Goal:</strong> Discuss MLOps for integrating text, time-series, geospatial, and graph data.</p>
-    <a href="{{ '/content/handbooks/mlops/section12/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XIII -->
-  <div class="section-card">
-    <h3 id="s13">
-      <a href="{{ '/content/handbooks/mlops/section13/' | relative_url }}">Section XIII: Evaluation and Benchmarking</a>
-    </h3>
-    <p><strong>Goal:</strong> Examine metrics, benchmarks, and robustness testing for assessing MLOps systems.</p>
-    <a href="{{ '/content/handbooks/mlops/section13/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XIV -->
-  <div class="section-card">
-    <h3 id="s14">
-      <a href="{{ '/content/handbooks/mlops/section14/' | relative_url }}">Section XIV: MLOps Tools and Ecosystems</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey frameworks, data engineering, serving, and monitoring tools for MLOps.</p>
-    <a href="{{ '/content/handbooks/mlops/section14/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XV -->
-  <div class="section-card">
-    <h3 id="s15">
-      <a href="{{ '/content/handbooks/mlops/section15/' | relative_url }}">Section XV: Industry Applications</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore real-world MLOps use cases in e-commerce, manufacturing, media, and public sector.</p>
-    <a href="{{ '/content/handbooks/mlops/section15/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section XVI -->
-  <div class="section-card">
-    <h3 id="s16">
-      <a href="{{ '/content/handbooks/mlops/section16/' | relative_url }}">Section XVI: Future Directions in MLOps</a>
-    </h3>
-    <p><strong>Goal:</strong> Investigate emerging trends like neurosymbolic, quantum, and sustainable MLOps.</p>
-    <a href="{{ '/content/handbooks/mlops/section16/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-</div>
-
-<div class="resource-links">
-  <h3>Related Handbooks</h3>
-  <ul>
-    <li><a href="{{ '/content/handbooks/nlp/' | relative_url }}">NLP Handbook</a> - Dive into natural language processing techniques</li>
-    <li><a href="{{ '/content/handbooks/devops/' | relative_url }}">DevOps Handbook</a> - Master continuous integration and deployment practices</li>
-    <li><a href="{{ '/content/handbooks/data-engineering/' | relative_url }}">Data Engineering Handbook</a> - Learn scalable data pipeline design</li>
-  </ul>
-</div>
-
-<div class="summary-section">
-  <h3>Learning Path</h3>
-  <ul>
-    <li>Start with the foundational principles of MLOps, blending ML and DevOps</li>
-    <li>Progress through data management, model development, and deployment strategies</li>
-    <li>Explore monitoring, scalability, and collaboration for production-grade systems</li>
-    <li>Examine ethics, domain-specific applications, and advanced techniques like LLMOps</li>
-    <li>Discover tools, benchmarks, industry use cases, and future trends in MLOps</li>
-  </ul>
-</div>
-
-<script>
-  // Navigation variables - no previous for index
-  window.nextSection = "/content/handbooks/mlops/section1/";
-</script>
-
-<script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
+<script src="/assets/js/section-academic.js"></script>

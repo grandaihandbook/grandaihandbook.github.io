@@ -1,130 +1,130 @@
----
-layout: default
-title: "Generative AI Handbook"
-description: "A comprehensive exploration of generative AI, from foundational concepts to cutting-edge techniques."
----
+<link rel="stylesheet" href="/assets/css/section-academic.css">
+<div class="handbook-container-vertical-tabs">
+<div class="handbook-container-inner">
+    <aside class="handbook-vertical-nav">
+        <div class="vertical-nav-header">
+            <h1>Generative AI</h1>
+            <div class="header-accent-vertical"></div>
+        </div>
+        <ul class="vertical-tabs-list">
+            <li class="vertical-tab-ul"><a href="#overview" data-tab="overview" class="vertical-tab-link active">Overview</a></li>
+            <li class="vertical-tab-ul"><a href="#s1" data-tab="s1" class="vertical-tab-link">Foundation & ML</a></li>
+            <li class="vertical-tab-ul"><a href="#s2" data-tab="s2" class="vertical-tab-link">Neural Networks</a></li>
+            <li><a href="#s3" data-tab="s3" class="vertical-tab-link">LLM Architecture</a></li>
+            <li><a href="#s4" data-tab="s4" class="vertical-tab-link">Finetuning</a></li>
+            <li><a href="#s5" data-tab="s5" class="vertical-tab-link">Applications</a></li>
+            <li><a href="#s6" data-tab="s6" class="vertical-tab-link">Inference Opt.</a></li>
+            <li><a href="#s7" data-tab="s7" class="vertical-tab-link">Quadratic Scaling</a></li>
+            <li><a href="#s8" data-tab="s8" class="vertical-tab-link">Other Models</a></li>
+            <li><a href="#s9" data-tab="s9" class="vertical-tab-link">Multimodal</a></li>
+        </ul>
+        <div class="vertical-nav-footer">
+             <p><strong>Related Handbooks:</strong></p>
+            <ul>
+                <li><a href="/content/handbooks/nlp/">NLP Handbook</a></li>
+                <li><a href="/content/handbooks/deep-learning/">Deep Learning Handbook</a></li>
+                <li><a href="/content/handbooks/foundation-models/">Foundation Models Handbook</a></li>
+            </ul>
+        </div>
+    </aside>
 
-<link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
+    <main class="handbook-vertical-content-area">
+        <div id="tab-content-overview" class="tab-content-panel active welcome-section">
+    <div class="content-panel-header">
+        <h2>Welcome to the Generative AI Handbook</h2>
+    </div>
+    <div class="content-panel-body welcome-panel">
+        <p><strong>About this Handbook:</strong> This comprehensive resource is meticulously designed to guide you through the fascinating and rapidly evolving field of Generative Artificial Intelligence. From the core statistical underpinnings to the complex architectures of modern Large Language Models, each section builds upon the last, offering a clear and structured learning pathway.</p>
+        <p><strong>Learning Path Suggestion:</strong></p>
+        <ul class="learning-path-list">
+            <li><span class="step-number">1</span> Begin with the foundational concepts in statistical prediction and machine learning (Section 1).</li>
+            <li><span class="step-number">2</span> Progress through neural network approaches (Section 2) and the intricacies of LLM architecture (Section 3).</li>
+            <li><span class="step-number">3</span> Explore specialized techniques for training, finetuning, and aligning these powerful models (Section 4).</li>
+            <li><span class="step-number">4</span> Examine diverse applications, interpretability methods, and crucial evaluation metrics (Section 5).</li>
+            <li><span class="step-number">5</span> Understand performance enhancements through inference optimization (Section 6) and solutions to challenges like quadratic scaling (Section 7).</li>
+            <li><span class="step-number">6</span> Discover generative models beyond transformers (Section 8) and the exciting frontier of multimodal AI (Section 9).</li>
+        </ul>
+        <p class="last-updated"><em>This handbook is a living document, regularly updated to reflect the latest research and industry best practices. <strong>Last major review: May 2025.</strong></em></p>
+    </div>
 
-<div class="attribution-notice">
-  <div class="attribution-content">
-    <p>This handbook is inspired by <a href="https://genai-handbook.github.io/">Generative AI Handbook: A Roadmap for Learning Resources</a>. All credit for the original content goes to the <a href="https://github.com/willccbb">William Brown</a>. I've updated certain sections, added additional resources, and restructured some content to enhance the learning experience while preserving the core educational value of the original work.</p>
-  </div>
 </div>
 
-<div class="key-concept">
-  <strong>Note:</strong> This handbook is regularly updated to reflect the rapid developments in generative AI. Each section builds upon previous concepts, creating a cohesive learning path from basic principles to advanced applications.
+        <div id="tab-content-s1" class="tab-content-panel"></div>
+        <div id="tab-content-s2" class="tab-content-panel"></div>
+        <div id="tab-content-s3" class="tab-content-panel"></div>
+        <div id="tab-content-s4" class="tab-content-panel"></div>
+        <div id="tab-content-s5" class="tab-content-panel"></div>
+        <div id="tab-content-s6" class="tab-content-panel"></div>
+        <div id="tab-content-s7" class="tab-content-panel"></div>
+        <div id="tab-content-s8" class="tab-content-panel"></div>
+        <div id="tab-content-s9" class="tab-content-panel"></div>
+    </main>
+
+    <div class="section-content-templates" style="display: none;">
+        <div id="template-s1">
+            <div class="content-panel-header">
+                <h2>Foundation: Statistical Prediction & ML</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section1.md %}
+        </div>
+
+        <div id="template-s2">
+            <div class="content-panel-header">
+                <h2>Neural Networks & Deep Learning</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section2.md %}
+        </div>
+
+        <div id="template-s3">
+            <div class="content-panel-header">
+                <h2>LLM Architecture & Training</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section3.md %}
+        </div>
+
+        <div id="template-s4">
+            <div class="content-panel-header">
+                <h2>Finetuning & Alignment</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section4.md %}
+        </div>
+
+        <div id="template-s5">
+            <div class="content-panel-header">
+                <h2>Applications & Interpretability</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section5.md %}
+        </div>
+
+        <div id="template-s6">
+            <div class="content-panel-header">
+                <h2>Inference Optimization</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section6.md %}
+        </div>
+
+        <div id="template-s7">
+            <div class="content-panel-header">
+                <h2>Addressing the Quadratic Scaling Problem</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section7.md %}
+        </div>
+
+        <div id="template-s8">
+            <div class="content-panel-header">
+                <h2>Beyond Transformers: Other Generative Models</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section8.md %}
+        </div>
+
+        <div id="template-s9">
+            <div class="content-panel-header">
+                <h2>Multimodal Models</h2>
+            </div>
+            {% include /content/handbooks/generative-ai/section9.md %}
+        </div>
+    </div>
+
 </div>
-
-<h2 id="handbook-sections">Handbook Sections</h2>
-
-<div class="sections-grid">
-  <!-- Section I -->
-  <div class="section-card">
-    <h3 id="s1">
-      <a href="{{ '/content/handbooks/generative-ai/section1/' | relative_url }}">Section I: Foundation: Statistical Prediction and ML</a>
-    </h3>
-    <p><strong>Goal:</strong> Recap machine learning basics + survey (non-DL) methods for tasks under the umbrella of "sequential prediction".</p>
-    <a href="{{ '/content/handbooks/generative-ai/section1/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section II -->
-  <div class="section-card">
-    <h3 id="s2">
-      <a href="{{ '/content/handbooks/generative-ai/section2/' | relative_url }}">Section II: Neural Networks and Deep Learning</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey deep learning methods + applications to sequential and language modeling, up to basic Transformers.</p>
-    <a href="{{ '/content/handbooks/generative-ai/section2/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section III -->
-  <div class="section-card">
-    <h3 id="s3">
-      <a href="{{ '/content/handbooks/generative-ai/section3/' | relative_url }}">Section III: LLM Architecture and Training</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey central topics related to training LLMs, with an emphasis on conceptual primitives.</p>
-    <a href="{{ '/content/handbooks/generative-ai/section3/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IV -->
-  <div class="section-card">
-    <h3 id="s4">
-      <a href="{{ '/content/handbooks/generative-ai/section4/' | relative_url }}">Section IV: Finetuning and Alignment</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey techniques used for improving and "aligning" the quality of LLM outputs after pretraining.</p>
-    <a href="{{ '/content/handbooks/generative-ai/section4/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section V -->
-  <div class="section-card">
-    <h3 id="s5">
-      <a href="{{ '/content/handbooks/generative-ai/section5/' | relative_url }}">Section V: Applications and Interpretability</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey how LLMs are used and evaluated in practice, beyond just "chatbots".</p>
-    <a href="{{ '/content/handbooks/generative-ai/section5/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VI -->
-  <div class="section-card">
-    <h3 id="s6">
-      <a href="{{ '/content/handbooks/generative-ai/section6/' | relative_url }}">Section VI: Inference Optimization
-</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey architecture choices and lower-level techniques for improving resource utilization (time, compute, memory).</p>
-    <a href="{{ '/content/handbooks/generative-ai/section6/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VII -->
-  <div class="section-card">
-    <h3 id="s7">
-      <a href="{{ '/content/handbooks/generative-ai/section7/' | relative_url }}">Section VII: Addressing the Quadratic Scaling Problem</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey approaches for avoiding the "quadratic scaling problem" faced by self-attention in Transformers.</p>
-    <a href="{{ '/content/handbooks/generative-ai/section7/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VIII -->
-  <div class="section-card">
-    <h3 id="s8">
-      <a href="{{ '/content/handbooks/generative-ai/section8/' | relative_url }}">Section VIII: Beyond Transformers: Other Generative Models</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey topics building towards generation of non-sequential content like images, from GANs to diffusion models.</p>
-    <a href="{{ '/content/handbooks/generative-ai/section8/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IX -->
-  <div class="section-card">
-    <h3 id="s9">
-      <a href="{{ '/content/handbooks/generative-ai/section9/' | relative_url }}">Section IX: Multimodal Models</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey how models can use multiple modalities of input and output (text, audio, images) simultaneously.</p>
-    <a href="{{ '/content/handbooks/generative-ai/section9/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
 </div>
-
-<div class="resource-links">
-  <h3>Related Handbooks</h3>
-  <ul>
-    <li><a href="{{ '/content/handbooks/nlp/' | relative_url }}">NLP Handbook</a> - Explore natural language processing techniques</li>
-    <li><a href="{{ '/content/handbooks/deep-learning/' | relative_url }}">Deep Learning Handbook</a> - Master neural network architectures and training</li>
-    <li><a href="{{ '/content/handbooks/foundation-models/' | relative_url }}">Foundation Models Handbook</a> - Understand large-scale pre-trained models</li>
-  </ul>
-</div>
-
-<div class="summary-section">
-  <h3>Learning Path</h3>
-  <ul>
-    <li>Begin with the foundational concepts in statistical prediction and machine learning</li>
-    <li>Progress through neural network approaches and transformer architectures</li>
-    <li>Explore specialized techniques for training, finetuning, and optimizing language models</li>
-    <li>Examine applications, evaluation methods, and performance optimizations</li>
-    <li>Discover advanced topics like sub-quadratic scaling, diffusion models, and multimodal approaches</li>
-  </ul>
-</div>
-
-<script>
-  // Navigation variables - no previous for index
-    window.nextSection = "/content/handbooks/generative-ai/section1/";
-</script>
-
-<script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
+<script src="/assets/js/section-academic.js"></script>

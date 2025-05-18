@@ -1,111 +1,111 @@
----
-layout: default
-title: "Explainable AI Handbook"
-description: "A comprehensive guide to interpretable AI, from foundational concepts to advanced techniques for neural, generative, and multimodal models, with real-world applications and future directions."
----
+<link rel="stylesheet" href="/assets/css/section-academic.css">
+<div class="handbook-container-vertical-tabs">
+<div class="handbook-container-inner">
+    <aside class="handbook-vertical-nav">
+        <div class="vertical-nav-header">
+            <h1>Explainable AI</h1>
+            <div class="header-accent-vertical"></div>
+        </div>
+        <ul class="vertical-tabs-list">
+            <li class="vertical-tab-ul"><a href="#overview" data-tab="overview" class="vertical-tab-link active">Overview</a></li>
+            <li class="vertical-tab-ul"><a href="#s1" data-tab="s1" class="vertical-tab-link">Foundations</a></li>
+            <li class="vertical-tab-ul"><a href="#s2" data-tab="s2" class="vertical-tab-link">Interpretable Models</a></li>
+            <li class="vertical-tab-ul"><a href="#s3" data-tab="s3" class="vertical-tab-link">Local Methods</a></li>
+            <li class="vertical-tab-ul"><a href="#s4" data-tab="s4" class="vertical-tab-link">Global Methods</a></li>
+            <li class="vertical-tab-ul"><a href="#s5" data-tab="s5" class="vertical-tab-link">Advanced Models</a></li>
+            <li class="vertical-tab-ul"><a href="#s6" data-tab="s6" class="vertical-tab-link">Practical Aspects</a></li>
+            <li class="vertical-tab-ul"><a href="#s7" data-tab="s7" class="vertical-tab-link">Beyond Methods</a></li>
+        </ul>
+        <div class="vertical-nav-footer">
+             <p><strong>Related Handbooks:</strong></p>
+            <ul>
+                <li><a href="/content/handbooks/natural-language-processing/">NLP Handbook</a></li>
+                <li><a href="/content/handbooks/reinforcement-learning/">RL Handbook</a></li>
+                <li><a href="/content/handbooks/generative-ai/">Generative AI Handbook</a></li>
+            </ul>
+        </div>
+    </aside>
 
-<link rel="stylesheet" href="{{ '/assets/css/section-academic.css' | relative_url }}">
+    <main class="handbook-vertical-content-area">
+        <div id="tab-content-overview" class="tab-content-panel active welcome-section">
+            <div class="content-panel-header">
+                <h2>Welcome to the Explainable AI Handbook</h2>
+            </div>
+            <div class="content-panel-body welcome-panel">
+                <p><strong>About this Handbook:</strong> This comprehensive resource guides you through the fascinating field of Explainable AI (XAI). From foundational concepts to advanced techniques, this handbook provides a structured approach to understanding how to make AI systems more transparent, interpretable, and trustworthy.</p>
+                <p><strong>Learning Path Suggestion:</strong></p>
+                <ul class="learning-path-list">
+                    <li><span class="step-number">1</span> Begin with the core concepts and goals of interpretability, including transparency, trust, and data considerations (Section 1).</li>
+                    <li><span class="step-number">2</span> Explore inherently interpretable models with transparent decision processes, such as linear regression and decision trees (Section 2).</li>
+                    <li><span class="step-number">3</span> Master techniques for explaining individual predictions (local methods) and overall model behavior (global methods) (Sections 3-4).</li>
+                    <li><span class="step-number">4</span> Dive into specialized interpretability approaches for deep learning, generative AI, and reinforcement learning models (Section 5).</li>
+                    <li><span class="step-number">5</span> Understand practical considerations, including human-centric design, fairness, evaluation, and robustness (Section 6).</li>
+                    <li><span class="step-number">6</span> Explore the broader implications, including regulatory frameworks, case studies, and future trends in interpretable AI (Section 7).</li>
+                </ul>
+                <p class="last-updated"><em>This handbook is a living document, regularly updated to reflect the latest research and industry best practices. <strong>Last major review: May 2025.</strong></em></p>
+            </div>
+        </div>
 
-<div class="attribution-notice">
-  <div class="attribution-content">
-    <p>This handbook is inspired by the need for a comprehensive resource on Explainable AI, building on research and practical methods for interpretable machine learning. All credit for the conceptual framework goes to the Explainable AI community, including foundational contributions from <a href="https://christophm.github.io/interpretable-ml-book/">Christoph Molnar’s <i>Interpretable Machine Learning</i></a> and tools like SHAP, LIME, and Captum. I’ve curated and structured the content to provide a cohesive learning path, adding practical examples and hands-on guidance to enhance the educational experience.</p>
-  </div>
+        <div id="tab-content-s1" class="tab-content-panel"></div>
+        <div id="tab-content-s2" class="tab-content-panel"></div>
+        <div id="tab-content-s3" class="tab-content-panel"></div>
+        <div id="tab-content-s4" class="tab-content-panel"></div>
+        <div id="tab-content-s5" class="tab-content-panel"></div>
+        <div id="tab-content-s6" class="tab-content-panel"></div>
+        <div id="tab-content-s7" class="tab-content-panel"></div>
+    </main>
+
+    <div class="section-content-templates" style="display: none;">
+        <div id="template-s1">
+            <div class="content-panel-header">
+                <h2>Foundations of Interpretability</h2>
+            </div>
+            {% include /content/handbooks/explainable-ai/section1.md %}
+        </div>
+
+        <div id="template-s2">
+            <div class="content-panel-header">
+                <h2>Interpretable Models</h2>
+            </div>
+            {% include /content/handbooks/explainable-ai/section2.md %}
+        </div>
+
+        <div id="template-s3">
+            <div class="content-panel-header">
+                <h2>Local Model-Agnostic Methods</h2>
+            </div>
+            {% include /content/handbooks/explainable-ai/section3.md %}
+        </div>
+
+        <div id="template-s4">
+            <div class="content-panel-header">
+                <h2>Global Model-Agnostic Methods</h2>
+            </div>
+            {% include /content/handbooks/explainable-ai/section4.md %}
+        </div>
+
+        <div id="template-s5">
+            <div class="content-panel-header">
+                <h2>Neural, Generative, and RL Model Interpretability</h2>
+            </div>
+            {% include /content/handbooks/explainable-ai/section5.md %}
+        </div>
+
+        <div id="template-s6">
+            <div class="content-panel-header">
+                <h2>Practical Considerations</h2>
+            </div>
+            {% include /content/handbooks/explainable-ai/section6.md %}
+        </div>
+
+        <div id="template-s7">
+            <div class="content-panel-header">
+                <h2>Beyond the Methods</h2>
+            </div>
+            {% include /content/handbooks/explainable-ai/section7.md %}
+        </div>
+    </div>
+
 </div>
-
-<div class="key-concept">
-  <strong>Note:</strong> This handbook is regularly updated to reflect the latest advancements in interpretable AI. Each section builds upon previous concepts, creating a cohesive learning path from basic principles to cutting-edge techniques and applications.
 </div>
-
-<h2 id="handbook-sections">Handbook Sections</h2>
-
-<div class="sections-grid">
-  <!-- Section I -->
-  <div class="section-card">
-    <h3 id="s1">
-      <a href="{{ '/content/handbooks/explainable-ai/section1/' | relative_url }}">Section I: Foundations of Interpretability</a>
-    </h3>
-    <p><strong>Goal:</strong> Establish the core concepts and goals underpinning interpretable AI, including transparency, trust, and data considerations.</p>
-    <a href="{{ '/content/handbooks/explainable-ai/section1/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section II -->
-  <div class="section-card">
-    <h3 id="s2">
-      <a href="{{ '/content/handbooks/explainable-ai/section2/' | relative_url }}">Section II: Interpretable Models</a>
-    </h3>
-    <p><strong>Goal:</strong> Introduce inherently interpretable models with transparent decision processes, such as linear regression and decision trees.</p>
-    <a href="{{ '/content/handbooks/explainable-ai/section2/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section III -->
-  <div class="section-card">
-    <h3 id="s3">
-      <a href="{{ '/content/handbooks/explainable-ai/section3/' | relative_url }}">Section III: Local Model-Agnostic Methods</a>
-    </h3>
-    <p><strong>Goal:</strong> Survey techniques for explaining individual predictions across any model, including LIME, SHAP, and counterfactuals.</p>
-    <a href="{{ '/content/handbooks/explainable-ai/section3/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section IV -->
-  <div class="section-card">
-    <h3 id="s4">
-      <a href="{{ '/content/handbooks/explainable-ai/section4/' | relative_url }}">Section IV: Global Model-Agnostic Methods</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore methods for understanding overall model behavior, such as partial dependence plots and feature importance.</p>
-    <a href="{{ '/content/handbooks/explainable-ai/section4/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section V -->
-  <div class="section-card">
-    <h3 id="s5">
-      <a href="{{ '/content/handbooks/explainable-ai/section5/' | relative_url }}">Section V: Neural, Generative, and RL Model Interpretability</a>
-    </h3>
-    <p><strong>Goal:</strong> Examine specialized interpretability techniques for deep learning, generative AI, and reinforcement learning models.</p>
-    <a href="{{ '/content/handbooks/explainable-ai/section5/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VI -->
-  <div class="section-card">
-    <h3 id="s6">
-      <a href="{{ '/content/handbooks/explainable-ai/section6/' | relative_url }}">Section VI: Practical Considerations</a>
-    </h3>
-    <p><strong>Goal:</strong> Investigate practical aspects of interpretability, including human-centric design, fairness, evaluation, and robustness.</p>
-    <a href="{{ '/content/handbooks/explainable-ai/section6/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-  
-  <!-- Section VII -->
-  <div class="section-card">
-    <h3 id="s7">
-      <a href="{{ '/content/handbooks/explainable-ai/section7/' | relative_url }}">Section VII: Beyond the Methods</a>
-    </h3>
-    <p><strong>Goal:</strong> Explore broader implications, including regulatory frameworks, case studies, and future trends in interpretable AI.</p>
-    <a href="{{ '/content/handbooks/explainable-ai/section7/' | relative_url }}" class="section-link">Read section →</a>
-  </div>
-</div>
-
-<div class="resource-links">
-  <h3>Related Handbooks</h3>
-  <ul>
-    <li><a href="{{ '/handbooks/natural-language-processing/' | relative_url }}">Natural Language Processing Handbook</a> - Master language modeling and transformer architectures</li>
-    <li><a href="{{ '/handbooks/reinforcement-learning/' | relative_url }}">Reinforcement Learning Handbook</a> - Explore decision-making and optimization techniques</li>
-    <li><a href="{{ '/handbooks/generative-ai/' | relative_url }}">Generative AI Handbook</a> - Dive into generative modeling techniques</li>
-  </ul>
-</div>
-
-<div class="summary-section">
-  <h3>Learning Path</h3>
-  <ul>
-    <li>Begin with foundational concepts and goals of interpretability, including data and model considerations</li>
-    <li>Progress through inherently interpretable models like linear regression and decision trees</li>
-    <li>Explore local and global model-agnostic methods, such as LIME, SHAP, and partial dependence plots</li>
-    <li>Examine advanced interpretability for neural, generative, and reinforcement learning models</li>
-    <li>Discover practical applications, evaluation methods, regulatory frameworks, and future directions</li>
-  </ul>
-</div>
-
-<script>
-  // Navigation variables - no previous for index
-  var nextSection = "/content/handbooks/explainable-ai/section1/";
-</script>
-
-<script src="{{ '/assets/js/section-academic.js' | relative_url }}"></script>
+<script src="/assets/js/section-academic.js"></script>
