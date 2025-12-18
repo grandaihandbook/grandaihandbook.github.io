@@ -18,7 +18,7 @@
 ### **Segment 1: What Problem Are We Solving?** (2 minutes)
 
 **Opening Context:**
-> "Let me show you what we've built. This platform helps businesses identify which customers are about to leave and automatically creates personalized campaigns to keep them."
+> "The platform is to help businesses identify which customers are about to leave and automatically creates personalized campaigns to keep them."
 
 **The Business Problem:**
 1. **Customer Churn is Expensive**
