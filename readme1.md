@@ -45,71 +45,8 @@ This platform automatically:
 ✅ Sends automated emails
 
 **Key Message:**
-> "This isn't just analytics - it's a complete action platform. From prediction to execution, all in one place."
+> "So it's a complete action platform. From prediction to execution, all in one place."
 
----
-
-### **Segment 2: How It Works (High-Level)** (1-2 minutes)
-
-**Simple Flow Diagram (verbal):**
-
-```
-Step 1: Upload Your Data
-   ↓
-Step 2: AI Analyzes & Predicts
-   ↓
-Step 3: View Insights & Segments
-   ↓
-Step 4: Generate Campaigns
-   ↓
-Step 5: Send Emails
-```
-
-**What Happens Behind the Scenes:**
-- Our AI looks at customer behavior patterns (purchase history, frequency, spending)
-- It predicts two things:
-  1. **Churn Risk:** Probability this customer will stop buying (0-100%)
-  2. **Customer Value:** How much revenue they'll generate in next 90 days
-
-**The Smart Part:**
-> "We combine these two predictions to create intelligent segments. For example: a customer with 85% churn risk and $2,500 value is CRITICAL - high risk + high value = immediate action needed."
-
-**Customer Segments Created:**
-1. 🌟 **VIPs** - Your best customers (keep them happy)
-2. 💎 **Steady Buyers** - Reliable, look for upsell opportunities
-3. 🌱 **Onboarders** - New customers, help them grow
-4. ⚠️ **Churn Risks** - High-value customers at risk (TOP PRIORITY!)
-5. 😴 **Dormant** - Low engagement, decide if worth re-engaging
-
----
-
-### **Segment 3: Live Platform Walkthrough** (9-10 minutes)
-
----
-
-#### **3A. Getting Started - Upload Data** (1 minute)
-
-**Navigate to Upload Tab**
-
-**What You See:**
-- Simple file upload interface
-- Drag & drop or click to upload
-- Accepts standard CSV files
-
-**What Data Do You Need?**
-- Customer information (name, email, join date)
-- Order history (dates, amounts)
-- Purchase details (products, quantities)
-
-> "That's it. You upload these 3 files, and the AI does the rest. Within minutes, you have predictions and insights."
-
-**Show:**
-- Click "Upload" button
-- Select sample files
-- Show success message
-- "Your data is now being analyzed..."
-
----
 
 #### **3B. Dashboard - Business Intelligence** (2 minutes)
 
